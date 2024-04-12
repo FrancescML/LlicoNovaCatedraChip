@@ -1,0 +1,41 @@
+
+:root {
+    no--vp-c-brand-1: #646cff;
+    no--vp-c-brand-2: #747bff;
+}
+
+p {
+    text-align: justify;
+}
+
+s {
+    font-family: ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Monaco,
+    Consolas, 'Liberation Mono', 'Courier New', monospace;
+    font-style: normal;
+    font-weight: 550;
+    text-decoration: none;
+    font-size: smaller;
+    background-color: #ebedf0;
+    padding: 2px;
+    border-radius: 4px;
+}
+
+.VPSidebarItem {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+li{
+    margin-left: 1.5em;
+}
+
+.plugin-tabs--tab {
+    no-font-weight: bold;
+}

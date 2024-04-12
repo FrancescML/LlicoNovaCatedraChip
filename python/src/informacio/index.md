@@ -1,0 +1,1 @@
+Pàgina informació
