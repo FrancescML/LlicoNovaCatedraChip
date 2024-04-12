@@ -457,4 +457,26 @@ export const index_python = [
             },
         ],
     },
+    {
+        text: 'Algunes llibreries',
+        collapsed: true,
+        items: [
+            {
+                text: 'Lectura amb Yogi',
+                link: '/yogi/',
+            },
+            {
+                text: 'Gràfics amb PIL',
+                link: '/grafics/',
+            },
+            {
+                text: 'Fitxers i formats',
+                link: '/fitxers/',
+            },
+            {
+                text: 'Bots amb Telegram',
+                link: '/telegram/',
+            },
+        ],
+    },
 ]

@@ -4,7 +4,6 @@
 
 Aquesta lliçó explora amb més detall els conceptes d'assignacions, de variables i expressions. Per això, primer es dóna més informació sobre el seu funcionament i es veuen alguns exemples del seu ús, incloent l'increment d'una variable i l'intercanvi de dues variables.
 
-
 ## Variables i assignacions
 
 Quan es programa és essencial desar dades en variables. La forma de desar una dada en particular en una variable és a través de la instrucció d'assignació. En Python, la instrucció d'assignació s'escriu amb l'operador `=`. L'efecte d'executar la instrucció
@@ -13,7 +12,7 @@ Quan es programa és essencial desar dades en variables. La forma de desar una d
 variable = dada
 ```
 
-és desar la informació `dada` en la variable `variable`. Aquesta instrucció es llegeix "*variable pren per valor dada*". Per exemple,
+és desar la informació `dada` en la variable `variable`. Aquesta instrucció es llegeix "_variable pren per valor dada_". Per exemple,
 
 ```python
 jugador10 = 'Messi'
@@ -39,17 +38,15 @@ sinó
 "<i>v pren per valor e</i>".
 :::
 
-
 ## Identificadors de variables
 
 En Python, els noms de les variables han de ser **identificadors**. Essencialment, un identificador ha de començar per una lletra, i pot anar seguit de zero o més lletres, dígits o subratllats (hi ha identificadors que poden començar amb subratllat, però tenen un significat especial). Les lletres en minúscules i en majúscules són considerades diferents. Per tant, `x`, `y`, `Delta`, `jugador10` i `mida_de_la_samarreta` són identificadors vàlids i, per tant, són noms admissibles de variables. En canvi, `3tombs`, `mida-dels-pantalons` i `💖` no ho són.
 
 És recomanable que els noms de les variables (i, en general, de tots els identificadors) sigui informatiu i reflecteixi el seu propòsit. Per exemple, el nom `mida_de_la_samarreta` és molt més descriptiu que no pas `m`. Però també és útil usar variables amb noms curts com `i` i `x` si aquestes designen entitats abstractes i només són usades en unes poques línies de codi.
 
-
 ## Les variables són variables 😀
 
-Al contrari del que passa en matemàtiques, en informàtica, els valors emmagatzemats a les variables poden canviar al llarg del temps, és a dir, al llarg de l'execució del programa. Justament per això es diuen *variables*. El programa següent ho posa de manifest:
+Al contrari del que passa en matemàtiques, en informàtica, els valors emmagatzemats a les variables poden canviar al llarg del temps, és a dir, al llarg de l'execució del programa. Justament per això es diuen _variables_. El programa següent ho posa de manifest:
 
 <PyWeb
 :code="`x = 10
@@ -78,14 +75,13 @@ Per tal de poder veure traces de programes en Python al vostre navegador de form
 
 <iframe width="800" height="500" frameborder="0" src="https://pythontutor.com/iframe-embed.html#code=x%20%3D%2010%0Aprint%28x%29%0Ax%20%3D%2020%0Aprint%28x%29&codeDivHeight=400&codeDivWidth=350&cumulative=false&curInstr=0&heapPrimitives=nevernest&origin=opt-frontend.js&py=3&rawInputLstJSON=%5B%5D&textReferences=false"> </iframe>
 
-Si aneu clicant el botó <kbd>Next></kbd> veureu com el programa s'executa, instrucció rera instrucció. La fletxa roja assenyala la següent instrucció a realitzar, la fletxa verda assenyala la darrera instrucció realitzada. Alhora que el programa avança, a baix a la dreta teniu una representació de l'estat actual de la memòria: el *global frame* mostra les variables definides i el seu valor actual. Al requadre superior de la dreta es pot veure la sortida del programa.
+Si aneu clicant el botó <kbd>Next></kbd> veureu com el programa s'executa, instrucció rera instrucció. La fletxa roja assenyala la següent instrucció a realitzar, la fletxa verda assenyala la darrera instrucció realitzada. Alhora que el programa avança, a baix a la dreta teniu una representació de l'estat actual de la memòria: el _global frame_ mostra les variables definides i el seu valor actual. Al requadre superior de la dreta es pot veure la sortida del programa.
 
 Feu una traça del programa per entendre com la variable `x` apareix a la memòria i com van canviant els valors que emmagatzema.
 
 D'acord? Proveu de predir què escriurà el programa següent i comproveu si ho heu encertat executant-lo pas a pas i vetllant pels valors de les variables en cada moment.
 
 <iframe width="800" height="500" frameborder="0" src="https://pythontutor.com/iframe-embed.html#code=x%20%3D%202%0Ay%20%3D%203%0Az%20%3D%20x%20%2B%20y%0Aprint%28x,%20y,%20z%29&codeDivHeight=400&codeDivWidth=350&cumulative=false&curInstr=0&heapPrimitives=nevernest&origin=opt-frontend.js&py=3&rawInputLstJSON=%5B%5D&textReferences=false"> </iframe>
-
 
 ## Inicialització de variables
 
@@ -119,9 +115,7 @@ print('Adéu')
 :height="200"
 />
 
-
 A la línia 1, el programa escriu "Hola" però a la línia 2 peta i mai arriba a escriure "Adéu".
-
 
 ## Una assignació important: l'increment
 
@@ -135,7 +129,7 @@ i = i + 1
 
 🤔 Mmmm... Tot d'un plegat, això no sembla tenir cap sentit! Com pot ser que un número sigui igual a ell mateix més un??? Tota la canalla de sisè de primària sap que això no és possible!
 
-Sí, sí... però el que hem escrit, no és una equació matemàtica que diu que la part esquerra és el mateix que la part dreta. El que hem escrit és una assignació en Python. El símbol `=` no vol dir *igualtat*, sinó que vol dir *assignació*. Concretament vol dir que, primer, es calcula què val la part dreta. Un cop fet, es desa aquest resultat a la variable de l'esquerra. A més, el valor anterior es perd.
+Sí, sí... però el que hem escrit, no és una equació matemàtica que diu que la part esquerra és el mateix que la part dreta. El que hem escrit és una assignació en Python. El símbol `=` no vol dir _igualtat_, sinó que vol dir _assignació_. Concretament vol dir que, primer, es calcula què val la part dreta. Un cop fet, es desa aquest resultat a la variable de l'esquerra. A més, el valor anterior es perd.
 
 Per tant, si la `i` val 12, quan s'executa `i = i + 1`, primer es calcula `i + 1`, que val 13 perquè `i` val 12. Un cop fet el càlcul de la part dreta, aquest 13 es desa en `i`, fent que el 12 que hi havia es perdi. Per tant, després d'`i = i + 1`, `i` val 13.
 
@@ -163,8 +157,8 @@ c = a * (b - 5)
 a = a + 1
 b = b - a
 ```
-:::
 
+:::
 
 ## Un error freqüent a evitar
 
@@ -184,14 +178,13 @@ En canvi, hi ha certes persones que pensen que el valor final de `b` ha de ser 1
 
 La gent que cau en aquest error sol ser gent molt intel·ligent amb un perfecte raonament lògic, però que esperen més de l'ordinador que el que aquesta màquina ximple els ofereix. Les instruccions s'executen una darrera de l'altra, les assignacions només canvien el valor de la part esquerra.
 
-
 ## Intercanvi de dues variables
 
-Considerem ara un petit problema: Tenim dues variables, diguem-ne `a` i `b` que emmagatzemen, cadascuna, un valor. Com podem fer perquè els valors d'`a` i de `b` s'intercanviïn? Per exemple, si `a` val 12 i `b` val 14, volem realitzar algunes instruccions que condueixen a que `a` valgui 14 i `b` valgui 12. En general, si `a` val un cert valor *A* i `b` val un cert valor *B*, com fer que `a` valgui *B* i `b` valgui *A*?
+Considerem ara un petit problema: Tenim dues variables, diguem-ne `a` i `b` que emmagatzemen, cadascuna, un valor. Com podem fer perquè els valors d'`a` i de `b` s'intercanviïn? Per exemple, si `a` val 12 i `b` val 14, volem realitzar algunes instruccions que condueixen a que `a` valgui 14 i `b` valgui 12. En general, si `a` val un cert valor _A_ i `b` val un cert valor _B_, com fer que `a` valgui _B_ i `b` valgui _A_?
 
 Penseu-ho una mica abans de continuar. 🧠
 
-Segurament, la primera aproximació és dir alguna com la següent: *Com que `a` ha de valer `b`, faré que `a` prengui `b` per valor. I com que  `b` ha de valer `a`, faré que `b` prengui `a` per valor.* Això condueix en aquest fragment:
+Segurament, la primera aproximació és dir alguna com la següent: _Com que `a` ha de valer `b`, faré que `a` prengui `b` per valor. I com que `b` ha de valer `a`, faré que `b` prengui `a` per valor._ Això condueix en aquest fragment:
 
 ```python
 a = b
@@ -213,11 +206,7 @@ b = c
 Aquesta és doncs la tècnica de la variable auxiliar per intercanviar el valor de dues variables. Fixeu-vos que el programa és anàleg als passos que feu a la vida real quan heu d'intercanviar de lloc dos objectes pesats: primer moveu e primer en algun lloc temporal, després poseu el segon al lloc del primer i, finalment, moveu el primer (que era a al lloc temporal) al lloc del segon.
 
 :::info Exercici
-Escriviu un fragment de codi que roti el valor de tres variables: Si al principi `a` val *A*, `b` val *B* i `c` val *C*, com fer que al final `a` valgui *C*, `b` valgui *A* i `c` valgui *B*?
-:::
-
-:::info Exercici difícil
-Escriviu un fragment de codi per intercanviar el valor de dues variables numèriques sense fer servir cap variable auxiliar. Pista: useu sumes i restes.
+Escriviu un fragment de codi que roti el valor de tres variables: Si al principi `a` val _A_, `b` val _B_ i `c` val _C_, com fer que al final `a` valgui _C_, `b` valgui _A_ i `c` valgui _B_?
 :::
 
 ## Expressions
@@ -246,7 +235,6 @@ escriuria ~~La posició és 19.6~~. La instrucció `print` avalua cadascun dels 
 
 Es pot escriure una expressió en qualsevol lloc on Python esperi un valor. Ara bé, recordeu que en una assignació, la part esquerra ha de ser una variable. En Python no té sentit escriure alguna cosa com
 
-
 ```python
 i + 1 = 5        ❌
 ```
@@ -255,17 +243,16 @@ perquè la part esquerra és una expressió que no representa cap calaixet de la
 
 :::info Exercici
 
-Suposant que `a = 3`, `b = 2` i `c = 4`, avalueu les expression següents:
+Suposant que `a = 3`, `b = 2` i `c = 4`, avalueu les expressions següents:
 
-- `b - a`
-- `a + 2`
-- `(a + 2) * b`
-- `((a + 2 * b) // c) ** 2`
-- `(3*a + 2*b) % c`
-- `a**b * -c`
+-   `b - a`
+-   `a + 2`
+-   `(a + 2) * b`
+-   `((a + 2 * b) // c) ** 2`
+-   `(3*a + 2*b) % c`
+-   `a**b * -c`
 
 En Python, com en matemàtiques, l'exponenciació té més prioritat que el producte, la divisió i el residu, que tenen més prioritat que la suma i la resta. Els càlculs es porten a terme d'esquerra a dreta, respectant els parèntesis.
 :::
-
 
 <Autors autors="jpetit"/>
