@@ -2,27 +2,27 @@
 
 <img src='./diccionaris.png' style='height: 8em; float: right; margin: 0 0 1em 1em;'/>
 
-Aquesta lliçó introdueix primer un altre tipus de dades: els diccionaris. Podem pensar en els diccionaris com una generalització de les llistes, on es pot indexar per qualsevol valor de (quasi) qualsevol tipus, sense que els índexs hagin de ser enters consecutius.  A continuació, aquesta lliçó presenta dos exemples d'ús de diccionaris: En el primer exemple, es vol comptar quantes vegades apareix cada paraula d'un text. Al segon exemple es mostra com construir i consultar un índex per cercar eficientment els documents que conten una certa paraula.
+Aquesta lliçó introdueix un altre tipus de dades: els diccionaris. Podem pensar en els diccionaris com una generalització de les llistes, on es pot indexar per qualsevol valor de (quasi) qualsevol tipus, sense que els índexs hagin de ser enters consecutius.
 
+A continuació, aquesta lliçó també presenta dos exemples d'ús de diccionaris: En el primer exemple, es vol comptar quantes vegades apareix cada paraula d'un text. Al segon exemple es mostra com construir i consultar un índex per cercar eficientment els documents que conten una certa paraula.
 
 ## Introducció
 
 Un **diccionari** (o **mapa**) és un tipus abstracte de dades que permet emmagatzemar una col·lecció d'elements. Cada element té dues parts:
 
-- una **clau** i
-- un **valor**.
+-   una **clau** i
+-   un **valor**.
 
 Les operacions estan guiades per les claus, les quals han de ser úniques a cada diccionari. Les operacions principals són els següents:
 
-- inserir un element amb clau `k` i un valor `v`
-(quan s'insereix un element amb una clau que ja era al diccionari, el
-valor anterior es perd i és substituït pel nou),
-- esborrar un element juntament amb la seva clau (no passa res si `k` no era al diccionari),
-- trobar un element amb clau `k` (o saber que no hi és), i
-- consultar el nombre d'elements al diccionari.
+-   inserir un element amb clau `k` i un valor `v`
+    (quan s'insereix un element amb una clau que ja era al diccionari, el
+    valor anterior es perd i és substituït pel nou),
+-   esborrar un element juntament amb la seva clau (no passa res si `k` no era al diccionari),
+-   trobar un element amb clau `k` (o saber que no hi és), i
+-   consultar el nombre d'elements al diccionari.
 
 Hi ha altres operacions, com les que permeten recórrer tots els elements d'un diccionari o que permeten utilitzar un diccionari com si fos un vector generalitzat.
-
 
 ## Aplicacions
 
@@ -31,7 +31,6 @@ Els diccionaris són un tipus de dades recurrent en moltes aplicacions.
 Per exemple, en una aplicació de traducció de textos del català a l'anglès, en algun lloc caldrà emmagatzemar que la traducció de `'casa'` és `'house'`, que la de `'gos'` és `'dog'`, que la de `'gat'` és `'cat'` i així successivament. En aquest cas les paraules en català són les claus i les paraules en anglès són els seus valors associats. En aquesta aplicació serà capital que l'operació de consulta (donada una paraula en català, saber quina és la traducció anglesa) sigui eficient.
 
 Un aplicació de contactes per a mòbils també seria un exemple de diccionari. En aquest cas, les claus serien noms de persones i els valors les seves dades com ara telèfons, adreces físiques i electròniques i data d'aniversari, potser aplegades en una estructura.
-
 
 ## Literals
 
@@ -48,7 +47,6 @@ catala_angles
 
 El diccionari buit, s'escriu `{}` o `dict()`.
 
-
 ## Funcions predefinides
 
 Igual que per les llistes i els conjunts, Python ofereix algunes funcions predefinides sobre diccionaris. Per exemple, la funció `len`, aplicada a un conjunt, en retorna el seu nombre d'elements (és a dir, el nombre de parelles clau-valor):
@@ -62,7 +60,6 @@ Igual que per les llistes i els conjunts, Python ofereix algunes funcions predef
 ```
 
 Les funcions `min`, `max` i `sum` aplicades sobre un diccionari en retornen, respectivament, el mínim, màxim i suma de les seves claus. No es fan servir gaire.
-
 
 ## Manipulació de diccionaris
 
@@ -78,7 +75,7 @@ False
 False
 ```
 
-Els diccionaris es poden indexar amb `[]` per tal de consultar i modificar els valors associats a claus. 
+Els diccionaris es poden indexar amb `[]` per tal de consultar i modificar els valors associats a claus.
 
 Una assignació `d[k] = v` permet associar el valor `v` a la clau `k` del diccionari `d`. Si `k` ja era en `d`, l'antic valor associat es perd i és substituït per `v`. Si `k` no era al diccionari, la clau `k` és inserida al diccionari, amb valor `v`:
 
@@ -147,7 +144,6 @@ Si es volen convertir aquests resultats en llistes, se'ls ha d'aplicar una conve
 
 La implementació interna de Python està dissenyada perquè totes aquestes operacions siguin molt eficients.
 
-
 ## Recórrer tots els elements d'un diccionari
 
 Sovint, es vol recórrer tots els elements d'un diccionari, realitzant alguna tasca amb cadascun d'aquests elements. La manera més habitual de fer-ho és amb un bucle `for` i els mètodes `keys`, `values` o `items`. Per exemple:
@@ -172,10 +168,9 @@ quatre
 
 Fixeu-vos com es desempaqueten les tuples en dues variables en el cas de `items`.
 
-L'ordre en què es recorren els elements és l'ordre en el qual s'han inserit els elements (a partir de Python 3.6). Això es deu a la tècnica que utilitza Python internament per emmagatzemar els conjunts eficientment. Per fer programes portables, jo no comptaria massa en aquesta característica. 
+L'ordre en què es recorren els elements és l'ordre en el qual s'han inserit els elements (a partir de Python 3.6). Això es deu a la tècnica que utilitza Python internament per emmagatzemar els conjunts eficientment. Per fer programes portables, jo no comptaria massa en aquesta característica.
 
 Modificar un diccionari mentre s'està iterant sobre ell sol ser una mala idea. No ho feu.
-
 
 ## El tipus diccionari
 
@@ -202,10 +197,9 @@ d2: dict[int, int] = {}               # cal anotar el tipus que tindrà el dicci
 Un altre lloc on sempre cal anotar el tipus dels diccionaris és quan es defineixen paràmetres:
 
 ```python
-def pacient_amb_febra_mes_alta(dict[str, float]) -> str: 
+def pacient_amb_febra_mes_alta(dict[str, float]) -> str:
     ...
 ```
-
 
 ## Diccionaris per comprensió
 
@@ -218,7 +212,6 @@ Els diccionaris també es poden escriure per comprensió de manera semblant als 
 >>> {k : v.upper() for k, v in nombres.items()}
 {1: 'UN', 2: 'DOS', 3: 'TRES', 4: 'QUATRE'}
 ```
-
 
 ## Els diccionaris són objectes
 
@@ -262,29 +255,25 @@ Però atenció, si les claus són objectes, el diccionaris també en guarden una
 
 Si això us fa dubtar, vegeu-ho amb [Python Tutor](https://pythontutor.com/render.html#code=llista%20%3D%20%5B1,%202,%203%5D%0Adic%20%3D%20%7B'info'%3A%20llista%7D%0Allista.append%289%29&cumulative=false&curInstr=0&heapPrimitives=nevernest&mode=display&origin=opt-frontend.js&py=3&rawInputLstJSON=%5B%5D&textReferences=false).
 
-
 ## Resum de les operacions bàsiques
 
-|operació|significat|
-|---|----|
-|`{}`|crea un diccionari buit.|
-|`{k1:v2, k2:v2, ...}`|crea un diccionari amb elements `k1`:`v1`, `k2`:`v2`, ...|
-|`len(d)`|retorna el nombre de claus del diccionari `d`. |
-|`d[k] = v`| assigna el valor `v` a la clau `k` al diccionari `d`.|
-|`d[k]`| consulta el valor de la clau `k` del diccionari `d` (s'enfada si no hi és).|
-|`d.get(k, x)`|retorna `d[k]` si `k` és a `d` i `x` sinó.|
-|`del d[k]`| esborra la clau `k` i el seu valor del diccionari `d` (no s'enfada si no hi és).|
-|`k in d` o `k not in d`| diu si `k` és o no una clau de `d`.|
-|`d.keys()`|retorna totes les claus de `d`.|
-|`d.values()`|retorna tots els valors de `d`.|
-|`d.items()`|retorna tots els parells claus-valors de `d`.|
-
-
-
+| operació                | significat                                                                       |
+| ----------------------- | -------------------------------------------------------------------------------- |
+| `{}`                    | crea un diccionari buit.                                                         |
+| `{k1:v2, k2:v2, ...}`   | crea un diccionari amb elements `k1`:`v1`, `k2`:`v2`, ...                        |
+| `len(d)`                | retorna el nombre de claus del diccionari `d`.                                   |
+| `d[k] = v`              | assigna el valor `v` a la clau `k` al diccionari `d`.                            |
+| `d[k]`                  | consulta el valor de la clau `k` del diccionari `d` (s'enfada si no hi és).      |
+| `d.get(k, x)`           | retorna `d[k]` si `k` és a `d` i `x` sinó.                                       |
+| `del d[k]`              | esborra la clau `k` i el seu valor del diccionari `d` (no s'enfada si no hi és). |
+| `k in d` o `k not in d` | diu si `k` és o no una clau de `d`.                                              |
+| `d.keys()`              | retorna totes les claus de `d`.                                                  |
+| `d.values()`            | retorna tots els valors de `d`.                                                  |
+| `d.items()`             | retorna tots els parells claus-valors de `d`.                                    |
 
 ## Exemple: Comptar totes les paraules d'un text
 
-Considerem que, donat un text, volem obtenir la llista de totes les seves paraules (en minúscules), juntament amb el seu nombre d'aparicions. 
+Considerem que, donat un text, volem obtenir la llista de totes les seves paraules (en minúscules), juntament amb el seu nombre d'aparicions.
 
 Una bona forma de fer-ho és utilitzant un diccionari. El diccionari tindrà com a claus les paraules del text (en minúscules). I cada paraula tindrà associada com a valor un enter que és el nombre de vegades que aquella paraula ha aparegut en el text. Un diccionari `ocurrencies` com aquest es declara doncs així:
 
@@ -320,9 +309,9 @@ I'm saying nothing
 But I'm saying nothing with feel
 ```
 
-el resultat és 
+el resultat és
 
-```text 
+```text
 i'm 2
 saying 2
 nothing 2
@@ -365,9 +354,7 @@ Així, el resultat és ara:
 2 i'm
 2 nothing
 2 saying
-``` 
-
-
+```
 
 ## Exemple: Indexació de documents
 
@@ -390,7 +377,7 @@ preguntar per `gall` hauria de retornar `mati` i `balco`, no necessàriament en 
 
 Per tal de no haver de llegir tots els documents cada cop que es demana una paraula, construirem un **índex dels documents**: Un índex és una estructura de dades que indica a quin document apareix cada paraula. La idea és semblant als índexs que al final dels llibres diuen a quines pàgines apareix cada terme important; vegeu la figura de la dreta.
 
-En el nostre cas, podem veure que un índex és un diccionari que, donades paraules, retorna conjunts d'identificadors de documents (és a dir, de paraules). Per tant, el nostre índex tindrà aquest tipus: 
+En el nostre cas, podem veure que un índex és un diccionari que, donades paraules, retorna conjunts d'identificadors de documents (és a dir, de paraules). Per tant, el nostre índex tindrà aquest tipus:
 
 ```python
 Document: TypeAlias = str
@@ -448,7 +435,7 @@ Amb l'exemple anterior, l'índex retonat és aquest:
  'que': {'nina'},
  'repica': {'nina'},
  'un': {'nina'}}
- ```
+```
 
 La segona fase consisteix en recuperar tots els identificadors de documents que contenen una paraula donada:
 
@@ -499,7 +486,4 @@ def escriure_documents(index: Index, par: str) -> None:
 
 Apa! D'aquí a fer un Google només queda un petit pas... 😏
 
-
-
-<Autors autors="jpetit"/> 
-
+<Autors autors="jpetit"/>

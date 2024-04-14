@@ -392,6 +392,20 @@ export const index_python = [
         ],
     },
     {
+        text: 'Conjunts i diccionaris',
+        collapsed: true,
+        items: [
+            {
+                text: 'Conjunts',
+                link: '/conjunts-i-diccionaris/conjunts',
+            },
+            {
+                text: 'Diccionaris',
+                link: '/conjunts-i-diccionaris/diccionaris',
+            },
+        ],
+    },
+    {
         text: 'Generació exhaustiva',
         collapsed: true,
         items: [
@@ -414,7 +428,7 @@ export const index_python = [
         ],
     },
     {
-        text: 'Classes i objetes',
+        text: 'Classes i objectes',
         collapsed: true,
         items: [
             {
@@ -446,14 +460,6 @@ export const index_python = [
             {
                 text: 'Cues de prioritat',
                 link: '/estructures-de-dades/cues-de-prioritat',
-            },
-            {
-                text: 'Conjunts',
-                link: '/estructures-de-dades/conjunts',
-            },
-            {
-                text: 'Diccionaris',
-                link: '/estructures-de-dades/diccionaris',
             },
         ],
     },
