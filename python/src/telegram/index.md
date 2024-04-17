@@ -44,15 +44,15 @@ mapes, entre d'altres.
     - Visiteu el [@BotFather](https://telegram.me/botfather).
 
     - Useu la comanda `/newbot` i doneu la informació que us demana
-      (nom complet i nom d'usari del bot, que ha d'acabar amb `bot`).
+      (nom complet i nom d'usuari del bot, que ha d'acabar amb `bot`).
 
     - Deseu en un fitxer `token.txt` el vostre _access token_, que té
       un aspecte com ara `U10201543:AAHdqTcvCH1vGWJxfSeofSAs0K5PALDsaw`.
 
     - Apunteu l'adreça del vostre bot, que té un aspecte com ara
-      ~~https://t.me/Llicons_bot~~.
+      https://t.me/Llicons_bot.
 
-    **Nota:** L'_access token_ no l'heu de compartir, altrament, algú altre podria
+    **Nota:** L'_access token_ no l'heu de compartir mai. Altrament, algú altre podria
     substituir el vostre bot. Aneu amb en compte de no desar-lo
     en un repositori de GitHub, per exemple.
 
@@ -186,9 +186,9 @@ Els missatges de resposta poden ser més rics que un trist missatge de text
 (que pot incloure emojis):
 
 Per enviar missatges formatejats en Markdown, cal usar el mètode `send_message`
-tot indicant `parse_mode=telegram.ParseMode.MARKDOWN`.
+tot indicant `parse_mode = telegram.ParseMode.MARKDOWN`.
 Per enviar missatges formatejats en HTML, cal usar el mètode `send_message`
-tot indicant `parse_mode=telegram.ParseMode.HTML`.
+tot indicant `parse_mode = telegram.ParseMode.HTML`.
 Per enviar missatges amb imatges, cal usar el mètode `send_photo`
 tot indicant la URL de la imatge amb `photo=URL`. Si enlloc
 d'una URL es passa un fitxer local obert amb `open`, s'enviarà aquell fitxer

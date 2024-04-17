@@ -249,6 +249,6 @@ class FormaOmplerta(Forma, Color):
 
 En aquest exemple, la classe `FormaOmplerta` hereta tant de la classe `Forma` com de la classe `Color`. Això significa que una forma omplerta creada amb aquesta classe pot accedir als mètodes de les formes i als mètodes dels colors. Igualment, una `FormaOmplerta` es pot passar com a paràmetre real de qualsevol funció que rebi un paràmetre formal de tipus `Forma` i de qualsevol funció que rebi un paràmetre formal de tipus `Color`.
 
-L'herència múltiple és un tema avançat: Els perills de l'herència múltiple inclouen la complexitat i la dificultat de mantenir el codi, ja que múltiples fonts de comportament podrien col·lisionar o causar conflictes. A més a més, pot donar lloc a una dependència excessiva entre les classes, dificultant les modificacions futures i reduint la flexibilitat del sistema. La jerarquia d'herència múltiple també pot provocar problemes de llegibilitat i comprensió, especialment en projectes grans.
+L'herència múltiple és un tema avançat: Els perills de l'herència múltiple inclouen la complexitat i la dificultat de mantenir el codi, ja que múltiples fonts de comportament podrien col·lisionar o causar conflictes. A més a més, pot donar lloc a una dependència excessiva entre les classes, dificultant ls modificacions futures i reduint la flexibilitat del sistema. La jerarquia d'herència múltiple també pot provocar problemes de llegibilitat i comprensió, especialment en projectes grans.
 
 <Autors autors="jpetit"/>
