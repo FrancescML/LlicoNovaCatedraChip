@@ -64,7 +64,7 @@ En definitiva, per fer que una funció retorni múltiples valors, cal que retorn
 
 ## Descomposició horària
 
-Recordeu que una dels primers programes que vam fer va ser el de la [descomposició horària](/python/inici/descomposicio-horaria.html)? El problema consistia en convertir una quantitat (positiva) de segons `n`, en hores, minuts i segons.
+Recordeu que una dels primers programes que vam fer va ser el de la [descomposició horària](/inici/descomposicio-horaria.html)? El problema consistia en convertir una quantitat (positiva) de segons `n`, en hores, minuts i segons.
 
 Ara podem encapsular aquest càlcul en una funció que, donat el nombre de segons, retorna el nombre d'hores, minuts i segons equivalents:
 
@@ -89,7 +89,7 @@ hores, minuts, segons = descomposio_horaria(4376)
 
 ## Sumar un segon a una hora
 
-Recordeu també que una dels primers programes que vam fer va ser el de [sumar un segon en una hora](/python/condicionals/sumar-un-segon.html)? Aquesta tasca ara també la podem convertir en una peça de codi independent i reusable a través d'una funció:
+Recordeu també que una dels primers programes que vam fer va ser el de [sumar un segon en una hora](/condicionals/sumar-un-segon.html)? Aquesta tasca ara també la podem convertir en una peça de codi independent i reusable a través d'una funció:
 
 ```python
 def sumar_un_segon(h: int, m: int, s: int) -> tuple[int, int, int]:

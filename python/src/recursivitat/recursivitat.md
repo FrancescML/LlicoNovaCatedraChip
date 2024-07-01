@@ -8,7 +8,7 @@ Aquesta lliçó introdueix la tècnica de la recursivitat, on una funció o una 
 
 ## Factorial recursiu
 
-[Recordeu](/python/iteracions/factorial.html) que el factorial d'un nombre $n$, escrit $n!$, representa el nombre de permutacions d'$n$ objectes i és el producte dels primers $n$ naturals començant des d'1. Així,
+[Recordeu](/iteracions/factorial.html) que el factorial d'un nombre $n$, escrit $n!$, representa el nombre de permutacions d'$n$ objectes i és el producte dels primers $n$ naturals començant des d'1. Així,
 
 $$n! = \underbrace{1 · 2 ·\ldots· n}_{\text{$n$ cops}}.$$
 
@@ -168,7 +168,7 @@ De fet, la escriptura condicional de `c` es pot fer  abans de la primera crida r
 
 ## Màxim comú divisor recursiu
 
-[Recordeu](/python/iteracions/maxim-comu-divisor.html) que, donats dos nombres naturals $x$ i $y$, el seu màxim comú divisor $\text{mcd}(x, y)$ és el nombre més gran que divideix exactament tant a $x$ com a $y$. [Recordeu també](/python/iteracions/maxim-comu-divisor.html) que ja havíem estudiat com calcular eficientment el màxim comú divisor de dos nombres amb l'algorisme d'Euclides i com com encapsular-lo dins d'una funció:
+[Recordeu](/iteracions/maxim-comu-divisor.html) que, donats dos nombres naturals $x$ i $y$, el seu màxim comú divisor $\text{mcd}(x, y)$ és el nombre més gran que divideix exactament tant a $x$ com a $y$. [Recordeu també](/iteracions/maxim-comu-divisor.html) que ja havíem estudiat com calcular eficientment el màxim comú divisor de dos nombres amb l'algorisme d'Euclides i com com encapsular-lo dins d'una funció:
 
 ```python
 def mcd_iteratiu(x: int, y: int) -> int:

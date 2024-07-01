@@ -109,7 +109,7 @@ Fixeu-vos que la darrera branca aplica el mòdul després de cada producte. `(y 
 
 Considerem ara el problema de calcular $A^n$, on $n$ és un natural i $A$ és una matriu quadrada.
 
-En una [lliçó anterior](/python/matrius/mates.html) ja vam desenvolupar una funció per multiplicar matrius quadrades:
+En una [lliçó anterior](/matrius/mates.html) ja vam desenvolupar una funció per multiplicar matrius quadrades:
 
 ```python
 from typing import TypeAlias

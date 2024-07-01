@@ -7,7 +7,7 @@ Aquesta lliçó introdueix les accions, un nou tipus de subprograma, semblant a 
 
 ## Dibuix de molts quadrats rotats amb accions
 
-En [una lliçó prèvia](/python/iteracions/poligons.html) hem vist com dibuixar una agradable figura geomètrica amb molts quadrats rotats. La solució que vam escriure era aquesta:
+En [una lliçó prèvia](/iteracions/poligons.html) hem vist com dibuixar una agradable figura geomètrica amb molts quadrats rotats. La solució que vam escriure era aquesta:
 
 ```python
 import turtle

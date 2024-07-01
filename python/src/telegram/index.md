@@ -510,7 +510,7 @@ def where(update, context):
 Ara podem ampliar la funció `where` perquè torni com a resposta un mapa
 centrat a la posició de l'usuari. Per a fer-ho, usarem el mòdul
 [staticmap](https://github.com/komoot/staticmap)
-descrit a [Fitxers i formats en Python](http://localhost:8080/python/fitxers-i-formats.html):
+descrit a TODO:
 
 ````python
 def where(update, context):

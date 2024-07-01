@@ -150,8 +150,7 @@ A continuació comentem les novetats que mostra aquest programa:
     variable `col`, la qual contindrà el nom del color que s'ha d'usar posteriorment.
 
 -   La segona instrucció llegeix una línia, n'obté l'enter que conté cridant a
-    `int()`, i el desa a la variable `n`. També es podria utilitzar [el mòdul
-    <tt>jutge</tt>](/python/lectura.html) per facilitar la lectura de dades.
+    `int()`, i el desa a la variable `n`. També es podria utilitzar el mòdul `yogi`.
 
 -   Fixeu-vos que, ara, les dimensions de la imatge `img` són sempre `400` punts d'amplada,
     però són `4*n` punts d'alçada.

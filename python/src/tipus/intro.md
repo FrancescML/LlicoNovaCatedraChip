@@ -59,10 +59,10 @@ L'objectiu de les regles del sistema de tipus és disminuir la possibilitat d'er
 
 A continuació presentarem quatre tipus bàsics de Python:
 
--   [El tipus enter](/python/tipus/enters) (`int`)
--   [El tipus real](/python/tipus/reals) (`float`)
--   [El tipus text](/python/tipus/texts) (`str`)
--   [El tipus booleà](/python/tipus/booleans) (`bool`)
+-   [El tipus enter](/tipus/enters) (`int`)
+-   [El tipus real](/tipus/reals) (`float`)
+-   [El tipus text](/tipus/texts) (`str`)
+-   [El tipus booleà](/tipus/booleans) (`bool`)
 
 Hi ha altres tipus bàsics i també tipus complexos, que veurem més endavant. De moment, en aquest curs hem estat treballant principalment amb els enters, hem fet ús dels reals i dels textos passant-hi de puntetes, i hem usat sense adonar-nos-en els booleans.
 

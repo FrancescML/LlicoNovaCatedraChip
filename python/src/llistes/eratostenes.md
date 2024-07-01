@@ -7,7 +7,7 @@ En aquesta lliçó es considera de nou el problema de la primalitat. Aquest cop,
 
 ## Descripció del problema i anàlisi d'una primera solució
 
-[Anteriorment](/python/funcions/exemples-funcions.html) hem desenvolupat una funció que, donat un natural `n`, indica si `n` és o no un nombre primer. La idea era provar de trobar algun nombre entre 2 i `√n` que dividís `n`. Si s'en troba algun, és que el nombre és compost, altrament és primer. El codi era aquest:
+[Anteriorment](/funcions/exemples-funcions.html) hem desenvolupat una funció que, donat un natural `n`, indica si `n` és o no un nombre primer. La idea era provar de trobar algun nombre entre 2 i `√n` que dividís `n`. Si s'en troba algun, és que el nombre és compost, altrament és primer. El codi era aquest:
 
 ```python
 def es_primer(n: int) -> bool:

@@ -8,7 +8,7 @@ En aquesta lliçó es presenten diversos exemples de funcions. Els exemples incl
 
 ## Funció per al factorial
 
-Recordeu ([aquí](/python/iteracions/factorial.html)) que ja hem escrit un programa complet que llegeix un natural i n'escriu el seu factorial. Seria més convenient que el càlcul del factorial es faci dins d'una funció. La capçalera podria ser la següent:
+Recordeu ([aquí](/iteracions/factorial.html)) que ja hem escrit un programa complet que llegeix un natural i n'escriu el seu factorial. Seria més convenient que el càlcul del factorial es faci dins d'una funció. La capçalera podria ser la següent:
 
 ```python
 def factorial(n: int) -> int:
@@ -134,7 +134,7 @@ Evidentment cap joc de proves finit ens assegurarà que la implementació és ex
 
 ## Funció per al màxim comú divisor
 
-Recordeu que [l'algorisme d'Euclides](/python/iteracions/maxim-comu-divisor.html) és una forma molt eficient de trobar el màxim comú divisor (mcd) de dos naturals. Com que, quan es programa, no és infreqüent haver de calcular el mcd, resulta convenient tenir-ne el codi encapsulat dins d'una funció. Aquesta, anomenem-la `mcd`, hauria de rebre com a paràmetres els dos nombres enters en qüestió, i hauria de retornar un enter (el seu mcd). Per tant, podem definir la seva capçalera de la forma següent:
+Recordeu que [l'algorisme d'Euclides](/iteracions/maxim-comu-divisor.html) és una forma molt eficient de trobar el màxim comú divisor (mcd) de dos naturals. Com que, quan es programa, no és infreqüent haver de calcular el mcd, resulta convenient tenir-ne el codi encapsulat dins d'una funció. Aquesta, anomenem-la `mcd`, hauria de rebre com a paràmetres els dos nombres enters en qüestió, i hauria de retornar un enter (el seu mcd). Per tant, podem definir la seva capçalera de la forma següent:
 
 ```python
 def mcd(x: int, y: int) -> int: 

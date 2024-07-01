@@ -209,8 +209,7 @@ TODO: Actualiyzar a yogi
 
 Si heu de treballar amb fitxers de text però no us convé llegir per línies
 sinó per elements com ara paraules, enters o reals,
-potser la forma més fàcil és utilitzar el mòdul `easyinput` comentat a [Lectura de
-dades en Python](/python/lectura.html). La funció `read` de `easyinput` admet com a
+potser la forma més fàcil és utilitzar el mòdul `easyinput`. La funció `read` de `easyinput` admet com a
 paràmetre el fitxer del qual es llegeixen les dades.
 
 Per exemple, aquest programa suma tots els enters del fitxer `dades.txt`:
@@ -655,7 +654,7 @@ image.save('Markets_CiutatVella.png')
 
 ![Markets_CiutatVella.png](./Markets_CiutatVella.png 'Mercats de Ciutat Vella')
 
-Si voleu el programa sencer, us el podeu baixar d'[aquí](/programes/markets.py).
+Si voleu el programa sencer, us el podeu baixar d'aquí: TODO:.
 
 Amb els DataFrames es poden fer moltes coses. Recomanem llegir algun dels tutorials que hi ha a la xarxa, com per exemple [aquest](https://www.tutorialspoint.com/python_pandas/python_pandas_dataframe.htm).
 
