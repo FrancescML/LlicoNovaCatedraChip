@@ -11,7 +11,7 @@
         "vitepress-plugin-tabs": "^0.5.0"
     },
     "scripts": {
-        "dev": "vitepress dev --port 4003 --host",
+        "dev": "vitepress dev --port 4002 --host",
         "build": "vitepress build",
         "preview": "vitepress preview"
     }

@@ -6,7 +6,7 @@
             <ul>
                 <div v-for="subitem of item.items">
                     <li>
-                        <a :href="'/python' + subitem.link">
+                        <a :href="'/cpp' + subitem.link">
                             <div v-html="subitem.text"></div>
                         </a>
                     </li>

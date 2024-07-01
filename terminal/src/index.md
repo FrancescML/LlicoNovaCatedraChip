@@ -12,4 +12,6 @@ hero:
           link: /inici/
 ---
 
+<h1>Taula de continguts</h1>
+
 <MyIndex/>

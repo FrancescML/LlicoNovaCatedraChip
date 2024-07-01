@@ -1,5 +1,5 @@
 import { defineConfig } from 'vitepress'
-import { index_python } from './python'
+import { index } from './index'
 import { tabsMarkdownPlugin } from 'vitepress-plugin-tabs'
 
 // https://vitepress.dev/reference/site-config
@@ -32,12 +32,16 @@ export default defineConfig({
                         link: 'https://llicons.potipoti.org',
                     },
                     {
-                        text: 'Lliçons Python',
+                        text: 'Python',
                         link: '/',
                     },
                     {
-                        text: 'Lliçons C++',
+                        text: 'C++',
                         link: 'https://llicons.potipoti.org/cpp',
+                    },
+                    {
+                        text: 'Terminal',
+                        link: 'https://llicons.potipoti.org/terminal',
                     },
                 ],
             },
@@ -54,7 +58,7 @@ export default defineConfig({
         },
 
         sidebar: {
-            '/': index_python,
+            '/': index,
         },
 
         socialLinks: [

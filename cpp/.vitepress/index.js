@@ -1,11 +1,11 @@
-export const index_cpp = [
+export const index = [
     {
         text: 'Introducció i instruccions fonamentals',
         collapsed: true,
         items: [
             {
                 text: 'Comencem!',
-                link: '/intro/comencem.html',
+                link: '/comencem.html',
             },
             {
                 text: 'Aplicació: Descomposició horària',

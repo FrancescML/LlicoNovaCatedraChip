@@ -1,8 +1,12 @@
-export const index_python = [
+export const index = [
     {
         text: 'Inici',
         collapsed: true,
         items: [
+            {
+                text: 'Introducció',
+                link: '/inici/',
+            },
             {
                 text: 'Programes que saluden',
                 link: '/inici/programes-que-saluden',

@@ -26,12 +26,16 @@ export default defineConfig({
                         link: '/',
                     },
                     {
-                        text: 'Lliçons Python',
+                        text: 'Python',
                         link: 'https://llicons.potipoti.org/python',
                     },
                     {
-                        text: 'Lliçons C++',
+                        text: 'C++',
                         link: 'https://llicons.potipoti.org/cpp',
+                    },
+                    {
+                        text: 'Terminal',
+                        link: 'https://llicons.potipoti.org/terminal',
                     },
                 ],
             },

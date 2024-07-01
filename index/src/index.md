@@ -8,13 +8,13 @@ hero:
     tagline: ''
     actions:
         - theme: brand
-          text: Lliçons Python
+          text: Python
           link: https://llicons.potipoti.org/python
         - theme: brand
-          text: Lliçons C++
+          text: C++
           link: https://llicons.potipoti.org/cpp
         - theme: brand
-          text: Lliçons Terminal
+          text: Terminal
           link: https://llicons.potipoti.org/terminal
 ---
 
@@ -106,3 +106,12 @@ const members = [
     text-align: center;
 }
 </style>
+<br/>
+
+# Informació
+
+L’objectiu de **Lliçons** és posar a l’abast de tothom diverses lliçons, tutorials, exemples i referències sobre diversos temes de programació i algorísmia. Aquests documents han estat creats per professors de la UPC en col·laboració amb altres experts informàtics. Encara que alguns d’aquests materials han estat escrits per a un o més cursos de diverses facultats de la UPC, els autors considerem que tots són d’interès general.
+
+Cadascun dels punts següents consisteix en una pàgina web amb text, animacions, programes, exercicis, … que explica un tema concret, de manera força autocontinguda.
+
+Tot aquest recull es troba en constant creixement i modificació, i avança a un ritme molt variable.
