@@ -13,6 +13,9 @@ hero:
         - theme: brand
           text: Lliçons C++
           link: https://llicons.potipoti.org/cpp
+        - theme: brand
+          text: Lliçons Terminal
+          link: https://llicons.potipoti.org/terminal
 ---
 
 <img src='./logos/lliçons.png' style='max-width: 12em; margin-bottom: 2em;'/>
