@@ -1,4 +1,3 @@
-
 # Vectors
 
 <img src='./vectors.png' style='height: 8em; float: right; margin: 0 0 1em 2em;'/>
@@ -7,8 +6,6 @@ Aquesta lliçó introdueix una de les estructures de dades més habituals i úti
 en el món de la programació: els vectors. Els vectors permeten emmagatzemar en
 una sola variable una col·leció de moltes dades del mateix tipus i accedir a
 qualsevol d'elles directament a través de la seva posició.
-
-
 
 ## Introducció
 
@@ -20,8 +17,8 @@ l'element en el vector, començant per 0.
 
 Així, en un vector d'`n` elements, el primer element tindrà índex 0, el segon
 element tindrà índex 1, ... i el darrer element tindrà índex `n - 1`. A la
-figura següent podeu veure un vector `v = {3, 5, -1, 7, 2}`,  juntament amb
-l'índex que identifica cada element. Com  que el vector `v` té cinc posicions,
+figura següent podeu veure un vector `v = {3, 5, -1, 7, 2}`, juntament amb
+l'índex que identifica cada element. Com que el vector `v` té cinc posicions,
 l'últim element té índex 4. L'element a la posició `i` del vector es denota
 per `v[i]`. Per exemple, `v[3]` és `7`.
 
@@ -41,8 +38,6 @@ un pastís.
 <img src='./prestatgeria.png' style='height: 15em;'/>
 </center>
 
-
-
 ## Inclusió de la llibreria de vectors
 
 Per treballar amb vectors, cal incloure la llibreria `vector`, igual que habíem
@@ -56,7 +51,6 @@ using namespace std;
 
 ...
 ```
-
 
 ## El tipus vector
 
@@ -100,9 +94,6 @@ v1 = v2;            // 🆗 v1 i v2 són del mateix tipus
 v1 = v3;            // ❌ v1 i v3 no són del mateix tipus
 ```
 
-
-
-
 ## Creació de vectors
 
 Tal com s'han declarat anteriorment, els vectors que hem creat són buits (és a dir, no conten
@@ -110,12 +101,14 @@ cap element). En general, ens pot interessar triar la talla inicial del vector
 o inclús indicar quins elements contindrà. Segons el que busquem, podem fer servir
 una de les quatre maneres següents d'inicialitzar un vector:
 
-- Per crear un vector buit, no cal especificar res. En veurem la utilitat
-quan veiem com afegir nous elements a un vector.
+-   Per crear un vector buit, no cal especificar res. En veurem la utilitat
+    quan veiem com afegir nous elements a un vector.
 
-  ```c++
-  vector<double> buit;                              // buit = {}
-```
+    ```c++
+    vector<double> buit;                              // buit = {}
+    ```
+
+````
 
 - Podem triar el nombre d'elements del vector posant-lo entre parèntesis
 després de la declaració. Per defecte, tots els elements amb que
@@ -123,15 +116,17 @@ s'omplirà el vector seràn el zero del tipus de dada que conté:
 
   ```c++
   vector<int> zeros(5);                             // zeros = {0, 0, 0, 0, 0}
-```
+````
 
-- Si volem que el vector contingui un nombre determinat d'elements i que tots aquests
-siguin iguals a un cert element donat, escriurem entre parèntesis
-la talla juntament amb l'element, separats per una coma:
+-   Si volem que el vector contingui un nombre determinat d'elements i que tots aquests
+    siguin iguals a un cert element donat, escriurem entre parèntesis
+    la talla juntament amb l'element, separats per una coma:
 
-  ```c++
-  vector<double> mitjos(3, 0.5);                    // mitjos = {0.5, 0.5, 0.5}
-```
+    ```c++
+    vector<double> mitjos(3, 0.5);                    // mitjos = {0.5, 0.5, 0.5}
+    ```
+
+````
 
 - Si volem especificar tots els elements del vector, ho podem fer
 entre claus i separats per comes. Llavors ja no cal indicar el nombre
@@ -139,7 +134,7 @@ d'elements:
 
   ```c++
   vector<char> vocals = {'a', 'e', 'i', 'o', 'u'};  // vocals = {'a', 'e', 'i', 'o', 'u'}
-```
+````
 
 A més, també podem inicialitzar un vector tot copiant el seu valor
 d'un altre vector del mateix tipus:
@@ -149,15 +144,12 @@ vector<char> v1 = {'a', 'e', 'i', 'o', 'u'};    // v1 = {'a', 'e', 'i', 'o', 'u'
 vector<char> v2 = v1;                           // v2 = {'a', 'e', 'i', 'o', 'u'}
 ```
 
-
-
 ## Operacions bàsiques
 
 Hi ha diverses operacions bàsiques sobre vectors, com ara accedir a un element
 donat el seu índex (o la seva posició, són termes sinònims), recórrer tots els
 elements del vector, afegir i treure elements al final del vector, o saber
 quants elements té un vector donat (quina és la seva talla). Aquí veurem com.
-
 
 ### Accedir a un element
 
@@ -202,11 +194,10 @@ cout << noms[10] << endl;           // 💥 la posició 10 no existeix
 if (noms[4] == "Carme") {...};      // 💥 la posició  4 no existeix
 ```
 
-
 ### Recórrer tots els elements d'un vector
 
-Sovint, es vol recórrer tots els elements del vector,  des del primer fins al
-darrer, realitzant alguna tasca amb cadascun  d'aquests elements. Per exemple,
+Sovint, es vol recórrer tots els elements del vector, des del primer fins al
+darrer, realitzant alguna tasca amb cadascun d'aquests elements. Per exemple,
 per escriure cada temperatura d'un vector que conté una llista de temperatures
 es podria fer:
 
@@ -263,7 +254,6 @@ for (int& nombre : nombres) {       // 👀 referència (&)
 // nombres = {6, 10, -4, 8} 😃
 ```
 
-
 Una alternativa més flexible per recórrer tots els elements d'un vector
 és utilitzar bucles com els que havíem
 fet servir fins ara per enumerar tots els índexs del vector.
@@ -282,7 +272,6 @@ En aquest cas, el bucle itera sobre els valors dels índexos del vector, no
 directament sobre els seus selements. Noteu que l'índex `i` ha de recórrer els
 valors del 0 fins al nombre d'elements al vector menys 1, d'aquí el `< 4` i no
 `<= 4`.
-
 
 ### Afegir i treure elements
 
@@ -305,8 +294,6 @@ v.pop_back();               // 💥 el vector és buit
 
 Com es veu a la darrera instrucció, es un error de programació treure el darrer
 element d'un vector buit (perquè no hi ha res per treure!).
-
-
 
 ### Consultar la talla del vector
 
@@ -335,7 +322,6 @@ algun compilador es queixi. Per resoldre-ho, convertirem el valor retornat per
 `int(v.size())` al cridar-lo, o bé l'assignarem abans a una variable
 entera: `int n = v.size()`.
 
-
 ## Relació entre `vector` i `string`
 
 A efectes pràctics, el tipus `string` no és més que un vector de caràcters (és a
@@ -349,7 +335,6 @@ treure elements o consultar la talla). No obstant el tipus `string` és més
 còmode d'utilitzar en algunes situacions ja que es pot llegir i escriure
 directament sense la necessitat de fer servir bucles i té més operacions
 especialitzades.
-
 
 ## Vectors com a paràmetres de subprogrames
 
@@ -368,11 +353,12 @@ void dobla_copia(vector<int> v)     // 👀 còpia
     }
 }
 ```
+
 estem passant a l'acció `dobla_copia` una còpia del vector `v`, de manera que, tot i que
 aquesta còpia sí que està passada per referència al bucle `for`, els elements que
 estem doblant són els d'aquesta còpia (si al bucle estigués passat també per còpia,
 ja seria un desastre enorme, perquè estariem modificant còpies dels elements de la
-còpia del vector `v`).  La solució és passar el vector `v` per referència a l'acció, de
+còpia del vector `v`). La solució és passar el vector `v` per referència a l'acció, de
 manera que treballem directament sobre aquest. Així, faríem
 
 ```c++
@@ -385,7 +371,6 @@ void dobla_referencia(vector<int>& v)    // 👀 referència (&)
 ```
 
 El resultat d'aplicar cadascuna d'aquestes accions es pot veure a l'exemple següent:
-
 
 ```c++
 int main() {
@@ -419,7 +404,4 @@ int maxim_rapid(const vector<int>& v) { ... }
 
 A la propera lliçó veurem com implementar aquesta funció i moltes altres.
 
-
-
-<? author("rafah jpetit") ?>
-
+<Autors autors="rafah jpetit"/>

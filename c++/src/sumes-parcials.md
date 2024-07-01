@@ -5,9 +5,8 @@
 En aquesta lliçó veurem diferents problemes que involucren trobar la suma d'un
 nombre consecutiu d'elements d'un vector, i discutirem diferents tècniques per
 resoldre'ls, tenint en compte la seva complexitat algorísmica, és a dir, el
-nombre aproximat de passos  necessaris per a dur a terme l'algorisme en funció
+nombre aproximat de passos necessaris per a dur a terme l'algorisme en funció
 del nombre de dades a tractar.
-
 
 ## Suma dels elements d'un subvector donades la primera i l'última posició
 
@@ -18,7 +17,7 @@ ja que podem simplement recorrer els elements de `v` entre `a` i `b` i
 anar acumulant la seva suma. Així, les següents línies de codi
 resoldrien el problema:
 
-```c++
+````c++
 int sum = 0;
 for (int i = a; i <= b; ++i) {
 	sum += v[i];
@@ -49,7 +48,7 @@ while (cin >> a >> b) {
 	cout << "La suma del elements entre " << a;
 	cout << " i " << b << " es " << sum << "." << endl;
 }
-```
+````
 
 Si analitzem la complexitat d'aquest bucle veurem que també és
 proporcional al nombre de parelles `a` i `b` que entrem al programa,
@@ -64,8 +63,10 @@ hem fet, ara per cada parella `a`, `b`, podem trobar la suma parcial
 simplement restant el contingut de la posició `b` i la posició `a` del
 vector `s`, ja que per construcció:
 
-$$ s[b] - s[a] = (v[0] + \cdots + v[b]) - (v[0] + \cdots + v[a]) =
-v[a] + \cdots + v[b] $$
+$$
+s[b] - s[a] = (v[0] + \cdots + v[b]) - (v[0] + \cdots + v[a]) =
+v[a] + \cdots + v[b]
+$$
 
 Així doncs, el següent codi és equivalent al que hem presentat abans
 però molt més eficient quan el nombre de parelles `a` i `b` és gran:
@@ -209,8 +210,4 @@ for (int b = 1; b < n; ++b) {
 }
 ```
 
-
-
-
-<? author("rafah") ?>
-
+<Autors autors="rafah"/>

@@ -1,4 +1,3 @@
-
 # Estructura i operacions per a un rellotge
 
 <img src='./rellotge-digital.png' style='height: 8em; float: right; margin: 0 0 1em 2em;'/>
@@ -6,7 +5,6 @@
 Més rellotges! Aquesta lliçó mostra com utilitzar una estructura per reunir en
 una sola variable els tres components hora, minuts, segons de l'hora del dia
 d'un rellotge.
-
 
 ## Definició del tipus
 
@@ -31,7 +29,6 @@ Fixeu-vos que també haguéssim pogut definir una `Hora` com un vector
 amb tres enters, però haver-ho fet amb una estructura ho fa molt més
 segur i explícit, ja que no hi haurà mai errors amb les posicions
 ni dubtes sobre quin valor hi ha a cada posició.
-
 
 ## Operacions
 
@@ -108,7 +105,6 @@ modificar l'original. Al final, retornem l'hora incrementada.
 Així, hem vist com, segons l'ús que en fem, és millor passar una `Hora` per
 valor, per referència o per referència constant.
 
-
 ## Programa principal
 
 Per acabar, fem un programa que simuli el rellotge, escrivint l'hora
@@ -136,6 +132,4 @@ Normalment no volem programes que mai acabin, però, en aquest cas... jo no
 voldria que el meu rellotge acabés! Piqueu <kbd>control</kbd>+<kbd>c</kbd> per
 aturar la seva execució.
 
-
-<? author("jpetit") ?>
-
+<Autors autors="jpetit"/>

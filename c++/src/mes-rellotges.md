@@ -1,4 +1,3 @@
-
 # Aplicació: Més rellotges
 
 <img src='./rellotge.png' style='height: 10em; float: right; margin: 0 0 1em 1em;'/>
@@ -11,7 +10,6 @@ A partir d'aquests exemples, aquesta lliçó també desenvolupa una exposició
 sobre les diferents direccions dels paràmetres (d'entrada, de sortida o
 d'entrada-i-sortida) i els relaciona amb els passos per valor i per
 referència.
-
 
 ## Descomposició horària
 
@@ -55,7 +53,7 @@ void descomposicio_horaria(int n, int& h, int &m, int& s) {
 
 Fixeu-vos que l'acció no realitza operacions d'entrada ni de sortida. La seva
 entrada conceptual `n` es transmet a través d'un paràmetre per valor. Les
-seves sortides conceptuals `h`, `m` i `s`  es transmeten a través de tres
+seves sortides conceptuals `h`, `m` i `s` es transmeten a través de tres
 paràmetres per referència.
 
 El programa principal per provar aquesta acció sí que es podria encarregar de
@@ -145,12 +143,6 @@ cap tipus de format bonic. Definiu una acció per escriure una hora fent
 que els seus elements es separin amb ':' i que els minuts i segons
 sempre s'escriguin amb dos dígits exactament.
 
-
-<div id='quiz1'></div>
-
-<script type="text/coffeescript">
-
-quiz1 = """
 Una manera de fer-ho seria així:
 
 ```c++
@@ -166,20 +158,14 @@ void escriure_hora(int h, int m, int s) {
     escriure_amb_dos_digits(s);
 }
 ```
-"""
-
-window.reveal quiz1, "quiz1"
-
-</script>
-
 
 ## Modes de pas de paràmetres: entrada, sortida i entrada-i-sortida
 
 Tal com hem vist a la lliçó anterior, C++ ofereix dos modes per passar
 paràmetres:
 
-- pas per valor
-- pas per referència.
+-   pas per valor
+-   pas per referència.
 
 (Més endavant en veurem alguna variació menor.)
 
@@ -198,56 +184,57 @@ i l'acció invocada:
 
 El diagrama següent resumeix aquestes direccions:
 
+TODO:
+
+```
 <script type="text/coffeescript" src="direccions.coffee"></script>
 <div id="div-direccions" style="height: 200px; ">
 </div>
-
+```
 
 Analitzem la direcció dels paràmetres per les accions dels dos exemples
 anteriors:
 
 1. A l'acció `void descomposicio_horaria(int n, int& h, int &m, int& s)`, la
-informació  `n` és una dada que cal transmetre a `descomposicio_horaria`
-perquè aquesta pugui funcionar. Per tant, `n` és un paràmetre d'entrada. En
-canvi,    la informació `h` és una dada que  `descomposicio_horaria` transmet
-com a resultat a la seva acció invocadora. Per tant, `h` és un paràmetre de
-sortida. Els paràmetres `m` i per `s` són anàlegs a `h`.
+   informació `n` és una dada que cal transmetre a `descomposicio_horaria`
+   perquè aquesta pugui funcionar. Per tant, `n` és un paràmetre d'entrada. En
+   canvi, la informació `h` és una dada que `descomposicio_horaria` transmet
+   com a resultat a la seva acció invocadora. Per tant, `h` és un paràmetre de
+   sortida. Els paràmetres `m` i per `s` són anàlegs a `h`.
 
 2. A l'acció `void sumar_un_segon(int& h, int &m, int& s)`, les informacions
-en `h`, `m` i `s` s'han de transmetre tant cap a `sumar_un_segon` al entrar
-com de `sumar_un_segon` cap a la seva invocadora quan s'en surt. Per tant,
-`h`, `m` i `s` són paràmetres d'entrada-i-sortida.
-
+   en `h`, `m` i `s` s'han de transmetre tant cap a `sumar_un_segon` al entrar
+   com de `sumar_un_segon` cap a la seva invocadora quan s'en surt. Per tant,
+   `h`, `m` i `s` són paràmetres d'entrada-i-sortida.
 
 Per saber com passar un paràmetre, és adient pensar primer de tot en la seva
 direcció: És aquest paràmetre d'entrada, de sortida o d'entrada-i-sortida? Si
 no ho sabem, no cal continuar: no tenim prou clar què ha de fer aquella
 acció... Un cop aclarit, cal decidir si passar-lo per valor o per referència:
 
-- Si la direcció és d'entrada, té sentit passar-lo per valor. En canvi, no té
-sentit passar-lo per referència, ja que si l'acció el canvíes
-(intencionadament o no), el paràmetre real es veuria modificat i, per tant,
-també seria de sortida.
+-   Si la direcció és d'entrada, té sentit passar-lo per valor. En canvi, no té
+    sentit passar-lo per referència, ja que si l'acció el canvíes
+    (intencionadament o no), el paràmetre real es veuria modificat i, per tant,
+    també seria de sortida.
 
-- Si la direcció és de sortida, no té sentit passar-lo per valor: La còpia
-del valor no es transmetria cap a l'acció invicadora. En canvi, el pas per
-referència permet obtenir el valor final al sortir de l'acció.
+-   Si la direcció és de sortida, no té sentit passar-lo per valor: La còpia
+    del valor no es transmetria cap a l'acció invicadora. En canvi, el pas per
+    referència permet obtenir el valor final al sortir de l'acció.
 
-- Si la direcció és d'entrada-i-sortida, no té sentit passar-lo per valor
-perquè ja no tenia sentit si era de sortida. En canvi, el pas per referència
-permet enviar el valor de l'entrada cap a l'acció invocada i obtenir-ne el
-valor final al sortir de l'acció cap a l'acció invocadora.
+-   Si la direcció és d'entrada-i-sortida, no té sentit passar-lo per valor
+    perquè ja no tenia sentit si era de sortida. En canvi, el pas per referència
+    permet enviar el valor de l'entrada cap a l'acció invocada i obtenir-ne el
+    valor final al sortir de l'acció cap a l'acció invocadora.
 
 Fixeu-vos que una funció pot tenir diferents paràmetres i cada paràmetre pot
 tenir direccions diferents dels demés. En tot cas, la taula següent resumeix
 com establir el mode de pas segons la direcció del paràmetre:
 
-| direcció      | mode       |
-|---------------|------------|
-| entrada       | per valor  |
-| sortida      | per referència  |
-| entrada-i-sortida  | per referència  |
-
+| direcció          | mode           |
+| ----------------- | -------------- |
+| entrada           | per valor      |
+| sortida           | per referència |
+| entrada-i-sortida | per referència |
 
 Observeu que, només mirant la capçalera, no es pot reconèixer si un paràmetre
 passat per referència és de sortida o d'entrada-i-sortida. Convé doncs explicitar-ho
@@ -260,12 +247,4 @@ dos fets queden clar al primer `main` més amunt. Evidentment, si els
 paràmetres són d'entrada-i-sortida, sí que cal que estiguin inicialitzats
 perquè, en particular, són d'entrada.
 
-
-
-
-
 <Autors autors="jpetit roura"/>
-
-
-
-

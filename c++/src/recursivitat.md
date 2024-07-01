@@ -5,10 +5,9 @@
 Aquesta lliçó introdueix la tècnica de la recursivitat, on una funció o una
 acció realitza una tasca repetitiva tot invocant-se a sí mateixa, sense
 necessitat d'utilitzar bucles. La recursivitat és una tècnica molt potent que
-es basa en reduïr un problema complex en un o més problemes  del mateix tipus,
+es basa en reduïr un problema complex en un o més problemes del mateix tipus,
 però més senzills. Al llarg del curs anirem comprovant el seu poder, ara
 mateix només presentar-ne una breu introducció.
-
 
 ## Factorial recursiu
 
@@ -35,16 +34,15 @@ Anem a explorar una altra manera de fer-ho: amb [recursivitat](recursivitat.html
 
 Comencem primer per les matemàtiques:
 
-- Ja sabem que el factorial de 0 és 1:
+-   Ja sabem que el factorial de 0 és 1:
 
     $$0! = 1.$$
 
-- Si tenim un nombre natural $n>0$, també tenim la propietat següent:
+-   Si tenim un nombre natural $n>0$, també tenim la propietat següent:
 
     $$n! = (n-1)! · n.$$
 
     La raó és que $n! = 1 · 2 ·\ldots· n = (1 · 2 ·\ldots· n-1)· n = (n-1)! · n$.
-
 
 En definitiva, hem establert que
 
@@ -106,11 +104,13 @@ estrictament necessaris: podem descriure repeticions amb recursivitat.
 A l'animació interactiva següent, feu clic per anar vient com
 l'ordinador calcula recursivament el factorial d'un nombre.
 
+TODO:
+
+```
 <svg id='svg-animacio-factorial' class='figura' style='width: 100%; height: 400px; margin-bottom: 2em;'>
 </svg>
 <script type="text/coffeescript" src="animacio-factorial.coffee"></script>
-
-
+```
 
 ## Escriptura recursiva
 
@@ -130,9 +130,9 @@ void escriure(int n, char c)
 
 Quan volem fer recursivitat ens cal sempre pensar en dos casos:
 
-- **El cas base**: Explicar!!!
+-   **El cas base**: Explicar!!!
 
-- **El cas recursiu**: Explicar!!!
+-   **El cas recursiu**: Explicar!!!
 
 En el cas d'`escriu`, el cas base és quan `n` és tant simple que la solució és
 directa. Aquest cas és quan `n == 0`: en aquest cas no cal fer res de res!
@@ -160,7 +160,6 @@ void escriure(int n, char c) {
 
 que podem compactar així:
 
-
 ```c++
 // Escriu n ≥ 0 cops seguits c.
 void escriure(int n, char c) {
@@ -187,7 +186,7 @@ void escriure(int n, char c) {
 
 La solució és diferent però la funcionalitat (el què fa) és la mateixa.
 
-*Avançat:* Quan la crida recursiva és la darrera cosa que fa una acció o una
+_Avançat:_ Quan la crida recursiva és la darrera cosa que fa una acció o una
 funció recursiva, es diu que és **recursiva per la cua**. Els compiladors són
 capaços d'optimitzar les funcions i accions recursives per la cua de forma que
 són igual d'eficients que les seves version iteratives. Per tant, de les dues
@@ -199,13 +198,13 @@ podem escriure primer la meitat dels `n` caràcters recursivament i
 escriure després la meitat dels `n` caràcters recursivament. Però cal anar
 en compte amb la paritat de `n`:
 
-- Si `n` és parell, podem escriure `n` cops el caràcter `c` cridant
-  dos cops a escriure `n/2` cops el caràcter `c` recursivament.
+-   Si `n` és parell, podem escriure `n` cops el caràcter `c` cridant
+    dos cops a escriure `n/2` cops el caràcter `c` recursivament.
 
-- Si `n` és senar, podem escriure `n` cops el caràcter `c` cridant   dos cops
-  a escriure `n/2` cops el caràcter `c` recursivament i   escrivint
-  addicionalment un cop el caràcter `c` (perquè a causa de la divisió entera
-  entre 2, a la primera crida se'n perd "mig" i la segona "mig" més).
+-   Si `n` és senar, podem escriure `n` cops el caràcter `c` cridant dos cops
+    a escriure `n/2` cops el caràcter `c` recursivament i escrivint
+    addicionalment un cop el caràcter `c` (perquè a causa de la divisió entera
+    entre 2, a la primera crida se'n perd "mig" i la segona "mig" més).
 
 Aquesta idea dóna lloc en aquesta nova implementació:
 
@@ -238,10 +237,9 @@ void escriure(int n, char c) {
 }
 ```
 
-De fet, la escriptura condicional de `c` es pot fer  abans de la primera crida
+De fet, la escriptura condicional de `c` es pot fer abans de la primera crida
 recursiva, entre la primera crida i la segona recursiva (com s'ha fet), o
 després de la segona crida recursiva. Tant és.
-
 
 ## Màxim comú divisor recursiu
 
@@ -275,7 +273,6 @@ int mcd(int x, int y) {
     else return x;
 }
 ```
-
 
 ## Nombres de Fibonacci
 
@@ -346,20 +343,21 @@ void fibo_aux(int n, int& ultim, int& penultim) {
     }
 }
 ```
- Altrament dit:
 
- - Quan `n` val 0, el valor d'`ultim` és
- $F(0)=0$, tal com cal. El valor de `penultim` no existeix en aquest cas.
+Altrament dit:
 
-- Quan `n` val 1, `ultim` val 0 i `penultim` val 1. El valor d'`ultim` és
- $F(1)=1$, tal com cal. El valor de `penultim` és
- $F(0)=0$, també tal com cal.
+-   Quan `n` val 0, el valor d'`ultim` és
+    $F(0)=0$, tal com cal. El valor de `penultim` no existeix en aquest cas.
 
-- Quan `n` no és 0 ni 1, la funció `fibo_aux` crida a
-  `fibo_aux` amb `n - 1` per obtenir $F(n-1)$ i $F(n-2)$. El primer
-  el desa en `penultim` i el segon en `abantpenultim`. D'aquesta forma,
-  `penultim` ja val $F(n-1)$ que és el que cal. Després, desa el valor
-  de $F(n-1) +  F(n-2)$ a `ultim` perquè valgui $F(n)$, tal com cal.
+-   Quan `n` val 1, `ultim` val 0 i `penultim` val 1. El valor d'`ultim` és
+    $F(1)=1$, tal com cal. El valor de `penultim` és
+    $F(0)=0$, també tal com cal.
+
+-   Quan `n` no és 0 ni 1, la funció `fibo_aux` crida a
+    `fibo_aux` amb `n - 1` per obtenir $F(n-1)$ i $F(n-2)$. El primer
+    el desa en `penultim` i el segon en `abantpenultim`. D'aquesta forma,
+    `penultim` ja val $F(n-1)$ que és el que cal. Després, desa el valor
+    de $F(n-1) +  F(n-2)$ a `ultim` perquè valgui $F(n)$, tal com cal.
 
 Evidentment, el nostre propòsit original era escriure una funció que calculés
 l'`n`-èsim nombre de Fibonacci, no aquesta acció auxiliar. Però ara ja podem
@@ -376,10 +374,6 @@ int fibonacci(int n) {
 ```
 
 Si ara mesureu quan triga `fibonacci(35)` al vostre ordinador veureu que
-aquesta versió és *molt* més ràpida que l'anterior.
-
-
-
+aquesta versió és _molt_ més ràpida que l'anterior.
 
 <Autors autors="jpetit roura"/>
-

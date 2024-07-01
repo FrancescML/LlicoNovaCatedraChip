@@ -7,7 +7,6 @@ A la darrera lliçó sobre accions, ens hem limitat a utilitzar
 per referència per tal de proveïr a les accions d'un mecanisme per
 alterar els valors dels paràmetres reals sobre les quals es criden.
 
-
 ## Pas de paràmetres per valor
 
 Fins ara, sempre que hem utilitzat funcions i acccions hem utilitzat
@@ -32,57 +31,54 @@ int main() {
 }
 ```
 
+TODO:
 
 <div id='quiz1'></div>
 
-<script type="text/coffeescript">
-
 quiz1 =
-  type: "MultipleChoice"
-  text: "Què escriu aquest programa? (Fixeu-vos que la `x` es passa per valor)"
-  choices: [
-      text: "24, 24, 25, 24"
-      correct: true
-    ,
-      text: "24, 24, 25, 25"
-      correct: false
-    ,
-      text: "24, 25, 25, 24"
-      correct: false
-    ,
-      text: "24, 25, 25, 25"
-      correct: false
-    ,
-      text: "Cap de les demés."
-      correct: false
-  ]
+type: "MultipleChoice"
+text: "Què escriu aquest programa? (Fixeu-vos que la `x` es passa per valor)"
+choices: [
+text: "24, 24, 25, 24"
+correct: true
+,
+text: "24, 24, 25, 25"
+correct: false
+,
+text: "24, 25, 25, 24"
+correct: false
+,
+text: "24, 25, 25, 25"
+correct: false
+,
+text: "Cap de les demés."
+correct: false
+]
 
 window.quiz quiz1, "quiz1"
-
-</script>
 
 Per entendre què passa, fem una traça de l'execució del programa:
 
 1. El programa comença a la funció `main`, on es desa el valor 24 a la variable
-  `a`.
+   `a`.
 
 1. Quan es fa la primera escriptura `(1)`, s'escriu doncs 24.
 
 1. A continuació, s'invoca l'acció `incrementar`. El valor del paràmetre real
-  és 24, per tant, el paràmetre formal `x` de la funció `incrementar` pren
-  per valor 24.
+   és 24, per tant, el paràmetre formal `x` de la funció `incrementar` pren
+   per valor 24.
 
 1. Després, es fa la segona escriptura `(2)`. El valor de `x`
-  és 24, i per tant, s'escriu un altre 24.
+   és 24, i per tant, s'escriu un altre 24.
 
 1. A continuació, es fa l'increment de `x`. Per tant, ara `x` passa a valer 25.
 
 1. Després, es fa la tercera escriptura `(3)`. Com que valor de `x`
-  és ara 25, s'escriu 25.
+   és ara 25, s'escriu 25.
 
 1. A continuació, l'acció `incrementar` acaba i es torna al punt de `main()` on
-  s'havia deixat i, per tant, es fa la darrera escriptura `(4)` de `a`. Com
-  que ningú ha canviat el valor de `a`, s'escriu un altre cop 24.
+   s'havia deixat i, per tant, es fa la darrera escriptura `(4)` de `a`. Com
+   que ningú ha canviat el valor de `a`, s'escriu un altre cop 24.
 
 Així doncs, al invocar `incrementar`, el valor del paràmetre real `a` s'ha
 copiat en el paràmetre formal `x`, però a partir d'aquí, aquestes dues
@@ -90,7 +86,6 @@ variables són entitats diferents i, per tant, el canvi de l'una no implica cap
 canvi en l'altra. Quan es passa un paràmetre real per valor, el seu valor es
 copia al paràmetre formal al produir-se la invocació. A partir d'aquest
 moment, ja no hi ha més relació entre el paràmetre formal i el real.
-
 
 ## Pas de paràmetres per referència
 
@@ -119,8 +114,8 @@ int main() {
 ```
 
 Per indicar que un paràmetre es passa per referència, en C++ s'escriu el
-símbol `&` després del seu tipus. El símbol et (també anomenat *i comercial* o
-*ampersand* en anglès) es pot aplicar o no indistintament a cada paràmetre
+símbol `&` després del seu tipus. El símbol et (també anomenat _i comercial_ o
+_ampersand_ en anglès) es pot aplicar o no indistintament a cada paràmetre
 d'una acció. La seva presència indica pas per referència. En oposició, la seva
 absència indica pas per valor.
 
@@ -130,41 +125,34 @@ En altres paraules, els dos paràmetres són noms alternatius per a la mateixa v
 Conseqüentment, qualsevol canvi al valor d'un paràmetre formal passat per referència
 és un canvi al valor del paràmetre real.
 
-
-
 <div id='quiz2'></div>
 
-<script type="text/coffeescript">
-
 quiz2 =
-  type: "MultipleChoice"
-  text: "Què escriu ara el programa anterior? (Fixeu-vos que la `x` es passa per referència)"
-  choices: [
-      text: "24, 24, 25, 24"
-      correct: false
-    ,
-      text: "24, 24, 25, 25"
-      correct: true
-    ,
-      text: "24, 25, 25, 24"
-      correct: false
-    ,
-      text: "24, 25, 25, 25"
-      correct: false
-    ,
-      text: "Cap de les demés."
-      correct: false
-  ]
+type: "MultipleChoice"
+text: "Què escriu ara el programa anterior? (Fixeu-vos que la `x` es passa per referència)"
+choices: [
+text: "24, 24, 25, 24"
+correct: false
+,
+text: "24, 24, 25, 25"
+correct: true
+,
+text: "24, 25, 25, 24"
+correct: false
+,
+text: "24, 25, 25, 25"
+correct: false
+,
+text: "Cap de les demés."
+correct: false
+]
 
 window.quiz quiz2, "quiz2"
-
-</script>
-
 
 Per entendre què passa, tornem una traça de l'execució del programa:
 
 1. El programa comença a la funció `main`, on es desa el valor 24 a la variable
-  `a`.
+   `a`.
 
 1. Quan es fa la primera escriptura `(1)`, s'escriu doncs 24.
 
@@ -182,10 +170,10 @@ Per entendre què passa, tornem una traça de l'execució del programa:
    és 25, s'escriu 25, cap problema,
 
 1. A continuació, l'acció `incrementar` acaba i es torna al punt de `main()` on
-  s'havia deixat i, per tant, es fa la darrera escriptura `(4)` de `a`. Quin
-  és el valor de `a`? Doncs 25, perquè fa dos passos l'hem canviat a través
-  de l'increment de `x` amb qui l'havíem lligat. Per tant,
-  ara s'escriu un 25.
+   s'havia deixat i, per tant, es fa la darrera escriptura `(4)` de `a`. Quin
+   és el valor de `a`? Doncs 25, perquè fa dos passos l'hem canviat a través
+   de l'increment de `x` amb qui l'havíem lligat. Per tant,
+   ara s'escriu un 25.
 
 Així doncs, utilitzant un paràmetre per referència, hem aconseguit que el
 valor del paràmetre real hagi quedat incrementat després de cridar a l'acció
@@ -201,7 +189,6 @@ Per cert, assegureu-vos d'entendre que, si en els dos programes anteriors
 les variables de `main` i de `incrementar` tinguéssin el mateix nom, tot el
 procés seria exactament igual.
 
-
 ## Diferència entre pas per referència i pas per valor
 
 L'animació següent (extreta de [mathwarehouse.com](https://www.mathwarehouse.com))
@@ -214,7 +201,6 @@ il·lustra la diferència entre pas per referència i pas per valor:
 Fixeu-vos que les dues tasses de l'esquerra (pas per referència) representen
 la mateixa, mentre que la segona tassa de la dreta (pas per valor) és una
 còpia de la primera.
-
 
 ## Exemple: intercanvi de dos valors
 
@@ -241,10 +227,7 @@ intercanviar(x, y);
 cout << x << ' ' << y << endl;
 ```
 
-
 <div id='quiz3'></div>
-
-<script type="text/coffeescript">
 
 quiz3 = """
 La sortida serà
@@ -260,16 +243,10 @@ La sortida serà
 
 window.reveal quiz3, "quiz3"
 
-</script>
-
 En efecte, les tres assignacions del cos de l'acció `intercanviar`
 aconsegueixen intercanviar el valors dels paràmetres `a` i `b` mitjantçant
 una variable auxiliar `c`. Com que `a` i `b` es passen per referència
 i es lliguen a `x` i `y`, després de la invocació de l'acció els valors
 de `x` i de `y` han quedat també intercanviats.
 
-
-
-
 <Autors autors="jpetit roura"/>
-

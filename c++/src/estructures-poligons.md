@@ -1,4 +1,3 @@
-
 # Aplicació: Polígons simples
 
 <img src='./poligons.png' style='height: 8em; float: right; margin: 0 0 1em 2em;'/>
@@ -8,7 +7,6 @@ s'intersequen. En aquesta secció voldríem definir tipus de dades per poder
 manipular polígons simples i per calcular llur perímetre i àrea. De passada,
 introduirem un tipus per a punts en el pla i veurem com definir
 vectors d'estructures.
-
 
 ## Tipus punt
 
@@ -78,7 +76,6 @@ per tant li podem aplicacar l'operador `.` per seleccionar un dels seus camps
 (`x` en aquest cas). En canvi, haver intentat escriure `pol.x[1]` no
 tindria sentit.
 
-
 ## Perímetre
 
 Ara que podem representar polígons, podem definir una funció per obtenir-ne
@@ -102,11 +99,10 @@ Evidentment, aquesta funció només és correcta si el polígon és simple
 i així ho hem documentat al seu comentari. Observeu com hem passat els punts
 del polígon a la funció distància. Tot el puzzle lliga!
 
-
 ## Àrea
 
 De forma sembant, podem calcular l'àrea d'un polígon simple utilitzant la
-*fórmula de Gauss*
+_fórmula de Gauss_
 [$\small[\mathbb{W}]$](https://es.wikipedia.org/wiki/F%C3%B3rmula_del_%C3%A1rea_de_Gauss):
 
 ```c++
@@ -122,8 +118,4 @@ double area(const Poligon& poligon)
 }
 ```
 
-
-
-
-<? author("jpetit") ?>
-
+<Autors autors="jpetit"/>

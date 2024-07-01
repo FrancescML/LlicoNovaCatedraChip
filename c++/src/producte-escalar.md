@@ -2,13 +2,11 @@
 
 <img src='./producte-escalar.png' style='height: 6em; float: right; margin: 0 0 1em 1em;'/>
 
-
 Aquesta lliçó mostra una aplicació matemàtica
 als vectors: el càlcul del producte escalar de dos
 vectors. A més, de passada, introdueix la instrucció
 estàndard `assert()` que permet explicitar assercions
 per detectar situacions anòmales en els programes.
-
 
 ## Producte escalar en matemàtiques
 
@@ -20,7 +18,6 @@ i $b=[b_1,b_2,\\dots,b_n]$ és el valor
 
 Per exemple, el producte escalar de [1, 4, -3] i [2, -1, -2] és
 1·2 + 4·(-1) + (-3)·(-2) que és 4.
-
 
 ## Producte escalar en C++
 
@@ -36,7 +33,7 @@ aquesta senzilla funció retorna el seu producte escalar:
 double producte_escalar(const vector<double>& a, const vector<double>& b)
 {
     int n = a.size();
-	double s = 0;    
+	double s = 0;
 	for (int i = 0; i < n; ++i) {
 		s += a[i] * b[i];
 	}
@@ -60,18 +57,17 @@ cout << producte_escalar({1 ,4 -3}, {2, -1, -2}) << endl;
 
 i comprovar que escriu 4.
 
-
 ## Assercions
 
 Quan s'empra la funció anterior, es pot donar el problema de que l'usuari passi
 vectors de talles diferents (i mira que li hem dit que no ho faci al comentari,
 però els usuaris són humans i es solen equivocar!). Si el primer vector és més
 curt que el segon, la funció retorna el producte escalar "retallant" el segon
-vector, cosa que  pot ser més o menys admissible però que no provoca cap error.
+vector, cosa que pot ser més o menys admissible però que no provoca cap error.
 En canvi, si el primer vector és més llarg que el segon, la funció consultarà un
 element del segon vector que no existeix, i això és un error.
 
-Si volem comprovar explícitament dins de la funció que els dos vectors  tenen la
+Si volem comprovar explícitament dins de la funció que els dos vectors tenen la
 mateixa talla, podríem incloure un condicional que, en cas negatiu, escrigués
 algun missatge d'error. Seria una cosa així:
 
@@ -84,7 +80,7 @@ double producte_escalar(const vector<double>& a, const vector<double>& b)
     }
 
     int n = a.size();
-	double s = 0;    
+	double s = 0;
 	for (int i = 0; i < n; ++i) {
 		s += a[i] * b[i];
 	}
@@ -95,7 +91,7 @@ double producte_escalar(const vector<double>& a, const vector<double>& b)
 Però això tampoc ajuda massa, perquè s'escriu el missatge d'error però després
 es continua endavant, com si no hagués de passar res.
 
-Una manera d'aturar el programa i donar un diagnòstic pertinent  és
+Una manera d'aturar el programa i donar un diagnòstic pertinent és
 utilitzant la instrucció `assert()` que reb com a paràmetre un valor booleà. Si
 aquest booleà és cert, no fa res. En canvi, si és fals, atura el programa i
 indica la línia on s'ha aturat, per poder saber què ha passat. En aquest cas,
@@ -108,7 +104,7 @@ double producte_escalar(const vector<double>& a, const vector<double>& b)
     assert(a.size() == b.size());
 
     int n = a.size();
-	double s = 0;    
+	double s = 0;
 	for (int i = 0; i < n; ++i) {
 		s += a[i] * b[i];
 	}
@@ -140,7 +136,6 @@ Volem fer una funció booleana que ens digui si dos vectors de $\mathbb{R}^3$
 són o no prependiculars. Com sabreu, dos vectors de l'espai `a`, `b` són
 perpendiculars si i només si el seu producte escalar és zero. Així, la funció quedaria
 
-
 ```c++
 bool son_perpendiculars(const vector<double>& a, const vector<double>& b)
 {
@@ -156,5 +151,4 @@ double producte_escalar(const vector<double>& a, const vector<double>& b)
 
 amb la funció `producte_escalar` que hem escrit abans.
 
-<? author("rafah jpetit") ?>
-
+<Autors autors="rafah jpetit"/>

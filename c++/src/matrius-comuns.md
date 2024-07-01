@@ -1,4 +1,3 @@
-
 # Aplicació: Operacions comuns sobre matrius
 
 <img src='./matrius-comuns.png' style='height: 8em; float: right; margin: 0 0 1em 1em;'/>
@@ -6,16 +5,15 @@
 Aquesta lliçó presenta alguns exemples d'operacions habituals sobre matrius.
 En particular, aquesta lliçó considera operacions per:
 
-- Sumar matrius
-- Trobar la suma per files més gran
-- Transposar una matriu quadrada
-- Comprovar si una matriu quadrada és simètrica
-- Producte de matrius
+-   Sumar matrius
+-   Trobar la suma per files més gran
+-   Transposar una matriu quadrada
+-   Comprovar si una matriu quadrada és simètrica
+-   Producte de matrius
 
 És molt recomanable que hagueu llegit prèviament els exemples d'operacions de
-vectors abans de llegir els de matrius, ja que,  per no ser massa repetitius,
+vectors abans de llegir els de matrius, ja que, per no ser massa repetitius,
 s'ometran alguns detalls ja vistos.
-
 
 ## Introducció
 
@@ -35,7 +33,6 @@ using Matriu = vector<Fila>;
 Per simplicitat, també entendrem que les matrius amb les que treballarem tenen
 com a mínim una fila (encara que sigui buida), ja que si no no té sentit parlar
 de columnes i les crides del tipus `M[0].size()` provocarien un error.
-
 
 ## Suma de matrius
 
@@ -74,7 +71,6 @@ Matriu suma(const Matriu& A, const Matriu& B)
 Com ja s'ha explicat a la lliçó de matrius, ens interessa passar les matrius
 d'entrada per referència constant, per millorar l'eficiència del programa.
 
-
 ## Trobar la suma per files més gran
 
 <img src='./suma-fila.png' style='height: 10em; float: right; margin: .5em .5em 1em .5em;'/>
@@ -98,22 +94,21 @@ int maxima_suma_fila(const Matriu& M)
     int n = M.size();
     int m = M[0].size();
 
-    int suma_max;                 
+    int suma_max;
     for (int i = 0; i < n; ++i) {
         // sumar els elements de la fila actual
         int suma_act = 0;
         for (int j = 0; j < m; ++j) {
-            suma_act += M[i][j];    
+            suma_act += M[i][j];
         }
         // si es supera el màxim o és la 1a fila, actualitzem
         if (i == 0 or suma_act > suma_max) {
-            suma_max = suma_act;  
+            suma_max = suma_act;
         }
     }
     return suma_max;
 }
 ```
-
 
 ## Transposar una matriu quadrada
 
@@ -141,7 +136,6 @@ void transposar(Matriu& M)
     }
 }
 ```
-
 
 ## Comprovar si una matriu quadrada és simètrica
 
@@ -173,8 +167,6 @@ bool es_simetrica(const Matriu& M)
 }
 ```
 
-
-
 ## Producte de matrius
 
 <img src='./producte-matrius.png' style='height: 9em; float: right; margin: .5em .5em 1em .5em;'/>
@@ -190,7 +182,6 @@ es troba a la fila $i$ i columna $j$) es calcula com:
 $$
 c_{ij} = \sum_{k=1}^m a_{ik}b_{kj}
 $$
-
 
 Reproduim ara el procediment anterior amb llenguatge informàtic: Pensem ara quina
 forma haurà de tenir el codi d'aquesta funció. Si anomenem les dimensions
@@ -221,7 +212,4 @@ Matriu producte(const Matriu& A, const Matriu& B)
 }
 ```
 
-
-
-<? author("rafah jpetit") ?>
-
+<Autors autors="rafah jpetit"/>

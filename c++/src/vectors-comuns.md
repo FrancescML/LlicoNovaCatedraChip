@@ -1,4 +1,3 @@
-
 # Aplicació: Operacions comuns sobre vectors
 
 <img src='./vectors-comuns.png' style='height: 6em; float: right; margin: 0 0 1em 1em;'/>
@@ -8,7 +7,6 @@ particular veurem com escriure i llegir vectors i com calcular algunes
 estadístiques sobre ells, com ara, la suma, la mitjana, el màxim..., com comptar
 la freqüència d'un elements donats o saber si un element hi és o no, rotar un
 vector, comprovar si un vector és una permutació o no...
-
 
 ## Escriptura de vectors
 
@@ -36,7 +34,6 @@ escriu
 
 Imagineu, però, que volem escriure els elements en una sola línia. Si fem
 
-
 ```c++
 for (int x : v) {
     cout << x;
@@ -45,7 +42,6 @@ for (int x : v) {
 
 escriurem `712556`, quin xurro! Segurament caldria separar els elements amb blancs...
 Què tal així?
-
 
 ```c++
 for (int x : v) {
@@ -69,7 +65,7 @@ blanc al principi!
 Ara ja és evident que si volem escriure `n` valors, només hem d'escriure `n - 1`
 blancs, per tant hem d'introduir alguna lògica al programa per escriure
 un blanc menys que elements. Una manera habitual de fer-ho és utilitzar una variable
-booleana  que indiqui si ens trobem o no a la primera iteració del bucle:
+booleana que indiqui si ens trobem o no a la primera iteració del bucle:
 
 ```c++
 bool primera = true;
@@ -95,7 +91,6 @@ el primer i produeix doncs `7␣12␣5␣5␣6`, tal com cal.
 
 Aquest truc és particularment important als exercicis del Jutge, on mai hi ha
 blancs al final de les línies.
-
 
 ## Lectura de vectors
 
@@ -147,8 +142,6 @@ while (cin >> x) {         // per cada element x del canal d'entrada
 ```
 
 Cal anar en compte de no barrejar les dues tècniques!
-
-
 
 ## Calcular la suma dels elements d'un vector
 
@@ -213,8 +206,6 @@ final. En tot cas, observeu que a totes les versions, la suma `s` és,
 necessariament, de tipus real. En canvi, els índexs `i` i talles `n` són enters.
 No useu reals quan pugueu usar enters, us acabareu picant els dits!
 
-
-
 ## Calcular la mitjana dels elements d'un vector
 
 Considerem ara el problema de trobar la mitjana dels elements d'un vector
@@ -240,7 +231,6 @@ Fixeu-vos que `suma(v)` és un real, però que `v.size()` és un enter. La divis
 de real entre enter és real, per tant ja va bé. Si el vector hagués estat
 d'enters i la funció `suma()` també retornés un enter, caldria anar en compte
 de forçar una divisió real amb una conversió de tipus.
-
 
 ## Trobar l'element més gran d'un vector
 
@@ -270,7 +260,6 @@ També podríem fer servir l'altre tipus de bucle que hem vist, i de
 fet seria més senzill, però aquesta implementació ens servirà pel
 següent exemple.
 
-
 ## Trobar la posició de l'element més gran
 
 Si el que ens interessa és trobar la posició de l'element màxim (i, en cas que
@@ -285,16 +274,15 @@ modificant lleugrament el fragment de programa anterior, quedaria
 int posicio_maxim(const vector<double>& v)
 {
     int n = v.size();
-    int pos = 0;        // posició de l'element més gran trobat fins al moment   
+    int pos = 0;        // posició de l'element més gran trobat fins al moment
     for (int i = 1; i < n; ++i) {
         if (v[i] > v[pos]) {
-            pos = i;    
+            pos = i;
         }
     }
     return pos;
-}    
+}
 ```
-
 
 ## Comptar quants cops apareix un element en un vector
 
@@ -316,9 +304,8 @@ int frequencia(const vector<string>& document, string paraula)
         }
     }
     return c;
-}    
+}
 ```
-
 
 ## Determinar si un element apareix o no en un vector
 
@@ -333,7 +320,7 @@ ben senzilla:
 bool hi_es(const vector<string>& document, string paraula)
 {
     return frequencia(document, paraula) > 0;
-}    
+}
 ```
 
 Però aquesta solució és ineficient perquè no cal continuar comptant un cop s'ha
@@ -350,9 +337,8 @@ bool hi_es(const vector<string>& document, string paraula)
         }
     }
     return false;
-}    
+}
 ```
-
 
 ## Rotar un vector
 
@@ -362,7 +348,7 @@ genera el vector `{20, 30, 40, 10}`: tots els elements del vector s'han desplaç
 una posició cap a l'esquerra, menys el primer, que s'ha desplaçat al final.
 
 Si el vector és buit, rotar-lo no el canvia. Per fer-ho en un vector de talla
-`n` diferent de zero, cal moure tots els elements de les posicions  `1` a `n -
+`n` diferent de zero, cal moure tots els elements de les posicions `1` a `n -
 1` a la seva posició anterior. Però cal anar en compte de recordar el valor
 inicial de la primer posició, per tal de col·locar-lo al final a la darrera
 posició.
@@ -377,23 +363,22 @@ void rotacio_ciclica_esquerra(vector<int>& v)
 {
     int n = v.size();
     if (n != 0) {
-        int x = v[0];                       
+        int x = v[0];
         for (int i = 1; i < n; ++i) {
             v[i - 1] = v[i];
         }
-        v[n - 1] = x;                       
+        v[n - 1] = x;
     }
-}    
+}
 ```
 
 Penseu perquè en cap cas s'accedeix a una posició fora del vector.
-
 
 ## Determinar si un vector és una permutació
 
 Com podem saber si un vector de `n` enters és una permutació de
 `{0 ... n - 1}`? Per exemple, `{4, 2, 1, 3, 0}` descriu una permutació
-però `{4, 6, 1, 3, 0}` i  `{4, 2, 4, 3, 0}` no.
+però `{4, 6, 1, 3, 0}` i `{4, 2, 4, 3, 0}` no.
 
 Per tal que un vector `v` de `n` eneters descrigui una permutació,
 cal comprovar dues condicions:
@@ -410,10 +395,10 @@ Per comprovar més eficientment la segona condició, ens podem valer d'un vector
 de booleans `r`. Aquest vector `r` té `n` posicions i a la posició `x` indica si
 l'element `x` ja ha aparegut o no. Al començar, no s'ha comprovat que cap
 element ha aparegut, per tant cal inicialitzar `r` tot a fals. Després, per cada
-element `x`,  si es comprova que ja havia aparegut, és a dir, que està repetit
-perquè `r[x]` és cert, ja se sap que `v` no descriu una permutació.  Sinó, cal
-marcar que `x` ja ha aparegut, fent que  `r[x]` (que era fals) passi a ser cert.
-Si, al final, cap element és repetit, sí que  `v` descriu una permutació.
+element `x`, si es comprova que ja havia aparegut, és a dir, que està repetit
+perquè `r[x]` és cert, ja se sap que `v` no descriu una permutació. Sinó, cal
+marcar que `x` ja ha aparegut, fent que `r[x]` (que era fals) passi a ser cert.
+Si, al final, cap element és repetit, sí que `v` descriu una permutació.
 
 Aquesta és la implementació d'aquest algorisme en C++:
 
@@ -468,23 +453,21 @@ bool es_permutacio(const vector<int>& v)
 
 Una observació important: Fixeu-vos que cal condició `x < 0 or x >= n or r[x]` no
 accedeix mai a posicions fora de `r`. La raó és que les posicions `x` fora de
-`r` són justament les `x < 0` o les  `x >= n`.  Però si una de les dues es compleix,
-llavors  `r[x]` ja no s'executa, perquè l'operador `or` té curt-circuit:
+`r` són justament les `x < 0` o les `x >= n`. Però si una de les dues es compleix,
+llavors `r[x]` ja no s'executa, perquè l'operador `or` té curt-circuit:
 
-- Quan s'avalua `A or B` i es troba que `A` és cert, ja se sap que el resultat
-de  `A or B` és cert, independentment del valor de `B`. Per tant, C++ ja no avalua
-`B`.
+-   Quan s'avalua `A or B` i es troba que `A` és cert, ja se sap que el resultat
+    de `A or B` és cert, independentment del valor de `B`. Per tant, C++ ja no avalua
+    `B`.
 
-- L'operador `and` es comporta anàlopgament:
-Quan s'avalua `A and B` i es troba que `A` és fals, ja se sap que el resultat
-de  `A and B` és fals, independentment del valor de `B`, que no s'avaluarà.
+-   L'operador `and` es comporta anàlopgament:
+    Quan s'avalua `A and B` i es troba que `A` és fals, ja se sap que el resultat
+    de `A and B` és fals, independentment del valor de `B`, que no s'avaluarà.
 
-Fixeu-vos que si haguéssim escrit la condició com a `r[x] or x < 0 or x >= n`  enlloc
+Fixeu-vos que si haguéssim escrit la condició com a `r[x] or x < 0 or x >= n` enlloc
 de `x < 0 or x >= n or r[x]`, hauríem tingut un error de programació, malgrat
 que les dues condicions són lògicament equivalents: l'ordre dels operadors lògics
 és important i ens en podem aprofitar per fer els programes més senzills.
-
-
 
 ## Determinar si un text és un pangrama
 
@@ -498,19 +481,19 @@ Aquesta és una possible solució:
 // indica si un text s és un pangrama (conté totes les lletres minúscules) o no
 bool es_pangrama(string s)
 {
-    int N = 'z' - 'a' + 1;          // nombre de lletres diferents    
-    vector<bool> v(N, false);       // indica si cada lletra ha aparegut o no    
+    int N = 'z' - 'a' + 1;          // nombre de lletres diferents
+    vector<bool> v(N, false);       // indica si cada lletra ha aparegut o no
     int n = 0;                      // compta quantes lletres noves han aparagut
 
     for (char c : s) {
         if (c >= 'a' and c <= 'z') {
-            if (not v[c - 'a']) {            
+            if (not v[c - 'a']) {
                 ++n;
                 if (n == N) {
                     return true;
                 }
                 v[c - 'a'] = true;
-            }            
+            }
         }
     }
     return false;
@@ -521,7 +504,4 @@ Fixeu-vos com s'ha utilitzat un vector de booleans per indicar si cada lletra
 ja ha aparegut o no. La lletra `'a'` es desa a la posició `0`,
 la lletra `'b'` es desa a la posició `1`, etc.
 
-
-
-<? author("rafah jpetit") ?>
-
+<Autors autors="rafah jpetit"/>

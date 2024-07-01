@@ -8,7 +8,6 @@ solució fa ús d'accions i utilitza disseny descendent, una metodologia de
 programació que descompon un problema complex en subproblemes menys complexos
 que l'original.
 
-
 ## Exercici P87198 (Octògons facilets)
 
 L'enunciat és senzill: Cal fer un programa que per a cada `n` donada escrigui
@@ -23,7 +22,7 @@ XXXX
  XX
 ```
 
-i quan  `n` val 2,
+i quan `n` val 2,
 cal escriure
 
 ```text
@@ -37,7 +36,6 @@ XXXXXXX
 ```
 
 Com ho podem resoldre?
-
 
 Primer de tot, podem escriure directament i
 sense dubtar el programa principal d'aquesta forma:
@@ -119,10 +117,10 @@ void escriure_part_del_mig(int n) {
 }
 ```
 
-Aquí, un altre cop hem  introduït una nova acció `escriure_linia` que
+Aquí, un altre cop hem introduït una nova acció `escriure_linia` que
 utilitzen les tres accions. El propòsit d'`escriure_linia(n, m)` és escriure
 una línia amb `n` espais en blanc seguits de `m` ics. Els valors precisos dels
-inicis i finals dels bucles us els deixem  perquè els treballeu vosaltres.
+inicis i finals dels bucles us els deixem perquè els treballeu vosaltres.
 
 Per fi, el codi d'`escriure_linia` és aquest:
 
@@ -144,10 +142,12 @@ del disseny descendent, de manera que hem anat descomponent la complexitat
 del problema del nivell més general al més concret. El següent diagrama
 mostra la relació de les accions les unes amb les altres:
 
+TODO:
+
+```
 <script type="text/coffeescript" src="octogons.coffee"></script>
 <div id="div-octogons" style="height: 300px; ">
 </div>
-
+```
 
 <Autors autors="jpetit roura"/>
-

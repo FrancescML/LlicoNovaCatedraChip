@@ -1,4 +1,3 @@
-
 # Iteracions
 
 <img src='./iteracions.png' style='height: 8em; float: right; margin: 0 0 1em 1em;'/>
@@ -8,7 +7,6 @@ repetir operacions en diem iterar o fer bucles. La iteració permet simplificar 
 potenciar els algorismes afirmant que es repetiran certs passos fins que no es
 digui el contrari. Aprendre a dissenyar bucles és extremadament important per
 escriure programes.
-
 
 ## Escriure molts nombres
 
@@ -50,11 +48,7 @@ es compleixi.
 
 El diagrama de flux següent mostra el funcionament del bucle `while`:
 
-<div id='flow-while'></div>
-
-<script type='text/coffeescript' src='./flow-while.coffee'></script>
-
-<br>
+<MyFlowChart src="flow-while.ts"/>
 
 Aquest programa resol el problema proposat usant un `while`:
 
@@ -88,7 +82,6 @@ perquè no és cert que `4 <= 3`,
 per la qual cosa el `while` acaba.
 I com que a continuació no hi ha més codi, el programa també acaba,
 després d'haver escrit els nombres entre 1 i 3.
-
 
 ## Màxim de 1000 nombres
 
@@ -148,81 +141,13 @@ Així aconseguim que, en tot moment,
 `maxim` contingui el valor més gran dels llegits fins al moment.
 Per tant, al final del programa és suficient amb escriure `maxim`.
 
-
-
 ## Exercici: Suma de `n` nombres
 
 Escriviu un programa que llegeixi un nombre natural `n`,
 seguit d'`n` enters, i que n'escrigui la seva suma.
 
-
-<div id='quiz'></div>
-
-<script type="text/coffeescript">
-
-text = """
-Aquesta és una possible solució:
-
-```c++
-/* Llegeix n, seguit d'n enters, i n'escriu la suma. */
-
-#include <iostream>
-using namespace std;
-
-int main() {
-    int n;
-    cin >> n;
-    int suma = 0;
-    int i = 0;
-    while (i < n) {
-        int a;
-        cin >> a;
-        suma = suma + a;
-        ++i;
-    }
-    cout << suma << endl;
-}
-```
-
-Inicialment, llegim `n`.
-Després, es crea una variable `suma` que, en tot moment,
-guardarà la suma de tots els nombres llegits. Aquesta variable s'inicialitza
-a zero perquè, en aquest punt, encara no s'ha llegit cap nombre.
-
-A continuació, `n` vegades
-llegim el següent nombre dins d'una variable auxiliar `a`,
-i actualitzem el valor de la variable `suma` amb `suma + a`,
-perquè continuï sent la suma de tots els nombres llegits fins ara.
-
-Com a conclusió, després del `while` ja s'hauràn llegit els `n` nombres
-i la seva suma es trobarà dins de `suma`,
-que només caldrà escriure.
-
-Un comentari final:
-Fixem-nos que la variable `a` es declara dins del `while`,
-perquè és aquí que ens cal.
-Com a regla general,
-és bona pràctica declarar les variables tan tard com es pugui,
-i en el màxim nivell d'indentació possible.
-Així, aquestes variables deixen d'existir quan deixen de ser útils.
-En el cas de la variable `a`,
-desapareix tot just acaba el `while`.
-D'aquesta manera, si després vulguéssim usar una altra variable de nom `a`,
-la qual podria contenir per exemple un nombre real en lloc d'un nombre enter,
-ho podríem fer sense cap problema.
-
-
-"""
-
-window.reveal text, "quiz"
-
-</script>
-
+TODO: Quiz
 
 <br>
 
-
-
-
 <Autors autors="jpetit roura"/>
-

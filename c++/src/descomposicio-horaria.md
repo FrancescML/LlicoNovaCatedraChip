@@ -1,4 +1,3 @@
-
 # Aplicació: Descomposició horària
 
 <img src='./rellotge.png' style='height: 10em; float: right; margin: 0 0 1em 1em;'/>
@@ -8,7 +7,6 @@ determinat nombre de segons en hores, minuts i segons. Això permet aprofundir
 en l'ús de les instruccions que ja s'han presentat i veure com funciona la
 divisió amb valors enters.
 
-
 ## Enunciat del problema
 
 Considereu el problema següent: Donada una quantitat (positiva) de segons `n`,
@@ -17,24 +15,22 @@ cal dir que en 3661 segons hi ha una hora, un minut i un segon. També, si `n`
 val 76234, cal dir que en 76234 segons hi ha 21 hores, 10 minuts i 34 segons
 (no feu el mandra: comproveu-ho!).
 
-
 ## Solució
 
 El primer pas per resoldre qualsevol problema és identificar quines són les
 seves entrades, quines són les seves sortides i quina relació tenen entre
 elles. En aquest cas:
 
-- De l'enunciat del problema, queda clar que hi ha una entrada `n` que
-representa un determinat nombre de segons. Com que es tracta d'un nombre natural,
-la podrem desar en una variable entera (`int n;`).
+-   De l'enunciat del problema, queda clar que hi ha una entrada `n` que
+    representa un determinat nombre de segons. Com que es tracta d'un nombre natural,
+    la podrem desar en una variable entera (`int n;`).
 
-- Igualment, queda clar que les sortides són tres nombres naturals `h`, `m` i `s`
-que representen, respectivament, el nombre d'hores, minuts i segons continguts a `n`.
-Els podrem desar en tres variables enteres (`int h, m, s;`).
+-   Igualment, queda clar que les sortides són tres nombres naturals `h`, `m` i `s`
+    que representen, respectivament, el nombre d'hores, minuts i segons continguts a `n`.
+    Els podrem desar en tres variables enteres (`int h, m, s;`).
 
-- La relació entre l'entrada `n` i les sortides `h`, `m` i `s` és `3600*h +
+-   La relació entre l'entrada `n` i les sortides `h`, `m` i `s` és `3600*h +
 60*m + s == n`, amb `0 <= m < 60` i `0 <= s < 60`.
-
 
 La solució ha de declarar totes aquestes variables,
 llegir el valor d'`n`,
@@ -61,19 +57,19 @@ ja són al seu lloc.
 
 Fixeu-vos en alguns detalls:
 
-- És un bon costum no declarar les variables fins que no siguin estrictament
-necessàries. Per això hem separat la declaració d'`n` de les d'`h`, `m` i
-`s`.
+-   És un bon costum no declarar les variables fins que no siguin estrictament
+    necessàries. Per això hem separat la declaració d'`n` de les d'`h`, `m` i
+    `s`.
 
-- Es poden escriure textos arbitraris, tot
-tancant-los entre cometes dobles. Com que en aquest cas volem separar les tres dades
-per espais en banc, hem utilitzat el text `"⎵"` (⎵ representa un espai en blanc,
-a l'explicació posem aquest símbol perquè el blanc es vegi 😀). Cal
-separar els nombres amb espais perquè altrament
-quedarien enganxats, no sabent on comença un i acaba l'altre.
+-   Es poden escriure textos arbitraris, tot
+    tancant-los entre cometes dobles. Com que en aquest cas volem separar les tres dades
+    per espais en banc, hem utilitzat el text `"⎵"` (⎵ representa un espai en blanc,
+    a l'explicació posem aquest símbol perquè el blanc es vegi 😀). Cal
+    separar els nombres amb espais perquè altrament
+    quedarien enganxats, no sabent on comença un i acaba l'altre.
 
-- Es poden escriure diferents dades en una sola instrucció d'escriptura
-(`cout`) tot separant-les amb els símbols de `<<`.
+-   Es poden escriure diferents dades en una sola instrucció d'escriptura
+    (`cout`) tot separant-les amb els símbols de `<<`.
 
 <img src='./caramels.png' style='height: 8em; float: right; margin: 0 0 1em 1em;'/>
 
@@ -155,24 +151,21 @@ En aquest punt, és pertinent preguntar-nos com podem assegurar que
 aquesta solució és realment correcta. Ho és per aquestes raons:
 
 1. Tal com cal, `s` es troba entre 0 i 59. Això és conseqüència del fet que
-`s` és el residu d'una divisió entera entre 60.
+   `s` és el residu d'una divisió entera entre 60.
 
 2. Tal com cal, `m` es troba entre 0 i 59. Això és conseqüència del fet que,
-com que `n%3600` es troba entre 0 i 3599, llavors `(n%3600)/60`
-no pot ser més gran que 59.
+   com que `n%3600` es troba entre 0 i 3599, llavors `(n%3600)/60`
+   no pot ser més gran que 59.
 
 3. Tal com cal, `n == 3600*h + 60*m + s`. En efecte, la igualtat
-`n = 3600*(n/3600) + 60*((n%3600)/60) + n%60` és certa,
-tal com us animem a comprovar.
-
+   `n = 3600*(n/3600) + 60*((n%3600)/60) + n%60` és certa,
+   tal com us animem a comprovar.
 
 ## Demostració
 
 La captura de terminal següent posa en marxa aquest programa. Piqueu el triangle!
 
-<?= asciinema("descomposicio-horaria", "Descomposició horària") ?>
-
-
+TODO: asciinema("descomposicio-horaria", "Descomposició horària")
 
 ## Solució alternativa
 
@@ -194,12 +187,4 @@ int main() {
 }
 ```
 
-
-
-
-
 <Autors autors="jpetit roura"/>
-
-
-
-

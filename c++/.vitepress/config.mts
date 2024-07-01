@@ -83,4 +83,6 @@ export default defineConfig({
             md.use(tabsMarkdownPlugin)
         },
     },
+
+    ignoreDeadLinks: true,      // TODO: Treure
 })

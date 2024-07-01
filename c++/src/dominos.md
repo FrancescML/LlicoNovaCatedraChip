@@ -1,11 +1,10 @@
 # Aplicació: Trens de dòminos
 
-<img src='dominos.png' style='height: 8em; float: right; margin: 0 0 1em 1em;'/>
+<img src='./dominos.png' style='height: 8em; float: right; margin: 0 0 1em 1em;'/>
 
 Aquesta lliçó mostra com processar una seqüència de dades
 que representa una successió de fitxes de dòmino
 per tal de comptar quants errors té.
-
 
 ## Descripció del problema
 
@@ -28,7 +27,6 @@ Aquí, suposarem que tots els trens tenen almenys una fitxa.
 Per exemple, la seqüència ~~3 2~~
 representa el tren amb una sola fitxa (i, per tant, correcte) <big>🁈</big>.
 
-
 ## Interludi
 
 Abans de presentar la solució, fixeu-vos com amb la descripció del problema
@@ -39,7 +37,6 @@ com a dades d'un cert tipus (aquí, nombres enters).
 De fet, és la digitalització de tot tipus d'informacions
 (com are mapes, cançons, imatges i pel·licules de cinema...)
 la que ha conduït a la revolució digital.
-
 
 ## Solució
 
@@ -78,29 +75,27 @@ int main() {
     cout << errors << endl;
 }
 ```
+
 Explicació:
 
-- La variable `errors` conté el nombre d'errors trobats fins al moment.
-Aquesta variable s'inicialitza a zero,
-perquè en començar encara no s'ha trobat cap error.
+-   La variable `errors` conté el nombre d'errors trobats fins al moment.
+    Aquesta variable s'inicialitza a zero,
+    perquè en començar encara no s'ha trobat cap error.
 
-- La variable `primer` representa el nombre esquerre de la primera fitxa del tren.
-No ens importa, però cal que el llegim per poder passar al següent nombre.
-D'alguna forma, ens el "saltem".
+-   La variable `primer` representa el nombre esquerre de la primera fitxa del tren.
+    No ens importa, però cal que el llegim per poder passar al següent nombre.
+    D'alguna forma, ens el "saltem".
 
-- A continuació, mentre puguem llegir dos nombres més, obtindrem el nombre
-`dret` d'una fitxa i el nombre `esquerre` de la següent. Si `dret` i `esquerre`
-no són iguals, és que les fitxes no encaixen i cal incrementar el comptador `errors`.
+-   A continuació, mentre puguem llegir dos nombres més, obtindrem el nombre
+    `dret` d'una fitxa i el nombre `esquerre` de la següent. Si `dret` i `esquerre`
+    no són iguals, és que les fitxes no encaixen i cal incrementar el comptador `errors`.
 
-- En sortir del bucle, quan només quedi mitja fitxa,
-tan sols cal escriure el nombre total d'errors trobats.
+-   En sortir del bucle, quan només quedi mitja fitxa,
+    tan sols cal escriure el nombre total d'errors trobats.
 
 Fixeu-vos que el bucle acaba quan es llegeix el nombre de la dreta de la darrera fitxa
 i no es pot llegir cap altre nombre. En altres paraules, el bucle acaba perquè
 dels dos nombres que calia llegir, només se n'ha pogut llegir un.
-
-
-
 
 ## Un problema similar
 
@@ -176,6 +171,4 @@ es podria fer lleugerament millor,
 usant una variable de tipus `bool`,
 el qual encara no hem vist en aquest curs.
 
-
-<? author("jpetit roura") ?>
-<? language("c++") ?>
+<Autors autors="jpetit roura"/>

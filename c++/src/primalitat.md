@@ -2,10 +2,9 @@
 
 <img src='./primalitat.png' style='height: 9em; float: right; margin: 0 0 1em 1em;'/>
 
-Aquest lliçó presenta l'algorisme de *factorització per prova de divisions*
+Aquest lliçó presenta l'algorisme de _factorització per prova de divisions_
 per resoldre el problema de la primalitat, és a dir, determinar si un natural
 donat és un nombre primer o no.
-
 
 ## Concepte matemàtic de nombre primer
 
@@ -16,9 +15,7 @@ Així, els primers nombres primers
 són 2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67,
 71, ...
 
-
 ## Funció pel factorial
-
 
 Definim una funció en C++ per determinar si un nombre natural donat
 és o no primer. La capçalera és següent:
@@ -37,9 +34,8 @@ determinar la primalitat d'enters negatius.
 Per implementar aquesta funció, podem pensar en provar de dividir `n` per
 tots els nombres `i` entre 2 i `n-1`. Si algun d'aquests `i` divideix `n`,
 llavors `n` és compost (és a dir, no és primer). Si cap d'aquests `i`
-divideix `n`, llavors `n` és primer. Aquesta idea s'anomena el *mètode
-per prova de divisions* i el podríem programar com segueix:
-
+divideix `n`, llavors `n` és primer. Aquesta idea s'anomena el _mètode
+per prova de divisions_ i el podríem programar com segueix:
 
 ```c++
 // Indica si el natural n és primer o no.
@@ -63,7 +59,6 @@ interromp el bucle al fer el `return false;`. Per tant, no es continua provant
 divisors més grans: un cop s'ha trobat que el nombre és compost, no cal
 trobar-li més factors, perquè segur que no és primer.
 
-
 ## Una bona millora
 
 Una primera millora que podem aplicar en aquest algorisme
@@ -74,21 +69,16 @@ el doble de ràpida provant, com a molt, $n/2$ divisors.
 Però encara ho podem millorar més: si un nombre $n$ no té cap divisor entre
 $2$ i $n-1$, tampoc el tindrà entre $2$ i $\sqrt n$. La raó és que si $n$
 tingués un divisor $d\ge \sqrt n$, llavors també tindria $n/d$ com a
-divisor, però  llavors $n/d\le \sqrt n$. Per tant, podem fer que la cerca
+divisor, però llavors $n/d\le \sqrt n$. Per tant, podem fer que la cerca
 sigui molt més ràpida provant, com a molt, $\sqrt n$ divisors.
 
 La gràfica següent compara el creixement de $n$ i el de $\sqrt n$
 i ens confirma que això és un gran guany de temps, especialment
 per a valors de `n` grans i primers:
 
-<?
-// http://fooplot.com/#W3sidHlwZSI6MCwiZXEiOiJ4IiwiY29sb3IiOiIjMDAwMDAwIn0seyJ0eXBlIjowLCJlcSI6InheKDEvMikiLCJjb2xvciI6IiMwMDAwMDAifSx7InR5cGUiOjEwMDAsIndpbmRvdyI6WyIwIiwiNiIsIjAiLCI0Il19XQ--
-?>
-
 <center>
 <img src='./plot-n-sqrt-n.svg' style='max-width: 600px; margin: 0 0 1em 1em;'/>
 </center>
-
 
 Per dur a terme aquesta idea, es podria utilitzar la funció `sqrt()` fent un
 `#include <cmath>`, però és millor fer-ho així:
@@ -110,43 +100,24 @@ de forma que la condició `i <= sqrt(n)` queda elevada al quadrat
 com a `i*i <= n` i, d'aquesta manera, ja no cal utilitzar costoses
 operacions sobre nombres reals.
 
-
-
-
-
 ## Exercici
 
 Al codi anterior hem escrit la condició `i*i <= n`.
-Seria correcte utilitzar  `i*i < n`?
+Seria correcte utilitzar `i*i < n`?
 
-<div id='quiz'></div>
+TODO: Resposta
 
-<script type="text/coffeescript">
-
-quiz = """
 No: seria incorrecte. Altrament, els quadrats de nombres primers serien
 reportats com a primers. Per exemple, el 49.
-
-"""
-
-window.reveal quiz, "quiz"
-
-</script>
-
-
-
 
 ## Una altra millora possible
 
 Una altra millora possible que es podria aplicar és adonar-se que, si el
 nombre no era parell, ja no cal provar més les `i` que són parells. I,
-igualment, que  si el nombre no és múltiple de tres, ja no cal provar més les
-`i` que són  múltiples de tres. I, així successivament.
+igualment, que si el nombre no és múltiple de tres, ja no cal provar més les
+`i` que són múltiples de tres. I, així successivament.
 
 Però: com fer-ho? La solució la veurem més endavant, amb vectors, quan parlem
 del Garbell d'Eratòstenes.
 
-
-
 <Autors autors="jpetit roura"/>
-

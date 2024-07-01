@@ -1,12 +1,10 @@
 # Condicionals
 
-
 <img src='./if-then-else.png' style='height: 10em; float: right; margin: 0 0 1em 1em;'/>
 
 Aquest lliçó presenta la instrucció condicional, que permet
 que l'ordinador executi certes instruccions o unes altres
 depenent de si es dóna o no una determinada condició.
-
 
 ## Màxim de dos enters
 
@@ -53,23 +51,14 @@ altrament, s'executa el bloc d'⟨Instruccions_NO⟩.
 El diagrama de flux següent mostra el funcionament de la instrució
 condicional:
 
-<div id='flow-if-then-else'></div>
-
-<script type='text/coffeescript' src='./flow-if-then-else.coffee'></script>
-
-<br>
+<MyFlowChart src="flow-if-then-else.ts"/>
 
 A més, la part de l'`else`
 és opcional: si no es proporciona, no es farà res quan no es compleixi la condició.
 El diagrama de flux següent mostra el funcionament de la instrució
 condicional sense `else`:
 
-<div id='flow-if-then'></div>
-
-<script type='text/coffeescript' src='./flow-if-then.coffee'></script>
-
-<br>
-
+<MyFlowChart src="flow-if-then.ts"/>
 
 Així, per calcular el màxim entre `a` i `b`, podem utilitzar la instrucció condicional
 de la forma següent:
@@ -117,13 +106,11 @@ Fixeu-vos que `x == y` (amb dos iguals)
 compara si els valors de `x` i de `y` són iguals,
 mentre que `x = y;` (amb un sol igual) copia a `x` el valor de `y`.
 
-
 ## Exercici
 
 A continuació presentem algunes alternatives pel programa
 anterior. Podrieu diferenciar les correctes de les incorrectes? A sota teniu un test
 per demostrar la vostra vàlua!
-
 
 ```c++
 if (a >= b) {     // Fragment 1
@@ -133,7 +120,6 @@ if (a >= b) {     // Fragment 1
 }
 ```
 
-
 ```c++
 if (a < b) {      // Fragment 2
     m = b;
@@ -141,7 +127,6 @@ if (a < b) {      // Fragment 2
     m = a;
 }
 ```
-
 
 ```c++
 if (a <= b) {     // Fragment 3
@@ -151,8 +136,7 @@ if (a <= b) {     // Fragment 3
 }
 ```
 
-
-```c++
+````c++
 if (a > b) {      // Fragment 4
     m = a;
 }
@@ -169,40 +153,9 @@ if (a > b) {      // Fragment 5
 if (a < b) {
     m = b;
 }
-```
+````
 
-
-
-<div id='quiz'></div>
-
-
-<script type="text/coffeescript">
-
-q =
-  type: "MultipleChoice"
-  text: "Quins dels fragments següents són correctes (és a dir, deixen en `m` el màxim d'entre `a` i `b`)?"
-  choices: [
-      text: "Fragment 1"
-      correct: true
-    ,
-      text: "Fragment 2"
-      correct: true
-    ,
-      text: "Fragment 3"
-      correct: true
-    ,
-      text: "Fragment 4"
-      correct: true
-    ,
-      text: "Fragment 5"
-      correct: false
-  ]
-
-window.quiz q, "quiz"
-
-</script>
-
-
+TODO: Quiz
 
 ## Mínim i màxim de dos enters
 
@@ -265,13 +218,16 @@ int main() {
     cout << a << " " << b << endl;
 }
 ```
+
 Suposem que `a` conté un 8, i que `b` conté un 5.
 El codi dins del condicional,
+
 ```
         int c = a;
         a = b;
         b = c;
 ```
+
 primer desa el 8 a una variable auxiliar `c`,
 després copia el 5 dins d'`a`,
 i després copia el 8 (del qual havíem fet una còpia per no perdre'l) dins de `b`.
@@ -280,11 +236,12 @@ Cal mencionar que la variable auxiliar `c`,
 que després del condicional no ens interessa per res,
 de fet desapareix quan acaba el condicional.
 En altres paraules, si reemplacéssim l'última línia per aquesta:
+
 ```
     cout << a << " " << c << endl;
 ```
-el compilador ens diria que aquí la `c` ja no existeix.
 
+el compilador ens diria que aquí la `c` ja no existeix.
 
 ## Màxim de quatre enters
 
@@ -333,7 +290,6 @@ sortida, sinó que hem aprofitat una de les variables d'entrada per fer-ho
 (`a`, concretament). Això és lícit en aquest cas, perquè el valor original de les
 variables d'entrada no ens cal guardar-lo.
 
-
 ## Indentació i blocs amb una sola instrucció
 
 Segurament ja heu vist que quan s'escriuen programes, cada cop que s'obre un bloc
@@ -344,7 +300,7 @@ Aquesta tècnica, anomenada **indentació**, permet que l'estructura del program
 sigui més senzilla de llegir i us heu d'acostumar a utilitzar-la.
 
 De fet, per fer que els codis quedin una mica més curts, C++ permet obviar
-les claus (`{` i `}`) dels blocs d'instruccions que contenen *una sola*
+les claus (`{` i `}`) dels blocs d'instruccions que contenen _una sola_
 instrucció. Així, enlloc d'escriure
 
 ```c++
@@ -372,7 +328,4 @@ int main() {
 }
 ```
 
-
-
 <Autors autors="jpetit roura"/>
-

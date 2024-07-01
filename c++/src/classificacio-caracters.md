@@ -2,12 +2,9 @@
 
 <img src='./classificacio-caracters.png' style='height: 4em; float: right; margin: 0 0 1em 1em;'/>
 
-
 Aquesta lliçó mostra una possible solució per a l'exercici
 [P42042](https://jutge.org/problems/P42042) (Classificació de caràcters 1) del
 Jutge.
-
-
 
 ## Exercici P42042
 
@@ -64,6 +61,4 @@ sense cap necessitat del booleà `majuscula`:
 }
 ```
 
-
-<? author("jpetit") ?>
-
+<Autors autors="jpetit"/>

@@ -1,4 +1,3 @@
-
 # Iteracions amb for
 
 <img src='./bucles-for.png' style='height: 8em; float: right; margin: 0 0 1em 1em;'/>
@@ -6,7 +5,6 @@
 Aquest lliçó presenta la instrucció iterativa `for`,
 que podem considerar una mena de cas particular,
 força útil, de la instrucció `while`.
-
 
 ## Escriure molts nombres
 
@@ -30,20 +28,24 @@ Si considerem aquest codi a partir de la tercera línia,
 hi trobem un esquema molt freqüent a l'hora de construir bucles,
 que podem sintetitzar en aquest diagrama de flux:
 
+TODO:
+
+```
 <div id='flow-for'></div>
 
 <script type='text/coffeescript' src='./flow-for.coffee'></script>
+```
 
 <br>
 
 Per al programa anterior, aquesta n'és la correspondència:
 
-diagrama | exemple
---- | ---
-`<inicialització>` | `int i = 1;`
-`<condició>`       | `(i <= n)`
-`<instruccions>`   | `cout << i << endl;`
-`<increment>`      | `++i;`
+| diagrama           | exemple              |
+| ------------------ | -------------------- |
+| `<inicialització>` | `int i = 1;`         |
+| `<condició>`       | `(i <= n)`           |
+| `<instruccions>`   | `cout << i << endl;` |
+| `<increment>`      | `++i;`               |
 
 Qualsevol tros de codi que segueixi aquest esquema es pot escriure amb la instrucció `for`,
 que té aquesta estructura:
@@ -100,8 +102,6 @@ i a usar-los per defecte,
 sempre i quan segueixin l'esquema tan freqüent mencionat anteriorment.
 Feu servir els bucles `while` només
 per a iteracions amb esquemes més originals.
-
-
 
 ## Escriure molts nombres i els seus quadrats
 
@@ -163,14 +163,11 @@ int main() {
 
 Bastant millor, oi?
 Però això és correcte?
-El compilador no ens dirà  que estem redeclarant la `i` en el segon bucle?
+El compilador no ens dirà que estem redeclarant la `i` en el segon bucle?
 No.
 Una diferència subtil però força útil entre els `for` i els `while`
 és que les variables de control desapareixen quen s'acaba el bucle.
 Per això, no ens hem de preocupar de si repetim el mateix nom en bucles consecutius.
-
-
-
 
 ## Màxim de 1000 nombres
 
@@ -207,10 +204,9 @@ int main() {
     cout << maxim << endl;
 }
 ```
+
 En aquest cas, la millora no és tan espectacular.
 Però fixeu-vos que sempre aconseguim codis més concisos.
-
-
 
 ## Exercici: Suma de `n` nombres
 
@@ -218,41 +214,6 @@ Escriviu un programa que llegeixi un nombre natural `n`,
 seguit d'`n` enters, i que n'escrigui la seva suma.
 Useu un `for`.
 
-
-<div id='quiz'></div>
-
-<script type="text/coffeescript">
-
-text = """
-Aquesta és una possible solució:
-
-```c++
-/* Llegeix n, seguit d'n enters, i n'escriu la suma. */
-
-#include <iostream>
-using namespace std;
-
-int main() {
-    int n;
-    cin >> n;
-    int suma = 0;
-    for (int i = 0; i < n; ++i) {
-        int a;
-        cin >> a;
-        suma = suma + a;
-    }
-    cout << suma << endl;
-}
-```
-"""
-
-window.reveal text, "quiz"
-
-</script>
-
-
-
+TODO: Quiz
 
 <Autors autors="jpetit roura"/>
-
-

@@ -1,4 +1,3 @@
-
 # Aplicació: Girs i palíndroms
 
 <img src='./palindroms.png' style='height: 6em; float: right; margin: 0 0 1em 1em;'/>
@@ -6,7 +5,6 @@
 Aquesta lliçó mostra diverses variacions per girar vectors o textos i per
 determinar si són o no palíndroms. Per fer-ho, s'sutilitzaran algunes de les
 operacions més recurrents al treballar amb vectors.
-
 
 ## Preludi: Intercanviar dos elements d'un vector
 
@@ -32,12 +30,10 @@ interessa.
 
 ```c++
 vector<int> v = {1, 2, 3, 4, 5}     // {1,2,3,4,5}
-intercanvia(v[1], v[3]);            // {1,4,3,2,5}      
+intercanvia(v[1], v[3]);            // {1,4,3,2,5}
 ```
 
 Aquest exemple mostra com podem treballar amb elements individuals del vector.
-
-
 
 ## Girar un vector de caràcters
 
@@ -90,7 +86,7 @@ int main()
 	}
     // escriu el vector v ({u,o,i,e,a})
 	for (char x : v) {
-        cout << x << endl;          
+        cout << x << endl;
     }
 }
 ```
@@ -107,7 +103,7 @@ int main()
 		intercanvia(v[i], v[n - 1 - i]);
 	}
     // escriu el text v ("uoiea")
-	cout << v << endl;   
+	cout << v << endl;
 }
 ```
 
@@ -157,7 +153,6 @@ int main()
 Com que `girar` modifica el seu paràmetre, hem triat que el paràmetre de `girat`
 es passi per valor (és a dir, que s'en faci una còpia).
 
-
 ## Comprovar si un mot és palíndrom
 
 Un mot és un palíndrom si, girant-lo, obtenim el mot original.
@@ -196,11 +191,10 @@ bool es_mot_palindrom(const string& mot)
 }
 ```
 
-
 ## Comprovar si una frase és palindròmica
 
 Una frase és palindròmica si es llegeix igual del dret que del revés, tot ignorant
-els espais. Per exemple *"el bo plau al poble"* és una frase palindròmica.
+els espais. Per exemple _"el bo plau al poble"_ és una frase palindròmica.
 
 Per determinar si una frase emmagatzemada en un text és palindròmica, podem fer
 com abans, però com que cal saltar els espais de forma no simètrica,
@@ -229,5 +223,4 @@ bool es_frase_palindromica(const string& frase)
 }
 ```
 
-<? author("rafah jpetit") ?>
-
+<Autors autors="jpetit rafah"/>

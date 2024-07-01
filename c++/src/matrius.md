@@ -10,7 +10,6 @@ Com els vectors, les matrius tenen moltes aplicacions en matemàtiques, però
 també poden representar molts altres conceptes en informàtica, com ara taulers,
 mapes, patrons...
 
-
 ## Introducció
 
 Una matriu és una estructura de dades que permet guardar diverses dades d'un
@@ -23,7 +22,6 @@ mapes, taules, patrons...
 <center>
 <img src='./exemples-matrius.png' style='height: 12em;'/>
 </center>
-
 
 En C++, una matriu es representa com un vector de vectors. Per convenció, el
 vector "exterior" representa les files de la matriu i els vectors "interiors"
@@ -49,14 +47,13 @@ a la dreta, descomposta en vectors de vectors.
 </center>
 
 Per accedir a un element a la `i`-èsima fila i a la `j`-èsima columna, cal
-indexar la matriu dos cops: `m[i][j]`.  Això no és nou: `m[i]` accedeix a
-l'índex `i` del vector  `m`. Com que `m[i]` és  també un vector, `m[i][j]` en
+indexar la matriu dos cops: `m[i][j]`. Això no és nou: `m[i]` accedeix a
+l'índex `i` del vector `m`. Com que `m[i]` és també un vector, `m[i][j]` en
 selecciona l'índex `j`.
 
 Per exemple, `m[2][3]` val `1` a la matriu anterior. De fet, `m[2]` és un vector
 fila que val `{ 6,  1,  3,  1, 12}`. Obtenir un vector columna d'una matriu no
 és una operació directa en C++.
-
 
 ## Creació de matrius
 
@@ -127,7 +124,6 @@ Aquesta construcció ens pot servir per exemple per guardar dades sobre punts en
 l'espai. No obstant, no és molt habitual el seu ús als primers programes, així
 que no entrarem en més detalls.
 
-
 ## Declaracions de tipus amb `using`
 
 Com haureu vist, crear matrius pot arribar a ser una mica feixuc i
@@ -154,7 +150,7 @@ double temperatura_mitjana(Temperatures& temperatures) { ... }
 ```
 
 Podeu perfectament pensar que el compilador substitueix totes les ocurrències
-de `Temperatures` per  `vector<double>` i tindreu raó. Però pels lectors humans,
+de `Temperatures` per `vector<double>` i tindreu raó. Però pels lectors humans,
 proporcionar bons noms als tipus facilita la comprensió del codi. I, a llarg
 termini, també els fa més fàcils de millorar.
 
@@ -167,7 +163,7 @@ Temperatures temperatures(24);
 ```
 
 Si, a més, volem tenir registre de totes les temperatures al llarg d'un any,
-necessitarem un vector de 365 vectors de 24 reals, és a dir, una matriu  de
+necessitarem un vector de 365 vectors de 24 reals, és a dir, una matriu de
 365✕24 reals:
 
 ```c++
@@ -179,8 +175,6 @@ Registre registre(365, Temperatures(24));
 
 Gràcies a l'ús de bons identificadors de tipus amb `using`, el programa esdevé
 més llegible i, també, més fàcil de modificar en el futur.
-
-
 
 ## Escriptura de matrius
 
@@ -229,7 +223,6 @@ que en general contenen una gran quantitat d'elements. Altrament, estaríem fent
 una còpia de tota la matriu i els nostres programes serien inutilment lents i
 pesats.
 
-
 ## Lectura de matrius
 
 En general, ens interessarà llegir certs valors donats i guardar-los
@@ -257,10 +250,8 @@ Matriu llegir_matriu() {
 }
 ```
 
-
 Aquesta seria una manera alternativa de fer-ho, utilitzant bucles `for :`
 enlloc d'índexos:
-
 
 ```c++
 Matriu llegir_matriu() {
@@ -277,7 +268,4 @@ Matriu llegir_matriu() {
 }
 ```
 
-
-
-<? author("rafah jpetit") ?>
-
+<Autors autors="rafah jpetit"/>

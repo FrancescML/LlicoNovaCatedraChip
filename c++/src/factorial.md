@@ -5,7 +5,6 @@
 En aquesta lliçó es calculen els nombres factorials. A més, es presenten
 el concepte de sobreiximent en operacions amb nombres enters.
 
-
 ## Concepte matemàtic del factorial
 
 Donats $n$ objectes, de quantes maneres es poden posar un rera l'altre?
@@ -33,15 +32,14 @@ una seqüència amb zero objectes: la seqüència buida.
 
 La taula següent mostra els primers valors dels factorials:
 
-|$n$   |$n!$ |
-|------|----:|
-| 0    | 1   |
-| 1    | 1   |
-| 2    | 2   |
-| 3    | 6   |
-| 4    | 24  |
-| 5    | 120 |
-
+| $n$ | $n!$ |
+| --- | ---: |
+| 0   |    1 |
+| 1   |    1 |
+| 2   |    2 |
+| 3   |    6 |
+| 4   |   24 |
+| 5   |  120 |
 
 ## Funció per al factorial
 
@@ -73,7 +71,6 @@ Aquesta funció calcula el factorial de `n` tot multiplicant
 una variable `f` per `i`, per a tots els `i` entre 1 i `n`.
 Fixeu-vos que `factorial(0)` retorna `1`, tal com cal.
 
-
 ## Exercicis
 
 **Exercici 1.** Considereu aquesta nova versió de `factorial` on la `i`
@@ -88,96 +85,12 @@ int factorial1(int n) {
 }
 ```
 
-<div id='quiz1'></div>
-
-<script type="text/coffeescript">
-
-quiz1 =
-  type: "SingleChoice"
-  text: "És correcte?"
-  choices: [
-      text: "Sí."
-      correct: true
-    ,
-      text: "No."
-      correct: false
-  ]
-
-window.quiz quiz1, "quiz1"
-
-</script>
-
-
-**Exercici 2.** Considereu ara aquesta nova versió de `factorial`
-amb un control diferent del bucle `for`:
-
-```c++
-// Retorna el factorial d'un natural n.
-int factorial2(int n) {
-    int f = 1;
-    for (int i = n; i > 1; --i) f = f*i;
-    return f;
-}
-```
-
-<div id='quiz2'></div>
-
-<script type="text/coffeescript">
-
-quiz2 =
-  type: "SingleChoice"
-  text: "És correcte?"
-  choices: [
-      text: "Sí."
-      correct: true
-    ,
-      text: "No."
-      correct: false
-  ]
-
-window.quiz quiz2, "quiz2"
-
-</script>
-
-
-**Exercici 3.** Considereu finalment una altra versió de `factorial`:
-
-```c++
-// Retorna el factorial d'un natural n.
-int factorial3(int n) {
-    int f = n;
-    for (int i = n - 1; i >= 2; --i) f = f*i;
-    return f;
-}
-```
-
-<div id='quiz3'></div>
-
-<script type="text/coffeescript">
-
-quiz3 =
-  type: "SingleChoice"
-  text: "És correcte?"
-  choices: [
-      text: "Sí."
-      correct: false
-    ,
-      text: "No."
-      correct: true
-  ]
-
-window.quiz quiz3, "quiz3"
-
-</script>
-
-
-
+TODO: QUIZ
 
 ## Problemes de sobreixement
 
 Aquest és un programa complet que escriu una taula amb `factorial(n)`
 per a tots els valors d'`n` entre 0 i 20:
-
 
 ```c++
 #include <iostream>
@@ -235,6 +148,4 @@ enters](ip/referencies/ints.html) per a més informació.
 En la majoria dels exemples que veurem en aquest curs, ignorarem el problema
 dels sobreiximents.
 
-
 <Autors autors="jpetit roura"/>
-

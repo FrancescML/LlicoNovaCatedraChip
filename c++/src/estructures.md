@@ -1,14 +1,12 @@
-
 # Estructures
 
 <img src='./estructures.png' style='height: 8em; float: right; margin: 0 0 1em 2em;'/>
 
 Aquesta lliçó introdueix com crear uns altres tipus dades molt habituals: les
-estructures (també anomenades *registres*, *fitxes*, o *tuples*). Les
+estructures (també anomenades _registres_, _fitxes_, o _tuples_). Les
 estructures permeten emmagatzemar en una sola variable un nombre fixe de dades
 de diferents tipus i accedir a qualsevol d'elles directament a través del seu
 nom.
-
 
 ## Introducció
 
@@ -39,11 +37,10 @@ fixe, que cada camp té un nom enlloc d'una posició, i que cada camp pot ser d'
 tipus diferent. Es diu que les estructures són estructures de dades
 **heterogènies**.
 
-
 ## Declaració i ús d'estructures
 
 Per declarar una estructura s'utilitza la paraula clau `struct`, es dóna el seu
-nom i els camps que la componen. Cada camp  té un nom de camp i un  tipus. Per
+nom i els camps que la componen. Cada camp té un nom de camp i un tipus. Per
 exemple, aquesta seria una estructura que correspon a la informació d'una
 pel·lícula de cinema:
 
@@ -101,7 +98,7 @@ Aquesta assignació s'ha pogut fer perquè `p1` i `p3` eren del mateix tipus.
 L'única operació que es pot fer sobre una variable de tipus estructura és
 seleccionar un dels seus camps. Això es fa escrivint el nom de la variable,
 un punt i el nom del camp. Per exemple, aquest tros de codi corregeix
-el director de *The Kid*:
+el director de _The Kid_:
 
 ```c++
 p2.director = "Charlie Chaplin";
@@ -123,7 +120,4 @@ En el segon cas, s'han seleccionat els camps `any` per consultar-los.
 I ja està! No hi ha res més: Les estructures són ben senzilles de declarar i
 d'utilitzar. A continuació en donem algunes aplicacions i en veiem més detalls.
 
-
-
-<? author("jpetit") ?>
-
+<Autors autors="jpetit"/>

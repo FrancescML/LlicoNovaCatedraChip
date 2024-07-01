@@ -1,7 +1,3 @@
-
 # Structs
 
-
-
-<? author("rafah") ?>
-
+<Autors autors="rafah"/>
