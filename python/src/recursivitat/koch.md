@@ -2,11 +2,9 @@
 
 <img src='././koch.png' style='height: 8em; float: right; margin: 0 0 1em 1em;'/>
 
-Una **fractal** és un objecte matemàtic de gran complexitat definit per algorismes simples. Moltes fractals tenen propietats d'autosemblança, on les seves parts tenen la mateixa forma o estructura que el tot.  Aquesta lliçó presenta l'ús de la recursivitat per poder generar una fractal de Koch a través de l'ordinador utilitzant la tortuga de Python.
-
+Una **fractal** és un objecte matemàtic de gran complexitat definit per algorismes simples. Moltes fractals tenen propietats d'autosemblança, on les seves parts tenen la mateixa forma o estructura que el tot. Aquesta lliçó presenta l'ús de la recursivitat per poder generar una fractal de Koch a través de l'ordinador utilitzant la tortuga de Python.
 
 ## La corba de Koch
-
 
 La **corba de Koch** és un conjunt geomètric descrit pel matemàtic Helge von Koch al 1904. Es tracta d'una de les primeres corbes fractals que es varen definir.
 
@@ -23,7 +21,6 @@ Per construir una corba de Koch se segueix un procés iteratiu, començant des d
 En matemàtiques, la corba de Koch és el límit de seguir el procediment anterior infinitament. Per poder-la visualitzar, ens podem limitar a emular l'algorisme descrit un determinat nombre de nivells. La figura següent mostra la corba per un nombre creixent de nivells `n` de 0 a 4:
 
 ![nivells-koch.png](nivells-koch.png)
-
 
 ## Dibuix de la corba de Koch
 
@@ -45,18 +42,18 @@ I, en el cas que el nombre de nivells a dibuixar siguin zero (figura amb n = 0),
 turtle.forward(m)
 ```
 
-Per fer una acció recursiva que dibuixi la corba de Koch per una determinada mida `m` i nombre de nivells `n`, podem utilitzar la capçalera següent:
+Per fer una acció recursiva que dibuixi la corba de Koch per una mida `m` i `n` nivells, podem utilitzar la capçalera següent:
 
 ```python
 def corba_koch(m: float, n: int) -> None:
-    """Dibuixa la corba de Koch per una determinada mida m i nombre de nivells n."""
+    """Dibuixa la corba de Koch per una mida m i n nivells."""
 ```
 
 Per implementar-la, considerarem primer el seu cas base: quan el nombre de nivells a dibuixar sigui 0, només cal fer un segment de m `m`:
 
 ```python
 def corba_koch(m: float, n: int) -> None:
-    """Dibuixa la corba de Koch per una determinada mida m i nombre de nivells n."""
+    """Dibuixa la corba de Koch per una mida m i n nivells."""
 
     if nivells == 0:
         turtle.forward(m)
@@ -68,7 +65,7 @@ Per fer el cas recursiu, el que cal adonar-se és que la definició de la corba 
 
 ```python
 def corba_koch(m: float, n: int) -> None:
-    """Dibuixa la corba de Koch per una determinada mida m i nombre de nivells n."""
+    """Dibuixa la corba de Koch per una mida m i n nivells."""
 
     if n == 0:
         turtle.forward(m)
@@ -88,7 +85,6 @@ La crida a `corba_koch(200, 3)` produeix aquesta figura:
 
 ![corba-koch-200-3.png](corba-koch-200-3.png)
 
-
 ## El floc de neu de Koch
 
 Per obtenir ara la fractal coneguda com **floc de neu de Koch**, només cal encadenar tres corbes de Koch, girant 120 graus després de cadascun d'elles per tancar el triangle:
@@ -96,7 +92,7 @@ Per obtenir ara la fractal coneguda com **floc de neu de Koch**, només cal enca
 ```python
 def floc_koch(m: float, n: int) -> None:
     for _ in range(3):
-        corba_koch(m, nivells)
+        corba_koch(m, n)
         turtle.right(120)
 ```
 
@@ -105,7 +101,6 @@ Noteu que en el programa anterior hem utilitzat la **variable anònima** `_` per
 Ara, `floc_koch(200, 3)` produeix aquesta figura:
 
 ![floc-koch-200-3.png](floc-koch-200-3.png)
-
 
 ## Programa complet
 
@@ -116,8 +111,8 @@ import turtle
 import yogi
 
 
-def corba_koch(mida: float, n: int) -> None:
-    """Dibuixa la corba de Koch per una determinada mida m i nombre de nivells n."""
+def corba_koch(m: float, n: int) -> None:
+    """Dibuixa la corba de Koch per una mida m i n nivells."""
 
     if n == 0:
         turtle.forward(m)
@@ -132,7 +127,7 @@ def corba_koch(mida: float, n: int) -> None:
 
 
 def floc_koch(m: float, n: int) -> None:
-    """Dibuixa el floc de neu de Koch per una determinada mida m i nombre de nivells n."""
+    """Dibuixa el floc de neu de Koch per una mida m i n nivells."""
 
     for _ in range(3):
         corba_koch(m, nivells)

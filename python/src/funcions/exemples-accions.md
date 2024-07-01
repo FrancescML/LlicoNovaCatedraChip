@@ -2,8 +2,7 @@
 
 <img src='./exemples-accions.png' style='height: 9em; float: right; margin: 0 0 1em 1em;'/>
 
-En aquesta lliçó es presenten diversos exemples d'accions. 
-
+En aquesta lliçó es presenten diversos exemples d'accions.
 
 ## Acció per escriure tots els divisors d'un nombre
 
@@ -23,10 +22,9 @@ if d * d == n:
     print(d)
 ```
 
-Recordeu que aquest programa aprofita el truc dels "dos divisors pel preu d'un": només cal cercar divisors d'un nombre `n` fins a `√n`, perquè si `d` divideix `n`, llavors `n // d` també dividix `n` i si `n <= √n` llavors `n // d >= √n`. 
+Recordeu que aquest programa aprofita el truc dels "dos divisors pel preu d'un": només cal cercar divisors d'un nombre `n` fins a `√n`, perquè si `d` divideix `n`, llavors `n // d` també dividix `n` i si `n <= √n` llavors `n // d >= √n`.
 
 Encapsular aquest algorisme en una acció no és gens difícil:
-
 
 ```python
 def escriure_divisors(n: int) -> None:
@@ -46,7 +44,6 @@ Però, posats a fer un subprograma que du a terme aquesta tasca, no seria bo que
 
 Una bona solució és usar dos bucles: un pels divisors "petits" fins a `√n`, l'altre pels divisors "grans" a partir d'`√n`. Però per no perdre eficiència, el segon ha de buscar de nou divisors "petits" de major a menor per recuperar els "grans". Aquest algorisme es podria implementar així:
 
-
 ```python
 def escriure_divisors(n: int) -> None:
     """Escriu tots els divisors d'un nombre n > 0 en ordre creixent."""
@@ -55,15 +52,17 @@ def escriure_divisors(n: int) -> None:
     while d * d < n:
         if n % d == 0:
             print(d)
-            print(n // d)
         d = d + 1
-    if d * d == n:
+     if d * d == n:
         print(d)
+     d = d - 1
+     while d >= 1:
+        if n % d == 0:
+            print(n // d)
+        d = d - 1
 ```
 
 Per provar aquesta acció, seria bo fer un joc de proves amb nombres petits que puguin presentar casos extrems com ara de l'1 al 5, casos normals com ara el 56, i casos on el nombre sigui un quadrat perfecte com ara 25 i 49, per tal de comprovar que no es repeteix la seva arrel a la sortida.
-
-
 
 ## Acció per escriure tots els factors primers d'un nombre
 
@@ -73,17 +72,17 @@ La capçalera de l'acció que du a terme aquesta tasca podria ser aquesta:
 
 ```python
 def escriure_factors_primers(n: int) -> None:
-    """Escriu tots els factors primers d'un nombre n > 1 en ordre estrictament creixent."""    
+    """Escriu tots els factors primers d'un nombre n > 1 en ordre estrictament creixent."""
 ```
 
-Un primer algorisme per resoldre aquesta tasca consisteix en anar provant de dividir el nombre `n` per nombres `d` de 2 en endavant. Quan trobem que `d` divideixi `n`, escriurem `d` perquè és un dels seus factors primers (de seguida veureu perquè) i divirem `n` per `d` tantes vegades com calgui per treure-li totes les potències de `d`. Aquest procés cal repetir-lo fins que `n` sigui 1 (perquè llavors ja no es podràn descobrir més factors primers), després d'incrementar `d`. El fet que els potencials divisors es tractin de petit a gran i que s'eliminin del nombre `n` garanteix que només s'escriguin factors primers. 
+Un primer algorisme per resoldre aquesta tasca consisteix en anar provant de dividir el nombre `n` per nombres `d` de 2 en endavant. Quan trobem que `d` divideixi `n`, escriurem `d` perquè és un dels seus factors primers (de seguida veureu perquè) i divirem `n` per `d` tantes vegades com calgui per treure-li totes les potències de `d`. Aquest procés cal repetir-lo fins que `n` sigui 1 (perquè llavors ja no es podràn descobrir més factors primers), després d'incrementar `d`. El fet que els potencials divisors es tractin de petit a gran i que s'eliminin del nombre `n` garanteix que només s'escriguin factors primers.
 
 Aquest algorisme es pot implementar així dins de l'acció proposada:
 
 ```python
 def escriure_factors_primers(n: int) -> None:
-    """Escriu tots els factors primers d'un nombre n > 1 en ordre estrictament creixent."""    
-    
+    """Escriu tots els factors primers d'un nombre n > 1 en ordre estrictament creixent."""
+
     d = 2
     while n != 1:
         if n % d == 0:
@@ -99,8 +98,8 @@ Un cop més, podem fer ús que no trobarem cap divisor de `n` més gran que la s
 
 ```python
 def escriure_factors_primers(n: int) -> None:
-    """Escriu tots els factors primers d'un nombre n > 1 en ordre estrictament creixent."""    
-    
+    """Escriu tots els factors primers d'un nombre n > 1 en ordre estrictament creixent."""
+
     d = 2
     while d * d <= n:
         if n % d == 0:
@@ -114,8 +113,4 @@ def escriure_factors_primers(n: int) -> None:
 
 Ara, el meu ordinador triga 5 centèssimes de segon en escriure els factors primers de 200000014. Una bona millora sobre els 13 segons anteriors!
 
-
-
-
-<Autors autors="jpetit"/> 
-
+<Autors autors="jpetit"/>

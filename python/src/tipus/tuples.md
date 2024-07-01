@@ -1,8 +1,6 @@
-
 # Tuples
 
 Aquesta lliçó presenta un primer tipus complex: les tuples. Gràcies a les tuples es poden agrupar dades diferents però relacionades en una de sola. Es mostra com empaquetar les dades en tuples i com desempaquetar-les.
-
 
 ## Tuples per a punts
 
@@ -17,7 +15,7 @@ p2_y = 0.1
 
 Però ja es veu que aquesta solució és bastant maldestra: Només l'estructura dels noms de les variables ens dóna informació sobre les dades, i aquestes no tenen cap mena de relació entre elles. La noció de punt és inexistent!
 
-Les tuples són una solució en aquest problema (n'hi ha més). Un valor de tipus tupla emmagatzema, en un sol paquet (la tupla) diversos valors (possiblement de diferents tipus). La manera d'escriure les tuples en Python és escrivint entre parèntesis els diferents valors que la componen separats per punts. Així:
+Les tuples són una solució en aquest problema (n'hi ha més). Un valor de tipus tupla emmagatzema, en un sol paquet (la tupla) diversos valors (possiblement de diferents tipus). La manera d'escriure les tuples en Python és escrivint entre parèntesis els diferents valors que la componen separats per comes. Així:
 
 ```python
 >>> p1 = (4.5, 3.25)
@@ -36,8 +34,6 @@ Ara, la variable `p1` és una tupla que agrupa dos reals. Cada membre d'una tupl
 
 Així doncs, el conjunt de valors d'una tupla és el producte cartesià dels conjunts de valors dels seus camps.
 
-
-
 ## Tuples per a cartes del Magic
 
 Imagineu que heu de mantenir informació sobre cartes d'algun joc tipus Magic. Cada carta té un nom de personatge (de tipus text), un preu (de tipus real), un valor de força d'atac i un valor de defensa (enters entre 1 i 5). Podríem definir tres cartes amb tuples:
@@ -49,7 +45,6 @@ Imagineu que heu de mantenir informació sobre cartes d'algun joc tipus Magic. C
 ```
 
 El tipus d'aquestes cartes seria `tuple[str, float, int, int]`.
-
 
 ## Accés als camps d'una tupla
 
@@ -118,7 +113,6 @@ A més, en Python també podem extreure els valors dels camps directament en var
 
 Evidentment, per desempaquetar cal que la tupla de l'esquerra tingui el mateix nombre de camps que la de la dreta de l'assignació.
 
-
 ## Estalvi de parèntesis
 
 Com hem dit, els valors de les tuples s'escriuen entre parèntesis, separats per comes. Però en molts contextos, els parèntesis es poden obviar del codi, fent-lo més lleuger. Fixeu-vos-hi:
@@ -148,6 +142,4 @@ a, b = b, a
 
 Els vells informàtics en dirien una assignació múltiple, però en realitat és una única assignació entre tuples.
 
-
-<Autors autors="jpetit"/> 
-
+<Autors autors="jpetit"/>

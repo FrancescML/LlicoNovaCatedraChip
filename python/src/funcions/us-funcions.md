@@ -4,7 +4,6 @@
 
 Aquesta lliçó presenta com usar funcions. A través de funcions predefinides o de funcions importades d'altres mòduls, els nostres programes poden dur a terme tasques més o menys complicades sense haver d'escriure tant de codi i, per tant, amb menys possibilitat d'errors.
 
-
 ## Ús de funcions predefinides
 
 Python ofereix un petit repertori de **funcions predefinides**, és a dir, funcions que es poden utilitzar directament. Una funció té un nom i calcula un valor a partir de certs paràmetres. Les funcions es poden **cridar** (o **invocar**) dins de qualsevol expressió, ja que dónen lloc a un valor.
@@ -63,8 +62,7 @@ len('Frank Zappa')  👉 11
 len('')             👉 0
 ```
 
-I ha moltes més funcions predefinides. Podeu trobar-ne documentació a https://docs.python.org/3/library/functions.html, però crec que les anteriors són les que us poden caldre ara.
-
+Hi ha moltes més funcions predefinides. Podeu trobar-ne documentació a https://docs.python.org/3/library/functions.html, però crec que les anteriors són les que us poden caldre ara.
 
 ## Funcions de conversió entre tipus de dades
 
@@ -95,31 +93,30 @@ True
 False
 ```
 
-
 ## Ús de funcions matemàtiques
 
 El mòdul `math` és un mòdul estàndard de Python que s'utilitza per treballar amb càlculs científics complexos. Aquest mòdul de matemàtiques ofereix funcions matemàtiques usuals com ara arrodoniments, operacions trigonomètriques, operacions logarítmiques, ètc.
 
 Aquesta és una llista de les funcions més habituals de `math`:
 
-|Funció|Descripció|
-|---|---|
-|sin|sinus|
-|cos|cosinus|
-|tan|tangent|
-|asin|arcsinus|
-|acos|arccosinus|
-|atan|arctangent|
-|degrees|conversió de radians a graus|
-|radians|conversió de grans a radians|
-|sqrt|arrel quadrada|
-|pow|potència|
-|log|logarítme|
-|ceil|arrodoniment cap amunt|
-|floor|arrodoniment cap avall|
-|trunc|arrodoniment cap amunt per negatius, cap avall per positius|
-|factorial|factorial|
-|gcd|màxim comú divisor|
+| Funció    | Descripció                                                  |
+| --------- | ----------------------------------------------------------- |
+| sin       | sinus                                                       |
+| cos       | cosinus                                                     |
+| tan       | tangent                                                     |
+| asin      | arcsinus                                                    |
+| acos      | arccosinus                                                  |
+| atan      | arctangent                                                  |
+| degrees   | conversió de radians a graus                                |
+| radians   | conversió de grans a radians                                |
+| sqrt      | arrel quadrada                                              |
+| pow       | potència                                                    |
+| log       | logarítme                                                   |
+| ceil      | arrodoniment cap amunt                                      |
+| floor     | arrodoniment cap avall                                      |
+| trunc     | arrodoniment cap amunt per negatius, cap avall per positius |
+| factorial | factorial                                                   |
+| gcd       | màxim comú divisor                                          |
 
 Per exemple, suposem que volem calcular la distància entre dos punts del pla $p = (x_p, y_p)$ i $q = (x_q, y_q)$. Recordem que la seva distància euclídea és $\sqrt{(x_p-x_q)^2 + (y_p-y_q)^2}$. El programa següent ho implementa:
 
@@ -141,8 +138,6 @@ També hi ha moltes més funcions a la llibreria matemàtica. Podeu trobar-ne la
 
 A més de funcions, el mòdul de matemàtiques també ofereix constants com ara `math.pi` (pel nombre π) i `math.e` (per la constant d'Euler). És important usar aquestes constants per tenir els valors més exactes possibles i no deixar tot de valors màgics `3.1416` en el codi.
 
-
-
 ## Ús de funcions aleatòries
 
 El mòdul estàndard `random` proporciona funcions relacionades amb la generació de nombres aleatoris (o, més ben dit, de nombres pseudoaleatoris). Aquestes funcions són un xic diferents de les funcions anteriors, en el sentit que no solen retornar el mateix valor cada cop que es criden amb els mateixos paràmetres.
@@ -158,7 +153,6 @@ Per exemple, la funció `randint` retorna un nombre a l'atzar entre dos de donat
 >>> random.randint(1, 6)  # probablement us sortiran valors diferents!
 1
 ```
-
 
 Si voleu obtenir la suma de dos daus, podeu escriure l'expressió `random.randint(1, 6) + random.randint(1, 6)`. Fixeu-vos que en aquest cas, no voleu escriure `2 * random.randint(1, 6)`. Enteneu perquè?
 
@@ -212,8 +206,6 @@ Aquesta ha estat la sortida obtinguda en una execució:
 
 Podeu trobar documentació addicional del mòdul `random` a https://docs.python.org/3/library/random.html.
 
-
-
 ## Ús de funcions relacionades amb el temps
 
 El mòdul estàndard `time` proporciona funcions relacionades amb el temps. Per exemple, la funció `time` del mòdul `time` (sí, es diuen igual), retorna un real amb el nombre de segons transcorreguts des d'algun moment arbitrari en el passat. És útil per mesurar el temps transcorregut en un fragment de codi calculant la diferència entre els temps després i abans d'aquell fragment:
@@ -225,8 +217,5 @@ inici = time.time()
 final = time.time()
 print('temps transcorregut:', final - inici, 'segons')
 ```
-
-
-
 
 <Autors autors="jpetit"/>

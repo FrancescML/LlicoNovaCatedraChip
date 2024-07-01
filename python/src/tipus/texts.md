@@ -1,20 +1,16 @@
-
 # El tipus text
 
 <img src='./str.png' style='height: 8em; float: right; margin: 0 0 1em 1em;'/>
 
 En aquesta llicó es descriu el tipus text. En particular es veu com s'escriuen els literals de tipus text, quins valors poden tenir els texts i algunes de les operacions se'ls pot aplicar. Finalment, es dóna una petita aplicació que involucra textos.
 
-
 ## Textos
 
-El tipus dels textos en Python s'escriu `str` (de l'anglès *string*). Els textos són seqüències de zero o més caràcters. Hi ha qui els anomena *cadenes de caràcters*, però jo trobo que *text* és molt més clar. 
-
+El tipus dels textos en Python s'escriu `str` (de l'anglès _string_). Els textos són seqüències de zero o més caràcters. Hi ha qui els anomena _cadenes de caràcters_, però jo trobo que _text_ és molt més clar.
 
 ## Literals
 
 La manera d'escriure els textos en Python escribint els seus caràcters l'un rera l'altre entre cometes, simples o dobles. Per exemple, `'Jordi'` i `"Jordi"` representen el mateix text. El text `''` és el text buit, i té llargada zero. En canvi, el text `' '` és un text de llargada 1 que només conté el caràcter espai (que no es veu). Fixeu-vos que `666` és un enter que representa el nombre 666, en canvi, `'666'` és un text amb 3 caràcters que són el dígit 6.
-
 
 ## Caràcters
 
@@ -22,19 +18,17 @@ En Python, els textos estan formats per caràcters en Unicode. **Unicode** és u
 
 També existeixen uns caràcters especials anomenats **caràcters de control** que representen accions especials al escriure. Per exemple `'\n'` és el salt de línia, `'\a'` és el so d'una campaneta i `'\t'` un tabulador. Ls barra del revés introdueix doncs un caràcter especial, per escriure una barra, cal posar-ne dues: `'\\'`.
 
-
 ## Operacions
 
-Recordeu que l'operador `+` permet concatenar dos textos i que l'operador `*` permet repetir un text un determinat nombre de cops.  Per exemple, `'Black' + 'field'` dóna `'Blackfield'` i `'19' * 3` dóna `'191919'`.
+Recordeu que l'operador `+` permet concatenar dos textos i que l'operador `*` permet repetir un text un determinat nombre de cops. Per exemple, `'Black' + 'field'` dóna `'Blackfield'` i `'19' * 3` dóna `'191919'`.
 
 Els textos també es poden comparar amb els operadors relacionals. L'ordre depèn de la configuració dels sistema operatiu però, a grans trets, per a lozalitzacions occidentals, l'ordre subjacent és l'ordre alfabètic (el del diccionari). !!! Potser cal explicar més?
 
-Els textos tenen moltes altres operacions, algunes de les quals veurem més endavant. Una que ja pot ser útil és la funció `len`, que retorna la llarga (nonbre de caràcters) d'un text. Per exemple, `len('I 💜 you')` val 7.
-
+Els textos tenen moltes altres operacions, algunes de les quals veurem més endavant. Una que ja pot ser útil és la funció `len`, que retorna la llargada (nombre de caràcters) d'un text. Per exemple, `len('I 💜 you')` val 7.
 
 ## Texts amb format
 
-ELs texts també presenten una variant anomenada **text amb format** (*f-string*). Els textos amb format poden incloure al seu interior expressions que són avaluades i convertides en text, possiblement aplicant alguna transformació per millorar-ne el seu format.
+ELs texts també presenten una variant anomenada **text amb format** (_f-string_). Els textos amb format poden incloure al seu interior expressions que són avaluades i convertides en text, possiblement aplicant alguna transformació per millorar-ne el seu format.
 
 Aquest és un senzill exemple:
 
@@ -60,7 +54,6 @@ Com es veu, els textos amb format tenen el prefix `f` davant de les cometes i, a
 
 A més, les expressions poden anar precedides de dos punts (`:`) i una **especificació de format**. Les especificacions de format permeten controlar amb quants dígits s'escriuen els nombres, com s'alineen els textos, quins caràcters s'usen per omplir... A l'exemple anterior, els nombres han quedat basant lletjos, en una aplicació monetària o per crear unes taules seria millor que tots els valors tinguéssin dos dígits decimals. Això es pot aconseguir amb el format `.02f`:
 
-
 ```python
 >>> a = 3.199
 >>> b = 2.236
@@ -70,7 +63,7 @@ A més, les expressions poden anar precedides de dos punts (`:`) i una **especif
 'La suma de 3.20 i 2.24 és 5.44'
 ```
 
-Aquí, la `f` vol dir que cal formatar un nombre real (*float*). El `.02` vol dir fer-ho amb dos decimals darrera de la coma, posant zeros si cal.
+Aquí, la `f` vol dir que cal formatar un nombre real (_float_). El `.02` vol dir fer-ho amb dos decimals darrera de la coma, posant zeros si cal.
 
 Tenim documentació extensa sobre els formats a https://docs.python.org/3/tutorial/inputoutput.html#tut-f-strings. No cal pas recordar-ho de memòria. Millor que quan us calgui recorreu en aquests breus exemples de les possibilitats existents:
 
@@ -111,7 +104,6 @@ Tenim documentació extensa sobre els formats a https://docs.python.org/3/tutori
 >>> f'{x = }, {2 * x = }'  # xivatos
 'x = 3, 2 * x = 6'
 ```
-
 
 ## Texts multilínia
 
@@ -160,8 +152,4 @@ Atentament,
 
 Els texts multilínia també s'utilitzen per a documentar algunes parts del codi amb *docstring*s, ho veurem més endavant.
 
-
-
-
-<Autors autors="jpetit"/> 
-
+<Autors autors="jpetit"/>
