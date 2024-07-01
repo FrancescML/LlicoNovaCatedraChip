@@ -1,7 +1,7 @@
 
 # Cues de prioritat
 
-<img src='./cues-de-prioritat.png' style='height: 8em; float: right; margin: 0 0 1em 1em;'/>
+<img src='./cues-de-prioritat.png' style='height: 8em; float: right; margin: 2em 0 1em 1em;'/>
 
 
 Una **cua de prioritats** és una estructura de dades que emmagatzema una

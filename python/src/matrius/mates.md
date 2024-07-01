@@ -1,7 +1,7 @@
 
 # Aplicació: Operacions matemàtiques sobre matrius
 
-<img src='./mates.png' style='height: 8em; float: right; margin: 0 0 1em 1em;'/>
+<img src='./mates.png' style='height: 8em; float: right; margin: 2em 0 1em 1em;'/>
 
 Aquesta lliçó presenta alguns exemples d'operacions matemàtiques sobre matrius. En particular, es considera aquestes operacions:
 
@@ -28,7 +28,7 @@ Totes les matrius d'aquesta secció seran de nombres reals. Per simplicitat, tam
 
 ## Suma de matrius
 
-<img src='./suma-matrius.png' style='height: 9em; float: right; margin: 0 0 1em 1em;'/>
+<img src='./suma-matrius.png' style='height: 9em; float: right; margin: 2em 0 1em 1em;'/>
 
 Una de les operacions més bàsiques que es poden fer entre matrius és sumar-les. Com sabreu, per poder sumar dues matrius cal que aquestes tinguin les mateixes dimensions, i la suma es realitza element a element. Suposarem que les matrius que entrem tenen les dimensions correctes.
 
@@ -93,7 +93,7 @@ def maxima_suma_fila(M: Matriu) -> float:
 
 ## Transposar una matriu quadrada
 
-<img src='./transposa.png' style='height: 9em; float: right; margin: 0 0 1em 1em;'/>
+<img src='./transposa.png' style='height: 9em; float: right; margin: 2em 0 1em 1em;'/>
 
 Considerem ara el problema de transposar una matriu quadrada.
 

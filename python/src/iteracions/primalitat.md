@@ -1,7 +1,7 @@
 
 # Aplicació: Divisors d'un nombre i primalitat
 
-<img src='./divisors.png' style='height: 8em; float: right; margin: 0 0 1em 1em;'/>
+<img src='./divisors.png' style='height: 8em; float: right; margin: 2em 0 1em 1em;'/>
 
 En aquest lliçó es mostren diverses solucions relacionades amb la cerca dels divisors d'un nombre natural. Primer es presenta una solució fàcil per trobar tots els divisors d'un nombre. Com que resulta massa lenta, es mostra una segona versió més eficient que aprofita una senzilla propietat matemàtica. Finalment, s'aprofiten les idees utilitzades per fer un programa que determina si un nombre és primer o no.
 
@@ -117,7 +117,7 @@ El bucle acaba ara sense arribar a l'arrel i, després del bucle, s'escriu l'arr
 
 Visca! Ja funciona. Però de què ens ha servit aquesta feina? Proveu el nou programa amb 1000000007. A mi em dóna el resultat instantàniament. La raó és que el temps de la versió antiga creixia proporcionalment a `n`, mentre que el temps de la versió nova creix proporcionalment a `√n`. Ambues funcions tendeixen a infinit, però `n` molt més ràpid que `√n`, tal com mostra la figura següent:
 
-<img src='./plot-n-sqrt-n.svg' style='max: 100%px; margin: 0 0 1em 1em;' />
+<img src='./plot-n-sqrt-n.svg' style='max: 100%px; margin: 2em 0 1em 1em;' />
 
 Amb valors petits d'`n` ja es veu la diferència, amb valors grans és enorme! Què preferiu: fer unes 1000000007 passes o fer-ne √1000000007 ≈ 31500?
 

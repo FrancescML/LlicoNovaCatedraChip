@@ -1,6 +1,6 @@
 # Introducció a la Programació en Python
 
-<img src='./introduccio.png' style='height: 10em; float: right; margin: 0 0 1em 1em;'/>
+<img src='./introduccio.png' style='height: 10em; float: right; margin: 2em 0 1em 1em;'/>
 
 
 

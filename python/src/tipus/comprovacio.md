@@ -1,6 +1,6 @@
 # Comprovació de tipus
 
-<img src='./comprovacio.png' style='height: 8em; float: right; margin: 0 0 1em 1em;'/>
+<img src='./comprovacio.png' style='height: 8em; float: right; margin: 2em 0 1em 1em;'/>
 
 Aquesta lliçó introdueix el concepte de comprovació dinàmica i estàtica de tipus i presenta dues possibles eines per realitzar comprovació estàtica de tipus als programes en Python. 
 

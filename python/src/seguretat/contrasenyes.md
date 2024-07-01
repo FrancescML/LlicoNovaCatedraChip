@@ -2,7 +2,7 @@
 # Contrasenyes
 
 
-<img src='./contrasenyes.png' style='height: 8em; float: right; margin: 0 0 1em 1em;'/>
+<img src='./contrasenyes.png' style='height: 8em; float: right; margin: 2em 0 1em 1em;'/>
 
 
 ## Títol

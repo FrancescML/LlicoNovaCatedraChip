@@ -1,7 +1,7 @@
 # Condicionals
 
 
-<img src='./if-then-else.png' style='height: 10em; float: right; margin: 0 0 1em 1em;'/>
+<img src='./if-then-else.png' style='height: 10em; float: right; margin: 2em 0 1em 1em;'/>
 
 Aquest lliçó presenta la instrucció condicional, que permet
 que l'ordinador executi certes instruccions o unes altres

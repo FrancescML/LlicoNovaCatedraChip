@@ -1,6 +1,6 @@
 # Aplicació: Suma d'un segon
 
-<img src='./rellotge-digital.png' style='height: 8em; float: right; margin: 0 0 1em 1em;'/>
+<img src='./rellotge-digital.png' style='height: 8em; float: right; margin: 2em 0 1em 1em;'/>
 
 Aquest lliçó reforça l'ús de la instrucció condicional amb un programa que afegeix un segon a una hora del dia, donades les seves hores, minuts i segons.
 

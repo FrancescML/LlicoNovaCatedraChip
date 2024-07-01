@@ -1,6 +1,6 @@
 # Intèrpret de Python
 
-<img src='./installacio.png' style='height: 8em; float: right; margin: 0 0 1em 1em;'/>
+<img src='./installacio.png' style='height: 8em; float: right; margin: 2em 0 1em 1em;'/>
 
 Per executar els vostres programes en Python necessiteu un intèrpret de Python. Hi ha diferents versions de l'intèrpret de Python, qualsevol de prou recent serà suficient pels propòsits d'aquest curs. N'hi ha prou que us assegureu d'instal·lar-ne una que sigui igual o superior a la versió 3.11 i hi afegiu alguns paquets utilitzats durant el curs.
 

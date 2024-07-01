@@ -1,7 +1,7 @@
 
 # Piles
 
-<img src='./piles.png' style='height: 8em; float: right; margin: 0 0 1em 1em;'/>
+<img src='./piles.png' style='height: 8em; float: right; margin: 2em 0 1em 1em;'/>
 
 
 Aquesta lliçó introdueix un nou tipus de dades: les piles. Primer es presenta el concepte de pila, després es mostra com utilitzar piles en Python i, finalment, es donen alguns exemples.
@@ -78,7 +78,7 @@ D'altra banda, notem que aquest problema també es podria resoldre directament a
 
 ## Exemple: Expressions en notació polonesa inversa
 
-<img src='./rpn.png' style='height: 12em; float: right; margin: 0 0 1em 1em;'/>
+<img src='./rpn.png' style='height: 12em; float: right; margin: 2em 0 1em 1em;'/>
 
 
 La **notació polonesa inversa** (o **notació postfixa**) [$\small[\mathbb{W}]$](https://ca.wikipedia.org/wiki/Notaci%C3%B3_polonesa_inversa) és una notació matemàtica sense parèntesis on cada operador (binari, en el nostre cas) segueix als seus dos operands. Per exemple, l'expressió ~~6 2 -~~ és equivalent a ~~6 - 2~~, i per tant val ~~4~~, l'expressió ~~6 2 - 5 *~~ és equivalent a ~~(6 - 2) * 5~~, i per tant val ~~20~~, i l'expressió ~~6 2 5 - *~~ és equivalent a ~~6 * (2 - 5)~~, i per tant val ~~-18~~. Les primeres calculadores electròniques utilitzaven aquesta notació per la seva simplicitat i l'absència de parèntesis.

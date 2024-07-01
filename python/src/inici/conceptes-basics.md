@@ -1,19 +1,16 @@
-
 # Conceptes bàsics
 
-<img src='./conceptes-basics.png' style='height: 10em; float: right; margin: 0 0 1em 1em;'/>
+<img src='./conceptes-basics.png' style='height: 10em; float: right; margin: 2em 0 1em 1em;'/>
 
 Aquesta lliçó presenta uns primers conceptes bàsics: computadors, dades, programes, algorismes, llenguatges de programació, bugs, problemes, especificacions, ... de tot!
 
 Si aquesta primera lliçó us fa mandra o la trobeu complicada, no patiu. Contineu endavant i torneu-hi més endavant. Les coses quedaran més clares i aquestes definicions i exemples us seràn útils.
-
 
 ## Computadors, dades, programes, llenguatges i algorismes
 
 Un **computador** és una màquina que processa dades tot aplicant una sèrie
 d'instruccions elementals. A partir d'unes **dades d'entrada** subministrades per un usuari, el computador realitza una sèrie de càlculs i genera unes **dades de sortida** que són lliurades a l'usuari. Els càlculs que executa el computador segueixen un
 **programa** que codifica, utilitzant un **llenguatge de programació**, un algorisme. Un **algorisme** descriu en detall i sense ambigüitats com resoldre un **problema** determinat, és a dir, com partir d'unes dades d'entrada i arribar a unes dades de sortida.
-
 
 ## Problemes computacionals
 
@@ -25,13 +22,12 @@ sortida** (o **sortides**). Un problema computacional estableix de forma
 general quines són les dades d'entrada admissibles i quina és la relació entre
 les dades d'entrada i les dades de sortida.
 
-
 ### Exemple: Producte de nombres
 
 Per exemple, "_Donats dos naturals $x$ i $y$, quin és el producte de $x$ per
 $y$?_" és un problema computacional. Aquesta és una pregunta genèrica, en el
 sentit que no es pot contestar fins que no s'aportin unes dades específiques, i
-que la resposta, també específica, depèn d'aquestes dades.  Així, per exemple,
+que la resposta, també específica, depèn d'aquestes dades. Així, per exemple,
 un cop s'indiqui al computador que $x$ val 12 i $y$ val 3, aquest podrà resoldre
 el problema computacional sobre aquestes dades específiques i respondre que el
 seu producte és 36. Si s'indica que $x$ val 2891 i $y$ val 4591, llavors la
@@ -58,7 +54,6 @@ les de sortida és que la graella de sortida ha de ser comforme amb la graella
 d'entrada i les regles del joc. Les dades d'entrada admissibles són aquelles
 que tenen exactament una solució.
 
-
 ### Altres exemples
 
 Altres exemples de problemes computacionals inclouen:
@@ -75,14 +70,13 @@ Altres exemples de problemes computacionals inclouen:
 -   _Donada una data vàlida a partir del dia, més i any, quin dia
     de la setmana li correspon?_
 
-    Per aquest problema, l'entrada és una data, que es pot  representar a través
+    Per aquest problema, l'entrada és una data, que es pot representar a través
     de tres nombres (el dia, el més i l'any). La sortida és un dia de la setmana
     (dilluns, ..., diumenge). Es recalca que la data ha de ser vàlida, perquè
     altrament la pregunta no té sentit.
 
     Així, en el cas que l'entrada fós 17 11 2006 (el 17 de novembre de 2006), la sortida
-    corresponent seria _divendres_. En canvi, l'entrada 30 2 2008 (el 30 de febrer de
-    2008) no és admissible per aquest problema, perquè el febrer no té 30 dies.
+    corresponent seria _divendres_. En canvi, l'entrada 30 2 2008 (el 30 de febrer de 2008) no és admissible per aquest problema, perquè el febrer no té 30 dies.
     Determinar si una data és vàlida o no seria un altre problema computacional.
 
 -   _Donat un conjunt no buit de naturals, quin d'ells és el màxim?_
@@ -103,16 +97,15 @@ Altres exemples de problemes computacionals inclouen:
     processador de textos pot voler buscar una paraula dins del seu document,
     potser per remplaçar-la per una altra. També, un biòleg pot voler saber si
     una seqüència de nucleotids apareix o no en una cadena d'ADN. I
-    també,  un cercador d'internet tipus Google té interès en trobar una
+    també, un cercador d'internet tipus Google té interès en trobar una
     determinada paraula introduïda per un usuari en bilions de pàgines web.
 
-    Malgrat totes aquestes diferents aplicacions,  les entrades d'aquest
+    Malgrat totes aquestes diferents aplicacions, les entrades d'aquest
     problema sempre són dues informacions textuals i la sortida és `sí` o
     `no` (i en el cas afirmatiu, on).
 
     Així, si tenim una entrada on el text és `esperança` i el patró és
     `pera`, la sortida associada és `sí`, començant a la posició 3.
-
 
 -   _Donada la descripció de les línies i parades del metro d'una ciutat,
     una estació de
@@ -121,14 +114,12 @@ Altres exemples de problemes computacionals inclouen:
 
     Aquest problema, té com a dades d'entrada un graf (on els vèrtexs
     corresponen a parades i les arestes a trams entre parades amb l'anotació
-    del seu temps) i dos vèrtexs d'aquest graf.  Les dades de sortida són una
+    del seu temps) i dos vèrtexs d'aquest graf. Les dades de sortida són una
     sèrie de trams a recórrer, començant al vèrtex de partida i acabant al vèrtex
     de destí, que segueixen els trams de vies, i que formen el camí més ràpid
     d'entre tots els possibles.
 
     -> ![(etro](metro-londres.png)
-
-
 
 **Exercici.** Per als problemes següents, identifiqueu quines són les
 entrades, quines són les sortides, quines condicions han de complir les
@@ -149,15 +140,11 @@ sortides.
 -   Simplificar una fracció.
 -   Decidir si dues fraccions representen el mateix nombre racional.
 
-
-
-
 ## Algorismes
 
 Un **algorisme** és un conjunt explícit d'instruccions per a dur a terme
 algun càlcul que, a partir d'unes dades d'entrada, produeix unes dades de
 sortida.
-
 
 ::: tip Abu Abdullah Muhammad ibn Musa al-Khwarizmi
 
@@ -175,7 +162,7 @@ Les instruccions que es poden utilizar en un algorisme depenen de les operacions
 bàsiques que el processador que l'ha d'executar pugui dur a terme. En el cas
 dels processadors digitals dels computadors moderns, un processador pot
 realitzar operacions lògiques i aritmètiques, així com encadenar les
-instruccions una rera l'altra, i executar-ne  d'altres condicionalment o
+instruccions una rera l'altra, i executar-ne d'altres condicionalment o
 repetidament.
 
 Els algorismes es poden expressar usant moltes notacions, incloent llenguatge
@@ -193,7 +180,7 @@ l'especificació del problema.
 És essencial que els algorismes siguin correctes. Els algorismes incorrectes
 poden causar que un computador mai doni la resposta (es penji), que executi
 alguna instrucció il·legal (per exemple, dividir per zero), o que produeixi
-resultats incorrectes.  Depenent del context, els algorismes incorrectes poden
+resultats incorrectes. Depenent del context, els algorismes incorrectes poden
 provocar efectes catastròfics. Per exemple, la Therac-25 era una màquina de
 radiacions terapèutiques controlada per computador. La seva mala programació
 va causar sis accidents entre 1985 i 1987, en els quals els pacients van rebre
@@ -205,11 +192,9 @@ resposta 65535, escriu 100000.
 
 A continuació presentem alguns exemples d'algorismes.
 
-
-
 ### Algorisme de multiplicació escolar
 
-Considerem el problema computacional següent: donats dos nombres $x$ i $y$,  es
+Considerem el problema computacional següent: donats dos nombres $x$ i $y$, es
 vol obtenir el seu producte. Per centrar la discussió, restringim-nos al cas on
 els dos nombres són naturals (en informàtica, es considera que els nombres
 naturals inclouen el zero: $\mathbb{N}=\\{0, 1, 2, 3, ...\\}$).
@@ -234,7 +219,7 @@ Fixeu-vos que per poder aplicar aquest algorisme, cal que el processador que el
 du a terme conegui les taules de multiplicació i sàpiga sumar.
 
 :::info Exercici
-Descriviu, en les vostres pròpies paraules  però en tot
+Descriviu, en les vostres pròpies paraules però en tot
 detall, l'algorisme de multiplicació escolar.
 :::
 
@@ -243,31 +228,28 @@ Complementeu l'explicació anterior per tenir en compte possibles
 enters negatius.
 :::
 
-
-
-
 ### Algorisme de multiplicació del pagès rús
 
 L'algorisme anterior per multiplicar dos nombres és segurament el més popular
 (tot i que hi ha països on s'ensenya fent correr les files cap a la dreta enlloc
-de cap a  l'esquerra). Però hi ha altres algorismes ben diferents per
+de cap a l'esquerra). Però hi ha altres algorismes ben diferents per
 multiplicar dos nombres. A continuació considerem l'algorisme de
 **multiplicació del pagès rús** (també anomenat **multiplicació egípcia**,
 perquè es remonta a la forma per multiplicar que tenien els antics egipcis cap
 al 2000 aC):
 
-- Utilitzeu una taula amb dues columnes.
-- Escriviu els dos nombres a multiplicar ($x$ i $y$) a la primera fila.
-- Escriviu els resultats de dividir successivament $x$ entre 2 (oblidant
-fraccions) a la primera columna, fins que arriveu a 1.
-- Escriviu els resultats de multiplicar successivament  $y$ per 2 a la segona columna tantes
-vegades com heu dividit $x$ per 2.
-- Marqueu tots els nombres de la segona columna que estan al costat d'un
-nombre senar a la primera.
-- Sumeu tots els nombres de la segona columna
-que hagueu marcat. Aquest és el resultat de $x$ per $y$.
+-   Utilitzeu una taula amb dues columnes.
+-   Escriviu els dos nombres a multiplicar ($x$ i $y$) a la primera fila.
+-   Escriviu els resultats de dividir successivament $x$ entre 2 (oblidant
+    fraccions) a la primera columna, fins que arriveu a 1.
+-   Escriviu els resultats de multiplicar successivament $y$ per 2 a la segona columna tantes
+    vegades com heu dividit $x$ per 2.
+-   Marqueu tots els nombres de la segona columna que estan al costat d'un
+    nombre senar a la primera.
+-   Sumeu tots els nombres de la segona columna
+    que hagueu marcat. Aquest és el resultat de $x$ per $y$.
 
-Apliquem aquest algorisme sobre les dades d'entrada  $x$=2891 i $y$=4591:
+Apliquem aquest algorisme sobre les dades d'entrada $x$=2891 i $y$=4591:
 
 ```text
         2891        4591
@@ -304,7 +286,6 @@ Utilitzeu l'algorisme de multiplicació del pagès rus per multiplicar 47532 per
 Argumenteu perquè l'algorisme de multiplicació del pagès rus és correcte.
 :::
 
-
 ### Algorisme d'Euclides pel MCD
 
 El **màxim comú divisor** (MCD) de dos naturals no nuls és el natural més gran
@@ -340,7 +321,7 @@ Euclides va ser un matemàtic grec que va viure al voltant del segle III aC i é
 Una alternativa millor és utilitzar l'**algorisme d'Euclides**.
 Aquest algorisme descobert pels grecs clàssics va ser descrit per Euclides en
 els seu llibre _Elements_ cap a l'any 300 aC. Molts historiadors consideren que
-l'algorisme d'Euclides és el primer algorisme de ple dret.  Tot i que Euclides
+l'algorisme d'Euclides és el primer algorisme de ple dret. Tot i que Euclides
 va formular el seu algorisme geomètricament, aquí l'interpretarem de forma
 numèrica. Essencialment, l'algorisme d'Euclides diu:
 
@@ -423,7 +404,7 @@ Quin és el MCD de 123456789 i 1? Calculeu-lo amb l'algorisme d'Euclides. O... m
 
 :::info Exercici
 
-El **mínim comú múltiple** de dos naturals és el menor natural  (diferent de
+El **mínim comú múltiple** de dos naturals és el menor natural (diferent de
 zero) que és múltiple d'ambdós. Doneu un algorisme per calcular el mínim comú
 múltiple de dos naturals utilitzant la seva descomposició en producte de factors
 primers. Doneu una manera de calcular el mínim comú múltiple de dos naturals
@@ -442,32 +423,29 @@ començar a programar.
 
 <MySnap src="./model.ts" height="360"/>
 
-
-
 Un **computador** és una màquina que manipula dades tot aplicant una sèrie
-d'instruccions d'acord amb un programa.  El model de computador abstracte que
+d'instruccions d'acord amb un programa. El model de computador abstracte que
 considerem es compon dels elements següents:
 
-- **Memòria:** La memòria és el lloc on s'emmagatzemen (desen) les dades que
-manipula l'ordinador. Aquestes dades solen ser nombres, lletres, paraules o
-combinacions d'aquestes.
+-   **Memòria:** La memòria és el lloc on s'emmagatzemen (desen) les dades que
+    manipula l'ordinador. Aquestes dades solen ser nombres, lletres, paraules o
+    combinacions d'aquestes.
 
-- **Unitat de càlcul:** La unitat de càlcul és el lloc on es realitzen les operacions elementals
-que el computador sap dur a terme. Aquestes operacions poden ser sumar,
-multiplicar o comparar nombres, per exemple. Les dades que s'operen provenen
-de la memòria, i els resultats es desen també a la memòria.
+-   **Unitat de càlcul:** La unitat de càlcul és el lloc on es realitzen les operacions elementals
+    que el computador sap dur a terme. Aquestes operacions poden ser sumar,
+    multiplicar o comparar nombres, per exemple. Les dades que s'operen provenen
+    de la memòria, i els resultats es desen també a la memòria.
 
-- **Unitat de control:** La unitat de control és l'encarregada d'encadenar
-les instruccions l'una rera l'altra, tot seguint la lògica del programa. Gràcies
-a la unitat de control certes instruccions es poden repetir, executar o no, etc.
+-   **Unitat de control:** La unitat de control és l'encarregada d'encadenar
+    les instruccions l'una rera l'altra, tot seguint la lògica del programa. Gràcies
+    a la unitat de control certes instruccions es poden repetir, executar o no, etc.
 
-- **Dispositius d'entrada/sortida:** Els dispositius d'entrada/sortida (E/S)
-asseguren la comunicació del computador amb l'exterior; serveixen per introduir
-les dades d'entrada i extreure les dades de sortida. Per simplicitat, considerem
-que només hi ha un sol dispositiu d'entrada i un sol dispositiu de sortida. El
-dispositiu d'entrada llegeix dades que desa a la memòria; el dispositiu de
-sortida escriu dades emmagatzemades a la memòria.
-
+-   **Dispositius d'entrada/sortida:** Els dispositius d'entrada/sortida (E/S)
+    asseguren la comunicació del computador amb l'exterior; serveixen per introduir
+    les dades d'entrada i extreure les dades de sortida. Per simplicitat, considerem
+    que només hi ha un sol dispositiu d'entrada i un sol dispositiu de sortida. El
+    dispositiu d'entrada llegeix dades que desa a la memòria; el dispositiu de
+    sortida escriu dades emmagatzemades a la memòria.
 
 Si pensem en un ordinador corrent d'avui en dia, la memòria es correspon a la
 seva RAM (el meu ordinador té 16 gigabytes de memòria), les unitats de càlcul
@@ -485,7 +463,6 @@ tot amagant la seva complexitat. En particular, el sistema operatiu sol oferir
 serveis per a la gestió de la memòria, dels processos (programes actius) i
 dels perifèrics (a través de sistemes de fitxers).
 
-
 **Exercici.**
 Esbrineu quin sistema operatiu té el vostre computador personal. Esbrineu també
 quin processador té, quanta memòria té, i quins són els seus dispositius
@@ -493,10 +470,6 @@ d'entrada, de sortida i d'entrada sortida.
 
 **Exercici.**
 Compteu i enumereu quants dispositius amb un processador digital teniu a casa (ordinadors, mòbils, TVs, ...).
-
-
-
-
 
 ## Llenguatges de programació
 
@@ -529,46 +502,43 @@ enorme; només en veurem una petita part, tot destacant les construccions que la
 majoria dels llenguatges imperatius comparteixen amb ell.
 A la propera lliçó veurem com començar a treballar en Python.
 
-
 ## Desenvolupament de programes
 
 El procés de desenvolupament d'un programa involucra realitzar les etapes
 següents:
 
-- **Especificació del problema:**
-El primer pas que cal fer és especificar quin és el problema a resoldre.
-Especificar un problema consisteix en descriure adecuadament el problema
-considerat. Per això cal descriure quines són les seves possibles dades
-d'entrada, quines són les possibles dades de sortida i quina relació hi ha entre
-les dades de sortida i les dades d'entrada. Això involucra comprendre tot el
-context del problema. En l'etapa d'especificació es tracta només de _què_
-cal arribar a fer, no de _com_ fer-ho.
+-   **Especificació del problema:**
+    El primer pas que cal fer és especificar quin és el problema a resoldre.
+    Especificar un problema consisteix en descriure adecuadament el problema
+    considerat. Per això cal descriure quines són les seves possibles dades
+    d'entrada, quines són les possibles dades de sortida i quina relació hi ha entre
+    les dades de sortida i les dades d'entrada. Això involucra comprendre tot el
+    context del problema. En l'etapa d'especificació es tracta només de _què_
+    cal arribar a fer, no de _com_ fer-ho.
 
-- **Disseny d'un algorisme:**
-A continuació, cal dissenyar un algorisme per
-solucionar el problema.  Dissenyar un algorisme és una tasca molt creativa,
-lligada a l'experiència i al coneixement de diversos esquemes algorísmics.
+-   **Disseny d'un algorisme:**
+    A continuació, cal dissenyar un algorisme per
+    solucionar el problema. Dissenyar un algorisme és una tasca molt creativa,
+    lligada a l'experiència i al coneixement de diversos esquemes algorísmics.
 
-- **Codificació d'un programa:**
-Després, cal escriure un programa  tot
-codificant l'algorisme utilitzant un llenguatge de programació.  Aquest programa
-es prepara per tal de poder ésser executat pel computador.
+-   **Codificació d'un programa:**
+    Després, cal escriure un programa tot
+    codificant l'algorisme utilitzant un llenguatge de programació. Aquest programa
+    es prepara per tal de poder ésser executat pel computador.
 
-- **Proves del programa:**
-Finalment, un cop el programa preparat, cal
-provar-lo. Això consisteix en executar-lo sobre algunes entrades, per tal
-d'assegurar-se que, almenys sobre aquelles entrades, el programa funciona tal
-com s'espera.
-
+-   **Proves del programa:**
+    Finalment, un cop el programa preparat, cal
+    provar-lo. Això consisteix en executar-lo sobre algunes entrades, per tal
+    d'assegurar-se que, almenys sobre aquelles entrades, el programa funciona tal
+    com s'espera.
 
 Malauradament, durant la realització d'aquest etapes, es cometen o diagnostiquen
 errors que impliquen recular a etapes anteriors. Per això, sempre és
 convenient deixar ben documentat l'assoliment de cadascuna de les etapes.
 
-La **programació** és la disciplina que s'encarrega d'escriure,  ampliar,
+La **programació** és la disciplina que s'encarrega d'escriure, ampliar,
 provar, corregir i mantenir programes. L'**enginyeria de software** és la
 branca de l'informàtica que es preocupa de tots els aspectes de la
 producció de programes de forma sistemàtica i organitzada.
-
 
 <Autors autors="jpetit"/>

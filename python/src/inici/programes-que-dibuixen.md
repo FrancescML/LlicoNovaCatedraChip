@@ -1,6 +1,6 @@
 # Programes que dibuixen
 
-<img src='./programes-que-dibuixen.png' style='height: 10em'/>
+<img src='./programes-que-dibuixen.png' style='width: 10em; float: right; margin: 2em 0 1em 1em;'/>
 
 Aquesta lliçó presenta un nou programa en Python que dibuixa un rectangle, amb l'amplada i l'alçada desitjada per l'usuari. Per a fer-ho, s'utilitza la tortuga de Python. Com a exercici, es demana de fer un programa que dibuixi un triangle.
 

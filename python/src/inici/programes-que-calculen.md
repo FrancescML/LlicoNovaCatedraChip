@@ -1,6 +1,6 @@
 # Programa que calculen
 
-<img src='./programes-que-calculen.png' style='height: 10em;'/>
+<img src='./programes-que-calculen.png' style='width: 10em; float: right; margin: 2em 0 1em 1em;'/>
 
 Aquesta lliçó presenta nous programes en Python per fer càlculs com el producte de dos nombres donats per l'usuari. Per a fer-lo, veurem com llegir dades numèriques i com realitzar operacions aritmètiques. De passada, també s'introdueix el concepte de comentari. Com a exercici, es demana de fer una variació del programa que calculi la suma de tres nombres.
 
@@ -107,3 +107,5 @@ s = x + y + z\n
 \# escriptura de la dada de sortida
 print('La seva suma és', s)`"
 :height="400"/>
+
+<Autors autors="jpetit"/>

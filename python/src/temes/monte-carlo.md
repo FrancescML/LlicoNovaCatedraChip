@@ -1,6 +1,6 @@
 # Mètodes Montecarlo
 
-<img src='./monte-carlo.png' style='height: 8em; float: right; margin: 0 0 1em 1em;'/>
+<img src='./monte-carlo.png' style='height: 8em; float: right; margin: 2em 0 1em 1em;'/>
 
 Aquesta lliçó presenta el mètode de Montecarlo, un mètode probabilista per aproximar expressions matemàtiques complexes que, altrament, serien costoses d'avaluar amb exactitud. El nom mètode fa referència al Casino de Montecarlo (al Principat de Mònaco), ja que els nombres aleatoris són a la base del mètode. Els exemples desenvolupats són l'aproximació de $\pi$ i l'aproximació del volum de la intersecció de dos el·lipsoides.
 

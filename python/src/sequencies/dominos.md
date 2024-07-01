@@ -1,6 +1,6 @@
 # Aplicació: Trens de dòminos
 
-<img src='./dominos.png' style='height: 8em; float: right; margin: 0 0 1em 1em;'/>
+<img src='./dominos.png' style='height: 8em; float: right; margin: 2em 0 1em 1em;'/>
 
 Aquesta lliçó mostra com processar una seqüència de dades que representa una successió de fitxes de dòmino per tal de comptar quants errors té i per determinar si conté o no algun error. La diferència conceptual entre les dues solucions és la diferència entre fer un *recorregut* o fer una *cerca*.
 

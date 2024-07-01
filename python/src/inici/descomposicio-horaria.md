@@ -1,7 +1,7 @@
 # Aplicació: Descomposició horària
 
 
-<img src='./rellotge.png' style='height: 10em; float: right; margin: 0 0 1em 1em;'/>
+<img src='./rellotge.png' style='height: 10em; float: right; margin: 2em 0 1em 1em;'/>
 
 Aquesta lliçó mostra com solucionar el problema de descompondre un determinat nombre de segons en hores, minuts i segons. Això permet aprofundir en l'ús de les instruccions que ja s'han presentat i veure com funciona la divisió amb valors enters.
 
@@ -36,7 +36,7 @@ print(h, m, s)          # Escriptura de les sortides
 Evidentment, encara ens falta fer la part del càlcul, però la resta de parts ja són al seu lloc: La instrucció `n = int(input())` indica que cal llegir un enter que l'assignació desa a la variable `n` i la instrucció  `print` escriurà els valors corresponents a `h`, `m` i `s` separats per un espai.
 
 
-<img src='./caramels.png' style='height: 8em; float: right; margin: 0 0 1em 1em;'/>
+<img src='./caramels.png' style='height: 8em; float: right; margin: 2em 0 1em 1em;'/>
 
 Abans de continuar, cal que introduim (o _repassem_, perquè ja el coneixeu) el concepte de **divisió entera**: Reculeu alguns anys, quan vau aprendre a dividir:
 

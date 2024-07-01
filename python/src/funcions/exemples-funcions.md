@@ -1,6 +1,6 @@
 # Exemples de funcions
 
-<img src='./exemples-funcions.png' style='height: 9em; float: right; margin: 0 0 1em 1em;'/>
+<img src='./exemples-funcions.png' style='height: 9em; float: right; margin: 2em 0 1em 1em;'/>
 
 En aquesta lliçó es presenten diversos exemples de funcions. Els exemples inclouen funcions per calcular del factorial, determinar si un nombre és primer, calcular el màxim comú divisor i calcular el màxim comú múltiple. A més, en aquesta lliçó es mostra com pensar jocs de proves per provar les funcions i presenta el concepte de precondició d'una funció.
 

@@ -1,6 +1,6 @@
 # Variables, assignacions i expressions
 
-<img src='./assignacions-i-variables.png' style='width: 10em; float: right; margin: 0 0 1em 1em;'/>
+<img src='./assignacions-i-variables.png' style='width: 10em; float: right; margin: 2em 0 1em 1em;'/>
 
 Aquesta lliçó explora amb més detall els conceptes d'assignacions, de variables i expressions. Per això, primer es dóna més informació sobre el seu funcionament i es veuen alguns exemples del seu ús, incloent l'increment d'una variable i l'intercanvi de dues variables.
 

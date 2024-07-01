@@ -1,6 +1,6 @@
 # Aplicació: Sumes parcials d'una llista
 
-<img src='./sumes-parcials.png' style='height: 8em; float: right; margin: 0 0 1em 1em;'/>
+<img src='./sumes-parcials.png' style='height: 8em; float: right; margin: 2em 0 1em 1em;'/>
 
 En aquesta lliçó veurem diferents problemes que involucren trobar la suma d'un nombre consecutiu d'elements d'una llista, i discutirem diferents tècniques per resoldre'ls, tenint en compte la seva complexitat algorísmica, és a dir, el nombre aproximat de passos necessaris per a dur a terme l'algorisme en funció del nombre de dades a tractar.
 

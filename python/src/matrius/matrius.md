@@ -1,6 +1,6 @@
 # Matrius
 
-<img src='./matrius.png' style='height: 8em; float: right; margin: 0 0 1em 1em;'/>
+<img src='./matrius.png' style='height: 8em; float: right; margin: 2em 0 1em 1em;'/>
 
 Aquesta lliçó presenta les matrius, una estructura de dades semblant a les llistes però amb més d'una dimensió. De fet, les matrius en Python no són altra cosa que llistes de llistes. Com les llistes, les matrius tenen moltes aplicacions en matemàtiques, però també poden representar molts altres conceptes en informàtica, com ara taulers, mapes, patrons...
 
@@ -98,7 +98,7 @@ Evidentment, algunes vegades va bé usar les variables de control. Per exemple, 
 
 ## Matrius de més dimensions
 
-<img src='./matriu3d.png' style='height: 8em; float: right; margin: 0 0 1em 1em;'/>
+<img src='./matriu3d.png' style='height: 8em; float: right; margin: 2em 0 1em 1em;'/>
 
 Igual que per fer matrius bidimensionals hem fet que una llista contingui altres llistes, podem fer que aquests llistes continguin alhora més llistes, i així indefinidament. Per exemple, podem crear una matriu tridimensional d'`m ✕ n ✕ r` zeros amb el codi següent:
 

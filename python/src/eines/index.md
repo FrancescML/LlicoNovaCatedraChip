@@ -1,6 +1,6 @@
 # Eines de programació
 
-<img src='./installacio.png' style='height: 8em; float: right; margin: 0 0 1em 1em;'/>
+<img src='./installacio.png' style='height: 8em; float: right; margin: 2em 0 1em 1em;'/>
 
 Fins ara, tots els programes que heu escrit i executat en aquestes lliçons han estat dins de les pròpies pàgines de web. Aquesta opció està bé per començar i seguir els tutorials, però per programar de forma més professional, cal que ho fem directament damunt del nostre ordinador, desant els programes al nostre disc i utilitzant eines potents.
 

@@ -1,7 +1,7 @@
 # Programa principal i variables globals
 
 
-<img src='./main.png' style='height: 8em; float: right; margin: 0 0 1em 1em;'/>
+<img src='./main.png' style='height: 8em; float: right; margin: 2em 0 1em 1em;'/>
 
 
 ## La història

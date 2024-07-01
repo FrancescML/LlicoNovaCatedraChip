@@ -1,6 +1,6 @@
 # El Jutge
 
-<img src='./jutge.png' style='height: 8em; float: right; margin: 0 0 1em 1em;'/>
+<img src='./jutge.png' style='height: 8em; float: right; margin: 2em 0 1em 1em;'/>
 
 
 TODO: Fer-ho en Python!

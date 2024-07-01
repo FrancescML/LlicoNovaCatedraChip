@@ -1,6 +1,6 @@
 # Aplicació: Octògons facilets
 
-<img src='./octogons.png' style='height: 8em; float: right; margin: 0 0 1em 1em;'/>
+<img src='./octogons.png' style='height: 8em; float: right; margin: 2em 0 1em 1em;'/>
 
 Aquesta lliçó mostra una possible solució pel problema
 [P87198](https://jutge.org/problems/P87198) (Octògons facilets) del Jutge. La

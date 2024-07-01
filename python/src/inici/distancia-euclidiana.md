@@ -1,7 +1,7 @@
 # Aplicació: Càlcul de la distància euclidiana entre dos punts
 
 
-<img src='./cinta.png' style='height: 8em; float: right; margin: 0 0 1em 1em;'/>
+<img src='./cinta.png' style='height: 8em; float: right; margin: 2em 0 1em 1em;'/>
 
 Aquesta lliçó mostra com escriure un programa que calculi la distància euclidiana entre dos punts donats.
 

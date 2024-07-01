@@ -2,7 +2,7 @@
 
 # El tipus enter 
 
-<img src='./int.png' style='height: 8em; float: right; margin: 0 0 1em 1em;'/>
+<img src='./int.png' style='height: 8em; float: right; margin: 2em 0 1em 1em;'/>
 
 
 El tipus dels enters en Python s'escriu `int`. En aquesta llicó es mostra com s'escriuen els literals enters, quins valors poden tenir els valors enters i quines operacions se'ls pot aplicar.

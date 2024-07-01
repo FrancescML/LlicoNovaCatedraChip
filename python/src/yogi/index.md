@@ -1,6 +1,6 @@
 # Lectura de dades amb `yogi`
 
-<img src='./lectura.png' style='height: 10em; float: right; margin: 0 0 1em 1em;'/>
+<img src='./lectura.png' style='height: 10em; float: right; margin: 2em 0 1em 1em;'/>
 
 La lectura de dades en Python és, admetem-ho, massa difícil per als
 principiants. Per solucionar-ho, es pot usar el mòdul

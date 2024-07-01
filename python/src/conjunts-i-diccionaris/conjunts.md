@@ -1,6 +1,6 @@
 # Conjunts
 
-<img src='./conjunts.png' style='height: 8em; float: right; margin: 0 0 1em 1em;'/>
+<img src='./conjunts.png' style='height: 8em; float: right; margin: 2em 0 1em 1em;'/>
 
 Aquesta lliçó introdueix un nou tipus de dades: els conjunts. Els conjunts de Python són molt semblants als que s'usen en matemàtiques i per això el seu ús és molt senzill i intuïtiu. Gràcies a l'ús de conjunts, els programes poden ser més expressius i eficients que les seves alternatives amb llistes.
 

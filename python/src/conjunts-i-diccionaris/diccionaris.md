@@ -1,6 +1,6 @@
 # Diccionaris
 
-<img src='./diccionaris.png' style='height: 8em; float: right; margin: 0 0 1em 1em;'/>
+<img src='./diccionaris.png' style='height: 8em; float: right; margin: 2em 0 1em 1em;'/>
 
 Aquesta lliçó introdueix un altre tipus de dades: els diccionaris. Podem pensar en els diccionaris com una generalització de les llistes, on es pot indexar per qualsevol valor de (quasi) qualsevol tipus, sense que els índexs hagin de ser enters consecutius.
 

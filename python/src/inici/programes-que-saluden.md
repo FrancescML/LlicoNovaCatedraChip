@@ -2,7 +2,7 @@
 
 👋 Hola, comencem!
 
-<img src='./programes-que-saluden.png' style='height: 10em; margin-left: auto; margin-right: auto;'/>
+<img src='./programes-que-saluden.png' style='height: 10em; margin-left: auto; margin-right: auto; '/>
 
 Aquesta lliçó presenta uns petits programes en Python que saluden educadament a l'usuari que els executa. Pas a pas, aquesta lliçó mostra les instruccions de lectura, d'escriptura i d'assignació. De moment, no cal que instal·leu res al vostre ordinador, ja que els programes s'executen directament dins d'aquesta mateixa pàgina web. Així, podeu provar-los sense cap complicació.
 

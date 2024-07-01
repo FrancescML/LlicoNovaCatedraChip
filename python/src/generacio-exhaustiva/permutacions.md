@@ -1,6 +1,6 @@
 # Generació exhaustiva: Permutacions
 
-<img src='./permutacions.png' style='height: 8em; float: right; margin: 0 0 1em 1em;'/>
+<img src='./permutacions.png' style='height: 8em; float: right; margin: 2em 0 1em 1em;'/>
 
 Aquesta lliçó presenta algorismes de generació exhaustiva per tal de generar permutacions de determinats conjunts. Per a fer-ho, es presenten diferents exemples de complexitat creixent, alhora que es milloren els algorismes. La recursivitat és la tècnica fonamental d'aquest tipus d'algorismes combinatoris.
 

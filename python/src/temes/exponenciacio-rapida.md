@@ -1,6 +1,6 @@
 # Exponenciació ràpida
 
-<img src='./exponenciacio-rapida.png' style='height: 8em; float: right; margin: 0 0 1em 1em;'/>
+<img src='./exponenciacio-rapida.png' style='height: 8em; float: right; margin: 2em 0 1em 1em;'/>
 
 Aquesta lliçó presenta el mètode de l'exponenciació ràpida. Amb aquest mètode, potències del tipus $x^n$ es poden calcular utilitzant uns $\log n$ productes, enlloc dels $n$ que caldrien amb un mètode més ingenu. Per explicar la tècnica es presenta primer el cas de l'exponenciació de reals. Després aquesta idea s'aplica a l'exponenciació modular, a l'exponenciació de matrius quadrades, i al càlcul de nombres de Fibonacci.
 

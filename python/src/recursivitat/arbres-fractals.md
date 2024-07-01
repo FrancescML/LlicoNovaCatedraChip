@@ -1,6 +1,6 @@
 # Aplicació: Arbres fractals
 
-<img src='./arbres-fractals.png' style='height: 8em; float: right; margin: 0 0 1em 1em;'/>
+<img src='./arbres-fractals.png' style='height: 8em; float: right; margin: 2em 0 1em 1em;'/>
 
 Aquesta lliçó mostra com dibuixar arbres fractals utilitzant la tortuga de Python i recursivitat. Vegeu el problema [P50324](https://jutge.org/problems/P50324) del Jutge.
 

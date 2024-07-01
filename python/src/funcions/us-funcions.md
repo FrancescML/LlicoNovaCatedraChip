@@ -1,6 +1,6 @@
 # Ús de funcions
 
-<img src='./funcions.png' style='height: 8em; float: right; margin: 0 0 1em 1em;'/>
+<img src='./funcions.png' style='height: 8em; float: right; margin: 2em 0 1em 1em;'/>
 
 Aquesta lliçó presenta com usar funcions. A través de funcions predefinides o de funcions importades d'altres mòduls, els nostres programes poden dur a terme tasques més o menys complicades sense haver d'escriure tant de codi i, per tant, amb menys possibilitat d'errors.
 

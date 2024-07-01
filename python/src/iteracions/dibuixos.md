@@ -3,7 +3,7 @@
 ❗️❗️❗️ Falta comprovar que aquests programes estiguin bé. Els he traduit a sac de C++ i no els he provat.
 
 
-<img src='./dibuixos.png' style='height: 8em; float: right; margin: 0 0 1em 1em;'/>
+<img src='./dibuixos.png' style='height: 8em; float: right; margin: 2em 0 1em 1em;'/>
 
 Aquesta lliçó mostra possibles solucions
 per a un parell d'exercicis del Jutge:

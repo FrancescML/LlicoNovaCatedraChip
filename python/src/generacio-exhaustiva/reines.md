@@ -1,6 +1,6 @@
 # Aplicació: Les *n* reines
 
-<img src='./reines.svg' style='height: 8em; float: right; margin: 0 0 1em 1em;'/>
+<img src='./reines.svg' style='height: 8em; float: right; margin: 2em 0 1em 1em;'/>
 
 Com aplicació de les tècniques de generació exhaustiva, aquesta lliçó mostra com resoldre el famós trencaclosques de les vuit reines. 
 

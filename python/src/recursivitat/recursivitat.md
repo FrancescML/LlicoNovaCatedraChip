@@ -1,7 +1,7 @@
 
 # Recursivitat
 
-<img src='././recursivitat.png' style='height: 8em; float: right; margin: 0 0 1em 1em;'/>
+<img src='././recursivitat.png' style='height: 8em; float: right; margin: 2em 0 1em 1em;'/>
 
 Aquesta lliçó introdueix la tècnica de la recursivitat, on una funció o una acció realitza una tasca repetitiva tot invocant-se a sí mateixa, sense necessitat d'utilitzar bucles. La recursivitat és una tècnica molt potent que es basa en reduir un problema complex en un o més problemes del mateix tipus, però més senzills. Al llarg del curs s'anirà comprovant el seu poder, aquest lliçó només en presenta una breu introducció amb exemples de complexitat creixent.
 

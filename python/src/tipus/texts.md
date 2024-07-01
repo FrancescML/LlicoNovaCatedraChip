@@ -1,6 +1,6 @@
 # El tipus text
 
-<img src='./str.png' style='height: 8em; float: right; margin: 0 0 1em 1em;'/>
+<img src='./str.png' style='height: 8em; float: right; margin: 2em 0 1em 1em;'/>
 
 En aquesta llicó es descriu el tipus text. En particular es veu com s'escriuen els literals de tipus text, quins valors poden tenir els texts i algunes de les operacions se'ls pot aplicar. Finalment, es dóna una petita aplicació que involucra textos.
 

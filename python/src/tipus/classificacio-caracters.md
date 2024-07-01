@@ -1,6 +1,6 @@
 # Aplicació: Classificació de caràcters
 
-<img src='./classificacio-caracters.png' style='height: 4em; float: right; margin: 0 0 1em 1em;'/>
+<img src='./classificacio-caracters.png' style='height: 4em; float: right; margin: 2em 0 1em 1em;'/>
 
 
 Aquesta lliçó mostra una possible solució per a l'exercici

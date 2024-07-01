@@ -1,6 +1,6 @@
 # Aplicació: Màxim comú divisor
 
-<img src='./maxim-comu-divisor.png' style='height: 8em; float: right; margin: 0 0 1em 1em;'/>
+<img src='./maxim-comu-divisor.png' style='height: 8em; float: right; margin: 2em 0 1em 1em;'/>
 
 En aquest lliçó es mostren diverses solucions per calcular el màxim
 comú divisor de dos nombres. Totes elles usen iteracions i requereixen
@@ -180,7 +180,7 @@ print(d)
 
 ### Algorisme
 
-<img src='./euclides.png' style='height: 8em; float: right; margin: 0 0 1em 1em;'/>
+<img src='./euclides.png' style='height: 8em; float: right; margin: 2em 0 1em 1em;'/>
 
 A continuació veurem com calcular el màxim comú dividor de dos
 nombre utilitzant l'**algorisme d'Euclides**,

@@ -1,7 +1,7 @@
 # Aplicació: Conversió de graus Celcius a Fahrenheit
 
 
-<img src='./termometre.png' style='height: 8em; float: right; margin: 0 0 1em 1em;'/>
+<img src='./termometre.png' style='height: 8em; float: right; margin: 2em 0 1em 1em;'/>
 
 Aquesta lliçó mostra com escriure un programa que llegeixi una temperatura en graus Celsius i en calculi la conversió a graus Fahrenheit.
 

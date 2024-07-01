@@ -1,6 +1,6 @@
 # Funcions
 
-<img src='./funcions.png' style='height: 8em; float: right; margin: 0 0 1em 1em;'/>
+<img src='./funcions.png' style='height: 8em; float: right; margin: 2em 0 1em 1em;'/>
 
 Aquesta lliçó presenta com definir funcions pròpies. Una **funció** és un subprograma
 que, a partir de diverses entrades, en calcula un resultat. Ens podem

@@ -1,6 +1,6 @@
 # Aplicació: Resolució de Sudokus
 
-<img src='./sudoku.png' style='height: 8em; float: right; margin: 0 0 1em 1em;'/>
+<img src='./sudoku.png' style='height: 8em; float: right; margin: 2em 0 1em 1em;'/>
 
 Com aplicació de les tècniques de generació exhaustiva, aquesta lliçó mostra com resoldre el famós trencaclosque del sudoku.
 

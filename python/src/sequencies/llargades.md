@@ -1,6 +1,6 @@
 # Aplicació: Llargades de paraules
 
-<img src='./llargades.png' style='height: 8em; float: right; margin: 0 0 1em 1em;'/>
+<img src='./llargades.png' style='height: 8em; float: right; margin: 2em 0 1em 1em;'/>
 
 Aquesta lliçó presenta un programa per llegir un poema i obtenir-ne algunes estadístiques sobre la llargada de les seves paraules.
 

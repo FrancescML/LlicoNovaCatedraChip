@@ -1,6 +1,6 @@
 # Computacions aproximades
 
-<img src='./computacions-aproximades.png' style='height: 10em; float: right; margin: 0 0 1em 1em;'/>
+<img src='./computacions-aproximades.png' style='height: 10em; float: right; margin: 2em 0 1em 1em;'/>
 
 En aquest lliçó es presenten alguns algorismes per calcular solucions aproximades quan no es poden trobar solucions exactes. En particular es veuen aquestes tècniques:
 

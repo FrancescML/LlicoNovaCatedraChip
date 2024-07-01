@@ -1,6 +1,6 @@
 # Accions
 
-<img src='./accions.png' style='height: 8em; float: right; margin: 0 0 1em 1em;'/>
+<img src='./accions.png' style='height: 8em; float: right; margin: 2em 0 1em 1em;'/>
 
 Aquesta lliçó introdueix les accions, un nou tipus de subprograma, semblant a les funcions. Enlloc de retornar un valor, una **acció** és un subprograma que produeix uns efectes durant la seva execució. A més, aquesta lliçó mostra com trencar un programa en diferents subprogrames facilita la seva escriptura, lectura, comprensió i manteniment.
 

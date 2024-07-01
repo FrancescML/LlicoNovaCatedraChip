@@ -1,6 +1,6 @@
 # Finestres
 
-<img src='./sequencies.png' style = 'height: 8em; float: right; margin: 0 0 1em 1em;'/>
+<img src='./sequencies.png' style = 'height: 8em; float: right; margin: 2em 0 1em 1em;'/>
 
 Aquesta lliçó mostra nous exemples de tractament de seqüències de dades utilitzant la tècnica de la finestra que permet tractar diversor elements consecutius d'una seqüència amb encavalcaments.
 

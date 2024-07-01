@@ -1,6 +1,6 @@
 # Seqüències
 
-<img src='./sequencies.png' style='height: 8em; float: right; margin: 0 0 1em 1em;'/>
+<img src='./sequencies.png' style='height: 8em; float: right; margin: 2em 0 1em 1em;'/>
 
 Fins ara ens hem limitat a escriure programes que tracten unes poques dades. Aquesta lliçó mostra com llegir i tractar un gran nombre de dades que s'obtenen seqüencialment des de l'entrada. L'exemple que ho vehicula és el càlcul de la mitjana d'una seqüència de reals. Es veuen tres formes de fer-ho:
 

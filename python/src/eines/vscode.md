@@ -1,6 +1,6 @@
 # Editor Visual Studio Code
 
-<img src='./installacio.png' style='height: 8em; float: right; margin: 0 0 1em 1em;'/>
+<img src='./installacio.png' style='height: 8em; float: right; margin: 2em 0 1em 1em;'/>
 
 Un editor de codi és una eina informàtica semblant a un processador de textos, la diferència és que el processador de textos està destinat a escriure documents i dóna funcionalitats per formatar el text, crear índexs, afegir figures, ètc. mentre que un editor de codi dona funcionalitats més pròpies a la programació.
 

@@ -1,6 +1,6 @@
 # Exemples de seqüències
 
-<img src='./sequencies.png' style='height: 8em; float: right; margin: 0 0 1em 1em;'/>
+<img src='./sequencies.png' style='height: 8em; float: right; margin: 2em 0 1em 1em;'/>
 
 Aquesta lliçó mostra nous exemples de tractament de seqüències de dades. Els exemples exposants són el càlcul de la suma d'una seqüència d'enters, el càlcul del màxim d'una seqüència d'enters, i el comptatge de les aparicions d'una paraula en particular en una seqüència de paraules.
 

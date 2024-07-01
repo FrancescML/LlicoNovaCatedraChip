@@ -1,6 +1,6 @@
 # Aplicació: Fractal de Koch
 
-<img src='././koch.png' style='height: 8em; float: right; margin: 0 0 1em 1em;'/>
+<img src='././koch.png' style='height: 8em; float: right; margin: 2em 0 1em 1em;'/>
 
 Una **fractal** és un objecte matemàtic de gran complexitat definit per algorismes simples. Moltes fractals tenen propietats d'autosemblança, on les seves parts tenen la mateixa forma o estructura que el tot. Aquesta lliçó presenta l'ús de la recursivitat per poder generar una fractal de Koch a través de l'ordinador utilitzant la tortuga de Python.
 

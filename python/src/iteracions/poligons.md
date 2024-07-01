@@ -1,6 +1,6 @@
 # Aplicació: Dibuix de polígons regulars
 
-<img src='./poligons.png' style='height: 8em; float: right; margin: 0 0 1em 1em;'/>
+<img src='./poligons.png' style='height: 8em; float: right; margin: 2em 0 1em 1em;'/>
 
 En aquest lliçó es presenta com dibuixar  polígons regulars amb la tortuga de Python tot usant bucles. Primer es mostra el cas senzill del quadrat, després es generalitza a polígons regulars. Finalment, es mostra com utilitzar un bucle dins d'un bucle per pintar molts quadrats rotats.
 

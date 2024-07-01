@@ -1,6 +1,6 @@
 # Aplicació: Torres de Hanoi
 
-<img src='./hanoi.png' style='height: 8em; float: right; margin: 0 0 1em 1em;'/>
+<img src='./hanoi.png' style='height: 8em; float: right; margin: 2em 0 1em 1em;'/>
 
 En aquesta lliçó es mostra com obtenir una solució recursiva per al trencaclosques de les Torres de Hanoi.
 

@@ -1,7 +1,7 @@
 
 # Aplicació: Quadrats màgics (P99555)
 
-<img src='./quadrat-magic.png' style='height: 8em; float: right; margin: 0 0 1em 1em;'/>
+<img src='./quadrat-magic.png' style='height: 8em; float: right; margin: 2em 0 1em 1em;'/>
 
 Aquesta lliçó presenta una solució del problema [P99555](https://jutge.org/problems/P99555) del Jutge que consisteix a determinar si certs arranjaments de números constitueixen o no quadrats màgics. La solució d'aquest problema involucra matrius i llistes.
 

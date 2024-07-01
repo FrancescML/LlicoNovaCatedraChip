@@ -1,7 +1,7 @@
 
 # Cues
 
-<img src='./cues.png' style='height: 8em; float: right; margin: 0 0 1em 1em;'/>
+<img src='./cues.png' style='height: 8em; float: right; margin: 2em 0 1em 1em;'/>
 
 Aquesta lliçó introdueix un nou tipus de dades: les cues. Primer es presenta el concepte de cua, després es mostra com utilitzar cues en Python i, finalment, es donen alguns exemples.
 
@@ -37,7 +37,7 @@ Utilitzar llistes per implementar cues seria una mala idea: Si els afegits a la 
 
 Per això, Python ofereix un tipus anomenat `deque` (al mòdul estàndard `collections`) que permet inserir i esborrar pels dos cantons en temps constant.
 
-<img src='./deque.png' style='height: 8em; margin: 0 0 1em 1em;'/>
+<img src='./deque.png' style='height: 8em; margin: 2em 0 1em 1em;'/>
 
 El codi següent mostra com utilitzar les operacions d'una `deque`:
 

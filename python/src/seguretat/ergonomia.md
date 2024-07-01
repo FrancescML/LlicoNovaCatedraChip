@@ -2,7 +2,7 @@
 
 Aquesta lliçó remet a informació sobre ergonomia que qualsevol professional de les tecnologies de la informació i la comunicació hauria de conèixer per tal de treballar davant de l'ordinador de forma segura sense posar la seva salut en perill.
 
-<img src='./ergonomia.png' style='height: 8em; float: right; margin: 0 0 1em 1em;'/>
+<img src='./ergonomia.png' style='height: 8em; float: right; margin: 2em 0 1em 1em;'/>
 
 L'ús continuat de l'ordinador o els hàbits inadequats de treball amb l'ordinador poden tenir efectes detrimentals a la salut, en especial fatiga visual i trastorns musculoesquelètics. Eviteu aquests problemes de salut a curt i llarg termini, adoptant mesures de seguretat que millorin l'ergonomia del vostre lloc d'estudi i posicions de treball adequades.
 

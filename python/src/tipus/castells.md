@@ -1,6 +1,6 @@
 # Aplicació: Castells i catapultes
 
-<img src='./castells.png' style='height: 8em; float: right; margin: 0 0 1em 1em;'/>
+<img src='./castells.png' style='height: 8em; float: right; margin: 2em 0 1em 1em;'/>
 
 Aquesta lliçó presenta una simple modelació amb booleans
 de l'èxit o el fracàs d'un atac a un castell medieval.

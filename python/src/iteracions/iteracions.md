@@ -1,7 +1,7 @@
 
 # Iteracions
 
-<img src='./iteracions.png' style='height: 8em; float: right; margin: 0 0 1em 1em;'/>
+<img src='./iteracions.png' style='height: 8em; float: right; margin: 2em 0 1em 1em;'/>
 
 Aquest lliçó presenta la instrucció iterativa (`while` en Python). En informàtica, de
 repetir instruccions en diem *iterar* o *fer bucles*. La iteració permet simplificar i

@@ -1,6 +1,6 @@
 # Generació exhaustiva: Combinacions
 
-<img src='./combinacions.png' style='height: 8em; float: right; margin: 0 0 1em 1em;'/>
+<img src='./combinacions.png' style='height: 8em; float: right; margin: 2em 0 1em 1em;'/>
 
 Aquesta lliçó presenta algorismes de generació exhaustiva per tal de generar combinacions d'elements d'una determinada llargada. Per a fer-ho, es presenten diferents exemples de complexitat creixent, alhora que es milloren els algorismes. La recursivitat és la tècnica fonamental d'aquest tipus d'algorismes combinatoris.
 

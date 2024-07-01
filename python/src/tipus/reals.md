@@ -1,6 +1,6 @@
 # El tipus real
 
-<img src='./float.png' style='height: 8em; float: right; margin: 0 0 1em 1em;'/>
+<img src='./float.png' style='height: 8em; float: right; margin: 2em 0 1em 1em;'/>
 
 El tipus dels reals en Python s'escriu `float`. En aquesta llicó es mostra com s'escriuen els literals reals, quins valors poden tenir els valors reals i quines operacions se'ls pot aplicar. A més, també s'esmenten alguns problemes de precisió que poden patir les dades reals. Per acabar, es presenta un petit programa que manipula nombres reals.
 

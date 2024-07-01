@@ -8,6 +8,7 @@ export const index_cpp = [
                 link: '/intro/comencem.html',
             },
             {
+                w
                 text: 'Aplicació: Descomposició horària',
                 link: '/intro/descomposicio-horaria.html',
             },

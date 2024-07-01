@@ -1,6 +1,6 @@
 # Aplicació: Factorial
 
-<img src='./factorial.png' style='height: 9em; float: right; margin: 0 0 1em 1em;'/>
+<img src='./factorial.png' style='height: 9em; float: right; margin: 2em 0 1em 1em;'/>
 
 En aquesta lliçó es mostren algorismes per calcular els nombres factorials utilitzant construccions iteratives.
 

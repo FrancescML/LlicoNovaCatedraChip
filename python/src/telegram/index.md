@@ -1,6 +1,6 @@
 # Bots de Telegram
 
-<img src='./telegram-logo.png' style='height: 6em; float: right; margin: 0 0 1em 1em;'/>
+<img src='./telegram-logo.png' style='height: 6em; float: right; margin: 2em 0 1em 1em;'/>
 
 Telegram és una aplicació de missatgeria instantània gratuïta i feta amb
 programari lliure que permet enviar i rebre missatges a través d'Internet. Un

@@ -1,6 +1,6 @@
 # Iteracions amb `for`
 
-<img src='./bucles-for.png' style='height: 8em; float: right; margin: 0 0 1em 1em;'/>
+<img src='./bucles-for.png' style='height: 8em; float: right; margin: 2em 0 1em 1em;'/>
 
 Aquest lliçó presenta la instrucció iterativa `for in range`,
 que podem considerar una mena de cas particular,

@@ -1,6 +1,6 @@
 # Fitxers i formats en Python
 
-<img src='./fitxers.png' style='height: 10em; float: right; margin: 0 0 1em 1em;'/>
+<img src='./fitxers.png' style='height: 10em; float: right; margin: 2em 0 1em 1em;'/>
 
 Aquesta lliçó pretén donar una breu descripció sobre la manera de llegir i
 escriure fitxers en Python3. A més, també mostra com utilitzar algunes

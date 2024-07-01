@@ -1,7 +1,7 @@
 
 # El tipus booleà
 
-<img src='./booleans.png' style='height: 8em; float: right; margin: 0 0 1em 1em;'/>
+<img src='./booleans.png' style='height: 8em; float: right; margin: 2em 0 1em 1em;'/>
 
 En aquesta llicó es presenta el tipus Booleà, quin és el seu ús, quins valors poden tenir els booleans i quines operacions se'ls pot aplicar. Al final, també considerem algunes qüestions d'estíl.
 
