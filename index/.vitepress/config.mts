@@ -1,5 +1,4 @@
 import { defineConfig } from 'vitepress'
-import { index_python } from './python'
 import { tabsMarkdownPlugin } from 'vitepress-plugin-tabs'
 
 // https://vitepress.dev/reference/site-config
@@ -28,11 +27,11 @@ export default defineConfig({
                     },
                     {
                         text: 'Lliçons Python',
-                        link: 'https://python.lliçons.jutge.org',
+                        link: 'https://llicons.potipoti.org/python',
                     },
                     {
                         text: 'Lliçons C++',
-                        link: 'https://c++.lliçons.jutge.org',
+                        link: 'https://llicons.potipoti.org/cpp',
                     },
                 ],
             },
@@ -44,7 +43,7 @@ export default defineConfig({
         },
 
         footer: {
-            message: 'https://lliçons.jutge.org',
+            message: 'https://llicons.potipoti.org',
             copyright: `Copyright © ${year} Universitat Politècnica de Catalunya`,
         },
 

@@ -9,10 +9,10 @@ hero:
     actions:
         - theme: brand
           text: Lliçons Python
-          link: https://python.llicons.potipoti.org
+          link: https://llicons.potipoti.org/python
         - theme: brand
           text: Lliçons C++
-          link: https://cpp.llicons.potipoti.org
+          link: https://llicons.potipoti.org/cpp
 ---
 
 <img src='./logos/lliçons.png' style='max-width: 12em; margin-bottom: 2em;'/>

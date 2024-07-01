@@ -7,6 +7,9 @@ import { tabsMarkdownPlugin } from 'vitepress-plugin-tabs'
 const year = new Date().getFullYear()
 
 export default defineConfig({
+
+    base: '/python/',
+
     srcDir: 'src',
 
     title: 'Lliçons Python',
@@ -26,7 +29,7 @@ export default defineConfig({
                 items: [
                     {
                         text: 'Lliçons',
-                        link: 'https://lliçons.jutge.org',
+                        link: 'https://llicons.potipoti.org',
                     },
                     {
                         text: 'Lliçons Python',
@@ -34,7 +37,7 @@ export default defineConfig({
                     },
                     {
                         text: 'Lliçons C++',
-                        link: 'https://c++.lliçons.jutge.org',
+                        link: 'https://llicons.potipoti.org/cpp',
                     },
                 ],
             },
@@ -46,7 +49,7 @@ export default defineConfig({
         },
 
         footer: {
-            message: 'python.lliçons.jutge.org',
+            message: 'llicons.potipoti.org',
             copyright: `Copyright © ${year} Universitat Politècnica de Catalunya`,
         },
 

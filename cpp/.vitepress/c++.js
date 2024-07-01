@@ -5,47 +5,47 @@ export const index_cpp = [
         items: [
             {
                 text: 'Comencem!',
-                link: '/cpp/intro/comencem.html',
+                link: '/intro/comencem.html',
             },
             {
                 text: 'Aplicació: Descomposició horària',
-                link: '/cpp/intro/descomposicio-horaria.html',
+                link: '/intro/descomposicio-horaria.html',
             },
             {
                 text: 'El Jutge',
-                link: '/cpp/intro/jutge.html',
+                link: '/intro/jutge.html',
             },
             {
                 text: 'Condicionals',
-                link: '/cpp/intro/condicionals.html',
+                link: '/intro/condicionals.html',
             },
             {
                 text: "Aplicació: Suma d'un segon",
-                link: '/cpp/intro/sumar-un-segon.html',
+                link: '/intro/sumar-un-segon.html',
             },
             {
                 text: 'Iteracions',
-                link: '/cpp/intro/iteracions.html',
+                link: '/intro/iteracions.html',
             },
             {
                 text: 'Aplicació: Màxim comú divisor',
-                link: '/cpp/intro/maxim-comu-divisor.html',
+                link: '/intro/maxim-comu-divisor.html',
             },
             {
                 text: 'Iteracions amb for',
-                link: '/cpp/intro/bucles-for.html',
+                link: '/intro/bucles-for.html',
             },
             {
                 text: 'Aplicació: Alguns dibuixos',
-                link: '/cpp/intro/dibuixos.html',
+                link: '/intro/dibuixos.html',
             },
             {
                 text: 'Seqüències',
-                link: '/cpp/intro/sequencies.html',
+                link: '/intro/sequencies.html',
             },
             {
                 text: 'Aplicació: Trens de dòminos',
-                link: '/cpp/intro/dominos.html',
+                link: '/intro/dominos.html',
             },
         ],
     },
@@ -55,39 +55,39 @@ export const index_cpp = [
         items: [
             {
                 text: 'Reals',
-                link: '/cpp/intro/nombres-reals.html',
+                link: '/intro/nombres-reals.html',
             },
             {
                 text: "Aplicació: mitjana d'una seqüència de reals",
-                link: '/cpp/intro/mitjana.html',
+                link: '/intro/mitjana.html',
             },
             {
                 text: 'Booleans',
-                link: '/cpp/intro/booleans.html',
+                link: '/intro/booleans.html',
             },
             {
                 text: 'Aplicació: Castells i catapultes',
-                link: '/cpp/intro/castells.html',
+                link: '/intro/castells.html',
             },
             {
                 text: 'Caràcters',
-                link: '/cpp/intro/caracters.html',
+                link: '/intro/caracters.html',
             },
             {
                 text: 'Aplicació: Classificació de caràcters',
-                link: '/cpp/intro/classificacio-caracters.html',
+                link: '/intro/classificacio-caracters.html',
             },
             {
                 text: 'Aplicació: Nombres hexadecimals',
-                link: '/cpp/intro/hexadecimals.html',
+                link: '/intro/hexadecimals.html',
             },
             {
                 text: 'Textos',
-                link: '/cpp/intro/textos.html',
+                link: '/intro/textos.html',
             },
             {
                 text: 'Aplicació: Llargades de paraules',
-                link: '/cpp/intro/llargades.html',
+                link: '/intro/llargades.html',
             },
         ],
     },
@@ -97,35 +97,35 @@ export const index_cpp = [
         items: [
             {
                 text: 'Funcions',
-                link: '/cpp/intro/funcions.html',
+                link: '/intro/funcions.html',
             },
             {
                 text: 'Aplicació: Factorial',
-                link: '/cpp/intro/factorial.html',
+                link: '/intro/factorial.html',
             },
             {
                 text: 'Aplicació: Màxim comú divisor i mínim comú multiple',
-                link: '/cpp/intro/mcd-mcm.html',
+                link: '/intro/mcd-mcm.html',
             },
             {
                 text: 'Aplicació: Primalitat',
-                link: '/cpp/intro/primalitat.html',
+                link: '/intro/primalitat.html',
             },
             {
                 text: 'Accions',
-                link: '/cpp/intro/accions.html',
+                link: '/intro/accions.html',
             },
             {
                 text: 'Aplicació: Octògons facilets',
-                link: '/cpp/intro/octogons.html',
+                link: '/intro/octogons.html',
             },
             {
                 text: 'Accions: Pas de paràmetres per valor i per referència',
-                link: '/cpp/intro/referencies.html',
+                link: '/intro/referencies.html',
             },
             {
                 text: 'Aplicació: Més rellotges',
-                link: '/cpp/intro/mes-rellotges.html',
+                link: '/intro/mes-rellotges.html',
             },
         ],
     },
@@ -135,43 +135,43 @@ export const index_cpp = [
         items: [
             {
                 text: 'Vectors',
-                link: '/cpp/intro/vectors.html',
+                link: '/intro/vectors.html',
             },
             {
                 text: 'Aplicació: Operacions comuns sobre vectors',
-                link: '/cpp/intro/vectors-comuns.html',
+                link: '/intro/vectors-comuns.html',
             },
             {
                 text: 'Aplicació: Girs i palíndroms',
-                link: '/cpp/intro/palindroms.html',
+                link: '/intro/palindroms.html',
             },
             {
                 text: 'Aplicació: Producte escalar',
-                link: '/cpp/intro/producte-escalar.html',
+                link: '/intro/producte-escalar.html',
             },
             {
                 text: "Aplicació: Sumes parcials d'un vector",
-                link: '/cpp/intro/sumes-parcials.html',
+                link: '/intro/sumes-parcials.html',
             },
             {
                 text: 'Matrius',
-                link: '/cpp/intro/matrius.html',
+                link: '/intro/matrius.html',
             },
             {
                 text: 'Aplicació: Operacions comuns sobre matrius',
-                link: '/cpp/intro/matrius-comuns.html',
+                link: '/intro/matrius-comuns.html',
             },
             {
                 text: 'Estructures',
-                link: '/cpp/intro/estructures.html',
+                link: '/intro/estructures.html',
             },
             {
                 text: 'Aplicació: Estructura i operacions per a un rellotge',
-                link: '/cpp/intro/estructures-rellotge.html',
+                link: '/intro/estructures-rellotge.html',
             },
             {
                 text: 'Aplicació: Polígons simples',
-                link: '/cpp/intro/estructures-poligons.html',
+                link: '/intro/estructures-poligons.html',
             },
         ],
     },
