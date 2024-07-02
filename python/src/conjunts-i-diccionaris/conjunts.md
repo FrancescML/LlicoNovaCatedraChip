@@ -252,7 +252,7 @@ Es poden copiar conjunts fàcilment amb el mètode `copy`:
 | `set(L)`                | crea un conjunt amb els elements de la llista `L`.                                                                                        |
 | `len(s)`                | retorna el cardinal del conjunt `s`.                                                                                                      |
 | `s.add(x)`              | afegeix l'element `x` al conjunt `s`.                                                                                                     |
-| `s.erase(x)`            | esborra l'element `x` del conjunt `s` (s'enfada si no hi és).                                                                             |
+| `s.remove(x)`           | esborra l'element `x` del conjunt `s` (s'enfada si no hi és).                                                                             |
 | `s.discard(x)`          | esborra l'element `x` del conjunt `s` (no s'enfada si no hi és).                                                                          |
 | `s.pop()`               | elimina i retorna un element arbitrari d'`s` (`s` no pot ser buit).                                                                       |
 | `s.copy()`              | retorna una còpia independent d'`s`                                                                                                       |
