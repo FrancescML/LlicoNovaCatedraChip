@@ -7,8 +7,10 @@
         <div style="clear: right;"></div>
 
         <p style="margin-top: 1em; text-align: right;">
-            <b>Lliçons.jutge.org</b><br />
-            {{ autors.split(' ').map(id => info[id].name).join(', ') }}<br />
+            <b>{{ autors.split(' ').map(id => info[id].name).join(', ') }}</b>
+            <br />
+            Lliçons.jutge.org
+            <br />
             © Universitat Politècnica de Catalunya, {{ new Date().getFullYear() }}
         </p>
     </div>

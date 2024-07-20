@@ -29,9 +29,9 @@ fa que la variable `mida_de_la_samarreta` prengui `52` per valor.
 Una variable es correspon a una posició a la memòria de l'ordinador que emmagatzema una dada. Podeu pensar en una variable com un calaixet amb una etiqueta. L'etiqueta del calaix es correspon al nom de la variable i el contingut del calaixet es correspon a la dada que emmagatzema. Els calaixos tenen noms per tal de poder-los identificar i trobar dins de l'extensa memòria de l'ordinador.
 
 :::tip Consell
-Quan veieu una assignació com `v = e`,
+Quan veieu una assignació com `v = e`, no llegiu
 
-no llegiu "<i>v és igual a e</i>"
+"<i>v és igual a e</i>"
 
 sinó
 
@@ -129,7 +129,7 @@ i = i + 1
 
 🤔 Mmmm... Tot d'un plegat, això no sembla tenir cap sentit! Com pot ser que un número sigui igual a ell mateix més un??? Tota la canalla de sisè de primària sap que això no és possible!
 
-Sí, sí... però el que hem escrit, no és una equació matemàtica que diu que la part esquerra és el mateix que la part dreta. El que hem escrit és una assignació en Python. El símbol `=` no vol dir _igualtat_, sinó que vol dir _assignació_. Concretament vol dir que, primer, es calcula què val la part dreta. Un cop fet, es desa aquest resultat a la variable de l'esquerra. A més, el valor anterior es perd.
+Sí, sí... però el que hem escrit, no és una equació matemàtica que diu que la part esquerra és el mateix que la part dreta. El que hem escrit és una assignació en Python. El símbol `=` no vol dir _igualtat_, sinó que vol dir _assignació_. Concretament vol dir que, primer, es calcula què val la part dreta. Un cop fet, es desa aquest resultat a la variable de l'esquerra. Fent-ho, el valor anterior es perd.
 
 Per tant, si la `i` val 12, quan s'executa `i = i + 1`, primer es calcula `i + 1`, que val 13 perquè `i` val 12. Un cop fet el càlcul de la part dreta, aquest 13 es desa en `i`, fent que el 12 que hi havia es perdi. Per tant, després d'`i = i + 1`, `i` val 13.
 
@@ -139,24 +139,30 @@ D'acord? Ho podeu comprovar fent la traça pas a pas aquí sota:
 
 La instrucció `i = i + 1` fa doncs que el valor de `i` s'incrementi d'una unitat! Primer tenia un cert valor, després té aquell valor més un.
 
-:::info Exercici
-Suposeu que `x` val 14. Quan val `x` després de fer `x = x * 2`?
-:::
+## Exercicis
 
-:::info Exercici
-Suposeu que `n` val 23. Quan val `n` després de fer `n = n // 2`? Recordeu que `//` vol dir divisió entera.
-:::
+-   Suposeu que `s` val 42. Quan val `s` després de fer `s = s + 1`?
 
-:::info Exercici
-Quin és el valor de les variables al final del programa següent?
+-   Suposeu que `x` val 14. Quan val `x` després de fer `x = x * 2`?
 
-```python
-a = 12
-b = 15
-c = a * (b - 5)
-a = a + 1
-b = b - a
-```
+-   Suposeu que `n` val 23. Quan val `n` després de fer `n = n // 2`? Recordeu que `//` vol dir divisió entera.
+
+-   Quin és el valor de les variables al final del programa següent?
+
+    ```python
+    a = 12
+    b = 15
+    c = a * (b - 5)
+    a = a + 1
+    b = b - a
+    ```
+
+:::details Solucions
+
+-   `s` val 43.
+-   `x` val 28.
+-   `n` val 11.
+-   `a` val 13, `b` val 2 i `c` val 168.
 
 :::
 
@@ -176,7 +182,7 @@ Per tot el que hem explicat, el valor final d'`a` és 7, i el de `b` és 12.
 
 En canvi, hi ha certes persones que pensen que el valor final de `b` ha de ser 14, ja que `a` val 7 i `b` és el doble d'`a`. No! NO! **NO!** Les instruccions s'executen seqüencialment, sobre els valors actuals de les variables, i no tenen efectes holístics ni retroactius.
 
-La gent que cau en aquest error sol ser gent molt intel·ligent amb un perfecte raonament lògic, però que esperen més de l'ordinador que el que aquesta màquina ximple els ofereix. Les instruccions s'executen una darrera de l'altra, les assignacions només canvien el valor de la part esquerra.
+La gent que cau en aquest error sol ser gent molt intel·ligent amb un perfecte raonament lògic, però que esperen més de l'ordinador que el que aquesta màquina ximple els ofereix. Les instruccions s'executen una darrera de l'altra, les assignacions només canvien el valor de la part esquerra en funció dels valor actuals de les variables a la part dreta.
 
 ## Intercanvi de dues variables
 
@@ -241,7 +247,7 @@ i + 1 = 5        ❌
 
 perquè la part esquerra és una expressió que no representa cap calaixet de la memòria (de nou, recordeu que, en Python, l'igual representa assignacions, no equacions).
 
-:::info Exercici
+## Exercicis
 
 Suposant que `a = 3`, `b = 2` i `c = 4`, avalueu les expressions següents:
 
@@ -253,6 +259,5 @@ Suposant que `a = 3`, `b = 2` i `c = 4`, avalueu les expressions següents:
 -   `a**b * -c`
 
 En Python, com en matemàtiques, l'exponenciació té més prioritat que el producte, la divisió i el residu, que tenen més prioritat que la suma i la resta. Els càlculs es porten a terme d'esquerra a dreta, respectant els parèntesis.
-:::
 
 <Autors autors="jpetit"/>

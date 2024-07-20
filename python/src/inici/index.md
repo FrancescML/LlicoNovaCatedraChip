@@ -1,11 +1,10 @@
-# Introducció
+# Benvinguts a Lliçons Python
 
-<img src='./introduccio.png' style='height: 10em; float: right; margin: 2em 0 1em 1em;'/>
+Les **Lliçons Python** estan dissenyades per oferir una experiència d'aprenentatge única, on la pràctica i la interactivitat són els elements centrals. A través de petites lliçons clarament estructurades i ordenades, us guiaré pas a pas en el fascinant món de la programació amb Python, començant des dels conceptes més bàsics fins a les tècniques més avançades.
 
-TODO: Falta escriure la introducció
+L'enfocament és sempre progressiu, garantint que no us sentiu aclaparats, independentment del vostre nivell inicial de coneixement. Els conceptes es presenten de manera gradual, amb explicacions detallades i exemples concrets procurant que fins i tot els temes més complexos siguin accessibles i comprensibles.
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+Tant si sou completament nous en la programació com si ja teniu experiència en altres llenguatges, trobareu que aquestes lliçons us proporcionan les eines necessàries per dominar Python amb confiança i habilitat.
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-
+Cliqueu [la lliçó següent](programes-que-saluden) per escriure i provar el vostre primer programa en Python!
 <Autors autors="jpetit"/>

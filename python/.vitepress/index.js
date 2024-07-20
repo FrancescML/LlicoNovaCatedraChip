@@ -4,7 +4,7 @@ export const index = [
         collapsed: true,
         items: [
             {
-                text: 'Introducció',
+                text: 'Benvinguda',
                 link: '/inici/',
             },
             {
