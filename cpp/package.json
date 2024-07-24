@@ -1,5 +1,6 @@
 {
     "dependencies": {
+        "asciinema-player": "^3.8.0",
         "flowchart.js": "^1.18.0",
         "raphael": "^2.3.0",
         "snapsvg-cjs": "^0.0.6"

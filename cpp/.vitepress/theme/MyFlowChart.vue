@@ -16,7 +16,7 @@ const props = defineProps({
 })
 
 const id = ref("flowchart_container_" + Math.random().toString(36).substring(7))
-console.log(id.value)
+// console.log(id.value)
 
 onMounted(() => {
     if (!props.src) return
