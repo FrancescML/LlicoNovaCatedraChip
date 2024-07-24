@@ -69,8 +69,8 @@ export default defineConfig({
         ],
 
         docFooter: {
-            prev: 'Pàgina anterior',
-            next: 'Pàgina següent',
+            prev: 'Lliçó anterior',
+            next: 'Lliçó següent',
         },
 
         lightModeSwitchTitle: 'Mode clar',

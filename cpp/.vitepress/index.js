@@ -9,43 +9,43 @@ export const index = [
             },
             {
                 text: 'Aplicació: Descomposició horària',
-                link: '/intro/descomposicio-horaria.html',
+                link: '/descomposicio-horaria.html',
             },
             {
                 text: 'El Jutge',
-                link: '/intro/jutge.html',
+                link: '/jutge.html',
             },
             {
                 text: 'Condicionals',
-                link: '/intro/condicionals.html',
+                link: '/condicionals.html',
             },
             {
                 text: "Aplicació: Suma d'un segon",
-                link: '/intro/sumar-un-segon.html',
+                link: '/sumar-un-segon.html',
             },
             {
                 text: 'Iteracions',
-                link: '/intro/iteracions.html',
+                link: '/iteracions.html',
             },
             {
                 text: 'Aplicació: Màxim comú divisor',
-                link: '/intro/maxim-comu-divisor.html',
+                link: '/maxim-comu-divisor.html',
             },
             {
                 text: 'Iteracions amb for',
-                link: '/intro/bucles-for.html',
+                link: '/bucles-for.html',
             },
             {
                 text: 'Aplicació: Alguns dibuixos',
-                link: '/intro/dibuixos.html',
+                link: '/dibuixos.html',
             },
             {
                 text: 'Seqüències',
-                link: '/intro/sequencies.html',
+                link: '/sequencies.html',
             },
             {
                 text: 'Aplicació: Trens de dòminos',
-                link: '/intro/dominos.html',
+                link: '/dominos.html',
             },
         ],
     },
@@ -55,39 +55,39 @@ export const index = [
         items: [
             {
                 text: 'Reals',
-                link: '/intro/nombres-reals.html',
+                link: '/nombres-reals.html',
             },
             {
                 text: "Aplicació: mitjana d'una seqüència de reals",
-                link: '/intro/mitjana.html',
+                link: '/mitjana.html',
             },
             {
                 text: 'Booleans',
-                link: '/intro/booleans.html',
+                link: '/booleans.html',
             },
             {
                 text: 'Aplicació: Castells i catapultes',
-                link: '/intro/castells.html',
+                link: '/castells.html',
             },
             {
                 text: 'Caràcters',
-                link: '/intro/caracters.html',
+                link: '/caracters.html',
             },
             {
                 text: 'Aplicació: Classificació de caràcters',
-                link: '/intro/classificacio-caracters.html',
+                link: '/classificacio-caracters.html',
             },
             {
                 text: 'Aplicació: Nombres hexadecimals',
-                link: '/intro/hexadecimals.html',
+                link: '/hexadecimals.html',
             },
             {
                 text: 'Textos',
-                link: '/intro/textos.html',
+                link: '/textos.html',
             },
             {
                 text: 'Aplicació: Llargades de paraules',
-                link: '/intro/llargades.html',
+                link: '/llargades.html',
             },
         ],
     },
@@ -97,35 +97,35 @@ export const index = [
         items: [
             {
                 text: 'Funcions',
-                link: '/intro/funcions.html',
+                link: '/funcions.html',
             },
             {
                 text: 'Aplicació: Factorial',
-                link: '/intro/factorial.html',
+                link: '/factorial.html',
             },
             {
                 text: 'Aplicació: Màxim comú divisor i mínim comú multiple',
-                link: '/intro/mcd-mcm.html',
+                link: '/mcd-mcm.html',
             },
             {
                 text: 'Aplicació: Primalitat',
-                link: '/intro/primalitat.html',
+                link: '/primalitat.html',
             },
             {
                 text: 'Accions',
-                link: '/intro/accions.html',
+                link: '/accions.html',
             },
             {
                 text: 'Aplicació: Octògons facilets',
-                link: '/intro/octogons.html',
+                link: '/octogons.html',
             },
             {
                 text: 'Accions: Pas de paràmetres per valor i per referència',
-                link: '/intro/referencies.html',
+                link: '/referencies.html',
             },
             {
                 text: 'Aplicació: Més rellotges',
-                link: '/intro/mes-rellotges.html',
+                link: '/mes-rellotges.html',
             },
         ],
     },
@@ -135,43 +135,43 @@ export const index = [
         items: [
             {
                 text: 'Vectors',
-                link: '/intro/vectors.html',
+                link: '/vectors.html',
             },
             {
                 text: 'Aplicació: Operacions comuns sobre vectors',
-                link: '/intro/vectors-comuns.html',
+                link: '/vectors-comuns.html',
             },
             {
                 text: 'Aplicació: Girs i palíndroms',
-                link: '/intro/palindroms.html',
+                link: '/palindroms.html',
             },
             {
                 text: 'Aplicació: Producte escalar',
-                link: '/intro/producte-escalar.html',
+                link: '/producte-escalar.html',
             },
             {
                 text: "Aplicació: Sumes parcials d'un vector",
-                link: '/intro/sumes-parcials.html',
+                link: '/sumes-parcials.html',
             },
             {
                 text: 'Matrius',
-                link: '/intro/matrius.html',
+                link: '/matrius.html',
             },
             {
                 text: 'Aplicació: Operacions comuns sobre matrius',
-                link: '/intro/matrius-comuns.html',
+                link: '/matrius-comuns.html',
             },
             {
                 text: 'Estructures',
-                link: '/intro/estructures.html',
+                link: '/estructures.html',
             },
             {
                 text: 'Aplicació: Estructura i operacions per a un rellotge',
-                link: '/intro/estructures-rellotge.html',
+                link: '/estructures-rellotge.html',
             },
             {
                 text: 'Aplicació: Polígons simples',
-                link: '/intro/estructures-poligons.html',
+                link: '/estructures-poligons.html',
             },
         ],
     },

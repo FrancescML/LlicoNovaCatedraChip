@@ -105,10 +105,10 @@ operacions sobre nombres reals.
 Al codi anterior hem escrit la condició `i*i <= n`.
 Seria correcte utilitzar `i*i < n`?
 
-TODO: Resposta
-
+::: details Resposta
 No: seria incorrecte. Altrament, els quadrats de nombres primers serien
 reportats com a primers. Per exemple, el 49.
+:::
 
 ## Una altra millora possible
 

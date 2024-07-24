@@ -28,13 +28,7 @@ Si considerem aquest codi a partir de la tercera línia,
 hi trobem un esquema molt freqüent a l'hora de construir bucles,
 que podem sintetitzar en aquest diagrama de flux:
 
-TODO:
-
-```
-<div id='flow-for'></div>
-
-<script type='text/coffeescript' src='./flow-for.coffee'></script>
-```
+<MyFlowChart src="flow-for.ts"/>
 
 <br>
 
@@ -213,7 +207,5 @@ Però fixeu-vos que sempre aconseguim codis més concisos.
 Escriviu un programa que llegeixi un nombre natural `n`,
 seguit d'`n` enters, i que n'escrigui la seva suma.
 Useu un `for`.
-
-TODO: Quiz
 
 <Autors autors="jpetit roura"/>

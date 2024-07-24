@@ -23,9 +23,9 @@ No oblideu picar _m'agrada_ al vídeo! 👍 😀
 
 Aquest vídeo fa referència en aquestes lliçons:
 
--   [Comencem!](/ip/intro/comencem.html)
+-   [Comencem!](/comencem.html)
 -   [Eines de programació](/eines/index.html)
--   [Ús del terminal](/terminal/index.html)
+-   [Ús del terminal](https://llicons.jutge.org/terminal/index.html)
 
 Més endavant, us pot ser útil llegir aquesta documentació del Jutge:
 

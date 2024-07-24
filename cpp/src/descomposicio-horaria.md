@@ -165,7 +165,7 @@ aquesta solució és realment correcta. Ho és per aquestes raons:
 
 La captura de terminal següent posa en marxa aquest programa. Piqueu el triangle!
 
-TODO: asciinema("descomposicio-horaria", "Descomposició horària")
+<ClientOnly><Asciinema src="./descomposicio-horaria.json" title="Descomposició horària"/></ClientOnly>
 
 ## Solució alternativa
 

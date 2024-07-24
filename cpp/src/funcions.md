@@ -18,7 +18,6 @@ de corregir i millorar. I, encara que en aquest curs bàsic no ho
 veurem, les funcions proporcionen també una manera de compartir codi
 entre diferents projectes.
 
-
 ## Ús de funcions en llibreries
 
 Suposem que volem calcular la distància entre dos punts del pla
@@ -49,9 +48,9 @@ Aquest programa presenta dues novetats:
 2.  L'expressió que calcula la distància entre els dos punts
     fa servir dues funcions matemàtiques:
 
-    - Primer, invoca `pow()` amb paràmetres `x1 - x2` i `2`.
-    - Després, invoca `pow()` amb paràmetres `y1 - y2` i `2`.
-    - Finalment, invoca `sqrt()` amb la suma dels dos resultats calculats anteriorment.
+    -   Primer, invoca `pow()` amb paràmetres `x1 - x2` i `2`.
+    -   Després, invoca `pow()` amb paràmetres `y1 - y2` i `2`.
+    -   Finalment, invoca `sqrt()` amb la suma dels dos resultats calculats anteriorment.
 
     La documentació de `<cmath>` estableix que,
     donats dos reals `a` i `b`, la funció `pow(a, b)` calcula `a` elevat a `b`.
@@ -65,7 +64,6 @@ Els resultats de les funcions, en aquest cas nombres reals,
 poden ser usats després com qualsevol altre nombre real:
 per a nous càlculs, desant-los en variables,
 escrivint-los pel canal de sortida, ...
-
 
 ## Funció per calcular quadrats
 
@@ -88,6 +86,7 @@ En aquest cas, podríem fer senzillament
 ```c++
 sqrt((xp - xq)*(xp - xq) + (yp - yq)*(yp - yq))
 ```
+
 El resultat seria el mateix, i el programa seria (lleugerament) més ràpid.
 Però encara es pot fer millor.
 Podem definir i usar una funció per elevar un nombre al quadrat,
@@ -106,9 +105,9 @@ Aquesta definició té dues parts: la capçalera i el cos.
     Aquesta capçalera informa, d'esquerra a dreta, de les característiques
     següents:
 
-    - El resultat de la funció és de tipus real (`double`).
-    - El nom de la funció és `quadrat`.
-    - Aquesta funció té un sol paràmetre, és de tipus `double` i s'anomena `a`.
+    -   El resultat de la funció és de tipus real (`double`).
+    -   El nom de la funció és `quadrat`.
+    -   Aquesta funció té un sol paràmetre, és de tipus `double` i s'anomena `a`.
 
 -   Després ve, entre claus, el **cos** de la funció: `return a*a;`
 
@@ -185,9 +184,6 @@ int main() {
 En C++, cal definir la funció `quadrat()` abans del `main()`,
 perquè des de la segona s'invoca la primera.
 
-
-
-
 ## Funció per al màxim de dos enters
 
 Considerem ara que volem escriure una funció per calcular el màxim de dos enters.
@@ -260,9 +256,6 @@ int main() {
 }
 ```
 
-
-
-
 ## Funció per al màxim de tres enters
 
 Ara volem fer una funció que, donats tres enters,
@@ -276,35 +269,35 @@ int max3(int a, int b, int c)
 
 Per implementar el cos d'aquesta funció hi ha, bàsicament, dues solucions:
 
-1. La primera consisteix a fer una anàlisi per casos fent servir condicionals,
-i té moltes variacions possibles. Aquesta n'és una de prou senzilla:
+1.  La primera consisteix a fer una anàlisi per casos fent servir condicionals,
+    i té moltes variacions possibles. Aquesta n'és una de prou senzilla:
 
-    ```
-    int max3(int a, int b, int c) {
-        if (b > a) a = b;
-        if (c > a) a = c;
-        return a;
-    }
-    ```
+        ```
+        int max3(int a, int b, int c) {
+            if (b > a) a = b;
+            if (c > a) a = c;
+            return a;
+        }
+        ```
 
-2. La segona, més astuta,
-consisteix a aprofitar que ja tenim escrita una funció `max2()` i que,
-per tant, la podem usar! Aquesta seria una manera possible:
+2.  La segona, més astuta,
+    consisteix a aprofitar que ja tenim escrita una funció `max2()` i que,
+    per tant, la podem usar! Aquesta seria una manera possible:
 
-    ```
-    int max3(int a, int b, int c) {
-        return max2(a, max2(b, c));
-    }
-    ```
+        ```
+        int max3(int a, int b, int c) {
+            return max2(a, max2(b, c));
+        }
+        ```
 
-    Com aquest codi demostra, una funció pot invocar una altra funció.
-    No només això, la pot invocar dues o més vegades, i amb paràmetres diferents.
-    Altrament dit, els subprogrames poden usar lliurement altres subprogrames.
+        Com aquest codi demostra, una funció pot invocar una altra funció.
+        No només això, la pot invocar dues o més vegades, i amb paràmetres diferents.
+        Altrament dit, els subprogrames poden usar lliurement altres subprogrames.
 
-    De fet, això ja ho havíem vist,
-    perquè en un exemple anterior, el `main()`,
-    que no deixa de ser una funció (una mica especial),
-    usava la funció `max2()`.
+        De fet, això ja ho havíem vist,
+        perquè en un exemple anterior, el `main()`,
+        que no deixa de ser una funció (una mica especial),
+        usava la funció `max2()`.
 
 Malgrat que la primera solució no és excessivament complicada,
 la segona és encara més senzilla i, per tant, preferible.
@@ -312,7 +305,7 @@ Dissenyar funcions que resolen tasques cada cop més complexes
 aprofitant funcions més simples
 és una excel·lent pràctica de disseny.
 
-Insistim en un petit detall tècnic del llenguatge  C++,
+Insistim en un petit detall tècnic del llenguatge C++,
 que ja hem mencionat anteriorment:
 per tal que una funció `f()` pugui invocar una funció `g()`,
 cal que `g()` es defineixi abans que `f()`.
@@ -342,8 +335,6 @@ int main() {
 }
 ```
 
-
-
 ## Sobrecàrrega
 
 En C++, un mateix identificador de funció es pot referir a diferentes funcions.
@@ -356,7 +347,6 @@ digui `max2` i que la funció que calcula el màxim de tres enters es
 digui `max3`: Ambdues es poden dir, per exemple, `max`. Quan s'invoqui a `max`
 amb dos paràmetres s'utilitzarà la primera, i quan s'invoqui a `max`
 amb tres paràmetres s'utilitzarà la segona. Aquí ho teniu:
-
 
 ```c++
 int max(int a, int b) {             // max2
@@ -380,7 +370,6 @@ L'exemple següent mostra que la sobrecàrrega també permet invocar
 a la funció adeqüada segons els tipus dels paràmetres tot creant
 dues funcions `abs` per calcular el valor absolut d'enters i de reals:
 
-
 ```c++
 int abs(int x) {                    // valor absolut per als enters
     if (x < 0) return -x;
@@ -398,7 +387,6 @@ int main() {
 }
 ```
 
-
 ## La funció `int main()`
 
 Segurament recordeu que a la [primera lliçó de C++](comencem.html)
@@ -406,7 +394,7 @@ havíem dit que el conjur 🧙 per escriure programes en C++
 requeria posar les instruccions entre les claus de `int main() {}`.
 Doncs bé, `main()` no és altra cosa que una funció!
 
-La funció `main()` (*principal*, en anglès) és la que el sistema
+La funció `main()` (_principal_, en anglès) és la que el sistema
 operatiu invoca per posar en marxa el nostre programa. Des d'ella, és clar, es poden
 posar en marxa altres funcions.
 
@@ -419,7 +407,6 @@ com un codi de l'estat amb el qual ha acabat el programa: 0 sol indicar
 correcte, i qualsevol valor diferent de 0 un error. Per fortuna, la
 funció `main` és especial i no cal fer aquest `return` explícitament
 (per defecte, retorna 0).
-
 
 ## Paràmetres formals i paràmetres reals
 
@@ -448,16 +435,15 @@ els paràmetres formals són `x` i `x + y`.
 Al invocar una funció, el valor dels paràmetres reals es transmeten
 als paràmetres formals:
 
-- A la primera invocació, el paràmetre formal `a` rebrà el valor `10`
-i el paràmetre formal `b` rebrà el valor que tingui la variable `x` en aquell moment.
+-   A la primera invocació, el paràmetre formal `a` rebrà el valor `10`
+    i el paràmetre formal `b` rebrà el valor que tingui la variable `x` en aquell moment.
 
-- A la segona invocació, el paràmetre formal `a` rebrà el valor de `x`
-i el paràmetre formal `b` rebrà la suma dels valors de `x` i de `y`.
+-   A la segona invocació, el paràmetre formal `a` rebrà el valor de `x`
+    i el paràmetre formal `b` rebrà la suma dels valors de `x` i de `y`.
 
 Fixeu-vos que els paràmetres formals són expressions que produeixen un valor
 (`10` o `x` o `x + y`). En canvi, els paràmetres formals són noms de variables
 amb llur tipus.
-
 
 ## Els paràmetres i les variables són locals
 
@@ -499,7 +485,7 @@ programador!).
 
 Els paràmetres també són locals: Els paràmetres `a` i `b` de `max2()` no
 tenen res a veure amb els paràmetres `a` i `b` de `max3()`. De fet, a la
-primera invocació de `max2()` a  `max3()`, el valor de `b` de `max3()` es
+primera invocació de `max2()` a `max3()`, el valor de `b` de `max3()` es
 copia al paràmetre `a` de `max2()`, i el valor de `c` de `max3()` es copia
 al paràmetre `b` de `max2()`. I, a la segona invocació de `max2()` a
 `max3()`, el valor d'`a` de `max3()` es copia al paràmetre `a` de `max2()`
@@ -516,23 +502,21 @@ sistema d'execució s'encarrega de mantenir totes aquestes variables
 mentre calen, i de reciclar-ne la memòria quan esdevenen innecessàries.
 
 Si us costa una mica entendre aquesta secció, contineu i ja hi tornareu
-més endavant. Al cap i a la fi,  el que cal saber és que tot està
+més endavant. Al cap i a la fi, el que cal saber és que tot està
 pensat perquè els noms de les variables i els paràmetres de les
 funcions no interefereixin entre si.
-
 
 ## Errors freqüents
 
 En aquesta secció comentarem dos errors freqüents que
 se solen cometre en començar a utilitzar funcions.
 
-
-- **Llegir les dades amb un `cin` en lloc de rebre-les com a paràmetres,
-  o escriure el resultat amb `cout` en lloc de retornar-lo.**
+-   **Llegir les dades amb un `cin` en lloc de rebre-les com a paràmetres,
+    o escriure el resultat amb `cout` en lloc de retornar-lo.**
 
     Per exemple, aquest programa violaria aquests preceptes:
 
-    ```
+    ```c++
     int valor_absolut(int x) {
         cin >> x;                       // 😬 el valor d'x no s'ha de llegir, és un paràmetre!
         int y;
@@ -544,7 +528,7 @@ se solen cometre en començar a utilitzar funcions.
 
     La versió correcta seria
 
-    ```
+    ```c++
     int valor_absolut(int x) {
         int y;
         if (x >= 0) y = x;
@@ -555,7 +539,7 @@ se solen cometre en començar a utilitzar funcions.
 
     o, senzillament,
 
-    ```
+    ```c++
     int valor_absolut(int x) {
         if (x > 0) return x;
         return -x;
@@ -566,29 +550,24 @@ se solen cometre en començar a utilitzar funcions.
     funcions que sí que llegeixin o escriguin per l'entrada/sortida. Per ara, però,
     fer això seria símptome d'haver-nos equivocat.
 
+-   **Donar els tipus dels paràmetres reals.**
 
-- **Donar els tipus dels paràmetres reals.**
-
-    Recordeu que hi ha dos tipus de paràmetres: els *paràmetres formals* que
-    ajuden a definir el cos d'una funció i els *paràmetres reals* que són els
+    Recordeu que hi ha dos tipus de paràmetres: els _paràmetres formals_ que
+    ajuden a definir el cos d'una funció i els _paràmetres reals_ que són els
     valors sobre els quals es vol invocar una funció. Convé no barrejar els dos
     i adonar-se que només es dónen els seus tipus als paràmetres formals.
 
     Per exemple, si disposem de la funció
 
-    ```
+    ```c++
     int max(int a, int b) {...}
     ```
 
     no l'hem d'invocar amb
 
-    ```
+    ```c++
     ⋮
     int z = max(int x, int y);
     ```
 
-
-
-
 <Autors autors="jpetit roura"/>
-

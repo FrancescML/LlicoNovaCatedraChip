@@ -109,8 +109,7 @@ mentre que `x = y;` (amb un sol igual) copia a `x` el valor de `y`.
 ## Exercici
 
 A continuació presentem algunes alternatives pel programa
-anterior. Podrieu diferenciar les correctes de les incorrectes? A sota teniu un test
-per demostrar la vostra vàlua!
+anterior. Podrieu diferenciar les correctes de les incorrectes?
 
 ```c++
 if (a >= b) {     // Fragment 1
@@ -154,8 +153,6 @@ if (a < b) {
     m = b;
 }
 ````
-
-TODO: Quiz
 
 ## Mínim i màxim de dos enters
 

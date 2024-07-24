@@ -60,7 +60,7 @@ Per tant, el problema es redueix a oblidar el primer nombre (i, al final, també
 i recórrer la resta dels elements de la seqüència d'entrada de dos en dos, comptant
 com a errors aquells que tenen els dos nombres diferents:
 
-```
+```c++
 #include <iostream>
 using namespace std;
 
@@ -107,7 +107,7 @@ sinó o bé `correcte` o bé `incorrecte`.
 
 Aquest programa, còpia quasi idèntica de l'anterior, òbviament funcionaria:
 
-```
+```c++
 #include <iostream>
 using namespace std;
 
@@ -141,7 +141,7 @@ en lloc d'aturar-se i escriure el resultat: `incorrecte`.
 
 Aquest codi implementa la millora mencionada:
 
-```
+```c++
 #include <iostream>
 using namespace std;
 

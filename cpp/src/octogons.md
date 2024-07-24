@@ -142,12 +142,6 @@ del disseny descendent, de manera que hem anat descomponent la complexitat
 del problema del nivell més general al més concret. El següent diagrama
 mostra la relació de les accions les unes amb les altres:
 
-TODO:
-
-```
-<script type="text/coffeescript" src="octogons.coffee"></script>
-<div id="div-octogons" style="height: 300px; ">
-</div>
-```
+TODO: Posar el `octogons.ts`
 
 <Autors autors="jpetit roura"/>

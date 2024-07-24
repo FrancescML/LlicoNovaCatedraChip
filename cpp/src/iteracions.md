@@ -146,8 +146,4 @@ Per tant, al final del programa és suficient amb escriure `maxim`.
 Escriviu un programa que llegeixi un nombre natural `n`,
 seguit d'`n` enters, i que n'escrigui la seva suma.
 
-TODO: Quiz
-
-<br>
-
 <Autors autors="jpetit roura"/>

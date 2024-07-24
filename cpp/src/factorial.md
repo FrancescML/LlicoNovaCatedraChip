@@ -71,9 +71,9 @@ Aquesta funció calcula el factorial de `n` tot multiplicant
 una variable `f` per `i`, per a tots els `i` entre 1 i `n`.
 Fixeu-vos que `factorial(0)` retorna `1`, tal com cal.
 
-## Exercicis
+## Exercici
 
-**Exercici 1.** Considereu aquesta nova versió de `factorial` on la `i`
+Considereu aquesta nova versió de `factorial` on la `i`
 s'inicialitza a 2 en lloc d'1:
 
 ```c++
@@ -85,7 +85,7 @@ int factorial1(int n) {
 }
 ```
 
-TODO: QUIZ
+Funciona?
 
 ## Problemes de sobreixement
 
