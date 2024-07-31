@@ -93,7 +93,7 @@ per escriure totes les combinacions que comencin amb `triat[0..i-1]` seguit d'un
 
 El resultat d'aquestes crides amb $n = 3$ és:
 
-```c++text
+```text
 000
 001
 010
@@ -150,7 +150,7 @@ int main() {
 ```
 
 Aquest codi té unes poques diferències amb l'anterior,
-però usa un estil més convenient en el context d'aquest curs.
+però usa un estil més convenient en el text d'aquest curs.
 D'una banda, usa un parell de **variables globals**: `n` i `triat`.
 Aquestes variables són visibles des de qualsevol part del codi.
 Per tant, podem passar a les funcions només els paràmetres no "redundants",
@@ -198,7 +198,7 @@ són una recepta per al desastre.
 No és el nostre objectiu explicar-ne els motius en detall.
 Només volem avisar que les variables globals
 són útils en aquestes lliçons,
-però molt perilloses en altres contextos.
+però molt perilloses en altres textos.
 (Si realment us cal programar seguint unes bones pràctiques generalitzables,
 a canvi d'escriure codis més verbosos, consulteu l'apèndix ...
 allà caldria posar un exemple de com fer-ho "bé")
@@ -253,7 +253,7 @@ amb un bucle senzill.
 
 Efectivament, el resultat amb $n = 3$ és, com cal:
 
-```c++text
+```text
 010
 011
 101
@@ -350,7 +350,7 @@ Per entendre per què, fixem-nos en els valors calculats en funció d'$n$:
 
 ... falta una taula maca ...
 
-```c++text
+```text
 0 1
 1 2
 2 3
@@ -459,7 +459,7 @@ n'escrigui tots els possibles subconjunts.
 Per exemple, amb les paraules `"zero"`, `"un"` i `"dos"`,
 la sortida podria ser:
 
-```c++text
+```text
 { }
 { dos }
 { un }
@@ -505,13 +505,13 @@ Per exemple, `"zero"` forma part del subconjunt
 si i només si `triat[0]` és cert.
 Així, la línia
 
-```c++text
+```text
 { zero un }
 ```
 
 es correspon a la línia
 
-```c++text
+```text
 110
 ```
 
@@ -531,7 +531,7 @@ on cada paraula aparegui com a màxim $k$ vegades.
 Per exemple, amb les paraules `"zero"` i `"un"`, i $k = 2$,
 la sortida podria ser:
 
-```c++text
+```text
 { }
 { un }
 { un un }
@@ -618,7 +618,7 @@ escrigui totes les maneres de sumar $s$ amb els nombres donats.
 Per exemple, amb $s = 10$ i els nombres 3, 7, $-4$, 0, 2, i 5,
 la sortida podria ser:
 
-```c++text
+```text
 {7,-4,2,5}
 {7,-4,0,2,5}
 {3,2,5}

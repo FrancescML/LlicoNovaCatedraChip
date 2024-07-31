@@ -3,8 +3,8 @@ layout: home
 
 hero:
     name: 'Lliçons Terminal'
-    text: 'Cristina Raluca Vijulie <small><i>et al</i></small>'
-    no-tagline: llicons.potipoti.org/terminal
+    tagline: 'Cristina Raluca Vijulie <small><i>et al</i></small>'
+    no-text: lliçons.jutge.org/terminal
 
     no-actions:
         - theme: brand

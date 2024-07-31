@@ -46,7 +46,7 @@ accessing the top elements of the stacks.
 
 ```c++
 
-<? include "pages/eda/lists/stacks.cc"; ?>
+<!--@include: ./stacks.cc-->
 
 ```
 
@@ -68,7 +68,7 @@ FALTA ACTAULITZAR DIBUIXOS PER FERLOS CIRCULARS
 
 For instace, list [40,12,35;23,39] would be represented like this:
 
-```c++text
+```text
     beg                cur          end
     ↓                  ↓            ↓
  ├─ 40 ⟷ 12 ⟷ 35 ⟷ 23 ⟷ 39 ⟷ 👻 ─┤
@@ -76,7 +76,7 @@ For instace, list [40,12,35;23,39] would be represented like this:
 
 Likewise, list [40,12,35,23,39;] would be represented like this:
 
-```c++text
+```text
                                     cur
     beg                             end
     ↓                               ↓
@@ -85,7 +85,7 @@ Likewise, list [40,12,35,23,39;] would be represented like this:
 
 To be clear, the empty list [;] is as shown:
 
-```c++text
+```text
     beg
     end
     cur
@@ -96,7 +96,7 @@ To be clear, the empty list [;] is as shown:
 The implementation follows:
 
 ```c++
-<? include "pages/eda/lists/nodes.cc"; ?>
+<!--@include: ./nodes.cc-->
 ```
 
 The cost of all operations is constant, except for the copy operations, which are linear,

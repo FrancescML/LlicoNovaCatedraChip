@@ -14,7 +14,7 @@ referència.
 Suposem que volem fer un programa per escriure un rectangle amb $m\times n$ asteríscos.
 Per exemple, aquest és un rectangle $3\times4$:
 
-```c++text
+```text
 
 ---
 
@@ -187,7 +187,7 @@ programes. Per a compravar-ho, suposem que ara volem fer un programa per
 escriure triangles de $n$ asteríscos. Per exemple, aquest és un triangle de
 mida $4$:
 
-```c++text
+```text
 *
 **
 ***

@@ -70,9 +70,9 @@ int size() const; // Retorna el nombre d'elements (cardinalitat)
 ```
 
 Les operacions `insert()`, `erase()`, `find()`, `[]` i `count()` prenen temps
-$\O(\log n)$ on $n$ és el nombre d'elements (`size()`) del diccionari. Les demés
+$O(\log n)$ on $n$ és el nombre d'elements (`size()`) del diccionari. Les demés
 operacions prenen temps constant. Els diccionaris, com els altres contenidors
-estàndard, es poden copiar i comparar, amb cost $\O(n) $.
+estàndard, es poden copiar i comparar, amb cost $O(n) $.
 
 Els elements d'un diccionari són de tipus `pair<K, V>`. El tipus `pair` fa
 part de la llibreria estàndard de C++ i és senzillament un `struct` amb dos
@@ -87,7 +87,7 @@ for (auto e : d) {
 }
 ```
 
-El recorregut dels $n$ elements d'un diccionari triga temps $\O(n)$.
+El recorregut dels $n$ elements d'un diccionari triga temps $O(n)$.
 
 Si teniu curiositat, els diccionaris sovint s'implementen internament
 amb arbres equilibrats (arbres AVL o arbres roig-negre).
@@ -100,13 +100,13 @@ Considerem que, donat un text, volem obtenir la llista de totes les seves
 paraules i de les seves aparicions, ordenada alfabèticament i sense
 repeticions. Per exemple, donada l'entrada
 
-```c++text
+```text
 el gegant del pi ara balla ara balla el gegant del pi ara balla pel cami
 ```
 
 es vol obtenir la sortida
 
-```c++text
+```text
 ara 3
 balla 3
 cami 1
@@ -225,7 +225,7 @@ la primera paraula de cada línia.
 
 Per exemple, si aquests són els nostres documents
 
-```c++text
+```text
 mati        cada dia al mati canta el gall kiririki
 gegant      el gegant del pi ara balla ara balla el gegant del pi ara balla pel cami
 nina        dalt del cotxe hi ha un nina que repica els picarols

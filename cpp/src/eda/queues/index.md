@@ -11,7 +11,7 @@ DIBUIX. FER ANIMACIÓ
 
 ```c++
 
-<? include "pages/eda/queues/buffer.cc"; ?>
+<!--@include: ./buffer.cc-->
 
 ```
 
@@ -23,7 +23,7 @@ refers to the first node of the list and `last` refers to the last node of the
 list. Here is a snapshot for a list with elements [1,2,3,4], where 1 is the
 first element to be served (i.e., the one that entered first):
 
-```c++text
+```text
 first           last
 ↓               ↓
 1 ⟶ 2 ⟶ 3 ⟶ 4 ─┤
@@ -33,7 +33,7 @@ In the case of an empty queue, both `first` and `last` are null. In the case
 of a queue with a single element, both point to the same node.
 
 ```c++
-<? include "pages/eda/queues/nodes.cc"; ?>
+<!--@include: ./nodes.cc-->
 ```
 
 <Autors autors="jpetit roura jordic"/>

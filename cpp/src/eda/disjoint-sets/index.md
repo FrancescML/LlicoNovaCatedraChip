@@ -10,7 +10,7 @@ TBD: Explain
 
 ```c++
 
-<? include "pages/eda/disjoint-sets/disjoint-sets-1.cc"; ?>
+<!--@include: ./disjoint-sets-1.cc-->
 
 ```
 
@@ -19,7 +19,7 @@ TBD: Explain
 TBD: Explain
 
 ```c++
-<? include "pages/eda/disjoint-sets/disjoint-sets-2.cc"; ?>
+<!--@include: ./disjoint-sets-2.cc-->
 ```
 
 ## Implementation with MF-sets by size and with path compression
@@ -27,7 +27,7 @@ TBD: Explain
 TBD: Explain
 
 ```c++
-<? include "pages/eda/disjoint-sets/disjoint-sets-3.cc"; ?>
+<!--@include: ./disjoint-sets-3.cc-->
 ```
 
 <Autors autors="jpetit"/>

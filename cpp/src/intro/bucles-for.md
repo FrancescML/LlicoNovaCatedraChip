@@ -107,7 +107,7 @@ seguits dels quadrats de tots els nombres entre 1 i `n`, un per línia.
 Per exemple, si llegim un 3,
 el programa ha d'escriure
 
-```c++text
+```text
 1
 2
 3

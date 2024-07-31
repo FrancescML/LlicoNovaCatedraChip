@@ -15,7 +15,7 @@ L'enunciat és senzill: Cal fer un programa que per a cada `n` donada escrigui
 Per exemple, quan `n` val 2,
 cal escriure
 
-```c++text
+```text
 XX
 XXXX
 XXXX
@@ -26,7 +26,7 @@ XX
 i quan `n` val 2,
 cal escriure
 
-```c++text
+```text
   XXX
  XXXXX
 XXXXXXX
@@ -74,7 +74,7 @@ Per definir el cos d'aquesta acció, del patró dels exemples, podem veure que
 un octògon es descompon en tres parts: la part superior, la part del mig i la
 part inferior:
 
-```c++text
+```text
   XXX      part superior
  XXXXX     part superior
 XXXXXXX    part superior

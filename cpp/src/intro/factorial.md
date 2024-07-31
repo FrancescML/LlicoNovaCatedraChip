@@ -111,7 +111,7 @@ int main() {
 
 Si proveu d'executar aquest programa (ho feu sempre, oi?), veureu que la sortida possiblement és
 
-```c++text
+```text
 0 1
 1 1
 2 2

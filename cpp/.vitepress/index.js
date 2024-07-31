@@ -176,7 +176,7 @@ export const index = [
         ],
     },
     {
-        text: 'STL',
+        text: 'Llibreria STL',
         collapsed: true,
         items: [
             {
@@ -242,7 +242,7 @@ export const index = [
         ],
     },
     {
-        text: 'EDA',
+        text: 'Pogrames EDA',
         collapsed: true,
         items: [
             {

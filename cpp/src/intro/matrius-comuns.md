@@ -17,7 +17,7 @@ s'ometran alguns detalls ja vistos.
 
 ## Introducció
 
-Al llarg d'aquesta lliçó suposarem que ja tenim el context següent, que inclou
+Al llarg d'aquesta lliçó suposarem que ja tenim el text següent, que inclou
 les definicions necessàries i defineix un tipus per a les matrius d'enters i per les
 seves files:
 

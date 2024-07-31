@@ -118,7 +118,7 @@ una condició que el programador pressuposa que es compleix. Si, per alguna raó
 en temps d'execució aquesta asserció no es compleix, el programa s'aturarà
 i proporcionarà un diagnòstic com ara el següent:
 
-```c++text
+```text
 Assertion failed: (a.size() == b.size()), function producte_escalar, file producte-escalar.cc, line 9.
 Abort trap: 6
 ```

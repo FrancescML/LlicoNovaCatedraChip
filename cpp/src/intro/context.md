@@ -174,7 +174,7 @@ l'especificació del problema.
 És essencial que els algorismes siguin correctes. Els algorismes incorrectes
 poden causar que un computador mai doni la resposta (es penji), que executi
 alguna instrucció il·legal (per exemple, dividir per zero), o que produeixi
-resultats incorrectes. Depenent del context, els algorismes incorrectes poden
+resultats incorrectes. Depenent del text, els algorismes incorrectes poden
 provocar efectes catastròfics. Per exemple, la Therac-25 era una màquina de
 radiacions terapèutiques controlada per computador. La seva mala programació
 va causar sis accidents entre 1985 i 1987, en els quals els pacients van rebre
@@ -197,7 +197,7 @@ Per resoldre aquest problema, a l'escola ja ens van ensenyar un algorisme quan
 erem ben petits... Segur que el recordeu! L'aplicació d'aquest algorisme als
 nombres $x$=2891 i $y$=4591, dóna lloc al desenvolupament següent:
 
-```c++text
+```text
 2 8 9 1
 × 4 5 9 1
 
@@ -248,7 +248,7 @@ al 2000 aC):
 
 Apliquem aquest algorisme sobre les dades d'entrada $x$=2891 i $y$=4591:
 
-```c++text
+```text
         2891        4591
        --------------------
         1445        9182 ←
@@ -345,7 +345,7 @@ inferior, li restarem el més petit. El més petit el deixarem tal qual.
 Quan arribem a una fila amb els dos valors iguals, l'algorisme d'Euclides
 ens diu que aquell nombre és la solució:
 
-```c++text
+```text
      78  24
     --------
      54  24
@@ -496,7 +496,7 @@ següents:
     considerat. Per això cal descriure quines són les seves possibles dades
     d'entrada, quines són les possibles dades de sortida i quina relació hi ha entre
     les dades de sortida i les dades d'entrada. Això involucra comprendre tot el
-    context del problema. En l'etapa d'especificació es tracta només de _què_
+    text del problema. En l'etapa d'especificació es tracta només de _què_
     cal arribar a fer, no de _com_ fer-ho.
 
 -   **Disseny d'un algorisme:**

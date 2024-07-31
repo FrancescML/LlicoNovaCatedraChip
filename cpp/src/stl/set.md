@@ -73,9 +73,9 @@ int size() const; // Retorna el nombre d'elements (cardinalitat)
 
 Les operacions `insert()`, `erase()`, `count()`, `find()`, `lower_bound()` i `upper_bound()`
 prenen temps
-$\O(\log n)$, on $n$ és el nombre d'elements (és a dir, el `size()`) del conjunt.
+$O(\log n)$, on $n$ és el nombre d'elements (és a dir, el `size()`) del conjunt.
 Les demés operacions prenen temps constant. Els conjunts, com els altres contenidors
-estàndard, es poden copiar i comparar, amb cost $\O(n)$.
+estàndard, es poden copiar i comparar, amb cost $O(n)$.
 
 Els elements en un conjunt `s` es poden recórrer, del més petit
 al més gran, amb un bucle `for`:
@@ -86,7 +86,7 @@ for (T x : s) {
 }
 ```
 
-El recorregut dels $n$ elements d'un conjunt triga temps $\O(n)$.
+El recorregut dels $n$ elements d'un conjunt triga temps $O(n)$.
 
 Més avall expliquem com utilitzar iteradors sobre conjunts
 i com calcular interseccions, unions i diferències de conjunts.
@@ -101,7 +101,7 @@ L'especificació completa dels conjunts de C++ es pot trobar a
 Considerem que, donat un text, volem obtenir la llista de totes les seves
 paraules, ordenada alfabèticament i sense repeticions. Per exemple, donada l'entrada
 
-```c++text
+```text
 el gegant del pi
 ara balla ara balla
 el gegant del pi
@@ -110,7 +110,7 @@ ara balla pel cami
 
 es vol obtenir la sortida
 
-```c++text
+```text
 ara
 balla
 cami
@@ -189,7 +189,7 @@ Si només es vol saber si un element pertany o no al conjunt, la operació `coun
 és més senzilla d'usar que `find()`. En canvi, amb `find()` podem accedir als
 elements veïns a l'element cercat.
 
-Ambdues operacions són particularment eficients, ja que funcionen en temps $\O(\log n)$
+Ambdues operacions són particularment eficients, ja que funcionen en temps $O(\log n)$
 en un conjunt d'$n$ elements.
 
 ## Exemple: Múltiples en un conjunt

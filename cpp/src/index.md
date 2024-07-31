@@ -3,8 +3,8 @@ layout: home
 
 hero:
     name: 'Lliçons C++'
-    text: 'Jordi Petit, Salvador Roura <small><i>et al</i></small>'
-    no-tagline: c++.lliçons.jutge.org
+    tagline: 'Jordi Petit, Salvador Roura <small><i>et al</i></small>'
+    no-text: lliçons.jutge.org/cpp
 
     actions:
         - theme: brand

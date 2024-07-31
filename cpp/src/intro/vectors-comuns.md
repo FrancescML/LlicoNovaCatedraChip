@@ -25,7 +25,7 @@ cout << x << endl;
 
 escriu
 
-```c++text
+```text
 7
 12
 5

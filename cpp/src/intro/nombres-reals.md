@@ -133,19 +133,19 @@ int main() {
 
 Si provem el programa anterior amb un `0`, la sortida prodria ser
 
-```c++text
+```text
 Temperatura en graus Fahrenheit: 32.0000
 ```
 
 Però també podria ser
 
-```c++text
+```text
 Temperatura en graus Fahrenheit: 32
 ```
 
 Fins i tot, podria ser
 
-```c++text
+```text
 Temperatura en graus Fahrenheit: 3.2e1
 ```
 

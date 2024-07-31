@@ -56,7 +56,7 @@ A continuació, podríem tenir una operació que, donada un hora, li afegís un
 segon. Hi ha dues maneres de fer-ho: amb una acció que té un paràmetre
 d'entrada-sortida que és modificat o amb una funció que, donada una hora, en
 retorna una altra. Totes dues són opcions vàlides i la preferència de l'una
-sobre l'altra depèn del context.
+sobre l'altra depèn del text.
 
 Comencem amb l'acció amb paràmetre d'entrada-sortida:
 

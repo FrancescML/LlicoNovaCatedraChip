@@ -10,14 +10,14 @@ que s'obtenen seqüencialment des de l'entrada.
 Suposem que volem fer un programa que, donats molts elements (enters),
 ens calculi quina és la seva suma. Per exemple, donada l'entrada
 
-```c++text
+```text
 12 3 109
 
 ```
 
 la sortida hauria de ser ~~124~~. I per a l'entrada
 
-```c++text
+```text
 3 -4
 9      8
 11

@@ -63,7 +63,7 @@ sort(&v[2], &v[6]);
 ```
 
 De fet, l'operador `&` retorna l'adreça de memòria d'allò a què s'aplica,
-però en aquest context podem suposar que retorna un iterador a un element.
+però en aquest text podem suposar que retorna un iterador a un element.
 Així, `&v[0]` correspon a `v.begin()`,
 i `&v[v.size()]` correspon a `v.end()`.
 
@@ -235,7 +235,7 @@ Considerem ara que volem llegir una seqüència de dates i escriure-la en ordre 
 
 Per exemple, donada la seqüència
 
-```c++text
+```text
 17 11 2006
 30 11 1971
 14 4 2015
@@ -244,7 +244,7 @@ Per exemple, donada la seqüència
 
 caldria escriure la seqüència
 
-```c++text
+```text
 6 4 1971
 30 11 1971
 17 11 2006

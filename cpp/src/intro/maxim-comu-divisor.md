@@ -214,7 +214,7 @@ que deixarem tal qual.
 Quan arribem a una fila amb els dos nombres iguals,
 aquest nombre serà la solució:
 
-```c++text
+```text
      78  66
     ---------
      12  66
@@ -291,7 +291,7 @@ Llegiu la propera secció...
 
 Considerem aquesta part de la taula d'execució de l'algorisme d'Euclides:
 
-```c++text
+```text
      12  66
      12  54
      12  42
@@ -327,7 +327,7 @@ int main() {
 ☠️ Compte amb aquest programa!
 Provem-lo amb $78$ i $66$, a veure què passa:
 
-```c++text
+```text
      78  66
     ---------
      12  66
@@ -363,7 +363,7 @@ int main() {
 
 Provem-lo amb $78$ i $66$:
 
-```c++text
+```text
      78  66
     ---------
      66  12
@@ -385,7 +385,7 @@ ja podem parar: el resultat és la `x` actual.
 I què passa si la `x` inicial és més petita que `y`?
 Res greu. Comprovem-ho amb $66$ i $78$:
 
-```c++text
+```text
      66  78
     ---------
      78  66

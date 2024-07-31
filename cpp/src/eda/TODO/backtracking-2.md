@@ -55,7 +55,7 @@ que recorda, per a cada nombre, si ja s'ha usat o no.
 
 Per a $n = 3$, la sortida és
 
-```c++text
+```text
 0 1 2
 0 2 1
 1 0 2
@@ -116,7 +116,7 @@ Suposem que volem escriure totes les possibles maneres de posar $n$ torres
 en un tauler $n \times n$ sense que s'amenacin entre si.
 Per exemple, amb $n = 3$ la sortida podria ser
 
-```c++text
+```text
 T..
 .T.
 ..T
@@ -173,7 +173,7 @@ però ens caldrà controlar també les amenaces diagonals.
 Amb $n = 3$ no hi ha cap solució possible,
 però amb $n = 4$ la sortida podria ser
 
-```c++text
+```text
 .R..
 ...R
 R...

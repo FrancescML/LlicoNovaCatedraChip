@@ -96,10 +96,10 @@ During the execution of the algorithm we maintain the subset `S ⊆ V` of vertic
 for which their minimum distance from `s` computed so far is the optimal one.
 
 ```c++
-<? include "pages/eda/weighted-graphs/dijkstra.cc"; ?>
+<!--@include: ./dijkstra.cc-->
 ```
 
-The cost of Dijkstra's algorithm is $\O(n+m\log m)$ in the worst case.
+The cost of Dijkstra's algorithm is $O(n+m\log m)$ in the worst case.
 
 TBD: Example
 
@@ -119,10 +119,10 @@ and a source node `s` from `G`. Its output are two vectors `d` and
 minimum distance `d[u]`. We have that `p[u]` is `-1` if `u` in unreachable
 from `s` or when `u == s`.
 
-The cost of Bellman–Ford's algorithm is $\O(nm)$ in the worst case.
+The cost of Bellman–Ford's algorithm is $O(nm)$ in the worst case.
 
 ```c++
-<? include "pages/eda/weighted-graphs/bellman-ford.cc"; ?>
+<!--@include: ./bellman-ford.cc-->
 ```
 
 TBD: Example
@@ -142,10 +142,10 @@ Its output is a minimum spanning tree of `G`, encoded in a
 a vector `p` so that, for each node `u` in `G`, `p[u]` is the parent node of
 `u` in the tree (and the tree root has parent `-1`).
 
-The cost of Prim's algorithm is $\O(m\log m)$ in the worst case.
+The cost of Prim's algorithm is $O(m\log m)$ in the worst case.
 
 ```c++
-<? include "pages/eda/weighted-graphs/prim.cc"; ?>
+<!--@include: ./prim.cc-->
 ```
 
 TBD: Example
@@ -163,10 +163,10 @@ The input of `kruskal()` is a connected undirected graph `G` with edge weights.
 
 The implementation uses [Disjoint sets](/eda/disjoint-sets/index.html).
 
-The cost of Kruskal's algorithm is $\O(m\log m)$ in the worst case.
+The cost of Kruskal's algorithm is $O(m\log m)$ in the worst case.
 
 ```c++
-<? include "pages/eda/weighted-graphs/kruskal.cc"; ?>
+<!--@include: ./kruskal.cc-->
 ```
 
 TBD: Example

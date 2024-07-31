@@ -81,7 +81,7 @@ Si ara es mira el contingut del fitxer `noms.txt`
 (amb un editor de textos o utilitzant la comanda `cat noms.txt`
 en Linux/Mac o `type noms.txt` en Windows) s'obtindrà
 
-```c++text
+```text
 Joan
 Pere
 ```
@@ -110,7 +110,7 @@ f.close();
 
 Si ara es mira el contingut del fitxer `noms.txt` s'obtindrà
 
-```c++text
+```text
 Joan
 Pere
 23

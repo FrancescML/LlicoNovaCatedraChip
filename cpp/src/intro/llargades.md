@@ -14,7 +14,7 @@ i quina n'és la llargada mitjana (en nombre de lletres).
 
 Per exemple, en el cas que la nostra entrada fós
 
-```c++text
+```text
 quan els oques van al camp la primera va al davant
 la segona va al darrera i despres ve la tercera
 
@@ -22,7 +22,7 @@ la segona va al darrera i despres ve la tercera
 
 hauríem d'obtenir com a sortida
 
-```c++text
+```text
 nombre de paraules: 21
 llargada mitjana: 3.7619
 paraula més llarga: primera

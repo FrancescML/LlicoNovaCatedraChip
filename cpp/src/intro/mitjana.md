@@ -12,7 +12,7 @@ d'una seqüència (no buida) de nombres reals.
 El resultat s'ha d'escriure amb dos dígits decimals de precisió.
 Per exemple, donada l'entrada
 
-```c++text
+```text
 3.4 5.6 8.7
 
 ```

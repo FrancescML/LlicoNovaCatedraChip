@@ -309,7 +309,7 @@ int main() {
 }
 ```
 
-El cost d'aquest algorisme per ordenar $n$ elements és $\O(n^2)$.
+El cost d'aquest algorisme per ordenar $n$ elements és $O(n^2)$.
 
 ## Exemple: Josefus
 

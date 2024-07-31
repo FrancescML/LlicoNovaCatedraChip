@@ -61,8 +61,8 @@ This representations has the following interesting properties:
 -   It is possible to set attributes or properties of the nodes through additional vectors.
 
 In the following, $n$ denotes the number of nodes of a directed graph, and $m$
-denotes its number of arcs. Therefore, the size of the graph is $\O(m+n)$.
-Consequently, algorithms of cost $\O(m+n)$ are linear time algorithms.
+denotes its number of arcs. Therefore, the size of the graph is $O(m+n)$.
+Consequently, algorithms of cost $O(m+n)$ are linear time algorithms.
 
 All given algorithms are given for directed graphs, but work all the same
 in directed graphs when each edge is given as two symmetric arcs.
@@ -105,12 +105,12 @@ a directed graph and how to traverse its succesors in order to
 print them.
 
 ```c++
-<? include "pages/eda/graphs/traversal.cc"; ?>
+<!--@include: ./traversal.cc-->
 ```
 
 Applying this code to the first sample graph above would produce this output:
 
-```c++text
+```text
 0: 2 3
 1: 4 2
 2: 3
@@ -138,13 +138,13 @@ list of nodes. For efficiency reasons, one could prefer using a vector of
 nodes, as the only necessary operation is to push nodes at its end.
 
 ```c++
-<? include "pages/eda/graphs/dfs-rec.cc"; ?>
+<!--@include: ./dfs-rec.cc-->
 ```
 
 Applying this code to the first sample graph above produces
 `[0, 2, 3, 1, 4, 5]`.
 
-The running time is $\O(m+n)$, which is linear in the size of the graph.
+The running time is $O(m+n)$, which is linear in the size of the graph.
 
 **🤔 Exercice:** How would you modify this program to check
 if an undirected graph is connected? (An undirected graph
@@ -157,14 +157,14 @@ than recursive way. In this case, a stack of nodes `s` is used to keep track
 of the nodes that have already been found and their order.
 
 ```c++
-<? include "pages/eda/graphs/dfs-ite.cc"; ?>
+<!--@include: ./dfs-ite.cc-->
 ```
 
 Applying this code to the first sample graph above produces `[0, 3, 2, 1, 4,
 5]`. You should think why this DFS ordering is different from the DFS ordering
 in the recursive implementation and why both are valid.
 
-The running time is still $\O(m+n)$.
+The running time is still $O(m+n)$.
 
 ## Breadth-first search ordering
 
@@ -178,12 +178,12 @@ subset of nodes `Q ⊆ V` that have already **enqueued** (🧠remember: _enqueue
 for BFS and _visited_ for DFS).
 
 ```c++
-<? include "pages/eda/graphs/bfs.cc"; ?>
+<!--@include: ./bfs.cc-->
 ```
 
 Applying this code to the above sample graph produces `[0, 2, 3, 1, 4, 5]`.
 
-The running time is $\O(m+n)$.
+The running time is $O(m+n)$.
 
 **🤔 Exercice:** How would you modify this program to check
 if an undirected graph is connected?
@@ -203,10 +203,10 @@ reachable nodes have been enqueued. For each node, we keep its distance from
 `s` in `d`, which is initialized to `None` values, to reflect unreachableness.
 We do not need to use a subset `Q` to tell whether a node has been
 enqueued or not because `d` can be used for that same purpouse.
-Its running time is $\O(m+n)$.
+Its running time is $O(m+n)$.
 
 ```c++
-<? include "pages/eda/graphs/min-dist.cc"; ?>
+<!--@include: ./min-dist.cc-->
 ```
 
 Applying this code to the initial sample graph from source node `1` produces
@@ -236,7 +236,7 @@ in-degree becomes zero, they are placed in the container, as all their
 dependencies have been fulfilled.
 
 ```c++
-<? include "pages/eda/graphs/topo-sort.cc"; ?>
+<!--@include: ./topo-sort.cc-->
 ```
 
 As an exemple, the previous algorithm ran on the next DAG produces
@@ -259,7 +259,7 @@ TODO:
 </div>
 ```
 
-The running time is $\O(m+n)$.
+The running time is $O(m+n)$.
 
 **🤔 Exercice:** How would you modify this program to check
 that the given directed graph is really acyclic?
@@ -280,7 +280,7 @@ You can get an explanation of this algorithm in
 [these slides](https://www.cs.upc.edu/~jordicf/Teaching/AP2/pdf/Graphs_Connectivity.pdf).
 
 ```c++
-<? include "pages/eda/graphs/scc.cc"; ?>
+<!--@include: ./scc.cc-->
 ```
 
 Applying this code to the first sample graph produces `[1, 2, 0, 0, 2, 2]`.
@@ -303,6 +303,6 @@ TODO:
 </div>
 ```
 
-The running time is $\O(m+n)$.
+The running time is $O(m+n)$.
 
 <Autors autors="jpetit jordic"/>

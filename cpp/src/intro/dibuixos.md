@@ -17,7 +17,7 @@ Donat un nombre `n`, cal escriure un "triangle" de mida `n` amb asteriscs.
 Per exemple, si l'entrada és 4,
 cal escriure
 
-```c++text
+```text
 
 -   \*\*
     ***
@@ -104,7 +104,7 @@ Donat un nombre `n`, cal escriure un "rombe" de mida `n` amb asteriscs.
 Per exemple, si l'entrada és 4,
 cal escriure
 
-```c++text
+```text
    *
   ***
  *****
@@ -118,7 +118,7 @@ A dalt, encara que no es vegin,
 totes les línies (excepte la d'enmig) tenen espais a l'esquerra dels asteriscs.
 Aquí els visualitzem explícitament fent servir el símbol ␣ per remarcar els espais:
 
-```c++text
+```text
 ␣␣␣*
 ␣␣***
 ␣*****
@@ -174,7 +174,7 @@ fins al principi (`i >= 1`), decrementant la variable (`--i`):
 Provem aquest programa amb un 4.
 Veurem que el codi _quasi_ funciona:
 
-```c++text
+```text
    *
   ***
  *****

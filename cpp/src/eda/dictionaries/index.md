@@ -9,18 +9,18 @@ the number of keys that belong to the dictionary.
 
 The average cost analysis is stated under two assumptions:
 
-1. Given a key `k`, `hash(k)` returns a natural number in time $\O(1)$.
+1. Given a key `k`, `hash(k)` returns a natural number in time $O(1)$.
 
 2. The hash function _hashes uniformly_ at every new call with
    a different key.
 
 Implicit copy constructor, assignment operator and destructor do
 the job; no need to implement them. Their worst-case and
-average-case cost is $\O(n + M)$.
+average-case cost is $O(n + M)$.
 
 ```c++
 
-<? include "pages/eda/dictionaries/hash.cc"; ?>
+<!--@include: ./hash.cc-->
 
 ```
 
@@ -44,13 +44,13 @@ and we state the costs as a function of $h$ whenever possible.
 
 In a randomly generated BST (where keys are inserted at uniformly
 chosen positions in the order of the keys and never deleted), we
-have $h = \O(\log n)$ in expectation. Thus, a worst-case cost
-of $\O(h)$ translates to an average-case cost of $\O(\log
+have $h = O(\log n)$ in expectation. Thus, a worst-case cost
+of $O(h)$ translates to an average-case cost of $O(\log
 n)$ (under this random model). In the worst-case scenario we have
 $h = n$.
 
 ```c++
-<? include "pages/eda/dictionaries/bst.cc"; ?>
+<!--@include: ./bst.cc-->
 ```
 
 ## Dictionary with an Adel'son-Vel'skiĭ-Landis tree (AVL).
@@ -62,7 +62,7 @@ The height of the null pointer is $-1$ and the height of a leaf is
 $0$.
 
 ```c++
-<? include "pages/eda/dictionaries/avl.cc"; ?>
+<!--@include: ./avl.cc-->
 ```
 
 <Autors autors="jpetit"/>

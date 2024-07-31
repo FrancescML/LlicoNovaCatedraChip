@@ -233,7 +233,7 @@ cout << x << ' ' << y << endl;
 quiz3 = """
 La sortida serà
 
-```c++text
+```text
 12 33
 33 12
 ```

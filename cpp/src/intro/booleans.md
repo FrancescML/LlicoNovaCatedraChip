@@ -158,7 +158,7 @@ sabem que sortirem del bucle quan almenys una de les variables
 ## Conversió automàtica a `bool`
 
 Per bé o per mal, C++ converteix automàticament els tipus bàsics
-a booleans quan el context ho requereix. Sempre es fa servir
+a booleans quan el text ho requereix. Sempre es fa servir
 la regla de que zero és fals i no zero és cert.
 
 Per exemple, si un enter `elements` emmagatzema el nombre d'elements d'un

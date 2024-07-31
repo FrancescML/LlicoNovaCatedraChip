@@ -83,11 +83,11 @@ Intentar usar-los quan la cua de prioritats està buida
 és un error de programació amb efectes indefinits en execució.
 
 El constructor i les operacions consultores (`top()`,
-`empty()` i `size()`) prenen cost constant ($\O(1)$). Les operacions
-modificadors (`push()` i `pop()`) prenen cost $\O(\log n)$ on $n$ és la talla
+`empty()` i `size()`) prenen cost constant ($O(1)$). Les operacions
+modificadors (`push()` i `pop()`) prenen cost $O(\log n)$ on $n$ és la talla
 de la cua de prioritats.
 A més, les cues de prioritats de C++, com els altres contenidors estàndard,
-es poden copiar i comparar, amb cost $\O(n)$.
+es poden copiar i comparar, amb cost $O(n)$.
 
 L'ordre de les cues de prioritats ve donat per un comparador que
 es correspon al operador `<` sobre aquell tipus `T`. Per canviar el comparador,
@@ -182,7 +182,7 @@ lo, és necessari que la cua de prioritats no estigui buida. Justament aquest
 Per a una entrada amb $n$ elements, aquest algorisme aplicaca $n$ operacions
 `push()`, $n$ operacions `pop()` i $n$ operacions `top()` en una cua de
 prioritats que no té mai més de $n$ elements. En conseqüència, el seu cost és
-$\O(n\log n)$. Aquest seria el mateix cost que desant les dades en un vector i
+$O(n\log n)$. Aquest seria el mateix cost que desant les dades en un vector i
 ordenant-lo amb la funció `sort()` de la biblioteca `<algorithm>`. A la
 pràctica, però, el darrer és més eficient.
 

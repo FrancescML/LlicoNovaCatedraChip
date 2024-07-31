@@ -19,7 +19,7 @@ constant amortized cost).
 
 ```c++
 
-<? include "pages/eda/priority-queues/rec.cc"; ?>
+<!--@include: ./rec.cc-->
 
 ```
 
@@ -28,7 +28,7 @@ constant amortized cost).
 Same as the previous version but with iterative implementation.
 
 ```c++
-<? include "pages/eda/priority-queues/ite.cc"; ?>
+<!--@include: ./ite.cc-->
 ```
 
 ## Example
@@ -37,7 +37,7 @@ This example reads a sequence of integers and prints them back in increasing ord
 using a priority queue.
 
 ```c++
-<? include "pages/eda/priority-queues/sample.cc"; ?>
+<!--@include: ./sample.cc-->
 ```
 
 <Autors autors="jpetit"/>

@@ -3,8 +3,8 @@ layout: home
 
 hero:
     name: 'Lliçons Python'
-    text: 'Jordi Petit <small><i>et al</i></small>'
-    no-tagline: llicons.potipoti.org/python
+    tagline: 'Jordi Petit <small><i>et al</i></small>'
+    no-text: lliçons.jutge.org/python
 
     actions:
         - theme: brand

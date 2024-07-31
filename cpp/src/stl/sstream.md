@@ -53,7 +53,7 @@ Considerem que tenim una fitxer compost de diferents linies i que cada
 línia conté una seqüència d'enters. Es vol obtenir la suma dels nombres
 de cada línia. Per exemple, si l'entrada és
 
-```c++text
+```text
 56 12
 1 2 3
 
@@ -62,7 +62,7 @@ de cada línia. Per exemple, si l'entrada és
 
 la sortida hauria de ser
 
-```c++text
+```text
 68
 6
 0

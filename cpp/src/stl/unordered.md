@@ -46,10 +46,10 @@ int size() const; // Retorna el nombre d'elements (cardinalitat)
 ```
 
 Les operacions `insert()`, `erase()`, `find()` i `count()` prenen temps
-$\O(1)$ en mitjana i $\O(n)$ en el cas pitjor, on $n$ és el nombre d'elements
+$O(1)$ en mitjana i $O(n)$ en el cas pitjor, on $n$ és el nombre d'elements
 (`size()`) del conjunt no ordenat. Les demés operacions prenen temps constant.
 Els conjunts no ordenats, com els altres contenidors estàndard, es poden copiar i
-comparar, amb cost $\O(n) $.
+comparar, amb cost $O(n) $.
 
 Els elements en un conjunt `s` es poden recórrer.
 Per a fer-ho s'utilitza un bucle `for`:
@@ -63,7 +63,7 @@ for (T x : s) {
 Ara bé, mentre que per a un
 `set` el recorregut es fa de l'element més petit a l'element més gran,
 per a un `unordered_set` l'ordre del recorregut no es troba definit.
-El recorregut dels $n$ elements d'un conjunt triga temps $\O(n)$.
+El recorregut dels $n$ elements d'un conjunt triga temps $O(n)$.
 
 Com que els conjunts no ordenats no tenen ordre (!), no tenen les
 operacions `lower_bound()` ni `upper_bound()`.
@@ -100,10 +100,10 @@ public:
 ```
 
 Les operacions `insert()`, `erase()`, `find()`, `[]` i `count()` prenen temps
-$\O(1)$ en mitjana i $\O(n)$ en el cas pitjor, on $n$ és el nombre d'elements
+$O(1)$ en mitjana i $O(n)$ en el cas pitjor, on $n$ és el nombre d'elements
 (`size()`) del diccionari no ordenat. Les demés operacions prenen temps constant.
 Els diccionari no ordenats, com els altres contenidors estàndard, es poden copiar i
-comparar, amb cost $\O(n) $.
+comparar, amb cost $O(n) $.
 
 Es poden recórrer tots els element d'un diccionari no ordenat `d`
 utilitzant un bucle `for`:
@@ -118,7 +118,7 @@ Ara bé, mentre que per a un
 `map` el recorregut es fa de l'element amb clau més petita a l'element
 amb clau més gran,
 per a un `unordered_map` l'ordre del recorregut no es troba definit.
-El recorregut dels $n$ elements d'un conjunt triga temps $\O(n)$.
+El recorregut dels $n$ elements d'un conjunt triga temps $O(n)$.
 
 Si teniu curiositat, els diccionaris no ordenats també s'implementen
 internament amb taules de dispersió. L'especificació completa dels
@@ -130,13 +130,13 @@ diccionaris no ordenats de C++ es pot trobar a
 Considerem que, donat un text, volem obtenir la llista de totes les seves
 paraules, sense repeticions. Per exemple, donada l'entrada
 
-```c++text
+```text
 el gegant del pi ara balla ara balla el gegant del pi ara balla pel cami
 ```
 
 es vol obtenir una sortida com ara
 
-```c++text
+```text
 gegant
 balla
 ara

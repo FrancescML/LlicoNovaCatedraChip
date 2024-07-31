@@ -102,13 +102,13 @@ Al final, cal dir quantes paraules han quedat sense aparellar.
 
 Per exemple, per a l'entrada
 
-```c++text
+```text
 bleda patata Gat nap mongeta Gos Lloro col
 ```
 
 cal produir la sortida
 
-```c++text
+```text
 bleda Gat
 patata Gos
 nap Lloro
