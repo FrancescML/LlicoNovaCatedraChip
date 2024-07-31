@@ -12,16 +12,17 @@ Tornem a considerar un programa que llegeixi un nombre `n`,
 i que escrigui tots els nombres entre 1 i `n`, un per línia.
 Recordem que aquesta n'és una solució possible:
 
-```c++c++
+```c++
 int main() {
-    int n;
-    cin >> n;
-    int i = 1;
-    while (i <= n) {
-        cout << i << endl;
-        ++i;
-    }
+int n;
+cin >> n;
+int i = 1;
+while (i <= n) {
+cout << i << endl;
+++i;
 }
+}
+
 ```
 
 Si considerem aquest codi a partir de la tercera línia,
@@ -44,7 +45,7 @@ Per al programa anterior, aquesta n'és la correspondència:
 Qualsevol tros de codi que segueixi aquest esquema es pot escriure amb la instrucció `for`,
 que té aquesta estructura:
 
-```c++c++
+```c++
 for (⟨inicialització⟩; ⟨condició⟩; ⟨increment⟩) {
     ⟨instruccions⟩
 }
@@ -52,7 +53,7 @@ for (⟨inicialització⟩; ⟨condició⟩; ⟨increment⟩) {
 
 i és equivalent a:
 
-```c++c++
+```c++
 {
     ⟨inicialització⟩
     while (⟨condició⟩) {
@@ -64,7 +65,7 @@ i és equivalent a:
 
 Per tant, el programa anterior es podria escriure així:
 
-```c++c++
+```c++
 int main() {
     int n;
     cin >> n;
@@ -77,7 +78,7 @@ int main() {
 De fet, com que en aquest cas només tenim una instrucció dintre del `for`,
 podem escriure senzillament:
 
-```c++c++
+```c++
 int main() {
     int n;
     cin >> n;
@@ -118,7 +119,7 @@ el programa ha d'escriure
 Si usem els `while`, és fàcil escriure aquest codi,
 copiant el primer bucle com a base per construir el segon:
 
-```c++c++
+```c++
 int main() {
     int n;
     cin >> n;
@@ -146,7 +147,7 @@ hem de recordar quines s'han usat en els bucles `while` anteriors.
 
 I si seguim el nostre consell i usem els `for`?
 
-```c++c++
+```c++
 int main() {
     int n;
     cin >> n;
@@ -169,7 +170,7 @@ Reconsiderem ara un problema que ja hem resolt prèviament amb un `while`:
 calcular el màxim de 1000 nombres.
 Aquest era el nostre codi:
 
-```c++c++
+```c++
 int main() {
     int maxim;
     cin >> maxim;
@@ -186,7 +187,7 @@ int main() {
 
 Com es faria amb un `for`?
 
-```c++c++
+```c++
 int main() {
     int maxim;
     cin >> maxim;

@@ -12,12 +12,13 @@ Considereu un rellotge digital, que marca les hores, minuts i segons de l'hora
 del dia. Tal vegada voldríem desar aquesta informació en un sol lloc i, fer-ho
 en una estructura com la següent seria una idea ben adient:
 
-```c++c++
+```c++
 struct Hora {
-    int h;      // hora  (0..23)
-    int m;      // minut (0..59)
-    int s;      // segon (0..59)
+int h; // hora (0..23)
+int m; // minut (0..59)
+int s; // segon (0..59)
 };
+
 ```
 
 És a dir, l'hora del dia té tres camps: `h`, `m` i `s` que representen,
@@ -36,7 +37,7 @@ Una primera operació que ens podria ser útil tenir és la d'escriure una hora
 donada. Per això, escriurem una acció que, donada una `Hora`, l'escriu
 en format estàndard, amb dos dígits per camp:
 
-```c++c++
+```c++
 void escriure_hora(const Hora& hora)
 {
     if (hora.h < 10) cout << 0;
@@ -59,7 +60,7 @@ sobre l'altra depèn del context.
 
 Comencem amb l'acció amb paràmetre d'entrada-sortida:
 
-```c++c++
+```c++
 void incrementar_un_segon(Hora& hora)
 {
     ++hora.s;
@@ -79,7 +80,7 @@ void incrementar_un_segon(Hora& hora)
 
 I ara, fem-ho amb una funció:
 
-```c++c++
+```c++
 Hora increment_un_segon(Hora hora)
 {
     ++hora.s;
@@ -112,7 +113,7 @@ corresponent cada segon. Per a fer-ho, utilitzarem els subprogrames anteriors i
 la funció `sleep()` disponible a la llibreria `<unistd.h>` que suspèn l'execució
 del programa durant tants segons com se li passi per paràmetre.
 
-```c++c++
+```c++
 #include <unistd.h>
 ...
 

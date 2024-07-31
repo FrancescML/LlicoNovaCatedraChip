@@ -16,10 +16,11 @@ Per exemple, quan `n` val 2,
 cal escriure
 
 ```c++text
- XX
+XX
 XXXX
 XXXX
- XX
+XX
+
 ```
 
 i quan `n` val 2,
@@ -40,7 +41,7 @@ Com ho podem resoldre?
 Primer de tot, podem escriure directament i
 sense dubtar el programa principal d'aquesta forma:
 
-```c++c++
+```c++
 int main() {
     int n;
     while (cin >> n) {
@@ -64,7 +65,7 @@ Ara, ja només ens hem de preocupar d'escriure un sol octògon, i ho hem de fer 
 de l'acció `escriure_octogon`, que reb un enter amb la seva mida. La seva capçalera
 és doncs:
 
-```c++c++
+```c++
 // Acció que escriu un octògon de mida n.
 void escriure_octogon(int n)
 ```
@@ -85,7 +86,7 @@ XXXXXXX    part inferior
 
 Així, escollim definir `escriure_octogon` utilitzant aquestes tres parts:
 
-```c++c++
+```c++
 // Acció que escriu un octògon de mida n.
 void escriure_octogon(int n) {
     escriure_part_superior(n);
@@ -97,7 +98,7 @@ void escriure_octogon(int n) {
 De nou, releguem la tasca d'escriure un octògon a tres altres accions que definim
 a continuació:
 
-```c++c++
+```c++
 void escriure_part_superior(int n) {
     for (int i = 0; i < n; ++i) {
         escriure_linia(n - i - 1, n + 2*i);
@@ -124,7 +125,7 @@ inicis i finals dels bucles us els deixem perquè els treballeu vosaltres.
 
 Per fi, el codi d'`escriure_linia` és aquest:
 
-```c++c++
+```c++
 // Acció que escriu n espais, m ics i un salt de línia.
 void escriure_linia(int n, int m) {
     for (int i = 0; i < n; ++i) cout << ' ';

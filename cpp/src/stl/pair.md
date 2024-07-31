@@ -24,14 +24,15 @@ De forma simplificada, aquesta és la seva interfície:
 ```c++
 template <typename T1, typename T2>
 struct pair {
-    T1 first;                               // Primer element
-    T2 second;                              // Segon element
-    pair(const& T1 fst, const T2& snd);     // Crea un parell ⟨fst, snd⟩
+T1 first; // Primer element
+T2 second; // Segon element
+pair(const& T1 fst, const T2& snd); // Crea un parell ⟨fst, snd⟩
 };
 
 template <typename T1, typename T2>
 bool operator== (const pair<T1, T2>& a, const pair<T1, T2>& b);
-⋮       // i igualment tota la resta de comparadors (!=, <, >, <=, >=)
+⋮ // i igualment tota la resta de comparadors (!=, <, >, <=, >=)
+
 ```
 
 Una `pair` no és doncs altra cosa que una petita `struct` d'accés obert

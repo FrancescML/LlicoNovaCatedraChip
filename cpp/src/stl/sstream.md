@@ -37,11 +37,12 @@ que actui com a canal de les dades emmagatzemades en `s` i després li apliquem
 les tres lectures requerides:
 
 ```c++
-string s = "21.45 * 56.23";
+string s = "21.45 \* 56.23";
 istringstream iss(s);
 double operand1, operand2;
 char operador;
 iss >> operand1 >> operador >> operand2;
+
 ```
 
 Així de senzill!

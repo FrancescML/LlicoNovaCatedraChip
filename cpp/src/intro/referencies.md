@@ -16,19 +16,20 @@ sobre el paràmetre formal al començar la invocació de l'acció.
 
 Per reforçar aquesta idea, considereu el programa següent:
 
-```c++c++
+```c++
 void incrementar(int x) {
-    cout << x << endl;          // (2)
-    ++x;
-    cout << x << endl;          // (3)
+cout << x << endl; // (2)
+++x;
+cout << x << endl; // (3)
 }
 
 int main() {
-    int a = 24;
-    cout << a << endl;          // (1)
-    incrementar(a);
-    cout << a << endl;          // (4)
+int a = 24;
+cout << a << endl; // (1)
+incrementar(a);
+cout << a << endl; // (4)
 }
+
 ```
 
 TODO:
@@ -98,7 +99,7 @@ En aquests casos, utilitzem **paràmetres per referència**.
 El programa següent és quasi idèntic a l'anterior però, ara,
 el paràmetre `x` de l'acció `incrementar` és passat per referència:
 
-```c++c++
+```c++
 void incrementar(int& x) {      // 👁 pas per referència
     cout << x << endl;          // (2)
     ++x;
@@ -206,7 +207,7 @@ còpia de la primera.
 
 L'acció següent permet intercanviar el valor de dos enters:
 
-```c++c++
+```c++
 void intercanviar(int& a, int& b) {
     int c = a;
     a = b;
@@ -220,7 +221,7 @@ d'ells.
 
 Què escriurà aquest fragment de codi?
 
-```c++c++
+```c++
 int x = 12, y = 33;
 cout << x << ' ' << y << endl;
 intercanviar(x, y);

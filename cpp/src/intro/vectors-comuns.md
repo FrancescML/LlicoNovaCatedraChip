@@ -16,10 +16,11 @@ les haurem d'implementar nosaltres.
 Imagineu que voleu escriure un vector d'enters 'v = {7, 12, 5, 5, 6}',
 amb un element per línia. Aleshores, la solució és ben simple:
 
-```c++c++
+```c++
 for (int x : v) {
-    cout << x << endl;
+cout << x << endl;
 }
+
 ```
 
 escriu
@@ -34,7 +35,7 @@ escriu
 
 Imagineu, però, que volem escriure els elements en una sola línia. Si fem
 
-```c++c++
+```c++
 for (int x : v) {
     cout << x;
 }
@@ -43,7 +44,7 @@ for (int x : v) {
 escriurem `712556`, quin xurro! Segurament caldria separar els elements amb blancs...
 Què tal així?
 
-```c++c++
+```c++
 for (int x : v) {
     cout << x << ' ';
 }
@@ -53,7 +54,7 @@ D'aquesta forma, obtenim `7␣12␣5␣5␣6␣` (on ␣ representa un espai en 
 de forma "visible"). Això ja és millor, però no perfecte: ens sobra un blanc al final!
 Potser és que calia posar el blanc davant?
 
-```c++c++
+```c++
 for (int x : v) {
     cout << ' ' << x;
 }
@@ -67,7 +68,7 @@ blancs, per tant hem d'introduir alguna lògica al programa per escriure
 un blanc menys que elements. Una manera habitual de fer-ho és utilitzar una variable
 booleana que indiqui si ens trobem o no a la primera iteració del bucle:
 
-```c++c++
+```c++
 bool primera = true;
 for (int x : v) {
     if (primera) {
@@ -103,7 +104,7 @@ la talla d'aquest.
 Si sabem que al programa li entrarem un vector de `n`
 reals, la forma habitual en la que llegirem aquestes dades serà així:
 
-```c++c++
+```c++
 int n;
 cin >> n;                          // llegim el nombre d'elements n
 
@@ -115,7 +116,7 @@ for (int i = 0; i < n; ++i) {
 
 També podríem fer servir un bucle de referències als elements del vector:
 
-```c++c++
+```c++
 int n;
 cin >> n;                          // llegim el nombre d'elements n
 
@@ -132,7 +133,7 @@ programa i que aquest les emmagatzemi en un vector, podem crear un
 vector buit i fer servir la funció `push_back()`.
 Per exemple:
 
-```c++c++
+```c++
 vector <double> v;         // vector inicialment buit
 
 double x;
@@ -152,7 +153,7 @@ La funció següent ho fa, utilitzant un bucle que itera sobre tots els elements
 `x` d'un vector `v`, tot desant la seva suma parcial en `s`. Quan s'hagin
 iterat tots els elements del vector, `s` serà la seva suma total.
 
-```c++c++
+```c++
 // calcula la suma dels elements d'un vector
 double suma(const vector<double>& v)
 {
@@ -170,7 +171,7 @@ paràmetre d'entrada potencialment gran, la còpia del qual es vol evitar.
 La funció següent també ho fa, aquest cop utilitzant un bucle que descriu
 els índexs del vector, de petit a gran:
 
-```c++c++
+```c++
 // calcula la suma dels elements d'un vector
 double suma(const vector<double>& v)
 {
@@ -187,7 +188,7 @@ I també ho la funció següent,
 utilitzant un bucle que descriu
 els índexs del vector, de gran a petit:
 
-```c++c++
+```c++
 // calcula la suma dels elements d'un vector
 double suma(const vector<double>& v)
 {
@@ -215,7 +216,7 @@ està definida per a vectors buits.
 La funció següent calcula la mitjana d'un vector utilitzant la funció
 anterior que calcula la seva suma.
 
-```c++c++
+```c++
 // calcula la mitjana d'un vector
 // precondició: v no és buit
 double mitjana(const vector<double>& v)
@@ -240,7 +241,7 @@ mantenir en tot moment l'element més gran que hem trobat fins el moment,
 que començarà sent el valor del primer element. Això es pot fer
 de la manera següent:
 
-```c++c++
+```c++
 // calcula l'element màxim d'un vector
 // precondició: v no és buit
 double maxim(const vector<double>& v)
@@ -268,7 +269,7 @@ de la variable amb el valor màxim que hem trobat fins el moment, tindrem una
 variable amb la posició del màxim que hem trobat fins el moment. Així,
 modificant lleugrament el fragment de programa anterior, quedaria
 
-```c++c++
+```c++
 // calcula la (primera) posició de l'element màxim d'un vector
 // precondició: v no és buit
 int posicio_maxim(const vector<double>& v)
@@ -293,7 +294,7 @@ freqüència).
 Per solucionar aquest problema, podríem procedir a recórrer totes les
 paraules `p` del document i comptar quantes d'elles són iguals a la paraula donada:
 
-```c++c++
+```c++
 // compta el nombre d'aparicions de paraula en un vector de paraules
 int frequencia(const vector<string>& document, string paraula)
 {
@@ -315,7 +316,7 @@ en un document (vector de paraules).
 De seguida podríem pensar en utilitzar la funció anterior per obtenir una solució
 ben senzilla:
 
-```c++c++
+```c++
 // diu si paraula apareix en un vector de paraules
 bool hi_es(const vector<string>& document, string paraula)
 {
@@ -327,7 +328,7 @@ Però aquesta solució és ineficient perquè no cal continuar comptant un cop s
 trobat l'existència d'una paraula. En aquest cas és doncs millor utilitzar una cerca
 i parar tant bon punt és possible:
 
-```c++c++
+```c++
 // diu si paraula apareix en un vector de paraules
 bool hi_es(const vector<string>& document, string paraula)
 {
@@ -357,7 +358,7 @@ Aquesta és la implementació corresponent a l'algorisme anterior encapsulada en
 una acció on el vector a rotar es passa per referència ja que és un paràmetre
 d'entrada-sortida:
 
-```c++c++
+```c++
 // aplica una rotació cíclica cap a l'esquerra al vector v
 void rotacio_ciclica_esquerra(vector<int>& v)
 {
@@ -402,7 +403,7 @@ Si, al final, cap element és repetit, sí que `v` descriu una permutació.
 
 Aquesta és la implementació d'aquest algorisme en C++:
 
-```c++c++
+```c++
 // indica si un vector de n enters és permutació de {0 ... n - 1}
 bool es_permutacio(const vector<int>& v)
 {
@@ -435,7 +436,7 @@ resoldre el problema.
 Una millora: ambdues comprovacions ens poden fer durant la mateixa iteració, tal mostra la funció
 següent:
 
-```c++c++
+```c++
 // indica si un vector de n enters és permutació de {0 ... n - 1}
 bool es_permutacio(const vector<int>& v)
 {
@@ -477,7 +478,7 @@ Un pangrama és un text que conté totes les lletres. Per exemple,
 
 Aquesta és una possible solució:
 
-```c++c++
+```c++
 // indica si un text s és un pangrama (conté totes les lletres minúscules) o no
 bool es_pangrama(string s)
 {

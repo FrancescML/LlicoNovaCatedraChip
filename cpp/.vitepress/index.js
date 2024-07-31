@@ -239,7 +239,50 @@ export const index = [
                 text: 'Canals de textos',
                 link: '/stl/sstream.html',
             },
+        ],
+    },
+    {
+        text: 'EDA',
+        collapsed: true,
+        items: [
+            {
+                text: 'Sorting algorithms',
+                link: '/eda/sorting/index.html',
+            },
+            {
+                text: 'Stacks',
+                link: '/eda/stacks/index.html',
+            },
+            {
+                text: 'Queues',
+                link: '/eda/queues/index.html',
+            },
+            {
+                text: 'Lists',
+                link: '/eda/lists/index.html',
+            },
+            {
+                text: 'Priority queues',
+                link: '/eda/priority-queues/index.html',
+            },
+            {
+                text: 'Dictionaries',
+                link: '/eda/dictionaries/index.html',
+            },
+            {
+                text: 'Disjoint sets',
+                link: '/eda/disjoint-sets/index.html',
+            },
+            {
+                text: 'Graphs',
+                link: '/eda/graphs/index.html',
+            },
+            {
+                text: 'Weighted graphs',
+                link: '/eda/weighted-graphs/index.html',
+            },
 
         ],
     },
+
 ]

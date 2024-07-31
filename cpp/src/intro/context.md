@@ -198,15 +198,20 @@ erem ben petits... Segur que el recordeu! L'aplicació d'aquest algorisme als
 nombres $x$=2891 i $y$=4591, dóna lloc al desenvolupament següent:
 
 ```c++text
-             2 8 9 1
-     ×       4 5 9 1
-    -----------------
-             2 8 9 1
-         2 6 0 1 9
-       1 4 4 5 5
-     1 1 5 6 4
-    -----------------
-     1 3 2 7 2 5 8 1
+2 8 9 1
+× 4 5 9 1
+
+---
+
+2 8 9 1
+2 6 0 1 9
+1 4 4 5 5
+1 1 5 6 4
+
+---
+
+1 3 2 7 2 5 8 1
+
 ```
 
 Fixeu-vos que per poder aplicar aquest algorisme, cal que el processador que el
@@ -518,3 +523,8 @@ La **programació** és la disciplina que s'encarrega d'escriure, ampliar,
 provar, corregir i mantenir programes. L'**enginyeria de software** és la
 branca de l'informàtica que es preocupa de tots els aspectes de la
 producció de programes de forma sistemàtica i organitzada.
+```c++`
+
+```
+
+```

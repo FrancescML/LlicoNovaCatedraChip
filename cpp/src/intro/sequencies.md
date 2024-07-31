@@ -12,6 +12,7 @@ ens calculi quina és la seva suma. Per exemple, donada l'entrada
 
 ```c++text
 12 3 109
+
 ```
 
 la sortida hauria de ser ~~124~~. I per a l'entrada
@@ -30,7 +31,7 @@ Fixeu-vos també que el seu nombre és desconegut.
 
 Ja sabem com llegir un enter. L'efecte de
 
-```c++c++
+```c++
 int x;
 cin >> x;
 ```
@@ -190,7 +191,7 @@ Podem resoldre aquest problema de forma semblant a l'anterior:
 
 Això dona lloc a aquesta quasi-solució:
 
-```c++c++
+```c++
 int m = ???;                // 👁
 int x;
 while (cin >> x) {
@@ -224,7 +225,7 @@ La millor solució és usar el primer element de la seqüència
 (que sabem que existeix segur)
 per inicialitzar `m`. Així:
 
-```c++c++
+```c++
 int m;
 cin >> m;                   // A
 int x;

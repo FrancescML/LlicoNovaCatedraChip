@@ -51,7 +51,8 @@ elements entre claus angulars (`<>`) i indicant el nombre de posicions
 requerides i un valor inicial per a totes les posicions. Aquesta és la sintàxi:
 
 ```c++
-vector<double> v(n, x);   // crea un vector de n elements reals, tots amb valor x
+vector<double> v(n, x); // crea un vector de n elements reals, tots amb valor x
+
 ```
 
 És necessari que `n` sigui un valor positiu o zero i que `x` sigui del mateix

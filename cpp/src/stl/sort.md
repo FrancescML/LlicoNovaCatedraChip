@@ -40,6 +40,7 @@ diguem-ne `v`:
 vector<int> v = {4, 2, 2, 3, 5, 1, 9, 8, 7, 2};
 sort(v.begin(), v.end());
 // v == {1, 2, 2, 2, 3, 4, 5, 7, 8, 9}
+
 ```
 
 La crida `v.begin()` retorna un iterador al primer element de `v`.

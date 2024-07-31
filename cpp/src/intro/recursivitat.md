@@ -21,13 +21,14 @@ $$n! = \underbrace{1 · 2 ·\ldots· n}_{\text{$n$ cops}}.$$
 Ja havíem escrit una funció iterativa que calcula el factorial d'un nombre donat.
 Era quelcom així:
 
-```c++c++
+```c++
 // Retorna el factorial d'un natural n.
 int factorial_iteratiu(int n) {
-    int f = 1;
-    for (int i = 1; i <= n; ++i) f = f * i;
-    return f;
+int f = 1;
+for (int i = 1; i <= n; ++i) f = f \* i;
+return f;
 }
+
 ```
 
 Anem a explorar una altra manera de fer-ho: amb [recursivitat](recursivitat.html)!
@@ -55,7 +56,7 @@ perquè el primer valor ($n=0$) és un cas no recursiu.
 El nostre objectiu és definir una funció, diguem-ne `factorial`, que, donat un natural
 `n`, retorni el factorial de `n`:
 
-```c++c++
+```c++
 // Retorna el factorial d'un natural n.
 int factorial(int n) {
     ⋮
@@ -65,7 +66,7 @@ int factorial(int n) {
 Per programar el cos d'aquesta funció, utilitzem la recurrència que hem obtingut
 anteriorment. Primer, establim el cas base:
 
-```c++c++
+```c++
 // Retorna el factorial d'un natural n.
 int factorial(int n) {
     if (n == 0) return 1;
@@ -77,7 +78,7 @@ Comença bé! Quan $n$ val 0, cal retornar 1. Ningú pot dir que ho estem fent m
 
 I si no és el cas base? Doncs llavors hi afegim el cas recursiu:
 
-```c++c++
+```c++
 // Retorna el factorial d'un natural n.
 int factorial(int n) {
     if (n == 0) return 1;
@@ -123,7 +124,7 @@ Segur que sabeu implementar l'acció `escriu` iterativament (amb un bucle
 
 Comencem especificant la nostra acció:
 
-```c++c++
+```c++
 // Escriu n ≥ 0 cops seguits c.
 void escriure(int n, char c)
 ```
@@ -146,7 +147,7 @@ a dir, fent una crida recursiva.
 
 Això dóna lloc a la implementació següent
 
-```c++c++
+```c++
 // Escriu n ≥ 0 cops seguits c.
 void escriure(int n, char c) {
     if (n == 0) {
@@ -160,7 +161,7 @@ void escriure(int n, char c) {
 
 que podem compactar així:
 
-```c++c++
+```c++
 // Escriu n ≥ 0 cops seguits c.
 void escriure(int n, char c) {
     if (n > 0) {
@@ -174,7 +175,7 @@ Una segona manera de tractar el cas recursiu seria escriure primer
 `n - 1` cops el caràcter `c` (recursivament) i, després,
 escriure un cop el caràcter `c`:
 
-```c++c++
+```c++
 // Escriu n ≥ 0 cops seguits c.
 void escriure(int n, char c) {
     if (n > 0) {
@@ -208,7 +209,7 @@ en compte amb la paritat de `n`:
 
 Aquesta idea dóna lloc en aquesta nova implementació:
 
-```c++c++
+```c++
 // Escriu n ≥ 0 cops seguits c.
 void escriure(int n, char c) {
     if (n > 0) {
@@ -226,7 +227,7 @@ void escriure(int n, char c) {
 
 que podem compactar així:
 
-```c++c++
+```c++
 // Escriu n ≥ 0 cops seguits c.
 void escriure(int n, char c) {
     if (n > 0) {
@@ -252,7 +253,7 @@ més gran que divideix exactament tant a $x$ com a $y$.
 el màxim comú divisor de dos nombres amb l'algorisme d'Euclides i com
 com encapsular-lo dins d'una funció:
 
-```c++c++
+```c++
 // Retorna el màxim comú divisor de dos enters x i y, amb x ≥ 0 i y ≥ 0.
 int mcd_iteratiu(int x, int y) {
     while (y != 0) {
@@ -266,7 +267,7 @@ int mcd_iteratiu(int x, int y) {
 
 La solució recursiva és:
 
-```c++c++
+```c++
 // Retorna el màxim comú divisor de dos enters x i y, amb x ≥ 0 i y ≥ 0.
 int mcd(int x, int y) {
     if (y != 0) return mcd(y, x%y);
@@ -299,7 +300,7 @@ Independentment d'això, voldríem una funció que calculés l'`n`-èsim nombre 
 Fibonacci. Com que som al tema de recursivitat i som valents, provarem
 d'implementar la recurrència en C++, cosa que no ens hauria de costar gens:
 
-```c++c++
+```c++
 // Retorna l'n-èsim nombre de Fibonacci d'un natural n.
 int fibonacci(int n) {
     if (n <= 1) return n;
@@ -319,7 +320,7 @@ que també retorni $F(n-1)$. Com que en C++ les funcions només poden retornar
 un valor, haurem de simular aquesta funció amb una acció recursiva que tingui
 dos paràmetres de sortida que es corresponen als dos resultats:
 
-```c++c++
+```c++
 // Donat un natural n, deixa en ultim F(n) i en penultim F(n-1).
 // Quan n = 0, penultim no està definit.
 void fibo_aux(int n, int& ultim, int& penultim)
@@ -327,7 +328,7 @@ void fibo_aux(int n, int& ultim, int& penultim)
 
 La seva implementació és la següent:
 
-```c++c++
+```c++
 // Donat un natural n, desa F(n) en ultim i F(n-1) en penultim.
 // Quan n = 0, penultim no està definit.
 void fibo_aux(int n, int& ultim, int& penultim) {
@@ -364,7 +365,7 @@ l'`n`-èsim nombre de Fibonacci, no aquesta acció auxiliar. Però ara ja podem
 definir fàcilment la funció principal posant en marxa l'acció auxiliar
 recursiva:
 
-```c++c++
+```c++
 // Retorna l'n-èsim nombre de Fibonacci d'un natural n.
 int fibonacci(int n) {
     int ultim, penultim;

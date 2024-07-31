@@ -20,9 +20,10 @@ són 2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67,
 Definim una funció en C++ per determinar si un nombre natural donat
 és o no primer. La capçalera és següent:
 
-```c++c++
+```c++
 // Indica si el natural n és primer o no.
 bool es_primer(int n);
+
 ```
 
 És a dir, el nom de la funció és `es_primer`, aquesta funció té un sol
@@ -37,7 +38,7 @@ llavors `n` és compost (és a dir, no és primer). Si cap d'aquests `i`
 divideix `n`, llavors `n` és primer. Aquesta idea s'anomena el _mètode
 per prova de divisions_ i el podríem programar com segueix:
 
-```c++c++
+```c++
 // Indica si el natural n és primer o no.
 bool es_primer(int n) {
     if (n <= 1) return false;           // cas especial
@@ -83,7 +84,7 @@ per a valors de `n` grans i primers:
 Per dur a terme aquesta idea, es podria utilitzar la funció `sqrt()` fent un
 `#include <cmath>`, però és millor fer-ho així:
 
-```c++c++
+```c++
 // Indica si el natural n és primer o no.
 bool es_primer(int n) {
     if (n <= 1) return false;

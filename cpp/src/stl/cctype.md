@@ -15,6 +15,7 @@ llibreria `<cctype>`. Així, l'expressió
 
 ```c++
 (c >= 'a' and c <= 'z') or (c >= 'A' and c <= 'Z')
+
 ```
 
 per determinar si el caràcter `c` és una lletra, s'escriuria

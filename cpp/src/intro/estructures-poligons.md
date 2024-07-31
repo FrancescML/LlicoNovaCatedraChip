@@ -15,10 +15,11 @@ en el pla. Per tant, necessitem alguna forma de representar punts. Donat que un 
 té dues coordenades, podem representar-los amb una estructura amb dos camps de tipus real,
 un per la coordenada X, i un per la coordenada Y:
 
-```c++c++
+```c++
 struct Punt {
-    double x, y;    // coordenades del punt en el pla
+double x, y; // coordenades del punt en el pla
 };
+
 ```
 
 Ara es podrien definir funcions útils per tractar punts en el pla, com ara obtenir
@@ -26,7 +27,7 @@ el seu mòdul o el seu argument, o aplicar-los una translació o un escalat...
 Penseu com fer-les! Com a exemple, aquí teniu una funció que, donats dos punts,
 retorna la seva distància:
 
-```c++c++
+```c++
 // retorna la distància euclidiana entre dos punts
 double distancia(const Punt& p, const Punt& q)
 {
@@ -46,7 +47,7 @@ Com que tots els punts d'un polígon han de ser del mateix tipus (`Punt`) però 
 nombre és indeterminat, podem utilitzar un vector per representar-los! Per tant,
 podem definir un nou tipus per a polígons utilitzant vectors de punts:
 
-```c++c++
+```c++
 using Poligon = vector<Punt>;
 ```
 
@@ -56,7 +57,7 @@ Definir vectors de estructures és molt habitual.
 En aquest cas, podríem definir un polígon corresponent a la figura de la dreta
 de la forma següent:
 
-```c++c++
+```c++
 Poligon pol = {         // vector
     { 6,  5},           //     primer punt
     { 0,  8},           //     segon  punt
@@ -82,7 +83,7 @@ Ara que podem representar polígons, podem definir una funció per obtenir-ne
 el seu perímetre. Només cal sumar totes les distàncies entre parells de punts
 consecutius, sense deixar-se d'afegir la distància del primer al darrer:
 
-```c++c++
+```c++
 // retorna el perímetre d'un polígon simple
 double perimetre(const Poligon& poligon)
 {
@@ -105,7 +106,7 @@ De forma sembant, podem calcular l'àrea d'un polígon simple utilitzant la
 _fórmula de Gauss_
 [$\small[\mathbb{W}]$](https://es.wikipedia.org/wiki/F%C3%B3rmula_del_%C3%A1rea_de_Gauss):
 
-```c++c++
+```c++
 // retorna l'àrea d'un polígon simple
 double area(const Poligon& poligon)
 {

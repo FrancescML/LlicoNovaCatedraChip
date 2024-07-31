@@ -19,6 +19,7 @@ el programa ha d'escriure
 1
 2
 3
+
 ```
 
 Amb les eines que hem vist fins ara, no és possible fer aquest programa.
@@ -31,7 +32,7 @@ que vagi fent operacions mentre es compleixi una certa condició,
 és a dir, ens cal una **instrucció iterativa**,
 que en la forma més bàsica en C++ s'escriu així:
 
-```c++c++
+```c++
 while (⟨condició⟩) {
     ⟨instruccions⟩
 }
@@ -52,7 +53,7 @@ El diagrama de flux següent mostra el funcionament del bucle `while`:
 
 Aquest programa resol el problema proposat usant un `while`:
 
-```c++c++
+```c++
 int main() {
     int n;
     cin >> n;
@@ -94,7 +95,7 @@ Però aquest codi tindria més de 1000 línies, la majoria quasi idèntiques,
 i seria una solució horrorosa.
 En canvi, l'us d'un `while` ens permet escriure un codi elegant:
 
-```c++c++
+```c++
 int main() {
     int maxim;
     cin >> maxim;
@@ -112,7 +113,7 @@ int main() {
 Com funciona aquest programa?
 Primer, fixem-nos en les línies
 
-```c++c++
+```c++
     int i = 0;
     while (i < 999) {
         🚧 🚧 🚧

@@ -14,11 +14,12 @@ Per exemple, donada l'entrada
 
 ```c++text
 3.4 5.6 8.7
+
 ```
 
 el programa ha d'escriure
 
-```c++c++
+```c++
 5.90
 ```
 
@@ -61,7 +62,7 @@ Utilitzarem dues variables:
 A cada iteració, caldrà actualitzar aquestes variables,
 afegint `x` a la suma, i incrementant en u la llargada:
 
-```c++c++
+```c++
 suma += x;
 ++llargada;
 ```

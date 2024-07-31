@@ -26,16 +26,17 @@ Recordem que la seva distància euclídea és
 $\sqrt{(x_p-x_q)^2 + (y_p-y_q)^2}$.
 Considereu el programa següent:
 
-```c++c++
+```c++
 #include <iostream>
-#include <cmath>        // 👁
+#include <cmath> // 👁
 using namespace std;
 
 int main() {
-    double xp, yp, xq, yq;
-    cin >> xp >> yp >> xq >> yq;
-    cout << sqrt(pow(xp - xq, 2) + pow(yp - yq, 2)) << endl;    // 👁
+double xp, yp, xq, yq;
+cin >> xp >> yp >> xq >> yq;
+cout << sqrt(pow(xp - xq, 2) + pow(yp - yq, 2)) << endl; // 👁
 }
+
 ```
 
 Aquest programa presenta dues novetats:
@@ -73,7 +74,7 @@ definim les nostres funcions.
 
 Per exemple, considerem l'expressió
 
-```c++c++
+```c++
 sqrt(pow(xp - xq, 2) + pow(yp - yq, 2))
 ```
 
@@ -83,7 +84,7 @@ i s'usa principalment quan el segon paràmetre és un nombre amb decimals;
 altrament, hi ha mètodes més eficients.
 En aquest cas, podríem fer senzillament
 
-```c++c++
+```c++
 sqrt((xp - xq)*(xp - xq) + (yp - yq)*(yp - yq))
 ```
 
@@ -92,7 +93,7 @@ Però encara es pot fer millor.
 Podem definir i usar una funció per elevar un nombre al quadrat,
 de nom per exemple `quadrat()`:
 
-```c++c++
+```c++
 double quadrat(double a) {
     return a*a;
 }
@@ -125,7 +126,7 @@ De la mateixa manera que $f(x) = x^2$ i $f(y) = y^2$
 representen exactament les mateixes funcions matemàtiques,
 podríem haver definit la funció `quadrat()` amb un altre nom per al paràmetre:
 
-```c++c++
+```c++
 double quadrat(double x) {
     return x*x;
 }
@@ -136,7 +137,7 @@ Les dues definicions són idèntiques a tots els efectes.
 En qualsevol cas, ara podem escriure l'expressió anterior
 que representa la distància entre dos punts així:
 
-```c++c++
+```c++
 sqrt(quadrat(xp - xq) + quadrat(yp - yq))
 ```
 
@@ -146,13 +147,13 @@ encara que només sigui perquè és una mica més fàcil de llegir.
 Si voleu, considerem un exemple més exagerat.
 Què preferiu, aquesta expressió
 
-```c++c++
+```c++
 (3*x*y - 7*a*z + 23*y*y*z - 42*a*b*c*d - 108*x*z)*(3*x*y - 7*a*z + 23*y*y*z - 42*a*b*c*d - 108*x*z)
 ```
 
 o aquesta?
 
-```c++c++
+```c++
 quadrat(3*x*y - 7*a*z + 23*y*y*z - 42*a*b*c*d - 108*x*z)
 ```
 
@@ -165,7 +166,7 @@ les redundàncies són dolentes.
 
 Finalment, vegem com s'organitzen les funcions dins del programa complet:
 
-```c++c++
+```c++
 #include <iostream>
 #include <cmath>
 using namespace std;
@@ -191,7 +192,7 @@ Considerem ara que volem escriure una funció per calcular el màxim de dos ente
 Primer comencem amb la capçalera,
 que també s'anomena **declaració** o **interfície**:
 
-```c++c++
+```c++
 int max2(int a, int b)
 ```
 
@@ -202,7 +203,7 @@ i que té dos paràmetres enters que anomenem `a` i `b`.
 
 A continuació, en programem el cos:
 
-```c++c++
+```c++
 int max2(int a, int b) {
     int m;
     if (a > b) m = a;
@@ -220,7 +221,7 @@ la funció la retorna amb un `return`.
 De fet, podem simplificar el cos una mica estalviant-nos la variable `m`
 amb dos `return`, un per a cada branca del condicional:
 
-```c++c++
+```c++
 int max2(int a, int b) {
     if (a > b) return a;
     else return b;
@@ -231,7 +232,7 @@ Fins i tot podem eliminar l'`else` perquè,
 en trobar un `return`, la funció acaba la seva feina i lliura el resultat immediatament,
 sense continuar executant la resta de codi que tingui a continuació:
 
-```c++c++
+```c++
 int max2(int a, int b) {
     if (a > b) return a;
     return b;
@@ -240,7 +241,7 @@ int max2(int a, int b) {
 
 Aquest programa complet pot servir per provar la funció `max2`:
 
-```c++c++
+```c++
 #include <iostream>
 using namespace std;
 
@@ -263,7 +264,7 @@ diguem-ne `a`, `b` i `c`,
 en retorni el més gran.
 La seva capçalera pot ser
 
-```c++c++
+```c++
 int max3(int a, int b, int c)
 ```
 
@@ -315,7 +316,7 @@ Per referència, aquest és el programa complet
 que llegeix tres enters i n'escriu el màxim utilitzant la funció `max3()` que,
 alhora, utilitza la funció `max2()`:
 
-```c++c++
+```c++
 #include <iostream>
 using namespace std;
 
@@ -348,7 +349,7 @@ digui `max3`: Ambdues es poden dir, per exemple, `max`. Quan s'invoqui a `max`
 amb dos paràmetres s'utilitzarà la primera, i quan s'invoqui a `max`
 amb tres paràmetres s'utilitzarà la segona. Aquí ho teniu:
 
-```c++c++
+```c++
 int max(int a, int b) {             // max2
     if (a > b) return a;
     return b;
@@ -370,7 +371,7 @@ L'exemple següent mostra que la sobrecàrrega també permet invocar
 a la funció adeqüada segons els tipus dels paràmetres tot creant
 dues funcions `abs` per calcular el valor absolut d'enters i de reals:
 
-```c++c++
+```c++
 int abs(int x) {                    // valor absolut per als enters
     if (x < 0) return -x;
     return x;
@@ -415,7 +416,7 @@ paràmetres, tot donant el seu tipus i el seu nom. Aquests paràmetres es diuen
 **paràmetres formals** i serveixen per donar forma a la funció. Per exemple,
 a la funció següent,
 
-```c++c++
+```c++
 int max(int a, int b) {...}
 ```
 
@@ -449,7 +450,7 @@ amb llur tipus.
 
 Considereu el programa següent, que és una variació d'algun dels anteriors:
 
-```c++c++
+```c++
 #include <iostream>
 using namespace std;
 

@@ -25,11 +25,12 @@ En qualsevol altre cas, l'atac fracassa.
 
 Les dades que se'ns han donat es poden descriure en C++ d'aquesta forma:
 
-```c++c++
-double alcada_muralles;     // alçada de les muralles del castell (en metres)
-double alcada_escales;      // alçada de les escales dels atacants (en metres)
-bool catapultes;            // indica si els atacants disposen o no d'alguna catapulta
-int pedres;                 // nombre de pedres grosses disponibles
+```c++
+double alcada_muralles; // alçada de les muralles del castell (en metres)
+double alcada_escales; // alçada de les escales dels atacants (en metres)
+bool catapultes; // indica si els atacants disposen o no d'alguna catapulta
+int pedres; // nombre de pedres grosses disponibles
+
 ```
 
 El tipus d'`alcada_muralles` i d'`alcada_escales` s'ha triat com a un real
@@ -42,7 +43,7 @@ Suposem que aquestes variables s'han omplert amb unes certes dades.
 Ara volem calcular si l'atac té èxit o no,
 i guardar-ho en una variable booleana:
 
-```c++c++
+```c++
 bool atac_amb_exit;         // indica si l'atac al castell té èxit
 ```
 
@@ -57,7 +58,7 @@ Per tant, es pot escriure com `catapultes and pedres >= 10`.
 
 Tot plegat, tenim:
 
-```c++c++
+```c++
 bool atac_amb_exit = alcada_escales > alcada_muralles or (catapultes and pedres >= 10);
 ```
 

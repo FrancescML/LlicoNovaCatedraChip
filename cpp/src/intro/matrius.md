@@ -30,13 +30,14 @@ Per exemple, aquest tros de codi declara una matriu
 `m` de mida 4✕5 i l'inicialitza amb certs
 valors.
 
-```c++c++
+```c++
 vector< vector<int> > m = {
-    { 3,  5, -1,  7,  2},
-    { 7,  1, -1, 17,  6},
-    { 6,  1,  3,  1, 12},
-    {21,  0, -7,  4,  2}
+{ 3, 5, -1, 7, 2},
+{ 7, 1, -1, 17, 6},
+{ 6, 1, 3, 1, 12},
+{21, 0, -7, 4, 2}
 };
+
 ```
 
 La figura següent ho il·lustra: A l'esquerra apareix la matriu com un tot;
@@ -65,7 +66,7 @@ Per crear una matriu, ho farem de la mateixa manera que creem un vector,
 però en aquest cas el tipus d'element d'aquest vector serà un altre
 cop un vector, aquest ja del tipus de dades desitjat. Així,
 
-```c++c++
+```c++
 vector<vector<int>> matriu;
 ```
 
@@ -75,7 +76,7 @@ Les maneres d'inicialitzar una matriu són exactament les mateixes que les d'un
 vector, tenint en compte que una matriu no és més que un vector de vectors. Aquí
 en teniu un recordatori:
 
-```c++c++
+```c++
 vector<vector<double>> buida;   // matriu buida
 vector<vector<int>> files(5);   // matriu amb 5 vectors buits (files)
 vector<vector<bool>> falsos(3, vector<bool>(2));
@@ -92,7 +93,7 @@ explicades a la lliçó de [vectors](vectors.html).
 També podeu, com als vectors, inicialitzar una matriu copiant-la d'una
 altra, o inclús copiant algunes files, de la manera següent:
 
-```c++c++
+```c++
 vector<vector<int>> M = {{1, -3, 2}, {-1, 4, 3}};
 vector<int> v = {2, 1, -5};
 
@@ -116,7 +117,7 @@ vectors, podem fer que aquests vectors continguin alhora més vectors, i així
 indefinidament. Per exemple, podem crear una matriu tridimensional de `n ✕ m ✕ r`
 enters amb el codi següent:
 
-```c++c++
+```c++
 vector<vector<vector<int>>> matriu3d(n, vector<vector<int>>(m, vector<int>(r)));
 ```
 
@@ -137,7 +138,7 @@ tipus anomenat `nom` equivalent a `tipus`.
 
 Per exemple,
 
-```c++c++
+```c++
 using Temperatures = vector<double>;
 ```
 
@@ -145,7 +146,7 @@ introdueix un nou tipus anomenat `Temperatures` que és equivalent
 a `vector<double>`. A partir d'aquesta declaració, es poden declarar noves
 variables i paràmetres utilitzant aquest nou nom de tipus:
 
-```c++c++
+```c++
 double temperatura_mitjana(Temperatures& temperatures) { ... }
 ```
 
@@ -158,7 +159,7 @@ Fixeu-vos, però, que les declaracions `using` no parlen del nombre d'elements.
 Si el que volíem era crear un vector de les temperatures a cada hora del dia,
 caldria declarar una variable especificant el nombre de posicions:
 
-```c++c++
+```c++
 Temperatures temperatures(24);
 ```
 
@@ -166,7 +167,7 @@ Si, a més, volem tenir registre de totes les temperatures al llarg d'un any,
 necessitarem un vector de 365 vectors de 24 reals, és a dir, una matriu de
 365✕24 reals:
 
-```c++c++
+```c++
 using Temperatures = vector<double>;
 using Registre = vector<Temperatures>;
 
@@ -181,7 +182,7 @@ més llegible i, també, més fàcil de modificar en el futur.
 L'acció següent escriu una matriu d'enters. Per simplicitat, aquesta acció
 escriu un espai innecessari al final de cada línia.
 
-```c++c++
+```c++
 using Fila = vector<int>;
 using Matriu = vector<Fila>;
 
@@ -205,7 +206,7 @@ tingués cap fila (perquè `M[0]` no existiria). Penseu com arreglar-ho!
 Aquesta seria una manera alternativa de fer-ho, utilitzant bucles `for :`
 enlloc d'índexos:
 
-```c++c++
+```c++
 void escriure(const Matriu& matriu)
 {
     for (const Fila& fila : matriu) {    	// per cada fila de la matriu
@@ -231,7 +232,7 @@ programa les dimensions de la matriu que voldrem llegir, seguits
 dels elements de la matriu. Així, pel cas d'una matriu d'enters,
 el nostre codi tindrà un aspecte semblant al següent:
 
-```c++c++
+```c++
 using Fila = vector<int>;
 using Matriu = vector<Fila>;
 
@@ -253,7 +254,7 @@ Matriu llegir_matriu() {
 Aquesta seria una manera alternativa de fer-ho, utilitzant bucles `for :`
 enlloc d'índexos:
 
-```c++c++
+```c++
 Matriu llegir_matriu() {
     int n, m;
     cin >> n >> m;          				// llegim les mides de la matriu

@@ -17,6 +17,7 @@ Per exemple, en el cas que la nostra entrada fós
 ```c++text
 quan els oques van al camp la primera va al davant
 la segona va al darrera i despres ve la tercera
+
 ```
 
 hauríem d'obtenir com a sortida
@@ -33,7 +34,7 @@ Per resoldre aquesta tasca, considerarem que el poema
 consisteix en una seqüència no buida de paraules.
 Per tant, utilitzem un bucle
 
-```c++c++
+```c++
     string paraula;
     while (cin >> paraula) {
         ⋮
@@ -77,7 +78,7 @@ per obtenir la llargada mitjana de les paraules.
 
 El programa sencer queda doncs així:
 
-```c++c++
+```c++
 #include <iostream>
 #include <string>
 using namespace std;

@@ -11,18 +11,19 @@ dur a terme per poder executar-lo.
 
 Aquest és un petit programa complet en C++:
 
-```c++c++
-/* Calculadora de productes. */
+```c++
+/_ Calculadora de productes. _/
 
 #include <iostream>
 using namespace std;
 
 int main() {
-    int x, y;               // Declaració de les variables
-    cin >> x >> y;          // Lectura de les dades d'entrada
-    int p = x*y;            // Càlcul del resultat
-    cout << p << endl;      // Escriptura de la dada de sortida
+int x, y; // Declaració de les variables
+cin >> x >> y; // Lectura de les dades d'entrada
+int p = x\*y; // Càlcul del resultat
+cout << p << endl; // Escriptura de la dada de sortida
 }
+
 ```
 
 És una mena de calculadora molt senzilla, que només llegeix dos nombres i
@@ -35,7 +36,7 @@ de moment, només cal que les repetiu (exactament igual,
 si no us voleu convertir un gripaus 🐸!). En general, tot programa en C++ ha d'incloure
 aquest _alohomora_:
 
-```c++c++
+```c++
 #include <iostream>
 using namespace std;
 
@@ -56,7 +57,7 @@ automàticament per l'ordinador que useu, i no són sempre els mateixos.
 
 Així doncs, el fragment realment important del programa anterior és aquest:
 
-```c++c++
+```c++
     int x, y;
     cin >> x >> y;
     int p = x*y;

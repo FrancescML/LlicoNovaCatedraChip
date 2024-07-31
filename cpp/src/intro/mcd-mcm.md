@@ -17,8 +17,9 @@ Aquesta, anomenem-la `mcd`, hauria de rebre com a paràmetres
 els dos nombres enters en qüestió, i hauria de retornar un enter (el seu mcd).
 Per tant, podem definir la seva capçalera de la forma següent:
 
-```c++c++
+```c++
 int mcd(int x, int y);
+
 ```
 
 Recordeu que el mcd de dos nombres no està ben definit si algun dels nombres és
@@ -26,7 +27,7 @@ negatiu (i que val 0 quan ambdós són zero). Per deixar clar que la funció
 `mcd` només es pot aplicar sobre enters _positius_, anotarem el codi amb un
 comentari que ho indiqui:
 
-```c++c++
+```c++
 // Retorna el màxim comú divisor de dos enters x i y, amb x ≥ 0 i y ≥ 0.
 int mcd(int x, int y);
 ```
@@ -44,7 +45,7 @@ potser explota l'ordinador, potser moren dos gatets
 La definició del cos de la funció `mcd` implementa l'algorisme d'Euclides,
 igual que ja havíem vist anteriorment, i en retorna el resultat:
 
-```c++c++
+```c++
 // Retorna el màxim comú divisor de dos enters x i y, amb x ≥ 0 i y ≥ 0.
 int mcd(int x, int y) {
     while (y != 0) {
@@ -74,7 +75,7 @@ $$
 Per tant, podem implementar una funció `mcm` ben senzillament
 utilitzant la funció `mcd` que hem definit anteriorment, de la forma següent:
 
-```c++c++
+```c++
 // Retorna el mínim comú multiple de dos naturals x i y, amb x + y > 0.
 int mcm(int x, int y) {
     return x*y/mcd(x, y);
@@ -92,7 +93,7 @@ $$
 i, aprofitant que la divisió de `x` i pel mcd segur que serà
 entera (penseu per què!), podem escriure la funció de la forma següent:
 
-```c++c++
+```c++
 // Retorna el mínim comú multiple de dos naturals x i y, amb x + y > 0.
 int mcm(int x, int y) {
     return (x/mcd(x, y))*y;
@@ -129,7 +130,7 @@ n'escriu el seu mcm. Si interpretem aquests
 nombres com els periodes de flaix dels llums, trobem cada quant coïncideixen en
 el temps. Aquest n'és el codi complet:
 
-```c++c++
+```c++
 #include <iostream>
 using namespace std;
 

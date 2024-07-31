@@ -21,13 +21,14 @@ Al llarg d'aquesta lliçó suposarem que ja tenim el context següent, que inclo
 les definicions necessàries i defineix un tipus per a les matrius d'enters i per les
 seves files:
 
-```c++c++
+```c++
 #include <iostream>
 #include <vector>
 using namespace std;
 
 using Fila = vector<int>;
 using Matriu = vector<Fila>;
+
 ```
 
 Per simplicitat, també entendrem que les matrius amb les que treballarem tenen
@@ -49,7 +50,7 @@ correctes.
 Així, una funció que retorna la matriu resultat de sumar dues matrius
 donades tindria l'aspecte següent:
 
-```c++c++
+```c++
 // retorna la suma de A i B, suposant que tenen la mateixa mida
 Matriu suma(const Matriu& A, const Matriu& B)
 {
@@ -87,7 +88,7 @@ altra banda, per trobar un màxim, creem una altra variable que en tot moment
 guarda l'element més gran que s'ha trobat fins ara i es va comparant amb els
 següents. Combinant ambdues estratègies, la nostra funció quedaria així:
 
-```c++c++
+```c++
 // retorna el màxim de les sumes de les files de M
 int maxima_suma_fila(const Matriu& M)
 {
@@ -124,7 +125,7 @@ només cal visitar una de les dues meitats separades per la diagonal, ja que en
 cas contrari recuperarem la matriu inicial perquè farem cada intercanvi dos
 cops. L'acció quedaria així:
 
-```c++c++
+```c++
 // transposa la matriu quadrada M
 void transposar(Matriu& M)
 {
@@ -152,7 +153,7 @@ simètrica.
 Ens quedarà doncs la funció següent que realitza una cerca d'elements simètrics
 diferents:
 
-```c++c++
+```c++
 bool es_simetrica(const Matriu& M)
 {
     int n = M.size();
@@ -190,7 +191,7 @@ necessitarem dos bucles (de `n` i `r` iteracions, respectivament), i per calcula
 cadascun dels seus elements haurem de fer un altra bucle per calcular la suma
 dels `m` elements corresponents. El codi resultant seria aquest:
 
-```c++c++
+```c++
 // retorna el producte de dues matrius A i B de mides compatibles
 Matriu producte(const Matriu& A, const Matriu& B)
 {

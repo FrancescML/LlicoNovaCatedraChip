@@ -14,14 +14,13 @@ una majúscula, si és una minúscula, si és una vocal, i si és una consonant.
 
 Aquesta és una possible solució:
 
-```c++c++
+```c++
 #include <iostream>
 using namespace std;
 
-
 int main() {
-    char c;
-    cin >> c;
+char c;
+cin >> c;
 
     bool majuscula = c >= 'A' and c <= 'Z';
 
@@ -33,7 +32,9 @@ int main() {
 
     if (vocal) cout << "vocal" << endl;
     else cout << "consonant" << endl;
+
 }
+
 ```
 
 Primer, llegim la lletra de l'entrada en una variable `c` de tipus caràcter.
@@ -55,7 +56,7 @@ la condició per mirar si una lletra és majúscula és prou senzilla,
 de manera que es podria usar directament en el `cout` corresponent,
 sense cap necessitat del booleà `majuscula`:
 
-```c++c++
+```c++
     if (c >= 'A' and c <= 'Z') cout << "majuscula" << endl;
     else cout << "minuscula" << endl;
 }

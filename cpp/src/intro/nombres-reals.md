@@ -26,13 +26,14 @@ També es pot utilitzar el format científic: `-5.125e9` representa $-5'125\time
 Per emmagatzemar valors reals, les variables s'han de declarar
 amb el tipus `double`. Així, mentre que
 
-```c++c++
+```c++
 int i;
+
 ```
 
 declara la variable `i` com a enter,
 
-```c++c++
+```c++
 double x;
 ```
 
@@ -85,7 +86,7 @@ i la sortida ha de ser el valor adient d'$x$.
 Com podeu comprovar ràpidament, la solució és $x=-b/a$.
 Per tant, una possible solució és
 
-```c++c++
+```c++
 double a, b;
 cin >> a >> b;
 double x = -b/a;
@@ -94,7 +95,7 @@ cout << x << endl;
 
 Evidentment, les dues últimes línies es poden ajuntar en una de sola:
 
-```c++c++
+```c++
 double a, b;
 cin >> a >> b;
 cout << -b/a << endl;
@@ -116,7 +117,7 @@ Utilitzant tota la informació anterior,
 el programa següent permet convertir de forma amigable
 temperatures de l'escala Celsius a l'escala Fahrenheit:
 
-```c++c++
+```c++
 #include <iostream>
 using namespace std;
 

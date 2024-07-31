@@ -15,14 +15,18 @@ Suposem que volem fer un programa per escriure un rectangle amb $m\times n$ aste
 Per exemple, aquest és un rectangle $3\times4$:
 
 ```c++text
-****
-****
-****
+
+---
+
+---
+
+---
+
 ```
 
 Segurament la solució més senzilla és aquesta:
 
-```c++c++
+```c++
 int main() {
     // llegir el nombre de files i columnes
     int m, n;
@@ -52,7 +56,7 @@ subprogrames podria ser una manera de simplicar-lo.
 Per a fer-ho, decidim que un subprograma s'ocupi de la part
 corresponent a escriure el rectangle:
 
-```c++c++
+```c++
 int main() {
     // llegir el nombre de files i columnes
     int m, n;
@@ -78,7 +82,7 @@ de les funcions. Però com que les accions no retornen cap resultat,
 la seva capçalera indica que el tipus retornat és `void`, que en anglès vol
 dir _res_ i a dins de la seva definició no tenen cap `return` amb un valor:
 
-```c++c++
+```c++
 // Acció que escriu un rectangle amb files × columnes asteríscos.
 void escriure_rectangle(int files, int columnes) {
     for (int i = 1; i <= files; ++i) {
@@ -104,7 +108,7 @@ Evidentment, fins ara, tampoc hem guanyat gaire simplificant el codi del
 programa: simplement hem mogut una part del seu codi en un altre subprograma.
 Però podem aplicar el mateix procés en aquesta acció:
 
-```c++c++
+```c++
 // Acció que escriu un rectangle amb files × columnes asteríscos.
 void escriure_rectangle(int files, int columnes) {
     for (int i = 1; i <= files; ++i) {
@@ -120,7 +124,7 @@ el nombre de columnes que ha de contenir.
 
 El codi de l'acció `escriure_fila` és la següent:
 
-```c++c++
+```c++
 // Acció que escriu una fila amb columnes asteríscos.
 void escriure_fila(int columnes) {
     for (int i = 1; i <= columnes; ++i) {
@@ -137,7 +141,7 @@ subprogrames.
 Per veure totes les transformacions aplicades en pespectiva, aquest és el codi complet
 resultant (també hem aprofitat per fer alguna contracció de claus):
 
-```c++c++
+```c++
 #include <iostream>
 using namespace std;
 
@@ -192,7 +196,7 @@ mida $4$:
 
 El programa principal podria ser:
 
-```c++c++
+```c++
 int main() {
     // llegir el nombre de files
     int n;
@@ -205,7 +209,7 @@ int main() {
 Senzillament llegim el valor de `n` i cridem a una acció `escriure_triangle` que
 desenvolupem a continuació:
 
-```c++c++
+```c++
 // Acció que escriu un triangle d'asteríscos amb mida n.
 void escriure_triangle(int n) {
     for (int i = 1; i <= n; ++i) escriure_fila(i);

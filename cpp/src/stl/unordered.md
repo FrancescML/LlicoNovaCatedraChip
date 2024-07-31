@@ -30,17 +30,19 @@ interfície:
 template <typename T>
 class unordered_set {
 public:
-    unordered_set();            // Crea un conjunt no ordenat buit
-    void insert(const T& x);    // Hi afegeix x (no passa res si ja hi era)
-    void erase(const T& x);     // Hi elimina x (no passa res si no hi era)
-    int count(const T& x);      // Diu si hi ha x
-    bool empty() const;         // Indica si és buit
-    int size() const;           // Retorna el nombre d'elements (cardinalitat)
+unordered_set(); // Crea un conjunt no ordenat buit
+void insert(const T& x); // Hi afegeix x (no passa res si ja hi era)
+void erase(const T& x); // Hi elimina x (no passa res si no hi era)
+int count(const T& x); // Diu si hi ha x
+bool empty() const; // Indica si és buit
+int size() const; // Retorna el nombre d'elements (cardinalitat)
 
     iterator begin();           // Retorna un iterador al primer element del conjunt
     iterator end();             // Retorna un iterador passat el darrer element del conjunt
     iterator find(const T& x);  // Retorna un iterador a l'element x del conjunt, o end() si no hi és
+
 };
+
 ```
 
 Les operacions `insert()`, `erase()`, `find()` i `count()` prenen temps

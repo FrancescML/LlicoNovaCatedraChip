@@ -52,19 +52,21 @@ intencionadament molts detalls— aquesta és la seva interfície:
 template <typename K, typename V>
 class map {
 public:
-    map();                              // Crea un diccionari buit
-    void insert(const pair<K, V>& e);   // Afegeix un element e, on e = {k, v}
-    void erase(const K& k);             // Elimina l'element amb clau k
-    int count(const K& k);              // Diu si hi ha un element amb clau k
-    bool empty() const;                 // Indica si el diccionari és buit
-    int size() const;                   // Retorna el nombre d'elements (cardinalitat)
+map(); // Crea un diccionari buit
+void insert(const pair<K, V>& e); // Afegeix un element e, on e = {k, v}
+void erase(const K& k); // Elimina l'element amb clau k
+int count(const K& k); // Diu si hi ha un element amb clau k
+bool empty() const; // Indica si el diccionari és buit
+int size() const; // Retorna el nombre d'elements (cardinalitat)
 
     iterator begin();                   // Retorna un iterador al primer element del diccionari
     iterator end();                     // Retorna un iterador passat el darrer element del diccionari
     iterator find(const K& k);          // Retorna un iterador a l'element amb clau k, o end() si no hi és
 
     V& operator[](const K& k);          // Retorna una referència a l'element amb clau k (afegint-lo, si no hi era)
+
 };
+
 ```
 
 Les operacions `insert()`, `erase()`, `find()`, `[]` i `count()` prenen temps

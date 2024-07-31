@@ -20,8 +20,9 @@ Càlculs sobre potències:
 
 ```c++
 double pow(double x, double y); // Retorna x^y
-double sqrt(double x);          // Retorna l'arrel quadrada de x
-double cbrt(double x);          // Retorna l'arrel cúbica de x
+double sqrt(double x); // Retorna l'arrel quadrada de x
+double cbrt(double x); // Retorna l'arrel cúbica de x
+
 ```
 
 Càlculs d'exponencials i logaritmes:

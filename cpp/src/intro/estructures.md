@@ -44,14 +44,15 @@ nom i els camps que la componen. Cada camp té un nom de camp i un tipus. Per
 exemple, aquesta seria una estructura que correspon a la informació d'una
 pel·lícula de cinema:
 
-```c++c++
+```c++
 struct Pellicula {
-    int identificador;
-    string titol;
-    string director;
-    int any;
-    bool blanc_i_negre;
-};     // no oblideu aquest punt-i-coma
+int identificador;
+string titol;
+string director;
+int any;
+bool blanc_i_negre;
+}; // no oblideu aquest punt-i-coma
+
 ```
 
 Aquest fragment de codi declara un nou tipus `Pellicula` com a una estructura que
@@ -65,7 +66,7 @@ en blanc i negre o no. El títol d'una pel·lícula es desa en el seu camp
 Un cop es té definida una estructura, es poden crear variables d'aquell tipus.
 Mireu aquest exemple:
 
-```c++c++
+```c++
 Pellicula p1 = {
     1001,
     "Star Wars IV",
@@ -100,13 +101,13 @@ seleccionar un dels seus camps. Això es fa escrivint el nom de la variable,
 un punt i el nom del camp. Per exemple, aquest tros de codi corregeix
 el director de _The Kid_:
 
-```c++c++
+```c++
 p2.director = "Charlie Chaplin";
 ```
 
 I aquest fragment diu si `p1` és anterior o posterior a `p2`:
 
-```c++c++
+```c++
 if (p1.any < p2.any) {
     cout << "Anterior";
 } else {

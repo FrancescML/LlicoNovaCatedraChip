@@ -54,19 +54,21 @@ interfície:
 template <typename T>
 class set {
 public:
-    set();                                  // Crea un conjunt buit
-    void insert(const T& x);                // Hi afegeix x (no passa res si ja hi era)
-    void erase(const T& x);                 // Hi elimina x (no passa res si no hi era)
-    int count(const T& x) const;            // Diu si hi ha x
-    bool empty() const;                     // Indica si és buit
-    int size() const;                       // Retorna el nombre d'elements (cardinalitat)
+set(); // Crea un conjunt buit
+void insert(const T& x); // Hi afegeix x (no passa res si ja hi era)
+void erase(const T& x); // Hi elimina x (no passa res si no hi era)
+int count(const T& x) const; // Diu si hi ha x
+bool empty() const; // Indica si és buit
+int size() const; // Retorna el nombre d'elements (cardinalitat)
 
     iterator begin() const;                 // Retorna un iterador al primer element del conjunt
     iterator end() const;                   // Retorna un iterador passat el darrer element del conjunt
     iterator find(const T& x) const;        // Retorna un iterador a l'element x del conjunt, o end() si no hi és
     iterator lower_bound(const T& x) const; // Retorna un iterador al primer element del conjunt que és ≥ x (o end si no existeix)
     iterator upper_bound(const T& x) const; // Retorna un iterador al primer element del conjunt que és > x (o end si no existeix)
+
 };
+
 ```
 
 Les operacions `insert()`, `erase()`, `count()`, `find()`, `lower_bound()` i `upper_bound()`

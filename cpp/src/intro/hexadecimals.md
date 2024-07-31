@@ -19,25 +19,25 @@ i per a l'entrada ~~7000~~ cal escriure la sortida ~~85B1~~.
 
 Aquesta n'és una possible solució:
 
-```c++c++
+```c++
 #include <iostream>
 using namespace std;
 
-
 int main() {
-    int n;
-    cin >> n;
-    if (n == 0) cout << 0; // cas especial
-    else {                 // cas general
-        while (n > 0) {
-            int d = n%16;
-            if (d < 10) cout << d;
-            else cout << char(d - 10 + 'A');
-            n = n/16;
-        }
-    }
-    cout << endl;
+int n;
+cin >> n;
+if (n == 0) cout << 0; // cas especial
+else { // cas general
+while (n > 0) {
+int d = n%16;
+if (d < 10) cout << d;
+else cout << char(d - 10 + 'A');
+n = n/16;
 }
+}
+cout << endl;
+}
+
 ```
 
 El programa comença llegint el número, que es desa en `n`.

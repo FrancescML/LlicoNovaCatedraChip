@@ -43,6 +43,7 @@ amb cinc elements:
 
 ```c++
 list<int> L = {10, 22, 12, 10, 87};
+
 ```
 
 Llavors, aquest és l'aspecte que, conceptualment, té `L`:
@@ -329,7 +330,7 @@ $k=3$ posicions fins que només en sobrevisqui un.
 
 TODO:
 
-```
+```c++
 <svg id='svg-josefus' class='figura' style='width: 100%; height: 400px; margin-bottom: 2em;'></svg>
 
 <script type="text/coffeescript" src="josefus.coffee"></script>

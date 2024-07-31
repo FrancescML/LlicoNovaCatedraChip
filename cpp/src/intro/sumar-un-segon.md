@@ -47,14 +47,15 @@ A continuació els detallem:
 Tal com diu l'enunciat, l’entrada consisteix en tres naturals `h`, `m` i `s` que
 representen una hora del dia. Per tant, les declarem com a variables de tipus enter (`int`):
 
-```c++c++
+```c++
 int h, m, s;
+
 ```
 
 La lectura és ben senzilla: només cal llegir les tres dades, l'una
 darrera l'altra:
 
-```c++c++
+```c++
 cin >> h >> m >> s;
 ```
 
@@ -68,7 +69,7 @@ cal sumar un a la variable `s`, que representa el nombre de segons.
 Com ho farem?
 Amb la instrucció
 
-```c++c++
+```c++
 s = s + 1;
 ```
 
@@ -93,7 +94,7 @@ cal posar `h` a zero, perquè les
 Tot aquest procés el podem implementar de la forma següent
 amb condicionals imbricats:
 
-```c++c++
+```c++
 s = s + 1;
 if (s == 60) {
     s = 0;
@@ -131,14 +132,14 @@ Com aconseguir-ho?
 Doncs escrivint un zero abans si el seu valor no arriba a deu.
 Així doncs, podem escriure la part corresponent a l'hora d'aquesta forma:
 
-```c++c++
+```c++
 if (h < 10) cout << 0;
 cout << h << ":";
 ```
 
 i completar-ho de la mateixa forma per la part dels minuts i dels segons:
 
-```c++c++
+```c++
 if (m < 10) cout << 0;
 cout << m << ":";
 if (s < 10) cout << 0;
@@ -152,7 +153,7 @@ cal escriure `endl` per posar el salt de línia final.
 
 El programa complet queda doncs així:
 
-```c++c++
+```c++
 #include <iostream>
 using namespace std;
 
@@ -191,7 +192,7 @@ Per resoldre aquest problema,
 també ens podem inspirar en el programa de la descomposició horària.
 La part del càlcul del resultat quedaria així:
 
-```c++c++
+```c++
     // 2. Increment d'un segon
     int t = 3600*h + 60*m + s + 1;        // Nombre total de segons
     if (t == 3600*24) t = 0;              // Per evitar el 24:00:00

@@ -39,22 +39,23 @@ Altrament, provem si `x` $- 2$ divideix tant a `x` com a `y`;
 si és així, `x` $ - 2$ és el resultat.
 Etcètera:
 
-```c++c++
+```c++
 int main() {
-    int x, y;
-    cin >> x >> y;
-    int d = x;
-    while (not (x%d == 0 and y%d == 0)) {
-        d = d - 1;
-    }
-    cout << d << endl;
+int x, y;
+cin >> x >> y;
+int d = x;
+while (not (x%d == 0 and y%d == 0)) {
+d = d - 1;
 }
+cout << d << endl;
+}
+
 ```
 
 Estudiem aquest programa amb deteniment.
 La línia
 
-```c++c++
+```c++
     int d = x;
 ```
 
@@ -66,7 +67,7 @@ Si no és el cas, restarem $1$ al valor de `d`, i tornarem a provar.
 Així doncs, quina condició ha de complir la `d` que busquem?
 Aquesta:
 
-```c++c++
+```c++
     (x%d == 0 and y%d == 0)
 ```
 
@@ -83,7 +84,7 @@ també que `d` divideix a `y`.
 L'operador `and` es compleix només quan les dues condicions es compleixen.
 Per exemple, la condició
 
-```c++c++
+```c++
     (a%2 == 0 and a >= 100)
 ```
 
@@ -95,7 +96,7 @@ A la inversa, el `while` ha de continuar _mentre_ la condició d'aturada
 _no_ es compleixi.
 Per aquest motiu, en el `while` usem la condició negada:
 
-```c++c++
+```c++
     while (not (x%d == 0 and y%d == 0)) ...
 ```
 
@@ -103,13 +104,13 @@ L'operador `not` només es compleix
 quan la condició sobre la que s'aplica no es compleix.
 Per exemple,
 
-```c++c++
+```c++
     (not a >= b)
 ```
 
 i
 
-```c++c++
+```c++
     (a < b)
 ```
 
@@ -117,7 +118,7 @@ són equivalents (tot i que la segona és més concisa i, per tant, millor).
 
 Lògicament, la línia
 
-```c++c++
+```c++
         d = d - 1;
 ```
 
@@ -143,7 +144,7 @@ per la qual cosa podem evitar usar les claus.
 
 Finalment, la condició del `while`
 
-```c++c++
+```c++
     (not (x%d == 0 and y%d == 0))
 ```
 
@@ -159,7 +160,7 @@ i per tant tenim que `not c1` és `x%d != 0` i `not c2` és `y%d != 0`.
 
 Tot plegat, el codi queda així:
 
-```c++c++
+```c++
 int main() {
     int x, y;
     cin >> x >> y;
@@ -247,7 +248,7 @@ Per tant, $\mcd(x-y,y)\le\mcd(x, y)$.
 
 Aquesta és una implementació de l'algorisme d'Euclides en C++:
 
-```c++c++
+```c++
 int main() {
     int x, y;
     cin >> x >> y;
@@ -311,7 +312,7 @@ en lloc de cinc,
 si usem el residu en lloc de la resta.
 Aquest fet inspira una nova versió de l'algorisme, més eficient:
 
-```c++c++
+```c++
 int main() {
     int x, y;
     cin >> x >> y;
@@ -347,7 +348,7 @@ Així doncs, ens hem de conformar amb el programa lent però correcte?
 No: el que hem de fer és arreglar el programa ràpid.
 Aquesta és una possible solució:
 
-```c++c++
+```c++
 int main() {
     int x, y;
     cin >> x >> y;

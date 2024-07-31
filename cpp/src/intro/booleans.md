@@ -95,8 +95,9 @@ Les condicions de les instruccions condicionals i iteratives
 sempre són booleanes (però vegeu la conversió automàtica més avall).
 Per exemple, quan s'escriu
 
-```c++c++
-if (temperatura <= 0)   // gela
+```c++
+if (temperatura <= 0) // gela
+
 ```
 
 l'expressió `temperatura <= 0` és de tipus booleà.
@@ -104,7 +105,7 @@ En efecte, els operadors relacionals (`==`, `!=`, `<=`, `>=`, `<` i `>`)
 retornen un valor booleà.
 Això s'aprecia més clarament quan s'uneixen diverses condicions:
 
-```c++c++
+```c++
 if (temperatura <= 0 and llum == 0)   // gela i és fosc
 ```
 
@@ -112,7 +113,7 @@ A més, si cal podem emmagatzemar condicions
 en variables de tipus booleà.
 Per exemple, amb
 
-```c++c++
+```c++
 bool gela = temperatura <= 0;
 ```
 
@@ -122,7 +123,7 @@ Igualment, es pot crear una variable booleana
 per guardar si és fosc o no,
 i es poden combinar entre elles:
 
-```c++c++
+```c++
 bool gela = temperatura <= 0;
 bool es_fosc = llum == 0;
 if (gela and es_fosc) ...
@@ -145,7 +146,7 @@ el qual és un error molt freqüent.
 
 Per tant, quan tenim un bucle com ara
 
-```c++c++
+```c++
 while (gela and es_fosc) {
     ...
 }
@@ -163,25 +164,25 @@ la regla de que zero és fals i no zero és cert.
 Per exemple, si un enter `elements` emmagatzema el nombre d'elements d'un
 determinat conjunt, es pot preguntar si el conjunt és buit fent
 
-```c++c++
+```c++
 if (not elements) ...
 ```
 
 enlloc d'utilitzar
 
-```c++c++
+```c++
 if (elements == 0) ...
 ```
 
 També, es pot preguntar si el conjunt té algun element fent
 
-```c++c++
+```c++
 if (elements) ...
 ```
 
 enlloc d'utilitzar
 
-```c++c++
+```c++
 if (elements > 0) ...
 ```
 
@@ -194,25 +195,25 @@ de `if (p != nullptr)` per mirar si un punter apunta a algun lloc.
 Habitualment, comparar un booleà directament amb `true` o amb `false` es
 considera mal estil. Per exemple, si `trobat` és un booleà, el fragment
 
-```c++c++
+```c++
 if (trobat == true) ...
 ```
 
 es millor rescriure'l aixi:
 
-```c++c++
+```c++
 if (trobat) ...
 ```
 
 Similarment,
 
-```c++c++
+```c++
 if (trobat == false)
 ```
 
 és pitjor estil que
 
-```c++c++
+```c++
 if (not trobat)
 ```
 

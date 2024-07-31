@@ -60,6 +60,7 @@ ofstream f("noms.txt");
 f << "Joan" << endl;
 f << "Pere" << endl;
 f.close();
+
 ```
 
 1. Primer es crea un objecte `f` de tipus fitxer

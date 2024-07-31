@@ -18,10 +18,11 @@ Per exemple, si l'entrada és 4,
 cal escriure
 
 ```c++text
-*
-**
-***
-****
+
+-   \*\*
+    ***
+    ***
+
 ```
 
 Com ho podem resoldre?
@@ -228,7 +229,7 @@ Per tant, tenim que
 Com a conclusió, aquesta és una altra solució possible
 (aquest cop, incloent el codi complet):
 
-```c++c++
+```c++
 #include <iostream>
 using namespace std;
 

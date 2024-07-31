@@ -110,9 +110,10 @@ i sempre positius (entre 0 i 255).
 Per exemple, per saber si un caràcter `c`
 és o no una lletra majúscula es podria fer
 
-```c++c++
+```c++
 char c = ...;
 bool es_majuscula = c >= 'A' and c <= 'Z';
+
 ```
 
 que correspon a mirar si el codi de `c`
@@ -124,7 +125,7 @@ i cap altre caràcter.
 Similarment, si es vol saber si `c` és una lletra (majúscula o
 minúscula) es pot fer amb aquesta condició:
 
-```c++c++
+```c++
 bool es_lletra = (c >= 'A' and c <= 'Z') or (c >= 'a' and c <= 'z');
 ```
 
@@ -135,7 +136,7 @@ en la majúscula corresponent
 el que es pot fer és restar-li el codi de la `'a'`
 i sumar-li el de la `'A'`:
 
-```c++c++
+```c++
 char c = 'd';
 c = c - 'a' + 'A';
 // c == 'D'

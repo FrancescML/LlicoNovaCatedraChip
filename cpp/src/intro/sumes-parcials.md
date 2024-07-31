@@ -17,14 +17,14 @@ ja que podem simplement recorrer els elements de `v` entre `a` i `b` i
 anar acumulant la seva suma. Així, les següents línies de codi
 resoldrien el problema:
 
-```c++`c++
+````c++
 int sum = 0;
 for (int i = a; i <= b; ++i) {
 sum += v[i];
 }
 cout << sum << endl;
 
-````c++c++
+```c++
 
 En el pitjor del casos haurem de recorrer tot el vector, i per tant la
 complexitat del programa serà lineal amb n (això vol dir que el nombre
@@ -39,7 +39,7 @@ escrit pel cas d'una sola parella, i incloure'l dintre d'un bucle
 en el qual anirem actualitzant els valors de `a` i `b`. Aquest bucle
 deuria quedar semblant al que presentem a continuació
 
-```c++c++
+```c++
 while (cin >> a >> b) {
 	int sum = 0;
 	for (int i = a; i <= b; ++i) {
@@ -48,7 +48,7 @@ while (cin >> a >> b) {
 	cout << "La suma del elements entre " << a;
 	cout << " i " << b << " es " << sum << "." << endl;
 }
-````
+```c++`
 
 Si analitzem la complexitat d'aquest bucle veurem que també és
 proporcional al nombre de parelles `a` i `b` que entrem al programa,
@@ -71,7 +71,7 @@ $$
 Així doncs, el següent codi és equivalent al que hem presentat abans
 però molt més eficient quan el nombre de parelles `a` i `b` és gran:
 
-```c++c++
+```c++
 vector<int> s(n, 0);
 s[0] = v[0];                // El primer element de s ha de ser v[0]
 for (int i = 1; i < n; ++i) {
@@ -81,7 +81,7 @@ while (cin >> a >> b) {
 	cout << "La suma del elements entre " << a;
 	cout << " i " << b << " es " << s[b] - s[a] << "." << endl;
 }
-```
+````
 
 Notem que si els elements del vector `v` no ens venen donats en forma
 de vector, sinò que els anem entrant al programa, aquesta versió és
@@ -102,7 +102,7 @@ que no serà molt eficient: com que ens demanen la suma parcial màxima,
 podem calcular totes les sumes parcials i quedar-nos amb la més gran.
 Aquest raonament és el que hem fet servir per escriure el següent codi:
 
-```c++c++
+```c++
 int maxSum = v[0];          // Aquí guardem la suma més gran fins ara
 int maxA = 0;               // I aquí els índex corresponents
 int maxB = 0;
@@ -135,7 +135,7 @@ estem recorrent tot el vector per anar calculant aquestes sumes. Així,
 el següent codi seria equivalent i ens estalviem la creació del vector
 `s`.
 
-```c++c++
+```c++
 int maxSum = v[0];          // Aquí guardem la suma més gran fins ara
 int maxA = 0;               // I aquí els índex corresponents
 int maxB = 0;
@@ -185,7 +185,7 @@ seria la de `{1,5}`, que val 6.
 
 El codi que implementa l'algorisme seria així:
 
-```c++c++
+```c++
 int maxSum = v[0];     // Aquí guardem la suma més gran fins ara
 int maxA = 0;          // I aquí els índex corresponents
 int maxB = 0;

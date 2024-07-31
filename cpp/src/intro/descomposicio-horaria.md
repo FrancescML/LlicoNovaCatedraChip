@@ -37,19 +37,20 @@ llegir el valor d'`n`,
 calcular els valors d'`h`, `m` i `s` a partir del d'`n` (encara no hem pensat com),
 i escriure el valor de `h`, `m` i `s`. Això es pot començar així:
 
-```c++c++
-/* Descomposició horària. */
+```c++
+/_ Descomposició horària. _/
 
 #include <iostream>
 using namespace std;
 
 int main() {
-    int n;                                          // Declaració de la variable d'entrada
-    cin >> n;                                       // Lectura de l'entrada
-    int h, m, s;                                    // Declaració de les variables de sortida
-    /* Càlcul de h, m, s a partir de n. */          // 🚧 Falta fer !!!
-    cout << h << " " << m << " " << s << endl;      // Escriptura de les sortides
+int n; // Declaració de la variable d'entrada
+cin >> n; // Lectura de l'entrada
+int h, m, s; // Declaració de les variables de sortida
+/_ Càlcul de h, m, s a partir de n. _/ // 🚧 Falta fer !!!
+cout << h << " " << m << " " << s << endl; // Escriptura de les sortides
 }
+
 ```
 
 Evidentment, encara ens falta fer la part del càlcul, però la resta de parts
@@ -96,7 +97,7 @@ Tenint en compte que una hora són 3600 segons, és clar que el nombre d'hores `
 en `n` és el resultat de `n/3600`.
 Per tant, el càlcul d'`h` a partir d'`n` es pot fer amb aquesta assignació:
 
-```c++c++
+```c++
     h = n/3600;
 ```
 
@@ -105,19 +106,19 @@ Un cop sabem quantes hores hi ha en `n`, quants segons ens resten? Doncs `n%3600
 I, en aquesta quantitat, quants minuts hi ha?
 Doncs el resultat de dividir-la per 60! Per tant,
 
-```c++c++
+```c++
     m = (n%3600)/60;
 ```
 
 I quants segons ens resten encara? Doncs el residu d'aquesta divisió entera! Per tant,
 
-```c++c++
+```c++
     s = (n%3600)%60;
 ```
 
 I, amb això, ja tenim els càlculs de `h`, `m` i `s` complets:
 
-```c++c++
+```c++
     h = n/3600;
     m = (n%3600)/60;
     s = (n%3600)%60;
@@ -129,7 +130,7 @@ I, com que havíem dit que és un bon costum no declarar les variables
 fins que no facin falta,
 la solució completa la podem reescriure així:
 
-```c++c++
+```c++
 /* Descomposició horària. */
 
 #include <iostream>
@@ -174,7 +175,7 @@ També, la manera explicada anteriorment
 es pot codificar de forma encara més compacta,
 sense necessitat de cap variable que no sigui `n`:
 
-```c++c++
+```c++
 /* Descomposició horària, versió reduïda. */
 
 #include <iostream>

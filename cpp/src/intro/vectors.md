@@ -44,12 +44,13 @@ Per treballar amb vectors, cal incloure la llibreria `vector`, igual que habíem
 fet amb `#include <iostream>`. Així, sempre que vulguem utilitzar vectors al
 nostre programa, la capçalera del nostre programa serà semblant a això:
 
-```c++c++
+```c++
 #include <iostream>
 #include <vector>
 using namespace std;
 
 ...
+
 ```
 
 ## El tipus vector
@@ -61,13 +62,13 @@ tipus: es diu que els vectors són estructures de dades **homegènies**.
 `vector<T>` descriu un nou tipus que és un vector on cada element és de tipus
 `T`. Per exemple,
 
-```c++c++
+```c++
 vector<int> v;
 ```
 
 declara una variable `v` de tipus vector d'enters. Igualment,
 
-```c++c++
+```c++
 vector<double> temperatures;
 ```
 
@@ -77,7 +78,7 @@ Els vectors també es poden utilitzar com a paràmetres de subprogrames.
 Per exemple, aquesta funció calcularia la temperatura màxima
 d'un vector de reals que emmagatzema temperatures:
 
-```c++c++
+```c++
 double temperatura_maxima(vector<double> temperatures)
 { ... }
 ```
@@ -86,7 +87,7 @@ Si dues variables són vectors del mateix tipus, aquestes es poden
 copiar l'una en l'altra. Si són vectors d'elements de tipus diferents, no.
 Per exemple:
 
-```c++c++
+```c++
 vector<int> v1;
 vector<int> v2;
 vector<double> v3;
@@ -118,7 +119,7 @@ una de les quatre maneres següents d'inicialitzar un vector:
     vector<int> zeros(5);                             // zeros = {0, 0, 0, 0, 0}
     ```
 
-````
+```c++`
 
 -   Si volem que el vector contingui un nombre determinat d'elements i que tots aquests
     siguin iguals a un cert element donat, escriurem entre parèntesis
@@ -130,18 +131,20 @@ una de les quatre maneres següents d'inicialitzar un vector:
 
 ```c++`
 
-- Si volem especificar tots els elements del vector, ho podem fer
-entre claus i separats per comes. Llavors ja no cal indicar el nombre
-d'elements:
+-   Si volem especificar tots els elements del vector, ho podem fer
+    entre claus i separats per comes. Llavors ja no cal indicar el nombre
+    d'elements:
 
-  ```c++
-  vector<char> vocals = {'a', 'e', 'i', 'o', 'u'};  // vocals = {'a', 'e', 'i', 'o', 'u'}
-````
+    ```c++
+    vector<char> vocals = {'a', 'e', 'i', 'o', 'u'};  // vocals = {'a', 'e', 'i', 'o', 'u'}
+    ```
+
+```c++`
 
 A més, també podem inicialitzar un vector tot copiant el seu valor
 d'un altre vector del mateix tipus:
 
-```c++c++
+```c++
 vector<char> v1 = {'a', 'e', 'i', 'o', 'u'};    // v1 = {'a', 'e', 'i', 'o', 'u'}
 vector<char> v2 = v1;                           // v2 = {'a', 'e', 'i', 'o', 'u'}
 ```
@@ -161,7 +164,7 @@ començant pel 0. Així, en un vector de quatre elements, el primer té
 Si volem accedir a un element d'un vector, haurem d'especificar el seu
 índex entre claudàtors, de la manera que es mostra aquí:
 
-```c++c++
+```c++
 vector<double> v = {11.5, -13.2, 4.6, 7.8};
 cout << v[2] << endl;        // escriu 4.6
 if (v[0] > 5) v[3] = 9;      // el vector esdevé {11.5, -13.2, 4.6, 9.0};
@@ -171,7 +174,7 @@ De la mateixa manera, podem modificar el contingut de certa posició
 d'un vector. Ho podeu veure a l'exemple següent, on els
 comentaris indiquen el contingut del vector en cada moment:
 
-```c++c++
+```c++
 vector<int> nombres(4,1);         // nombres = {1, 1, 1, 1}
 nombres[1] = 4;                   // nombres = {1, 4, 1, 1}
 nombres[3] = nombres[1];          // nombres = {1, 4, 1, 4}
@@ -189,7 +192,7 @@ fora del vector.
 
 El fragment següent mostra tres accessos il·legals a les posicions d'un vector:
 
-```c++c++
+```c++
 vector<string> noms = {"Mireia", "Marta", "Elvira", "Jana"};
 noms[-1] = "Raquel";                // 💥 la posició -1 no existeix
 cout << noms[10] << endl;           // 💥 la posició 10 no existeix
@@ -203,7 +206,7 @@ darrer, realitzant alguna tasca amb cadascun d'aquests elements. Per exemple,
 per escriure cada temperatura d'un vector que conté una llista de temperatures
 es podria fer:
 
-```c++c++
+```c++
 vector<double> temperatures = {10, 12.5, 14, 10.1, -3.5};
 for (double temperatura : temperatures) {
     cout << temperatura << endl;
@@ -223,7 +226,7 @@ singular.
 Aquí podeu veure com calcular la suma dels elements d'un vector fent servir
 aquest recorregut:
 
-```c++c++
+```c++
 vector<int> nombres = {3, 5, -2, 4};
 int suma = 0;
 for (int nombre : nombres) {
@@ -236,7 +239,7 @@ Compte: Cal recordar que la variable que s'utilitza per iterar sobre
 els elements del vector és una còpia dels seus elements. Per tant,
 en el programa següent, el vector no canvia malgrat que es dobli cada nombre:
 
-```c++c++
+```c++
 vector<int> nombres = {3, 5, -2, 4};
 for (int nombre : nombres) {        // 👀 còpia
     nombre = nombre * 2;
@@ -248,7 +251,7 @@ Per poder canviar els elements del vector, cal iterar utilitzant una refèrencia
 no una còpia (el comportament és el mateix que el dels paràmetres per valor
 o per referència):
 
-```c++c++
+```c++
 vector<int> nombres = {3, 5, -2, 4};
 for (int& nombre : nombres) {       // 👀 referència (&)
     nombre = nombre * 2;
@@ -262,7 +265,7 @@ fet servir fins ara per enumerar tots els índexs del vector.
 Així, per exemple, podem doblar tots els
 elements del vector `nombres` de la manera següent:
 
-```c++c++
+```c++
 vector<int> nombres = {3, 5, -2, 4};
 for (int i = 0; i < 4; ++i) {
     nombres[i] = nombres[i] * 2;
@@ -285,7 +288,7 @@ cal donar com a paràmetre l'element que es vol afegir, que ha de
 ser del mateix tipus que els elements del vector. L'exemple següent
 mostra l'ús d'aquestes operacions:
 
-```c++c++
+```c++
 vector<int> v = {2, 1};     // v = {2, 1}
 v.push_back(7);             // v = {2, 1, 7}
 v.pop_back();               // v = {2, 1}
@@ -304,7 +307,7 @@ retorna la talla d'un vector. Pot resultar molt útil
 sobretot quan hem anat afegint o treient elements al vector, ja que així podem
 saber la seva talla en tot moment. Aquí veiem com cridar-la:
 
-```c++c++
+```c++
 vector<int> v = {3, 2, 1};  // {3, 2, 1}
 cout << v.size() << endl;   // escriu 3
 v.pop_back();               // {3, 2}
@@ -347,7 +350,7 @@ el fet de treballar amb una còpia del vector o bé amb el vector mateix que est
 passant al subprograma. Així, si volem crear una acció per doblar els valors d'un
 vector i fem:
 
-```c++c++
+```c++
 void dobla_copia(vector<int> v)     // 👀 còpia
 {
     for (int& x : v) {              // 👀 referència (&)
@@ -363,7 +366,7 @@ ja seria un desastre enorme, perquè estariem modificant còpies dels elements d
 còpia del vector `v`). La solució és passar el vector `v` per referència a l'acció, de
 manera que treballem directament sobre aquest. Així, faríem
 
-```c++c++
+```c++
 void dobla_referencia(vector<int>& v)    // 👀 referència (&)
 {
     for (int& x : v) {                   // 👀 referència (&)
@@ -374,7 +377,7 @@ void dobla_referencia(vector<int>& v)    // 👀 referència (&)
 
 El resultat d'aplicar cadascuna d'aquestes accions es pot veure a l'exemple següent:
 
-```c++c++
+```c++
 int main() {
     vector<int> nombres = {2, -1, 3};
     dobla_copia(nombres);         // nombres = {2, -1, 3} 😢
@@ -398,7 +401,7 @@ Així, si per exemple volem una funció que retorni l'element més gran del vect
 les següents dues declaracions són equivalents (i el codi a l'interior serà idèntic),
 però amb la diferència que la segona serà més eficient que el primera.
 
-```c++c++
+```c++
 int maxim_lent(vector<int> v) { ... }
 
 int maxim_rapid(const vector<int>& v) { ... }

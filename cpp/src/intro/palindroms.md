@@ -16,19 +16,20 @@ l'enter de la posició 1 (el 2) amb el de la posició 3 (el 4).
 A la lliçó de pas de paràmetres per referència ja hem vist com intercanviar
 el contingut de dues variables enteres:
 
-```c++c++
+```c++
 void intercanvia(int& a, int& b)
 {
-	int c = a;
-	a = b;
-	b = c;
+int c = a;
+a = b;
+b = c;
 }
+
 ```
 
 Doncs ara podem aplicar l'acció `intercanvia` als elements del vector que ens
 interessa.
 
-```c++c++
+```c++
 vector<int> v = {1, 2, 3, 4, 5}     // {1,2,3,4,5}
 intercanvia(v[1], v[3]);            // {1,4,3,2,5}
 ```
@@ -63,7 +64,7 @@ la divisió d'enters retorna la part entera del resultat) és, a dir,
 no parant mentre `i < n / 2`. Aquest seria
 el programa sencer:
 
-```c++c++
+```c++
 #include <iostream>
 #include <vector>
 using namespace std;
@@ -94,7 +95,7 @@ int main()
 Abans hem vist l'equivalència entre vectors de caràcters i textos.
 Així, el mateix programa principal es podria escriure com segueix:
 
-```c++c++
+```c++
 int main()
 {
 	string v = "aeiou";         // {a,e,i,o,u}
@@ -112,7 +113,7 @@ poder-la aprofitar més fàcilment. Al programa següent, l'acció `girar()` gir
 text `s` que se li passa com a paràmetre (per referència, és clar). El
 programa principal l'utilitza per escriure un text donat del revés.
 
-```c++c++
+```c++
 // gira el text en s (deixa s del revés)
 void girar(string& s)
 {
@@ -134,7 +135,7 @@ int main()
 Alternativament, podríem haver-ho encapsulat en uan funció que, donat un text,
 el retorna girat (sense modifica el seu paràmetre):
 
-```c++c++
+```c++
 // retorna s girat (retorna s del revés, sense modificar s)
 string girat(string s)
 {
@@ -162,7 +163,7 @@ Per saber si un text és un palíndrom, podríem girar-lo i comparar-lo amb
 l'original. La funció següent indica si un text donat és o no un palíndrom
 utilitzant la funció `girat()` escrita abans:
 
-```c++c++
+```c++
 // indica si mot és un palíndrom
 bool es_mot_palindrom(const string& mot)
 {
@@ -177,7 +178,7 @@ abans però substituint la funció `intercanvia()` per una comparació (`==` o
 moment trobem dos elements oposats que no són iguals, el text no serà palíndrom.
 Aquí ho teniu:
 
-```c++c++
+```c++
 // indica si mot és un palíndrom
 bool es_mot_palindrom(const string& mot)
 {
@@ -205,7 +206,7 @@ lletres, ens assegurem de saltar els blancs.
 
 Aquesta és la implementació:
 
-```c++c++
+```c++
 // indica si frase és una frase palindròmica
 bool es_frase_palindromica(const string& frase)
 {

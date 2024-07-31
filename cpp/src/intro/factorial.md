@@ -46,9 +46,10 @@ La taula següent mostra els primers valors dels factorials:
 Definim ara una funció en C++ per calcular el factorial d'un natural donat.
 La capçalera podria ser la següent:
 
-```c++c++
+```c++
 // Retorna el factorial d'un natural n.
 int factorial(int n);
+
 ```
 
 És a dir, el nom de la funció és `factorial`, té un sol paràmetre enter
@@ -58,7 +59,7 @@ està ben definit.
 
 El cos de la funció és fàcil d'escriure:
 
-```c++c++
+```c++
 // Retorna el factorial d'un natural n.
 int factorial(int n) {
     int f = 1;
@@ -76,7 +77,7 @@ Fixeu-vos que `factorial(0)` retorna `1`, tal com cal.
 Considereu aquesta nova versió de `factorial` on la `i`
 s'inicialitza a 2 en lloc d'1:
 
-```c++c++
+```c++
 // Retorna el factorial d'un natural n.
 int factorial1(int n) {
     int f = 1;
@@ -92,7 +93,7 @@ Funciona?
 Aquest és un programa complet que escriu una taula amb `factorial(n)`
 per a tots els valors d'`n` entre 0 i 20:
 
-```c++c++
+```c++
 #include <iostream>
 using namespace std;
 

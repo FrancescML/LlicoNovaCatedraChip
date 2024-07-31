@@ -32,8 +32,9 @@ malauradament, les funcions de C++ només poden retornar un únic valor, i no
 tres com ens cal aquí. Per tant, recorrerem a una acció. Aquesta acció tindrà
 la capçalera següent:
 
-```c++c++
+```c++
 void descomposicio_horaria(int n, int& h, int &m, int& s)
+
 ```
 
 La seva especificació és que, donat un nombre de segons positius `n`, aquesta
@@ -43,7 +44,7 @@ acció desa en `h`, `m` i `s` el nombre d'hores, minuts i segons que representa
 El seu cos no és altra cosa que la reiteració del que ja havíem escrit quan vam
 començar a programar, aquest cop, encapsulat dins d'una acció:
 
-```c++c++
+```c++
 void descomposicio_horaria(int n, int& h, int &m, int& s) {
     h = n/3600;          // Càlcul del nombre d'hores
     m = (n%3600)/60;     // Càlcul del nombre de minuts
@@ -59,7 +60,7 @@ paràmetres per referència.
 El programa principal per provar aquesta acció sí que es podria encarregar de
 l'entrada-sortida:
 
-```c++c++
+```c++
 int main() {
     // llegir entrada
     int n;
@@ -88,7 +89,7 @@ acció rebrà tres paràmetres per referència que representen l'hora actual i
 els modificarà per tal que representin aquella hora un segon més tard.
 Aquesta acció tindrà doncs la capçalera següent:
 
-```c++c++
+```c++
 void sumar_un_segon(int& h, int &m, int& s)
 ```
 
@@ -98,7 +99,7 @@ i `s` són legals (és a dir, amb `m` i `s` entre 0 i 59 i `h` entre 0 i 23).
 El cos d'aquesta acció no és altra cosa que la reiteració del que ja havíem
 escrit quan vam començar a programar, aquest cop, encapsulat dins d'una acció:
 
-```c++c++
+```c++
 void sumar_un_segon(int& h, int &m, int& s) {
     ++s;
     if (s == 60) {
@@ -122,7 +123,7 @@ crida.
 El programa principal per provar aquesta acció sí que es podria encarregar de
 l'entrada-sortida:
 
-```c++c++
+```c++
 int main() {
     // lectura de l'hora
     int h, m, s;
@@ -145,7 +146,7 @@ sempre s'escriguin amb dos dígits exactament.
 
 Una manera de fer-ho seria així:
 
-```c++c++
+```c++
 void escriure_amb_dos_digits(int x) {
     if (x < 10) cout << 0;
     cout << x;

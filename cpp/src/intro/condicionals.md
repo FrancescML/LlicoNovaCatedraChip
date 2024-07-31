@@ -15,18 +15,19 @@ i `b` (és a dir, el màxim d'`a` i `b`).
 Utilitzant com a patró un programa anterior, podem escriure un programa
 quasi complet com aquest:
 
-```c++c++
+``c++`c++c++
 #include <iostream>
 using namespace std;
 
 int main() {
-    int a, b;               // Declaració de les variables d'entrada
-    cin >> a >> b;          // Lectura de les dades d'entrada
-    int m;                  // Declaració de la variable de sortida
-    /* 🚧 */                // Càlcul del resultat
-    cout << m << endl;      // Escriptura de la dada de sortida
+int a, b; // Declaració de les variables d'entrada
+cin >> a >> b; // Lectura de les dades d'entrada
+int m; // Declaració de la variable de sortida
+/_ 🚧 _/ // Càlcul del resultat
+cout << m << endl; // Escriptura de la dada de sortida
 }
-```
+
+````
 
 El programa no està acabat, perquè encara no hem precisat com es calcula el resultat,
 és a dir, quin ha de ser el valor d'`m` en funció dels valors d'`a` i de `b`. Com fer-ho?
@@ -37,13 +38,13 @@ executar una instrucció o una altra depenent d'una certa condició.
 En C++ la instrucció condicional s'escriu usant les paraules clau `if`
 i `else`, de la forma següent:
 
-```c++c++
+```c++
 if (⟨Condició⟩) {
     ⟨Instruccions_SÍ⟩
 } else {
     ⟨Instruccions_NO⟩
 }
-```
+````
 
 El funcionament és senzill: Si es compleix la ⟨Condició⟩, s'executa
 el bloc d'⟨Instruccions_SÍ⟩;
@@ -63,7 +64,7 @@ condicional sense `else`:
 Així, per calcular el màxim entre `a` i `b`, podem utilitzar la instrucció condicional
 de la forma següent:
 
-```c++c++
+```c++
     if (a > b) {
         m = a;
     } else {
@@ -79,7 +80,7 @@ serà el màxim entre els valors d'`a` i de `b`, tal com cal.
 
 El programa complet queda doncs així:
 
-```c++c++
+```c++
 #include <iostream>
 using namespace std;
 
@@ -111,7 +112,7 @@ mentre que `x = y;` (amb un sol igual) copia a `x` el valor de `y`.
 A continuació presentem algunes alternatives pel programa
 anterior. Podrieu diferenciar les correctes de les incorrectes?
 
-```c++c++
+```c++
 if (a >= b) {     // Fragment 1
     m = a;
 } else {
@@ -119,7 +120,7 @@ if (a >= b) {     // Fragment 1
 }
 ```
 
-```c++c++
+```c++
 if (a < b) {      // Fragment 2
     m = b;
 } else {
@@ -127,7 +128,7 @@ if (a < b) {      // Fragment 2
 }
 ```
 
-```c++c++
+```c++
 if (a <= b) {     // Fragment 3
     m = b;
 } else {
@@ -135,7 +136,7 @@ if (a <= b) {     // Fragment 3
 }
 ```
 
-```c++`c++
+````c++
 if (a > b) { // Fragment 4
 m = a;
 }
@@ -143,16 +144,16 @@ if (b >= a) {
 m = b;
 }
 
-````c++c++
+```c++
 
-```c++c++
+```c++
 if (a > b) {      // Fragment 5
     m = a;
 }
 if (a < b) {
     m = b;
 }
-````
+```c++``
 
 ## Mínim i màxim de dos enters
 
@@ -162,7 +163,7 @@ separats amb un espai.
 Aquesta n'és una possible solució (noteu que ja ometem sovint el
 preàmbul per estalviar espai):
 
-```c++c++
+```c++
 int main() {
     int a, b;
     cin >> a >> b;
@@ -176,13 +177,13 @@ int main() {
     }
     cout << minim << " " << maxim << endl;
 }
-```
+````
 
 Una altra possible implementació seria prescindir de les variables
 `maxim` i `minim` i escriure els valor d'`a` i `b`
 en l'ordre correcte:
 
-```c++c++
+```c++
 int main() {
     int a, b;
     cin >> a >> b;
@@ -203,7 +204,7 @@ que sempre escriu `a` i `b` en aquest ordre,
 suposant que `a` conté el mínim i que `b` conté el màxim.
 Si no fos, així, prèviament n'intercanvia els valors:
 
-```c++c++
+```c++
 int main() {
     int a, b;
     cin >> a >> b;
@@ -245,7 +246,7 @@ el compilador ens diria que aquí la `c` ja no existeix.
 Ara suposem que volem fer un programa que llegeixi quatre nombres,
 i que n'escrigui el màxim. Aquesta és una solució possible:
 
-```c++c++
+```c++
 int main() {
     int a, b, c, d;
     cin >> a >> b >> c >> d;
@@ -264,7 +265,7 @@ int main() {
 
 Fixem-nos en el primer `if`:
 
-```c++c++
+```c++
     if (b > a) {
         a = b;
     }
@@ -300,7 +301,7 @@ De fet, per fer que els codis quedin una mica més curts, C++ permet obviar
 les claus (`{` i `}`) dels blocs d'instruccions que contenen _una sola_
 instrucció. Així, enlloc d'escriure
 
-```c++c++
+```c++
     if (b > a) {
         a = b;
     }
@@ -308,13 +309,13 @@ instrucció. Així, enlloc d'escriure
 
 es pot escriure
 
-```c++c++
+```c++
     if (b > a) a = b;
 ```
 
 Aleshores, el programa anterior pren la forma següent:
 
-```c++c++
+```c++
 int main() {
     int a, b, c, d;
     cin >> a >> b >> c >> d;

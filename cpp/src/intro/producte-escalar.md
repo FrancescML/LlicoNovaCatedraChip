@@ -28,17 +28,18 @@ començar per 1, però en C++ comencen per zero.
 Donats els vectors d'enters `a` i `b` de la mateixa talla,
 aquesta senzilla funció retorna el seu producte escalar:
 
-```c++c++
+```c++
 // retorna el producte escalar de dos vectors de la mateixa talla
 double producte_escalar(const vector<double>& a, const vector<double>& b)
 {
-    int n = a.size();
-	double s = 0;
-	for (int i = 0; i < n; ++i) {
-		s += a[i] * b[i];
-	}
-	return s;
+int n = a.size();
+double s = 0;
+for (int i = 0; i < n; ++i) {
+s += a[i] \* b[i];
 }
+return s;
+}
+
 ```
 
 Per a fer-ho, els productes dels parells de `a` i de `b` es van acumulant
@@ -51,7 +52,7 @@ no val la pena copiar.
 
 Per provar que la funció anterior funciona bé la podríem invocar així
 
-```c++c++
+```c++
 cout << producte_escalar({1 ,4 -3}, {2, -1, -2}) << endl;
 ```
 
@@ -71,7 +72,7 @@ Si volem comprovar explícitament dins de la funció que els dos vectors tenen l
 mateixa talla, podríem incloure un condicional que, en cas negatiu, escrigués
 algun missatge d'error. Seria una cosa així:
 
-```c++c++
+```c++
 // retorna el producte escalar de dos vectors de la mateixa talla
 double producte_escalar(const vector<double>& a, const vector<double>& b)
 {
@@ -97,7 +98,7 @@ aquest booleà és cert, no fa res. En canvi, si és fals, atura el programa i
 indica la línia on s'ha aturat, per poder saber què ha passat. En aquest cas,
 faríem això:
 
-```c++c++
+```c++
 // retorna el producte escalar de dos vectors de la mateixa talla
 double producte_escalar(const vector<double>& a, const vector<double>& b)
 {
@@ -136,7 +137,7 @@ Volem fer una funció booleana que ens digui si dos vectors de $\mathbb{R}^3$
 són o no prependiculars. Com sabreu, dos vectors de l'espai `a`, `b` són
 perpendiculars si i només si el seu producte escalar és zero. Així, la funció quedaria
 
-```c++c++
+```c++
 bool son_perpendiculars(const vector<double>& a, const vector<double>& b)
 {
     return producte_escalar(a, b) == 0;

@@ -29,10 +29,12 @@ Fixeu-vos que dóna un error si la pila és buida.
 
 TODO:
 
-```
+```c++
 <svg id='svg-stack' class='figura' style='width: 100%; height: 400px; margin-bottom: 2em;'>
 </svg>
+
 <script type="text/coffeescript" src="stack.coffee"></script>
+
 ```
 
 ## Aplicacions

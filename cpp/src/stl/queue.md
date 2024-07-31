@@ -29,10 +29,12 @@ Fixeu-vos que dóna un error si la cua és buida.
 
 TODO:
 
-```
+```c++
 <svg id='svg-queue' class='figura' style='width: 100%; height: 450px; margin-bottom: 2em;'>
 </svg>
+
 <script type="text/coffeescript" src="queue.coffee"></script>
+
 ```
 
 ## Aplicacions
@@ -189,7 +191,7 @@ $(a + b)/b$. Aquests són els primers nivells de l'arbre de Calkin–Wilf:
 
 TODO:
 
-```
+```c++
 <svg id='svg-calkin-wilf-tree' class='figura' style='width: 100%; height: 280px; margin-bottom: 2em;'>
 </svg>
 <script type="text/coffeescript" src="calkin-wilf-tree.coffee"></script>
