@@ -15,7 +15,7 @@ i `b` (és a dir, el màxim d'`a` i `b`).
 Utilitzant com a patró un programa anterior, podem escriure un programa
 quasi complet com aquest:
 
-``c++`c++c++
+```c++
 #include <iostream>
 using namespace std;
 
@@ -26,8 +26,7 @@ int m; // Declaració de la variable de sortida
 /_ 🚧 _/ // Càlcul del resultat
 cout << m << endl; // Escriptura de la dada de sortida
 }
-
-````
+```
 
 El programa no està acabat, perquè encara no hem precisat com es calcula el resultat,
 és a dir, quin ha de ser el valor d'`m` en funció dels valors d'`a` i de `b`. Com fer-ho?
@@ -44,7 +43,7 @@ if (⟨Condició⟩) {
 } else {
     ⟨Instruccions_NO⟩
 }
-````
+```
 
 El funcionament és senzill: Si es compleix la ⟨Condició⟩, s'executa
 el bloc d'⟨Instruccions_SÍ⟩;

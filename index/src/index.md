@@ -9,13 +9,13 @@ hero:
     actions:
         - theme: brand
           text: Python
-          link: https://llicons.potipoti.org/python
+          link: https://lliçons.jutge.org/python
         - theme: brand
           text: C++
-          link: https://llicons.potipoti.org/cpp
+          link: https://lliçons.jutge.org/cpp
         - theme: brand
           text: Terminal
-          link: https://llicons.potipoti.org/terminal
+          link: https://lliçons.jutge.org/terminal
 ---
 
 <img src='./logos/lliçons.png' style='max-width: 12em; margin-bottom: 2em;'/>

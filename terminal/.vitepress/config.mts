@@ -29,15 +29,15 @@ export default defineConfig({
                 items: [
                     {
                         text: 'Lliçons',
-                        link: 'https://llicons.potipoti.org',
+                        link: 'https://lliçons.jutge.org',
                     },
                     {
                         text: 'Lliçons Python',
-                        link: 'https://llicons.potipoti.org/python',
+                        link: 'https://lliçons.jutge.org/python',
                     },
                     {
                         text: 'Lliçons C++',
-                        link: 'https://llicons.potipoti.org/cpp',
+                        link: 'https://lliçons.jutge.org/cpp',
                     },
                     {
                         text: 'Lliçons Terminal',
@@ -53,7 +53,7 @@ export default defineConfig({
         },
 
         footer: {
-            message: 'llicons.potipoti.org',
+            message: 'lliçons.jutge.org',
             copyright: `Copyright © ${year} Universitat Politècnica de Catalunya`,
         },
 

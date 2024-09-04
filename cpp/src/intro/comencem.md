@@ -12,7 +12,7 @@ dur a terme per poder executar-lo.
 Aquest és un petit programa complet en C++:
 
 ```c++
-/_ Calculadora de productes. _/
+/* Calculadora de productes. */
 
 #include <iostream>
 using namespace std;
@@ -177,7 +177,7 @@ El compilador LLVM (present als Mac) és compatible amb aquest.
 
 Per compilar un arxiu font de C++ cal utilitzar la comanda
 
-```c++bash
+```bash
 g++ -Wall -O2 -std=c++23 p1.cc -o p1.exe
 ```
 
@@ -210,7 +210,7 @@ el codi font i tornar-lo a compilar.
 Per executar un programa cal escriure el nom del seu arxiu executable precedit
 de `./`. Per exemple, per executar `p1.exe` cal escriure
 
-```c++bash
+```bash
 ./p1.exe
 ```
 
