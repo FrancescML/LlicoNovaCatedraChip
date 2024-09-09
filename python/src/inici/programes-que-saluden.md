@@ -36,7 +36,7 @@ Us volia dir que hi ha tres coses importants pel vostre aprenentatge:
 
 1. **Proveu els programes!** Per aprendre a programar, cal veure com funcionen els programes.
 
-1. **Experimenteu!** No tingueu por de provar coses noves.
+1. **Experimenteu!** No tingueu por de provar coses noves. No espatllareu res.
 
 1. **Feu els exercicis!** No us limiteu a llegir-ne la solució.
 
@@ -71,7 +71,7 @@ La primera instrucció, `nom = 'Mireia'`, és una **assignació** i serveix per 
 
 La segona instrucció, `print('Hola', nom)`, ja sabem que és una instrucció d'escriptura. Aquest cop, indica que cal escriure el text `'Hola'` seguit del valor desat a la variable `nom`. Fixeu-vos que per escriure un text cal posar-lo entre cometes, mentre que per escriure el valor d'una variable, cal escriure l'identificador de la variable, sense cometes.
 
-Dins d'una instrucció `print` es poden escriure diferents elements, separant-los amb comes. Quan s'escriuen, es separen amb espais. El `print` també escriu un salt de línia al final.
+Dins d'una instrucció `print` es poden escriure diferents elements, separant-los amb comes. Quan s'escriuen, apareixen separats per espais. El `print` també afageix un salt de línia al final.
 
 Per tot això, quan el programa s'executa, aquest escriu una línia que diu "~~Hola Mireia~~".
 
@@ -102,7 +102,7 @@ print('Hola', nom1, 'i', nom2)
 
 ## Salutació preguntant el nom
 
-Ara voldríem un programa que saludi de forma més personal a l'usuari. Per això, el programa li ha de preguntar primer el seu nom i després saludar-lo, usant aquell nom. El programa corresponent és aquest:
+Ara voldríem un programa mñes interatiu per tal que saludi de forma més personal a l'usuari. Per això, el programa li ha de preguntar primer el seu nom i després saludar-lo, usant aquell nom. El programa corresponent és aquest:
 
 ```python
 nom = input('Com et dius? ')
@@ -114,7 +114,7 @@ La segona instrucció és igual que abans però la primera és diferent. De segu
 <PyWeb :code="`nom = input('Com et dius? ')
 print('Hola', nom)`"  :height="250"/>
 
-Quan executeu el programa, una caixa de diàleg s'obrirà i us preguntarà el vostre nom, escriviu-lo. A continuació, a la finestra de la dreta podreu veure com el programa us saluda. De fet, a la finestra de la dreta apareix tota la conversa mantinguda. El text en negre és el que escriu l'ordinador, el text en blau el que escriu l'usuari.
+Quan executeu el programa, una caixa de diàleg s'obrirà i us preguntarà el vostre nom, escriviu-lo. A continuació, a la finestra de la dreta podreu veure com el programa escriu el missatge de salutació, fent servir el nom que li heu donat. De fet, al panell de la dreta apareix tota la conversa mantinguda. El text en negre és el que escriu l'ordinador, el text en blau el que escriu l'usuari.
 
 Així, si quan el programa em pregunta el meu nom li dic ~~Jordi~~, el programa em contesta ~~Hola Jordi~~. Visca! 🥳
 
@@ -128,12 +128,13 @@ nom = input('Com et dius? ')
 
 La segona instrucció d'aquest programa, com al de la secció anterior, escriu la salutació pertinent.
 
-La diferència important entre els dos programes és que, en el cas anterior el valor de la variable sempre era el mateix, mentre que ara, és el valor donat per l'usuari.
+Fixeu-vos que la diferència important entre els dos programes és que, en el cas anterior el valor de la variable sempre era el mateix, mentre que ara, és el valor donat per l'usuari. En programació és molt habitual haver de preguntar dades als usuaris (en diem **entrades**) i escriure resultats (en diem **sortides**) que depenen d'aquestes.
 
-Per tant, `print` i `input` permeten la interacció entre l'ordinador i l'usuari: `print` permet escriure, i `input` permet llegir. Fixeu-vos que les instruccions de lectura i d'escriptura adopten el punt de vista de l'ordinador:
+Com heu vist, `print` i `input` permeten la interacció entre l'ordinador i l'usuari: `print` permet escriure, i `input` permet llegir. Fixeu-vos que les instruccions de lectura i d'escriptura adopten el punt de vista de l'ordinador:
 
--   En una instrucció de lectura, _l'ordinador llegeix_ una informació que _l'usuari escriu_ (segurament al teclat).
--   En una instrucció d'escriptura, _l'ordinador escriu_ una informació que _l'usuari llegeix_ (segurament a la pantalla).
+-   En una instrucció de lectura, _l'ordinador llegeix_ una informació que _l'usuari escriu_ (segurament al teclat). Aquesta informació és una dada d'_entrada_.
+
+-   En una instrucció d'escriptura, _l'ordinador escriu_ una informació que _l'usuari llegeix_ (segurament a la pantalla). Aquesta informació és una dada de _sortida_.
 
 ## Exercici
 
@@ -152,6 +153,6 @@ print('Hola', nom1, 'i', nom2)`
 :height="250"
 />
 
-Espero que no us hagi costat gaire! Quan tingueu dominat aquest tema, feu clic a la pestanya de sota per anar a la següent lliçó.
+Espero que no us hagi costat gaire! Quan tingueu dominat aquest tema, feu clic a la pestanya de sota per anar a la lliçó següent.
 
 <Autors autors="jpetit"/>

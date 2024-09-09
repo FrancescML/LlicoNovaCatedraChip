@@ -50,11 +50,11 @@ turtle.left(90)
 
 El traçat del rectangle anterior s'ha fet utilitzant **gràfics de tortuga**. La tortuga és una animaló virtual que es passeja per la vostra pantalla amb un llapis enganxat a la seva cua i que obeeix a les instruccions de moviment que se li donen per tal de dibuixar mentre es desplaça endavant i endarrera o gira a dreta i a esquerra.
 
-Al principi, la tortuga es troba al centre de l'àrea de dibuix mirant cap a l'est. Si li diem d'avançar 100 unitats, la tortuga es desplaça 100 unitats cap a l'est, marcant el seu rastre amb seu el llapis. Si li diem ara de girar 90 graus a l'esquerra i avançar 50 unitats més, la tortuga extendrà el seu traç tot pintant un angle.
+Al principi, la tortuga es troba al centre de l'àrea de dibuix mirant cap a la dreta. Si li diem d'avançar 100 unitats, la tortuga es desplaça 100 unitats cap a la dreta, marcant el seu rastre amb seu el llapis. Si li diem ara de girar 90 graus a l'esquerra i avançar 50 unitats més, la tortuga extendrà el seu traç tot pintant un angle.
 
 A l'àrea de dibuix, el triangle representa la posició de la tortuga i la seva direcció. Els vells temps de Logo on la tortuga era un simpàtic gràfic de 8 bits ja han caigut en el trist oblit del passat...
 
-Per utilitzar la tortuga, haurem de recórrer a un mòdul estàndard de Python anomenat `turtle`. En Python, un mòdul conté operacions que algú ja ha escrit per tal que nosaltres les puguem aprofitar. Python ofereix molts mòduls que enriqueixen les possibilitats del llenguatge: Hi ha mòduls per a gràfics, per a comunicació a la xarxa, per música, per matemàtiques, intel·ligènca artificial...
+Per utilitzar la tortuga, haurem de recórrer a un mòdul estàndard de Python anomenat `turtle`. En Python, un mòdul conté operacions que algú ja ha escrit per tal que nosaltres les puguem aprofitar. Python ofereix molts mòduls estàndards que enriqueixen les possibilitats del llenguatge: A més, es poden instal·lar molts més mòduls per a gràfics, per a comunicació a la xarxa, per música, per matemàtiques, intel·ligènca artificial...
 
 Per utilitzar les funcionalitats d'un mòdul, primer cal importar-lo. Importar un mòdul simplement vol dir que es vol usar aquell mòdul. Per això, el programa comença amb la instrucció `import turtle`, que és la que importa el mòdul de la tortuga. A continuació, es poden utilitzar les operacions del mòdul, prefixant-les amb el nom del mòdul i un punt. Així `turtle.forward(amplada)` invoca l'acció `forward` del mòdul `turtle` que serveix per moure la tortuga endavant `amplada` unitats . De forma semblant, `turtle.left(90)` invoca la operació de girar la tortuga 90 graus cap a l'esquerra.
 

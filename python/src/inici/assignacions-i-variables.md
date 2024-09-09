@@ -190,7 +190,7 @@ Considerem ara un petit problema: Tenim dues variables, diguem-ne `a` i `b` que 
 
 Penseu-ho una mica abans de continuar. 🧠
 
-Segurament, la primera aproximació és dir alguna com la següent: _Com que `a` ha de valer `b`, faré que `a` prengui `b` per valor. I com que `b` ha de valer `a`, faré que `b` prengui `a` per valor._ Això condueix en aquest fragment:
+Segurament, la primera aproximació és dir alguna cosa com la següent: _Com que `a` ha de valer `b`, faré que `a` prengui `b` per valor. I com que `b` ha de valer `a`, faré que `b` prengui `a` per valor._ Això condueix en aquest fragment:
 
 ```python
 a = b
@@ -201,7 +201,7 @@ però, de seguida es veu la pifia, oi? Amb la primera assignació, aconseguim qu
 
 Evidentment, per simetria, girar l'ordre de les instruccions tampoc resol l'error: Quan transferim una variable en una altra, perdem el valor de la variable assignada.
 
-La solució consisteix en fer una còpia del valor abans que es perdi. Així, podem copiar, per exemple, el valor inicial d'`a` en una variable `c`, copiar `b` sobre `a` i, ara donar a `b` el valor d'inicial d'`a`, que ja no és en `a` però que hem tingut l'astúcia de copiar primer en `c`:
+La solució consisteix en fer una còpia del valor abans que es perdi. Així, podem copiar, per exemple, el valor inicial d'`a` en una nova variable `c`, copiar `b` sobre `a` i, ara donar a `b` el valor d'inicial d'`a`, que ja no és en `a` però que hem tingut l'astúcia de copiar primer en `c`:
 
 ```python
 c = a
@@ -209,7 +209,7 @@ a = b
 b = c
 ```
 
-Aquesta és doncs la tècnica de la variable auxiliar per intercanviar el valor de dues variables. Fixeu-vos que el programa és anàleg als passos que feu a la vida real quan heu d'intercanviar de lloc dos objectes pesats: primer moveu e primer en algun lloc temporal, després poseu el segon al lloc del primer i, finalment, moveu el primer (que era a al lloc temporal) al lloc del segon.
+Aquesta és doncs la tècnica de la variable auxiliar per intercanviar el valor de dues variables. Fixeu-vos que el programa és anàleg als passos que feu a la vida real quan heu d'intercanviar de lloc dos objectes pesats: primer moveu el primer en algun lloc temporal, després poseu el segon al lloc del primer i, finalment, moveu el primer (que era a al lloc temporal) al lloc del segon.
 
 :::info Exercici
 Escriviu un fragment de codi que roti el valor de tres variables: Si al principi `a` val _A_, `b` val _B_ i `c` val _C_, com fer que al final `a` valgui _C_, `b` valgui _A_ i `c` valgui _B_?
