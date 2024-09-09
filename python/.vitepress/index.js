@@ -57,6 +57,10 @@ export const index = [
                 text: 'Visual Studio Code',
                 link: '/eines/vscode',
             },
+            {
+                text: 'Vídeos Windows',
+                link: '/eines/videos-windows',
+            },
         ],
     },
     {
