@@ -6,7 +6,6 @@ A les lliçons anteriors hem presentat i analitzat diversos algorismes d'ordenac
 
 Aquesta lliçó mostra com utilitzar aquestes funcions predefinides d'ordenació i com modificar-ne el seu comportament per alguns casos d'ús habituals.
 
-
 ## La funció `sorted` i el mètode `sort`
 
 Donada una llista `L`, `sorted(L)` retorna la llista ordenada de petit a gran. `L.sort()` ordena la llista. Fixeu-vos que `sorted` és una funció predefinida que retorna una nova llista ordenada, tot mantenint la llista original mentre que `sort` és un mètode de les llistes que modifica la llista sobre la qual s'aplica:
@@ -15,7 +14,7 @@ Donada una llista `L`, `sorted(L)` retorna la llista ordenada de petit a gran. `
 >>> L = [6, -2, 4, -3, 2, 4, 6, 9, 1]
 >>> sorted(L)
 [-3, -2, 1, 2, 4, 4, 6, 6, 9]
->>> L 
+>>> L
 [6, -2, 4, -3, 2, 4, 6, 9, 1]
 >>> L.sort()
 >>> L
@@ -34,8 +33,7 @@ Per defecte, `sorted` i `sort` ordenen creixentment. Per indicar que es vol orde
 
 Això hauria de ser més eficient que ordenar de petit a gran primer i revessar després (amb `reversed` o `reverse`).
 
-
-## Ordenació a partir d'una funció 
+## Ordenació a partir d'una funció
 
 A vegades cal ordenar els element d'una llista a través d'una funció sobre els seus elements i no pas amb els seus elements directament. Amb el paràmetre `key` es pot indicar quina funció aplicar a cada element per obtenir-ne el seu ordre.
 
@@ -59,8 +57,7 @@ def dist2(p: tuple[float, float]) -> float:
 [(0, 0), (1, 1), (5, 1), (7, 2), (10, 2)]
 ```
 
-Per estalviar càlculs innecessaris, no es calcula l'arrel quadrada del mòdul del punt, total, la funció arrel és monòtona. 
-
+Per estalviar càlculs innecessaris, no es calcula l'arrel quadrada del mòdul del punt, total, la funció arrel és monòtona.
 
 ## Ordenació de textos
 
@@ -94,12 +91,12 @@ Tot i això, els accents encara porten problemes:
 Com que l'ordenació amb accents i altres símbols com ces trencades, enyes,... depenen de les regles ortogràfiques de la llengua que es vulgui usar, Python ofereix la funció `locale.strxfrm` que transforma un text a un text equivalent que es pot utilitzar en comparacions segons l'idioma local definit a les preferències de l'ordinador:
 
 ```python
-import locale 
+import locale
 
 >>> sorted('Àgata Abel Èric Enric'.split(), key=locale.strxfrm)
-['Abel', 'Enric', 'Àgata', 'Èric']  # 👍
+['Abel', 'Àgata', 'Enric', 'Èric']  # 👍
 ```
 
+Si no us funciona, potser no teniu el vostre llenguatge local configurat a l'ordinador. En aquest cas, podeu provar a canviar la configuració de la vostra localització amb `locale.setlocale(locale.LC_COLLATE, 'ca_ES.UTF-8')`.
 
-<Autors autors="jpetit"/> 
-
+<Autors autors="jpetit"/>

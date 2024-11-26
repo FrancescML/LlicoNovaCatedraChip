@@ -1,16 +1,14 @@
-
 # Aplicació: Operacions matemàtiques sobre matrius
 
 <img src='./mates.png' style='height: 8em; float: right; margin: 2em 0 1em 1em;'/>
 
 Aquesta lliçó presenta alguns exemples d'operacions matemàtiques sobre matrius. En particular, es considera aquestes operacions:
 
-- Sumar matrius
-- Trobar la suma per files més gran
-- Transposar una matriu quadrada
-- Comprovar si una matriu quadrada és simètrica
-- Producte de matrius
-
+-   Sumar matrius
+-   Trobar la suma per files més gran
+-   Transposar una matriu quadrada
+-   Comprovar si una matriu quadrada és simètrica
+-   Producte de matrius
 
 ## Tipus de dades
 
@@ -24,7 +22,6 @@ Matriu: TypeAlias = list[Fila]
 ```
 
 Totes les matrius d'aquesta secció seran de nombres reals. Per simplicitat, també entendrem que les matrius amb les que treballarem tenen com a mínim una fila (encara que sigui buida), ja que si no no té sentit parlar de columnes i les crides del tipus `len(matriu[0])` provocarien un error.
-
 
 ## Suma de matrius
 
@@ -49,23 +46,20 @@ def suma(A: Matriu, B: Matriu) -> Matriu:
 
 Aquí s'ha expressat el resultat amb llistes per comprensió aniuades.
 
-
 ## Trobar la suma per files més gran
 
 <img src='./suma-fila.png' style='height: 10em; float: right; margin: .5em .5em 1em .5em;'/>
 
-
-
 Considerem que cal calcular el màxim de les sumes de les files d'una matriu. Per exemple, per la matriu del costat cal retornar 5.
 
- Aquesta és una primera implementació utilitzant les operacions bàsiques d'accés a les matrius:
+Aquesta és una primera implementació utilitzant les operacions bàsiques d'accés a les matrius:
 
 ```python
 def maxima_suma_fila(M: Matriu) -> float:
     """Retorna el màxim de les sumes de les files d'una matriu no buida M."""
 
-    m = len(A)       # nombre de files
-    n = len(A[0])    # nombre de columnes
+    m = len(M)       # nombre de files
+    n = len(M[0])    # nombre de columnes
 
     for i in range(m):
         # sumar els elements de la fila actual
@@ -89,8 +83,6 @@ def maxima_suma_fila(M: Matriu) -> float:
     return max([sum(fila) for fila in M])
 ```
 
-
-
 ## Transposar una matriu quadrada
 
 <img src='./transposa.png' style='height: 9em; float: right; margin: 2em 0 1em 1em;'/>
@@ -111,7 +103,6 @@ def transposar(M: Matriu) -> None:
 
 Fixeu-vos que, en aquest cas, hem fet una acció que transposa la matriu que se li passa com a paràmetre. També es podria escriure una funció que, donada una matriu, retornés un altra matriu que és la transposta de la primera:
 
-
 ```python
 def transposta(M: Matriu) -> Matriu:
     """Retorna la transposta de la matriu quadrada M."""
@@ -120,9 +111,7 @@ def transposta(M: Matriu) -> Matriu:
     return [[M[j][i] for j in range(n)] for i in range(n)]
 ```
 
-
 **Exercici:** Feu una funció que transposi matrius rectangulars.
-
 
 ## Comprovar si una matriu quadrada és simètrica
 
@@ -148,7 +137,6 @@ def es_simetrica(M: Matriu) -> bool:
 
 El bucle de les `i` recorre cada índex fila, i el bucle de les `j` recorre cada elements d'aquella fila a la dreta de la diagonal. Cada parella d'elements simètrics es compara (com a molt) un cop. Els elements de la diagonal no es miren. Així s'eviten fer comparacions redundants.
 
-
 ## Producte de matrius
 
 <img src='./producte-matrius.png' style='height: 9em; float: right; margin: .5em .5em 1em .5em;'/>
@@ -156,7 +144,7 @@ El bucle de les `i` recorre cada índex fila, i el bucle de les `j` recorre cada
 En matemàtiques, donades dues matrius $A$ i $B$, el primer que necessitem per definir el producte $AB$ és que la matriu $A$ tingui exactament el mateix nombre de columnes que el nombre de files de la matriu $B$. En aquest cas, si $A$ és una matriu $m \times n$ i $B$ una matriu $n \times p$, el seu producte serà una matriu $C$ de mida $m \times p$ tal que el seu element $c_{ij}$ (element que es troba a la fila $i$ i a la columna $j$ de $C$) es calcula com
 
 $$
-c\_{ij} = \sum\_{k=1}^n a\_{ik}b\_{kj}.
+c_{ij} = sum_{k=1}^n a_{ik}b_{kj}.
 $$
 
 Per començar, concentrem-nos al producte de matrius quadrades: suposem que $A$ i $B$ són matrius $n\times n$.
@@ -212,7 +200,5 @@ def producte(A: Matriu, B: Matriu) -> Matriu:
         for i in range(m)
     ]
 ```
-
-
 
 <Autors autors="jpetit rafah"/>
