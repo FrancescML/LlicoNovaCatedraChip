@@ -394,4 +394,3 @@ Per provar el programa, podeu utilitzar els següents jocs de proves:
 -   Joc de proves 4: [entrada](./4.inp.txt) / [sortida](./4.out.txt)
 
 <Autors autors="jpetit"/>
-```
