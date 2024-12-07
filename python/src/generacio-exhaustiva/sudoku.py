@@ -1,6 +1,5 @@
 """Resolució de Sudokus"""
 
-
 from dataclasses import dataclass
 from typing import TypeAlias
 from yogi import read
@@ -67,16 +66,16 @@ def desmarcar_casella(s: Sudoku, i: int, j: int, v: int):
 def regio(i: int, j: int) -> int:
     """Retorna l'índex de la regió on pertany la casella i,j."""
 
-    return 3*(i//3) + j//3
+    return 3 * (i // 3) + j // 3
 
 
 def seguent(i: int, j: int) -> tuple[int, int]:
     """Retorna la següent casella de la casel·la i,j."""
 
-    si, sj = i, j + 1
-    if sj == 9:
-        return si + 1, 0
-    return si, sj
+    if j == 8:
+        return i + 1, 0
+    else:
+        return i, j + 1
 
 
 def legal(s: Sudoku, i: int, j: int, v: int) -> bool:
@@ -87,7 +86,7 @@ def legal(s: Sudoku, i: int, j: int, v: int) -> bool:
 
 def resol_rec(s: Sudoku, i: int, j: int) -> bool:
     """
-    Resol el sudoku s recursivament sabent que és legal fins a la posició i,j 
+    Resol el sudoku s recursivament sabent que és legal fins a la posició i,j
     (no inclosa). Indica si s'ha trobat o no solució.
     """
 
@@ -123,8 +122,8 @@ def main() -> None:
     if resol(s):
         escriure(s)
     else:
-        print('Sense solució')
+        print("Sense solució")
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()
