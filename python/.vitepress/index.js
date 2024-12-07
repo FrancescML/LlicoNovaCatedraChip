@@ -400,20 +400,6 @@ export const index = [
         ],
     },
     {
-        text: 'Conjunts i diccionaris',
-        collapsed: true,
-        items: [
-            {
-                text: 'Conjunts',
-                link: '/conjunts-i-diccionaris/conjunts',
-            },
-            {
-                text: 'Diccionaris',
-                link: '/conjunts-i-diccionaris/diccionaris',
-            },
-        ],
-    },
-    {
         text: 'Generació exhaustiva',
         collapsed: true,
         items: [
@@ -432,6 +418,20 @@ export const index = [
             {
                 text: 'Resolució de Sudokus',
                 link: '/generacio-exhaustiva/sudoku',
+            },
+        ],
+    },
+    {
+        text: 'Conjunts i diccionaris',
+        collapsed: true,
+        items: [
+            {
+                text: 'Conjunts',
+                link: '/conjunts-i-diccionaris/conjunts',
+            },
+            {
+                text: 'Diccionaris',
+                link: '/conjunts-i-diccionaris/diccionaris',
             },
         ],
     },
