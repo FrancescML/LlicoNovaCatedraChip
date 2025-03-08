@@ -124,7 +124,7 @@ KeyError: 9
 >>> nombres[2] = 'dos'
 ```
 
-El mètode `.keys()` aplicat a un diccionari retorna totes les claus que conté. Igualment, el mètode `.values()` retorna totes les claus que conté. A més, el mètode `.items()` retorna totes les tuples de parells claus-valors:
+El mètode `.keys()` aplicat a un diccionari retorna totes les claus que conté. Igualment, el mètode `.values()` retorna tots els valors que conté. A més, el mètode `.items()` retorna totes les tuples de parells claus-valors:
 
 ```python
 >>> nombres.keys()
@@ -241,7 +241,7 @@ Es poden copiar diccionaris fàcilment amb el mètode `copy`:
 {1: 1, 2: 2}
 ```
 
-Però atenció, si les claus són objectes, el diccionaris també en guarden una referència:
+Però atenció, si els valors són objectes, el diccionaris també en guarden una referència:
 
 ```python
 >>> llista = [1, 2, 3]

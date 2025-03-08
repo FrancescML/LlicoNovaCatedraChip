@@ -33,3 +33,9 @@ publish-potipoti:
 	scp -r cpp/.vitepress/dist jpetit@cs:www/llicons/cpp
 	scp -r terminal/.vitepress/dist jpetit@cs:www/llicons/terminal
 	ssh jpetit@cs "chmod -R a+rX www/llicons"
+
+install:
+	(cd index ; bun install)
+	(cd python ; bun install)
+	(cd cpp ; bun install)
+	(cd terminal ; bun install)
