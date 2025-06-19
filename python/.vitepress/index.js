@@ -493,4 +493,14 @@ export const index = [
             },
         ],
     },
+    {
+        text: 'UPC Python Cookbook',
+        collapsed: true,
+        items: [
+            {
+                text: 'Índex',
+                link: '/upc-python-cookbook/',
+            },
+        ],
+    },
 ]

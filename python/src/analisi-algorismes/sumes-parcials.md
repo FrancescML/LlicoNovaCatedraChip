@@ -4,7 +4,6 @@
 
 En aquesta lliçó veurem diferents problemes que involucren trobar la suma d'un nombre consecutiu d'elements d'una llista, i discutirem diferents tècniques per resoldre'ls, tenint en compte la seva complexitat algorísmica, és a dir, el nombre aproximat de passos necessaris per a dur a terme l'algorisme en funció del nombre de dades a tractar.
 
-
 ## Suma dels elements d'una subllista donades la primera i l'última posició
 
 Suposem que tenim una llista `L` d'enters de llargada `n` i ens demanen trobar la suma de tots els elements de `L` que es troben entre la posició `a` i la posició `b`. Es tracta d'un problema prou simple, ja que podem simplement recórrer els elements de `L` entre `a` i `b` i anar acumulant la seva suma. Així, les següents línies de codi resoldrien el problema:
@@ -51,10 +50,9 @@ for a in tokens(int):
 	print(f'La suma del elements entre {a} i {b} és {s}')
 ```
 
-
 ## Màxima suma parcial d'una llista
 
-Considerem qua ara, donada una llista d'enters `L`,  volem trobar quins són els índexs `a` i `b` tals que la suma parcial entre les posicions `a` i `b` és màxima. Per exemple, donada la llista `L = [-3, 2, -1, 3, 4, -5, 1]`, la subllista amb la suma parcial més gran és `[2, -1, 3, 4]`, que correspondria a `a = 1`, `b = 4`, i suma 8.
+Considerem qua ara, donada una llista d'enters `L`, volem trobar quins són els índexs `a` i `b` tals que la suma parcial entre les posicions `a` i `b` és màxima. Per exemple, donada la llista `L = [-3, 2, -1, 3, 4, -5, 1]`, la subllista amb la suma parcial més gran és `[2, -1, 3, 4]`, que correspondria a `a = 1`, `b = 4`, i suma 8.
 
 Com que volem la suma parcial màxima, una possible manera de procedir és calcular totes les sumes parcials i quedar-se amb la més gran. Aquesta idea és el que hem fet servir per escriure el code següent:
 
@@ -119,6 +117,5 @@ for b in range(1, n):
 ```
 
 Ara, tot el programa té un cost lineal en $n$, és a dir, $O(n)$.
-
 
 <Autors autors="jpetit rafah"/>
