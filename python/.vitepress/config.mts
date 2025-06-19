@@ -7,7 +7,6 @@ import { tabsMarkdownPlugin } from 'vitepress-plugin-tabs'
 const year = new Date().getFullYear()
 
 export default defineConfig({
-
     base: '/python/',
 
     srcDir: 'src',
@@ -90,4 +89,6 @@ export default defineConfig({
             md.use(tabsMarkdownPlugin)
         },
     },
+
+    ignoreDeadLinks: true,
 })

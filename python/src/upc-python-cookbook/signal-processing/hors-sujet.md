@@ -21,7 +21,7 @@ plt.xlabel('t (in s)')
 ```
 
 <center>
-    <img src="fs_2kHz.png" alt="Sampling frequency of 2kHz", width="500"/>
+    <img src="./fs_2kHz.png" alt="Sampling frequency of 2kHz", width="500"/>
 </center>
 
 As the plot depicts, the interval $[0, 10]$ comprises two full periods of $x(t)$ given that $T_0 = \frac{1}{f_0} = 5$.
@@ -83,7 +83,7 @@ newax.set_xlim(ax.get_xlim())
 ```
 
 <center>
-    <img src="fs_2Hz.png" alt="Sampling frequency of 2Hz" width="500" />
+    <img src="./fs_2Hz.png" alt="Sampling frequency of 2Hz" width="500" />
 </center>
 
 If we now repeat this procedure for different sampling frequencies, $f_s \in \\{0.4, 2, 8\\}Hz$ we obtain the following results:
@@ -97,7 +97,7 @@ If we now repeat this procedure for different sampling frequencies, $f_s \in \\{
 which can be graphically represented by means of [this code](/programes/sampling_frequency.py):
 
 <center>
-    <img src="fs.png" alt="Different sampling frequencies"/>
+    <img src="./fs.png" alt="Different sampling frequencies"/>
 </center>
 
 In these examples, note that the highest discrete frequency corresponds to $F_0 = 0.4$ since it is the closest to $F_0 = 0.5$ for which $\cos[2\pi\frac{1}{2}n] = [\underline{1}, -1, 1, -1, 1, -1, \dots]$.

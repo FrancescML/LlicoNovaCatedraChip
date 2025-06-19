@@ -3,7 +3,7 @@
 The [**`scipy.io.wavfile`**](https://docs.scipy.org/doc/scipy/reference/tutorial/io.html#module-scipy.io.wavfile) library allows us to deal with `WAV` files. For instance, given the following recording of the note _Do_,
 
 <audio controls>
-  <source src=".//upc-python-cookbook/signal-processing/do.wav" type="audio/wav">
+  <source src="./do.wav" type="audio/wav">
 Your browser does not support the audio element.
 </audio>
 

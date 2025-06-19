@@ -176,7 +176,7 @@ These variables can be customised in the [`stft()`](https://docs.scipy.org/doc/s
 Moreover, the parameter `fs` sets the sampling frequency used in the time signal and `window` allows to specify the window $$v[n]$$ which defaults to the Hanning window. In order to explore the capabilities of the STFT, we will load the following 5 second recording of two consecutive piano chords
 
 <audio controls>
-  <source src=".//upc-python-cookbook/signal-processing/chords.wav" type="audio/wav">
+  <source src="./chords.wav" type="audio/wav">
 Your browser does not support the audio element.
 </audio>
 
