@@ -307,7 +307,7 @@ export const index = [
         items: [
             {
                 text: 'Transparències',
-                link: '/invariants/invariants.pptx',
+                link: '/invariants',
             },
         ],
     },

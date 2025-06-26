@@ -1,6 +1,5 @@
 # Condicionals
 
-
 <img src='./if-then-else.png' style='height: 10em; float: right; margin: 2em 0 1em 1em;'/>
 
 Aquest lliçó presenta la instrucció condicional, que permet
@@ -9,7 +8,6 @@ depenent de si es dóna o no una determinada condició.
 Gràcies a les instruccions condicionals, podem escriure programes
 que prenguin decisions.
 En Python aquesta instrucció s'escriu amb les paraules clau `if then else`.
-
 
 ## Màxim de dos enters
 
@@ -56,7 +54,7 @@ altrament, s'executa el bloc d'⟨Instruccions_NO⟩.
 El diagrama de flux següent mostra el funcionament de la instrució
 condicional:
 
-<MyFlowChart src="flow-if-then-else.ts"/>
+<MyFlowChart src="./flow-if-then-else.ts"/>
 
 La part de l'`else`
 és opcional: si no es proporciona, no es farà res quan no es compleixi la condició.
@@ -70,7 +68,7 @@ if ⟨Condició⟩:
 El diagrama de flux següent mostra el funcionament de la instrució
 condicional sense `else`:
 
-<MyFlowChart src="flow-if-then.ts"/>
+<MyFlowChart src="./flow-if-then.ts"/>
 
 Fixeu que les instruccions ⟨Instruccions_SÍ⟩ i ⟨Instruccions_NO⟩ s'escriuen **indentades**, és a dir,
 més a la dreta (típicament amb quatre espais). D'aquest forma l'ordinador pot saber quan comencen i quan acaben
@@ -116,14 +114,14 @@ En aquest programa hem escrit la condició de la instrucció condicional utilitz
 `<` (més petit que), `>=` (més gran o igual que), `<=` (més petit o igual que),
 `==` (igual que) i `!=` (diferent de). Aquests operadors s'anomenen **operadors relacionals** i es dónen a la taula següent:
 
-operador | significat
----------|------------
-`==`      | igual
-`!=`      | diferent
-`<`      | menor estricte
-`>`      | major estricte
-`<=`      | menor o igual
-`>=`      | major o igual
+| operador | significat     |
+| -------- | -------------- |
+| `==`     | igual          |
+| `!=`     | diferent       |
+| `<`      | menor estricte |
+| `>`      | major estricte |
+| `<=`     | menor o igual  |
+| `>=`     | major o igual  |
 
 👁️
 Fixeu-vos que `x == y` (amb dos iguals)
@@ -133,12 +131,10 @@ mentre que `x = y` (amb un sol igual) assigna a `x` el valor de `y`. No els conf
 👁️
 Alguns editors mostren símbols com ara `<=` com a `≤`, perquè estèticament és més plaent. Igualment cal picar <kbd>&lt;</kbd><kbd>=</kbd>.
 
-
 ## Exercici
 
 A continuació presentem algunes alternatives pel programa
 anterior. Podrieu diferenciar les correctes de les incorrectes?
-
 
 ```python
 # Fragment 1: Correcte o incorrecte?
@@ -148,7 +144,6 @@ else:
     m = b
 ```
 
-
 ```python
 # Fragment 2: Correcte o incorrecte?
 if a < b:
@@ -157,7 +152,6 @@ else:
     m = a
 ```
 
-
 ```python
 # Fragment 3: Correcte o incorrecte?
 if a <= b:
@@ -165,7 +159,6 @@ if a <= b:
 else:
     m = a
 ```
-
 
 ```python
 # Fragment 4: Correcte o incorrecte?
@@ -186,7 +179,6 @@ if a < b:
 ::: details Piqueu per veure la solució
 Tots són correctes, excepte el fragment 5. Aquest fragment no és correcte perquè quan `a` és igual que `b` no s'executa cap de les dues instruccions i, per tant, `m` no queda definit.
 :::
-
 
 ## Mínim i màxim de dos enters
 
@@ -224,7 +216,6 @@ else:
 Per a un programa tan curt com aquest, qualsevol de les solucions és
 igualment acceptable, però en programes un xic més llargs sovint és convenient
 no barrejar els càlculs amb l'escriptura dels resultats.
-
 
 ## Màxim de quatre enters
 
@@ -268,7 +259,6 @@ En aquesta solució no hem usat explícitament cap variable per guardar la
 sortida, sinó que hem aprofitat una de les variables d'entrada per fer-ho
 (`a`, concretament). Això és lícit en aquest cas, perquè el valor original de les
 variables d'entrada no ens cal guardar-lo. En programes un xic més llargs això pot ser detrimental.
-
 
 ## Condicionals aniuats
 
@@ -332,9 +322,6 @@ else:
     ⟨Instruccions_SINÓ⟩
 ```
 
-<MyFlowChart src="flow-if-elif.ts"/>
-
-
-
+<MyFlowChart src="./flow-if-elif.ts"/>
 
 <Autors autors="jpetit roura"/>
