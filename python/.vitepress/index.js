@@ -317,7 +317,7 @@ export const index = [
         items: [
             {
                 text: 'Transparències',
-                link: '/analisi-algorismes/analisi-algorismes.pptx',
+                link: '/analisi-algorismes',
             },
             {
                 text: "Sumes parcials d'una llista",
