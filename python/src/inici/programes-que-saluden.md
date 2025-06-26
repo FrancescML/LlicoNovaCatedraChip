@@ -102,7 +102,7 @@ print('Hola', nom1, 'i', nom2)
 
 ## Salutació preguntant el nom
 
-Ara voldríem un programa mñes interatiu per tal que saludi de forma més personal a l'usuari. Per això, el programa li ha de preguntar primer el seu nom i després saludar-lo, usant aquell nom. El programa corresponent és aquest:
+Ara voldríem un programa més interatiu per tal que saludi de forma més personal a l'usuari. Per això, el programa li ha de preguntar primer el seu nom i després saludar-lo, usant aquell nom. El programa corresponent és aquest:
 
 ```python
 nom = input('Com et dius? ')
@@ -130,7 +130,12 @@ La segona instrucció d'aquest programa, com al de la secció anterior, escriu l
 
 Fixeu-vos que la diferència important entre els dos programes és que, en el cas anterior el valor de la variable sempre era el mateix, mentre que ara, és el valor donat per l'usuari. En programació és molt habitual haver de preguntar dades als usuaris (en diem **entrades**) i escriure resultats (en diem **sortides**) que depenen d'aquestes.
 
-Com heu vist, `print` i `input` permeten la interacció entre l'ordinador i l'usuari: `print` permet escriure, i `input` permet llegir. Fixeu-vos que les instruccions de lectura i d'escriptura adopten el punt de vista de l'ordinador:
+Com heu vist, `print` i `input` permeten la interacció entre l'ordinador i l'usuari:
+
+-   `print` permet escriure,
+-   `input` permet llegir.
+
+Fixeu-vos que les instruccions de lectura i d'escriptura adopten el punt de vista de l'ordinador:
 
 -   En una instrucció de lectura, _l'ordinador llegeix_ una informació que _l'usuari escriu_ (segurament al teclat). Aquesta informació és una dada d'_entrada_.
 
@@ -153,6 +158,6 @@ print('Hola', nom1, 'i', nom2)`
 :height="250"
 />
 
-Espero que no us hagi costat gaire! Quan tingueu dominat aquest tema, feu clic a la pestanya de sota per anar a la lliçó següent.
+Espero que no us hagi costat gaire! Quan tingueu dominat aquest tema, feu clic a la pestanya de sota per anar a la lliçó següent, on començarem a veure com fer càlculs amb Python.
 
 <Autors autors="jpetit"/>

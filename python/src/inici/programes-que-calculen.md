@@ -63,7 +63,7 @@ p = x * y
 print('El producte és', p)
 ```
 
-El programa està format doncs per quatre instruccions. Com sabeu, cada instrucció en Python s'escriu en una línia i l'ordinador executa les instruccions seqüencialment: una rera l'altra d'adalt a baix.
+El programa està format doncs per quatre instruccions. Com sabeu, cada instrucció en Python s'escriu en una línia i l'ordinador executa les instruccions seqüencialment: una rera l'altra d'adalt a baix. És important recalcar que una instrucció no comença fins que l'anterior no hagi acabat.
 
 Per tal de poder entendre què fa aquest programa, donem una descripció informal de cada instrucció, en l'ordre en què es duen a terme:
 
@@ -107,5 +107,7 @@ s = x + y + z\n
 \# escriptura de la dada de sortida
 print('La seva suma és', s)`"
 :height="400"/>
+
+Anau a la següent lliçó quan hàgiu acabat, farem dibuixos! Si us costa, no patiu, podeu tornar a llegir aquesta lliçó i fer proves amb el programa que hem vist.
 
 <Autors autors="jpetit"/>
