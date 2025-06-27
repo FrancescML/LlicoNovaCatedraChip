@@ -306,8 +306,8 @@ export const index = [
         collapsed: true,
         items: [
             {
-                text: 'Transparències',
-                link: '/invariants',
+                text: 'Invariants',
+                link: '/invariants/index',
             },
         ],
     },
@@ -316,8 +316,8 @@ export const index = [
         collapsed: true,
         items: [
             {
-                text: 'Transparències',
-                link: '/analisi-algorismes',
+                text: "Anàlisi d'algorismes",
+                link: '/analisi-algorismes/index',
             },
             {
                 text: "Sumes parcials d'una llista",

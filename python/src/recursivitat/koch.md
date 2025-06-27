@@ -104,7 +104,7 @@ Ara, `floc_koch(200, 3)` produeix aquesta figura:
 
 ## Programa complet
 
-A continuació es dóna el programa complet:
+Aquí teniu el programa complet:
 
 ```python
 import turtle
@@ -143,9 +143,5 @@ def main() -> None:
 
 main()
 ```
-
-:::example
-foo
-:::
 
 <Autors autors="jpetit"/>
