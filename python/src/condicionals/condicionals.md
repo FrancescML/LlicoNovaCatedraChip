@@ -7,7 +7,6 @@ que l'ordinador executi certes instruccions o unes altres
 depenent de si es dóna o no una determinada condició.
 Gràcies a les instruccions condicionals, podem escriure programes
 que prenguin decisions.
-En Python aquesta instrucció s'escriu amb les paraules clau `if then else`.
 
 ## Màxim de dos enters
 
@@ -36,7 +35,7 @@ El programa no està acabat, perquè encara no hem precisat com es calcula el re
 és a dir, quin ha de ser el valor d'`m` en funció dels valors d'`a` i de `b`. Com fer-ho?
 
 Com que no hi ha cap operador que calculi directament el màxim entre dos nombres,
-utilitzarem una **instrucció condicional**, la qual permet
+utilitzarem una **instrucció condicional**, que permet
 executar una instrucció o una altra depenent d'una determinada condició.
 En Python la instrucció condicional s'escriu usant les paraules clau `if`
 i `else`, de la forma següent:
@@ -70,7 +69,7 @@ condicional sense `else`:
 
 <img src="./flow-if-then.png" style="height: 25em;"/>
 
-Fixeu que les instruccions ⟨Instruccions_SÍ⟩ i ⟨Instruccions_NO⟩ s'escriuen **indentades**, és a dir,
+Fixeu-vos que les instruccions ⟨Instruccions_SÍ⟩ i ⟨Instruccions_NO⟩ s'escriuen **indentades**, és a dir,
 més a la dreta (típicament amb quatre espais). D'aquest forma l'ordinador pot saber quan comencen i quan acaben
 i els humans poden fer-s'en càrrec visualment.
 
@@ -129,7 +128,7 @@ compara si els valors de `x` i de `y` són iguals,
 mentre que `x = y` (amb un sol igual) assigna a `x` el valor de `y`. No els confongueu.
 
 👁️
-Alguns editors mostren símbols com ara `<=` com a `≤`, perquè estèticament és més plaent. Igualment cal picar <kbd>&lt;</kbd><kbd>=</kbd>.
+Alguns editors i visors mostren símbols com ara `<=` com a `≤`, perquè estèticament és més plaent. Igualment cal picar <code>&lt;</code> <code>=</code>.
 
 ## Exercici
 
@@ -293,7 +292,7 @@ else:
 ```
 
 Per tal de disminuir l'aniuament dels programes (l'aniuament és útil però complica la lectura del programa),
-en Python existeix la instrucció `elif` que és una contracció de `else if`s i no necessita un nou nivell d'indentació:
+en Python existeix la instrucció `elif` que és una contracció de `else if` i no necessita un nou nivell d'indentació:
 
 ```python
 x = read(int)
@@ -309,7 +308,7 @@ Així, primer s'avalua la condició `x > 0`. Si és certa s'escriu `positiu` i e
 Sinó, s'avalua la condició `x < 0`. Si aquesta és certa s'escriu `negatiu` i el bloc condional acaba.
 Sinó (quan no es té `x > 0` ni `x < 0`), s'escriu `zero` i el bloc condional acaba.
 
-Aquesta és l'estructura general i el flux de l'instrucció condicional, els nombre de `elif`s és arbitrari i el `else` opcional:
+Aquesta és l'estructura general i el flux de l'instrucció condicional, els nombre de `elif`s és arbitrari i l'`else` és opcional:
 
 ```python
 if ⟨Condició_1⟩:
