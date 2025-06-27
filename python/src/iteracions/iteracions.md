@@ -1,14 +1,12 @@
-
 # Iteracions
 
 <img src='./iteracions.png' style='height: 8em; float: right; margin: 2em 0 1em 1em;'/>
 
 Aquest lliçó presenta la instrucció iterativa (`while` en Python). En informàtica, de
-repetir instruccions en diem *iterar* o *fer bucles*. La iteració permet simplificar i
+repetir instruccions en diem _iterar_ o _fer bucles_. La iteració permet simplificar i
 potenciar els algorismes afirmant que es repetiran certs passos fins que no es
 digui el contrari. Aprendre a dissenyar bucles és extremadament important per
 escriure programes. Comencem amb uns exemples senzills, a les aplicacions anirem veient progressivament usos més complexos.
-
 
 ## Escriure els nombres d'1 a `n`
 
@@ -36,13 +34,13 @@ Si no es compleix, passa a executar el que hi hagi després del `while`.
 Si es compleix, s'executen les `⟨instruccions⟩` indentades dins del cos del `while`.
 Després, torna a comprovar la condició.
 Si no es compleix, passa a executar el que hi hagi després del `while`.
-Si es compleix,  s'executen les `⟨instruccions⟩` indentades dins del seu cos.
+Si es compleix, s'executen les `⟨instruccions⟩` indentades dins del seu cos.
 I així repetidament, _mentre_ (`while`, en angles) la `⟨condició⟩`
 es compleixi.
 
 El diagrama de flux següent mostra el funcionament del bucle `while`:
 
-<MyFlowChart src='flow-while.ts'/>
+<img src='./flow-while.png' style='height: 25em;'/>
 
 Aquest programa resol el problema proposat usant un `while`:
 
@@ -87,7 +85,6 @@ Malauradament, això no és gaire segur. En efecte, per a valors positius o zero
 
 Quan un programa es penja, podeu aturar-lo picant les tecles <kbd>control</kbd> i <kbd>c</kbd> a la vegada. Proveu-ho: pengeu el programa anterior i interrompeu la seva execució amb <kbd>control</kbd><kbd>c</kbd>. Una de les coses boniques de la programació és que no costa gens de provar coses!
 
-
 ## Escriure els nombres senars d'1 a `n`
 
 Considereu ara que només volem escriure els nombres senars d'1 fins a `n`, Per exemple, si llegim un 7, el programa ha d'escriure
@@ -121,7 +118,6 @@ while i <= n:
 
 Fixeu-vos que el programa funciona bé tant si `n` és parell com si és senar. Què passaria si la condició fós `i == n` enlloc de `i <= n`? Amb quins valors d'`n` es penjaria?
 
-
 ## Escriure els nombres d'`n` a 1
 
 Considereu que ara volem escriure els nombres d'`n` a 1 de gran a petit. Per exemple, si llegim un 4, el programa ha d'escriure
@@ -133,7 +129,7 @@ Considereu que ara volem escriure els nombres d'`n` a 1 de gran a petit. Per exe
 1
 ```
 
-En aquest cas, caldrà que el valor inicial de la variable `i` siguin `n`,  que s'iteri mentre sigui estrictament positiva i que es decrementi a cada iteració:
+En aquest cas, caldrà que el valor inicial de la variable `i` siguin `n`, que s'iteri mentre sigui estrictament positiva i que es decrementi a cada iteració:
 
 ```python
 n = read(int)
@@ -155,7 +151,6 @@ while n > 0:
 ```
 
 Ara bé, d'aquesta forma, el valor original d'`n` ha quedat perdut, fet que pot ser detrimental en moltes ocasions.
-
 
 ## Raonament al voltant dels bucles
 
@@ -184,8 +179,6 @@ Intenteu contestar aquestes preguntes (suposant que `n >= 0`):
 
 1. Quantes vegades s'avalua la condició del bucle?
 
-
-
 Mirem-ho:
 
 1. És clar que la instrucció `i = 1' només s'executa un cop, abans de començar el bucle.
@@ -201,6 +194,5 @@ Mirem-ho:
 1. El nombre de vegades que s'avalua la condició del bucle és també `n + 1` (no `n`). En efecte, la comprovació de si `i <= n` serà certa durant les `n` primeres iteracions, però després de la darrera iteració, quan `i` val `n + 1` s'avaluarà com a falsa. És per això que el bucle acabarà. Per tant, la condició sempre s'avalua un cop més que iteracions es realitzen en un bucle.
 
 Aquest tipus de preguntes i raonament al voltant del bucle és útil per comprendre com funcionen els bucles en general i us serà igualment útil per raonar sobre els vostres bucles i entendre perquè funcionen o no. També, aquest tipus de comptatges és necessari per poder establir l'eficiència dels algorismes.
-
 
 <Autors autors="jpetit roura"/>

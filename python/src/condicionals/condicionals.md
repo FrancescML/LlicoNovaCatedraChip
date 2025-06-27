@@ -54,7 +54,7 @@ altrament, s'executa el bloc d'⟨Instruccions_NO⟩.
 El diagrama de flux següent mostra el funcionament de la instrució
 condicional:
 
-<MyFlowChart src="./flow-if-then-else.ts"/>
+<img src="./flow-if-then-else.png" style="height: 25em;"/>
 
 La part de l'`else`
 és opcional: si no es proporciona, no es farà res quan no es compleixi la condició.
@@ -68,7 +68,7 @@ if ⟨Condició⟩:
 El diagrama de flux següent mostra el funcionament de la instrució
 condicional sense `else`:
 
-<MyFlowChart src="./flow-if-then.ts"/>
+<img src="./flow-if-then.png" style="height: 25em;"/>
 
 Fixeu que les instruccions ⟨Instruccions_SÍ⟩ i ⟨Instruccions_NO⟩ s'escriuen **indentades**, és a dir,
 més a la dreta (típicament amb quatre espais). D'aquest forma l'ordinador pot saber quan comencen i quan acaben
@@ -322,6 +322,6 @@ else:
     ⟨Instruccions_SINÓ⟩
 ```
 
-<MyFlowChart src="./flow-if-elif.ts"/>
+<img src="./flow-if-elif.png" style="height: 45em;"/>
 
 <Autors autors="jpetit roura"/>
