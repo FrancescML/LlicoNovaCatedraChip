@@ -1,5 +1,6 @@
 # Test
 
-Això és el final!
+Aquest és el missatge final!
+
 
 <Autors autors="jpetit"/>
