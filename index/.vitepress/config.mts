@@ -37,6 +37,11 @@ export default defineConfig({
                         text: 'Terminal',
                         link: 'https://lliçons.jutge.org/terminal',
                     },
+                    {
+                        text: 'El. Digital',
+                        link: 'https://lliçons.jutge.org/electronica-digital',
+                    },
+
                 ],
             },
         ],
