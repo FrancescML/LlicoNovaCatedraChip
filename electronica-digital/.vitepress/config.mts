@@ -7,15 +7,15 @@ import { tabsMarkdownPlugin } from 'vitepress-plugin-tabs'
 const year = new Date().getFullYear()
 
 export default defineConfig({
-    base: '/template/',
+    base: '/electronica-digital/',
 
     srcDir: 'src',
 
-    title: 'Lliçons Template',
+    title: 'Lliçons Electrònica Digital',
 
     lang: 'ca-ES',
 
-    description: 'Lliçons Template',
+    description: 'Lliçons Electrònica Digital',
 
     themeConfig: {
         // https://vitepress.dev/reference/default-theme-config

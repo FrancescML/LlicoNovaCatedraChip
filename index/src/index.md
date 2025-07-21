@@ -16,6 +16,9 @@ hero:
         - theme: brand
           text: Terminal
           link: https://lliçons.jutge.org/terminal
+        - theme: brand
+          text: El. Digital
+          link: https://lliçons.jutge.org/electronica-digital
 ---
 
 <img src='./logos/lliçons.png' style='max-width: 12em; margin-bottom: 2em;'/>
