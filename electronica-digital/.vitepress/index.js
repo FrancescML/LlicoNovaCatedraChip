@@ -5,11 +5,11 @@ export const index = [
         items: [
             {
                 text: 'Inici',
-                link: '/inici/',
+                link: '/00 inici/',
             },
             {
                 text: 'Final',
-                link: '/inici/final',
+                link: '/zz final',
             },
         ],
     },

@@ -1,5 +1,5 @@
 # Test
 
-Això és una _prova_!
+Això és el final!
 
 <Autors autors="jpetit"/>

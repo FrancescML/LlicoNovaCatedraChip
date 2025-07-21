@@ -2,14 +2,14 @@
 layout: home
 
 hero:
-    name: 'Lliçons Template'
-    tagline: 'Jordi Petit <small><i>et al</i></small>'
-    no-text: lliçons.jutge.org/template
+    name: 'Lliçons Electrònica Digital'
+    tagline: 'Xavier Casas i Francesc Madrid'
+    no-text: lliçons.jutge.org/electronica-digital
 
     actions:
         - theme: brand
           text: Inici
-          link: /inici/
+          link: /00 introduccio/
 ---
 
 <h1 class="tagline">Taula de continguts</h1>
