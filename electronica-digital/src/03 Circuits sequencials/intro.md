@@ -1,9 +1,5 @@
 # Inici
 
-Hola!
-
-```python
-print("Hola, món!")
-```
+Hola soc una intro!
 
 <Autors autors="jpetit"/>

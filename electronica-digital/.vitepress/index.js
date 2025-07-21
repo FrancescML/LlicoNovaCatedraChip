@@ -51,15 +51,15 @@ export const index = [
         items: [
             {
                 text: 'Introducció als Circuits Seqüencials',
-                link: '/02 Circuits Seqüencials/intro',
+                link: '/03 Circuits Sequencials/intro',
             },
             {
                 text: 'tema a',
-                link: '/02 Circuits Seqüencials/temaa',
+                link: '/03 Circuits Sequencials/temaa',
             },
             {
                 text: 'tema b',
-                link: '/02 Circuits Seqüencials/temab',
+                link: '/03 Circuits Sequencials/temab',
             },
         ],
     },

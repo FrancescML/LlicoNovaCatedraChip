@@ -1,5 +1,5 @@
 # Inici
 
-Hola soc una intro!
+Aquest és el tema b.
 
 <Autors autors="jpetit"/>
