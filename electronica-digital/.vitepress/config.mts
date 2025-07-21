@@ -11,11 +11,11 @@ export default defineConfig({
 
     srcDir: 'src',
 
-    title: 'Lliçons Electronica Digital',
+    title: 'Lliçons Electrònica Digital',
 
     lang: 'ca-ES',
 
-    description: 'Lliçons Electronica Digital',
+    description: 'Lliçons Electrònica Digital',
 
     themeConfig: {
         // https://vitepress.dev/reference/default-theme-config
