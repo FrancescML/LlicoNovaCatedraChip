@@ -1,0 +1,6 @@
+*~
+*.bak
+bun.lockb
+node_modules
+.vitepress/cache
+.vitepress/dist
