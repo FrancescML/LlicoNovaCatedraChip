@@ -32,7 +32,7 @@ export default defineConfig({
                     },
                     {
                         text: 'Python',
-                        link: '/',
+                        link: 'https://lliçons.jutge.org/python',
                     },
                     {
                         text: 'C++',
