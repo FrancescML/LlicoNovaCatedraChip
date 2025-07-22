@@ -4,7 +4,7 @@ layout: home
 hero:
     name: 'Lliçons circuits digitals (en construcció)'
     tagline: 'Xavier Casas i Francesc Madrid'
-    no-text: lliçons.jutge.org/electronica-digital
+    no-text: lliçons.jutge.org/circuits-digitals
 
     actions:
         - theme: brand
