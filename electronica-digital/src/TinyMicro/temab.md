@@ -1,4 +1,4 @@
-# Inici
+# Tema b
 
 Aquest és el tema b.
 

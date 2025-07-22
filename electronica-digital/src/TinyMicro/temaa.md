@@ -1,4 +1,4 @@
-# Inici
+# Tema a
 
 Aquest és el tema a.
 
