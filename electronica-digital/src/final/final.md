@@ -1,6 +1,5 @@
 # Test
 
-Aquest és el missatge final!
-
+En contrucció.
 
 <Autors autors="jpetit"/>

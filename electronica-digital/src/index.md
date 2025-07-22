@@ -2,14 +2,14 @@
 layout: home
 
 hero:
-    name: 'Lliçons Electrònica Digital'
+    name: 'Lliçons Electrònica Digital (en construcció)'
     tagline: 'Xavier Casas i Francesc Madrid'
     no-text: lliçons.jutge.org/electronica-digital
 
     actions:
         - theme: brand
           text: Inici
-          link: /00 introduccio/intro
+          link: /Intro/intro
 ---
 
 <h1 class="tagline">Taula de continguts</h1>

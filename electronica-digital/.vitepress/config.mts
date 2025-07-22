@@ -11,7 +11,7 @@ export default defineConfig({
 
     srcDir: 'src',
 
-    title: 'Lliçons Electrònica Digital',
+    title: 'Lliçons Electrònica Digital (en construcció)',
 
     lang: 'ca-ES',
 

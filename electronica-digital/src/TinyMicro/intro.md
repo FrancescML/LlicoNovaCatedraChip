@@ -1,5 +1,5 @@
 # Inici
 
-Aquest és el tema a.
+En contrucció.
 
 <Autors autors="jpetit"/>
