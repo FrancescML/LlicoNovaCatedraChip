@@ -39,7 +39,7 @@ export default defineConfig({
                     },
                     {
                         text: 'El. Digital',
-                        link: 'https://lliçons.jutge.org/electronica-digital',
+                        link: 'https://lliçons.jutge.org/circuits-digitals',
                     },
 
                 ],

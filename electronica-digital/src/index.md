@@ -2,7 +2,7 @@
 layout: home
 
 hero:
-    name: 'Lliçons Electrònica Digital (en construcció)'
+    name: 'Lliçons circuits digitals (en construcció)'
     tagline: 'Xavier Casas i Francesc Madrid'
     no-text: lliçons.jutge.org/electronica-digital
 

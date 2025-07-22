@@ -7,15 +7,15 @@ import { tabsMarkdownPlugin } from 'vitepress-plugin-tabs'
 const year = new Date().getFullYear()
 
 export default defineConfig({
-    base: '/electronica-digital/',
+    base: '/circuits-digitals/',
 
     srcDir: 'src',
 
-    title: 'Lliçons Electrònica Digital (en construcció)',
+    title: 'Lliçons circuits digitals (en construcció)',
 
     lang: 'ca-ES',
 
-    description: 'Lliçons Electrònica Digital',
+    description: 'Lliçons circuits digitals',
 
     themeConfig: {
         // https://vitepress.dev/reference/default-theme-config
@@ -41,6 +41,10 @@ export default defineConfig({
                     {
                         text: 'Terminal',
                         link: 'https://lliçons.jutge.org/terminal',
+                    },
+                    {
+                        text: 'Circuits Digitals',
+                        link: 'https://lliçons.jutge.org/circuits-digitals',
                     },
                 ],
             },

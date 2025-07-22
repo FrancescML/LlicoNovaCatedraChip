@@ -4,7 +4,7 @@ export const index = [
         collapsed: true,
         items: [
             {
-                text: 'Introducció a l\'electrònica digital',
+                text: 'Introducció als circuits digitals',
                 link: '/Intro/intro',
             },
         ],
@@ -13,7 +13,7 @@ export const index = [
         text: 'Circuits Combinacionals',
         collapsed: true,
         items: [
-            {
+/*            {
                 text: 'Introducció als Circuits Combinacionals',
                 link: '/CircCombin/intro',
             },
@@ -25,61 +25,63 @@ export const index = [
                 text: 'tema b',
                 link: '/CircCombin/temab',
             },
-
+*/
         ],
     },
     {
         text: 'Circuits Aritmètics',
         collapsed: true,
         items: [
-            {
+/*            {
                 text: 'Introducció als Circuits Aritmètics',
                 link: '/CircAritm/intro',
             },
-//            {
-//                text: 'tema a',
-//                link: '/CircAritm/temaa',
-//            },
-//            {
-//                text: 'tema b',
-//                link: '/CircAritm/temab',
-//            },
+            {
+                text: 'tema a',
+                link: '/CircAritm/temaa',
+            },
+            {
+                text: 'tema b',
+                link: '/CircAritm/temab',
+            },*/
         ],
     },
     {
         text: 'Circuits Seqüencials',
         collapsed: true,
         items: [
-            {
+/*            {
                 text: 'Introducció als Circuits Seqüencials',
                 link: '/CircSeq/intro',
             },
-//            {
-//                text: 'tema a',
-//                link: '/CircSeq/temaa',
-//            },
-//            {
-//                text: 'tema b',
-//                link: '/CircSeq/temab',
-//            },
+            {
+                text: 'tema a',
+                link: '/CircSeq/temaa',
+            },
+            {
+                text: 'tema b',
+                link: '/CircSeq/temab',
+            },
+*/
         ],
     },
     {
         text: 'TinyMicro',
         collapsed: true,
         items: [
-            {
+/*            {
                 text: 'Introducció a TinyMicro',
                 link: '/TinyMicro/intro',
             },
-//            {
-//                text: 'tema a',
-//                link: '/TinyMicro/temaa',
-//            },
-//            {
-//                text: 'tema b',
-//                link: '/TinyMicro/temab',
-//            },
+            {
+                text: 'tema a',
+                link: '/TinyMicro/temaa',
+            },
+            {
+                text: 'tema b',
+                link: '/TinyMicro/temab',
+            },
+*/
         ],
     },
 
@@ -87,10 +89,11 @@ export const index = [
         text: 'Final',
         collapsed: true,
         items: [
-            {
+/*            {
                 text: 'Tancament',
                 link: '/final/final',
             },
+*/
         ],
     },
 ]
