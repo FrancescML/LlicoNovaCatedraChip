@@ -35,5 +35,10 @@ $$
 <img src='../logos/TotsLogosBlanc.png ' alt="Logos Càtedra Chip" width="70%" style="display:block; margin:0 auto; border-radius: 8px;"/>
  -->
 
+
+
+
+
+
 ##
 <Autors autors="jpetit"/>
