@@ -24,7 +24,7 @@ To install Lliçons, follow these steps:
 
 ## Development
 
-There are different courses available: `index`, `python`, `cpp`, `terminal` and `circuits`. Each of them is a [VitePress](https://vitepress.dev/) project. There is also a `template` directory that contains a template to help creating a new course.
+There are different courses available: `index`, `python`, `cpp`, `terminal` and `electronica-digital`. Each of them is a [VitePress](https://vitepress.dev/) project. There is also a `template` directory that contains a template to help creating a new course.
 
 To start the development server on one of the courses (say `python`), go to its main directory:
 
