@@ -5,7 +5,7 @@
             <ul>
                 <div v-for="subitem of item.items">
                     <li>
-                        <a :href="'/electronica-digital' + subitem.link">
+                        <a :href="'/circuits-digitals' + subitem.link">
                             <div v-html="subitem.text"></div>
                         </a>
                     </li>

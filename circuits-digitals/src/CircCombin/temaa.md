@@ -1,5 +1,5 @@
-# Inici
+# Tema a
 
-Hola soc una intro!
+En contrucció.
 
 <Autors autors="jpetit"/>

@@ -38,8 +38,8 @@ export default defineConfig({
                         link: 'https://lliçons.jutge.org/terminal',
                     },
                     {
-                        text: 'El. Digital',
-                        link: 'https://lliçons.jutge.org/electronica-digital',
+                        text: 'Circuits Digitals',
+                        link: 'https://lliçons.jutge.org/circuits-digitals',
                     },
 
                 ],
