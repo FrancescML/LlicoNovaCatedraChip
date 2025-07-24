@@ -17,6 +17,7 @@ export const index = [
                 text: 'Introducció als Circuits Combinacionals',
                 link: '/CircCombin/intro',
             },
+/*
             {
                 text: 'tema a',
                 link: '/CircCombin/temaa',
@@ -25,7 +26,7 @@ export const index = [
                 text: 'tema b',
                 link: '/CircCombin/temab',
             },
-/**/
+*/
         ],
     },
     {
