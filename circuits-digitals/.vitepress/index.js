@@ -1,6 +1,6 @@
 export const index = [
     {
-        text: 'Inici',
+        text: 'Introducció als circuits digitals',
         collapsed: true,
         items: [
             {
@@ -17,16 +17,35 @@ export const index = [
                 text: 'Introducció als Circuits Combinacionals',
                 link: '/CircCombin/intro',
             },
-/*
             {
-                text: 'tema a',
-                link: '/CircCombin/temaa',
+                text: 'Exercicis simples',
+                link: '/CircCombin/exsimples',
             },
             {
-                text: 'tema b',
-                link: '/CircCombin/temab',
+                text: 'Multiplexors',
+                link: '/CircCombin/multiplexors',
             },
-*/
+            {
+                text: 'Sistemes de votació',
+                link: '/CircCombin/svotacio',
+            },
+            {
+                text: 'Busos',
+                link: '/CircCombin/busos',
+            },
+            {
+                text: 'Nombres',
+                link: '/CircCombin/nombres',
+            },
+            {
+                text: 'BCD digits',
+                link: '/CircCombin/bcddigits',
+            },
+            {
+                text: 'Miscel·lània',
+                link: '/CircCombin/miscellania',
+            },
+
         ],
     },
     {

@@ -3,6 +3,8 @@
 <img src='../logos/illustracio1.png' alt="Circuits digitals" style=" float: left; border-radius: 8px; height: 120px; text-align: right;"/>
 <img src='../logos/LogoCatedraCHIPBlanc.jpg' alt="Logo Càtedra Chip" style="float: right; border-radius: 8px; height: 120px; text-align: right;"/>
 <div style="clear: both;"></div>
+<br>
+
 
 # Introducció als circuits digitals
 
@@ -32,35 +34,30 @@ Una **taula de veritat** mostra totes les possibles combinacions d’entrades d�
 
 Un [**circuit combinacional**](../CircCombin/intro) és un tipus de circuit digital en el qual el valor de la seva sortida en un instant depèn únicament dels valors actuals de les seves entrades. Construïts únicament amb portes lògiques simples, no tenen retroalimentació ni memòria. El seu comportament es pot descriure amb taules de veritat i funcions booleanes.
 
-<center><span style="color: red;"> **Hi estem treballant...** </span></center>
+<!-- ************* EN CONSTRUCCIÓ *****************-->
 <img src='../logos/enconstrucció.png' alt="Logos Càtedra Chip" style="display:block; height:120px; margin:0 auto; border-radius: 8px;"/>
-
-<center>
-Circuit combinacional
-</center>
+<center><i>Circuit combinacional</i></center>
 
 Els [circuits aritmètics](../CircAritm/intro.md) són una important subclasse dels circuits digitals combinacionals. La seva funció és efectuar operacions matemàtiques bàsiques amb nombres binaris.
 
-<center><span style="color: red;"> **Hi estem treballant...** </span></center>
+<!-- ************* EN CONSTRUCCIÓ *****************-->
 <img src='../logos/enconstrucció.png' alt="Logos Càtedra Chip" style="display:block; height:120px; margin:0 auto; border-radius: 8px;"/>
 
-<center>
-Aquest exemple és un sumador
-</center>
+<center><i>Aquest exemple és un circuit aritmètic sumador</i></center>
 
 Els [circuits seqüencials](../CircSeq/intro.md) són un tipus de circuit digital que, a diferència dels circuits combinacionals o aritmètics, estan retroalimentats i tenen memòria. És a dir, la seva sortida no només depèn dels valors actuals de les entrades sinó també del seu estat previ o historial d’entrades. Molts d’ells utilitzen un rellotge (senyal de pols) pels canvis de memòria.
 
-<center><span style="color: red;"> **Hi estem treballant...** </span></center>
+<!-- ************* EN CONSTRUCCIÓ *****************-->
 <img src='../logos/enconstrucció.png' alt="Logos Càtedra Chip" style="display:block; height:120px; margin:0 auto; border-radius: 8px;"/>
-<center>
-Circuit sequencial
-</center>
+<center><i>Circuit seqüencial</i></center>
 
 La lliçó [Tiny Micro](../TinyMicro/intro.md) és un recull d’exercicis avançats sobre l'operació d'un petit ordinador. Hi ha exercicis de disseny d’un ALU, programació de la unitat de control, creació d’un datapath i el disseny d’un program counter.
 
 
-<!-- Aquesta imatge ha d'anar al final de cada lliçó, ja sigui amb aquesta línia o dins la signatura. Deixar comentat si ja està a la signatura
-<img src='../logos/TotsLogosBlanc.png ' alt="Logos Càtedra Chip" width="70%" style="display:block; margin:0 auto; border-radius: 8px;"/>
- -->
+<!-- Aquesta imatge ha d'anar al final de cada lliçó, ja sigui amb aquesta línia o dins la signatura. Deixar comentat si ja està a la signatura-->
+<br>
+<br>
+<img src='../logos/TotsLogosBlanc.png ' alt="Logos Càtedra Chip" width="100%" style="display:block; margin:0 auto; border-radius: 8px;"/>
 
-<Autors autors="jpetit"/>
+
+<Autors autors="jpetit xcasas fmadrid jordic"/>

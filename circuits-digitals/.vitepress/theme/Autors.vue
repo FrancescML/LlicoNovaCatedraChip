@@ -1,7 +1,6 @@
 <template>
     <div class="" style="border: 1px solid var(--vp-c-divider); padding: 1em 1em 0em 1em; border-radius: 8px; margin-top: 3em; margin-bottom: -2.5em; text-align: right">
         <div v-for="autor of autors.split(' ').reverse()">
-            <img src='/circuits-digitals/logos/TotsLogosBlanc.png ' alt="Logos Càtedra Chip" width="100%" style="display:block; margin:0 auto; border-radius: 8px;"/>
             <img :src="`/circuits-digitals/autors/${autor}.png`" style="margin-left: 1em; height: 4.5em; float: right" />
         </div>
 
@@ -80,6 +79,14 @@ const info = {
     },
     marc: {
         name: 'Marc Gállego',
+        org: 'UPC',
+    },
+    xcasas: {
+        name: 'Xavier Casas',
+        org: 'UPC',
+    },
+    fmadrid: {
+        name: 'Francesc Madrid',
         org: 'UPC',
     },
 }

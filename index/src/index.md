@@ -32,8 +32,7 @@ hero:
 import { VPTeamMembers } from 'vitepress/theme'
 
 const members = [
-
-     {
+    {
         avatar: '/autors/jpetit.png',
         name: "Jordi Petit",
         title: 'Autor, Editor',
