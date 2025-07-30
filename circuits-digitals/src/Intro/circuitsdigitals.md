@@ -34,24 +34,33 @@ Una **taula de veritat** mostra totes les possibles combinacions d’entrades d�
 
 Un [**circuit combinacional**](../CircCombin/intro) és un tipus de circuit digital en el qual el valor de la seva sortida en un instant depèn únicament dels valors actuals de les seves entrades. Construïts únicament amb portes lògiques simples, no tenen retroalimentació ni memòria. El seu comportament es pot descriure amb taules de veritat i funcions booleanes.
 
-<!-- ************* EN CONSTRUCCIÓ *****************-->
-<img src='../logos/enconstrucció.png' alt="Logos Càtedra Chip" style="display:block; height:120px; margin:0 auto; border-radius: 8px;"/>
+<img src='./combinacional.png' alt="Circuit combinacional" style="display:block; width:500px; margin:0 auto; border-radius: 8px;"/>
 <center><i>Circuit combinacional</i></center>
+
 
 Els [circuits aritmètics](../CircAritm/intro.md) són una important subclasse dels circuits digitals combinacionals. La seva funció és efectuar operacions matemàtiques bàsiques amb nombres binaris.
 
-<!-- ************* EN CONSTRUCCIÓ *****************-->
-<img src='../logos/enconstrucció.png' alt="Logos Càtedra Chip" style="display:block; height:120px; margin:0 auto; border-radius: 8px;"/>
-
+<img src='./aritmetic.png' alt="Circuit aritmètic" style="display:block; width:400px; margin:0 auto; border-radius: 8px;"/>
 <center><i>Aquest exemple és un circuit aritmètic sumador</i></center>
 
 Els [circuits seqüencials](../CircSeq/intro.md) són un tipus de circuit digital que, a diferència dels circuits combinacionals o aritmètics, estan retroalimentats i tenen memòria. És a dir, la seva sortida no només depèn dels valors actuals de les entrades sinó també del seu estat previ o historial d’entrades. Molts d’ells utilitzen un rellotge (senyal de pols) pels canvis de memòria.
 
-<!-- ************* EN CONSTRUCCIÓ *****************-->
-<img src='../logos/enconstrucció.png' alt="Logos Càtedra Chip" style="display:block; height:120px; margin:0 auto; border-radius: 8px;"/>
+<img src='./sequencial.png' alt="Circuit seqüencial" style="display:block; width:500px; margin:0 auto; border-radius: 8px;"/>
 <center><i>Circuit seqüencial</i></center>
 
 La lliçó [Tiny Micro](../TinyMicro/intro.md) és un recull d’exercicis avançats sobre l'operació d'un petit ordinador. Hi ha exercicis de disseny d’un ALU, programació de la unitat de control, creació d’un datapath i el disseny d’un program counter.
+
+# Com fer els exercicis
+Aquesta lliçó proposa diversos exercicis del curs [Introduction to Digital Circuit Design](https://jutge.org/courses/JordiCortadella:IntroCircuits). A cada exercici hi trobaràs l’enllaç.
+
+T’hauràs registrar a [jutge.org](https://jutge.org), accedir a la secció [Courses](https://jutge.org/courses) i inscriure-t al curs [Introduction to Digital Circuit Design](https://jutge.org/courses/JordiCortadella:IntroCircuits).
+Aquest curs et permetrà enviar les teves solucions al **Jutge**, que valorarà la validesa de la teva proposta.
+
+
+
+
+
+
 
 
 <!-- Aquesta imatge ha d'anar al final de cada lliçó, ja sigui amb aquesta línia o dins la signatura. Deixar comentat si ja està a la signatura-->

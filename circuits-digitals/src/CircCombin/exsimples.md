@@ -5,10 +5,66 @@
 <br>
 
 # Exercicis simples
+En aquest tema veuràs com es relacionen les portes lògiques de taules de veritat i l’àlgebra de Boole.
 
+## Exemple: Sistema de control d'accés per a treballadors
+En aquest exemple ens posem com a objectiu dissenyar un circuit lògic que determini si a un empleat se li permet l’accés a una zona restringida del centre de dades.
+
+Hi ha tres factors clau que determinen la decisió:
+
+* Targeta d'accés vàlida ($T$): L'empleat ha de passar la targeta pel lector i que aquesta sigui reconeguda com a vàlida.
+* Empremta Dactilar Reconeguda ($H)$: L'empleat ha d'escanejar la seva empremta dactilar i que coincideixi amb la registrada.
+* Autorització de Seguretat ($S$): L'empleat ha de tenir una autorització de seguretat activa per a aquesta zona.
+
+Les regles per concedir l'accés són les següents:
+
+* **$R_1$** - La targeta és vàlida i l'empremta dactilar és reconeguda. 
+
+* **$R_2$** - O bé, l'autorització de seguretat està activa i l'empremta dactilar és reconeguda. 
+
+* **$R_3$** - O bé, l'autorització de seguretat NO està activa i la targeta és vàlida.
+
+Dissenya un circuit amb tres entrades ($T$, $H$, $S$) i una sortida ($A$). La sortida $A$ determinarà si es concedeix l'accés, prenent el valor '$1$' per a accés concedit i '$0$' per a accés denegat.
+
+En primer lloc muntem la taula de veritat d'aquesta aplicació:
+
+<i>Taula de veritat</i>
+
+|**T**|**H**|**S**|**R1**|**R2**|**R3**|**A**
+|------ |------ |------ |------ |------ |------ |------
+|0|0|0|0|0|1|1
+|0|0|1|0|0|0|0
+|0|1|0|0|0|1|1
+|0|1|1|0|1|0|1
+|1|0|0|0|0|1|1
+|1|0|1|0|0|1|1
+|1|1|0|1|0|1|1
+|1|1|1|1|1|1|1
+
+
+Seguidament, expressem la funció booleana d’aquesta operació.
+
+$
+A=R_1+R_2+R_3=(TH)+(SH)+(\overline{S}+T)
+$
+
+Aleshores dibuixem el circuit digital.
 <!-- ************* EN CONSTRUCCIÓ *****************-->
+<img src='../logos/enconstrucció.png' alt="exemple circuit" style="display:block; height:200px; margin:0 auto; border-radius: 8px;"/>
+<center><i>Circuit Digital</i></center>
+
+
+
+
+
+## Exercici: [The Embassy Ball](https://jutge.org/problems/X64345_en)
+
+
+
+
+<!-- ************* EN CONSTRUCCIÓ *****************
 <img src='../logos/enconstrucció.png' alt="Logos Càtedra Chip" style="display:block; height:200px; margin:0 auto; border-radius: 8px;"/>
 
 
-<Autors autors="jpetit xcasas fmadrid"/>
 
+<Autors autors="jpetit xcasas fmadrid"/>

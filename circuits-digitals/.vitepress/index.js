@@ -4,8 +4,12 @@ export const index = [
         collapsed: true,
         items: [
             {
-                text: 'Introducció als circuits digitals',
-                link: '/Intro/intro',
+                text: 'Circuits digitals',
+                link: '/Intro/circuitsdigitals',
+            },
+            {
+                text: 'Àlgebra de Boole',
+                link: '/Intro/boole',
             },
         ],
     },
@@ -45,14 +49,14 @@ export const index = [
                 text: 'Miscel·lània',
                 link: '/CircCombin/miscellania',
             },
-
         ],
     },
     {
         text: 'Circuits Aritmètics',
         collapsed: true,
         items: [
-/*            {
+/*
+            {
                 text: 'Introducció als Circuits Aritmètics',
                 link: '/CircAritm/intro',
             },
@@ -63,7 +67,8 @@ export const index = [
             {
                 text: 'tema b',
                 link: '/CircAritm/temab',
-            },*/
+            },
+*/
         ],
     },
     {
