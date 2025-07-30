@@ -49,18 +49,10 @@ A=R_1+R_2+R_3=(TH)+(SH)+(\overline{S}+T)
 $
 
 Aleshores dibuixem el circuit digital.
-<!-- ************* EN CONSTRUCCIÓ *****************-->
-<img src='../logos/enconstrucció.png' alt="exemple circuit" style="display:block; height:200px; margin:0 auto; border-radius: 8px;"/>
+<img src='./exsimplesexemple.png' alt="exemple" style="display:block; height:200px; margin:0 auto; border-radius: 8px;"/>
 <center><i>Circuit Digital</i></center>
 
-
-
-
-
 ## Exercici: [The Embassy Ball](https://jutge.org/problems/X64345_en)
-
-
-
 
 <!-- ************* EN CONSTRUCCIÓ *****************
 <img src='../logos/enconstrucció.png' alt="Logos Càtedra Chip" style="display:block; height:200px; margin:0 auto; border-radius: 8px;"/>

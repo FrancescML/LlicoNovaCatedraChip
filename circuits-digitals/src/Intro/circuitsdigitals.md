@@ -16,16 +16,16 @@ Els **circuits digitals** processen informació representada en format discret, 
 
 Les **portes lògiques** efectuen operacions bàsiques sobre un o més senyals binaris d'entrada per produir un únic senyal binari de sortida. Per entendre el funcionament de les portes lògiques cal conèixer conceptes com l'àlgebra de Boole i les taules de veritat. En molts exemples i exercicis de circuits digitals utilitzarem les taules de veritat o una funció booleana per descriure el comportament lògic d’un circuit. 
 
-|**Porta lògica**|**Símbol**                           |**Descripció**
-|------ |------                                        |------
-|Buffer |<img src="./Buffer_ANSI_Labelled.svg.png"/>   |Retorna el mateix bit
-|NOT    |<img src="./NOT_ANSI_Labelled.svg.png"/>      |Inverteix el bit
-|AND    |<img src="./AND_ANSI_Labelled.svg.png"/>      |1 si les dues entrades són 1
-|OR     |<img src="./OR_ANSI_Labelled.svg.png"/>       |1 si almenys una entrada és 1
-|NAND   |<img src="./NAND_ANSI_Labelled.svg.png"/>     |AND invertit (combinació d'AND i NOT)
-|NOR    |<img src="./NOR_ANSI_Labelled.svg.png"/>      |OR invertit (combinació d'OR i NOT)
-|XOR    |<img src="./XOR_ANSI_Labelled.svg.png"/>      |1 si les entrades són diferents
-|XNOR   |<img src="./XNOR_ANSI_Labelled.svg.png"/>     |1 si les entrades són iguals
+|**Porta lògica**|**Símbol**                           |**Espressió Booleana** [*](./boole)  |**Descripció**
+|------ |------                                        |---                     |------
+|Buffer |<img src="./Buffer_ANSI_Labelled.svg.png"/>   |$A$                     |Retorna el mateix bit
+|NOT    |<img src="./NOT_ANSI_Labelled.svg.png"/>      |$\bar{A}$               |Inverteix el bit
+|AND    |<img src="./AND_ANSI_Labelled.svg.png"/>      |$A·B$                   |1 si les dues entrades són 1
+|OR     |<img src="./OR_ANSI_Labelled.svg.png"/>       |$A+B$                       |1 si almenys una entrada és 1
+|NAND   |<img src="./NAND_ANSI_Labelled.svg.png"/>     |$\overline{A·B}$            |AND invertit (combinació d'AND i NOT)
+|NOR    |<img src="./NOR_ANSI_Labelled.svg.png"/>      |$\overline{A+B}$            |OR invertit (combinació d'OR i NOT)
+|XOR    |<img src="./XOR_ANSI_Labelled.svg.png"/>      |$A·\bar{B}+\bar{A}·B$       |1 si les entrades són diferents
+|XNOR   |<img src="./XNOR_ANSI_Labelled.svg.png"/>     |$(A·B)+(\bar{A}·\bar{B})$   |1 si les entrades són iguals
 <!-- Imatges de ( https://en.wikipedia.org/wiki/Logic_gate) resum, notes o total.*/-->
 
 Una **funció booleana** és una expressió algebraica que defineix una sortida binària a partir d’una sèrie de variables d’entrada binàries (0 o 1). S’utilitzen operacions lògiques com AND, OR i NOT.

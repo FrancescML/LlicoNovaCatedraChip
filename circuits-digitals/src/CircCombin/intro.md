@@ -21,23 +21,23 @@ En aquesta lliçó trobaràs els següents temes:
 
 Els temes [Exercicis simples](./exsimples.md) i [Sistemes de votació](./svotacio.md) t’introduiran a l'ús de les taules de veritat i l’àlgebra de Boole amb exemples i exercicis de lògica bàsica. 
 
-<!-- ************* EN CONSTRUCCIÓ *****************-->
-<img src='../logos/enconstrucció.png' alt="Logos Càtedra Chip" style="display:block; height:120px; margin:0 auto; border-radius: 8px;"/>
-<center><i>????</i></center>
-
+<img src='./exsimple.png' alt="Exercici simple" style="display:block; height:120px; margin:0 auto; border-radius: 8px;"/>
+<center><i>Circuit simple</i></center>
 
 
 Al tema [Multiplexors](./multiplexors.md) aprendràs a crear dispositius MUX a partir de portes lògiques.
 
-<!-- ************* EN CONSTRUCCIÓ *****************-->
-<img src='../logos/enconstrucció.png' alt="Logos Càtedra Chip" style="display:block; height:120px; margin:0 auto; border-radius: 8px;"/>
-<center><i>Multiplexors</i></center>
+<img src='./multiplexor1.png' alt="Multiplexor"  style="display:block; height:120px; margin:0 auto; border-radius: 8px;"/>
+<br>
+<img src='./multiplexor2.png' alt="Multiplexor"  style="display:block; height:150px; margin:0 auto;  border-radius: 8px;"/>
+<div style="clear: both;"></div>
+<center><i>Multiplexor</i></center>
+
 
 Al tema [Busos](./busos.md) faràs exercicis de corriment de bits (dreta i esquerra) i inversió de nombres binaris de N de bits.
 
-<!-- ************* EN CONSTRUCCIÓ *****************-->
-<img src='../logos/enconstrucció.png' alt="Logos Càtedra Chip" style="display:block; height:120px; margin:0 auto; border-radius: 8px;"/>
-<center><i>Left Shift Operator</i></center>
+<img src='./busos.png' alt="Busos" style="display:block; height:120px; margin:0 auto; border-radius: 8px;"/>
+<center><i>Exemple de desplaçamaent a l'esquerra (Left Shift)</i></center>
 
 Els exercicis del tema [Nombres](./nombres.md) tracten sobre els circuits digitals encarregats de fer diferents operacions amb números.
 

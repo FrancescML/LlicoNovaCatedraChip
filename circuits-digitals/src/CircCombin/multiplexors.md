@@ -55,7 +55,7 @@ out=\overline{sel} \, in_2 + sel \, in_1
 $
 
 Finalment dibuixem el circuit lògic que ho implementa.
-<img src='../logos/enconstrucció.png' alt="exemple circuit" style="display:block; height:200px; margin:0 auto; border-radius: 8px;"/>
+<img src='./logos/enconstrucció.png' alt="exemple circuit" style="display:block; height:200px; margin:0 auto; border-radius: 8px;"/>
 <center><i>Circuit Digital</i></center>
 
 
