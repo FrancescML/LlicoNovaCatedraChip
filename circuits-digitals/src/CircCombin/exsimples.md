@@ -5,7 +5,7 @@
 <br>
 
 # Exercicis simples
-En aquest tema veuràs com es relacionen les portes lògiques de taules de veritat i l’àlgebra de Boole.
+En aquest tema veuràs com es relaciona l’àlgebra de Boole, les taules de veritat i les portes lògiques en una sèrie d'exercisi simples.
 
 ## Exemple: Sistema de control d'accés per a treballadors
 En aquest exemple ens posem com a objectiu dissenyar un circuit lògic que determini si a un empleat se li permet l’accés a una zona restringida del centre de dades.
@@ -54,7 +54,7 @@ Aleshores dibuixem el circuit digital.
 
 ## Exercici: [The Embassy Ball](https://jutge.org/problems/X64345_en)
 
-<!-- ************* EN CONSTRUCCIÓ *****************
+<!-- ************* EN CONSTRUCCIÓ *****************-->
 <img src='../logos/enconstrucció.png' alt="Logos Càtedra Chip" style="display:block; height:200px; margin:0 auto; border-radius: 8px;"/>
 
 
