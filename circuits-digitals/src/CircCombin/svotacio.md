@@ -69,8 +69,6 @@ $A= \bar{P}STV + PST\bar{V} + PS\bar{T}V + P\bar{S}TV + + PSTV + PS\bar{T}\bar{V
 
 Muntem la taula de veritat amb tots els casos possibles:
 
-<div style="display: flex; justify-content: center;">
-
 | $P$ | $S$ | $T$ | $V$ | vots favorables | $C1$ | $C2$ | $A$ |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
@@ -89,9 +87,8 @@ Muntem la taula de veritat amb tots els casos possibles:
 | 1 | 1 | 0 | 1 | 3 | 1 | 0 | 1 |
 | 1 | 1 | 1 | 0 | 3 | 1 | 0 | 1 |
 | 1 | 1 | 1 | 1 | 4 | 1 | 0 | 1 |
-</div>
 
-L'expressió per a $A$ en funció de $P$, $S$, $T$ i $V$ és molt llarga. Fer-ne una simplificació lògica mitjançant algebra booleana seria complex. Alternativament podem utilitzar un mapa de Karnaugh per a la funció de sortida A, amb les entrades P,S,T i V agrupades.
+L'expressió per a $A$ en funció de $P$, $S$, $T$ i $V$ és molt llarga. Fer-ne una simplificació lògica mitjançant algebra booleana seria complex. Alternativament podem utilitzar un [mapa de Karnaugh](../Intro/karnaugh.md) per a la funció de sortida A, amb les entrades P,S,T i V agrupades.
 
 <!-- 
 | PS\TV | 00 | 01 | 11 | 10 |
@@ -101,8 +98,6 @@ L'expressió per a $A$ en funció de $P$, $S$, $T$ i $V$ és molt llarga. Fer-ne
 | 11 | 1 | 1 | 1 | 1 |
 | 10 | 0 | 1 | 1 | 1 |
 -->
-
-<div style="display: flex; justify-content: center;">
 
 <table style="border-collapse: collapse; text-align: center;">
   <thead>
@@ -150,8 +145,6 @@ L'expressió per a $A$ en funció de $P$, $S$, $T$ i $V$ és molt llarga. Fer-ne
   </tbody>
 </table>
 
-</div>
-
 
 
 
@@ -164,7 +157,8 @@ barPSTV
 
 
 
-
+<img src='../logos/enconstrucció.png' alt="Agrupacions exemple" style="display:block; width:50px; margin:0 auto; border-radius: 8px;"/>
+<center><i>Circuit resultat de l'exemple</i></center>
 
 
 

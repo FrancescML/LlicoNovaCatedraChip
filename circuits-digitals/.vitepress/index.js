@@ -11,6 +11,10 @@ export const index = [
                 text: 'Àlgebra de Boole',
                 link: '/Intro/boole',
             },
+            {
+                text: 'Mapes de Karnaugh',
+                link: '/Intro/karnaugh',
+            },
         ],
     },
     {
