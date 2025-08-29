@@ -16,7 +16,7 @@ Els **circuits digitals** processen informació representada en format discret, 
 
 Les **portes lògiques** efectuen operacions bàsiques sobre un o més senyals binaris d'entrada per produir un únic senyal binari de sortida. Per entendre el funcionament de les portes lògiques cal conèixer conceptes com l'àlgebra de Boole i les taules de veritat. En molts exemples i exercicis de circuits digitals utilitzarem les taules de veritat o una funció booleana per descriure el comportament lògic d’un circuit. 
 
-|**Porta lògica**|**Símbol**                           |**Espressió Booleana** [*](./boole)  |**Descripció**
+|**Porta lògica**|**Símbol**                           |**Expressió Booleana** [*](./boole)  |**Descripció**
 |------ |------                                        |---                     |------
 |Buffer |<img src="./Buffer_ANSI_Labelled.svg.png"/>   |$A$                     |Retorna el mateix bit
 |NOT    |<img src="./NOT_ANSI_Labelled.svg.png"/>      |$\bar{A}$               |Inverteix el bit

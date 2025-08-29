@@ -70,7 +70,7 @@ $A= \bar{P}STV + PST\bar{V} + PS\bar{T}V + P\bar{S}TV + + PSTV + PS\bar{T}\bar{V
 Muntem la taula de veritat amb tots els casos possibles:
 
 | $P$ | $S$ | $T$ | $V$ | vots favorables | $C1$ | $C2$ | $A$ |
-| --- | --- | --- | --- | --- | --- | --- | --- |
+| --- | --- | --- | --- | :---: | --- | --- | --- |
 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | 0 | 0 | 0 | 1 | 1 | 0 | 0 | 0 |
 | 0 | 0 | 1 | 0 | 1 | 0 | 0 | 0 |
@@ -145,34 +145,226 @@ L'expressió per a $A$ en funció de $P$, $S$, $T$ i $V$ és molt llarga. Fer-ne
   </tbody>
 </table>
 
+El següent pas és agrupar els ‘1’ en 4 grups, que marcarem amb diferents colors. 
+
+<table style="border-collapse: collapse; text-align: center;">
+  <thead>
+    <tr>
+      <th style="border: 1px solid #ccc; position: relative; width: 60px; height: 60px;">
+        <div style="position: absolute; top: 5px; right: 5px;">TV</div>
+        <div style="position: absolute; bottom: 5px; left: 5px;">PS</div>
+        <div style="position: absolute; bottom: 0; left: 0; width: 100%; height: 1px; background: #ccc; transform-origin: top right; transform: rotate(+45deg);"></div>
+      </th>
+      <th style="border: 1px solid #ccc; padding: 5px 10px;">00</th>
+      <th style="border: 1px solid #ccc; padding: 5px 10px;">01</th>
+      <th style="border: 1px solid #ccc; padding: 5px 10px;">11</th>
+      <th style="border: 1px solid #ccc; padding: 5px 10px;">10</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th style="border: 1px solid #ccc; padding: 5px 10px;">00</th>
+      <td style="border: 1px solid #ccc; padding: 5px 10px;">0</td>
+      <td style="border: 1px solid #ccc; padding: 5px 10px;">0</td>
+      <td style="border: 1px solid #ccc; padding: 5px 10px;">0</td>
+      <td style="border: 1px solid #ccc; padding: 5px 10px;">0</td>
+    </tr>
+    <tr>
+      <th style="border: 1px solid #ccc; padding: 5px 10px;">01</th>
+      <td style="border: 1px solid #ccc; padding: 5px 10px;">0</td>
+      <td style="border: 1px solid #ccc; padding: 5px 10px;">0</td>
+      <td style="border: 1px solid #ccc; padding: 5px 10px;">1</td>
+      <td style="border: 1px solid #ccc; padding: 5px 10px;">0</td>
+    </tr>
+    <tr>
+      <th style="border: 1px solid #ccc; padding: 5px 10px;">11</th>
+      <td style="border: 1px solid #ccc; padding: 5px 10px;">1</td>
+      <td style="border: 1px solid #ccc; padding: 5px 10px;">1</td>
+      <td style="border: 1px solid #ccc; padding: 5px 10px;border: 1px solid #ccc; padding: 5px 10px;background-color: lightblue;">1</td>
+      <td style="border: 1px solid #ccc; padding: 5px 10px;border: 1px solid #ccc; padding: 5px 10px;background-color: lightblue;">1</td>
+    </tr>
+    <tr>
+      <th style="border: 1px solid #ccc; padding: 5px 10px;">10</th>
+      <td style="border: 1px solid #ccc; padding: 5px 10px;">0</td>
+      <td style="border: 1px solid #ccc; padding: 5px 10px;">1</td>
+      <td style="border: 1px solid #ccc; padding: 5px 10px;border: 1px solid #ccc; padding: 5px 10px;background-color: lightblue;">1</td>
+      <td style="border: 1px solid #ccc; padding: 5px 10px;border: 1px solid #ccc; padding: 5px 10px;background-color: lightblue;">1</td>
+    </tr>
+  </tbody>
+</table>
+
+Les variables constants dins del grup blau són $P=1$ i $T=1$, això es tradueix en el terme $PT$ a la solució.
+
+$A=PT$
+
+<table style="border-collapse: collapse; text-align: center;">
+  <thead>
+    <tr>
+      <th style="border: 1px solid #ccc; position: relative; width: 60px; height: 60px;">
+        <div style="position: absolute; top: 5px; right: 5px;">TV</div>
+        <div style="position: absolute; bottom: 5px; left: 5px;">PS</div>
+        <div style="position: absolute; bottom: 0; left: 0; width: 100%; height: 1px; background: #ccc; transform-origin: top right; transform: rotate(+45deg);"></div>
+      </th>
+      <th style="border: 1px solid #ccc; padding: 5px 10px;">00</th>
+      <th style="border: 1px solid #ccc; padding: 5px 10px;">01</th>
+      <th style="border: 1px solid #ccc; padding: 5px 10px;">11</th>
+      <th style="border: 1px solid #ccc; padding: 5px 10px;">10</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th style="border: 1px solid #ccc; padding: 5px 10px;">00</th>
+      <td style="border: 1px solid #ccc; padding: 5px 10px;">0</td>
+      <td style="border: 1px solid #ccc; padding: 5px 10px;">0</td>
+      <td style="border: 1px solid #ccc; padding: 5px 10px;">0</td>
+      <td style="border: 1px solid #ccc; padding: 5px 10px;">0</td>
+    </tr>
+    <tr>
+      <th style="border: 1px solid #ccc; padding: 5px 10px;">01</th>
+      <td style="border: 1px solid #ccc; padding: 5px 10px;">0</td>
+      <td style="border: 1px solid #ccc; padding: 5px 10px;">0</td>
+      <td style="border: 1px solid #ccc; padding: 5px 10px;">1</td>
+      <td style="border: 1px solid #ccc; padding: 5px 10px;">0</td>
+    </tr>
+    <tr>
+      <th style="border: 1px solid #ccc; padding: 5px 10px;">11</th>
+      <td style="border: 1px solid #ccc; padding: 5px 10px;">1</td>
+      <td style="border: 1px solid #ccc; padding: 5px 10px;border: 1px solid #ccc; padding: 5px 10px;background-color: yellow;">1</td>
+      <td style="border: 1px solid #ccc; padding: 5px 10px;border: 1px solid #ccc; padding: 5px 10px;background-color: yellow;">1</td>
+      <td style="border: 1px solid #ccc; padding: 5px 10px;">1</td>
+    </tr>
+    <tr>
+      <th style="border: 1px solid #ccc; padding: 5px 10px;">10</th>
+      <td style="border: 1px solid #ccc; padding: 5px 10px;">0</td>
+      <td style="border: 1px solid #ccc; padding: 5px 10px;border: 1px solid #ccc; padding: 5px 10px;background-color: yellow;">1</td>
+      <td style="border: 1px solid #ccc; padding: 5px 10px;border: 1px solid #ccc; padding: 5px 10px;background-color: yellow;">1</td>
+      <td style="border: 1px solid #ccc; padding: 5px 10px;">1</td>
+    </tr>
+  </tbody>
+</table>
+
+Les variables constants en el grup groc són $P=1$ i $V=1$, afegim el terme $PV$ a la solució.
+
+$A=PT + PV$
+
+
+<table style="border-collapse: collapse; text-align: center;">
+  <thead>
+    <tr>
+      <th style="border: 1px solid #ccc; position: relative; width: 60px; height: 60px;">
+        <div style="position: absolute; top: 5px; right: 5px;">TV</div>
+        <div style="position: absolute; bottom: 5px; left: 5px;">PS</div>
+        <div style="position: absolute; bottom: 0; left: 0; width: 100%; height: 1px; background: #ccc; transform-origin: top right; transform: rotate(+45deg);"></div>
+      </th>
+      <th style="border: 1px solid #ccc; padding: 5px 10px;">00</th>
+      <th style="border: 1px solid #ccc; padding: 5px 10px;">01</th>
+      <th style="border: 1px solid #ccc; padding: 5px 10px;">11</th>
+      <th style="border: 1px solid #ccc; padding: 5px 10px;">10</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th style="border: 1px solid #ccc; padding: 5px 10px;">00</th>
+      <td style="border: 1px solid #ccc; padding: 5px 10px;">0</td>
+      <td style="border: 1px solid #ccc; padding: 5px 10px;">0</td>
+      <td style="border: 1px solid #ccc; padding: 5px 10px;">0</td>
+      <td style="border: 1px solid #ccc; padding: 5px 10px;">0</td>
+    </tr>
+    <tr>
+      <th style="border: 1px solid #ccc; padding: 5px 10px;">01</th>
+      <td style="border: 1px solid #ccc; padding: 5px 10px;">0</td>
+      <td style="border: 1px solid #ccc; padding: 5px 10px;">0</td>
+      <td style="border: 1px solid #ccc; padding: 5px 10px;">1</td>
+      <td style="border: 1px solid #ccc; padding: 5px 10px;">0</td>
+    </tr>
+    <tr>
+      <th style="border: 1px solid #ccc; padding: 5px 10px;">11</th>
+      <td style="border: 1px solid #ccc; padding: 5px 10px;background-color: lightgreen;">1</td>
+      <td style="border: 1px solid #ccc; padding: 5px 10px;background-color: lightgreen;">1</td>
+      <td style="border: 1px solid #ccc; padding: 5px 10px;background-color: lightgreen;">1</td>
+      <td style="border: 1px solid #ccc; padding: 5px 10px;background-color: lightgreen;">1</td>
+    </tr>
+    <tr>
+      <th style="border: 1px solid #ccc; padding: 5px 10px;">10</th>
+      <td style="border: 1px solid #ccc; padding: 5px 10px;">0</td>
+      <td style="border: 1px solid #ccc; padding: 5px 10px;">1</td>
+      <td style="border: 1px solid #ccc; padding: 5px 10px;">1</td>
+      <td style="border: 1px solid #ccc; padding: 5px 10px;">1</td>
+    </tr>
+  </tbody>
+</table>
+
+L’agrupació de color verd té en comú $P=1$ i $S=1$, afegim el terme $PS$ a la solució
+
+$A=PT + PV + PS$
+
+
+<table style="border-collapse: collapse; text-align: center;">
+  <thead>
+    <tr>
+      <th style="border: 1px solid #ccc; position: relative; width: 60px; height: 60px;">
+        <div style="position: absolute; top: 5px; right: 5px;">TV</div>
+        <div style="position: absolute; bottom: 5px; left: 5px;">PS</div>
+        <div style="position: absolute; bottom: 0; left: 0; width: 100%; height: 1px; background: #ccc; transform-origin: top right; transform: rotate(+45deg);"></div>
+      </th>
+      <th style="border: 1px solid #ccc; padding: 5px 10px;">00</th>
+      <th style="border: 1px solid #ccc; padding: 5px 10px;">01</th>
+      <th style="border: 1px solid #ccc; padding: 5px 10px;">11</th>
+      <th style="border: 1px solid #ccc; padding: 5px 10px;">10</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th style="border: 1px solid #ccc; padding: 5px 10px;">00</th>
+      <td style="border: 1px solid #ccc; padding: 5px 10px;">0</td>
+      <td style="border: 1px solid #ccc; padding: 5px 10px;">0</td>
+      <td style="border: 1px solid #ccc; padding: 5px 10px;">0</td>
+      <td style="border: 1px solid #ccc; padding: 5px 10px;">0</td>
+    </tr>
+    <tr>
+      <th style="border: 1px solid #ccc; padding: 5px 10px;">01</th>
+      <td style="border: 1px solid #ccc; padding: 5px 10px;">0</td>
+      <td style="border: 1px solid #ccc; padding: 5px 10px;">0</td>
+      <td style="border: 1px solid #ccc; padding: 5px 10px;background-color: red;">1</td>
+      <td style="border: 1px solid #ccc; padding: 5px 10px;">0</td>
+    </tr>
+    <tr>
+      <th style="border: 1px solid #ccc; padding: 5px 10px;">11</th>
+      <td style="border: 1px solid #ccc; padding: 5px 10px;">1</td>
+      <td style="border: 1px solid #ccc; padding: 5px 10px;">1</td>
+      <td style="border: 1px solid #ccc; padding: 5px 10px;background-color: red;">1</td>
+      <td style="border: 1px solid #ccc; padding: 5px 10px;">1</td>
+    </tr>
+    <tr>
+      <th style="border: 1px solid #ccc; padding: 5px 10px;">10</th>
+      <td style="border: 1px solid #ccc; padding: 5px 10px;">0</td>
+      <td style="border: 1px solid #ccc; padding: 5px 10px;">1</td>
+      <td style="border: 1px solid #ccc; padding: 5px 10px;">1</td>
+      <td style="border: 1px solid #ccc; padding: 5px 10px;">1</td>
+    </tr>
+  </tbody>
+</table>
+
+Finalment, en el grup vermell les variables constants són $S=1$,$T=1$ i $V=1$, afegim el terme $STV$ a la solució.
+
+$A=PT + PV + PS + STV$
+
+Aquesta és l’expressió booleana simplificada final perque tots els ‘1’ ja han estat considerats en algun grup.
+
+El circuit digital derivat d’aquesta expressió és el seguent:
 
 
 
-<!--
-A=PS+P
-barSV+P
-barST+
-barPSTV
--->
+<img src='../logos/enconstrucció.png' alt="Circuit digital" style="display:block; width:50px; margin:0 auto; border-radius: 8px;"/>
+<center><i>Circuit digital que implementa el sistema de votació per a comitès
+</i></center>
 
 
 
-<img src='../logos/enconstrucció.png' alt="Agrupacions exemple" style="display:block; width:50px; margin:0 auto; border-radius: 8px;"/>
-<center><i>Circuit resultat de l'exemple</i></center>
+<!-- Aquesta imatge ha d'anar al final de cada lliçó, ja sigui amb aquesta línia o dins la signatura. Deixar comentat si ja està a la signatura-->
+<br>
+<br>
+<img src='../logos/TotsLogosBlanc.png ' alt="Logos Càtedra Chip" width="100%" style="display:block; margin:0 auto; border-radius: 8px;"/>
 
 
-
-
-
-
-
-
-
-
-
-<!-- ************* EN CONSTRUCCIÓ *****************-->
-<img src='../logos/enconstrucció.png' alt="Logos Càtedra Chip" style="display:block; height:200px; margin:0 auto; border-radius: 8px;"/>
-
-
-<Autors autors="jpetit xcasas fmadrid"/>
-
+<Autors autors="jpetit xcasas fmadrid jordic"/>

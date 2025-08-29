@@ -43,22 +43,13 @@ Els exercicis del tema [Nombres](./nombres.md) tracten sobre els circuits digita
 
 Al [tema BCD](./bcddigits.md) (Binary Coded Decimal) faràs exercicis sobre els circuits encarregats codificar els dígits decimals en binari.
 
-
-|**Dígit decimal**|**BCD**
-|------ |------
-|0 | 0000
-|1 | 0001
-|2 | 0010
-|3 | 0011
-|4 | 0100
-|5 | 0101
-|6 | 0110
-|7 | 0111
-|8 | 1000
-|9 | 1001
-
 Finalment, al tema [Miscel·lània](./miscellania.md) faràs exercicis amb més avançats.
 
 
-<Autors autors="jpetit xcasas fmadrid"/>
+<!-- Aquesta imatge ha d'anar al final de cada lliçó, ja sigui amb aquesta línia o dins la signatura. Deixar comentat si ja està a la signatura-->
+<br>
+<br>
+<img src='../logos/TotsLogosBlanc.png ' alt="Logos Càtedra Chip" width="100%" style="display:block; margin:0 auto; border-radius: 8px;"/>
 
+
+<Autors autors="jpetit xcasas fmadrid jordic"/>
