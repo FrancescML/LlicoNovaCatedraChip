@@ -81,6 +81,14 @@ const info = {
         name: 'Marc Gállego',
         org: 'UPC',
     },
+    xcasas: {
+        name: 'Xavier Casas',
+        org: 'UPC',
+    },
+    fmadrid: {
+        name: 'Francesc Madrid',
+        org: 'UPC',
+    },
 }
 
 const props = defineProps({
