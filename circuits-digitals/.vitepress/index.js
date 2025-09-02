@@ -1,11 +1,19 @@
 export const index = [
     {
-        text: 'Inici',
+        text: 'Introducció als circuits digitals',
         collapsed: true,
         items: [
             {
-                text: 'Introducció als circuits digitals',
-                link: '/Intro/intro',
+                text: 'Circuits digitals',
+                link: '/Intro/circuitsdigitals',
+            },
+            {
+                text: 'Àlgebra de Boole',
+                link: '/Intro/boole',
+            },
+            {
+                text: 'Mapes de Karnaugh',
+                link: '/Intro/karnaugh',
             },
         ],
     },
@@ -13,26 +21,46 @@ export const index = [
         text: 'Circuits Combinacionals',
         collapsed: true,
         items: [
-/*            {
+            {
                 text: 'Introducció als Circuits Combinacionals',
                 link: '/CircCombin/intro',
             },
             {
-                text: 'tema a',
-                link: '/CircCombin/temaa',
+                text: 'Exercicis simples',
+                link: '/CircCombin/exsimples',
             },
             {
-                text: 'tema b',
-                link: '/CircCombin/temab',
+                text: 'Multiplexors',
+                link: '/CircCombin/multiplexors',
             },
-*/
+            {
+                text: 'Sistemes de votació',
+                link: '/CircCombin/svotacio',
+            },
+            {
+                text: 'Busos',
+                link: '/CircCombin/busos',
+            },
+            {
+                text: 'Nombres',
+                link: '/CircCombin/nombres',
+            },
+            {
+                text: 'BCD digits',
+                link: '/CircCombin/bcddigits',
+            },
+            {
+                text: 'Miscel·lània',
+                link: '/CircCombin/miscellania',
+            },
         ],
     },
     {
         text: 'Circuits Aritmètics',
         collapsed: true,
         items: [
-/*            {
+/*
+            {
                 text: 'Introducció als Circuits Aritmètics',
                 link: '/CircAritm/intro',
             },
@@ -43,7 +71,8 @@ export const index = [
             {
                 text: 'tema b',
                 link: '/CircAritm/temab',
-            },*/
+            },
+*/
         ],
     },
     {
