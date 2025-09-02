@@ -94,7 +94,7 @@ Amb aquestes funcions booleanes ja simplificades podem implementar el circuit ut
 
 **Vejem alguns exemples per comprovar que les equacions donen els resultats que ens esperem.**
 
-### Digit 2, D=(0010)
+### Digit 2, D=[0010]
 
 * $segment \; a = 0 + 1 + 0 · \bar{0} + \bar{0}  · 0  = 1$
 
@@ -111,7 +111,7 @@ Amb aquestes funcions booleanes ja simplificades podem implementar el circuit ut
 * $segment \; g = 0 + \bar{0} · 1 + 0 · \bar{1} + 1 · \bar{0} = 1$
 
 
-### Digit 4, D=(0100)
+### Digit 4, D=[0100]
 * $segment \; a = 0 + 0 + 1 · \bar{0} + \bar{1} · 0=1$
 
 * $segment \; b = \bar{1} + \bar{0} · \bar{0} + 0 · 0=1$
@@ -127,7 +127,7 @@ Amb aquestes funcions booleanes ja simplificades podem implementar el circuit ut
 * $segment \; g = 0 + \bar{1} · 0 + 1 · \bar{0} + 0 · \bar{0}=1$
 
 
-### Digit 9, D=(1001)
+### Digit 9, D=[1001]
 * $segment \; a = 1 + 0 + 0 · \bar{1} + \bar{0} · 1=1$
 
 * $segment \; b = \bar{0} + \bar{0} · \bar{1} + 0 · 1=1$
