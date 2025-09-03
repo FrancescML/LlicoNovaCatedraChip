@@ -23,7 +23,7 @@ Una taula de veritat completa per a un nombre de bits N molt elevat pot ser invi
 A continuació es mostra la taula de veritat d'un circuit desplaçador, que desplaça l'entrada $A[3:0]=[A_3​ A_2​ A_1​ A_0​]$ un bit cap a l'esquerra i en treu una sortida $B[3:0]=[B_3​ B_2 ​B_1 ​B_0​]$.
 
 |**Entrada $A$** |**Sortida $B$**|
-|---|---|
+|:---:|:---:|
 |0000|0000|
 |0001|0010|
 |0010|0100|
@@ -49,7 +49,7 @@ El nostre objectiu és dissenyar un circuit desplaçador de 4 bits. Tenim dues o
 
 En aquesta secció emprarem multiplexors i el circuit serà el seguent:
 
-<img src='../logos/enconstrucció.png' alt="Circuit desplaçador" style="display:block; width:50px; margin:0 auto; border-radius: 8px;"/>
+<img src='../logos/enconstrucció.png' alt="Circuit desplaçador" style="display:block; height:200px; margin:0 auto; border-radius: 8px;"/>
 <center><i>Circuit digital que desplaça una posició cap a l'esquerra</i></center>
 
 El senyal de control $Sel$ serveix per determinar si el circuit efectua el desplaçament o no.
@@ -77,8 +77,16 @@ Per a cada bit de sortida de $B$, farem servir un multiplexor 2-a-1.
 
 
 
+## Exercicis de [Introduction to Digital Circuit Design](https://jutge.org/courses/JordiCortadella:IntroCircuits)
 
 
+[Bus invert](https://jutge.org/problems/X29475_en)
+
+[Bus transfer or invert](https://jutge.org/problems/X00341_en)
+
+[Shift left](https://jutge.org/problems/X26035_en)
+
+[Shift left or right](https://jutge.org/problems/X25794_en)
 
 
 
@@ -88,4 +96,4 @@ Per a cada bit de sortida de $B$, farem servir un multiplexor 2-a-1.
 <img src='../logos/TotsLogosBlanc.png ' alt="Logos Càtedra Chip" width="100%" style="display:block; margin:0 auto; border-radius: 8px;"/>
 
 
-<Autors autors="jpetit xcasas fmadrid jordic"/>
+<Autors autors="xcasas fmadrid jordic"/>

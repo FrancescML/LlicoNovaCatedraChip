@@ -25,15 +25,15 @@ La **variable de sortida** del circuit la és un sol bit $Parell$.
 La següent taula recull uns quants exemples d'entrades i sortides que il·lustren el comportament desitjat del circuit. La taula de veritat completa tindria 16 files.
 
 |**$number$**|**Nombre en decimal**|$number_0$ (LSB)|Paritat| $Parell$|
-|:---:|:---:|:---:|---|---|
-|0000| 0  | 0 | és Parell| 1 
-|0001| 1  | 1 | és Senar | 0
-|0010| 2  | 0 | és Parell| 1 
-|0011| 3  | 1 | és Senar | 0
-|1110| 14 | 0 | és Parell| 1 
-|1111| 15 | 1 | és Senar | 0
+|:---:|:---:|:---:|---|:---:|
+|0000 | 0  | 0 | és Parell| 1 
+|0001 | 1  | 1 | és Senar | 0
+|0010 | 2  | 0 | és Parell| 1 
+|0011 | 3  | 1 | és Senar | 0
+|1110 | 14 | 0 | és Parell| 1 
+|1111 | 15 | 1 | és Senar | 0
 
-Construir el circuit és força directe, la sortida $Parell$ s'ha d'activar ( valor '1') si i només si $number[0]$ té el valor '0', independentment del valor de la resta de bits de $number$.
+Construir el circuit és força directe, la sortida $Parell$ s'ha d'activar (valor '1') si i només si $number[0]$ té el valor '0', independentment del valor de la resta de bits de $number$.
 
 La sortida és doncs la negació de $number_0$:
 
@@ -43,7 +43,8 @@ El circuit s'implementa amb una sola porta lògica NOT al bit $number_0$.
 
 
 
-<img src='../logos/enconstrucció.png' alt="Circuit desplaçador" style="display:block; width:50px; margin:0 auto; border-radius: 8px;"/>
+<img src='../logos/enconstrucció.png' alt="Circuit desplaçador"  style="display:block; height:200px; margin:0 auto; border-radius: 8px;"/>
+
 <center><i>Circuit digital que desplaça una posició cap a l'esquerra</i></center>
 
 
@@ -537,16 +538,21 @@ $residu_2=  n_2 \overline{n_1} + \overline{n_3} n_2$
 A partir d'aquestes tres expressions podem emprar les portes lògiques per crear el circuit digital que implementarà la funció $n \mod{7}$.
 
 
-<img src='../logos/enconstrucció.png' alt="Circuit digital" style="display:block; width:50px; margin:0 auto; border-radius: 8px;"/>
+<img src='../logos/enconstrucció.png' alt="Circuit digital" style="display:block; height:200px; margin:0 auto; border-radius: 8px;"/>
 <center><i>Circuit digital que implementa la funció n mod 7.
 </i></center>
 
 
+## Exercicis de [Introduction to Digital Circuit Design](https://jutge.org/courses/JordiCortadella:IntroCircuits)
 
 
+[Even number](https://jutge.org/problems/X36253_en)
 
+[Prime number](https://jutge.org/problems/X07160_en)
 
+[Max of two numbers](https://jutge.org/problems/X37473_en)
 
+[Residue mod 7](https://jutge.org/problems/X91814_en)
 
 
 
@@ -582,4 +588,4 @@ A partir d'aquestes tres expressions podem emprar les portes lògiques per crear
 <img src='../logos/TotsLogosBlanc.png ' alt="Logos Càtedra Chip" width="100%" style="display:block; margin:0 auto; border-radius: 8px;"/>
 
 
-<Autors autors="jpetit xcasas fmadrid jordic"/>
+<Autors autors="xcasas fmadrid jordic"/>

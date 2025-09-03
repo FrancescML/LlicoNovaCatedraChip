@@ -4,6 +4,10 @@ export const index = [
         collapsed: true,
         items: [
             {
+                text: 'Inici',
+                link: '/Intro/inici',
+            },
+            {
                 text: 'Circuits digitals',
                 link: '/Intro/circuitsdigitals',
             },
@@ -15,6 +19,7 @@ export const index = [
                 text: 'Mapes de Karnaugh',
                 link: '/Intro/karnaugh',
             },
+
         ],
     },
     {
@@ -59,12 +64,12 @@ export const index = [
         text: 'Circuits Aritmètics',
         collapsed: true,
         items: [
-/*
+
             {
-                text: 'Introducció als Circuits Aritmètics',
+                text: 'Introducció als circuits aritmètics',
                 link: '/CircAritm/intro',
             },
-            {
+ /*           {
                 text: 'tema a',
                 link: '/CircAritm/temaa',
             },
@@ -79,11 +84,11 @@ export const index = [
         text: 'Circuits Seqüencials',
         collapsed: true,
         items: [
-/*            {
-                text: 'Introducció als Circuits Seqüencials',
+            {
+                text: 'Introducció als circuits seqüencials',
                 link: '/CircSeq/intro',
             },
-            {
+/*            {
                 text: 'tema a',
                 link: '/CircSeq/temaa',
             },
@@ -98,11 +103,11 @@ export const index = [
         text: 'TinyMicro',
         collapsed: true,
         items: [
-/*            {
+            {
                 text: 'Introducció a TinyMicro',
                 link: '/TinyMicro/intro',
             },
-            {
+/*            {
                 text: 'tema a',
                 link: '/TinyMicro/temaa',
             },
@@ -118,11 +123,11 @@ export const index = [
         text: 'Final',
         collapsed: true,
         items: [
-/*            {
+            {
                 text: 'Tancament',
-                link: '/final/final',
+                link: '/Final/final',
             },
-*/
+
         ],
     },
 ]

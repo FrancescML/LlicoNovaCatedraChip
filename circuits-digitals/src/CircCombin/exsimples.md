@@ -24,13 +24,11 @@ Les regles per concedir l'accés són les següents:
 
 * **$R_3$** - O bé, l'autorització de seguretat NO està activa i la targeta és vàlida.
 
-Dissenya un circuit amb tres entrades ($T$, $H$, $S$) i una sortida ($A$). La sortida $A$ determinarà si es concedeix l'accés, prenent el valor '$1$' per a accés concedit i '$0$' per a accés denegat.
+Ens cal dissenyar un circuit amb tres entrades ($T$, $H$, $S$) i una sortida ($A$). La sortida $A$ determinarà si es concedeix l'accés, prenent el valor '$1$' per a accés concedit i '$0$' per a accés denegat.
 
 En primer lloc muntem la taula de veritat d'aquesta aplicació:
 
-<i>Taula de veritat</i>
-
-|**T**|**H**|**S**|**R1**|**R2**|**R3**|**A**
+|**$T$**|**$H$**|**$S$**|**$R_1$**|**$R_2$**|**$R_3$**|**$A$**
 |------ |------ |------ |------ |------ |------ |------
 |0|0|0|0|0|1|1
 |0|0|1|0|0|0|0
@@ -50,12 +48,21 @@ $
 
 Aleshores dibuixem el circuit digital.
 <img src='./exsimplesexemple.png' alt="exemple" style="display:block; height:200px; margin:0 auto; border-radius: 8px;"/>
-<center><i>Circuit Digital</i></center>
+<center><i>Circuit digital de control d'accés per a treballadors</i></center>
 
-## Exercici: [The Embassy Ball](https://jutge.org/problems/X64345_en)
+## Exercicis de [Introduction to Digital Circuit Design](https://jutge.org/courses/JordiCortadella:IntroCircuits)
 
-<!-- ************* EN CONSTRUCCIÓ *****************-->
-<img src='../logos/enconstrucció.png' alt="Logos Càtedra Chip" style="display:block; height:200px; margin:0 auto; border-radius: 8px;"/>
+[The Embassy Ball](https://jutge.org/problems/X64345_en)
+
+[Heating-cooling system](https://jutge.org/problems/X04334_en)
+
+[Energy-efficient heating-cooling system](https://jutge.org/problems/X89493_en)
+
+[Robot with light sensors](https://jutge.org/problems/X74930_en)
+
+
+
+
 
 
 
@@ -65,4 +72,4 @@ Aleshores dibuixem el circuit digital.
 <img src='../logos/TotsLogosBlanc.png ' alt="Logos Càtedra Chip" width="100%" style="display:block; margin:0 auto; border-radius: 8px;"/>
 
 
-<Autors autors="jpetit xcasas fmadrid jordic"/>
+<Autors autors="xcasas fmadrid jordic"/>

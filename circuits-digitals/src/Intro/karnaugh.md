@@ -11,11 +11,11 @@ Un mapa de Karnaugh (també conegut com a K-map o diagrama de Veitch) és una ei
 
 L'objectiu principal és trobar l'expressió algebraica més simple possible per a una funció lògica determinada. Una funció lògica més simple es tradueix directament en un circuit digital més senzill.
 
-Es tracta d’un mètode alternatiu a la simplificació amb les lleis de l'àlgebra de Boole que sovint resulta més ràpid i menys propens a errors per a funcions de poques variables (típicament de 2 a 4, però es poden utilitzar per a funcions de fins a 6 variables).
+Es tracta d’un mètode alternatiu a la simplificació amb les lleis de l'àlgebra de Boole. Sovint resulta més ràpid i menys propens a errors. Funciona per a funcions de poques variables, típicament de 2 a 4, però es poden utilitzar per a funcions de fins a 6 variables.
 
-Un mapa de Karnaugh és una graella que organitza totes les possibles combinacions de les variables d’entrada d’una funció booleana. Cada cel·la representa una combinació de les variables d'entrada de la funció (una fila de la taula de la veritat).
+Un mapa de Karnaugh és una graella que organitza totes les possibles combinacions de les variables d’entrada d’una funció booleana. Cada cel·la representa una combinació de les variables d'entrada de la funció, és a dir, una fila de la taula de la veritat.
 
-Aquest mapa s’ha d’ordenar de manera que entre dues cel·les adjacents (verticalment o horitzontalment) canvia el valor d'una única variable. Això facilita identificar patrons i fer agrupacions per reduir l’expressió lògica.
+Aquest mapa s’ha d’ordenar de manera que entre dues cel·les adjacents verticalment o horitzontalment, canvii el valor d'una única variable. Això facilita identificar patrons i fer agrupacions per reduïr l’expressió lògica.
 
 ## Exemple
 
@@ -99,8 +99,9 @@ Vegem la següent taula de veritat d'un circuit digital hipotètic. Aquesta repr
 
 El mapa de Karnaugh resultant, agrupant les variables B i C, és el següent:
 
-<i>Mapa de Karnaugh</i>
 <!-- 
+<i>Mapa de Karnaugh</i>
+
 |           |**$BC=00$**|**$BC=01$**|**$BC=11$**|**$BC=10$**
 |------     |------     |------     |------     |------
 |**$A=0$**  |1|0|1|1|
@@ -137,14 +138,11 @@ El mapa de Karnaugh resultant, agrupant les variables B i C, és el següent:
   </tbody>
 </table>
 
-
-
-
 Els valors de cada cel·la són els valors que pren la sortida $S$ en funció de $A$, $B$ i $C$.
 
 ## Estructures per a mapes de Karnaugh de 2 a 5 variables
 
-A continuació es mostren les estructures dels mapes de Karnaugh per diferents nombres de variables d'entrada. Les taules més comunes solen ser les de 2 a 4 variables d'entrada, però es poden utilitzar per a funcions de fins a 5 o 6 variables.
+A continuació es mostren les estructures dels mapes de Karnaugh per diferents nombres de variables d'entrada. Les taules més comuns solen ser les de 2 a 4 variables d'entrada, però es poden utilitzar per a funcions de fins a 5 o 6 variables.
 
 
 ### Mapa de Karnaugh de 2 variables d'entrada
@@ -179,7 +177,7 @@ A continuació es mostren les estructures dels mapes de Karnaugh per diferents n
 
 ### Mapa de Karnaugh de 3 variables d'entrada
 
-En aquest cas, les variables es poden agrupar de diferents maneres; $A\backslash BC$ (exemple anterior), $B\backslash AC$  o $C\backslash AB$ (aquest exemple). En qualsevol cas, el mapa de valors és el mateix.
+En aquest cas, les variables es poden agrupar de diferents maneres; $A\backslash BC$ (exemple anterior), $B\backslash AC$  o $C\backslash AB$ (aquest exemple). En qualsevol cas, el mapa de valors és el mateix (Codi Gray).
 
 <!-- Taula de 3 variables -->
 <table style="border-collapse: collapse; text-align: center;">
@@ -450,7 +448,7 @@ Mapa de valors per a 6 variables.
 -->
 
 
-## Regles de Mapa de Karnaugh
+## Regles per al Mapa de Karnaugh
 
 ### **Codi Gray:**
 Les files i columnes del mapa no s'ordenen de manera convencional (00, 01, 10, 11), sinó que segueixen el codi Gray (00, 01, 11, 10). 
@@ -462,12 +460,12 @@ Cal omplir la taula amb els resultats de la variable de sortida corresponents a 
 ### **Agrupar els '1' ajacents:**
 L'objectiu és fer els grups tan extensos com sigui possible.
 * S'agrupen els '1' adjacents en forma de fila, quadrat o rectangle.
-* La mida dels grups ha de ser una potència de dos (1, 2, 4, 8, ...).
+* La mida dels grups ha de ser una potència de dos. És a dir 1, 2, 4, 8, etc...
 * S'han d'anar fent grups fins que tots els '1' de la taula formin part d'almenys un d'ells.
 * Les vores del mapa es consideren adjacents amb la vora oposada, com si el mapa s'extengués repetint-se més enllà de les vores.
 
 ### **Obtenció de l'expressió lògica simplificada:**
-Cada grup de '1's es tradueix en un terme de la funció booleana simplificada. Per fer-ho, s'observen quines variables no canvien de valor dins del grup, aquestes formaràn part del terme de l'expressió. Les variables que si canvien de valor dins del grup no apareixeran a l'expressió.
+Cada grup de '1's es tradueix en un terme de la funció booleana simplificada. Per fer-ho, s'observen quines variables no canvien de valor dins del grup, aquestes formaràn part del terme de l'expressió. Les variables que canvien de valor dins del grup no apareixeran a l'expressió.
 
 ## Exemple
 Busquem en el nostre exemple les agrupacions més extenses possibles de '1'. Hem de continuar amb el procés fins que tots els '1' hagin estat considerats.
@@ -586,12 +584,14 @@ $S=A+B+\bar{C}$
 Aquesta és doncs l'expressió booleana simplificada que engendra la taula de veritat exemple.
 A partir d'aquesta es dedueix el circuit digital, tres entrades a una porta **OR**, una d'elles negada.
 
-<img src='../logos/enconstrucció.png' alt="Agrupacions exemple" style="display:block; width:50px; margin:0 auto; border-radius: 8px;"/>
+<img src='../logos/enconstrucció.png' alt="Agrupacions exemple" style="display:block; height:200px; margin:0 auto; border-radius: 8px;"/>
 <center><i>Circuit resultat de l'exemple</i></center>
 
 
 ## Altres exemples
 Els següents exemples ens ajudaràn a entendre totes les regles.
+
+### Exemple
 
 <!-- Taula de 3 variables -->
 <table style="border-collapse: collapse; text-align: center;">
@@ -628,7 +628,7 @@ Els següents exemples ens ajudaràn a entendre totes les regles.
 
 
 
-El grup vermell engendra el terme $\bar{A}\bar{C}$ perque les variables constants són $A=0$ i $C=0$. Tant $A$ com $C$ han d'aparèixer negades perque tenen el valor $0$. En el grup blau $A=1$ i $C=1$, per ant el seu terme a l'expressió booleana és $AC$.
+El grup vermell engendra el terme $\bar{A}\bar{C}$ perque les variables constants són $A=0$ i $C=0$. Tant $A$ com $C$ han d'aparèixer negades perque tenen el valor $0$. En el grup blau $A=1$ i $C=1$, per tant el seu terme a l'expressió booleana és $AC$.
 
 L'expressió simplificada final és el següent.
 
@@ -636,6 +636,7 @@ $S=\bar{A}\bar{C} + AC$
 
 El fet que no hi aparegui la variable $B$ significa que aquesta no té cap efecte en el resultat $S$.
 
+### Exemple
 
 <!-- Taula de 3 variables -->
 <table style="border-collapse: collapse; text-align: center;">
@@ -670,10 +671,11 @@ El fet que no hi aparegui la variable $B$ significa que aquesta no té cap efect
   </tbody>
 </table>
 
-Amb un sol grup en tenim prou en quest exemple. Les variables constants són $B=0$ i $C=0$. L'expressió simplificada final té un sol terme.
+Amb un sol grup en tenim prou en aquest exemple. Les variables constants són $B=0$ i $C=0$. L'expressió simplificada final té un sol terme.
 
 $S=\bar{B}\bar{C}$
 
+### Exemple
 
 <!-- Taula de 3 variables -->
 <table style="border-collapse: collapse; text-align: center;">
@@ -711,6 +713,8 @@ $S=\bar{B}\bar{C}$
 Altre cop, amb un sol grup en tenim prou. L'única variable que no canvia és $C=1$, d'aquesta manera $S$ només dependrà de $C$.
 
 $S=C$
+
+### Exemple
 
 <!-- Taula de 4 variables -->
 <table style="border-collapse: collapse; text-align: center;">
@@ -763,6 +767,7 @@ En aquest exemple, el grup vermell agrupa $B=0$ i $D=0$, el grup blau agrupa $B=
 
 $S=\bar{B}\bar{D}+BD$
 
+### Exemple
 
 <!-- Taula de 3 variables -->
 <table style="border-collapse: collapse; text-align: center;">
@@ -797,7 +802,7 @@ $S=\bar{B}\bar{D}+BD$
   </tbody>
 </table>
 
-Aquest exemple es pot sol·lucionar amb tres grups. El vermell és $A$, el verd és $B\bar{C}$ i el blau $\bar{B}C$.
+Aquest exemple es pot solucionar amb tres grups. El vermell és $A$, el verd és $B\bar{C}$ i el blau $\bar{B}C$.
 
 $S=A+B\bar{C}+\bar{B}C$
 
@@ -808,4 +813,4 @@ $S=A+B\bar{C}+\bar{B}C$
 <img src='../logos/TotsLogosBlanc.png ' alt="Logos Càtedra Chip" width="100%" style="display:block; margin:0 auto; border-radius: 8px;"/>
 
 
-<Autors autors="jpetit xcasas fmadrid jordic"/>
+<Autors autors="xcasas fmadrid jordic"/>

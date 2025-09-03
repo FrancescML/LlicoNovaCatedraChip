@@ -10,7 +10,7 @@
 
 L'àlgebra de Boole és una eina matemàtica fonamental per l'anàlisi i el disseny dels circuits digitals. És un llenguatge que descriu com aquests circuits processen la informació 
 
-L'àlgebra de Boole és un sistema matemàtic lògic que treballa amb només dos valors possibles: veritable (1) i fals (0). Aquests dos valors corresponen directament als estats elèctrics dels circuits digitals: un voltatge alt o baix, un interruptor obert o tancat, etc. Per això se l'anomena també àlgebra binària.
+L'àlgebra de Boole és un sistema matemàtic lògic que treballa amb només dos valors possibles: veritable (1) i fals (0). Aquests dos valors corresponen directament als estats elèctrics dels circuits digitals: un voltatge alt (1) o baix (0), un interruptor obert o tancat, etc. Per això se l'anomena també àlgebra binària.
 
 * **Base de la Computació**: És la base lògica de totes les operacions que fan els ordinadors, des de càlculs aritmètics fins a decisions complexes en programes.
 
@@ -32,7 +32,7 @@ $A·B$ &emsp;&emsp;&emsp; o bé &emsp;&emsp;&emsp; $AB$
 La taula de veritat es correspon amb la porta lògica AND. La sortida és '$1$' només si totes les entrades són '$1$'   .
 
 |$A$|$B$| $A·B$ |
-|---|---|-------|
+|---|---|:-----:|
 | 0 | 0 | 0     |
 | 0 | 1 | 0     |
 | 1 | 0 | 0     |
@@ -43,10 +43,10 @@ La suma s'expressa amb el símbol "$+$". Per exemple:
 
 $A + B$
 
-La taula de veritat es correspòn amb la porta lògica OR. La sortida és '$1$' si almenys una de les entrades és '$1$'.
+La taula de veritat es correspon amb la porta lògica OR. La sortida és '$1$' si almenys una de les entrades és '$1$'.
 
 |$A$|$B$| $A+B$ |
-|---|---|-------|
+|---|---|:-----:|
 | 0 | 0 | 0     |
 | 0 | 1 | 1     |
 | 1 | 0 | 1     |
@@ -144,4 +144,4 @@ Amb aquesta base podràs simplificar expressions, dissenyar funcions lògiques i
 <img src='../logos/TotsLogosBlanc.png ' alt="Logos Càtedra Chip" width="100%" style="display:block; margin:0 auto; border-radius: 8px;"/>
 
 
-<Autors autors="jpetit xcasas fmadrid jordic"/>
+<Autors autors="xcasas fmadrid jordic"/>

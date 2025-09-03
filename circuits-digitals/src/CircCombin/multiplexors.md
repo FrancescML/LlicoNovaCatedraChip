@@ -58,15 +58,15 @@ Finalment dibuixem el circuit lògic que ho implementa.
 <img src='../logos/enconstrucció.png' alt="exemple circuit" style="display:block; height:200px; margin:0 auto; border-radius: 8px;"/>
 <center><i>Circuit Digital</i></center>
 
+## Exercicis de [Introduction to Digital Circuit Design](https://jutge.org/courses/JordiCortadella:IntroCircuits)
 
-## Exercici: [2-input multiplexer](https://jutge.org/problems/X12031_en) 
+[2-input multiplexer](https://jutge.org/problems/X12031_en) 
 
+[Shuffle](https://jutge.org/problems/X07222_en)
 
+[2-input multiplexer (4-bit wide)](https://jutge.org/problems/X82780_en)
 
-<!-- ************* EN CONSTRUCCIÓ *****************-->
-<img src='../logos/enconstrucció.png' alt="Logos Càtedra Chip" style="display:block; height:200px; margin:0 auto; border-radius: 8px;"/>
-
-
+[4-input multiplexer](https://jutge.org/problems/X45339_en)
 
 
 <!-- Aquesta imatge ha d'anar al final de cada lliçó, ja sigui amb aquesta línia o dins la signatura. Deixar comentat si ja està a la signatura-->
@@ -75,4 +75,4 @@ Finalment dibuixem el circuit lògic que ho implementa.
 <img src='../logos/TotsLogosBlanc.png ' alt="Logos Càtedra Chip" width="100%" style="display:block; margin:0 auto; border-radius: 8px;"/>
 
 
-<Autors autors="jpetit xcasas fmadrid jordic"/>
+<Autors autors="xcasas fmadrid jordic"/>
