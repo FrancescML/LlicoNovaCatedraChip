@@ -584,7 +584,7 @@ $S=A+B+\bar{C}$
 Aquesta és doncs l'expressió booleana simplificada que engendra la taula de veritat exemple.
 A partir d'aquesta es dedueix el circuit digital, tres entrades a una porta **OR**, una d'elles negada.
 
-<img src='../logos/enconstrucció.png' alt="Agrupacions exemple" style="display:block; height:200px; margin:0 auto; border-radius: 8px;"/>
+<img src='./karnaugh.png' alt="Agrupacions exemple" style="display:block; height:150px; margin:0 auto; border-radius: 8px;"/>
 <center><i>Circuit resultat de l'exemple</i></center>
 
 

@@ -49,7 +49,7 @@ El nostre objectiu és dissenyar un circuit desplaçador de 4 bits. Tenim dues o
 
 En aquesta secció emprarem multiplexors i el circuit serà el seguent:
 
-<img src='../logos/enconstrucció.png' alt="Circuit desplaçador" style="display:block; height:200px; margin:0 auto; border-radius: 8px;"/>
+<img src='./bus_exemple.png' alt="Circuit desplaçador" style="display:block; height:400px; margin:0 auto; border-radius: 8px;"/>
 <center><i>Circuit digital que desplaça una posició cap a l'esquerra</i></center>
 
 El senyal de control $Sel$ serveix per determinar si el circuit efectua el desplaçament o no.

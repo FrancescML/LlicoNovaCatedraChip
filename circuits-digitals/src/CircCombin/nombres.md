@@ -43,7 +43,7 @@ El circuit s'implementa amb una sola porta lògica NOT al bit $number_0$.
 
 
 
-<img src='../logos/enconstrucció.png' alt="Circuit desplaçador"  style="display:block; height:200px; margin:0 auto; border-radius: 8px;"/>
+<img src='./nombres_exemple1.png' alt="Circuit desplaçador"  style="display:block; height:130px; margin:0 auto; border-radius: 8px;"/>
 
 <center><i>Circuit digital que desplaça una posició cap a l'esquerra</i></center>
 
@@ -538,9 +538,9 @@ $residu_2=  n_2 \overline{n_1} + \overline{n_3} n_2$
 A partir d'aquestes tres expressions podem emprar les portes lògiques per crear el circuit digital que implementarà la funció $n \mod{7}$.
 
 
-<img src='../logos/enconstrucció.png' alt="Circuit digital" style="display:block; height:200px; margin:0 auto; border-radius: 8px;"/>
-<center><i>Circuit digital que implementa la funció n mod 7.
-</i></center>
+<img src='./nombres_exemple2.png' alt="Circuit digital" style="display:block; height:600px; margin:0 auto; border-radius: 8px;"/>
+
+<center><i>Circuit digital que implementa la funció n mod 7</i></center>
 
 
 ## Exercicis de [Introduction to Digital Circuit Design](https://jutge.org/courses/JordiCortadella:IntroCircuits)

@@ -354,7 +354,7 @@ Aquesta és l’expressió booleana simplificada final perque tots els ‘1’ j
 El circuit digital derivat d’aquesta expressió és el seguent:
 
 
-<img src='../logos/enconstrucció.png' alt="Circuit digital" style="display:block; height:200px; margin:0 auto; border-radius: 8px;"/>
+<img src='./svotacio_exemple.png' alt="Circuit digital" style="display:block; height:280px; margin:0 auto; border-radius: 8px;"/>
 <center><i>Circuit digital que implementa el sistema de votació per a comitès
 </i></center>
 

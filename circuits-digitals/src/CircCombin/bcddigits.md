@@ -42,7 +42,7 @@ width:500px;
 
 La següent figura representa el layout estàndard dels 7 segments, que farem servir de referència per desenvolupar el nostre circuit.
 
-<img src='../logos/enconstrucció.png' alt="Layout dels 7 segments" style="display:block; height:200px; margin:0 auto; border-radius: 8px;"/>
+<img src='./segments.png' alt="Layout dels 7 segments" style="display:block; height:350px; margin:0 auto; border-radius: 8px;"/>
 <center><i>Layout dels 7 segments</i></center>
 
 La següent taula de veritat determina quins deñs segments $a$, $b$, $c$, $d$, $e$, $f$ i $g$ han d'estar encesos ('1') i quins apagats ('0') per a cadascun dels valors d'entrada de $D[3:0]$.
