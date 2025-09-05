@@ -74,19 +74,19 @@ El procés complet i detallat es pot trobar a diverses fonts:
 
 Les expressions resultants són les següents:
 
-$segment \; a = D_3 + D_1 + D_2 \bar{D_0} + \bar{D_2} D_0$
+* $segment \; a = D_3 + D_1 + D_2 \bar{D_0} + \bar{D_2} D_0$
 
-$segment \; b = \bar{D_2} + \bar{D_1} \bar{D_0} + D_1 D_0$
+* $segment \; b = \bar{D_2} + \bar{D_1} \bar{D_0} + D_1 D_0$
 
-$segment \; c = D_2 + \bar{D_1} + D_0$
+* $segment \; c = D_2 + \bar{D_1} + D_0$
 
-$segment \; d = D_3 + \bar{D_2} \bar{D_0} + D_1 \bar{D_0} + \bar{D_2} \bar{D_1} + D_2 \bar{D_1} D_0$
+* $segment \; d = D_3 + \bar{D_2} \bar{D_0} + D_1 \bar{D_0} + \bar{D_2} \bar{D_1} + D_2 \bar{D_1} D_0$
 
-$segment \; e = \bar{D_2} \bar{D_0} + D_1 \bar{D_0}$
+* $segment \; e = \bar{D_2} \bar{D_0} + D_1 \bar{D_0}$
 
-$segment \; f = D_3 + D_2 \bar{D_1} + \bar{D_1} \bar{D_0} + D_2 \bar{D_0}$
+* $segment \; f = D_3 + D_2 \bar{D_1} + \bar{D_1} \bar{D_0} + D_2 \bar{D_0}$
 
-$segment \; g = D_3 + \bar{D_2} D_1 + D_2 \bar{D_1} + D_1 \bar{D_0}$
+* $segment \; g = D_3 + \bar{D_2} D_1 + D_2 \bar{D_1} + D_1 \bar{D_0}$
 
 
 
