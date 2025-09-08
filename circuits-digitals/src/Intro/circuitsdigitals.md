@@ -12,7 +12,7 @@
 
 En aquestes lliçons aprendràs què són els circuits digitals i els seus diferents tipus. Hi trobaràs exemples per a entendre els circuits combinacionals, els circuits seqüencials i els circuits aritmètics.
 
-Els **circuits digitals** processen informació representada en format discret utilitzant només dos estats: 0 (voltatge baix) i 1 (voltatge alt). En tractar amb informació binària, els components fonamentals dels circuits digitals són les portes lògiques. Aquestes són la base dels microprocessadors, memòries, controladors i qualsevol circuit digital complex.
+Els **circuits digitals** processen informació representada en format binari utilitzant només dos estats: 0 (voltatge baix) i 1 (voltatge alt). En tractar amb informació binària, els components fonamentals dels circuits digitals són les portes lògiques. Aquestes són la base dels microprocessadors, memòries, controladors i qualsevol circuit digital complex.
 
 Les **portes lògiques** efectuen operacions bàsiques sobre un o més senyals binaris d'entrada per produir un únic senyal binari de sortida. Per utilitzar les portes lògiques cal conèixer conceptes com l'àlgebra de Boole i les taules de veritat. En molts exemples i exercicis de circuits digitals utilitzarem les taules de veritat o una funció booleana per descriure el comportament lògic d’un circuit. 
 

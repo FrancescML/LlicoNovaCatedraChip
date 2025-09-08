@@ -43,7 +43,7 @@ Els exercicis del tema [Nombres](./nombres.md) tracten sobre els circuits digita
 
 Al [tema BCD](./bcddigits.md) (Binary Coded Decimal) faràs exercicis sobre els circuits encarregats codificar els dígits decimals en binari.
 
-Finalment, al tema [Miscel·lània](./miscellania.md) faràs exercicis amb més avançats.
+Finalment, al tema [Miscel·lània](./miscellania.md) faràs exercicis més avançats.
 
 
 <!-- Aquesta imatge ha d'anar al final de cada lliçó, ja sigui amb aquesta línia o dins la signatura. Deixar comentat si ja està a la signatura-->

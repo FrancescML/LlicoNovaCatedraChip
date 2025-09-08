@@ -12,7 +12,7 @@ Aquest recurs està obert a tot l'alumnat preuniversitari interessat a aprendre 
 
 El contingut s'estructura com a suport teòric del curs [Introduction to Digital Circuit Design](https://jutge.org/courses/JordiCortadella:IntroCircuits), on hi ha els exercicis.
 
-L'accés les lliçons és lliure, per fer els exercicis t'hauràs de registrar **gratuïtament** a la plataforma [jutge.org](https://jutge.org) i a la secció [Courses](https://jutge.org/courses) inscriure't al curs [Introduction to Digital Circuit Design](https://jutge.org/courses/JordiCortadella:IntroCircuits). Dins d'aquest curs podràs enviar les teves solucions al **Jutge**, que valorarà la seva validesa i emetrà un veredicte.
+L'accés a les lliçons és lliure, per fer els exercicis t'hauràs de registrar **gratuïtament** a la plataforma [jutge.org](https://jutge.org) i a la secció [Courses](https://jutge.org/courses) inscriure't al curs [Introduction to Digital Circuit Design](https://jutge.org/courses/JordiCortadella:IntroCircuits). Dins d'aquest curs podràs enviar les teves solucions al **Jutge**, que valorarà la seva validesa i emetrà un veredicte.
 
 Jutge.org és una plataforma docent desenvolupada per la Universitat Politècnica de Catalunya (UPC). El registre d'usuari té com a única finalitat el seguiment del progrés en els exercicis didàctics, i no respon a cap interès comercial ni a la recopilació de dades personals.
 

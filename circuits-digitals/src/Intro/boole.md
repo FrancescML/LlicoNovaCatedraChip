@@ -8,7 +8,7 @@
 
 ## Introducció a l'àlgebra de Boole
 
-L'àlgebra de Boole és una eina matemàtica fonamental per l'anàlisi i el disseny dels circuits digitals. És un llenguatge que descriu com aquests circuits processen la informació 
+L'àlgebra de Boole és una eina matemàtica fonamental per l'anàlisi i el disseny dels circuits digitals. És un llenguatge que descriu com aquests circuits processen la informació. 
 
 L'àlgebra de Boole és un sistema matemàtic lògic que treballa amb només dos valors possibles: veritable (1) i fals (0). Aquests dos valors corresponen directament als estats elèctrics dels circuits digitals: un voltatge alt (1) o baix (0), un interruptor obert o tancat, etc. Per això se l'anomena també àlgebra binària.
 
@@ -18,7 +18,7 @@ L'àlgebra de Boole és un sistema matemàtic lògic que treballa amb només dos
 
 * **Anàlisi**: Ajuda a entendre el funcionament d'un circuit existent, permetent determinar la seva sortida donades unes entrades.
 
-* **Disseny**: proporciona un mètode sistemàtic per dissenyar circuits digitals que realitzin una funció específica (per exemple, un sumador, un comparador, un multiplexor).
+* **Disseny**: Proporciona un mètode sistemàtic per dissenyar circuits digitals que realitzin una funció específica (per exemple, un sumador, un comparador, un multiplexor).
 
 ## Gramàtica Bàsica i operadors fonamentals
 
