@@ -12,6 +12,8 @@ L'àlgebra de Boole és una eina matemàtica fonamental per l'anàlisi i el diss
 
 L'àlgebra de Boole és un sistema matemàtic lògic que treballa amb només dos valors possibles: veritable (1) i fals (0). Aquests dos valors corresponen directament als estats elèctrics dels circuits digitals: un voltatge alt (1) o baix (0), un interruptor obert o tancat, etc. Per això se l'anomena també àlgebra binària.
 
+L'àlgebra de Boole:
+
 * **Base de la Computació**: És la base lògica de totes les operacions que fan els ordinadors, des de càlculs aritmètics fins a decisions complexes en programes.
 
 * **Optimització**: Permet simplificar expressions lògiques complexes. Això es tradueix directament en circuits digitals més senzills, que consumiran menys, seràn més ràpids i fiables.
