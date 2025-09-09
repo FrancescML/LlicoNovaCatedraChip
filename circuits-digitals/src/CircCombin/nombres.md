@@ -545,7 +545,6 @@ A partir d'aquestes tres expressions podem emprar les portes lògiques per crear
 
 ## Exercicis de [Introduction to Digital Circuit Design](https://jutge.org/courses/JordiCortadella:IntroCircuits)
 
-
 [Even number](https://jutge.org/problems/X36253_en)
 
 [Prime number](https://jutge.org/problems/X07160_en)
@@ -554,33 +553,7 @@ A partir d'aquestes tres expressions podem emprar les portes lògiques per crear
 
 [Residue mod 7](https://jutge.org/problems/X91814_en)
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+<small>*Recorda (troba-ho a la pàgina d'[inici](../Intro/inici.md)) que per accedir als exercicis i que el **Jutge** valori les teves solucions has d'estar inscrit al [curs](https://jutge.org/courses/JordiCortadella:IntroCircuits).*</small>
 
 <!-- Aquesta imatge ha d'anar al final de cada lliçó, ja sigui amb aquesta línia o dins la signatura. Deixar comentat si ja està a la signatura-->
 <br>
