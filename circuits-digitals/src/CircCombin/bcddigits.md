@@ -40,9 +40,9 @@ Produirà 7 senyals de sortida que controlaran els segments d'un display de 7 se
 width:500px;
 -->
 
-La següent figura representa el layout estàndard dels 7 segments, que farem servir de referència per desenvolupar el nostre circuit
+La següent figura representa el layout estàndard dels 7 segments, que farem servir de referència per desenvolupar el nostre circuit.
 
-<img src='../logos/enconstrucció.png' alt="Layout dels 7 segments" style="display:block; height:200px; margin:0 auto; border-radius: 8px;"/>
+<img src='./segments.png' alt="Layout dels 7 segments" style="display:block; height:350px; margin:0 auto; border-radius: 8px;"/>
 <center><i>Layout dels 7 segments</i></center>
 
 La següent taula de veritat determina quins deñs segments $a$, $b$, $c$, $d$, $e$, $f$ i $g$ han d'estar encesos ('1') i quins apagats ('0') per a cadascun dels valors d'entrada de $D[3:0]$.
@@ -64,7 +64,7 @@ La següent taula de veritat determina quins deñs segments $a$, $b$, $c$, $d$, 
 
 Els 4 bits permeten codificar fins al número 15. Els valors del 10 al 15 són casos impossibles, que no corresponen a un dígit. Els valors dels segments es reperesenten com a x.
 
-Cal fer un mapa de karnaugh per a cadascuna de les sortides del circuit per tal d'obtenir l'expressió booleana a partir del digit d'entrada $D[3:0]=[D_3 \; D_2 \; D_1 \; D_0]$. El valor de x=1 dona com a resultat equacions més simples.
+Cal fer un mapa de karnaugh per a cadascuna de les sortides del circuit per tal d'obtenir l'expressió booleana a partir del digit d'entrada $D[3:0]=[D_3 \; D_2 \; D_1 \; D_0]$. El valor de $x=1$ dona com a resultat equacions més simples.
 
 El procés complet i detallat es pot trobar a diverses fonts:
 [enllaç 1](https://informatika.stei.itb.ac.id/~rinaldi.munir/Matdis/2019-2020/Makalah2019/13518127.pdf), 
@@ -74,19 +74,19 @@ El procés complet i detallat es pot trobar a diverses fonts:
 
 Les expressions resultants són les següents:
 
-$segment \; a = D_3 + D_1 + D_2 \bar{D_0} + \bar{D_2} D_0$
+* $segment \; a = D_3 + D_1 + D_2 \bar{D_0} + \bar{D_2} D_0$
 
-$segment \; b = \bar{D_2} + \bar{D_1} \bar{D_0} + D_1 D_0$
+* $segment \; b = \bar{D_2} + \bar{D_1} \bar{D_0} + D_1 D_0$
 
-$segment \; c = D_2 + \bar{D_1} + D_0$
+* $segment \; c = D_2 + \bar{D_1} + D_0$
 
-$segment \; d = D_3 + \bar{D_2} \bar{D_0} + D_1 \bar{D_0} + \bar{D_2} \bar{D_1} + D_2 \bar{D_1} D_0$
+* $segment \; d = D_3 + \bar{D_2} \bar{D_0} + D_1 \bar{D_0} + \bar{D_2} \bar{D_1} + D_2 \bar{D_1} D_0$
 
-$segment \; e = \bar{D_2} \bar{D_0} + D_1 \bar{D_0}$
+* $segment \; e = \bar{D_2} \bar{D_0} + D_1 \bar{D_0}$
 
-$segment \; f = D_3 + D_2 \bar{D_1} + \bar{D_1} \bar{D_0} + D_2 \bar{D_0}$
+* $segment \; f = D_3 + D_2 \bar{D_1} + \bar{D_1} \bar{D_0} + D_2 \bar{D_0}$
 
-$segment \; g = D_3 + \bar{D_2} D_1 + D_2 \bar{D_1} + D_1 \bar{D_0}$
+* $segment \; g = D_3 + \bar{D_2} D_1 + D_2 \bar{D_1} + D_1 \bar{D_0}$
 
 
 
@@ -143,10 +143,23 @@ Amb aquestes funcions booleanes ja simplificades podem implementar el circuit ut
 * $segment \; g = 1 + \bar{0} · 0 + 0 · \bar{0} + 0 · \bar{1}=1$
 
 
+
+
+## Exercicis de [Introduction to Digital Circuit Design](https://jutge.org/courses/JordiCortadella:IntroCircuits)
+
+
+[7-segment digit](https://jutge.org/problems/X37276_en)
+
+[Is it a BCD digit ?](https://jutge.org/problems/X31983_en)
+
+[Square of a BCD digit](https://jutge.org/problems/X77297_en)
+
+<small>*Recorda (troba-ho a la pàgina d'[inici](../Intro/inici.md)) que per accedir als exercicis i que el **Jutge** valori les teves solucions has d'estar inscrit al [curs](https://jutge.org/courses/JordiCortadella:IntroCircuits).*</small>
+
 <!-- Aquesta imatge ha d'anar al final de cada lliçó, ja sigui amb aquesta línia o dins la signatura. Deixar comentat si ja està a la signatura-->
 <br>
 <br>
 <img src='../logos/TotsLogosBlanc.png ' alt="Logos Càtedra Chip" width="100%" style="display:block; margin:0 auto; border-radius: 8px;"/>
 
 
-<Autors autors="jpetit xcasas fmadrid jordic"/>
+<Autors autors="xcasas fmadrid jordic"/>

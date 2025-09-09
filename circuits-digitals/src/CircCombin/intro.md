@@ -16,7 +16,7 @@ Els circuits combinacionals bàsics són:
 Codificadors, Descodificadors, Multiplexors (MUX), Demultiplexors (DEMUX), Sumadors, Restadors i Comparadors.
 
 En aquesta lliçó trobaràs els següents temes:
-[Exercicis simples](./exsimples.md), [Multiplexors](./multiplexors.md), [Sistemes de votació](./svotacio.md), [Busos](./busos.md), [Nombres](./nombres.md) i [BCD digits](./bcd). Cada tema tracta un tipus de circuit diferent, hi trobaràs exemples i hauràs de resoldre una sèrie d’exercicis emprant portes lògiques bàsiques.
+[Exercicis simples](./exsimples.md), [Multiplexors](./multiplexors.md), [Sistemes de votació](./svotacio.md), [Busos](./busos.md), [Nombres](./nombres.md) i [BCD digits](./bcddigits.md). Cada tema tracta un tipus de circuit diferent, hi trobaràs exemples i hauràs de resoldre una sèrie d’exercicis emprant portes lògiques bàsiques.
 
 
 Els temes [Exercicis simples](./exsimples.md) i [Sistemes de votació](./svotacio.md) t’introduiran a l'ús de les taules de veritat i l’àlgebra de Boole amb exemples i exercicis de lògica bàsica. 
@@ -43,7 +43,7 @@ Els exercicis del tema [Nombres](./nombres.md) tracten sobre els circuits digita
 
 Al [tema BCD](./bcddigits.md) (Binary Coded Decimal) faràs exercicis sobre els circuits encarregats codificar els dígits decimals en binari.
 
-Finalment, al tema [Miscel·lània](./miscellania.md) faràs exercicis amb més avançats.
+Finalment, al tema [Miscel·lània](./miscellania.md) faràs exercicis més avançats.
 
 
 <!-- Aquesta imatge ha d'anar al final de cada lliçó, ja sigui amb aquesta línia o dins la signatura. Deixar comentat si ja està a la signatura-->
@@ -52,4 +52,4 @@ Finalment, al tema [Miscel·lània](./miscellania.md) faràs exercicis amb més 
 <img src='../logos/TotsLogosBlanc.png ' alt="Logos Càtedra Chip" width="100%" style="display:block; margin:0 auto; border-radius: 8px;"/>
 
 
-<Autors autors="jpetit xcasas fmadrid jordic"/>
+<Autors autors="xcasas fmadrid jordic"/>

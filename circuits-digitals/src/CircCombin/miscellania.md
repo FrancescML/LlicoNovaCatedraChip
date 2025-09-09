@@ -6,9 +6,20 @@
 
 # Miscel·lània
 
-<!-- ************* EN CONSTRUCCIÓ *****************-->
-<img src='../logos/enconstrucció.png' alt="Logos Càtedra Chip" style="display:block; height:200px; margin:0 auto; border-radius: 8px;"/>
+La secció [Miscellaneous](https://jutge.org/courses/JordiCortadella:IntroCircuits/lists/JordiCortadella:Combinational) del curs [Introduction to Digital Circuit Design](https://jutge.org/courses/JordiCortadella:IntroCircuits/lists/JordiCortadella:Combinational) inclou diferents exercicis relacionats amb els temes tractats fins ara. Poden ser més complicats que els que hem vist fins ara. T'hi animes?. 
 
+
+## Exercicis de [Introduction to Digital Circuit Design](https://jutge.org/courses/JordiCortadella:IntroCircuits)
+
+[Parity](https://jutge.org/problems/X16400_en)
+
+[Stairwell](https://jutge.org/problems/X89209_en)
+
+[Tic-tac-toe](https://jutge.org/problems/X39419_en)
+
+[Priority encoder](https://jutge.org/problems/X55915_en)
+
+<small>*Recorda (troba-ho a la pàgina d'[inici](../Intro/inici.md)) que per accedir als exercicis i que el **Jutge** valori les teves solucions has d'estar inscrit al [curs](https://jutge.org/courses/JordiCortadella:IntroCircuits).*</small>
 
 <!-- Aquesta imatge ha d'anar al final de cada lliçó, ja sigui amb aquesta línia o dins la signatura. Deixar comentat si ja està a la signatura-->
 <br>
@@ -16,4 +27,4 @@
 <img src='../logos/TotsLogosBlanc.png ' alt="Logos Càtedra Chip" width="100%" style="display:block; margin:0 auto; border-radius: 8px;"/>
 
 
-<Autors autors="jpetit xcasas fmadrid jordic"/>
+<Autors autors="xcasas fmadrid jordic"/>

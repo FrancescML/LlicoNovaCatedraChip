@@ -10,4 +10,4 @@ Aquest és el tema b.
 <img src='../logos/TotsLogosBlanc.png ' alt="Logos Càtedra Chip" width="100%" style="display:block; margin:0 auto; border-radius: 8px;"/>
 
 
-<Autors autors="jpetit xcasas fmadrid jordic"/>
+<Autors autors="xcasas fmadrid jordic"/>

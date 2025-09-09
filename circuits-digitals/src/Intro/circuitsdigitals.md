@@ -8,13 +8,13 @@
 
 # Introducció als circuits digitals
 
-Benvinguts a la lliço de circuits digitals de jutge.org (https://jutge.org).
+**Benvinguts a les Lliçons de circuits digitals a [jutge.org](https://jutge.org).**
 
-En aquesta lliçó aprendrem què són els circuits digitals i els seus diferents tipus. Hi trobaràs exercicis per a entendre els circuits combinacionals, els circuits seqüencials i els circuits aritmètics.
+En aquestes lliçons aprendràs què són els circuits digitals i els seus diferents tipus. Hi trobaràs exemples per a entendre els circuits combinacionals, els circuits seqüencials i els circuits aritmètics.
 
-Els **circuits digitals** processen informació representada en format discret, normalment utilitzant només dos estats: 0 (voltatge baix) i 1 (voltatge alt). En tractar amb informació binària, els components fonamentals dels circuits digitals són les portes lògiques. Aquestes són la base dels microprocessadors, memòries, controladors i qualsevol circuit digital complex.
+Els **circuits digitals** processen informació representada en format binari utilitzant només dos estats: 0 (voltatge baix) i 1 (voltatge alt). En tractar amb informació binària, els components fonamentals dels circuits digitals són les portes lògiques. Aquestes són la base dels microprocessadors, memòries, controladors i qualsevol circuit digital complex.
 
-Les **portes lògiques** efectuen operacions bàsiques sobre un o més senyals binaris d'entrada per produir un únic senyal binari de sortida. Per entendre el funcionament de les portes lògiques cal conèixer conceptes com l'àlgebra de Boole i les taules de veritat. En molts exemples i exercicis de circuits digitals utilitzarem les taules de veritat o una funció booleana per descriure el comportament lògic d’un circuit. 
+Les **portes lògiques** efectuen operacions bàsiques sobre un o més senyals binaris d'entrada per produir un únic senyal binari de sortida. Per utilitzar les portes lògiques cal conèixer conceptes com l'àlgebra de Boole i les taules de veritat. En molts exemples i exercicis de circuits digitals utilitzarem les taules de veritat o una funció booleana per descriure el comportament lògic d’un circuit. 
 
 |**Porta lògica**|**Símbol**                           |**Expressió Booleana** [*](./boole)  |**Descripció**
 |------ |------                                        |---                     |------
@@ -50,17 +50,6 @@ Els [circuits seqüencials](../CircSeq/intro.md) són un tipus de circuit digita
 
 La lliçó [Tiny Micro](../TinyMicro/intro.md) és un recull d’exercicis avançats sobre l'operació d'un petit ordinador. Hi ha exercicis de disseny d’un ALU, programació de la unitat de control, creació d’un datapath i el disseny d’un program counter.
 
-# Com fer els exercicis
-Aquesta lliçó proposa diversos exercicis del curs [Introduction to Digital Circuit Design](https://jutge.org/courses/JordiCortadella:IntroCircuits). A cada exercici hi trobaràs l’enllaç.
-
-T’hauràs registrar a [jutge.org](https://jutge.org), accedir a la secció [Courses](https://jutge.org/courses) i inscriure-t al curs [Introduction to Digital Circuit Design](https://jutge.org/courses/JordiCortadella:IntroCircuits).
-Aquest curs et permetrà enviar les teves solucions al **Jutge**, que valorarà la validesa de la teva proposta.
-
-
-
-
-
-
 
 
 <!-- Aquesta imatge ha d'anar al final de cada lliçó, ja sigui amb aquesta línia o dins la signatura. Deixar comentat si ja està a la signatura-->
@@ -69,4 +58,4 @@ Aquest curs et permetrà enviar les teves solucions al **Jutge**, que valorarà 
 <img src='../logos/TotsLogosBlanc.png ' alt="Logos Càtedra Chip" width="100%" style="display:block; margin:0 auto; border-radius: 8px;"/>
 
 
-<Autors autors="jpetit xcasas fmadrid jordic"/>
+<Autors autors="xcasas fmadrid jordic"/>

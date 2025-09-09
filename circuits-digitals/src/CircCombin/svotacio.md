@@ -345,7 +345,7 @@ $A=PT + PV + PS$
   </tbody>
 </table>
 
-Finalment, en el grup vermell les variables constants són $S=1$,$T=1$ i $V=1$, afegim el terme $STV$ a la solució.
+Finalment, en el grup vermell les variables constants són $S=1$, $T=1$ i $V=1$, afegim el terme $STV$ a la solució.
 
 $A=PT + PV + PS + STV$
 
@@ -354,12 +354,22 @@ Aquesta és l’expressió booleana simplificada final perque tots els ‘1’ j
 El circuit digital derivat d’aquesta expressió és el seguent:
 
 
-
-<img src='../logos/enconstrucció.png' alt="Circuit digital" style="display:block; width:50px; margin:0 auto; border-radius: 8px;"/>
+<img src='./svotacio_exemple.png' alt="Circuit digital" style="display:block; height:280px; margin:0 auto; border-radius: 8px;"/>
 <center><i>Circuit digital que implementa el sistema de votació per a comitès
 </i></center>
 
 
+## Exercicis de [Introduction to Digital Circuit Design](https://jutge.org/courses/JordiCortadella:IntroCircuits)
+
+[Executive Committee](https://jutge.org/problems/X16063_en)
+
+[Two or more ones](https://jutge.org/problems/X67345_en)
+
+[4-input majority voter](https://jutge.org/problems/X42168_en)
+
+[Majority of 5 inputs](https://jutge.org/problems/X72286_en)
+
+<small>*Recorda (troba-ho a la pàgina d'[inici](../Intro/inici.md)) que per accedir als exercicis i que el **Jutge** valori les teves solucions has d'estar inscrit al [curs](https://jutge.org/courses/JordiCortadella:IntroCircuits).*</small>
 
 <!-- Aquesta imatge ha d'anar al final de cada lliçó, ja sigui amb aquesta línia o dins la signatura. Deixar comentat si ja està a la signatura-->
 <br>
@@ -367,4 +377,4 @@ El circuit digital derivat d’aquesta expressió és el seguent:
 <img src='../logos/TotsLogosBlanc.png ' alt="Logos Càtedra Chip" width="100%" style="display:block; margin:0 auto; border-radius: 8px;"/>
 
 
-<Autors autors="jpetit xcasas fmadrid jordic"/>
+<Autors autors="xcasas fmadrid jordic"/>
