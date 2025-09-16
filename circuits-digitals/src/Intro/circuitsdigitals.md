@@ -8,8 +8,6 @@
 
 # Introducció als circuits digitals
 
-**Benvinguts a les Lliçons de circuits digitals a [jutge.org](https://jutge.org).**
-
 En aquestes lliçons aprendràs què són els circuits digitals i els seus diferents tipus. Hi trobaràs exemples per a entendre els circuits combinacionals, els circuits seqüencials i els circuits aritmètics.
 
 Els **circuits digitals** processen informació representada en format binari utilitzant només dos estats: 0 (voltatge baix) i 1 (voltatge alt). En tractar amb informació binària, els components fonamentals dels circuits digitals són les portes lògiques. Aquestes són la base dels microprocessadors, memòries, controladors i qualsevol circuit digital complex.

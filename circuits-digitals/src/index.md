@@ -9,7 +9,7 @@ hero:
     actions:
         - theme: brand
           text: Inici
-          link: /Intro/inici
+          link: /Inici/presentacio
 ---
 
 <h1 class="tagline">Taula de continguts</h1>
