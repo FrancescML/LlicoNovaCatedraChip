@@ -20,26 +20,26 @@ Quan les necessitis, troba tot seguit les instruccions per solucionar els proble
 
 Per fer els exercicis proposats t'hauràs de registrar **gratuïtament** a la plataforma [jutge.org](https://jutge.org) i a la secció [Courses](https://jutge.org/courses) inscriure't al curs [Introduction to Digital Circuit Design](https://jutge.org/courses/JordiCortadella:IntroCircuits) clicant a "Enroll this course". 
 
-<img src='./enroll.png' alt="enroll" style="display:block; width:600px; margin:0 auto; border-radius: 8px; border:5px solid #999;" />
+<img src='./enroll.png' alt="enroll" style="display:block; width:450px; margin:0 auto; border-radius: 8px; border:5px solid #999;" />
 
 Dins d'aquest curs podràs enviar les teves solucions al **Jutge**, que valorarà la seva validesa i emetrà un veredicte.
 
 Pots accedir a cadascun dels exercicis des del menú superior del portal, directament al [curs](https://jutge.org/courses/JordiCortadella:IntroCircuits) o des de l'apartat [Problems](https://jutge.org/problems).
 
-<img src='./enrolled.png' alt="enrolled" style="display:block; width:600px; margin:0 auto; border-radius: 8px; border:5px solid #999;" />
+<img src='./enrolled.png' alt="enrolled" style="display:block; width:450px; margin:0 auto; border-radius: 8px; border:5px solid #999;" />
 
 <br/>
 
-<img src='./problems.png' alt="problems" style="display:block; width:600px; margin:0 auto; border-radius: 8px; border:5px solid #999;" />
+<img src='./problems.png' alt="problems" style="display:block; width:450px; margin:0 auto; border-radius: 8px; border:5px solid #999;" />
 
 Els exercicis estan ordenats per temes i tenen codi identificatiu específic.
 
-<img src='./codi.png' alt="codi" style="display:block; width:600px; margin:0 auto; border-radius: 8px; border:5px solid #999;" />
+<img src='./codi.png' alt="codi" style="display:block; width:450px; margin:0 auto; border-radius: 8px; border:5px solid #999;" />
 
 
 Alternativament, també pots accedir als exercicis a partir dels enllaços directes que trobaràs a les lliçons. Aquesta és una alternativa més ràpida, però recorda que has d’haver obert la sessió a jutge.org.
 
-<img src='./enllaç.png' alt="enllaç" style="display:block; width:600px; margin:0 auto; border-radius: 8px; border:5px solid #999;" />
+<img src='./enllaç.png' alt="enllaç" style="display:block; width:450px; margin:0 auto; border-radius: 8px; border:5px solid #999;" />
 
 Una vegada has entrat a l’exercici i llegit el seu enunciat, hauràs de solucionar-ho utilitzant els coneixements bàsics de circuits digitals com taules de veritat, portes lògiques, mapes de Karnaugh.
 
@@ -51,6 +51,8 @@ Farem servir [CircuitVerse](https://circuitverse.org/simulator), una eina de dib
 
 
 
+.<img src='../logos/enconstrucció.png' alt="HI estem treballant"  style="display:block; height:200px; margin:0 auto; border-radius: 8px;"/>
+<center><i>En contrucció</i></center>
 
 
 <!-- Aquesta imatge ha d'anar al final de cada lliçó, ja sigui amb aquesta línia o dins la signatura. Deixar comentat si ja està a la signatura-->

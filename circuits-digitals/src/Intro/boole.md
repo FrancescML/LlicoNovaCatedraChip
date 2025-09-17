@@ -16,15 +16,28 @@ L'àlgebra de Boole:
 
 * **Base de la Computació**: És la base lògica de totes les operacions que fan els ordinadors, des de càlculs aritmètics fins a decisions complexes en programes.
 
-* **Optimització**: Permet simplificar expressions lògiques complexes. Això es tradueix directament en circuits digitals més senzills, que consumiran menys, seràn més ràpids i fiables.
-
 * **Anàlisi**: Ajuda a entendre el funcionament d'un circuit existent, permetent determinar la seva sortida donades unes entrades.
 
 * **Disseny**: Proporciona un mètode sistemàtic per dissenyar circuits digitals que realitzin una funció específica (per exemple, un sumador, un comparador, un multiplexor).
 
+* **Optimització**: Permet simplificar expressions lògiques complexes. Això es tradueix directament en circuits digitals més senzills, que consumiran menys, seràn més ràpids i fiables.
+
 ## Gramàtica Bàsica i operadors fonamentals
 
 L'àlgebra de Boole utilitza tres operadors lògics fonamentals que es corresponen directament amb les portes lògiques digitals.
+
+### NOT o Negació:
+
+La negació de $A$ es pot expressar de diferents maneres. Per exemple:
+
+$A'$ &emsp;&emsp;&emsp; o bé &emsp;&emsp;&emsp; $\bar{A}$
+
+La negació inverteix el valor de l'entrada. La taula de veritat es correspòn amb la porta lògica NOT. Si l'entrada és 0, la sortida és 1; si l'entrada és 1, la sortida és 0.
+
+| $A$ | $\bar{A}$ |
+|---|----|
+| 0 | 1  |
+| 1 | 0  |
 
 ### **AND** o Multiplicació Lògica:
 La multiplicació s'expressa amb el símbol \"$·$\" o la simple juxtaposició.  Per exemple:
@@ -54,18 +67,6 @@ La taula de veritat es correspon amb la porta lògica OR. La sortida és '$1$' s
 | 1 | 0 | 1     |
 | 1 | 1 | 1     |
 
-### NOT o Negació:
-
-La negació de $A$ es pot expressar de diferents maneres. Per exemple:
-
-$A'$ &emsp;&emsp;&emsp; o bé &emsp;&emsp;&emsp; $\bar{A}$
-
-La negació inverteix el valor de l'entrada. La taula de veritat es correspòn amb la porta lògica NOT. Si l'entrada és 0, la sortida és 1; si l'entrada és 1, la sortida és 0.
-
-| $A$ | $\bar{A}$ |
-|---|----|
-| 0 | 1  |
-| 1 | 0  |
 
 ## Postulats Fonamentals o Axiomes de Boole
 Els postulats Boole son regles bàsiques, veritats acceptades sobre les quals es construeix tota l'àlgebra de Boole.

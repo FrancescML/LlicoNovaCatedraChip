@@ -4,9 +4,16 @@
 <div style="clear: both;"></div>
 <br>
 
-# Tancament
+# Agraïments
 
-En contrucció.<img src='../logos/enconstrucció.png' alt="HI estem treballant"  style="display:block; height:200px; margin:0 auto; border-radius: 8px;"/>
+* Aquest contingut ha estat creat per [Càtedra CHIP UPC](https://catedrachip.upc.edu/ca), un projecte impulsat pel Ministeri per a la Transformació Digital i de la Funció Pública i finançat per la Unió Europea – NextGenerationEU.
+* Miquel Torner
+* Jordi Cortadella
+* Jordi Petit
+
+
+
+
 
 <!-- Aquesta imatge ha d'anar al final de cada lliçó, ja sigui amb aquesta línia o dins la signatura. Deixar comentat si ja està a la signatura-->
 <br>

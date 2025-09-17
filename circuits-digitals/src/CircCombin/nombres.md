@@ -22,7 +22,7 @@ El bit menys significatiu (**LSB**) és $number_0$.
 
 La **variable de sortida** del circuit la és un sol bit $Parell$.
 
-La següent taula recull uns quants exemples d'entrades i sortides que il·lustren el comportament desitjat del circuit. La taula de veritat completa tindria 16 files.
+La taula següent recull uns quants exemples d'entrades i sortides que il·lustren el comportament desitjat del circuit. La taula de veritat completa tindria 16 files.
 
 |**$number$**|**Nombre en decimal**|$number_0$ (LSB)|Paritat| $Parell$|
 |:---:|:---:|:---:|---|:---:|
@@ -543,7 +543,7 @@ A partir d'aquestes tres expressions podem emprar les portes lògiques per crear
 <center><i>Circuit digital que implementa la funció n mod 7</i></center>
 
 
-## Exercicis de [Introduction to Digital Circuit Design](https://jutge.org/courses/JordiCortadella:IntroCircuits)
+## Exercicis a Jutge.org: [Introduction to Digital Circuit Design](https://jutge.org/courses/JordiCortadella:IntroCircuits)
 
 [Even number](https://jutge.org/problems/X36253_en)
 
@@ -553,7 +553,7 @@ A partir d'aquestes tres expressions podem emprar les portes lògiques per crear
 
 [Residue mod 7](https://jutge.org/problems/X91814_en)
 
-<small>*Recorda (troba-ho a la pàgina d'[inici](../Intro/inici.md)) que per accedir als exercicis i que el **Jutge** valori les teves solucions has d'estar inscrit al [curs](https://jutge.org/courses/JordiCortadella:IntroCircuits).*</small>
+<small>*Recorda que per accedir als exercicis i que el **Jutge** valori les teves solucions has d'estar inscrit al [curs](https://jutge.org/courses/JordiCortadella:IntroCircuits)*. Troba totes les instruccions [aqui](../Inici/instruccions.md)</small>
 
 <!-- Aquesta imatge ha d'anar al final de cada lliçó, ja sigui amb aquesta línia o dins la signatura. Deixar comentat si ja està a la signatura-->
 <br>

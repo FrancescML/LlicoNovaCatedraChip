@@ -131,12 +131,12 @@ export const index = [
     },
 
     {
-        text: 'Final',
+        text: 'Tancament',
         collapsed: true,
         items: [
             {
-                text: 'Tancament',
-                link: '/Final/final',
+                text: 'Agraïments',
+                link: '/Tancament/agraiments',
             },
 
         ],
