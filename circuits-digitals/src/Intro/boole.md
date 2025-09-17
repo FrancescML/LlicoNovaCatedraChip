@@ -6,7 +6,7 @@
 <br>
 
 
-## Introducció a l'àlgebra de Boole
+# Introducció a l'àlgebra de Boole
 
 L'àlgebra de Boole és una eina matemàtica fonamental per l'anàlisi i el disseny dels circuits digitals. És un llenguatge que descriu com aquests circuits processen la informació. 
 

@@ -1,12 +1,23 @@
 export const index = [
     {
-        text: 'Introducció als circuits digitals',
+        text: 'Inici',
         collapsed: true,
         items: [
             {
-                text: 'Inici',
-                link: '/Intro/inici',
+                text: 'Presentació',
+                link: '/Inici/presentacio',
             },
+            {
+                text: 'Instruccions',
+                link: '/Inici/instruccions',
+            },
+
+        ],
+    },
+    {
+        text: 'Introducció als circuits digitals',
+        collapsed: true,
+        items: [
             {
                 text: 'Circuits digitals',
                 link: '/Intro/circuitsdigitals',

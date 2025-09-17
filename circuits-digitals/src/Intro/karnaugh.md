@@ -5,7 +5,7 @@
 <div style="clear: both;"></div>
 <br>
 
-## Mapes de Karnaugh
+# Introducció als Mapes de Karnaugh
 
 Un mapa de Karnaugh (també conegut com a K-map o diagrama de Veitch) és una eina gràfica utilitzada en electrònica digital per simplificar funcions lògiques booleanes de manera visual i sistemàtica. 
 

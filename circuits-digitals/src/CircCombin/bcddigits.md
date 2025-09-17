@@ -147,11 +147,14 @@ Amb aquestes funcions booleanes ja simplificades podem implementar el circuit ut
 
 ## Exercicis de [Introduction to Digital Circuit Design](https://jutge.org/courses/JordiCortadella:IntroCircuits)
 
+
 [7-segment digit](https://jutge.org/problems/X37276_en)
 
 [Is it a BCD digit ?](https://jutge.org/problems/X31983_en)
 
 [Square of a BCD digit](https://jutge.org/problems/X77297_en)
+
+<small>*Recorda (troba-ho a la pàgina d'[inici](../Intro/inici.md)) que per accedir als exercicis i que el **Jutge** valori les teves solucions has d'estar inscrit al [curs](https://jutge.org/courses/JordiCortadella:IntroCircuits).*</small>
 
 <!-- Aquesta imatge ha d'anar al final de cada lliçó, ja sigui amb aquesta línia o dins la signatura. Deixar comentat si ja està a la signatura-->
 <br>
