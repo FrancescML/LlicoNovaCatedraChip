@@ -68,8 +68,8 @@ La taula de veritat següent determina quins dels segments $a$, $b$, $c$, $d$, $
 |15 <br> don't care| 1111| x| x| x| x| x| x| x
 
 
-
-Els 4 bits permeten codificar fins al número 15. Els valors del 10 al 15 són casos impossibles, que no corresponen a un dígit. Els valors dels segments es reperesenten com a x.
+Els 4 bits d’entrada permeten codificar fins al nombre 15. Els valors del 10 al 15 també apareixen a la taula de veritat, però no ens importa quina sortida generin, ja que no els farem servir. Aquests casos s’anomenen típicament **condicions indiferents** (*don’t care cases*) i es representen amb una x.
+A l’hora de buscar agrupacions al mapa de Karnaugh, els podem assignar els valors que més ens convinguin per obtenir expressions més simples.
 
 Cal fer un mapa de Karnaughh per a cadascuna de les sortides del circuit per tal d'obtenir l'expressió booleana a partir del digit d'entrada $D[3:0]=[D_3 \; D_2 \; D_1 \; D_0]$. El valor de $x=1$ dona com a resultat equacions més simples.
 

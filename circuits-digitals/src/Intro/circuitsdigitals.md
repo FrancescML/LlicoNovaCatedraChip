@@ -15,11 +15,11 @@ Els **circuits digitals** processen informació representada en format binari ut
 Les **portes lògiques** efectuen operacions bàsiques sobre un o més senyals binaris d'entrada per produir un únic senyal binari de sortida. Per utilitzar les portes lògiques cal conèixer conceptes com l'àlgebra de Boole i les taules de veritat. En molts exemples i exercicis de circuits digitals utilitzarem les taules de veritat o una funció booleana per descriure el comportament lògic d’un circuit. 
 
 |**Porta lògica**|**Símbol**                           |**Expressió Booleana** [*](./boole)  |**Descripció**
-|------ |------                                        |---                     |------
+|------ |------                                        |:---:                   |------
 |Buffer |<img src="./Buffer_ANSI_Labelled.svg.png"/>   |$A$                     |Retorna el mateix bit
-|NOT    |<img src="./NOT_ANSI_Labelled.svg.png"/>      |$\bar{A}$               |Inverteix el bit
-|AND    |<img src="./AND_ANSI_Labelled.svg.png"/>      |$A·B$                   |1 si les dues entrades són 1
-|OR     |<img src="./OR_ANSI_Labelled.svg.png"/>       |$A+B$                       |1 si almenys una entrada és 1
+|NOT    |<img src="./NOT_ANSI_Labelled.svg.png"/>      |$\bar{A}$ o $¬A$              |Inverteix el bit
+|AND    |<img src="./AND_ANSI_Labelled.svg.png"/>      |$A·B$ o $A∧B$                  |1 si les dues entrades són 1
+|OR     |<img src="./OR_ANSI_Labelled.svg.png"/>       |$A+B$ o $A∨B$                      |1 si almenys una entrada és 1
 |NAND   |<img src="./NAND_ANSI_Labelled.svg.png"/>     |$\overline{A·B}$            |AND invertit (combinació d'AND i NOT)
 |NOR    |<img src="./NOR_ANSI_Labelled.svg.png"/>      |$\overline{A+B}$            |OR invertit (combinació d'OR i NOT)
 |XOR    |<img src="./XOR_ANSI_Labelled.svg.png"/>      |$A·\bar{B}+\bar{A}·B$       |1 si les entrades són diferents
@@ -46,7 +46,7 @@ Els [circuits seqüencials](../CircSeq/intro.md) són un tipus de circuit digita
 <img src='./sequencial.png' alt="Circuit seqüencial" style="display:block; width:500px; margin:0 auto; border-radius: 8px;"/>
 <center><i>Circuit seqüencial</i></center>
 
-La lliçó [Tiny Micro](../TinyMicro/intro.md) és un recull d’exercicis avançats sobre l'operació d'un petit ordinador. Hi ha exercicis de disseny d’un ALU, programació de la unitat de control, creació d’un datapath i el disseny d’un program counter.
+La lliçó [Tiny Micro](../TinyMicro/intro.md) és un recull d’exercicis avançats sobre l'operació d'un petit ordinador. Hi ha exercicis de disseny d’una Unitat Aritmètica Lògica **UAL** (Aritmetic Logic Unit **ALU**), de programació de la unitat de control, creació d’un datapath i el disseny d’un program counter.
 
 
 
