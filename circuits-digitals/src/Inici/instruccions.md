@@ -9,20 +9,37 @@
 
 ## **Com seguir les lliçons**
 Al menú lateral de l'esquerra trobaràs totes les lliçons que conformen aquest recurs educatiu.
-Ja pots començar per la lliçó més extensa, l'introducció als circuits digitals, a l'àlgebra de Boole i als mapes de Karnaugh.
+Ja pots començar per la la primera lliçó, l'introducció als circuits digitals, a l'àlgebra de Boole i als mapes de Karnaugh.
 
-La resta de lliçons, dedicades als diferents tipus de circuits digitals, exposen la teoria i un o dos exemples.
-A més, al final de cada lliçó et proposem fer alguns exercicis.
+La resta de lliçons estan dedicades als diferents tipus de circuits digitals, contenen la teoria i un o dos exemples. A més, al final de cada lliçó et proposem fer alguns exercicis del curs [Introduction to Digital Circuit Design](https://jutge.org/courses/JordiCortadella:IntroCircuits), dins de [jutge.org](https://jutge.org).
 
-Quan les necessitis, troba tot seguit les instruccions per solucionar els problemes i sotmetre'ls al veredicte del nostre Jutge.
+Troba tot seguit les instruccions per solucionar els problemes i sotmetre'ls al veredicte del nostre Jutge. Revisa-les quan les necessitis.
 
-## Com crear la teva solució
+## Inscripció a Jutge.org i al curs
 
-Per fer els exercicis proposats t'hauràs de registrar **gratuïtament** a la plataforma [jutge.org](https://jutge.org) i a la secció [Courses](https://jutge.org/courses) inscriure't al curs [Introduction to Digital Circuit Design](https://jutge.org/courses/JordiCortadella:IntroCircuits) clicant a "Enroll this course". 
+Per fer els exercicis proposats t'hauràs de registrar **gratuïtament** a la plataforma [jutge.org](https://jutge.org).
+
+
+<img src='./signin.png' alt="enroll" style="display:block; width:450px; margin:0 auto; border-radius: 8px; border:5px solid #999;" />
+
+<p style="text-align: center;">
+  <small><em>
+  Recorda que jutge.org és una plataforma docent de la UPC. El registre d'usuari és per fer el seguiment del teu progrés en els exercicis. No tenim cap interès comercial ni recopilem dades personals.
+  </em></small>
+</p>
+
+Un cop tinguis accés als recursos de jutge.org, et pots incriure al curs [Introduction to Digital Circuit Design](https://jutge.org/courses/JordiCortadella:IntroCircuits) des de la secció [Courses](https://jutge.org/courses) i clicant el botó "Enroll this course". 
+
+<img src='./courses.png' alt="enroll" style="display:block; width:450px; margin:0 auto; border-radius: 8px; border:5px solid #999;" />
+
+<br>
+
 
 <img src='./enroll.png' alt="enroll" style="display:block; width:450px; margin:0 auto; border-radius: 8px; border:5px solid #999;" />
 
 Dins d'aquest curs podràs enviar les teves solucions al **Jutge**, que valorarà la seva validesa i emetrà un veredicte.
+
+## Com presentar la teva solució a un exercici
 
 Pots accedir a cadascun dels exercicis des del menú superior del portal, directament al [curs](https://jutge.org/courses/JordiCortadella:IntroCircuits) o des de l'apartat [Problems](https://jutge.org/problems).
 
@@ -36,14 +53,73 @@ Els exercicis estan ordenats per temes i tenen codi identificatiu específic.
 
 <img src='./codi.png' alt="codi" style="display:block; width:450px; margin:0 auto; border-radius: 8px; border:5px solid #999;" />
 
-
-Alternativament, també pots accedir als exercicis a partir dels enllaços directes que trobaràs a les lliçons. Aquesta és una alternativa més ràpida, però recorda que has d’haver obert la sessió a jutge.org.
+També pots accedir als exercicis directament des de les lliçons a partir dels enllaços que hi trobaràs. Aquesta és una alternativa més ràpida, però recorda que has de tenir la sessió oberta a jutge.org.
 
 <img src='./enllaç.png' alt="enllaç" style="display:block; width:450px; margin:0 auto; border-radius: 8px; border:5px solid #999;" />
 
-Una vegada has entrat a l’exercici i llegit el seu enunciat, hauràs de solucionar-ho utilitzant els coneixements bàsics de circuits digitals com taules de veritat, portes lògiques, mapes de Karnaugh.
+La  pàgina de l'exercici és com la següent:
 
-Farem servir [CircuitVerse](https://circuitverse.org/simulator), una eina de dibuix i simulació de circuits online per crear el nostre circuit solució.
+<img src='./exercici.png' alt="enllaç" style="display:block; width:600px; margin:0 auto; border-radius: 8px; border:5px solid #999;" />
+
+
+Hi trobaràs veuràs l'enunciat (*Statement*), que descriu l’exercici, una especificació de les entrades i sortides que tindrà el circuit i el menú per presentar l'exercici. L’enunciat es pot descarregar en PDF o ZIP.
+
+
+Una vegada has entrat a l’exercici i llegit el seu enunciat, hauràs de solucionar-ho utilitzant els coneixements que acabes d'aprendre.
+
+Per proposar una solució farem servir [CircuitVerse](https://circuitverse.org/simulator), una plataforma gratuïta i de codi obert dissenyada per crear i simular circuits lògics digitals en línia.
+És una eina de dibuix i simulació de circuits online amb el que crearem el nostre circuit, l'exportarem i el proposarem al Jutge.
+
+**Dissenya el teu circuit a Circuit Verse**. Pots arrossegar portes lògiques, connectar-les i provar la taula de veritat. 
+
+
+<img src='./circuitverse.png' alt="enllaç" style="display:block; width:450px; margin:0 auto; border-radius: 8px; border:5px solid #999;" />
+
+Exporta el circuit des de CircuitVerse en format Verilog. Ves al menú d'eines i tria l'opció "Exportar Verilog" per descarregar un fitxer de codi Verilog ".v".
+
+
+<img src='./exportverilog.png' alt="enllaç" style="display:block; width:450px; margin:0 auto; border-radius: 8px; border:5px solid #999;" />
+
+Verilog és un llenguatge de descripció de hardware (HDL - Hardware Description Language, per les sigles en anglès) que s'utilitza per dissenyar circuits electrònics digitals com microprocessadors o components lògics.
+
+Presenta el teu exercici al Jutge. Puja el fitxer que acabes de generar dins l'àrea New submission de l'exercici.
+
+
+<img src='./newsumbission.png' alt="enllaç" style="display:block; width:450px; margin:0 auto; border-radius: 8px; border:5px solid #999;" />
+
+Clicant el botó *Submit*, el Jutge analitzarà el teu arxiu.
+
+<img src='./analysis.png' alt="enllaç" style="display:block; width:350px; margin:0 auto; border-radius: 8px; border:5px solid #999;" />
+
+Acabat el procés, podràs veure el veredicte i la correcció de Jutge.
+
+Tant si ha anat be:
+<img src='./veredictecorrecte.png' alt="enllaç" style="display:block; width:600px; margin:0 auto; border-radius: 8px; border:5px solid #999;" />
+
+Com malament:
+<img src='./veredicteerror.png' alt="enllaç" style="display:block; width:600px; margin:0 auto; border-radius: 8px; border:5px solid #999;" />
+
+La secció '*hint*' mostra pistes del que pot haver anat malament.
+
+Si la teva solució és correcta també se't mostrarà el circuit solució a la secció '*Circuit modules*'.
+La secció '*Program*' mostra el codi Verilog del circuit que has presentat.
+
+<img src='./veredictecorrectecircuitiprogram.png' alt="enllaç" style="display:block; width:600px; margin:0 auto; border-radius: 8px; border:5px solid #999;" />
+
+Pots tornar-ho a provar tantes vegades com calgui. A la finestra de Submission s'anotaran el nombre total d'arxius i correccions i es podran veure clicant al número de submission (S001,S002…)
+
+El nostre Jutge té diferents veredictes en funció de del circuit presentat codi enviat. Els més habituals són els següents:
+
+<img src='./veredictescomuns.png' alt="enllaç" style="display:block; width:400px; margin:0 auto; border-radius: 8px; border:5px solid #999;" />
+
+A Jutge.org pots trobar la [llista completa de veredictes](http://jutge.org/documentation/verdicts/all).
+
+
+
+
+
+
+
 
 
 
