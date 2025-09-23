@@ -11,9 +11,7 @@
 L'àlgebra de Boole, també anomenada àlgebra booleana, en matemàtica, electrònica digital i informàtica és una estructura algebraica que esquematitza les operacions lògiques.
 Les seves variables només poden adoptar dos valors, tradicionalment denominats, cert i fals, representats com a 1 i 0 respectivament. 
 
-En electròncia digital i inforàtica aquests dos valors es corresponen directament als estats elèctrics dels circuits digitals: un voltatge alt (1) o baix (0), un interruptor obert o tancat, etc.
-Aquests representen nombres binaris. Així, la **lògica binària**, que és àlgebra de Boole, descriu les operacions lògiques dels circuits digitals.
-
+En electròncia digital i informàtica aquests dos valors es corresponen directament als estats elèctrics dels circuits digitals: un voltatge alt (1) o baix (0). Per això, l'àlgebra de Boole es pot utilitzar per descriure les operacions lògiques dels circuits digitals.
 
 
 * **Base de la Computació**: L'àlgebra de Boole és una eina fonamental per l'anàlisi i el disseny dels circuits digitals i és la base de l'aritmètica computacional moderna.
@@ -24,15 +22,20 @@ Aquests representen nombres binaris. Així, la **lògica binària**, que és àl
 
 * **Optimització**: Permet simplificar expressions lògiques complexes. Això es tradueix directament en circuits digitals més senzills, que consumiran menys, seràn més ràpids i fiables.
 
-## Operadors binaris
+## Operadors booleans
 
-L'àlgebra de Boole utilitza tres operadors lògics fonamentals que es corresponen directament amb les portes lògiques digitals.
+L'àlgebra de Boole utilitza tres operadors fonamentals. Les portes lògiques s'hi corresponen directament i prenen el mateix nom.
+Els operadors booleans es poden representar de diferents maneres segons l’àmbit d’aplicació de l’àlgebra de Boole.
 
 ### NOT o Negació:
 
-La negació de $A$ es pot expressar de diferents maneres. Per exemple:
+La negació de $A$ es pot expressar de diferents maneres depenent de l'ambit d'aplicació de l'àlgebra de boole.
 
-$A'$ &emsp;&emsp;&emsp; o $¬A$ &emsp;&emsp;&emsp; o bé &emsp;&emsp;&emsp; $\bar{A}$
+Per exemple, per la variable boolena $A$:
+
+$\bar{A}$
+
+(també s'utilitza $A'$ o bé $¬A$)
 
 La negació inverteix el valor de l'entrada. La taula de veritat es correspòn amb la porta lògica NOT. Si l'entrada és 0, la sortida és 1; si l'entrada és 1, la sortida és 0.
 
@@ -41,14 +44,18 @@ La negació inverteix el valor de l'entrada. La taula de veritat es correspòn a
 | 0 | 1  |
 | 1 | 0  |
 
-### **AND** o Multiplicació Lògica:
-La multiplicació o conjunció lògica s'expressa amb el símbol \"$·$\" o la simple juxtaposició.  Per exemple:
+### **AND**
+L'operador AND també s'anomena multiplicació o conjunció lògica. s'expressa amb el símbol \"$·$\" o la simple juxtaposició.
 
-$A·B$ &emsp;&emsp;&emsp; $A∧B$ &emsp;&emsp;&emsp; o bé &emsp;&emsp;&emsp; $AB$
+ Per exemple, per a les variables booleanes $A$ i $B$:
 
-La taula de veritat es correspon amb la porta lògica AND. La sortida és '$1$' només si totes les entrades són '$1$'   .
+$A·B$
 
-|$A$|$B$| $A·B$ |
+(o també $AB$ o bé $A∧B$)
+
+La taula de veritat es correspon amb la porta lògica AND. La sortida és '$1$' només si totes les entrades són '$1$'.
+
+|$A$|$B$| $AB$ |
 |---|---|:-----:|
 | 0 | 0 | 0     |
 | 0 | 1 | 0     |
@@ -56,9 +63,13 @@ La taula de veritat es correspon amb la porta lògica AND. La sortida és '$1$' 
 | 1 | 1 | 1     |
 
 ### OR o Suma Lògica:
-La suma o disjunció lògica s'expressa amb el símbol "$+$". Per exemple:
+L'operador OR també es pot referir com a suma o disjunció lògica. S'expressa amb el símbol "$+$". 
 
-$A + B$ &emsp;&emsp;&emsp; o bé  $A∨B$
+Per exemple, per a les variables booleanes $A$ i $B$:
+
+$A + B$
+
+(o també $A∨B$)
 
 La taula de veritat es correspon amb la porta lògica OR. La sortida és '$1$' si almenys una de les entrades és '$1$'.
 
@@ -141,9 +152,9 @@ $A(\bar{A}+B) = A·B$
 
 
 ## Funcions booleanes
-Una funció booleana és aquella que donades unes variables booleanes d'entrada proporciona un resultat en forma de variables també booleanes.
+Una funció booleana és una aplicació que assigna a unes variables booleanes d'entrada un resultat en forma de variable booleana.
 
-Aquesta funció es pot expressar amb una expressió booleana, o una taula de veritat, un mapa de Karnaugh o bé implementar-se en un circuit combinacional. 
+Aquesta funció es pot definir de diferents maneres; amb una expressió booleana, una taula de veritat, un mapa de Karnaugh o bé amb un circuit digital combinacional. 
 
 Amb aquesta base podràs simplificar expressions, dissenyar funcions lògiques i sistemes digitals cada cop més complexos.
 

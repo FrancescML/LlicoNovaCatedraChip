@@ -10,25 +10,25 @@
 
 En aquestes lliçons aprendràs què són els circuits digitals i els seus diferents tipus. Hi trobaràs exemples per a entendre els circuits combinacionals, els circuits seqüencials i els circuits aritmètics.
 
-Els **circuits digitals** processen informació representada en format binari utilitzant només dos estats: 0 (voltatge baix) i 1 (voltatge alt). En tractar amb informació binària, els components fonamentals dels circuits digitals són les portes lògiques. Aquestes són la base dels microprocessadors, memòries, controladors i qualsevol circuit digital complex.
+Els **circuits digitals** processen informació representada en format binari, que utilitza només dos estats electrics: voltatge baix i voltatge alt, representant els 0 i els 1 de la informació binària. Els components fonamentals dels circuits digitals són les portes lògiques. Aquestes són la base dels microprocessadors, memòries, controladors i qualsevol circuit digital complex.
 
-Les **portes lògiques** efectuen operacions bàsiques sobre un o més senyals binaris d'entrada per produir un únic senyal binari de sortida. Per utilitzar les portes lògiques cal conèixer conceptes com l'àlgebra de Boole i les taules de veritat. En molts exemples i exercicis de circuits digitals utilitzarem les taules de veritat o una funció booleana per descriure el comportament lògic d’un circuit. 
+Les **portes lògiques** són petits circuits que efectuen operacions lògiques bàsiques sobre un o més senyals binaris d'entrada, produint un únic senyal binari de sortida. Per utilitzar les portes lògiques i crear circuis digitals cal conèixer els conceptes d'àlgebra de Boole i les taules de veritat. En molts exemples i exercicis de circuits digitals utilitzarem les taules de veritat o una expressió booleana per descriure el comportament lògic d’un circuit. 
 
-|**Porta lògica**|**Símbol**                           |**Expressió Booleana** [*](./boole)  |**Descripció**
-|------ |------                                        |:---:                   |------
-|Buffer |<img src="./Buffer_ANSI_Labelled.svg.png"/>   |$A$                     |Retorna el mateix bit
-|NOT    |<img src="./NOT_ANSI_Labelled.svg.png"/>      |$\bar{A}$ o $¬A$              |Inverteix el bit
-|AND    |<img src="./AND_ANSI_Labelled.svg.png"/>      |$A·B$ o $A∧B$                  |1 si les dues entrades són 1
-|OR     |<img src="./OR_ANSI_Labelled.svg.png"/>       |$A+B$ o $A∨B$                      |1 si almenys una entrada és 1
-|NAND   |<img src="./NAND_ANSI_Labelled.svg.png"/>     |$\overline{A·B}$            |AND invertit (combinació d'AND i NOT)
-|NOR    |<img src="./NOR_ANSI_Labelled.svg.png"/>      |$\overline{A+B}$            |OR invertit (combinació d'OR i NOT)
-|XOR    |<img src="./XOR_ANSI_Labelled.svg.png"/>      |$A·\bar{B}+\bar{A}·B$       |1 si les entrades són diferents
-|XNOR   |<img src="./XNOR_ANSI_Labelled.svg.png"/>     |$(A·B)+(\bar{A}·\bar{B})$   |1 si les entrades són iguals
+|**Porta lògica**|**Símbol**                           |**Expressió Lògica**       |**Descripció**
+|------ |------                                        |:---:                      |------
+|Buffer |<img src="./Buffer_ANSI_Labelled.svg.png"/>   |$A$                        |Retorna el mateix bit
+|NOT    |<img src="./NOT_ANSI_Labelled.svg.png"/>      |$\bar{A}$                  |Inverteix el bit
+|AND    |<img src="./AND_ANSI_Labelled.svg.png"/>      |$A·B$                      |1 si les dues entrades són 1
+|OR     |<img src="./OR_ANSI_Labelled.svg.png"/>       |$A+B$                      |1 si almenys una entrada és 1
+|NAND   |<img src="./NAND_ANSI_Labelled.svg.png"/>     |$\overline{A·B}$           |AND invertit (combinació d'AND i NOT)
+|NOR    |<img src="./NOR_ANSI_Labelled.svg.png"/>      |$\overline{A+B}$           |OR invertit (combinació d'OR i NOT)
+|XOR    |<img src="./XOR_ANSI_Labelled.svg.png"/>      |$A·\bar{B}+\bar{A}·B$      |1 si les entrades són diferents
+|XNOR   |<img src="./XNOR_ANSI_Labelled.svg.png"/>     |$(A·B)+(\bar{A}·\bar{B})$  |1 si les entrades són iguals
 <!-- Imatges de ( https://en.wikipedia.org/wiki/Logic_gate) resum, notes o total.*/-->
 
-Una **funció booleana** és una expressió algebraica que defineix una sortida binària a partir d’una sèrie de variables d’entrada binàries (0 o 1). S’utilitzen operacions lògiques com AND, OR i NOT.
+Una **expressió lògica** és una expressió que defineix una sortida booleana a partir d’un conjunt de variables d’entrada binàries (0 o 1). Per descriure aquesta relació s’utilitzen operacions lògiques com AND, OR i NOT.
 
-Una **taula de veritat** mostra totes les possibles combinacions d’entrades d’un circuit lògic o funció booleana i el resultat corresponent a la sortida per cadascuna d’aquestes combinacions.
+Una **taula de veritat** mostra totes les possibles combinacions d’entrades d’un circuit lògic i el resultat corresponent a la sortida per cadascuna d’aquestes combinacions.
 
 Un [**circuit combinacional**](../CircCombin/intro) és un tipus de circuit digital en el qual el valor de la seva sortida en un instant depèn únicament dels valors actuals de les seves entrades. Construïts únicament amb portes lògiques simples, no tenen retroalimentació ni memòria. El seu comportament es pot descriure amb taules de veritat i funcions booleanes.
 
