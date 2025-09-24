@@ -8,7 +8,7 @@
 # Instruccions
 
 ## **Com seguir les lliçons**
-Al menú lateral de l'esquerra trobaràs totes les lliçons que conformen aquest recurs educatiu.
+Al menú lateral d'aqui a l'esquerra trobaràs totes les lliçons que conformen aquest recurs educatiu.
 Ja pots començar per la la primera lliçó, l'introducció als circuits digitals, a l'àlgebra de Boole i als mapes de Karnaugh.
 
 La resta de lliçons estan dedicades als diferents tipus de circuits digitals, contenen la teoria i un o dos exemples. A més, al final de cada lliçó et proposem fer alguns exercicis del curs [Introduction to Digital Circuit Design](https://jutge.org/courses/JordiCortadella:IntroCircuits), dins de [jutge.org](https://jutge.org).
@@ -37,11 +37,11 @@ Un cop tinguis accés als recursos de jutge.org, et pots incriure al curs [Intro
 
 <img src='./enroll.png' alt="enroll" style="display:block; width:450px; margin:0 auto; border-radius: 8px; border:5px solid #999;" />
 
-Dins d'aquest curs podràs enviar les teves solucions al **Jutge**, que valorarà la seva validesa i emetrà un veredicte.
+Dins d'aquest curs trobaràs els enunciats dels exercicis. També podràs enviar les teves solucions al **Jutge**, que valorarà la seva validesa i emetrà un veredicte.
 
 ## Com presentar la teva solució a un exercici
 
-Pots accedir a cadascun dels exercicis des del menú superior del portal, directament al [curs](https://jutge.org/courses/JordiCortadella:IntroCircuits) o des de l'apartat [Problems](https://jutge.org/problems).
+Pots accedir a cadascun dels exercicis des del menú superior del portal, ja sigui directament al [curs](https://jutge.org/courses/JordiCortadella:IntroCircuits) o des de l'apartat [Problems](https://jutge.org/problems).
 
 <img src='./enrolled.png' alt="enrolled" style="display:block; width:450px; margin:0 auto; border-radius: 8px; border:5px solid #999;" />
 
@@ -49,7 +49,7 @@ Pots accedir a cadascun dels exercicis des del menú superior del portal, direct
 
 <img src='./problems.png' alt="problems" style="display:block; width:450px; margin:0 auto; border-radius: 8px; border:5px solid #999;" />
 
-Els exercicis estan ordenats per temes i cadascun té un codi identificatiu.
+Els exercicis estan ordenats per temes i cadascun té un codi identificatiu únic.
 
 <img src='./codi.png' alt="codi" style="display:block; width:450px; margin:0 auto; border-radius: 8px; border:5px solid #999;" />
 
@@ -69,7 +69,7 @@ El menú *New Submission* és per presentar la teva solució a l'exercici.
 Una vegada entès l’exercici hauràs de solucionar-lo utilitzant els coneixements que acabes d'aprendre.
 
 Per **crear una solució** farem servir [CircuitVerse](https://circuitverse.org/simulator), una plataforma gratuïta i de codi obert dissenyada per crear i simular circuits lògics digitals en línia.
-Amb aquesta eina crearem el nostre circuit i l'exportarem per presentar-lo a **Jutge**.
+Amb aquesta eina dibuixarem el nostre circuit i l'exportarem per presentar-lo a **Jutge**.
 
 A CircuitVerse pots arrossegar portes lògiques al teu circuit, connectar-les i provar la taula de veritat. 
 

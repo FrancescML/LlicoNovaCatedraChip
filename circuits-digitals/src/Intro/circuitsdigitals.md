@@ -28,7 +28,7 @@ Les **portes lògiques** són petits circuits que efectuen operacions lògiques 
 
 Una **expressió lògica** és una expressió que defineix una sortida booleana a partir d’un conjunt de variables d’entrada binàries (0 o 1). Per descriure aquesta relació s’utilitzen operacions lògiques com AND, OR i NOT.
 
-Una **taula de veritat** mostra totes les possibles combinacions d’entrades d’un circuit lògic i el resultat corresponent a la sortida per cadascuna d’aquestes combinacions.
+Una **taula de veritat** mostra totes les possibles combinacions d’entrades d’un circuit lògic o funció booleana i el resultat corresponent a la sortida per cadascuna d’aquestes combinacions.
 
 Un [**circuit combinacional**](../CircCombin/intro) és un tipus de circuit digital en el qual el valor de la seva sortida en un instant depèn únicament dels valors actuals de les seves entrades. Construïts únicament amb portes lògiques simples, no tenen retroalimentació ni memòria. El seu comportament es pot descriure amb taules de veritat i funcions booleanes.
 
