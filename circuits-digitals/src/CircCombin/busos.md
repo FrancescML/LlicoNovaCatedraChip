@@ -47,7 +47,7 @@ El nostre objectiu és dissenyar un circuit desplaçador de 4 bits. Tenim dues o
 
 * Usant registres de desplaçament, que són [circuits seqüencials](../CircSeq/intro.md): Aquesta implementació és per a operacions de desplaçament que ocorren en el temps, generalment sincronitzades amb un rellotge.
 
-En aquesta secció emprarem multiplexors i el circuit serà el seguent:
+En aquesta secció emprarem multiplexors i el circuit serà el següent:
 
 <img src='./bus_exemple.png' alt="Circuit desplaçador" style="display:block; height:400px; margin:0 auto; border-radius: 8px;"/>
 <center><i>Circuit digital que desplaça una posició cap a l'esquerra</i></center>
@@ -77,7 +77,7 @@ Per a cada bit de sortida de $B$, farem servir un multiplexor 2-a-1.
 
 
 
-## Exercicis de [Introduction to Digital Circuit Design](https://jutge.org/courses/JordiCortadella:IntroCircuits)
+## Exercicis a Jutge.org: [Introduction to Digital Circuit Design](https://jutge.org/courses/JordiCortadella:IntroCircuits)
 
 
 [Bus invert](https://jutge.org/problems/X29475_en)
@@ -88,7 +88,7 @@ Per a cada bit de sortida de $B$, farem servir un multiplexor 2-a-1.
 
 [Shift left or right](https://jutge.org/problems/X25794_en)
 
-<small>*Recorda (troba-ho a la pàgina d'[inici](../Intro/inici.md)) que per accedir als exercicis i que el **Jutge** valori les teves solucions has d'estar inscrit al [curs](https://jutge.org/courses/JordiCortadella:IntroCircuits).*</small>
+<small>*Recorda que per accedir als exercicis i que el **Jutge** valori les teves solucions has d'estar inscrit al [curs](https://jutge.org/courses/JordiCortadella:IntroCircuits)*. Troba totes les instruccions [aqui](../Inici/instruccions.md)</small>
 
 <!-- Aquesta imatge ha d'anar al final de cada lliçó, ja sigui amb aquesta línia o dins la signatura. Deixar comentat si ja està a la signatura-->
 <br>

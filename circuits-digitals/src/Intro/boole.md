@@ -6,42 +6,76 @@
 <br>
 
 
-## Introducció a l'àlgebra de Boole
+# Introducció a l'àlgebra de Boole
 
-L'àlgebra de Boole és una eina matemàtica fonamental per l'anàlisi i el disseny dels circuits digitals. És un llenguatge que descriu com aquests circuits processen la informació. 
+L'àlgebra de Boole, també anomenada àlgebra booleana, en matemàtica, electrònica digital i informàtica és una estructura algebraica que esquematitza les operacions lògiques.
+Les seves variables només poden adoptar dos valors, tradicionalment denominats, cert i fals, representats com a 1 i 0 respectivament. 
 
-L'àlgebra de Boole és un sistema matemàtic lògic que treballa amb només dos valors possibles: veritable (1) i fals (0). Aquests dos valors corresponen directament als estats elèctrics dels circuits digitals: un voltatge alt (1) o baix (0), un interruptor obert o tancat, etc. Per això se l'anomena també àlgebra binària.
+En electròncia digital i informàtica aquests dos valors es corresponen directament als estats elèctrics dels circuits digitals: un voltatge alt (1) o baix (0). Per això, l'àlgebra de Boole es pot utilitzar per descriure les operacions lògiques dels circuits digitals.
 
-* **Base de la Computació**: És la base lògica de totes les operacions que fan els ordinadors, des de càlculs aritmètics fins a decisions complexes en programes.
 
-* **Optimització**: Permet simplificar expressions lògiques complexes. Això es tradueix directament en circuits digitals més senzills, que consumiran menys, seràn més ràpids i fiables.
+* **Base de la Computació**: L'àlgebra de Boole és una eina fonamental per l'anàlisi i el disseny dels circuits digitals i és la base de l'aritmètica computacional moderna.
 
 * **Anàlisi**: Ajuda a entendre el funcionament d'un circuit existent, permetent determinar la seva sortida donades unes entrades.
 
 * **Disseny**: Proporciona un mètode sistemàtic per dissenyar circuits digitals que realitzin una funció específica (per exemple, un sumador, un comparador, un multiplexor).
 
-## Gramàtica Bàsica i operadors fonamentals
+* **Optimització**: Permet simplificar expressions lògiques complexes. Això es tradueix directament en circuits digitals més senzills, que consumiran menys, seràn més ràpids i fiables.
 
-L'àlgebra de Boole utilitza tres operadors lògics fonamentals que es corresponen directament amb les portes lògiques digitals.
+## Operadors booleans
 
-### **AND** o Multiplicació Lògica:
-La multiplicació s'expressa amb el símbol \"$·$\" o la simple juxtaposició.  Per exemple:
+L'àlgebra de Boole utilitza tres operadors fonamentals. Les portes lògiques s'hi corresponen directament i prenen el mateix nom.
+Els operadors booleans es poden representar de diferents maneres segons l’àmbit d’aplicació de l’àlgebra de Boole.
 
-$A·B$ &emsp;&emsp;&emsp; o bé &emsp;&emsp;&emsp; $AB$
+### NOT o Negació:
 
-La taula de veritat es correspon amb la porta lògica AND. La sortida és '$1$' només si totes les entrades són '$1$'   .
+La negació d'una variable booleana $A$ es pot expressar de diferents maneres depenent de l'ambit d'aplicació de l'àlgebra de boole.
 
-|$A$|$B$| $A·B$ |
+$\bar{A}$
+
+(també s'utilitza $A'$ o bé $¬A$)
+
+La negació inverteix el valor de l'entrada. La taula de veritat es correspòn amb la porta lògica NOT. Si l'entrada és 0, la sortida és 1; si l'entrada és 1, la sortida és 0.
+
+| $A$ | $\bar{A}$ |
+|---|----|
+| 0 | 1  |
+| 1 | 0  |
+
+### **AND**
+L'operador AND també s'anomena multiplicació o conjunció lògica. 
+
+Per exemple, per a les variables booleanes $A$ i $B$ s'expressa amb el símbol \"$·$\" o la simple juxtaposició.
+
+$A·B$
+
+o també
+
+$AB$
+
+o bé
+ 
+$A∧B$
+
+La taula de veritat es correspon amb la porta lògica AND. La sortida és '$1$' només si totes les entrades són '$1$'.
+
+|$A$|$B$| $AB$ |
 |---|---|:-----:|
 | 0 | 0 | 0     |
 | 0 | 1 | 0     |
 | 1 | 0 | 0     |
 | 1 | 1 | 1     |
 
-### OR o Suma Lògica:
-La suma s'expressa amb el símbol "$+$". Per exemple:
+### OR
+L'operador OR també es pot referir com a suma o disjunció lògica.
+
+Per exemple, per a les variables booleanes $A$ i $B$ s'expressa amb el símbol "$+$". 
 
 $A + B$
+
+o també
+
+$A∨B$
 
 La taula de veritat es correspon amb la porta lògica OR. La sortida és '$1$' si almenys una de les entrades és '$1$'.
 
@@ -52,23 +86,11 @@ La taula de veritat es correspon amb la porta lògica OR. La sortida és '$1$' s
 | 1 | 0 | 1     |
 | 1 | 1 | 1     |
 
-### NOT o Negació:
-
-La negació de $A$ es pot expressar de diferents maneres. Per exemple:
-
-$A'$ &emsp;&emsp;&emsp; o bé &emsp;&emsp;&emsp; $\bar{A}$
-
-La negació inverteix el valor de l'entrada. La taula de veritat es correspòn amb la porta lògica NOT. Si l'entrada és 0, la sortida és 1; si l'entrada és 1, la sortida és 0.
-
-| $A$ | $\bar{A}$ |
-|---|----|
-| 0 | 1  |
-| 1 | 0  |
 
 ## Postulats Fonamentals o Axiomes de Boole
 Els postulats Boole son regles bàsiques, veritats acceptades sobre les quals es construeix tota l'àlgebra de Boole.
 
-**Propietats de la Suma Lògica**
+**Propietats de la Suma Lògica (OR)**
 
 $A + 0 = A$ &emsp;&emsp;&emsp; *El 0 és l'element neutre (identitat) de la suma lògica*
 
@@ -78,7 +100,7 @@ $A + \bar{A} = 1$
 
 $A + A = A$ &emsp;&emsp;&emsp; *Llei d'Idempotència*
 
-**Propietats de la Multiplicació Lògica**
+**Propietats de la Multiplicació Lògica (AND)**
 
 $A · 1 = A$ &emsp;&emsp;&emsp; *L'1 és l'element neutre de la multiplicació lògica*
 
@@ -128,13 +150,19 @@ $\overline{A + B} = \bar{A} · \bar{B}$
 
 $\overline{A · B} = \bar{A} + \bar{B}$
 
+**Algunes propietats derivades:**
+
 $A + \bar{A}·B=A+B$
 
 $A(\bar{A}+B) = A·B$
 
+
+## Funcions booleanes
+Una funció booleana és una aplicació que assigna a unes variables booleanes d'entrada un resultat en forma de variable booleana.
+
+Aquesta funció es pot definir de diferents maneres; amb una expressió booleana, una taula de veritat, un mapa de Karnaugh o bé amb un circuit digital combinacional. 
+
 Amb aquesta base podràs simplificar expressions, dissenyar funcions lògiques i sistemes digitals cada cop més complexos.
-
-
 
 
 

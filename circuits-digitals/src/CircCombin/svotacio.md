@@ -351,7 +351,7 @@ $A=PT + PV + PS + STV$
 
 Aquesta és l’expressió booleana simplificada final perque tots els ‘1’ ja han estat considerats en algun grup.
 
-El circuit digital derivat d’aquesta expressió és el seguent:
+El circuit digital derivat d’aquesta expressió és el següent:
 
 
 <img src='./svotacio_exemple.png' alt="Circuit digital" style="display:block; height:280px; margin:0 auto; border-radius: 8px;"/>
@@ -359,7 +359,7 @@ El circuit digital derivat d’aquesta expressió és el seguent:
 </i></center>
 
 
-## Exercicis de [Introduction to Digital Circuit Design](https://jutge.org/courses/JordiCortadella:IntroCircuits)
+## Exercicis a Jutge.org: [Introduction to Digital Circuit Design](https://jutge.org/courses/JordiCortadella:IntroCircuits)
 
 [Executive Committee](https://jutge.org/problems/X16063_en)
 
@@ -369,7 +369,7 @@ El circuit digital derivat d’aquesta expressió és el seguent:
 
 [Majority of 5 inputs](https://jutge.org/problems/X72286_en)
 
-<small>*Recorda (troba-ho a la pàgina d'[inici](../Intro/inici.md)) que per accedir als exercicis i que el **Jutge** valori les teves solucions has d'estar inscrit al [curs](https://jutge.org/courses/JordiCortadella:IntroCircuits).*</small>
+<small>*Recorda que per accedir als exercicis i que el **Jutge** valori les teves solucions has d'estar inscrit al [curs](https://jutge.org/courses/JordiCortadella:IntroCircuits)*. Troba totes les instruccions [aqui](../Inici/instruccions.md)</small>
 
 <!-- Aquesta imatge ha d'anar al final de cada lliçó, ja sigui amb aquesta línia o dins la signatura. Deixar comentat si ja està a la signatura-->
 <br>

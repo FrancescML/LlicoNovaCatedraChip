@@ -40,12 +40,12 @@ Produirà 7 senyals de sortida que controlaran els segments d'un display de 7 se
 width:500px;
 -->
 
-La següent figura representa el layout estàndard dels 7 segments, que farem servir de referència per desenvolupar el nostre circuit.
+La figura següent representa la disposició estàndard dels 7 segments, que farem servir de referència per dissenyar el nostre circuit.
 
-<img src='./segments.png' alt="Layout dels 7 segments" style="display:block; height:350px; margin:0 auto; border-radius: 8px;"/>
-<center><i>Layout dels 7 segments</i></center>
+<img src='./segments.png' alt="Disposició dels 7 segments" style="display:block; height:350px; margin:0 auto; border-radius: 8px;"/>
+<center><i>Disposició dels 7 segments</i></center>
 
-La següent taula de veritat determina quins deñs segments $a$, $b$, $c$, $d$, $e$, $f$ i $g$ han d'estar encesos ('1') i quins apagats ('0') per a cadascun dels valors d'entrada de $D[3:0]$.
+La taula de veritat següent determina quins dels segments $a$, $b$, $c$, $d$, $e$, $f$ i $g$ han d'estar encesos ('1') i quins apagats ('0') per a cadascun dels valors d'entrada de $D[3:0]$.
 
 
 | digit <br> decimal | BCD <br> $D_3 D_2 D_1 D_0$ | $a$ | $b$ | $c$ | $d$ | $e$ | $f$ | $g$ | aspecte
@@ -60,11 +60,18 @@ La següent taula de veritat determina quins deñs segments $a$, $b$, $c$, $d$, 
 | 7 | 0111 | 1| 1| 1| 0| 0| 0| 0|<img src='./7-segment_abc.svg' style="display:block; height:50px; margin:0 auto;"/>
 | 8 | 1000 | 1| 1| 1| 1| 1| 1| 1|<img src='./7-segment_abcdefg.svg' style="display:block; height:50px; margin:0 auto;"/>
 | 9 | 1001 | 1| 1| 1| 1| 0| 1| 1|<img src='./7-segment_abcdfg.svg' style="display:block; height:50px; margin:0 auto;"/>
-|10-15 <br> casos impossibles| 1010-1111| x| x| x| x| x| x| x
+|10 <br> don't care| 1010| x| x| x| x| x| x| x
+|11 <br> don't care| 1011| x| x| x| x| x| x| x
+|12 <br> don't care| 1100| x| x| x| x| x| x| x
+|13 <br> don't care| 1101| x| x| x| x| x| x| x
+|14 <br> don't care| 1110| x| x| x| x| x| x| x
+|15 <br> don't care| 1111| x| x| x| x| x| x| x
 
-Els 4 bits permeten codificar fins al número 15. Els valors del 10 al 15 són casos impossibles, que no corresponen a un dígit. Els valors dels segments es reperesenten com a x.
 
-Cal fer un mapa de karnaugh per a cadascuna de les sortides del circuit per tal d'obtenir l'expressió booleana a partir del digit d'entrada $D[3:0]=[D_3 \; D_2 \; D_1 \; D_0]$. El valor de $x=1$ dona com a resultat equacions més simples.
+Els 4 bits d’entrada permeten codificar fins al nombre 15. Els valors del 10 al 15 també apareixen a la taula de veritat, però no ens importa quina sortida generin, ja que no els farem servir. Aquests casos s’anomenen típicament **condicions indiferents** (*don’t care cases*) i es representen amb una x.
+A l’hora de buscar agrupacions al mapa de Karnaugh, els podem assignar els valors que més ens convinguin per obtenir expressions més simples.
+
+Cal fer un mapa de Karnaughh per a cadascuna de les sortides del circuit per tal d'obtenir l'expressió booleana a partir del digit d'entrada $D[3:0]=[D_3 \; D_2 \; D_1 \; D_0]$. El valor de $x=1$ dona com a resultat equacions més simples.
 
 El procés complet i detallat es pot trobar a diverses fonts:
 [enllaç 1](https://informatika.stei.itb.ac.id/~rinaldi.munir/Matdis/2019-2020/Makalah2019/13518127.pdf), 
@@ -145,7 +152,7 @@ Amb aquestes funcions booleanes ja simplificades podem implementar el circuit ut
 
 
 
-## Exercicis de [Introduction to Digital Circuit Design](https://jutge.org/courses/JordiCortadella:IntroCircuits)
+## Exercicis a Jutge.org: [Introduction to Digital Circuit Design](https://jutge.org/courses/JordiCortadella:IntroCircuits)
 
 
 [7-segment digit](https://jutge.org/problems/X37276_en)
@@ -154,7 +161,7 @@ Amb aquestes funcions booleanes ja simplificades podem implementar el circuit ut
 
 [Square of a BCD digit](https://jutge.org/problems/X77297_en)
 
-<small>*Recorda (troba-ho a la pàgina d'[inici](../Intro/inici.md)) que per accedir als exercicis i que el **Jutge** valori les teves solucions has d'estar inscrit al [curs](https://jutge.org/courses/JordiCortadella:IntroCircuits).*</small>
+<small>*Recorda que per accedir als exercicis i que el **Jutge** valori les teves solucions has d'estar inscrit al [curs](https://jutge.org/courses/JordiCortadella:IntroCircuits)*. Troba totes les instruccions [aqui](../Inici/instruccions.md)</small>
 
 <!-- Aquesta imatge ha d'anar al final de cada lliçó, ja sigui amb aquesta línia o dins la signatura. Deixar comentat si ja està a la signatura-->
 <br>
