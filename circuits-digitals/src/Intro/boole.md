@@ -29,9 +29,7 @@ Els operadors booleans es poden representar de diferents maneres segons l’àmb
 
 ### NOT o Negació:
 
-La negació de $A$ es pot expressar de diferents maneres depenent de l'ambit d'aplicació de l'àlgebra de boole.
-
-Per exemple, per la variable boolena $A$:
+La negació d'una variable booleana $A$ es pot expressar de diferents maneres depenent de l'ambit d'aplicació de l'àlgebra de boole.
 
 $\bar{A}$
 
@@ -45,13 +43,19 @@ La negació inverteix el valor de l'entrada. La taula de veritat es correspòn a
 | 1 | 0  |
 
 ### **AND**
-L'operador AND també s'anomena multiplicació o conjunció lògica. s'expressa amb el símbol \"$·$\" o la simple juxtaposició.
+L'operador AND també s'anomena multiplicació o conjunció lògica. 
 
- Per exemple, per a les variables booleanes $A$ i $B$:
+Per exemple, per a les variables booleanes $A$ i $B$ s'expressa amb el símbol \"$·$\" o la simple juxtaposició.
 
 $A·B$
 
-(o també $AB$ o bé $A∧B$)
+o també
+
+$AB$
+
+o bé
+ 
+$A∧B$
 
 La taula de veritat es correspon amb la porta lògica AND. La sortida és '$1$' només si totes les entrades són '$1$'.
 
@@ -62,14 +66,16 @@ La taula de veritat es correspon amb la porta lògica AND. La sortida és '$1$' 
 | 1 | 0 | 0     |
 | 1 | 1 | 1     |
 
-### OR o Suma Lògica:
-L'operador OR també es pot referir com a suma o disjunció lògica. S'expressa amb el símbol "$+$". 
+### OR
+L'operador OR també es pot referir com a suma o disjunció lògica.
 
-Per exemple, per a les variables booleanes $A$ i $B$:
+Per exemple, per a les variables booleanes $A$ i $B$ s'expressa amb el símbol "$+$". 
 
 $A + B$
 
-(o també $A∨B$)
+o també
+
+$A∨B$
 
 La taula de veritat es correspon amb la porta lògica OR. La sortida és '$1$' si almenys una de les entrades és '$1$'.
 

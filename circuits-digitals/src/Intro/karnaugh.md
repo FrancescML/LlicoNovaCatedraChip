@@ -369,7 +369,6 @@ Aquest mapa es pot anomenar mapa de reflexió (*reflection map*).
 
 Una altra manera molt efectiva d'estructurar un mapa de Karnaugh de 5 variables és fer-ne dos de 4 variables: un d'ells representa $𝐴=0$ i l'altre $𝐴=1$, i considerant-los superposats en una tercera dimensió.
 
-
 <table style="width: 100%; margin: 0 auto; border-collapse: collapse; text-align: center; background-color: transparent;">
 
   <tbody>
@@ -476,7 +475,10 @@ Una altra manera molt efectiva d'estructurar un mapa de Karnaugh de 5 variables 
   </tbody>
 </table>
 
+I visualitzar-los de la manera següent. 
 
+<img src='./kmap5var.png' alt="Karnaugh 5 variables" style="display:block; width:400px; margin:0 auto; border-radius: 8px;"/>
+<center><i>Mapa de Karnaugh 5 variables</i></center>
 
 
 

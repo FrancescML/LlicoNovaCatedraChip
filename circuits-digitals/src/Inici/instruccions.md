@@ -17,16 +17,11 @@ Troba tot seguit les instruccions per solucionar els problemes i sotmetre'ls al 
 
 ## Inscripció a Jutge.org i al curs
 
-Per fer els exercicis proposats t'hauràs de registrar **gratuïtament** a la plataforma [jutge.org](https://jutge.org).
+Per poder accedir als exercicis proposats t'hauràs de registrar **gratuïtament** a la plataforma [jutge.org](https://jutge.org).
 
+Recorda que jutge.org és una plataforma docent de la UPC. El registre d'usuari és per fer el seguiment del teu progrés en els exercicis. No tenim cap interès comercial ni recopilem dades personals.
 
 <img src='./signin.png' alt="enroll" style="display:block; width:450px; margin:0 auto; border-radius: 8px; border:5px solid #999;" />
-
-<p style="text-align: center;">
-  <small><em>
-  Recorda que jutge.org és una plataforma docent de la UPC. El registre d'usuari és per fer el seguiment del teu progrés en els exercicis. No tenim cap interès comercial ni recopilem dades personals.
-  </em></small>
-</p>
 
 Un cop tinguis accés als recursos de jutge.org, et pots incriure al curs [Introduction to Digital Circuit Design](https://jutge.org/courses/JordiCortadella:IntroCircuits) des de la secció [Courses](https://jutge.org/courses) i clicant el botó "Enroll this course". 
 
@@ -53,7 +48,7 @@ Els exercicis estan ordenats per temes i cadascun té un codi identificatiu úni
 
 <img src='./codi.png' alt="codi" style="display:block; width:450px; margin:0 auto; border-radius: 8px; border:5px solid #999;" />
 
-També pots accedir als exercicis directament des de les lliçons a partir dels enllaços que hi trobaràs. Aquesta és una alternativa més ràpida, però recorda que primer has de tenir la sessió a jutge.org oberta.
+També pots accedir als exercicis directament des de les lliçons a partir dels enllaços que hi trobaràs. Aquesta és una alternativa més ràpida, però recorda que primer has d'haver obert la sessió a **jutge.org**.
 
 <img src='./enllaç.png' alt="enllaç" style="display:block; width:450px; margin:0 auto; border-radius: 8px; border:5px solid #999;" />
 
@@ -62,14 +57,14 @@ La  pàgina de l'exercici és com la següent:
 <img src='./exercici.png' alt="enllaç" style="display:block; width:600px; margin:0 auto; border-radius: 8px; border:5px solid #999;" />
 
 
-Hi trobaràs l'enunciat (*Statement*) que descriu l’exercici, aquest enunciat es pot descarregar en PDF o ZIP.
-També s'hi inclou una especificació (*Specification*) de les entrades i sortides que tindrà el circuit.
+Hi trobaràs l'**enunciat** (*Statement*) que descriu l’exercici, aquest enunciat es pot descarregar en PDF o ZIP.
+També s'hi inclou una **especificació** (*Specification*) que descriu les entrades i sortides que ha de tenir el circuit.
 El menú *New Submission* és per presentar la teva solució a l'exercici.
 
-Una vegada entès l’exercici hauràs de solucionar-lo utilitzant els coneixements que acabes d'aprendre.
+Una vegada entès l’exercici hauràs de solucionar-lo utilitzant els coneixements que has après a la lliçó.
 
 Per **crear una solució** farem servir [CircuitVerse](https://circuitverse.org/simulator), una plataforma gratuïta i de codi obert dissenyada per crear i simular circuits lògics digitals en línia.
-Amb aquesta eina dibuixarem el nostre circuit i l'exportarem per presentar-lo a **Jutge**.
+Amb aquesta eina **dibuixarem el nostre circuit i l'exportarem** per presentar-lo a Jutge.
 
 A CircuitVerse pots arrossegar portes lògiques al teu circuit, connectar-les i provar la taula de veritat. 
 
@@ -79,9 +74,9 @@ A CircuitVerse pots arrossegar portes lògiques al teu circuit, connectar-les i 
 
 <img src='./exportverilog.png' alt="enllaç" style="display:block; width:450px; margin:0 auto; border-radius: 8px; border:5px solid #999;" />
 
-*Verilog* és un llenguatge de descripció de hardware (*HDL - Hardware Description Language*, per les sigles en anglès) que s'utilitza per dissenyar circuits electrònics digitals com microprocessadors o components lògics.
+*Verilog* és un llenguatge de descripció de hardware (*HDL - Hardware Description Language*, per les sigles en anglès) que s'utilitza per descriure circuits electrònics digitals com microprocessadors o components lògics.
 
-**Presenta el teu exercici al Jutge**. Puja el fitxer que acabes de generar dins l'àrea New submission de l'exercici.
+**Presenta el teu exercici al Jutge**. Puja el fitxer que acabes de generar dins l'àrea ***New submission*** de l'exercici.
 
 
 <img src='./newsumbission.png' alt="enllaç" style="display:block; width:450px; margin:0 auto; border-radius: 8px; border:5px solid #999;" />
@@ -96,14 +91,14 @@ Acabat el procés, podràs veure el **veredicte i la correcció de Jutge**. Tant
 
 <img src='./veredicteerror.png' alt="enllaç" style="display:block; width:600px; margin:0 auto; border-radius: 8px; border:5px solid #999;" />
 
-La secció *hint* mostra pistes del que pot haver anat malament.
+Si el veredicte és desfavorable, la secció *hint* mostra pistes del que pot haver anat malament.
 
 Si la teva solució és correcta també se't mostrarà el circuit solució a la secció *Circuit modules*.
 La secció *Program* mostra el codi Verilog del circuit que has presentat.
 
 <img src='./veredictecorrectecircuitiprogram.png' alt="enllaç" style="display:block; width:600px; margin:0 auto; border-radius: 8px; border:5px solid #999;" />
 
-**Pots tornar-ho a provar** tantes vegades com calgui. A la finestra de Submission s'anotaran el nombre total d'arxius i correccions i es podran veure clicant al número de submission (S001,S002…)
+**Pots tornar-ho a provar** tantes vegades com calgui. A la finestra de *Submission* s'anotaran el nombre total d'arxius i correccions. Podràs visualitzar-los clicant al número de submission (S001,S002…)
 
 El nostre Jutge té diferents veredictes en funció de del circuit presentat codi enviat. Els més habituals són els següents:
 

@@ -16,15 +16,15 @@ Un nombre parell és divisible per 2, i en notació binària es reconeix fàcilm
 
 La **variable d'entrada** al circuit és:
 
-$number[3:0]= [number_3 \; number_2 \; number_1 \; number_0]$
+$nombre[3:0]= [nombre_3 \; nombre_2 \; nombre_1 \; nombre_0]$
 
-El bit menys significatiu (**LSB**) és $number_0$.
+El bit menys significatiu (**LSB**) és $nombre_0$.
 
 La **variable de sortida** del circuit la és un sol bit $Parell$.
 
 La taula següent recull uns quants exemples d'entrades i sortides que il·lustren el comportament desitjat del circuit. La taula de veritat completa tindria 16 files.
 
-|**$number$**|**Nombre en decimal**|$number_0$ (LSB)|Paritat| $Parell$|
+|**$nombre$**|**Nombre en decimal**|$nombre_0$ (LSB)|Paritat| $Parell$|
 |:---:|:---:|:---:|---|:---:|
 |0000 | 0  | 0 | és Parell| 1 
 |0001 | 1  | 1 | és Senar | 0
@@ -33,18 +33,18 @@ La taula següent recull uns quants exemples d'entrades i sortides que il·lustr
 |1110 | 14 | 0 | és Parell| 1 
 |1111 | 15 | 1 | és Senar | 0
 
-Construir el circuit és força directe, la sortida $Parell$ s'ha d'activar (valor '1') si i només si $number[0]$ té el valor '0', independentment del valor de la resta de bits de $number$.
+Construir el circuit és força directe, la sortida $Parell$ s'ha d'activar (valor '1') si i només si $nombre[0]$ té el valor '0', independentment del valor de la resta de bits de $nombre$.
 
-La sortida és doncs la negació de $number_0$:
+La sortida és doncs la negació de $nombre_0$:
 
-$Parell=\overline{number_0}$
+$Parell=\overline{nombre_0}$
 
-El circuit s'implementa amb una sola porta lògica NOT al bit $number_0$.
+El circuit s'implementa amb una sola porta lògica NOT al bit $nombre_0$.
 
 
 
 <img src='./nombres_exemple1.png' alt="Circuit desplaçador"  style="display:block; height:130px; margin:0 auto; border-radius: 8px;"/>
-
+<br>
 <center><i>Circuit digital que desplaça una posició cap a l'esquerra</i></center>
 
 
@@ -530,18 +530,15 @@ Per a la sortida $residu_2$ identifiquem 2 grups en el seu mapa de Karnaugh.
   </tbody>
 </table>
 
-
 Així doncs, l'expressió booleana simplificada per a $residu_2$ tindrà 2 termes:
 
 $residu_2=  n_2 \overline{n_1} + \overline{n_3} n_2$
 
 A partir d'aquestes tres expressions podem emprar les portes lògiques per crear el circuit digital que implementarà la funció $n \mod{7}$.
 
-
 <img src='./nombres_exemple2.png' alt="Circuit digital" style="display:block; height:600px; margin:0 auto; border-radius: 8px;"/>
 
 <center><i>Circuit digital que implementa la funció n mod 7</i></center>
-
 
 ## Exercicis a Jutge.org: [Introduction to Digital Circuit Design](https://jutge.org/courses/JordiCortadella:IntroCircuits)
 

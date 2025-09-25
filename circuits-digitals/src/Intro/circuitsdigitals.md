@@ -16,14 +16,15 @@ Les **portes lògiques** són petits circuits que efectuen operacions lògiques 
 
 |**Porta lògica**|**Símbol**                           |**Expressió Lògica**       |**Descripció**
 |------ |------                                        |:---:                      |------
-|Buffer |<img src="./Buffer_ANSI_Labelled.svg.png"/>   |$A$                        |Retorna el mateix bit
-|NOT    |<img src="./NOT_ANSI_Labelled.svg.png"/>      |$\bar{A}$                  |Inverteix el bit
-|AND    |<img src="./AND_ANSI_Labelled.svg.png"/>      |$A·B$                      |1 si les dues entrades són 1
-|OR     |<img src="./OR_ANSI_Labelled.svg.png"/>       |$A+B$                      |1 si almenys una entrada és 1
-|NAND   |<img src="./NAND_ANSI_Labelled.svg.png"/>     |$\overline{A·B}$           |AND invertit (combinació d'AND i NOT)
-|NOR    |<img src="./NOR_ANSI_Labelled.svg.png"/>      |$\overline{A+B}$           |OR invertit (combinació d'OR i NOT)
-|XOR    |<img src="./XOR_ANSI_Labelled.svg.png"/>      |$A·\bar{B}+\bar{A}·B$      |1 si les entrades són diferents
-|XNOR   |<img src="./XNOR_ANSI_Labelled.svg.png"/>     |$(A·B)+(\bar{A}·\bar{B})$  |1 si les entrades són iguals
+|Buffer |<img src="./Buffer_ANSI_Labelled.png"/>   |$A$                        |Retorna el mateix bit
+|NOT    |<img src="./NOT_ANSI_Labelled.png"/>      |$\bar{A}$                  |Inverteix el bit
+|AND    |<img src="./AND_ANSI_Labelled.png"/>      |$A·B$                      |1 si les dues entrades són 1
+|OR     |<img src="./OR_ANSI_Labelled.png"/>       |$A+B$                      |1 si almenys una entrada és 1
+|NAND   |<img src="./NAND_ANSI_Labelled.png"/>     |$\overline{A·B}$           |AND invertit (combinació d'AND i NOT)
+|NOR    |<img src="./NOR_ANSI_Labelled.png"/>      |$\overline{A+B}$           |OR invertit (combinació d'OR i NOT)
+|XOR    |<img src="./XOR_ANSI_Labelled.png"/>      |$A·\bar{B}+\bar{A}·B$      |1 si les entrades són diferents
+|XNOR   |<img src="./XNOR_ANSI_Labelled.png"/>     |$(A·B)+(\bar{A}·\bar{B})$  |1 si les entrades són iguals
+
 <!-- Imatges de ( https://en.wikipedia.org/wiki/Logic_gate) resum, notes o total.*/-->
 
 Una **expressió lògica** és una expressió que defineix una sortida booleana a partir d’un conjunt de variables d’entrada binàries (0 o 1). Per descriure aquesta relació s’utilitzen operacions lògiques com AND, OR i NOT.
