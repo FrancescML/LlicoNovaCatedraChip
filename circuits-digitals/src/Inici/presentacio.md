@@ -5,7 +5,7 @@
 <div style="clear: both;"></div>
 <br>
 
-## **Benvingut a les Lliçons de circuits digitals de [jutge.org](https://jutge.org).**
+## **Benvinguts/des a les Lliçons de circuits digitals de [jutge.org](https://jutge.org).**
 
 Aquest recurs està obert a tot l'alumnat preuniversitari interessat a aprendre les bases del disseny de circuits digitals.
 

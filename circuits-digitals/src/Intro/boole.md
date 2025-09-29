@@ -11,6 +11,8 @@
 L'àlgebra de Boole, també anomenada àlgebra booleana, en matemàtica, electrònica digital i informàtica és una estructura algebraica que esquematitza les operacions lògiques.
 Les seves variables només poden adoptar dos valors, tradicionalment denominats, cert i fals, representats com a 1 i 0 respectivament. 
 
+L'àlgebra va ser creada per George Boole al s. XIX, però els enginyers van veure que era perfecte per a l'electrònica, on la seva funció és descriure i simplificar els circuits.
+
 En electròncia digital i informàtica aquests dos valors es corresponen directament als estats elèctrics dels circuits digitals: un voltatge alt (1) o baix (0). Per això, l'àlgebra de Boole es pot utilitzar per descriure les operacions lògiques dels circuits digitals.
 
 

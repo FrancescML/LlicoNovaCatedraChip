@@ -7,7 +7,7 @@
 # Agraïments
 
 * Aquest contingut ha estat creat per [Càtedra CHIP UPC](https://catedrachip.upc.edu/ca), un projecte impulsat pel Ministeri per a la Transformació Digital i de la Funció Pública i finançat per la Unió Europea – NextGenerationEU.
-* Miquel Torner
+* Miquel Torner   [https://github.com/miquelt9](https://github.com/miquelt9)
 * Jordi Cortadella
 * Jordi Petit
 
