@@ -80,15 +80,22 @@ export const index = [
                 text: 'Introducció als circuits aritmètics',
                 link: '/CircAritm/intro',
             },
- /*           {
-                text: 'tema a',
-                link: '/CircAritm/temaa',
+            {
+                text: 'Circuits Bàsics',
+                link: '/CircAritm/CircBasics',
             },
             {
-                text: 'tema b',
-                link: '/CircAritm/temab',
+                text: 'Aritmètica de 4 bits',
+                link: '/CircAritm/Aritm4bits',
             },
-*/
+            {
+                text: 'Aritmètica de 4 bits',
+                link: '/CircAritm/Aritmnbits',
+            },
+            {
+                text: 'Miscel·lània',
+                link: '/CircAritm/miscellania',
+            },
         ],
     },
     {
