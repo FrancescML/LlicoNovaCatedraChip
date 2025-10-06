@@ -5,11 +5,103 @@
 <br>
 
 
-# Tema a
+# Circuits Bàsics
 
-Aquest és el tema a.
+Comencem pels circuits digitals aritmètics més bàsics, com els Half adder, els Full adder, i els comparadors de bits.
 
-//cal canviar el nom del fitxer i el seu enllaç a .vitepress/index.js
+## EXEMPLE: Semisumador (*Half Adder*)
+El semisumador (*half adder* en anglès) és la base dels sumadors complets (full adders) i de les sumes de n bits.
+
+El semisumador pren dos bits, $A$ i $B$, i en fa la suma. La sortida és un bit amb el resultat de la suma més un bit de ròssec.
+
+La taula de veritat de la funció que volem implementar és la següent:
+
+| $A$ | $B$ | $Suma$ | $Carry$ |
+|:---:|:---:|:---:|:---:|
+| 0 | 0 | 0 | 0 |
+| 0 | 1 | 1 | 0 |
+| 1 | 0 | 1 | 0 |
+| 1 | 1 | 0 | 1 |
+
+
+Quan A i B són 1, la suma es desborda, no es pot representar amb un sol bit de sortida. El resultat d’aquest desbordament és el bit de ròssec (*carry*) que representa un dígit d'ordre superior.
+
+
+Podem utilitzar Mapes de Karnaugh o les regles de l'Àlgebra de Boole per deduir les dues expressions booleanes simplificades que descriuen la lògica del circuit:
+
+$Suma= \bar{A}·B + A·\bar{B}= A \: XOR \: B$
+
+$Carry= A·B$
+
+Així doncs, el circuit que implementa aquest Semisumador (*Half Adder*) el següent:
+
+<img src='../logos/enconstrucció.png' alt="---" style="display:block; width:100px; margin:0 auto; border-radius: 8px;"/>
+<center><i>---</i></center>
+
+Aquest circuit és l'element fonamental per a la construcció de sumadors complets i sumadors de n bits.
+
+## EXEMPLE: Sumador complet (*full adder*)
+
+El sumador complet (*Full adder*) suma 3 bits d'entrada. Els bits $A$ i $B$ més un bit de ròssec d'entrada $C_{in}$. Representa una suma de dos bits que té en compte un possible bit de ròssec provinent d'una suma anterior dins una cadena de sumes.
+La seva sortida és un bit, resultat de la suma, i un bit de ròssec de sortida $C_{out}$.
+
+La taula de veritat del circuit és:
+
+| $A$ | $B$ | $C_{in}$ | $Suma$ | $C_{out}$ |
+|:---:|:---:|:---:|:---:|:---:|
+| 0 | 0 | 0 | 0 | 0 |
+| 0 | 1 | 0 | 1 | 0 |
+| 1 | 0 | 0 | 1 | 0 |
+| 1 | 1 | 0 | 0 | 1 |
+| 0 | 0 | 1 | 1 | 0 |
+| 0 | 1 | 1 | 0 | 1 |
+| 1 | 0 | 1 | 0 | 1 |
+| 1 | 1 | 1 | 1 | 1 |
+
+
+Podem utilitzar Mapes de Karnaugh o les regles de l'Àlgebra de Boole per deduir les dues expressions booleanes simplificades que descriuen la lògica del circuit:
+
+$Suma= A \: XOR \: B \: XOR \: C_{in}$
+
+$Cout= A·B + B·C_{in} + A·C_{in} = A·B + C_{in} · (A \: XOR \: B)$
+
+
+Així doncs, el circuit que implementa un sumador complet (*Full Adder*) aquesta funció és el següent:
+
+
+<img src='../logos/enconstrucció.png' alt="---" style="display:block; width:100px; margin:0 auto; border-radius: 8px;"/>
+<center><i>---</i></center>
+
+
+Aquest circuit es pot interpretar com a dos half adders amb una porta OR per al bit de ròssec de sortida:
+
+<img src='../logos/enconstrucció.png' alt="---" style="display:block; width:100px; margin:0 auto; border-radius: 8px;"/>
+<center><i>---</i></center>
+
+
+## EXEMPLE: Sumador de diversos bits.
+
+Amb el sumador complet (*Full Adder*) i el semisumador (*Half Adder*) es poden construir circuits més grans, com ara els sumadors de propagació de càrrega (*ripple-carry adders*), que permeten sumar números binaris de diversos bits.
+Per exemple el seguent sumador de quatre bits:
+
+<img src='../logos/enconstrucció.png' alt="---" style="display:block; width:100px; margin:0 auto; border-radius: 8px;"/>
+<center><i>Sumador de 4 bits</i></center>
+
+
+
+
+
+## Exercicis a Jutge.org: [Introduction to Digital Circuit Design](https://jutge.org/courses/JordiCortadella:IntroCircuits)
+
+
+[Half adder](https://jutge.org/problems/X27385_en)
+
+[Full adder](https://jutge.org/problems/X12983_en)
+
+[1-bit comparator](https://jutge.org/problems/X60848_en)
+
+
+<small>*Recorda que per accedir als exercicis i que el **Jutge** valori les teves solucions has d'estar inscrit al [curs](https://jutge.org/courses/JordiCortadella:IntroCircuits)*. Troba totes les instruccions [aqui](../Inici/instruccions.md)</small>
 
 <!-- Aquesta imatge ha d'anar al final de cada lliçó, ja sigui amb aquesta línia o dins la signatura. Deixar comentat si ja està a la signatura-->
 <br>

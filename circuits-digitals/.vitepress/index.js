@@ -89,7 +89,7 @@ export const index = [
                 link: '/CircAritm/Aritm4bits',
             },
             {
-                text: 'Aritmètica de 4 bits',
+                text: 'Aritmètica de n bits',
                 link: '/CircAritm/Aritmnbits',
             },
             {
