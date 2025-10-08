@@ -35,8 +35,8 @@ $Carry= A·B$
 
 Així doncs, el circuit que implementa aquest Semisumador (*Half Adder*) el següent:
 
-<img src='../logos/enconstrucció.png' alt="---" style="display:block; width:100px; margin:0 auto; border-radius: 8px;"/>
-<center><i>---</i></center>
+<img src='../logos/enconstrucció.png' alt="Circuit" style="display:block; width:100px; margin:0 auto; border-radius: 8px;"/>
+<center><i>Semisumador</i></center>
 
 Aquest circuit és l'element fonamental per a la construcció de sumadors complets i sumadors de n bits.
 
@@ -69,17 +69,43 @@ $Cout= A·B + B·C_{in} + A·C_{in} = A·B + C_{in} · (A \: XOR \: B)$
 Així doncs, el circuit que implementa un sumador complet (*Full Adder*) aquesta funció és el següent:
 
 
-<img src='../logos/enconstrucció.png' alt="---" style="display:block; width:100px; margin:0 auto; border-radius: 8px;"/>
-<center><i>---</i></center>
+<img src='../logos/enconstrucció.png' alt="Circuit" style="display:block; width:100px; margin:0 auto; border-radius: 8px;"/>
+<center><i>Sumador complet</i></center>
 
 
-Aquest circuit es pot interpretar com a dos half adders amb una porta OR per al bit de ròssec de sortida:
+Aquest circuit es pot interpretar com a dos semisumadors amb una porta OR per al bit de ròssec de sortida:
 
-<img src='../logos/enconstrucció.png' alt="---" style="display:block; width:100px; margin:0 auto; border-radius: 8px;"/>
-<center><i>---</i></center>
+<img src='../logos/enconstrucció.png' alt="Circuit" style="display:block; width:100px; margin:0 auto; border-radius: 8px;"/>
+<center><i>Semisumador</i></center>
+
+## EXEMPLE: Comparador
+En aquest exemple veurem un circuit comparador que pren bits, $A$ i $B$ i els compara. 
+
+Els circuits comparadors tenen 3 sortides: La primera indica si $A$ és més gran que $B$, la segona segona s'activa si $A$ és igual a $B$ i la tercera indica si $A$ és més petita que $B$.
+La taula de veritat, amb aquestes entrades i sortides, és la següent:
+
+| $A$ | $B$ | $A<B$ | $A=B$ | $A>B$ |
+|:---:|:---:|:---:|:---:|:---:|
+| 0 | 0 | 0 | 1 | 0 |
+| 0 | 1 | 1 | 0 | 0 |
+| 1 | 0 | 0 | 0 | 1 |
+| 1 | 1 | 0 | 1 | 0 |
+
+Les expressions booleanes simplificades que descriuen la lògica del circuit són:
+
+$A<B =\bar{A}B$
+
+$A=B = \bar{A}\bar{B} + A B = A \; XNOR \; B$
+
+$A>B =A \bar{B}$
+
+Així, el circuit comparador és el següent:
+
+<img src='../logos/enconstrucció.png' alt="Circuit" style="display:block; width:100px; margin:0 auto; border-radius: 8px;"/>
+<center><i>Circuit comparador</i></center>
 
 
-## EXEMPLE: Sumador de diversos bits.
+## EXEMPLE: Sumador de diversos bits
 
 Amb el sumador complet (*Full Adder*) i el semisumador (*Half Adder*) es poden construir circuits més grans, com ara els sumadors de propagació de càrrega (*ripple-carry adders*), que permeten sumar números binaris de diversos bits.
 Per exemple el seguent sumador de quatre bits:
