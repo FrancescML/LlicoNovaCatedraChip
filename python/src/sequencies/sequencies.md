@@ -151,14 +151,14 @@ from yogi import scan
 s = 0.0
 n = 0
 x = scan(float)
-while x != None:
+while x is not None:
     s = s + x
     n = n + 1
     x = scan(float)
 print(s / n)
 ```
 
-Una petita observació: El tipus de dades retornat per `scan(float)` és `None|float`, és a dir la unió dels valors de tipus `None` (que només és `None`) amb la unió dels valors de tipus `float`. Per tant, després dels `scan`s, el tipus de `x` és `None|float`. Però la comprovació de tipus estàtica és molt astuta i pot deduir que, quan `x != None`, el tipus de `x` és `float`. Per això, ens el permet sumar a `s` (els `None` els `None|float` no es poden sumar). Igualment, pot deduir que, quan `x == None`, és a dir, al sortir del bucle, el tipus de `x` és `None`. Ho podeu comprovar amb Visual Studio Code posant el cursor damunt de les diferències ocurrències de la variable `x` i deixant que Pylance us mostri el seu tipus.
+Una petita observació: El tipus de dades retornat per `scan(float)` és `None|float`, és a dir la unió dels valors de tipus `None` (que només és `None`) amb la unió dels valors de tipus `float`. Per tant, després dels `scan`s, el tipus de `x` és `None|float`. Però la comprovació de tipus estàtica és molt astuta i pot deduir que, quan `x is not None`, el tipus de `x` és `float`. Per això, ens el permet sumar a `s` (els `None` els `None|float` no es poden sumar). Igualment, pot deduir que, quan `x is None`, és a dir, al sortir del bucle, el tipus de `x` és `None`. Ho podeu comprovar amb Visual Studio Code posant el cursor damunt de les diferències ocurrències de la variable `x` i deixant que Pylance us mostri el seu tipus.
 
 El tipus `None|float` també el podeu veure escrit com `Union[None, float]` o `Optional[float]`; en totes tres versions vol dir el mateix.
 

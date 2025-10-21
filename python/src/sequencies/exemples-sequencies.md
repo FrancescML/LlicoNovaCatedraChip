@@ -23,7 +23,7 @@ while x is not None:
 print(s / n)
 ```
 
-Aquest cop he escrit la condició com a `x is not None` enlloc de `x != None` perquè els puristes de Python diuen que cal fer-ho així (🧐).
+Aquest cop he escrit la condició com a `x is not None` enlloc de `x is not None` perquè els puristes de Python diuen que cal fer-ho així (🧐).
 
 O ho podem fer `tokens`:
 
