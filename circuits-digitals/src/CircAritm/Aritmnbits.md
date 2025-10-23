@@ -29,7 +29,8 @@
 
 
 
-
+<img src='../logos/enconstrucció.png' alt="HI estem treballant"  style="display:block; height:200px; margin:0 auto; border-radius: 8px;"/>
+<center><i>En contrucció</i></center>
 
 
 

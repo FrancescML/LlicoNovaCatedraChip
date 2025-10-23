@@ -122,18 +122,9 @@ export const index = [
         collapsed: true,
         items: [
             {
-                text: 'Introducció a TinyMicro',
+                text: 'TinyMicro',
                 link: '/TinyMicro/intro',
             },
-/*            {
-                text: 'tema a',
-                link: '/TinyMicro/temaa',
-            },
-            {
-                text: 'tema b',
-                link: '/TinyMicro/temab',
-            },
-*/
         ],
     },
 

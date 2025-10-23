@@ -4,11 +4,23 @@
 <div style="clear: both;"></div>
 <br>
 
-# Introducció a TinyMicro
+# TinyMicro
+
+La els exercicis [Tiny Micro](https://jutge.org/courses/JordiCortadella:IntroCircuits/lists/JordiCortadella:TinyMicro) de jutge és un recull d’exercicis avançats sobre l'operació d'un petit ordinador. Hi ha exercicis de disseny d’una Unitat Aritmètica Lògica **UAL** (Aritmetic Logic Unit **ALU**), de programació de la unitat de control, creació d’un datapath i el disseny d’un program counter.
 
 
-.<img src='../logos/enconstrucció.png' alt="HI estem treballant"  style="display:block; height:200px; margin:0 auto; border-radius: 8px;"/>
-<center><i>En contrucció</i></center>
+## Exercicis a Jutge.org: [Introduction to Digital Circuit Design](https://jutge.org/courses/JordiCortadella:IntroCircuits)
+
+[X67117 TinyMicro ALU](https://jutge.org/problems/X67117_en)
+
+[X62350 TinyMicro datapath](https://jutge.org/problems/X62350_en)
+
+[X83229 TinyMicro program counter](https://jutge.org/problems/X83229_en)
+
+[X66986 TinyMicro control unit](https://jutge.org/problems/X66986_en)
+
+
+<small>*Recorda que per accedir als exercicis i que el **Jutge** valori les teves solucions has d'estar inscrit al [curs](https://jutge.org/courses/JordiCortadella:IntroCircuits)*. Troba totes les instruccions [aqui](../Inici/instruccions.md)</small>
 
 <!-- Aquesta imatge ha d'anar al final de cada lliçó, ja sigui amb aquesta línia o dins la signatura. Deixar comentat si ja està a la signatura-->
 <br>

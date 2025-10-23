@@ -47,8 +47,7 @@ Els [circuits seqüencials](../CircSeq/intro.md) són un tipus de circuit digita
 <img src='./sequencial.png' alt="Circuit seqüencial" style="display:block; width:500px; margin:0 auto; border-radius: 8px;"/>
 <center><i>Circuit seqüencial</i></center>
 
-La lliçó [Tiny Micro](../TinyMicro/intro.md) és un recull d’exercicis avançats sobre l'operació d'un petit ordinador. Hi ha exercicis de disseny d’una Unitat Aritmètica Lògica **UAL** (Aritmetic Logic Unit **ALU**), de programació de la unitat de control, creació d’un datapath i el disseny d’un program counter.
-
+La lliçó [Tiny Micro](../TinyMicro/intro.md) és un recull d’exercicis avançats sobre l'operació d'un petit ordinador.
 
 
 <!-- Aquesta imatge ha d'anar al final de cada lliçó, ja sigui amb aquesta línia o dins la signatura. Deixar comentat si ja està a la signatura-->
