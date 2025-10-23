@@ -71,7 +71,7 @@ errors = 0
 primer = read(int)
 dret = read(int)
 esquerre = scan(int)
-while esquerre != None:
+while esquerre is not None:
     if dret != esquerre:
         errors = errors + 1
     dret = read(int)
@@ -107,7 +107,7 @@ def main():
     errors = 0
     read(int)
     dret, esquerre = read(int), scan(int)
-    while esquerre != None:
+    while esquerre is not None:
         if dret != esquerre:
             errors = errors + 1
         dret, esquerre = read(int), scan(int)
@@ -156,7 +156,7 @@ Aquest programa (obviem el `main`), adaptat de la segona solució, òbviament fu
 errors = 0
 read(int)
 dret, esquerre = read(int), scan(int)
-while esquerre != None:
+while esquerre is not None:
     if dret != esquerre:
         errors = errors + 1
     dret, esquerre = read(int), scan(int)
@@ -189,7 +189,7 @@ Aquest codi implementa la millora mencionada tot substituint el comptador
 correcte = True
 read(int)
 dret, esquerre = read(int), scan(int)
-while correcte and esquerre != None:
+while correcte and esquerre is not None:
     if dret != esquerre:
         correcte = False
     dret, esquerre = read(int), scan(int)

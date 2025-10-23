@@ -23,9 +23,9 @@ Aquest codi implementa la idea:
 ```python
 r = 0               # nombre de paraules consecutives repetides llegides
 a = scan(str)       # part esquerra de la finestra
-if a != None:
+if a is not None:
     b = scan(str)   # aprt dreta de la finestra
-    while b != None:
+    while b is not None:
         if a == b:
             r = r + 1
         a, b = b, scan(str)     # desplaçament de la finestra cap a la dreta
@@ -47,7 +47,7 @@ La tècnica de la finestra tambés es pot usar amb `tokens`, però potser no que
 ```python
 r = 0
 a = scan(str)
-if a != None:
+if a is not None:
     for b in tokens(str):
         if a == b:
             r = r + 1
@@ -66,7 +66,7 @@ Aquest problema es pot resoldre amb la tècnica de la finestre, aquest cop amb t
 ```python
 pics = 0
 a, b, c = read(float), read(float), scan(float)
-while c != None:
+while c is not None:
     if a < b > c:
         pics = pics + 1
     a, b, c = b, c, scan(float)
@@ -80,7 +80,7 @@ I si enlloc de comptar quants pics hi ha només calgués saber si n'hi ha algun,
 ```python
 hi_ha_pics = False
 a, b, c = read(float), read(float), scan(float)
-while not hi_ha_pics and c != None:
+while not hi_ha_pics and c is not None:
     if a < b > c:
         pics = True
     a, b, c = b, c, scan(float)
