@@ -17,8 +17,8 @@ def posicio_maxim_llista_enters(L: list[int]) -> int:
     """
 
     p = 0
-    for i in range(1, len(L)):
-        if L[i] > p:
+    for i in range(1, len(L) + 1):
+        if L[i] > L[p]:
             p = i
     return p
 ```
@@ -37,11 +37,11 @@ def posicio_maxim_llista_reals(L: list[float]) -> int:
     ... # mateix codi que a posicio_maxim_llista_enters
 ```
 
-Clarament, tenir tot aquest codi duplicat no té gens de sentit. El *cut and paste* és l'amic del mal programador, mai del bon programador. Totes aquestes versions de la mateixa funció per a diferents tipus és o serà un problema. I encara més tenint en compte que, en execució, Python ignora totalment els tipus! Ens cal una manera de tenir capçaleres que parlin de tipus qualssevol. 
+Clarament, tenir tot aquest codi duplicat no té gens de sentit. El *cut and paste* és l'amic del mal programador, mai del bon programador. Totes aquestes versions de la mateixa funció per a diferents tipus és o serà un problema. I encara més tenint en compte que, en execució, Python ignora totalment els tipus! Ens cal una manera de tenir capçaleres que parlin de tipus qualssevol.
 
 
 ## El tipus `Any`
- 
+
 El sistema de tipus de Python ens ofereix maneres de fer més flexibles i genèriques les anotacions de tipus. La primera manera és amb `Any`:
 
 El tipus especial `Any` (que cal importar del mòdul `typing`) representa qualsevol tipus, de forma que qualsevol tipus és compatible amb `Any` i `Any` és compatible amb qualsevol tipus.
@@ -58,8 +58,8 @@ def posicio_maxim(L: list[Any]) -> int:
     """
 
     p = 0
-    for i in range(1, len(L)):
-        if L[i] > p:
+    for i in range(1, len(L) + 1):
+        if L[i] > L[p]:
             p = i
     return p
 ```
@@ -74,7 +74,7 @@ Malgrat que `Any` resulta útil en algunes situacions, en d'altres, `Any` no és
 Si la seva capçalera fos
 
 ```python
-def ordena(L: list[Any]) -> list[Any]: 
+def ordena(L: list[Any]) -> list[Any]:
     ...
 ```
 
@@ -89,7 +89,7 @@ from typing import TypeVar
 
 T = TypeVar('T')
 
-def ordena(L: list[T]) -> list[T]: 
+def ordena(L: list[T]) -> list[T]:
     ...
     x: T
     ...
@@ -103,7 +103,7 @@ Si cal, les variables de tipus també es poden restringir a un subconjunt de tip
 ```python
 T = TypeVar('T', int, float)
 
-def ordena_numeros(L: list[T]) -> list[T]: 
+def ordena_numeros(L: list[T]) -> list[T]:
     ...
 ```
 
@@ -120,5 +120,4 @@ def gira(t: tuple[T1, T2]) -> tuple[T2, T1]:
 ```
 
 
-<Autors autors="jpetit"/> 
-
+<Autors autors="jpetit"/>

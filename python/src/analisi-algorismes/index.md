@@ -1,7 +1,15 @@
-# Anàlisi de l'eficiència dels d'algorismes
+# Introducció
 
-Aquesta lliçó introdueix l'anàlisi de l'eficiència dels algorismes, una manera per mesurar els recursos (principalment el temps) que consumeixen els algorismes i comparar-ne diferents solucions. El contingut es troba en aquest <a href="/python/analisi-algorismes.pptx" target="_blank">powerpoint</a>.
+Fins ara, la qualitat fonamental que hem buscat als algorismes és la seva correctesa, és a dir, que produeixin el resultat desitjat en un temps finit. També ens hem fixat en altres qualitats com la seva claretat, estructuració, i facilitat d'ús. I en algun cas també hem vist que una altra qualitat dels algorismes és la seva eficiència.
 
-La lliçó següent desenvolupa els conceptes introduïts aquí i els aplica a l'anàlisi d'un problema senzill.
+En efecte, per executar un algorisme, calen certs recursos. Un primer recurs és evident: el computador que executa l'algorisme (potser una màquina, potser un humà). Però a més a més, l'algorisme necessita altres recursos per poder resoldre el problema per al qual ha estat dissenyat. Aquests recursos poden ser temps de computació, memòria, energia, espai de disc, amplada de banda, etc.
 
-<Autors autors="jordic jpetit"/>
+Com ens ensenya l'economia, els recursos són limitats i tenen un cost. Per això, és important dissenyar algorismes que utilitzin els recursos de manera eficient. Diem que un algorisme és eficient si resol correctament el problema per al qual ha estat dissenyat utilitzant la menor quantitat possible de recursos (o, d'algun tipus de recurs en particular). En el cas que no poguem saber si un algorisme és el més eficient possible, almenys volem poder comparar l'eficiència de diferents algorismes que resolen el mateix problema, per tal de triar el més eficient.
+
+És podria pensar que les mesures empíriques són la millor manera de mesurar l'eficiència d'un algorisme. Per exemple, podem mesurar el temps que triga a executar-se un algorisme en un computador concret per a una entrada concreta. Però aquesta mesura depèn molt del computador utilitzat, del llenguatge de programació emprat, de la qualitat de l'intèrpret o el compilador utilitzat, de l'estat del sistema operatiu, de la càrrega de treball del sistema, i d'altres factors externs. Tot aquests detalls són tecnològics, canvien al llarg del temps (els fabricants fan ordinadors cada cop són més ràpids) i no tenen res a veure amb l'algorisme en si mateix. A més a més, aquesta mesura només és vàlida per a una entrada concreta, i caldrà realitzar-ne moltes per extrapolar com es comportarà l'algorisme amb altres entrades. I, pitjor encara, aquesta aproximació empírica pressuposa que l'algorisme ja està implementat i es pot executar, malgrat que sovint volem analitzar l'eficiència d'un algorisme abans de posar-nos a implementar-lo, potser perquè és molt ineficient!
+
+L'anàlisi matemàtica dels algorismes és una alternativa a les mesures empíriques que aplica tècniques matemàtiques per estudiar rigorosament l'eficiència dels algorismes. En el fons, els algorismes són mètodes abstractes per resoldre problemes, de manera que la seva eficiència és una propietat independent dels factors tecnològics que s'utilitzen per executar-los. Per això, l'anàlisi matemàtica permet estudiar l'eficiència dels algorismes de manera independent dels factors tecnològics, i així obtenir resultats més generals i duradors.
+
+A continuació veurem com analitzar l'eficiència dels algorismes. Per a fer-ho, primer introduirem la notació assimptòtica, que ens permetrà expressar l'eficiència dels algorismes de manera senzilla i clara. Després, veurem com aplicar aquesta notació per analitzar l'eficiència dels algorismes més comuns.
+
+<Autors autors="jpetit"/>
