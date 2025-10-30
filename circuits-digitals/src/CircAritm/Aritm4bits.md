@@ -27,23 +27,29 @@ Les entrades $A$ i $B$ són les variables que es sumen i $C_{in}$ és el bit de 
     <img src='./Cout.png' style="display:block; width:80px; margin:0 auto; border-radius: 8px;"/>
 </div>
 
-Prenem per exemple dos nombres de 4 bits, $A$ i $B$, que volem sumar:
+
+El circuit que efectua la suma concatena 3 sumadors complets i un semisumador:
+
+<img src='./blocsumador4bits.png' alt="Sumador de 4 bits" style="display:block; width:600px; margin:0 auto; border-radius: 8px;"/>
+<center><i>Sumador de 4 bits</i></center>
+
+Si convé, podem implementar el mateix circuit amb 4 sumadors complets. La funció del semisumador la pot fer un sumador complet si hi introduim una constant '0' a la seva entrada $C_{in}$.
+
+
+<img src='./blocsumador4bits_alt.png' alt="Sumador de 4 bits" style="display:block; width:600px; margin:0 auto; border-radius: 8px;"/>
+<center><i>Sumador de 4 bits</i></center>
+
+Implementem-ho doncs a CircuitVerse amb els següents valors d'exemple:
+
 * Entrada $A = 0010$
 * Entrada $B = 0001$
 * Sortida $S = A+B$
 * Sortida $C_{out}=$ Carry de sortida
 
-El circuit que efectua la suma concatena 4 sumadors:
-
-<img src='./blocsumador4bits.png' alt="Sumador de 4 bits" style="display:block; width:600px; margin:0 auto; border-radius: 8px;"/>
-<center><i>Sumador de 4 bits</i></center>
-
-Implementat a CircuitVerse:
-
 <img src='./4fulladdersconcatenats.png' style="display:block; height:400px; margin:0 auto; border-radius: 8px;"/>
 <center><i>Sumador de 4 bits</i></center>
 
-A Jutge els exercicis d'àlgebra de 4 bits i àlgebra de n bits utilitzen una nomenclatura de busos $A [3:0]$ (que ja varem definir a [Busos](../CircCombin/busos#exemple-disseny-d-un-circuit-desplacador-de-bus-a-l-esquerra-n-bits)) i unes entrades i sortides de 4 o $n$ bits. Per tal que Jutge pugui validar correctament el circuit que hem dissenyat, haurem de fer ús de la proprietat *BitWidth* de les entrades, sortides i *adders*. Aquest paràmetre es pot veure al menú *properties*:
+A Jutge.org els exercicis d'àlgebra de 4 bits i àlgebra de n bits utilitzen una nomenclatura de busos $A [3:0]$ (que ja varem definir a [Busos](../CircCombin/busos#exemple-disseny-d-un-circuit-desplacador-de-bus-a-l-esquerra-n-bits)) i unes entrades i sortides de 4 o $n$ bits. Per tal que Jutge pugui validar correctament el circuit que hem dissenyat, haurem de fer ús de la proprietat *BitWidth* de les entrades, sortides i *adders*. Aquest paràmetre es pot veure al menú *properties*:
 
 <div style="display: flex; justify-content: center; align-items:center; gap: 16px;">
     <img src='./A4bit.png' style="display:block; width:200px; margin:0 auto; border-radius: 8px;"/>
@@ -166,4 +172,4 @@ Les UALs (*ALU*) normalment trien entre 4 operacions (multiplexors de 4 entrades
 <img src='../logos/TotsLogosBlanc.png ' alt="Logos Càtedra Chip" width="100%" style="display:block; margin:0 auto; border-radius: 8px;"/>
 
 
-<Autors autors="xcasas fmadrid jordic"/>
+<Autors autors="xcasas fmadrid"/>

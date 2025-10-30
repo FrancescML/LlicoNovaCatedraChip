@@ -56,4 +56,4 @@ La lliçó [Tiny Micro](../TinyMicro/intro.md) és un recull d’exercicis avan�
 <img src='../logos/TotsLogosBlanc.png ' alt="Logos Càtedra Chip" width="100%" style="display:block; margin:0 auto; border-radius: 8px;"/>
 
 
-<Autors autors="xcasas fmadrid jordic"/>
+<Autors autors="xcasas fmadrid"/>

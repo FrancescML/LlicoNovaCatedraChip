@@ -558,4 +558,4 @@ A partir d'aquestes tres expressions podem emprar les portes lògiques per crear
 <img src='../logos/TotsLogosBlanc.png ' alt="Logos Càtedra Chip" width="100%" style="display:block; margin:0 auto; border-radius: 8px;"/>
 
 
-<Autors autors="xcasas fmadrid jordic"/>
+<Autors autors="xcasas fmadrid"/>

@@ -6,12 +6,19 @@
 
 # Agraïments
 
-* Aquest contingut ha estat creat per [Càtedra CHIP UPC](https://catedrachip.upc.edu/ca), un projecte impulsat pel Ministeri per a la Transformació Digital i de la Funció Pública i finançat per la Unió Europea – NextGenerationEU.
-* Miquel Torner   [https://github.com/miquelt9](https://github.com/miquelt9)
-* Jordi Cortadella
-* Jordi Petit
+Aquest contingut ha estat creat per [Càtedra CHIP UPC](https://catedrachip.upc.edu/ca), un projecte impulsat pel Ministeri per a la Transformació Digital i de la Funció Pública i finançat per la Unió Europea – NextGenerationEU.
+
+<img src='../logos/LogoCatedraCHIPBlanc.jpg' alt="Comparador" style="display:block; width:250px; margin:0 auto; border-radius: 8px;"/>
 
 
+<!-- <img src='../logos/TotsLogosBlanc.png' alt="Comparador" width="100%" style="display:block; margin:0 auto; border-radius: 8px;"/>
+-->
+
+En **Miquel Torner** [https://github.com/miquelt9](https://github.com/miquelt9) ha programat el sistema Jutge per a circuits.
+
+En **Jordi Cortadella** ha creat el curs [Introduction to Digital Circuit Design](https://jutge.org/courses/JordiCortadella:IntroCircuits) que ha proveit aquestes lliçons d'exercicis significants.
+
+En **Jordi Petit** i [el seu equip](https://jutge.org/about/credits) han creat la plataforma docent [jutge.org](https://jutge.org).
 
 
 
@@ -21,4 +28,4 @@
 <img src='../logos/TotsLogosBlanc.png ' alt="Logos Càtedra Chip" width="100%" style="display:block; margin:0 auto; border-radius: 8px;"/>
 
 
-<Autors autors="xcasas fmadrid jordic"/>
+<Autors autors="xcasas fmadrid"/>

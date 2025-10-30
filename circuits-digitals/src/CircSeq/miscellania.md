@@ -6,18 +6,15 @@
 
 # Miscel·lània
 
-La secció [Miscellaneous](https://jutge.org/courses/JordiCortadella:IntroCircuits/lists/JordiCortadella:Combinational) del curs [Introduction to Digital Circuit Design](https://jutge.org/courses/JordiCortadella:IntroCircuits/lists/JordiCortadella:Combinational) inclou diferents exercicis relacionats amb els temes tractats fins ara. Poden ser més complicats que els que hem vist fins ara. T'hi animes?. 
-
+La secció [Miscellaneous](https://jutge.org/courses/JordiCortadella:IntroCircuits/lists/JordiCortadella:Sequential) del curs [Introduction to Digital Circuit Design](https://jutge.org/courses/JordiCortadella:IntroCircuits/lists/JordiCortadella:Sequential) inclou diferents exercicis relacionats amb els temes tractats fins ara. Poden ser més complicats que els que hem vist fins ara. T'hi animes?. 
 
 ## Exercicis a Jutge.org: [Introduction to Digital Circuit Design](https://jutge.org/courses/JordiCortadella:IntroCircuits)
 
-[Parity](https://jutge.org/problems/X16400_en)
+[Fibonacci](https://jutge.org/problems/X95484_en)
 
-[Stairwell](https://jutge.org/problems/X89209_en)
+[Greatest Common Divisor](https://jutge.org/problems/X64579_en)
 
-[Tic-tac-toe](https://jutge.org/problems/X39419_en)
-
-[Priority encoder](https://jutge.org/problems/X55915_en)
+[FIFO](https://jutge.org/problems/X67970_en)
 
 <small>*Recorda que per accedir als exercicis i que el **Jutge** valori les teves solucions has d'estar inscrit al [curs](https://jutge.org/courses/JordiCortadella:IntroCircuits)*. Troba totes les instruccions [aqui](../Inici/instruccions.md)</small>
 

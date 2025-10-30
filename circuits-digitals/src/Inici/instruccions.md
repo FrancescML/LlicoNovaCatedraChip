@@ -111,4 +111,4 @@ A Jutge.org pots trobar la [llista completa de veredictes](http://jutge.org/docu
 <br>
 <img src='../logos/TotsLogosBlanc.png ' alt="Logos Càtedra Chip" width="100%" style="display:block; margin:0 auto; border-radius: 8px;"/>
 
-<Autors autors="xcasas fmadrid jordic"/>
+<Autors autors="xcasas fmadrid"/>

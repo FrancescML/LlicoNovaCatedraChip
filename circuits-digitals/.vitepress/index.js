@@ -106,15 +106,19 @@ export const index = [
                 text: 'Introducció als circuits seqüencials',
                 link: '/CircSeq/intro',
             },
-/*            {
-                text: 'tema a',
-                link: '/CircSeq/temaa',
+            {
+                text: 'Comptadors',
+                link: '/CircSeq/comptadors',
             },
             {
-                text: 'tema b',
-                link: '/CircSeq/temab',
+                text: 'Màquines d\'estat',
+                link: '/CircSeq/maquinesdestat',
             },
-*/
+            {
+                text: 'Miscel·lània',
+                link: '/CircSeq/miscellania',
+            },
+
         ],
     },
     {
