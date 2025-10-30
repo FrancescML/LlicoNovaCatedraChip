@@ -1,17 +1,19 @@
 
 <!-- Posar aquesta imatge al començament de cada lliçó -->
-<img src='../logos/illustracio1.png' alt="Circuits digitals" style=" float: left; border-radius: 8px; height: 120px; text-align: right;"/>
-<img src='../logos/LogoCatedraCHIPBlanc.jpg' alt="Logo Càtedra Chip" style="float: right; border-radius: 8px; height: 120px; text-align: right;"/>
+<img src='../logos/illustracio1.png' alt="Circuits digitals" style=" float: left; border-radius:8px; height: 120px; text-align: right;"/>
+<img src='../logos/LogoCatedraCHIPBlanc.jpg' alt="Logo Càtedra Chip" style="float: right; border-radius:8px; height: 120px; text-align: right;"/>
 <div style="clear: both;"></div>
 <br>
 
 
 # Introducció a l'àlgebra de Boole
 
-L'àlgebra de Boole, també anomenada àlgebra booleana, en matemàtica, electrònica digital i informàtica és una estructura algebraica que esquematitza les operacions lògiques.
+L'àlgebra de Boole, també anomenada àlgebra booleana, és una estructura algebraica que utilitza variables i operacions lògiques.
 Les seves variables només poden adoptar dos valors, tradicionalment denominats, cert i fals, representats com a 1 i 0 respectivament. 
 
-En electròncia digital i informàtica aquests dos valors es corresponen directament als estats elèctrics dels circuits digitals: un voltatge alt (1) o baix (0). Per això, l'àlgebra de Boole es pot utilitzar per descriure les operacions lògiques dels circuits digitals.
+L'àlgebra va ser creada per George Boole al s. XIX, però els enginyers van veure que era perfecte per a l'electrònica, on la seva funció és descriure i simplificar els circuits.
+
+En electròncia digital aquests dos valors es corresponen directament als estats elèctrics dels circuits digitals: un voltatge alt (1) o baix (0). Per això, l'àlgebra de Boole es pot utilitzar per descriure les operacions lògiques dels circuits digitals.
 
 
 * **Base de la Computació**: L'àlgebra de Boole és una eina fonamental per l'anàlisi i el disseny dels circuits digitals i és la base de l'aritmètica computacional moderna.
@@ -160,7 +162,7 @@ $A(\bar{A}+B) = A·B$
 ## Funcions booleanes
 Una funció booleana és una aplicació que assigna a unes variables booleanes d'entrada un resultat en forma de variable booleana.
 
-Aquesta funció es pot definir de diferents maneres; amb una expressió booleana, una taula de veritat, un mapa de Karnaugh o bé amb un circuit digital combinacional. 
+Aquesta funció es pot representar de diferents maneres: amb una expressió booleana, una taula de veritat, un mapa de Karnaugh o bé amb un circuit digital combinacional.
 
 Amb aquesta base podràs simplificar expressions, dissenyar funcions lògiques i sistemes digitals cada cop més complexos.
 
@@ -169,7 +171,6 @@ Amb aquesta base podràs simplificar expressions, dissenyar funcions lògiques i
 <!-- Aquesta imatge ha d'anar al final de cada lliçó, ja sigui amb aquesta línia o dins la signatura. Deixar comentat si ja està a la signatura-->
 <br>
 <br>
-<img src='../logos/TotsLogosBlanc.png ' alt="Logos Càtedra Chip" width="100%" style="display:block; margin:0 auto; border-radius: 8px;"/>
+<img src='../logos/TotsLogosBlanc.png ' alt="Logos Càtedra Chip" width="100%" style="display:block; margin:0 auto; border-radius:8px;"/>
 
-
-<Autors autors="xcasas fmadrid jordic"/>
+<Autors autors="xcasas fmadrid"/>

@@ -1,6 +1,6 @@
 <!-- Posar aquesta imatge al començament de cada lliçó -->
-<img src='../logos/illustracio1.png' alt="Circuits digitals" style=" float: left; border-radius: 8px; height: 120px; text-align: right;"/>
-<img src='../logos/LogoCatedraCHIPBlanc.jpg' alt="Logo Càtedra Chip" style="float: right; border-radius: 8px; height: 120px; text-align: right;"/>
+<img src='../logos/illustracio1.png' alt="Circuits digitals" style=" float: left; border-radius:8px; height: 120px; text-align: right;"/>
+<img src='../logos/LogoCatedraCHIPBlanc.jpg' alt="Logo Càtedra Chip" style="float: right; border-radius:8px; height: 120px; text-align: right;"/>
 <div style="clear: both;"></div>
 <br>
 
@@ -30,7 +30,7 @@ $D[3:0]=[D_3 \; D_2 \; D_1 \; D_0]$
 
 Produirà 7 senyals de sortida que controlaran els segments d'un display de 7 segments. Cadascun dels 7 senyals de sortida s'ha d'activar quan el segment corresponent hagi d'estar il·luminat. Estem utilitzant doncs un display de 7 segments de càtode comú.
 
-<img src='./Seven_segment_01_Pengo.jpg' alt="Display de 7 segments" style="display:block; height:200px; margin:0 auto; border-radius: 8px;"/>
+<img src='./Seven_segment_01_Pengo.jpg' alt="Display de 7 segments" style="display:block; height:200px; margin:0 auto; border-radius:8px; background-color: rgba(255, 255, 255, 1); padding:4px;"/>
 <center><i>Display de 7 segments</i></center>
 <center>
 <a href="https://creativecommons.org/licenses/by-sa/3.0" title="Creative Commons Attribution-Share Alike 3.0">CC BY-SA 3.0</a>, <a href="https://commons.wikimedia.org/w/index.php?curid=2550282">Link</a>
@@ -42,7 +42,7 @@ width:500px;
 
 La figura següent representa la disposició estàndard dels 7 segments, que farem servir de referència per dissenyar el nostre circuit.
 
-<img src='./segments.png' alt="Disposició dels 7 segments" style="display:block; height:350px; margin:0 auto; border-radius: 8px;"/>
+<img src='./segments.png' alt="Disposició dels 7 segments" style="display:block; height:350px; margin:0 auto; border-radius:8px; background-color: rgba(255, 255, 255, 1); padding:4px;"/>
 <center><i>Disposició dels 7 segments</i></center>
 
 La taula de veritat següent determina quins dels segments $a$, $b$, $c$, $d$, $e$, $f$ i $g$ han d'estar encesos ('1') i quins apagats ('0') per a cadascun dels valors d'entrada de $D[3:0]$.
@@ -166,7 +166,6 @@ Amb aquestes funcions booleanes ja simplificades podem implementar el circuit ut
 <!-- Aquesta imatge ha d'anar al final de cada lliçó, ja sigui amb aquesta línia o dins la signatura. Deixar comentat si ja està a la signatura-->
 <br>
 <br>
-<img src='../logos/TotsLogosBlanc.png ' alt="Logos Càtedra Chip" width="100%" style="display:block; margin:0 auto; border-radius: 8px;"/>
+<img src='../logos/TotsLogosBlanc.png ' alt="Logos Càtedra Chip" width="100%" style="display:block; margin:0 auto; border-radius:8px;"/>
 
-
-<Autors autors="xcasas fmadrid jordic"/>
+<Autors autors="xcasas fmadrid"/>

@@ -80,15 +80,22 @@ export const index = [
                 text: 'Introducció als circuits aritmètics',
                 link: '/CircAritm/intro',
             },
- /*           {
-                text: 'tema a',
-                link: '/CircAritm/temaa',
+            {
+                text: 'Circuits Bàsics',
+                link: '/CircAritm/CircBasics',
             },
             {
-                text: 'tema b',
-                link: '/CircAritm/temab',
+                text: 'Aritmètica de 4 bits',
+                link: '/CircAritm/Aritm4bits',
             },
-*/
+            {
+                text: 'Aritmètica de n bits',
+                link: '/CircAritm/Aritmnbits',
+            },
+            {
+                text: 'Miscel·lània',
+                link: '/CircAritm/miscellania',
+            },
         ],
     },
     {
@@ -99,15 +106,19 @@ export const index = [
                 text: 'Introducció als circuits seqüencials',
                 link: '/CircSeq/intro',
             },
-/*            {
-                text: 'tema a',
-                link: '/CircSeq/temaa',
+            {
+                text: 'Comptadors',
+                link: '/CircSeq/comptadors',
             },
             {
-                text: 'tema b',
-                link: '/CircSeq/temab',
+                text: 'Màquines d\'estat',
+                link: '/CircSeq/maquinesdestat',
             },
-*/
+            {
+                text: 'Miscel·lània',
+                link: '/CircSeq/miscellania',
+            },
+
         ],
     },
     {
@@ -115,18 +126,9 @@ export const index = [
         collapsed: true,
         items: [
             {
-                text: 'Introducció a TinyMicro',
+                text: 'TinyMicro',
                 link: '/TinyMicro/intro',
             },
-/*            {
-                text: 'tema a',
-                link: '/TinyMicro/temaa',
-            },
-            {
-                text: 'tema b',
-                link: '/TinyMicro/temab',
-            },
-*/
         ],
     },
 

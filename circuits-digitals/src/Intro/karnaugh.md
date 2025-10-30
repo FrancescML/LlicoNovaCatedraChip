@@ -1,7 +1,7 @@
 
 <!-- Posar aquesta imatge al començament de cada lliçó -->
-<img src='../logos/illustracio1.png' alt="Circuits digitals" style=" float: left; border-radius: 8px; height: 120px; text-align: right;"/>
-<img src='../logos/LogoCatedraCHIPBlanc.jpg' alt="Logo Càtedra Chip" style="float: right; border-radius: 8px; height: 120px; text-align: right;"/>
+<img src='../logos/illustracio1.png' alt="Circuits digitals" style=" float: left; border-radius:8px; height: 120px; text-align: right;"/>
+<img src='../logos/LogoCatedraCHIPBlanc.jpg' alt="Logo Càtedra Chip" style="float: right; border-radius:8px; height: 120px; text-align: right;"/>
 <div style="clear: both;"></div>
 <br>
 
@@ -477,7 +477,7 @@ Una altra manera molt efectiva d'estructurar un mapa de Karnaugh de 5 variables 
 
 I visualitzar-los de la manera següent. 
 
-<img src='./kmap5var.png' alt="Karnaugh 5 variables" style="display:block; width:400px; margin:0 auto; border-radius: 8px;"/>
+<img src='./kmap5var.png' alt="Karnaugh 5 variables" style="display:block; width:400px; margin:0 auto; border-radius:8px; background-color: rgba(255, 255, 255, 1); padding:4px;"/>
 <center><i>Mapa de Karnaugh 5 variables</i></center>
 
 
@@ -715,7 +715,7 @@ $S=A+B+\bar{C}$
 Aquesta és doncs l'expressió booleana simplificada que engendra la taula de veritat exemple.
 A partir d'aquesta es dedueix el circuit digital, tres entrades a una porta **OR**, una d'elles negada.
 
-<img src='./karnaugh.png' alt="Agrupacions exemple" style="display:block; height:150px; margin:0 auto; border-radius: 8px;"/>
+<img src='./karnaugh.png' alt="Agrupacions exemple" style="display:block; height:150px; margin:0 auto; border-radius:8px; background-color: rgba(255, 255, 255, 1); padding:4px;"/>
 <center><i>Circuit resultat de l'exemple</i></center>
 
 
@@ -941,7 +941,6 @@ $S=A+B\bar{C}+\bar{B}C$
 <!-- Aquesta imatge ha d'anar al final de cada lliçó, ja sigui amb aquesta línia o dins la signatura. Deixar comentat si ja està a la signatura-->
 <br>
 <br>
-<img src='../logos/TotsLogosBlanc.png ' alt="Logos Càtedra Chip" width="100%" style="display:block; margin:0 auto; border-radius: 8px;"/>
+<img src='../logos/TotsLogosBlanc.png ' alt="Logos Càtedra Chip" width="100%" style="display:block; margin:0 auto; border-radius:8px;"/>
 
-
-<Autors autors="xcasas fmadrid jordic"/>
+<Autors autors="xcasas fmadrid"/>
