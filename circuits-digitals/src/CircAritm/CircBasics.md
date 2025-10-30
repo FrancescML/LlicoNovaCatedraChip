@@ -1,6 +1,6 @@
 <!-- Posar aquesta imatge al començament de cada lliçó -->
-<img src='../logos/illustracio1.png' alt="Circuits digitals" style=" float: left; border-radius: 8px; height: 120px; text-align: right;"/>
-<img src='../logos/LogoCatedraCHIPBlanc.jpg' alt="Logo Càtedra Chip" style="float: right; border-radius: 8px; height: 120px; text-align: right;"/>
+<img src='../logos/illustracio1.png' alt="Circuits digitals" style=" float: left; border-radius:8px; height: 120px; text-align: right;"/>
+<img src='../logos/LogoCatedraCHIPBlanc.jpg' alt="Logo Càtedra Chip" style="float: right; border-radius:8px; height: 120px; text-align: right;"/>
 <div style="clear: both;"></div>
 <br>
 
@@ -35,7 +35,7 @@ $Carry= A·B$
 
 Així doncs, el circuit que implementa aquest Semisumador (*Half Adder*) el següent:
 
-<img src='./halfadder.png' alt="Circuit semisumador" style="display:block; width:250px; margin:0 auto; border-radius: 8px;"/>
+<img src='./halfadder.png' alt="Circuit semisumador" style="display:block; width:250px; margin:0 auto; border-radius:8px; background-color: rgba(255, 255, 255, 1); padding:4px;"/>
 <center><i>Circuit semisumador</i></center>
 
 Aquest circuit és l'element fonamental per a la construcció de sumadors complets i sumadors de n bits.
@@ -69,13 +69,13 @@ $Cout= A·B + B·C_{in} + A·C_{in} = A·B + C_{in} · (A \: XOR \: B)$
 Així doncs, el circuit que implementa un sumador complet (*Full Adder*) aquesta funció és el següent:
 
 
-<img src='./fulladder.png' alt="Sumador complet" style="display:block; width:600px; margin:0 auto; border-radius: 8px;"/>
+<img src='./fulladder.png' alt="Sumador complet" style="display:block; width:600px; margin:0 auto; border-radius:8px; background-color: rgba(255, 255, 255, 1); padding:4px;"/>
 <center><i>Sumador complet</i></center>
 
 
 Aquest circuit es pot interpretar com a dos semisumadors amb una porta OR per al bit de ròssec de sortida:
 
-<img src='./fulladder_2.png' alt="Sumador complet" style="display:block; width:600px; margin:0 auto; border-radius: 8px;"/>
+<img src='./fulladder_2.png' alt="Sumador complet" style="display:block; width:600px; margin:0 auto; border-radius:8px; background-color: rgba(255, 255, 255, 1); padding:4px;"/>
 <center><i>Sumador complet</i></center>
 
 ## EXEMPLE: Comparador
@@ -101,7 +101,7 @@ $A>B =A \bar{B}$
 
 Així, el circuit comparador és el següent:
 
-<img src='./comparador.png' alt="Circuit comparador" style="display:block; width:400px; margin:0 auto; border-radius: 8px;"/>
+<img src='./comparador.png' alt="Circuit comparador" style="display:block; width:400px; margin:0 auto; border-radius:8px; background-color: rgba(255, 255, 255, 1); padding:4px;"/>
 <center><i>Circuit comparador</i></center>
 
 
@@ -111,7 +111,7 @@ Amb el sumador complet (*Full Adder*) i el semisumador (*Half Adder*) es poden c
 
 Per exemple el següent sumador de quatre bits:
 
-<img src='./blocsumador4bits.png' alt="Sumador de 4 bits" style="display:block; width:600px; margin:0 auto; border-radius: 8px;"/>
+<img src='./blocsumador4bits.png' alt="Sumador de 4 bits" style="display:block; width:600px; margin:0 auto; border-radius:8px; background-color: rgba(255, 255, 255, 1); padding:4px;"/>
 <center><i>Sumador de 4 bits</i></center>
 
 
@@ -132,7 +132,8 @@ Per exemple el següent sumador de quatre bits:
 <!-- Aquesta imatge ha d'anar al final de cada lliçó, ja sigui amb aquesta línia o dins la signatura. Deixar comentat si ja està a la signatura-->
 <br>
 <br>
-<img src='../logos/TotsLogosBlanc.png ' alt="Logos Càtedra Chip" width="100%" style="display:block; margin:0 auto; border-radius: 8px;"/>
+<img src='../logos/TotsLogosBlanc.png ' alt="Logos Càtedra Chip" width="100%" style="display:block; margin:0 auto; border-radius:8px;"/>
+
 
 
 <Autors autors="xcasas fmadrid"/>

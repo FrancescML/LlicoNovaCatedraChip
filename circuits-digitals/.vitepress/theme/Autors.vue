@@ -1,5 +1,5 @@
 <template>
-    <div class="" style="border: 1px solid var(--vp-c-divider); padding: 1em 1em 0em 1em; border-radius: 8px; margin-top: 3em; margin-bottom: -2.5em; text-align: right">
+    <div class="" style="border: 1px solid var(--vp-c-divider); padding: 1em 1em 0em 1em; border-radius:8px; margin-top: 3em; margin-bottom: -2.5em; text-align: right">
         <div v-for="autor of autors.split(' ').reverse()">
             <img :src="`/circuits-digitals/autors/${autor}.png`" style="margin-left: 1em; height: 4.5em; float: right" />
         </div>

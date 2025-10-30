@@ -1,6 +1,6 @@
 <!-- Posar aquesta imatge al començament de cada lliçó -->
-<img src='../logos/illustracio1.png' alt="Circuits digitals" style=" float: left; border-radius: 8px; height: 120px; text-align: right;"/>
-<img src='../logos/LogoCatedraCHIPBlanc.jpg' alt="Logo Càtedra Chip" style="float: right; border-radius: 8px; height: 120px; text-align: right;"/>
+<img src='../logos/illustracio1.png' alt="Circuits digitals" style=" float: left; border-radius:8px; height: 120px; text-align: right;"/>
+<img src='../logos/LogoCatedraCHIPBlanc.jpg' alt="Logo Càtedra Chip" style="float: right; border-radius:8px; height: 120px; text-align: right;"/>
 <div style="clear: both;"></div>
 <br>
 
@@ -13,38 +13,38 @@ Les operacions més habituals que implementen són:
 
 **Semisumador (*Half Adder*)**: Circuit que suma dos bits i produeix una sortida de suma $S$ i un ròssec (*carry*) $C$.
 
-<img src='./blochalfadder.png' alt="Semisumador (*Half Adder*)" style="display:block; width:200px; margin:0 auto; border-radius: 8px;"/>
+<img src='./blochalfadder.png' alt="Semisumador (*Half Adder*)" style="display:block; width:200px; margin:0 auto; border-radius:8px; background-color: rgba(255, 255, 255, 1); padding:4px;"/>
 <center><i>Semisumador (*Half Adder*)</i></center>
 
 **Sumador complet (*Full Adder*)**: Suma tres bits (dos d’entrada i el ròssec de l’etapa anterior). És el bloc bàsic per construir sumadors de diversos bits mitjançant la connexió en cascada.
 
-<img src='./blocfulladder.png' alt="Sumador complet (*Full Adder*)" style="display:block; width:200px; margin:0 auto; border-radius: 8px;"/>
+<img src='./blocfulladder.png' alt="Sumador complet (*Full Adder*)" style="display:block; width:200px; margin:0 auto; border-radius:8px; background-color: rgba(255, 255, 255, 1); padding:4px;"/>
 <center><i>Sumador complet (*Full Adder*)</i></center>
 
 **Sumador de n bits**: Amb els semi sumadors i sumadors complets es poden construir sumadors de n bits. Aquests circuits realitzen una suma binaria de dos nombres $A$ i $B$.
 
-<img src='./blocsumador4bits.png' alt="Sumador de 4 bits" style="display:block; width:600px; margin:0 auto; border-radius: 8px;"/>
+<img src='./blocsumador4bits.png' alt="Sumador de 4 bits" style="display:block; width:600px; margin:0 auto; border-radius:8px; background-color: rgba(255, 255, 255, 1); padding:4px;"/>
 <center><i>Sumador de 4 bits</i></center>
 
 
 **Restador**: La resta binària es resol habitualment emprant sumadors i la representació de nombres en complement a dos, de manera que la resta $A − B$ es transforma en una suma $A + (−B)$.
 
-<img src='./blocrestador4bits.png' alt="Restador de 4 bits" style="display:block; width:600px; margin:0 auto; border-radius: 8px;"/>
+<img src='./blocrestador4bits.png' alt="Restador de 4 bits" style="display:block; width:600px; margin:0 auto; border-radius:8px; background-color: rgba(255, 255, 255, 1); padding:4px;"/>
 <center><i>Restador de 4 bits</i></center>
 
 **Comparadors**: Circuits capaços de determinar si un nombre binari és major, menor o igual que un altre.
 
-<img src='./bloccomparador.png' alt="Comparador" style="display:block; width:200px; margin:0 auto; border-radius: 8px;"/>
+<img src='./bloccomparador.png' alt="Comparador" style="display:block; width:200px; margin:0 auto; border-radius:8px; background-color: rgba(255, 255, 255, 1); padding:4px;"/>
 <center><i>Comparador</i></center>
 
 **Multiplicadors i divisors**: Circuits més complexos que s’implementen mitjançant algorismes basats en sumes repetides i desplaçaments.
 
-<img src='./blocmultiplicador.png' alt="Multiplicador" style="display:block; width:200px; margin:0 auto; border-radius: 8px;"/>
+<img src='./blocmultiplicador.png' alt="Multiplicador" style="display:block; width:200px; margin:0 auto; border-radius:8px; background-color: rgba(255, 255, 255, 1); padding:4px;"/>
 <center><i>Multiplicador</i></center>
 
 Els circuits aritmètics constitueixen també el nucli de les Unitats Aritmètico-Lògiques (UAL), que són el cor de qualsevol microprocessador. L’UAL és l’encarregada d’executar tant les operacions aritmètiques com les operacions lògiques necessàries per a l’execució dels programes. L'Unitat Aritmètica Lògica (**UAL**) s'anomena *Aritmetic Logic Unit (**ALU**)* en anglès.
 
-<img src='./ALU.png' alt="UAL" style="display:block; width:400px; margin:0 auto; border-radius: 8px;"/>
+<img src='./ALU.png' alt="UAL" style="display:block; width:400px; margin:0 auto; border-radius:8px; background-color: rgba(255, 255, 255, 1); padding:4px;"/>
 <center><i>Unitat Aritmètica Lògica (UAL)</i></center>
 
 
@@ -60,7 +60,8 @@ Finalment, en el tema de [**Miscel·lània**](./miscellania.md) es recull una s�
 <!-- Aquesta imatge ha d'anar al final de cada lliçó, ja sigui amb aquesta línia o dins la signatura. Deixar comentat si ja està a la signatura-->
 <br>
 <br>
-<img src='../logos/TotsLogosBlanc.png ' alt="Logos Càtedra Chip" width="100%" style="display:block; margin:0 auto; border-radius: 8px;"/>
+<img src='../logos/TotsLogosBlanc.png ' alt="Logos Càtedra Chip" width="100%" style="display:block; margin:0 auto; border-radius:8px;"/>
+
 
 
 <Autors autors="xcasas fmadrid"/>

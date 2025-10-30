@@ -1,6 +1,6 @@
 <!-- Posar aquesta imatge al començament de cada lliçó -->
-<img src='../logos/illustracio1.png' alt="Circuits digitals" style=" float: left; border-radius: 8px; height: 120px; text-align: right;"/>
-<img src='../logos/LogoCatedraCHIPBlanc.jpg' alt="Logo Càtedra Chip" style="float: right; border-radius: 8px; height: 120px; text-align: right;"/>
+<img src='../logos/illustracio1.png' alt="Circuits digitals" style=" float: left; border-radius:8px; height: 120px; text-align: right;"/>
+<img src='../logos/LogoCatedraCHIPBlanc.jpg' alt="Logo Càtedra Chip" style="float: right; border-radius:8px; height: 120px; text-align: right;"/>
 <div style="clear: both;"></div>
 <br>
 
@@ -49,7 +49,7 @@ El nostre objectiu és dissenyar un circuit desplaçador de 4 bits. Tenim dues o
 
 En aquesta secció emprarem multiplexors i el circuit serà el següent:
 
-<img src='./bus_exemple.png' alt="Circuit desplaçador" style="display:block; height:400px; margin:0 auto; border-radius: 8px;"/>
+<img src='./bus_exemple.png' alt="Circuit desplaçador" style="display:block; height:400px; margin:0 auto; border-radius:8px; background-color: rgba(255, 255, 255, 1); padding:4px;"/>
 <center><i>Circuit digital que desplaça una posició cap a l'esquerra</i></center>
 
 El senyal de control $Sel$ serveix per determinar si el circuit efectua el desplaçament o no.
@@ -93,7 +93,8 @@ Per a cada bit de sortida de $B$, farem servir un multiplexor 2-a-1.
 <!-- Aquesta imatge ha d'anar al final de cada lliçó, ja sigui amb aquesta línia o dins la signatura. Deixar comentat si ja està a la signatura-->
 <br>
 <br>
-<img src='../logos/TotsLogosBlanc.png ' alt="Logos Càtedra Chip" width="100%" style="display:block; margin:0 auto; border-radius: 8px;"/>
+<img src='../logos/TotsLogosBlanc.png ' alt="Logos Càtedra Chip" width="100%" style="display:block; margin:0 auto; border-radius:8px;"/>
+
 
 
 <Autors autors="xcasas fmadrid"/>
