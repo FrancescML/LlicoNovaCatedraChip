@@ -5,6 +5,15 @@
 <br>
 
 # Comptadors
+Els comptadors són un tipus molt important de circuit seqüencial que serveixen per comptar polsos o esdeveniments. El seu propòsit principal és comptar polsos de rellotge i emmagatzemar el nombre resultant en format binari.
+
+Un comptador passa per una seqüència predefinida d’estats cada cop que rep un pols de rellotge. Cada estat representa un nombre binari.
+Quan arriba al valor màxim, torna a començar (comptador cíclic).
+
+
+
+## EXEMPLE: Comptador de 4 bits
+En aquest exemple veurem com realitzar un comptador de 4 bits. Cal tenir en compte que n’hi han diferents tipus de comptadors:
 
 
 <img src='../logos/enconstrucció.png' alt="HI estem treballant"  style="display:block; height:200px; margin:0 auto; border-radius:8px; background-color: rgba(255, 255, 255, 1); padding:4px;"/>
