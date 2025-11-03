@@ -312,20 +312,24 @@ export const index = [
         ],
     },
     {
-        text: "Anàlisi dels algorismes",
+        text: "Eficiència dels algorismes",
         collapsed: true,
         items: [
             {
                 text: "Introducció",
-                link: '/analisi-algorismes/index',
+                link: '/eficiencia-algorismes/index',
             },
             {
                 text: "Notació asimptòtica",
-                link: '/analisi-algorismes/notacio-asimptotica',
+                link: '/eficiencia-algorismes/notacio-asimptotica',
             },
             {
-                text: "Sumes parcials d'una llista",
-                link: '/analisi-algorismes/sumes-parcials',
+                text: "Anàlisi d'algorismes",
+                link: '/eficiencia-algorismes/analisi-algorismes',
+            },
+            {
+                text: "<i>Sumes parcials d'una llista</i>",
+                link: '/eficiencia-algorismes/sumes-parcials',
             },
         ],
     },

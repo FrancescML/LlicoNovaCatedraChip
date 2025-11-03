@@ -1,6 +1,6 @@
-# Introducció
+# Eficiència dels algorismes
 
-Fins ara, la qualitat fonamental que hem buscat als algorismes és la seva correctesa, és a dir, que produeixin el resultat desitjat en un temps finit. També ens hem fixat en altres qualitats com la seva claretat, estructuració, i facilitat d'ús. I en algun cas també hem vist que una altra qualitat dels algorismes és la seva eficiència.
+Fins ara, la qualitat fonamental que hem buscat als algorismes és la seva correctesa, és a dir, que produeixin el resultat desitjat en un temps finit. També ens hem fixat en altres qualitats com la seva claretat, estructuració, i facilitat d'ús. I, en algun cas, també hem vist que el temps i la quantitat de memòria que necessiten per executar-se és important.
 
 En efecte, per executar un algorisme, calen certs recursos. Un primer recurs és evident: el computador que executa l'algorisme (potser una màquina, potser un humà). Però a més a més, l'algorisme necessita altres recursos per poder resoldre el problema per al qual ha estat dissenyat. Aquests recursos poden ser temps de computació, memòria, energia, espai de disc, amplada de banda, etc.
 
