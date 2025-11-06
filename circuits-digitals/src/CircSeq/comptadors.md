@@ -25,5 +25,4 @@ En aquest exemple veurem com realitzar un comptador de 4 bits. Cal tenir en comp
 <img src='../logos/TotsLogosBlanc.png ' alt="Logos Càtedra Chip" width="100%" style="display:block; margin:0 auto; border-radius:8px;"/>
 
 
-
 <Autors autors="xcasas fmadrid"/>
