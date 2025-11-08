@@ -9,9 +9,9 @@ La notació asimptòtica és una eina matemàtica que permet expressar l'eficiè
 
 $$O(g) = \{ f: \mathbb{N} \rightarrow \mathbb{N} \mid \exists c \in \mathbb{N} \; : \exists n_0 \in \mathbb{N} \; : \forall n \ge n_0 \; : f(n) \le c \cdot g(n) \}$$
 
-Així doncs, $O(g)$ és el conjunt de les funcions que creixen com a màxim tan ràpidament com $g$ per a valors grans de $n$, ignorant constants multiplicatives i termes de menor ordre.
+Així doncs, $O(g)$ és el conjunt de les funcions que creixen com a màxim tan ràpidament com $g$ per a valors grans de $n$, ignorant constants multiplicatives i termes d'ordre menor.
 
-Per exemple, si $f(n) = 3n^2 + 100n + 5$, llavors $f(n) \in O(n^2)$.
+**Exemple:** Si $f(n) = 3n^2 + 100n + 5$, llavors $f(n) \in O(n^2)$.
 
 **Demostració:** Cal trobar constants $c$ i $n_0$ tals que per a tot $n \ge n_0$, es compleixi que $f(n) \le c \cdot n^2$. En aquest cas, podem triar $c = 4$ i $n_0 = 101$. En efecte, per a $n \ge 101$, tenim que $4n^2\ge 3n^2 + 100n + 5$. <span style="float: right;">▢</span>
 
@@ -31,7 +31,7 @@ A continuació es dónen uns exemples de l'ús de la notació O gran:
 
 Intuitivament, podem entendre aquesta notació de la següent manera:
 
-$f(n) \in O(g(n))$ significa que, per a valors grans de $n$, la funció $f(n)$ creix com a màxim, tan ràpidament com $g(n)$, tot ignorant la seva pendent i què passa per a valors petits de $n$.
+- $f(n) \in O(g(n))$ significa que, per a valors grans de $n$, la funció $f(n)$ creix com a màxim, tan ràpidament com $g(n)$, tot ignorant la seva pendent i què passa per a valors petits de $n$.
 
 
 ## Notacions Omega i Theta
@@ -46,9 +46,9 @@ $$\Theta (g) = \{ f: \mathbb{N} \rightarrow \mathbb{N} \mid \exists c_1, c_2 \in
 
 Així doncs:
 
-- $\Omega(g)$ és el conjunt de les funcions que creixen com a mínim tan ràpidament com $g$ per a valors grans de $n$, ignorant constants multiplicatives i termes de menor ordre.
+- $\Omega(g)$ és el conjunt de les funcions que creixen com a mínim tan ràpidament com $g$ per a valors grans de $n$, ignorant constants multiplicatives i termes d'ordre menor.
 
-- $\Theta(g)$ és el conjunt de les funcions que creixen exactament com $g$ per a valors grans de $n$, ignorant constants multiplicatives i termes de menor ordre.
+- $\Theta(g)$ és el conjunt de les funcions que creixen exactament com $g$ per a valors grans de $n$, ignorant constants multiplicatives i termes d'ordre menor.
 
 Seguint amb l'exemple anterior, si $f(n) = 3n^2 + 100n + 5$, es pot comprovar que $f(n) \in \Omega(n^2)$ i, per tant, $f(n) \in \Theta(n^2)$.
 
@@ -70,16 +70,12 @@ I ara uns exemples de l'ús de la notació $\Theta$:
 - $2^n \notin \Theta(2^{n^2})$
 - $\Theta(n) \ne \Theta(n^2)$
 
-Intuitivament, podem entendre aquestes notacions de la següent manera:
-
-- $f(n) \in \Omega(g(n))$ significa que, per a valors grans de $n$, la funció $f(n)$ creix com a mínim, tan ràpidament com $g(n)$, tot ignorant la seva pendent i què passa per a valors petits de $n$.
-
-- $f(n) \in \Theta(g(n))$ significa que, per a valors grans de $n$, la funció $f(n)$ creix igual de ràpidament que $g(n)$, tot ignorant la seva pendent i què passa per a valors petits de $n$.
-
 
 ## Convencions
 
-Malgrat que $O(g)$ és un conjunt de funcions i no una funció en si mateixa, sovint es comet un abús de notació i s'utilitza la notació $f(n) = O(g(n))$ per indicar que $f\in O(g)$. Aquesta és una convenció àmpliament utilitzada en l'anàlisi d'algorismes i facilita la comunicació dels resultats. Per tant, no ens n'estarem d'utilitzar-la. Però sempre cal tenir present que, estrictament parlant, $O(g)$ és un conjunt de funcions i no una funció en si mateixa.
+Malgrat que $O(g)$ és un conjunt de funcions i no una funció en si mateixa, sovint es comet un abús de notació i s'utilitza la notació $f(n) = O(g(n))$ per indicar que $f\in O(g)$.
+
+Aquesta és una convenció àmpliament utilitzada en l'anàlisi d'algorismes i facilita la comunicació dels resultats. Per tant, no ens n'estarem d'utilitzar-la. Però sempre cal tenir present que, estrictament parlant, $O(g)$ és un conjunt de funcions i no una funció en si mateixa.
 
 Amb aquest convenció, escriurem expressions com ara
 $$3(n− 1)(n + 2) = 3n^2 + 3n− 6 = O(n^2) = O(n^3)$$
