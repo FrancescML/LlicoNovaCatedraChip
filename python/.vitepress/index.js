@@ -320,16 +320,20 @@ export const index = [
                 link: '/eficiencia-algorismes/index',
             },
             {
+                text: "Ordres de magnitud",
+                link: '/eficiencia-algorismes/ordres-de-magnitud',
+            },
+            {
                 text: "Notació asimptòtica",
                 link: '/eficiencia-algorismes/notacio-asimptotica',
             },
             {
-                text: "Anàlisi d'algorismes",
-                link: '/eficiencia-algorismes/analisi-algorismes',
+                text: "Anàlisi d'algorismes iteratius",
+                link: '/eficiencia-algorismes/analisi-algorismes-iteratius',
             },
             {
-                text: "<i>Sumes parcials d'una llista</i>",
-                link: '/eficiencia-algorismes/sumes-parcials',
+                text: "Anàlisi d'algorismes recursius",
+                link: '/eficiencia-algorismes/analisi-algorismes-recursius',
             },
         ],
     },
