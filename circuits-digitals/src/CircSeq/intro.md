@@ -55,7 +55,7 @@ La sortida principal és $Q$ (l'estat actual) i també proporciona el valor comp
 
 No s’ha d’activar $S$ i $R$ alhora (és una condició prohibida).
 
-<img src='./flipflopRS.png' alt="El biestable RS" style="display:block; width:400px; margin:0 auto; border-radius:8px; background-color: rgba(255, 255, 255, 1); padding:4px;"/>
+<img src='./flipflopRS.png' alt="El biestable RS" style="display:block; width:250px; margin:0 auto; border-radius:8px; background-color: rgba(255, 255, 255, 1); padding:4px;"/>
 <center><i>Esquema funcional del biestable RS</i></center>
 
 Aquest biestable és l’element bàsic de memòries, comptadors, registres i màquines d’estat i s’utilitza com a bloc fonamental per construir altres biestables més complexos (JK, D, T...).
@@ -63,13 +63,13 @@ Aquest biestable és l’element bàsic de memòries, comptadors, registres i m�
 ### El biestable D (*Data*):
 El biestable (*flip-flop*) D  té una única entrada $D$ (*Data*) i una entrada de rellotge (*Clock*). A cada pols del rellotge, el valor de $D$ es copia a la sortida. Les seves sortides són també la l'estat actual $Q$ i la seva complementària $\bar{Q}$. És el més utilitzat per crear registres i memòries síncrones.
 
-<img src='./flipflopD.png' alt="El biestable D" style="display:block; width:400px; margin:0 auto; border-radius:8px; background-color: rgba(255, 255, 255, 1); padding:4px;"/>
+<img src='./flipflopD.png' alt="El biestable D" style="display:block; width:250px; margin:0 auto; border-radius:8px; background-color: rgba(255, 255, 255, 1); padding:4px;"/>
 <center><i>Esquema funcional del biestable D</i></center>
 
 ### El biestable T (*Toggle*):
 El biestable (*flip-flop*) T canvia d'estat, commuta la seva sortida entre 0 i 1, cada cop que rep un pols de rellotge i la seva entrada $T$ està activada.
 
-<img src='./flipflopT.png' alt="El biestable T" style="display:block; width:400px; margin:0 auto; border-radius:8px; background-color: rgba(255, 255, 255, 1); padding:4px;"/>
+<img src='./flipflopT.png' alt="El biestable T" style="display:block; width:250px; margin:0 auto; border-radius:8px; background-color: rgba(255, 255, 255, 1); padding:4px;"/>
 <center><i>Esquema funcional del biestable T</i></center>
 
 ### El biestable JK:
@@ -78,12 +78,12 @@ El biestable (*flip-flop*) JK es considera una versió millorada del biestable S
 Té dues entrades de control ($J$ i $K$) i un senyal de rellotge ($Clk$). També té dues sortides complementàries $Q$ i $\bar{Q}$.
 
 Quan el rellotge ($Clk$) activa el biestable:
-+ Si $J=1$ i K=0, a la sortida $Q$ se li assigna 1.
-+ Si $J=0$ i K=1, $Q$ es reinicialitza a 0.
++ Si $J=1$ i $K=0$, a la sortida $Q$ se li assigna 1.
++ Si $J=0$ i $K=1$, $Q$ es reinicialitza a 0.
 + Si $J=K=0$, no canvia, manté l’estat anterior.
 + Si $J=K=1$, commuta ($toggle$) l’estat de $Q$.
 
-<img src='./flipflopJK.png' alt="El biestable JK" style="display:block; width:400px; margin:0 auto; border-radius:8px; background-color: rgba(255, 255, 255, 1); padding:4px;"/>
+<img src='./flipflopJK.png' alt="El biestable JK" style="display:block; width:250px; margin:0 auto; border-radius:8px; background-color: rgba(255, 255, 255, 1); padding:4px;"/>
 <center><i>Esquema funcional del biestable JK</i></center>
 
 
