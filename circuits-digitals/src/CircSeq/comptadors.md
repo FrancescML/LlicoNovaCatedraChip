@@ -22,24 +22,127 @@ El terme MOD $2^n$ indica que el mòdul del comptador és $2^n$, és a dir, que 
 S’utilitza per comptar, generar seqüències binàries periòdiques i dividir freqüències. Es tracta d’un divisor de freqüència perquè que cada bit té una freqüència dividida per 2 respecte a l’anterior.
 
 ### Comptador d’un sol bit MOD $2^1$
-El següent comptador té un sol bit, un sol biestable, MOD $2^1$, i pot comptar de 0 a 1.
+El següent comptador té un sol bit, utilitza un sol biestable. És, per tant, un comptador MOD $2^1$, i pot comptar de 0 a 1.
 
 
-<img src='./xx.png' alt="comptador MOD 2^1" style="display:block; width:400px; margin:0 auto; border-radius:8px; background-color: rgba(255, 255, 255, 1); padding:4px;"/>
+<img src='./comptadorMODdos1.png' alt="comptador MOD 2^1" style="display:block; width:400px; margin:0 auto; border-radius:8px; background-color: rgba(255, 255, 255, 1); padding:4px;"/>
 <center><i>Comptador binari MOD $2^1$</i></center>
 
 
+Aquest es compon d’un biestable D, un sumador complet (*full adder*) connectat a la sortida del biestable i un multiplexor. El sumador sumarà a la sortida del biestable $Q$ un valor constant 1. Aquest senyal amb valor $Q+1$ es connectarà a l’entrada $D$ del biestable.
+
+El multiplexor serveix per afegir la possibilitat de reiniciar el comptador. El senyal selector actua doncs com un senyal de reinici (*reset*). Quan aquest senyal s’activa, el multiplexor connecta un valor constant 0 al biestable, tot reiniciant el comptador. 
+
+Per entendre com funciona aquest comptador, comencem amb el biestable a un estat $Q=0$. La taula, més endavant, recull el resultat d’aquesta anàlisi.
+
+**Estat inicial:**
+El biestable es troba en un estat on $Q$ té el valor 0. El senyal $Q=0$ passarà al sumador, que hi sumarà el valor 1. Aquest senyal amb valor $A+B=1$ s’aplica a l’entrada del biestable, en conseqüència, l’entrada $D$ rep el senyal 1. $D=1$ però encara no s’ha actualitzat l’estat del biestable amb un senyal de rellotge, en conseqüència, $Q$ no canvia encara de valor.
+El comptador és a zero ($Count=0$)
+
+**Primer pols:**
+Quan s’aplica un pols de rellotge el valor de $D$ es copia a la sortida $Q, que passa a tenir el valor $Q=1$.
+El sumador hi suma el valor constant 1 i obtenim una sortida $A+B=0$. El valor del bit de ròssec (carry) de sortida és $C_{sortida}=1$, però no el connectarem enlloc. Ara l’entrada del biestable és $D=0$, però $Q$ canvia encara de valor fins que no entri el següent pols de rellotge.
+El comptador ha comptat fins a 1 ($Count=1$)
+
+**Segon pols:**
+El següent pols de rellotge actualitza còpia el valor $D=0$ a $Q$, i així hem tornat a la situació inicial, on $Count=0$.
+
+|**Pols**|**$D$**|**$Q$**|**$Count$**
+|------              |------ |------ |------   
+|0  |1|0|0|
+|1  |0|1|1|
+|2  |1|0|0|
+|3  |0|1|1|
+|···|···|···|···|
+
+Podem visualitzar el funcionament d’aquest comptador amb el cronograma següent:
+
+
+<img src='./comptadorMODdos1cronograma.png' alt="comptador MOD 2^1" style="display:block; width:400px; margin:0 auto; border-radius:8px; background-color: rgba(255, 255, 255, 1); padding:4px;"/>
+<center><i>Comptador binari MOD $2^1$, cronograma</i></center>
+
+Sigui quin sigui l’estat del comptador, en el moment que activem el senyal de reinici ($rst$), el multiplexor forçarà el comptador a retornar al seu estat inicial.
+
 ### Comptador de 3 bits MOD $2^3$
 
+El següent comptador és de 3 bits, utilitza 3 biestables. És doncs un comptador MOD $2^3$, capaç de comptar de 0 a 7.
 
-<img src='./xx.png' alt="comptador MOD $2^3$" style="display:block; width:400px; margin:0 auto; border-radius:8px; background-color: rgba(255, 255, 255, 1); padding:4px;"/>
+Aquest comptador es compon de 3 biestables D, 3 sumadors complets i, per tal d’afegir la possibilitat de reiniciar el comptador, 3 multiplexors.
+
+Dels biestables n’obtindrem una sortida de 3 bits $Q=[Q_2​ Q_1​ Q_0​]$.
+Les sortides $Q_i$ dels biestables es connecten als sumadors complets, que s’estructuren de manera equivalent al [sumador de n bits](../CircAritm/Aritmnbits#exemple-sumador-de--bits). Per aquesta raó connectem el bit de ròssec (*carry*) de cada sumador es connecta al bit de ròssec d’entrada del següent ($C_{sortida}$ es connecta a $C_{entrada}$ del següent sumador).
+
+Aquest conjunt de 3 sumadors complets, és a dir, aquest sumador de 3 bits, afegirà contínuament la constant $B=[B_2​ B_1​ B_0]​=001$ a $Q$. Per això connectem $B_0=1$, $B_1=0$ i $B_2=0$.
+
+El senyal de reinici (*reset*, o $rst$) crearà un reinici síncron del comptador, retornant-lo a zero.
+
+<img src='./comptadorMODdos3.png' alt="comptador MOD $2^3$" style="display:block; width:400px; margin:0 auto; border-radius:8px; background-color: rgba(255, 255, 255, 1); padding:4px;"/>
 <center><i>Comptador binari MOD $2^3$</i></center>
+
+Analitzem el funcionament d’aquest comptador, començant amb tots els biestables a zero. La taula, més endavant, recull el resultat d’aquesta anàlisi.
+
+**Estat inicial:**
+Els biestables estan en l’estat $Q_0=0$, $Q_1=0$ i $Q_2=0$.
+El sumador 0 fa l'operació $0+1+0=1$, per tant, $D_0=1$.
+El sumador 1 fa l'operació $0+0+0=0$, per tant, $D1=0$.
+El sumador 2 fa l'operació $0+0+0=0$, per tant, $D2=0$.
+No hi ha cap bit de ròssec ($C_sortida$) activat.
+
+**Primer pols:**
+El pols de rellotge fa que els bits de Q s’actualitzin amb les entrades D, de manera que Q_0=1, Q_1=0 i Q_2=0
+Per tant, D001, D1=1 i D2=0, i Csortida_0=1
+
+**Segon pols:**
+El pols de rellotge fa que els bits de Q s’actualitzin amb les entrades D, de manera que Q0=0, Q1=1 i Q2=0
+Per tant, D0=1, D1=1 i D2=0, i no hi ha cap bit de ròssec activat.
+
+**Tercer pols:**
+El pols de rellotge fa que els bits de Q s’actualitzin amb les entrades D, de manera que Q0=1, Q1=1 i Q2=0
+Per tant, D0=0, D1=0 i D2=1.
+Dos bits de ròssec de sortida estan activats, Csortida 0 =1 i Csortida_1=1 
+
+Amb els següents polsos de rellotge, els biestables passen per totes les combinacions possibles, representant un nombre binari creixent fins a arribar al punt on tots els biestables són a l’estat 1.
+
+**Setè pols:**
+Hem arribat al valor màxim del comptador, Q0=1, Q1=1 i Q2=1
+El setè pols de rellotge durà el comptador altra vegada al seu estat inicial.
+
+
+|**Pols**|**$D_2$**|**$D_1$**|**$D_0$**|**$C_{sortida2}$**|**$C_{sortida1}$**|**$C_{sortida0}$**|**$Q_2$**|**$Q_1$**|**$Q_0$**|**$Count$**
+|------ |------ |------ |------ |------ |------ |------ |------ |------ |------ |------   
+|0 |0|0|1|0|0|0|0|0|0|000|
+|1 |0|1|0|0|0|1|0|0|1|001|
+|2 |0|1|1|0|0|0|0|1|0|010|
+|3 |1|0|0|0|1|1|0|1|1|011|
+|4 |1|0|1|0|0|0|1|0|0|100|
+|5 |1|1|0|0|0|1|1|0|1|101|
+|6 |1|1|1|0|0|0|1|1|0|110|
+|7 |0|0|0|1|1|1|1|1|1|111|
+|8 |0|0|1|0|0|0|0|0|0|000|
+
+Podem visualitzar el funcionament d’aquest comptador amb el cronograma següent:
+
+<img src='./comptadorMODdos3cronograma.png' alt="comptador MOD $2^3$" style="display:block; width:400px; margin:0 auto; border-radius:8px; background-color: rgba(255, 255, 255, 1); padding:4px;"/>
+<center><i>Comptador binari MOD $2^3$, cronograma</i></center>
+
+Sigui quin sigui l’estat del comptador, en el moment que activem el senyal de reinici (*rst*), el multiplexor forçarà el comptador a retornar al seu estat inicial.
+
+### Comptador de n bits MOD $2^n$
+
+Per implementar un comptador de n bits cal encadenar n biestables, n sumadors i n multiplexors de la mateixa manera. Amb aquest comptador podrem comptar de 0 fins a $2^n$ .
+
+<img src='./comptadorMODdosn.png' alt="comptador MOD $2^n$" style="display:block; width:400px; margin:0 auto; border-radius:8px; background-color: rgba(255, 255, 255, 1); padding:4px;"/>
+<center><i>Comptador binari MOD $2^n$</i></center>
+
 
 ## Comptador Binari Asíncron (*Asynchronous Binary Counter* o *Ripple Counter*):
 Un comptador binari asíncron (*Asynchronous Binary Counter*), o comptador en cascada (*Ripple Counter*), s’implementa amb una sèrie de $n$ biestables, normalment del tipus JK.
 El primer biestable representa el bit menys significatiu *LSB* és controlat pel rellotge, i cadascun dels següents pel senyal de sortida de l’anterior, de manera que aquests biestables canvien d’estat **en cadena**.
 
-Conceptes clau:
+<img src='./comptadorasincronn.png' alt="comptador asíncron n" style="display:block; width:400px; margin:0 auto; border-radius:8px; background-color: rgba(255, 255, 255, 1); padding:4px;"/>
+<center><i>Comptador asíncron$</i></center>
+
+
 + Els biestables JK estan connectats de manera que $J=K=1$ i, per tant, l’estat de $Q$ es commuta entre 0 i 1 quan entra un senyal de rellotge.
 + Els biestables capten un senyal de rellotge **només** en el moment que aquest bit passa de 0 a 1. No es considerarà que entra senyal de rellotge mentres aquest es mantingui a 1, a 0 o commuti de 1 a 0.
 + La sortida $Q_0$ correspon al bit menys significatiu *LSB* la sortida $Q_n$ correspon al bit més significatiu *MSB*.
@@ -67,22 +170,22 @@ En aquest punt, el següent pols de rellotge commuta el primer biestable de 1 a 
 
 Aquesta taula mostra la seqüència dels diferents bits del comptador.
 
-|**Pols de rellotge**|**$Q_3$**|**$Q_2$**|**$Q_1$**|**$Q_0$**
-|------                |------   |------   |------   |------
-|0  |0|0|0|0|
-|1  |0|0|0|1|
-|2  |0|0|1|0|
-|3  |0|0|1|1|
-|4  |0|1|0|0|
-|···|···|···|···|···|
-|14 |1|1|1|0|
-|15 |1|1|1|1|
-|16 |0|0|0|0|
+|**Pols**|**$Q_3$**|**$Q_2$**|**$Q_1$**|**$Q_0$**|**$Count$**
+|------              |------   |------   |------   |------   |------
+|0  |0|0|0|0|0000
+|1  |0|0|0|1|1000
+|2  |0|0|1|0|0100
+|3  |0|0|1|1|1100
+|4  |0|1|0|0|0010
+|···|···|···|···|···|···
+|14 |1|1|1|0|0111
+|15 |1|1|1|1|1111
+|16 |0|0|0|0|0000
 
-La figura següent mostra la mateixa seqüència dels diferents senyals. Cada bit s’activa a la meitat de la freqüència del bit anterior, per això, aquest comptador és també un divisor de freqüència natural.
+La figura següent mostra el cronograma d’aquest comptador. Cada bit s’activa a la meitat de la freqüència del bit anterior, per això, aquest comptador és també un divisor de freqüència natural.
 
-<img src='./sequenciacomptador.png' alt="Seqüència comptador" style="display:block; width:550px; margin:0 auto; border-radius:8px; background-color: rgba(255, 255, 255, 1); padding:4px;"/>
-<center><i>Seqüència</i></center>
+<img src='./comptadorasincronncronograma.png' alt="comptador asíncron n" style="display:block; width:400px; margin:0 auto; border-radius:8px; background-color: rgba(255, 255, 255, 1); padding:4px;"/>
+<center><i>Comptador asíncron, cronograma$</i></center>
 
 Aquest tipus de comptadors acumulen retards de tots els biestables a l’hora de passar d’un estat al següent, per tant, no és adequat per a freqüències altes.
 
@@ -90,7 +193,7 @@ Aquest tipus de comptadors acumulen retards de tots els biestables a l’hora de
 
 ## Comptador Binari Síncron (*Synchronous Binary Counter*):
 
-
+Un comptador binari síncron és molt similar als comptadors asíncrons, però en aquest cas tots els biestables tenen el mateix senyal de rellotge i canvien d'estat simultàniament. Utilitza biestables de tipus JK i té la següent estructura:
 
 
 
