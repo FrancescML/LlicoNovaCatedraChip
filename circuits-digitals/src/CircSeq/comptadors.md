@@ -195,6 +195,80 @@ Aquest tipus de comptadors acumulen retards de tots els biestables a l’hora de
 
 Un comptador binari síncron és molt similar als comptadors asíncrons, però en aquest cas tots els biestables tenen el mateix senyal de rellotge i canvien d'estat simultàniament. Utilitza biestables de tipus JK i té la següent estructura:
 
+Al biestable 0 les entrades $J$ i $K$ estan connectades de manera que $J=K=1$ i, per tant, la seva sortida $Q_0$ commuta entre 0 i 1 sempre que entri un senyal de rellotge $CLK$.
+
+La sortida del biestable 0 ($Q_0$) està connectada directament a les entrades J i K del biestable 1. D’aquesta manera, quan  $Q_0=1$, l’estat del biestable 1 ($Q_1$) commutarà entre 0 i 1 sempre que entri un senyal de rellotge.
+
+Les entrades $J$ i $K$ del biestable 2, i els següents biestables a partir d’aquest, estan controlades amb una porta $AND$, que rep les sortides dels dos biestables anteriors. Si les sortides dels dos biestables anteriors són iguals a 1 simultàniament, la porta $AND$ s’activarà i les entrades del biestable rebran el senyal 1. En aquest cas, el biestable commutarà entre 0 i 1.
+
+A partir del biestable 2, aquesta estructura es va repetint fins a completar el comptador.
+
+
+
+Per entendre com funciona aquest comptador, comencem amb tots els biestables a ‘0’.  
+
+**Estat inicial:**
+Tots els biestables estan a zero, $count=0000$.
+
+**Primer pols de rellotge:**
+El primer biestable $Q_0$ commuta a $Q_0=1$.
+La resta de biestables no commuten perque les seves entrades són 0.
+En aquest pols el comptador ha passat a ser $count=0001$.
+
+**Segon pols de rellotge**
+Com que $Q_0=1$ o $Q_1=0$ el biestable 2 no commutarà.
+El biestable 1 commuta a 1 perque la seva entrada és 1.
+El biestable 0 commutarà a 0.
+En aquest pols el comptador ha passat a ser $count=0010$.
+
+**Tercer pols de rellotge:**
+Com que $Q_0=0$ i $Q_1=1$ el biestable 2 no commutarà.
+El biestable 1 no commuta perque la seva entrada és 0.
+El biestable 0 commutarà a 1.
+En aquest pols el comptador ha passat a ser $count=0011$.
+
+**Quart pols de rellotge:**
+Per primera vegada, la porta AND s’activa al rebre $Q_0=1$ i $Q_1=1$, per tant el biestable 2 commuta a 1.
+El biestable 1 commuta a 0 perque la seva entrada és 1.
+El biestable 0 commutarà a 0.
+En aquest pols el comptador ha passat a ser $count=0100$.
+
+Amb els següents polsos de rellotge, els biestables passen per totes les combinacions possibles, representant un nombre binari creixent fins a arribar al punt on tots els biestables són a l’estat 1.
+
+Tant la taula, com el cronograma amb la seqüència del comtpador són idèntiques al comoptador anterior.
+
+|**Pols**|**$Q_3$**|**$Q_2$**|**$Q_1$**|**$Q_0$**|**$Count$**
+|------              |------   |------   |------   |------   |------
+|0  |0|0|0|0|0000
+|1  |0|0|0|1|1000
+|2  |0|0|1|0|0100
+|3  |0|0|1|1|1100
+|4  |0|1|0|0|0010
+|···|···|···|···|···|···
+|14 |1|1|1|0|0111
+|15 |1|1|1|1|1111
+|16 |0|0|0|0|0000
+
+<img src='./comptadorasincronncronograma.png' alt="comptador síncron 4bits" style="display:block; width:400px; margin:0 auto; border-radius:8px; background-color: rgba(255, 255, 255, 1); padding:4px;"/>
+<center><i>Comptador síncron de 4 bits, cronograma$</i></center>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -209,7 +283,7 @@ En aquest exemple veurem com realitzar un comptador de 4 bits. Cal tenir en comp
     <img src='./sequentialelements2.png' style="display:block;    height:250px; margin:0 auto; border-radius:8px; background-color: rgba(255, 255, 255, 1); padding:4px;"/>
 </div>
 
-Les entrades del biestable que ens interessa són la D i Q, que marquen l'entrada i sortida de l'element de memòria, i l'entrada *clk*, que és l’entrada on es connecta el senyal de rellotge. L'entrada de rellotge representa sovint amb un triangle a l'interior de l'element. 
+Les entrades del biestable que ens interessa són la D i Q, que marquen l'entrada i sortida de l'element de memòria, i l'entrada *CLK*, que és l’entrada on es connecta el senyal de rellotge. L'entrada de rellotge representa sovint amb un triangle a l'interior de l'element. 
 
 <div style="display: flex; justify-content: center; align-items:center; gap: 16px;">
     <img src='./D1.png' style="display:block;    width:180px; margin:0 auto; border-radius:8px; background-color: rgba(255, 255, 255, 1); padding:4px;"/>
