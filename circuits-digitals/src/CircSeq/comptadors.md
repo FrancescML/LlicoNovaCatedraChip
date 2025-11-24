@@ -257,24 +257,6 @@ Tant la taula, com el cronograma amb la seqüència del comtpador són idèntiqu
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ## EXEMPLE: Comptador de 4 bits
 En aquest exemple veurem com realitzar un comptador de 4 bits. Cal tenir en compte que n’hi han diferents tipus de comptadors:
 
