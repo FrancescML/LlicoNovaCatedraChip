@@ -292,6 +292,27 @@ CircuitVerse inclou una entrada *Asyncronous reset* als biestables. Per a fer un
 <img src='./asyncronousreset.png' alt="Seqüència comptador" style="display:block; height:180px; margin:0 auto; border-radius:8px; background-color: rgba(255, 255, 255, 1); padding:4px;"/>
 
 
+
+## Exercicis a Jutge.org: [Introduction to Digital Circuit Design](https://jutge.org/courses/JordiCortadella:IntroCircuits)
+
+[Toggle](https://jutge.org/problems/X15508_en)
+
+[2-bit counter](https://jutge.org/problems/X81362_en)
+
+[Mod-3 counter](https://jutge.org/problems/X05944_en)
+
+[4-bit counter](https://jutge.org/problems/X35277_en)
+
+[Unconventional cyclic counter](https://jutge.org/problems/X97508_en)
+
+[Up-down counter](https://jutge.org/problems/X53256_en)
+
+[Mod-7 up-down counter](https://jutge.org/problems/X47159_en)
+
+<small>*Recorda que per accedir als exercicis i que el **Jutge** valori les teves solucions has d'estar inscrit al [curs](https://jutge.org/courses/JordiCortadella:IntroCircuits)*. Troba totes les instruccions [aqui](../Inici/instruccions.md)</small>
+
+
+
 <!-- Aquesta imatge ha d'anar al final de cada lliçó, ja sigui amb aquesta línia o dins la signatura. Deixar comentat si ja està a la signatura-->
 <br>
 <br>
