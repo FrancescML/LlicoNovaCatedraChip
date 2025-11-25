@@ -222,8 +222,6 @@ $S_{out}$: 0, 0, 1, ···
 
 [Vending machine](https://jutge.org/problems/X77254_en)
 
-
-
 <small>*Recorda que per accedir als exercicis i que el **Jutge** valori les teves solucions has d'estar inscrit al [curs](https://jutge.org/courses/JordiCortadella:IntroCircuits)*. Troba totes les instruccions [aqui](../Inici/instruccions.md)</small>
 
 
