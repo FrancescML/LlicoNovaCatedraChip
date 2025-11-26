@@ -87,7 +87,7 @@ La primera columna representa l’estat actual de la màquina, la seva sortida t
 <table>
   <thead>
     <tr>
-      <th rowspan="2">Estat actual/Sortida</th>
+      <th rowspan="2">Estat actual</th>
       <th colspan="2">Sortida</th>
       <th colspan="2">Estat Següent</th>
     </tr>
@@ -138,16 +138,81 @@ Les màquines d'estats són fonamentals per dissenyar components lògics que nec
 
 ## Exemple: retardador (*delay line*) de 2 cicles.
 
+En aquest exemple veurem un circuit capaç de llegir una seqüència binària concreta i replicar-la amb un retard de dos cicles (dos senyals de rellotge). A l’inici de la seqüència, durant els dos cicles d’espera inicials, la sortida serà 0.
 
-INTRO I MÀQUNA D'ESTATS
+Prenem la següent seqüència inicial de nombres com a exemple:
+
+$S_{in}: 1,1,0,0,1,1,1,1,0,0,0,1,0,1…$
+
+Amb un retard de 2 cicles, la nostra seqüència de sortida serà la següent:
+
+$S_{out}: 0,0,1,1,0,0,1,1,1,1,0,0,0,1,0,1…$
+
+Per causar un retard de dos cicles ens cal utilitzar dos biestables de tipus D connectats en sèrie com el de la figura.
+
+<img src='./exemple_0circuit.png' alt="Retardador de 2 cicles" style="display:block; height:180px; margin:0 auto; border-radius:8px; background-color: rgba(255, 255, 255, 1); padding:4px;"/>
+
+
+A cada pols de rellotge l’entrada $S_{in}$ es copia al Biestable 0. El valor que tenia el biestable 0 ($Q_0$) passa al biestable 1 ($Q_1$). I el valor que tenia el biestable 1 és llegit com a sortida $S_{out}$. D’aquesta manera, aquesta estructura retarda dos cicles el pas d’un senyal $S_{in}$ que entra al Biestable 0, passa pel Biestable 1 i surt com a  $S_{out}$.
 
 
 
+Al fer servir dos biestables D, tindrem $2^2$ estats possibles, 4 combinacions diferents que anomenarem $E0$,$E1$,$E2$ i $E3$:
+
+|**Estat**|**[$Q_1$, $Q_0$]**|**$Q_2$**|
+|------   |------          |------   |
+|E0       |00    | Estat inicial (Buit)
+|E1       |01    | l’últim bit que ha entrat a $Q_0$ és 1 el bit més antic $Q_1$ és 0
+|E2       |10    | l’últim bit que ha entrat a $Q_0$ és 0 el bit més antic $Q_1$ és 1
+|E3       |11    | els dos darrers bits que han entrat són 1
+
+La taula a continuació, especifica els canvis d’estat possibles segons l’entrada $S_{in}$.
 
 
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2">Estat actual</th>
+      <th colspan="2">Estat Següent</th>
+    </tr>
+    <tr>
+      <th>S<sub>in</sub>=0</th>
+      <th>S<sub>in</sub>=1</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>00 (E0)</td>
+      <td>00 (E0)</td>
+      <td>01 (E1)</td>
+    </tr>
+    <tr>
+      <td>01 (E1)</td>
+      <td>10 (E2)</td>
+      <td>11 (E3)</td>
+    </tr>
+    <tr>
+      <td>10 (E2)</td>
+      <td>00 (E0)</td>
+      <td>01 (E1)</td>
+    </tr>
+    <tr>
+      <td>11 (E3)</td>
+      <td>10 (E2)</td>
+      <td>11 (E3)</td>
+    </tr>
+  </tbody>
+</table>
+
+A aquest circuit li afegirem més endavant un senyal de reinici $rst$ (*reset*) que retorni tot el circuit a zero. Si $rst=1$ els dos biestables seran reiniciats a 0, situant-nos a l’estat inicial E0. Si $rst=0$, el passatge de bits queda inalterat.
+
+El diagrama d’estats queda així definit.
+
+<img src='./exemple_0diagrama.png' alt="Diagrama estats retardador de 2 cicles" style="display:block; height:180px; margin:0 auto; border-radius:8px; background-color: rgba(255, 255, 255, 1); padding:4px;"/>
+
+Veient que la sortida $S_{out}$ depèn únicament de l’estat on ens trobem, podem afirmar que aquest circuit serà una **màquina de Moore**.
 
 Una vegada fet el diagrama d’estats, passem a muntar el circuit a CircuitVerse. Muntem els dos biestables D en sèrie compartint el mateix senyal de rellotge i el mateix senyal de reinici (rst).
-
 
 <img src='./exemple_0biestables.png' alt="Circuit exemple" style="display:block; width:550px; margin:0 auto; border-radius:8px; background-color: rgba(255, 255, 255, 1); padding:4px;"/>
 
@@ -174,16 +239,16 @@ seqüència inicial:
 
 $S_{in}$: 1, 1, 1, ··· 
 
-En l’estat inicial tots els biestables es troben a 0 després d'un reinici $rst=1$. El valor inicial de $S_{out}$.
+En l’estat inicial E0 tots els biestables es troben a 0 després d'un reinici $rst=1$. El valor inicial de $S_{out}$.
 
 <img src='./exemple_3estatinicial.png' alt="Circuit exemple" style="display:block; width:550px; margin:0 auto; border-radius:8px; background-color: rgba(255, 255, 255, 1); padding:4px;"/>
 
 Fixem $rst=0$ a partir d'ara per permetre al circuit evolucionar.
-En el primer flanc de rellotge el valor de $S_{in}=1$ es carrega al primer biestable. L’estat 0 del primer biestable passa al segon biestable i $S_{out}$ continua tenint un valor de 0. 
+En el primer flanc de rellotge el valor de $S_{in}=1$ es carrega al primer biestable. L’estat 0 del primer biestable passa al segon biestable i $S_{out}$ continua tenint un valor de 0. Ens trobem doncs a l'estat E1.
 
 <img src='./exemple_4primerflanc.png' alt="Circuit exemple" style="display:block; width:550px; margin:0 auto; border-radius:8px; background-color: rgba(255, 255, 255, 1); padding:4px;"/>
 
-En segon flanc de rellotge, el valor de $S_{in}=1$ es carrega al primer biestable, el valor del primer biestable 1 es carrega al segon biestable i per tant $S_{out}=1$. 
+En segon flanc de rellotge, el valor de $S_{in}=1$ es carrega al primer biestable, el valor del primer biestable 1 es carrega al segon biestable i per tant $S_{out}=1$. Ens trobem a l'estat E2.
 
 <img src='./exemple_5segonflanc.png' alt="Circuit exemple" style="display:block; width:550px; margin:0 auto; border-radius:8px; background-color: rgba(255, 255, 255, 1); padding:4px;"/>
 
@@ -195,8 +260,6 @@ En aquests dos primers senyals de rellotge, les sequencies d'entrada i de sortid
 $S_{in}$: 1, 1, 1, ··· 
 
 $S_{out}$: 0, 0, 1, ··· 
-
-
 
 
 ## Exercicis a Jutge.org: [Introduction to Digital Circuit Design](https://jutge.org/courses/JordiCortadella:IntroCircuits)
