@@ -484,7 +484,51 @@ export const index = [
         ],
     },
     {
-        text: 'Algunes llibreries',
+        text: 'NumPy',
+        collapsed: true,
+        items: [
+            {
+                text: 'Introducció',
+                link: '/numpy/introduccio',
+            },
+            {
+                text: 'Arrays',
+                link: '/numpy/arrays',
+            },
+            {
+                text: 'Accés',
+                link: '/numpy/acces',
+            },
+            {
+                text: 'Operacions',
+                link: '/numpy/operacions',
+            },
+            { 
+                text: 'Manipulació de formes i dimensions',
+                link: '/numpy/formes',
+            },
+            { 
+                text: 'Àlgebra lineal',
+                link: '/numpy/algebra-lineal',
+            },
+            {
+                text: 'Entrada i sortida',
+                link: '/numpy/entrada-sortida',
+            },
+        ],
+    },
+    {
+        text: 'Matplotlib',
+        collapsed: true,
+        items: [
+            {
+                text: 'Matplotlib',
+                link: '/matplotlib/index',
+            },
+        ]
+    },
+    {
+        text: 'Més llibreries',
         collapsed: true,
         items: [
             {
