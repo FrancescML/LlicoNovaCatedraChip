@@ -25,9 +25,7 @@ S’utilitza per comptar, generar seqüències binàries periòdiques i dividir 
 El següent comptador té un sol bit, utilitza un sol biestable. És, per tant, un comptador MOD $2^1$, i pot comptar de 0 a 1.
 
 
-<img src='./comptadorMODdos1.png' alt="comptador MOD 2^1" style="display:block; width:400px; margin:0 auto; border-radius:8px; background-color: rgba(255, 255, 255, 1); padding:4px;"/>
-<center><i>Comptador binari MOD $2^1$</i></center>
-
+<img src='./comptadorMODdos1.png' alt="comptador MOD 2^1" style="display:block; width:500px; margin:0 auto; border-radius:8px; background-color: rgba(255, 255, 255, 1); padding:4px;"/>
 
 Aquest es compon d’un biestable D, un sumador complet (*full adder*) connectat a la sortida del biestable i un multiplexor. El sumador sumarà a la sortida del biestable $Q$ un valor constant 1. Aquest senyal amb valor $Q+1$ es connectarà a l’entrada $D$ del biestable.
 
@@ -58,8 +56,7 @@ El següent pols de rellotge actualitza còpia el valor $D=0$ a $Q$, i així hem
 Podem visualitzar el funcionament d’aquest comptador amb el cronograma següent:
 
 
-<img src='./comptadorMODdos1cronograma.png' alt="comptador MOD 2^1" style="display:block; width:400px; margin:0 auto; border-radius:8px; background-color: rgba(255, 255, 255, 1); padding:4px;"/>
-<center><i>Comptador binari MOD $2^1$, cronograma</i></center>
+<img src='./comptadorMODdos1cronograma.png' alt="comptador MOD 2^1" style="display:block; width:500px; margin:0 auto; border-radius:8px; background-color: rgba(255, 255, 255, 1); padding:4px;"/>
 
 Sigui quin sigui l’estat del comptador, en el moment que activem el senyal de reinici ($rst$), el multiplexor forçarà el comptador a retornar al seu estat inicial.
 
@@ -122,8 +119,7 @@ El setè pols de rellotge durà el comptador altra vegada al seu estat inicial.
 
 Podem visualitzar el funcionament d’aquest comptador amb el cronograma següent:
 
-<img src='./comptadorMODdos3cronograma.png' alt="comptador MOD $2^3$" style="display:block; width:400px; margin:0 auto; border-radius:8px; background-color: rgba(255, 255, 255, 1); padding:4px;"/>
-<center><i>Comptador binari MOD $2^3$, cronograma</i></center>
+<img src='./comptadorMODdos3cronograma.png' alt="comptador MOD $2^3$" style="display:block; width:500px; margin:0 auto; border-radius:8px; background-color: rgba(255, 255, 255, 1); padding:4px;"/>
 
 Sigui quin sigui l’estat del comptador, en el moment que activem el senyal de reinici (*rst*), el multiplexor forçarà el comptador a retornar al seu estat inicial.
 
@@ -184,12 +180,9 @@ Aquesta taula mostra la seqüència dels diferents bits del comptador.
 
 La figura següent mostra el cronograma d’aquest comptador. Cada bit s’activa a la meitat de la freqüència del bit anterior, per això, aquest comptador és també un divisor de freqüència natural.
 
-<img src='./comptadorasincronncronograma.png' alt="comptador asíncron n" style="display:block; width:400px; margin:0 auto; border-radius:8px; background-color: rgba(255, 255, 255, 1); padding:4px;"/>
-<center><i>Comptador asíncron, cronograma$</i></center>
+<img src='./comptadorasincronncronograma.png' alt="comptador asíncron n" style="display:block; width:500px; margin:0 auto; border-radius:8px; background-color: rgba(255, 255, 255, 1); padding:4px;"/>
 
 Aquest tipus de comptadors acumulen retards de tots els biestables a l’hora de passar d’un estat al següent, per tant, no és adequat per a freqüències altes.
-
-
 
 ## Comptador Binari Síncron (*Synchronous Binary Counter*):
 
@@ -249,11 +242,7 @@ Tant la taula, com el cronograma amb la seqüència del comtpador són idèntiqu
 |15 |1|1|1|1|1111
 |16 |0|0|0|0|0000
 
-<img src='./comptadorasincronncronograma.png' alt="comptador síncron 4bits" style="display:block; width:400px; margin:0 auto; border-radius:8px; background-color: rgba(255, 255, 255, 1); padding:4px;"/>
-<center><i>Comptador síncron de 4 bits, cronograma$</i></center>
-
-
-
+<img src='./comptadorasincronncronograma.png' alt="comptador síncron 4bits" style="display:block; width:500px; margin:0 auto; border-radius:8px; background-color: rgba(255, 255, 255, 1); padding:4px;"/>
 
 
 
