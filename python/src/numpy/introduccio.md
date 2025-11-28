@@ -2,7 +2,7 @@
 
 <img src='./numpy.svg' style='height: 8em; float: right; margin: 2em 0em 0em 2em;'/>
 
-NumPy (Numerical Python) és una biblioteca fonamental per a la computació científica en Python. El gran avantatge de NumPy és que permet realitzar operacions matemàtiques sobre arrays multidimensionals de manera vectoritzada i extremadament ràpida gràcies a la seva implementació en C i l'eliminació de bucles explícits.
+NumPy (Numerical Python) és una biblioteca fonamental per a la computació científica en Python. El gran avantatge de NumPy és que permet realitzar operacions matemàtiques sobre arrays multidimensionals de manera extremadament ràpida gràcies a la seva implementació en C i l'eliminació de bucles explícits.
 
 NumPy és essencial per a qualsevol programador que treballi amb dades numèriques, ja que ofereix:
 
@@ -82,7 +82,7 @@ import time
 mida = 10_000_000
 llista1 = list(range(mida))
 llista2 = list(range(mida))
-array1 = np.arange(mida)
+array1 = np.arange(mida)        # com range però retorna un array de NumPy
 array2 = np.arange(mida)
 
 # Suma amb llistes
@@ -114,13 +114,14 @@ NumPy aconsegueix aquest rendiment superior gràcies a diversos factors:
 
 -   Les operacions estan implementades en C enlloc de Python, cosa que redueix la sobrecàrrega d'execució.
 -   Utilitza vectorització per aprofitar instruccions SIMD del processador.
--   Emmagatzema les dades de manera contigua en memòria i evita la sobrecàrrega dels bucles de Python.
+-   Emmagatzema les dades de manera contigua en memòria.
+-   Evita la sobrecàrrega dels bucles de Python.
 
 Per extreure rendiment màxim, és important aprofitar les operacions vectoritzades i evitar bucles explícits sempre que sigui possible.
 
 ## Operacions vectoritzades
 
-NumPy permet escriure operacions matemàtiques complexes de manera elegant i compacta. Aquí tenim alguns exemples d'operacions vectoritzades:
+NumPy permet escriure operacions matemàtiques complexes de manera elegant i compacta utilitzant **operacions vectoritzades**:
 
 ```python
 # Operacions aritmètiques
@@ -128,10 +129,6 @@ x = np.array([1, 2, 3, 4, 5])
 print(x * 2)          # [2 4 6 8 10]
 print(x ** 2)         # [1 4 9 16 25]
 print(np.sqrt(x))     # [1. 1.41421356 1.73205081 2. 2.23606798]
-
-# Operacions amb funcions universals
-angles = np.array([0, np.pi/4, np.pi/2])
-print(np.sin(angles))  # [0. 0.70710678 1.]
 
 # Operacions condicionals
 temperatures = np.array([15, 22, 18, 30, 25])

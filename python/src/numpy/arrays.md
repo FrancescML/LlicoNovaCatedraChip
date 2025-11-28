@@ -75,11 +75,11 @@ print(a)  # [0 2 4 6 8]
 
 # Funciona amb floats
 b = np.arange(0, 1, 0.1)
-print(b)  # [0.  0.1 0.2 0.3 0.4 0.5 0.6 0.7 0.8 0.9]
+print(b)  # [0.0 0.1 0.2 0.3 0.4 0.5 0.6 0.7 0.8 0.9]
 
 # linspace(inici, final, num) - num punts equiespaiats
 c = np.linspace(0, 10, 5)
-print(c)  # [ 0.   2.5  5.   7.5 10. ]
+print(c)  # [0.0 2.5  5.0 7.5 10.0]
 
 # linspace inclou el valor final per defecte
 d = np.linspace(0, 1, 11)  # Útil per dividir en intervals
@@ -121,8 +121,6 @@ print(arr)  # Exemple: [3 7 1 9 4 0 2 8 5 6]
 Un cop creat un array de NumPy, podem consultar diverses propietats que descriuen la seva estructura i contingut. Considerem l'array següent:
 
 ```python
-import numpy as np
-
 a = np.array([[1, 2, 3, 4], [5, 6, 7, 8]])
 ```
 
