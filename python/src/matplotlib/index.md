@@ -1,5 +1,7 @@
 # Matplotlib
 
+<img src='./matplotlib.svg' style='height: 8em; float: right; margin: 2em 0em 0em 2em;'/>
+
 Matplotlib és una biblioteca de Python per crear gràfics i visualitzacions de dades. És una eina fonamental per a l'anàlisi de dades i la presentació de resultats. En aquest document es mostren exemples pràctics d'ús de Matplotlib per crear diferents tipus de gràfics. Us ho podeu prendre com un conjunt de receptes per a les vostres pròpies visualitzacions. Podeu aprofundir més en la [documentació oficial de Matplotlib](https://matplotlib.org/stable/contents.html).
 
 ## Instal·lació
