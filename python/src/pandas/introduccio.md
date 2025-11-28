@@ -14,18 +14,7 @@ Les seves principals funcionalitats inclouen:
 
 Pandas és àmpliament utilitzat en ciència de dades, aprenentatge automàtic, finances, investigació i qualsevol àmbit que requereixi processament de dades estructurades.
 
-## Casos d'ús habituals
-
-Pandas és ideal per:
-
--   Analitzar vendes mensuals d'una empresa
--   Processar resultats d'experiments científics
--   Netejar dades de sensors o dispositius IoT
--   Preparar dades per a models d'aprenentatge automàtic
--   Combinar dades de múltiples fonts
--   Generar informes i estadístiques automàtiques
-
-Penseu en Pandas com una versió programada d'una full de càlcul, però amb molt més poder i flexibilitat per a l'anàlisi de dades.
+Penseu en Pandas com una versió programada d'una full de càlcul.
 
 ## Instal·lació i importació
 
@@ -58,11 +47,11 @@ Aquesta integració permet fluxos de treball complets, des de la càrrega de dad
 
 ## Primer exemple d'ús
 
-Considereu que voleu un programa que fa el següent:
+Considereu que voleu un programa per:
 
-1. Baixa dades d'una API pública (Open-Meteo) amb la previsió del temps de Barcelona.
-2. Manipula les dades amb Pandas (calcula mitjana, màxim i mínim).
-3. Pinta un gràfic amb matplotlib mostrant l'evolució de la temperatura.
+1. Obtenir dades amb la previsió del temps de Barcelona.
+2. Calcular mitjana, màxim i mínim.
+3. Pintar un gràfic mostrant l'evolució de la temperatura.
 
 Aquí teniu el codi complet amb Pandas i Matplotlib:
 
@@ -121,7 +110,7 @@ A continuació, expliquem pas a pas què fa cada part del codi amb Pandas.
     df = pd.read_json(url)
     ```
 
-    Pandas pot llegir directament un JSON des d'una URL. El resultat ja és un **DataFrame** (l'estructura de dades principal de Pandas, com una taula d'Excel en memòria).
+    Pandas pot llegir directament un JSON des d'una URL (concretament de l'API pública de Open-Meteo en aquest cas). El resultat ja és un **DataFrame** (l'estructura de dades principal de Pandas, com una taula d'Excel en memòria).
 
 2. **Crear un DataFrame estructurat:**
 
@@ -146,7 +135,7 @@ A continuació, expliquem pas a pas què fa cada part del codi amb Pandas.
     temps['Temperatura'].min()
     ```
 
-    Aquí és on brilla Pandas! Quan accedeix a una columna (`temps['Temperatura']`), obtens una **sèerie** (com una llista millorada). Les sèries tenen mètodes directes per estadístiques:
+    Aquí és on brilla Pandas: Quan s'accedeix a una columna (`temps['Temperatura']`), s'obté una **sèrie** (com una llista millorada). Les sèries tenen mètodes directes per estadístiques:
 
     - No cal fer bucles `for`.
     - No cal `sum(llista)/len(llista)` per la mitjana.
@@ -154,7 +143,7 @@ A continuació, expliquem pas a pas què fa cada part del codi amb Pandas.
 
 4. **Visualització:**
 
-    Matplotlib agafa directament les columnes del DataFrame i les dibuixa. Pandas i matplotlib treballen molt bé junts!
+    Matplotlib agafa directament les columnes del DataFrame i les dibuixa.
 
 Les lliçons següents aprofundiran més en les funcionalitats de Pandas, però aquest exemple mostra com es pot utilitzar per carregar, manipular i analitzar dades de manera eficient.
 

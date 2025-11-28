@@ -20,7 +20,7 @@ python3 -m pip install matplotlib matplotlib-stubs
 
 ## Primer gràfic
 
-El mòdul més utilitzat de Matplotlib és `pyplot`, que proporciona una interfície similar a MATLAB. Aquest exemple mostra com crear un gràfic de línies bàsic amb etiquetes als eixos i un títol:
+El mòdul més utilitzat de Matplotlib és `pyplot`. Aquest exemple mostra com crear un gràfic de línies bàsic amb etiquetes als eixos i un títol:
 
 ```python
 import matplotlib.pyplot as plt
@@ -29,9 +29,9 @@ x = [1, 2, 3, 4, 5]
 y = [2, 4, 8, 16, 32]
 
 plt.plot(x, y)
+plt.title('El meu primer gràfic')
 plt.xlabel('Eix X')
 plt.ylabel('Eix Y')
-plt.title('El meu primer gràfic')
 plt.show()
 ```
 
@@ -43,13 +43,13 @@ Les eines de la barra inferior permeten desar el gràfic en diversos formats (PN
 
 El funcionament del programa és senzill:
 
--   Importa el mòdul `pyplot` de Matplotlib usant l'àlies `plt`, com és habitual.
+-   Importa el mòdul `pyplot` de Matplotlib usant l'àlies `plt`, seguint la convenció habitual.
 
 -   Defineix les dades a representar en dues llistes: `x` i `y`.
 
 -   Utilitza la funció `plt.plot(x, y)` per crear el gràfic de línies.
 
--   Afegeix etiquetes als eixos i un títol amb les funcions `plt.xlabel()`, `plt.ylabel()` i `plt.title()`.
+-   Afegeix un títol i etiquetes als eixos amb les funcions `plt.title()`, `plt.xlabel()` i `plt.ylabel()`.
 
 -   Finalment, mostra el gràfic amb `plt.show()`.
 
@@ -77,7 +77,7 @@ Els gràfics de línies són ideals per mostrar l'evolució de dades contínues.
 import matplotlib.pyplot as plt
 import numpy as np
 
-x = np.linspace(0, 10, 100)
+x = np.linspace(0, 10, 100) # 100 punts entre 0 i 10
 y = np.sin(x)
 
 plt.plot(x, y, label='sin(x)')
@@ -110,7 +110,7 @@ El gràfic resultant és el següent:
 
 <img src='./p3.svg' style='width: 80%; display: block; margin: auto;'/>
 
-Noteu que, per brevetat, no hem importat `matplotlib.pyplot` i `numpy` en aquest fragment, però cal fer-ho abans d'executar el codi.
+Noteu que, per brevetat, ja no escriurem més els imports de `matplotlib.pyplot` i `numpy`, però que cal fer-ho abans d'executar el codi.
 
 ## Histogrames
 
@@ -170,7 +170,7 @@ El gràfic de sectors resultant és aquest:
 
 ## Gràfics de caixes
 
-Els gràfics de caixes (box plots) mostren la distribució estadística de les dades, incloent la mediana, quartils i valors atípics. Són útils per comparar distribucions entre diferents grups:
+Els gràfics de caixes (_box plots_) mostren la distribució estadística de les dades, incloent la mediana, quartils i valors atípics. Són útils per comparar distribucions entre diferents grups:
 
 ```python
 dades = [np.random.normal(0, std, 100) for std in range(1, 4)]
@@ -203,7 +203,7 @@ El mapa de calor resultant és aquest:
 
 ## Gràfics de violí
 
-Els gràfics de violí (violin plots) combinen box plots amb estimacions de densitat, mostrant la distribució completa de les dades. Les opcions `showmeans` i `showmedians` afegeixen marques per a la mitjana i la mediana:
+Els gràfics de violí (_violin plots_) combinen box plots amb estimacions de densitat, mostrant la distribució completa de les dades. Les opcions `showmeans` i `showmedians` afegeixen marques per a la mitjana i la mediana:
 
 ```python
 dades = [np.random.normal(0, std, 100) for std in range(1, 5)]
