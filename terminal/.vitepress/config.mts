@@ -90,4 +90,8 @@ export default defineConfig({
             md.use(tabsMarkdownPlugin)
         },
     },
+
+    ignoreDeadLinks: true,
+
+    cleanUrls: false,
 })

@@ -91,5 +91,7 @@ export default defineConfig({
         },
     },
 
-    ignoreDeadLinks: true,      // TODO: Treure
+    ignoreDeadLinks: true,
+
+    cleanUrls: false,
 })
