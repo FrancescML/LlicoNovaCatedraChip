@@ -5,39 +5,39 @@ export const index = [
         items: [
             {
                 text: 'Benvinguda',
-                link: '/inici/',
+                link: '/inici/index.html',
             },
             {
                 text: 'Programes que saluden',
-                link: '/inici/programes-que-saluden',
+                link: '/inici/programes-que-saluden.html',
             },
             {
                 text: 'Programes que calculen',
-                link: '/inici/programes-que-calculen',
+                link: '/inici/programes-que-calculen.html',
             },
             {
                 text: 'Programes que dibuixen',
-                link: '/inici/programes-que-dibuixen',
+                link: '/inici/programes-que-dibuixen.html',
             },
             {
                 text: 'Variables, assignacions i expressions',
-                link: '/inici/assignacions-i-variables',
+                link: '/inici/assignacions-i-variables.html',
             },
             {
                 text: '<i>Celcius a Fahrenheit</i>',
-                link: '/inici/celcius-fahrenheit',
+                link: '/inici/celcius-fahrenheit.html',
             },
             {
                 text: '<i>Distància euclidiana</i>',
-                link: '/inici/distancia-euclidiana',
+                link: '/inici/distancia-euclidiana.html',
             },
             {
                 text: '<i>Descomposició horària</i>',
-                link: '/inici/descomposicio-horaria',
+                link: '/inici/descomposicio-horaria.html',
             },
             {
                 text: 'Conceptes bàsics',
-                link: '/inici/conceptes-basics',
+                link: '/inici/conceptes-basics.html',
             },
         ],
     },
@@ -47,19 +47,19 @@ export const index = [
         items: [
             {
                 text: 'Eines de programació',
-                link: '/eines/',
+                link: '/eines/index.html',
             },
             {
                 text: 'Python',
-                link: '/eines/python',
+                link: '/eines/python.html',
             },
             {
                 text: 'Visual Studio Code',
-                link: '/eines/vscode',
+                link: '/eines/vscode.html',
             },
             {
                 text: 'Vídeos Windows',
-                link: '/eines/videos-windows',
+                link: '/eines/videos-windows.html',
             },
         ],
     },
@@ -69,15 +69,15 @@ export const index = [
         items: [
             {
                 text: 'Conceptes',
-                link: '/lectura-i-escriptura/conceptes',
+                link: '/lectura-i-escriptura/conceptes.html',
             },
             {
                 text: 'Escriptura',
-                link: '/lectura-i-escriptura/escriptura',
+                link: '/lectura-i-escriptura/escriptura.html',
             },
             {
                 text: 'Lectura',
-                link: '/lectura-i-escriptura/lectura',
+                link: '/lectura-i-escriptura/lectura.html',
             },
         ],
     },
@@ -87,11 +87,11 @@ export const index = [
         items: [
             {
                 text: 'Condicionals',
-                link: '/condicionals/condicionals',
+                link: '/condicionals/condicionals.html',
             },
             {
                 text: "<i>Suma d'un segon</i>",
-                link: '/condicionals/sumar-un-segon',
+                link: '/condicionals/sumar-un-segon.html',
             },
         ],
     },
@@ -101,31 +101,31 @@ export const index = [
         items: [
             {
                 text: 'Iteracions',
-                link: '/iteracions/iteracions',
+                link: '/iteracions/iteracions.html',
             },
             {
                 text: 'Dibuix de polígons regulars',
-                link: '/iteracions/poligons',
+                link: '/iteracions/poligons.html',
             },
             {
                 text: "Divisors d'un nombre i primalitat",
-                link: '/iteracions/primalitat',
+                link: '/iteracions/primalitat.html',
             },
             {
                 text: 'Factorial',
-                link: '/iteracions/factorial',
+                link: '/iteracions/factorial.html',
             },
             {
                 text: 'Màxim comú divisor',
-                link: '/iteracions/maxim-comu-divisor',
+                link: '/iteracions/maxim-comu-divisor.html',
             },
             {
                 text: 'Iteracions amb for',
-                link: '/iteracions/bucles-for',
+                link: '/iteracions/bucles-for.html',
             },
             {
                 text: 'Alguns dibuixos',
-                link: '/iteracions/dibuixos',
+                link: '/iteracions/dibuixos.html',
             },
         ],
     },
@@ -135,43 +135,43 @@ export const index = [
         items: [
             {
                 text: 'Introducció',
-                link: '/tipus/intro',
+                link: '/tipus/intro.html',
             },
             {
                 text: 'Enters',
-                link: '/tipus/enters',
+                link: '/tipus/enters.html',
             },
             {
                 text: 'Reals',
-                link: '/tipus/reals',
+                link: '/tipus/reals.html',
             },
             {
                 text: 'Texts',
-                link: '/tipus/texts',
+                link: '/tipus/texts.html',
             },
             {
                 text: 'Booleans',
-                link: '/tipus/booleans',
+                link: '/tipus/booleans.html',
             },
             {
                 text: 'Castells i catapultes',
-                link: '/tipus/castells',
+                link: '/tipus/castells.html',
             },
             {
                 text: 'Classificació de caràcters',
-                link: '/tipus/classificacio-caracters',
+                link: '/tipus/classificacio-caracters.html',
             },
             {
                 text: 'Nombres hexadecimals',
-                link: '/tipus/hexadecimals',
+                link: '/tipus/hexadecimals.html',
             },
             {
                 text: 'Comprovació de tipus',
-                link: '/tipus/comprovacio',
+                link: '/tipus/comprovacio.html',
             },
             {
                 text: 'Tuples',
-                link: '/tipus/tuples',
+                link: '/tipus/tuples.html',
             },
         ],
     },
@@ -181,31 +181,31 @@ export const index = [
         items: [
             {
                 text: 'Ús de funcions',
-                link: '/funcions/us-funcions',
+                link: '/funcions/us-funcions.html',
             },
             {
                 text: 'Definició de funcions',
-                link: '/funcions/def-funcions',
+                link: '/funcions/def-funcions.html',
             },
             {
                 text: 'Exemples de funcions',
-                link: '/funcions/exemples-funcions',
+                link: '/funcions/exemples-funcions.html',
             },
             {
                 text: "Funcions que retornen més d'un valor",
-                link: '/funcions/funcions-tuples',
+                link: '/funcions/funcions-tuples.html',
             },
             {
                 text: 'Accions',
-                link: '/funcions/accions',
+                link: '/funcions/accions.html',
             },
             {
                 text: "Exemples d'accions",
-                link: '/funcions/exemples-accions',
+                link: '/funcions/exemples-accions.html',
             },
             {
                 text: 'Programa principal i variables globals',
-                link: '/funcions/main',
+                link: '/funcions/main.html',
             },
         ],
     },
@@ -215,27 +215,27 @@ export const index = [
         items: [
             {
                 text: 'Seqüències',
-                link: '/sequencies/sequencies',
+                link: '/sequencies/sequencies.html',
             },
             {
                 text: 'Exemples',
-                link: '/sequencies/exemples-sequencies',
+                link: '/sequencies/exemples-sequencies.html',
             },
             {
                 text: 'Llargades de paraules',
-                link: '/sequencies/llargades',
+                link: '/sequencies/llargades.html',
             },
             {
                 text: 'Octògons facilets',
-                link: '/sequencies/octogons',
+                link: '/sequencies/octogons.html',
             },
             {
                 text: 'Trens de dominos',
-                link: '/sequencies/dominos',
+                link: '/sequencies/dominos.html',
             },
             {
                 text: 'Finestres',
-                link: '/sequencies/finestres',
+                link: '/sequencies/finestres.html',
             },
         ],
     },
@@ -245,19 +245,19 @@ export const index = [
         items: [
             {
                 text: 'Recursivitat',
-                link: '/recursivitat/recursivitat',
+                link: '/recursivitat/recursivitat.html',
             },
             {
                 text: 'Fractal de Koch',
-                link: '/recursivitat/koch',
+                link: '/recursivitat/koch.html',
             },
             {
                 text: 'Arbres fractals',
-                link: '/recursivitat/arbres-fractals',
+                link: '/recursivitat/arbres-fractals.html',
             },
             {
                 text: 'Torres de Hanoi',
-                link: '/recursivitat/hanoi',
+                link: '/recursivitat/hanoi.html',
             },
         ],
     },
@@ -267,7 +267,7 @@ export const index = [
         items: [
             {
                 text: 'Temps mort #1',
-                link: '/temps-mort/1',
+                link: '/temps-mort/1.html',
             },
         ],
     },
@@ -277,27 +277,27 @@ export const index = [
         items: [
             {
                 text: 'Llistes',
-                link: '/llistes/llistes',
+                link: '/llistes/llistes.html',
             },
             {
                 text: 'Exemples',
-                link: '/llistes/exemples',
+                link: '/llistes/exemples.html',
             },
             {
                 text: 'Llistes per comprensió',
-                link: '/llistes/comprensio',
+                link: '/llistes/comprensio.html',
             },
             {
                 text: "Garbell d'Eratòstenes",
-                link: '/llistes/eratostenes',
+                link: '/llistes/eratostenes.html',
             },
             {
                 text: 'Referències',
-                link: '/llistes/referencies',
+                link: '/llistes/referencies.html',
             },
             {
                 text: 'Tipus genèrics',
-                link: '/llistes/tipus-generics',
+                link: '/llistes/tipus-generics.html',
             },
         ],
     },
@@ -307,7 +307,7 @@ export const index = [
         items: [
             {
                 text: 'Invariants',
-                link: '/invariants/index',
+                link: '/invariants/index.html',
             },
         ],
     },
@@ -317,23 +317,23 @@ export const index = [
         items: [
             {
                 text: "Introducció",
-                link: '/eficiencia-algorismes/index',
+                link: '/eficiencia-algorismes/index.html',
             },
             {
                 text: "Ordres de magnitud",
-                link: '/eficiencia-algorismes/ordres-de-magnitud',
+                link: '/eficiencia-algorismes/ordres-de-magnitud.html',
             },
             {
                 text: "Notació asimptòtica",
-                link: '/eficiencia-algorismes/notacio-asimptotica',
+                link: '/eficiencia-algorismes/notacio-asimptotica.html',
             },
             {
                 text: "Anàlisi d'algorismes iteratius",
-                link: '/eficiencia-algorismes/analisi-algorismes-iteratius',
+                link: '/eficiencia-algorismes/analisi-algorismes-iteratius.html',
             },
             {
                 text: "Anàlisi d'algorismes recursius",
-                link: '/eficiencia-algorismes/analisi-algorismes-recursius',
+                link: '/eficiencia-algorismes/analisi-algorismes-recursius.html',
             },
         ],
     },
@@ -343,27 +343,27 @@ export const index = [
         items: [
             {
                 text: 'Cerca lineal i cerca binària',
-                link: '/cerca-ordenacio/cerca-lineal-cerca-binaria',
+                link: '/cerca-ordenacio/cerca-lineal-cerca-binaria.html',
             },
             {
                 text: 'Ordenació per selecció',
-                link: '/cerca-ordenacio/ordenacio-per-seleccio',
+                link: '/cerca-ordenacio/ordenacio-per-seleccio.html',
             },
             {
                 text: 'Ordenació per inserció',
-                link: '/cerca-ordenacio/ordenacio-per-insercio',
+                link: '/cerca-ordenacio/ordenacio-per-insercio.html',
             },
             {
                 text: 'Fusió de llistes ordenades',
-                link: '/cerca-ordenacio/fusio-llistes-ordenades',
+                link: '/cerca-ordenacio/fusio-llistes-ordenades.html',
             },
             {
                 text: 'Ordenació per fusió',
-                link: '/cerca-ordenacio/ordenacio-per-fusio',
+                link: '/cerca-ordenacio/ordenacio-per-fusio.html',
             },
             {
                 text: 'Ordenació amb funcions predefinides',
-                link: '/cerca-ordenacio/ordenacio-llibreria',
+                link: '/cerca-ordenacio/ordenacio-llibreria.html',
             },
         ],
     },
@@ -373,19 +373,19 @@ export const index = [
         items: [
             {
                 text: 'Matrius',
-                link: '/matrius/matrius',
+                link: '/matrius/matrius.html',
             },
             {
                 text: 'Operacions matemàtiques sobre matrius',
-                link: '/matrius/mates',
+                link: '/matrius/mates.html',
             },
             {
                 text: 'Quadrats màgics',
-                link: '/matrius/quadrat-magic',
+                link: '/matrius/quadrat-magic.html',
             },
             {
                 text: 'Referències',
-                link: '/matrius/referencies',
+                link: '/matrius/referencies.html',
             },
         ],
     },
@@ -395,19 +395,19 @@ export const index = [
         items: [
             {
                 text: 'Estructures',
-                link: '/estructures/estructures',
+                link: '/estructures/estructures.html',
             },
             {
                 text: 'Rellotge despertador',
-                link: '/estructures/rellotge',
+                link: '/estructures/rellotge.html',
             },
             {
                 text: 'Polígons simples',
-                link: '/estructures/poligons',
+                link: '/estructures/poligons.html',
             },
             {
                 text: "Ordenació d'estructures",
-                link: '/estructures/ordenacio',
+                link: '/estructures/ordenacio.html',
             },
         ],
     },
@@ -417,19 +417,19 @@ export const index = [
         items: [
             {
                 text: 'Combinacions',
-                link: '/generacio-exhaustiva/combinacions',
+                link: '/generacio-exhaustiva/combinacions.html',
             },
             {
                 text: 'Permutacions',
-                link: '/generacio-exhaustiva/permutacions',
+                link: '/generacio-exhaustiva/permutacions.html',
             },
             {
                 text: 'Les <i>n</i> reines',
-                link: '/generacio-exhaustiva/reines',
+                link: '/generacio-exhaustiva/reines.html',
             },
             {
                 text: 'Resolució de Sudokus',
-                link: '/generacio-exhaustiva/sudoku',
+                link: '/generacio-exhaustiva/sudoku.html',
             },
         ],
     },
@@ -439,11 +439,11 @@ export const index = [
         items: [
             {
                 text: 'Conjunts',
-                link: '/conjunts-i-diccionaris/conjunts',
+                link: '/conjunts-i-diccionaris/conjunts.html',
             },
             {
                 text: 'Diccionaris',
-                link: '/conjunts-i-diccionaris/diccionaris',
+                link: '/conjunts-i-diccionaris/diccionaris.html',
             },
         ],
     },
@@ -453,15 +453,15 @@ export const index = [
         items: [
             {
                 text: 'Introducció',
-                link: '/classes/introduccio',
+                link: '/classes/introduccio.html',
             },
             {
                 text: 'Encapsulació',
-                link: '/classes/encapsulacio',
+                link: '/classes/encapsulacio.html',
             },
             {
                 text: 'Herència',
-                link: '/classes/herencia',
+                link: '/classes/herencia.html',
             },
         ],
     },
@@ -471,37 +471,120 @@ export const index = [
         items: [
             {
                 text: 'Piles',
-                link: '/estructures-de-dades/piles',
+                link: '/estructures-de-dades/piles.html',
             },
             {
                 text: 'Cues',
-                link: '/estructures-de-dades/cues',
+                link: '/estructures-de-dades/cues.html',
             },
             {
                 text: 'Cues de prioritat',
-                link: '/estructures-de-dades/cues-de-prioritat',
+                link: '/estructures-de-dades/cues-de-prioritat.html',
             },
         ],
     },
     {
-        text: 'Algunes llibreries',
+        text: 'NumPy',
+        collapsed: true,
+        items: [
+            {
+                text: 'Introducció',
+                link: '/numpy/introduccio.html',
+            },
+            {
+                text: 'Arrays',
+                link: '/numpy/arrays.html',
+            },
+            {
+                text: 'Accés',
+                link: '/numpy/acces.html',
+            },
+            {
+                text: 'Operacions',
+                link: '/numpy/operacions.html',
+            },
+            { 
+                text: 'Manipulació de formes i dimensions',
+                link: '/numpy/formes.html',
+            },
+            { 
+                text: 'Àlgebra lineal',
+                link: '/numpy/algebra-lineal.html',
+            },
+            {
+                text: 'Entrada i sortida',
+                link: '/numpy/entrada-sortida.html',
+            },
+            {   
+                text: 'Bones pràctiques i optimització',
+                link: '/numpy/optimitzacio.html',
+            }
+        ],
+    },
+    {
+        text: 'Matplotlib',
+        collapsed: true,
+        items: [
+            {
+                text: 'Matplotlib',
+                link: '/matplotlib/index.html',
+            },
+        ]
+    },
+    {
+        text: 'Pandas',
+        collapsed: true,
+        items: [
+            {
+                text: 'Pandas',
+                link: '/pandas/introduccio.html',
+            },
+            {
+                text: 'Series i DataFrames',
+                link: '/pandas/dades.html',
+            },
+            {
+                text: 'Lectura i escriptura',
+                link: '/pandas/lectura-escriptura.html',
+            },
+            {
+                text: 'Exploració de dades',
+                link: '/pandas/exploracio.html',
+            },
+            {
+                text: 'Manipulació de dades',
+                link: '/pandas/manipulacio.html',
+            },
+            {
+                text: 'Agrupament i agregació',
+                link: '/pandas/agrupacio-agregacio.html',
+            }            ,
+            {
+                text: 'Bones pràctiques i optimització',
+                link: '/pandas/optimitzacio.html',
+            }
+
+        ]
+    },
+    {
+        text: 'Més llibreries',
         collapsed: true,
         items: [
             {
                 text: 'Lectura amb Yogi',
-                link: '/yogi/',
+                link: '/yogi/index.html',
             },
             {
                 text: 'Gràfics amb PIL',
-                link: '/grafics/',
+                link: '/grafics/index.html',
             },
             {
                 text: 'Fitxers i formats',
-                link: '/fitxers/',
+                link: '/fitxers/index.html',
             },
             {
                 text: 'Bots amb Telegram',
-                link: '/telegram/',
+                link: '/telegram/index.html',
             },
         ],
     },
@@ -511,7 +594,7 @@ export const index = [
         items: [
             {
                 text: 'Índex',
-                link: '/upc-python-cookbook/',
+                link: '/upc-python-cookbook/index.html',
             },
         ],
     },

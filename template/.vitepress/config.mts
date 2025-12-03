@@ -92,5 +92,5 @@ export default defineConfig({
 
     ignoreDeadLinks: true,
 
-    cleanUrls: true,
+    cleanUrls: false,
 })
