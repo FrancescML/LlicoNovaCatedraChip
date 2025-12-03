@@ -11,15 +11,15 @@ La secció [Miscellaneous](https://jutge.org/courses/JordiCortadella:IntroCircui
 
 ## Exercicis a Jutge.org: [Introduction to Digital Circuit Design](https://jutge.org/courses/JordiCortadella:IntroCircuits)
 
-[X31534   Add 7 bits](https://jutge.org/problems/X31534_en)
+[Add 7 bits](https://jutge.org/problems/X31534_en)
 
-[X51732   Hamming distance](https://jutge.org/problems/X51732_en)
+[Hamming distance](https://jutge.org/problems/X51732_en)
 
-[X74712   Accumulator](https://jutge.org/problems/X74712_en)
+[Accumulator](https://jutge.org/problems/X74712_en)
 
-[X09271   Sequential adder](https://jutge.org/problems/X09271_en)
+[Sequential adder](https://jutge.org/problems/X09271_en)
 
-[X30847   4-bit multiplier](https://jutge.org/problems/X30847_en)
+[4-bit multiplier](https://jutge.org/problems/X30847_en)
 
 <small>*Recorda que per accedir als exercicis i que el **Jutge** valori les teves solucions has d'estar inscrit al [curs](https://jutge.org/courses/JordiCortadella:IntroCircuits)*. Troba totes les instruccions [aqui](../Inici/instruccions.md)</small>
 

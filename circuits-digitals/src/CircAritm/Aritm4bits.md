@@ -153,15 +153,15 @@ Les UALs (*ALU*) normalment trien entre 4 operacions (multiplexors de 4 entrades
 
 ## Exercicis a Jutge.org: [Introduction to Digital Circuit Design](https://jutge.org/courses/JordiCortadella:IntroCircuits)
 
-[X64833   4-bit adder](https://jutge.org/problems/X64833_en)
+[4-bit adder](https://jutge.org/problems/X64833_en)
 
-[X58456   4-bit incrementer](https://jutge.org/problems/X58456_en)
+[4-bit incrementer](https://jutge.org/problems/X58456_en)
 
-[X42916   4-bit adder/subtractor](https://jutge.org/problems/X42916_en)
+[4-bit adder/subtractor](https://jutge.org/problems/X42916_en)
 
-[X61860   4-bit comparator](https://jutge.org/problems/X61860_en)
+[4-bit comparator](https://jutge.org/problems/X61860_en)
 
-[X35448   4-bit ALU](https://jutge.org/problems/X35448_en)
+[4-bit ALU](https://jutge.org/problems/X35448_en)
 
 
 <small>*Recorda que per accedir als exercicis i que el **Jutge** valori les teves solucions has d'estar inscrit al [curs](https://jutge.org/courses/JordiCortadella:IntroCircuits)*. Troba totes les instruccions [aqui](../Inici/instruccions.md)</small>

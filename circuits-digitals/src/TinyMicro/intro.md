@@ -11,13 +11,13 @@ La els exercicis [Tiny Micro](https://jutge.org/courses/JordiCortadella:IntroCir
 
 ## Exercicis a Jutge.org: [Introduction to Digital Circuit Design](https://jutge.org/courses/JordiCortadella:IntroCircuits)
 
-[X67117 TinyMicro ALU](https://jutge.org/problems/X67117_en)
+[TinyMicro ALU](https://jutge.org/problems/X67117_en)
 
-[X62350 TinyMicro datapath](https://jutge.org/problems/X62350_en)
+[TinyMicro datapath](https://jutge.org/problems/X62350_en)
 
-[X83229 TinyMicro program counter](https://jutge.org/problems/X83229_en)
+[TinyMicro program counter](https://jutge.org/problems/X83229_en)
 
-[X66986 TinyMicro control unit](https://jutge.org/problems/X66986_en)
+[TinyMicro control unit](https://jutge.org/problems/X66986_en)
 
 
 <small>*Recorda que per accedir als exercicis i que el **Jutge** valori les teves solucions has d'estar inscrit al [curs](https://jutge.org/courses/JordiCortadella:IntroCircuits)*. Troba totes les instruccions [aqui](../Inici/instruccions.md)</small>
