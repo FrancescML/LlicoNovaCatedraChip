@@ -27,7 +27,9 @@ El diagrama d’estats de Moore representa:
 + Les entrades del circuit s’indiquen damunt les fletxes de canvi d’estat.
 + Les sortides s’indiquen dins el cercle de l’estat sota el nom de l’estat (Estat/Sortida).
 
-<img src='./diagramaMoore.png' alt="Diagrama d'estats, model de Moore" style="display:block; height:180px; margin:0 auto; border-radius:8px; background-color: rgba(255, 255, 255, 1); padding:4px;"/>
+<img src='./diagramaMoore.png' alt="Diagrama d'estats, model de Moore" style="display:block; height:300px; margin:0 auto; border-radius:8px; background-color: rgba(255, 255, 255, 1); padding:4px;"/>
+<center><i>Model de Moore</i></center>
+
 
 La següent taula ens ajudarà a navegar pel diagrama d’estats. La primera columna representa l’estat actual de la màquina i la seva sortida corresponent. Quan el senyal de rellotge provoca un canvi d’estat, l’estat següent dependrà de l’entrada. Si $Entrada=0$ la màquina canviarà a l’estat de la segona  columna, si $Entrada=1$ canviarem a l’estat de la tercera columna.
 
@@ -77,7 +79,8 @@ El seu diagrama d’estats és com el següent:
 + Els canvis d’estat s’indiquen amb fletxes.
 + Les entrades i les sortides es representen junts al costat de les fletxes (entrada/sortida).
 
-<img src='./diagramaMealy.png' alt="Diagrama d'estats, model de Mealy" style="display:block; height:180px; margin:0 auto; border-radius:8px; background-color: rgba(255, 255, 255, 1); padding:4px;"/>
+<img src='./diagramaMealy.png' alt="Diagrama d'estats, model de Mealy" style="display:block; height:300px; margin:0 auto; border-radius:8px; background-color: rgba(255, 255, 255, 1); padding:4px;"/>
+<center><i>Model de Mealey</i></center>
 
 
 La taula a continuació ens ajudarà a entendre el diagrama d’estats.
@@ -150,7 +153,7 @@ $S_{out}: 0,0,1,1,0,0,1,1,1,1,0,0,0,1,0,1…$
 
 Per causar un retard de dos cicles ens cal utilitzar dos biestables de tipus D connectats en sèrie com el de la figura.
 
-<img src='./exemple_0circuit.png' alt="Retardador de 2 cicles" style="display:block; height:180px; margin:0 auto; border-radius:8px; background-color: rgba(255, 255, 255, 1); padding:4px;"/>
+<img src='./exemple_0circuit.png' alt="Retardador de 2 cicles" style="display:block; height:200px; margin:0 auto; border-radius:8px; background-color: rgba(255, 255, 255, 1); padding:4px;"/>
 
 
 A cada pols de rellotge l’entrada $S_{in}$ es copia al Biestable 0. El valor que tenia el biestable 0 ($Q_0$) passa al biestable 1 ($Q_1$). I el valor que tenia el biestable 1 és llegit com a sortida $S_{out}$. D’aquesta manera, aquesta estructura retarda dos cicles el pas d’un senyal $S_{in}$ que entra al Biestable 0, passa pel Biestable 1 i surt com a  $S_{out}$.
@@ -208,7 +211,7 @@ A aquest circuit li afegirem més endavant un senyal de reinici $rst$ (*reset*) 
 
 El diagrama d’estats queda així definit.
 
-<img src='./exemple_0diagrama.png' alt="Diagrama estats retardador de 2 cicles" style="display:block; height:180px; margin:0 auto; border-radius:8px; background-color: rgba(255, 255, 255, 1); padding:4px;"/>
+<img src='./exemple_0diagrama.png' alt="Diagrama estats retardador de 2 cicles" style="display:block; height:400px; margin:0 auto; border-radius:8px; background-color: rgba(255, 255, 255, 1); padding:4px;"/>
 
 Veient que la sortida $S_{out}$ depèn únicament de l’estat on ens trobem, podem afirmar que aquest circuit serà una **màquina de Moore**.
 
