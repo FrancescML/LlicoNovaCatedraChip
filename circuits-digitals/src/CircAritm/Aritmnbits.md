@@ -66,13 +66,13 @@ CircuitVerse no considera un valor constant com a una variable d’entrada en fo
 
 ## Exercicis a Jutge.org: [Introduction to Digital Circuit Design](https://jutge.org/courses/JordiCortadella:IntroCircuits)
 
-[X84292   n-bit adder](https://jutge.org/problems/X84292_en)
+[n-bit adder](https://jutge.org/problems/X84292_en)
 
-[X41839   n-bit incrementer](https://jutge.org/problems/X41839_en)
+[n-bit incrementer](https://jutge.org/problems/X41839_en)
 
-[X89356   n-bit adder/subtractor](https://jutge.org/problems/X89356_en)
+[n-bit adder/subtractor](https://jutge.org/problems/X89356_en)
 
-[X37457   n-bit comparator](https://jutge.org/problems/X37457_en)
+[n-bit comparator](https://jutge.org/problems/X37457_en)
 
 <small>*Recorda que per accedir als exercicis i que el **Jutge** valori les teves solucions has d'estar inscrit al [curs](https://jutge.org/courses/JordiCortadella:IntroCircuits)*. Troba totes les instruccions [aqui](../Inici/instruccions.md)</small>
 
