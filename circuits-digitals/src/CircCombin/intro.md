@@ -6,8 +6,8 @@
 
 # Introducció als Circuits Combinacionals
 
-En un circuit combinacional el valor de la seva sortida depèn únicament dels valors de les seves entrades en aquell moment. Això significa també que la sortida canvia de manera instantània en modificar-se les entrades.
-Els circuits combinacionals es construeixen a partir de portes lògiques bàsiques. No tenen retroalimentació interna (la sortida no s’enllaça com a entrada). Tampoc tenen memòria, a diferència dels circuits seqüencials. El seu funcionament es pot descriure completament mitjançant l’àlgebra de Boole o amb taules de veritat.
+En un circuit combinacional el valor de la seva sortida depèn únicament dels valors de les seves entrades en aquell moment. La sortida canvia de manera instantània en modificar-se les entrades.
+Els circuits combinacionals es construeixen a partir de portes lògiques bàsiques. No tenen retroalimentació interna, la sortida no s’enllaça com a entrada. Tampoc tenen memòria, a diferència dels circuits seqüencials. El seu funcionament es pot descriure completament mitjançant l’àlgebra de Boole o amb taules de veritat.
 
 
 <img src="../Intro/combinacional.png" alt="Circuit combinacional" style="display:block; width:500px; margin:0 auto; border-radius:8px; background-color: rgba(255, 255, 255, 1); padding:4px;"/>
@@ -42,7 +42,7 @@ Al tema [Busos](./busos.md) faràs exercicis de corriment de bits (dreta i esque
 
 Els exercicis del tema [Nombres](./nombres.md) tracten sobre els circuits digitals encarregats de fer diferents operacions amb números.
 
-Al [tema BCD](./bcddigits.md) (Binary Coded Decimal) faràs exercicis sobre els circuits encarregats codificar els dígits decimals en binari.
+Al tema [BCD](./bcddigits.md) (Binary Coded Decimal) faràs exercicis sobre els circuits encarregats codificar els dígits decimals en binari.
 
 Finalment, al tema [Miscel·lània](./miscellania.md) faràs exercicis més avançats.
 

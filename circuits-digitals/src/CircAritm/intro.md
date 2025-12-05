@@ -9,19 +9,19 @@
 Els circuits aritmètics són una subclasse fonamental dels circuits digitals combinacionals. La seva funció principal és efectuar operacions matemàtiques bàsiques amb nombres binaris.
 
 
-Les operacions més habituals que implementen són:
+Les operacions bàsiques més habituals que implementen són:
 
-**Semisumador (*Half Adder*)**: Circuit que suma dos bits i produeix una sortida de suma $S$ i un ròssec (*carry*) $C$.
+**Semisumador (*Half Adder*)**: Circuit que suma dos bits i produeix una sortida de suma $S$ i un bit de ròssec (*carry*) $C$.
 
 <img src='./blochalfadder.png' alt="Semisumador (*Half Adder*)" style="display:block; width:200px; margin:0 auto; border-radius:8px; background-color: rgba(255, 255, 255, 1); padding:4px;"/>
-<center><i>Semisumador (*Half Adder*)</i></center>
+<center><i>Semisumador (Half Adder)</i></center>
 
 **Sumador complet (*Full Adder*)**: Suma tres bits (dos d’entrada i el ròssec de l’etapa anterior). És el bloc bàsic per construir sumadors de diversos bits mitjançant la connexió en cascada.
 
 <img src='./blocfulladder.png' alt="Sumador complet (*Full Adder*)" style="display:block; width:200px; margin:0 auto; border-radius:8px; background-color: rgba(255, 255, 255, 1); padding:4px;"/>
-<center><i>Sumador complet (*Full Adder*)</i></center>
+<center><i>Sumador complet (Full Adder)</i></center>
 
-**Sumador de n bits**: Amb els semi sumadors i sumadors complets es poden construir sumadors de n bits. Aquests circuits realitzen una suma binaria de dos nombres $A$ i $B$.
+**Sumador de n bits**: Amb els semisumadors i sumadors complets es poden construir sumadors de n bits. Aquests circuits realitzen una suma binaria de dos nombres $A$ i $B$.
 
 <img src='./blocsumador4bits.png' alt="Sumador de 4 bits" style="display:block; width:600px; margin:0 auto; border-radius:8px; background-color: rgba(255, 255, 255, 1); padding:4px;"/>
 <center><i>Sumador de 4 bits</i></center>
@@ -50,7 +50,7 @@ Els circuits aritmètics constitueixen també el nucli de les Unitats Aritmètic
 
 En aquesta lliçó trobaràs els següents temes:
 
-En el tema de [**Circuits bàsics**](./CircBasics.md) veurem els circuits de half adder, full adder i els comparadors
+En el tema de [**Circuits bàsics**](./CircBasics.md) veurem el circuit semisumador (*half adder*), sumador complet (*full adder*) i els comparadors
 En el tema [**Aritmètica de 4 bits**](./Aritm4bits.md) veurem els circuits incrementadors i sumadors de 4 bits. Veurem també un exercici de UAL.
 En el tema [**Aritmètica de n bits**](./Aritmnbits.md) veurem circuits incrementadors, sumadors i comparadors per a un nombre de n bits.
 Finalment, en el tema de [**Miscel·lània**](./miscellania.md) es recull una sèrie d'exercicis de circuits aritmètics més avançats com els multiplicadors, els acumuladors de bits i els circuits seqüencial adders.

@@ -6,26 +6,26 @@
 
 # Aritmètica de 4 bits
 
-A continuació tractarem els circuits aritmètics que efectuen operacions amb 4 bits. Veurem exemples de sumadors i restadors de 4 bits i una UAL (ALU) molt simple.
+A continuació tractarem alguns circuits aritmètics que efectuen operacions amb 4 bits. Veurem exemples de sumadors i restadors de 4 bits i una UAL (ALU) molt simple.
 
 ## EXEMPLE: Suma de nombres de 4 bits
 
 En aquest exemple veurem com podem sumar dos nombres binaris de 4 bits.
-Els sumadors binaris (o **ripple-carry adders**) es poden construir amb sumadors complets (**full adders**) i un semisumador (**half adder**). Al tractar-se d’una suma de 4 bits, haurem d'encadenar 3 sumadors complets i un semisumador, o bé 4 sumadors complets si configurem el primer sumador complet com a semisumador.
+Els sumadors binaris (o *ripple-carry adders*) es poden construir amb sumadors complets (*full adders*) i un semisumador (*half adder*). Al tractar-se d’una suma de 4 bits, haurem d'encadenar 3 sumadors complets i un semisumador, o bé 4 sumadors complets si configurem el primer sumador complet com a semisumador.
 
-CircuitVerse té un objecte anomenat **adder** que implementa un sumador.
+[CircuitVerse](https://circuitverse.org/simulator) té un objecte anomenat *adder* que implementa un sumador.
 
 <img src='./circuitelements.png' style="display:block; height:200px; margin:0 auto; border-radius:8px; background-color: rgba(255, 255, 255, 1); padding:4px;"/>
-
-Les entrades $A$ i $B$ són les variables que es sumen i $C_{in}$ és el bit de carry d'entrada. Les sortides són $Sum$ amb el resultat i $C_{out}$ amb el *carry* de sortida. Si passem el ratolí per les entrades i sortides de l'objecte podem veure el seu nom:
 
 <div style="display: flex; justify-content: center; align-items:center; gap: 16px;">
     <img src='./A.png' style="display:block;    width:80px; margin:0 auto; border-radius:8px; background-color: rgba(255, 255, 255, 1); padding:4px;"/>
     <img src='./B.png' style="display:block;    width:80px; margin:0 auto; border-radius:8px; background-color: rgba(255, 255, 255, 1); padding:4px;"/>
     <img src='./Cin.png' style="display:block;  width:80px; margin:0 auto; border-radius:8px; background-color: rgba(255, 255, 255, 1); padding:4px;"/>
-    <img src='./sum.png' style="display:block;  width:80px; margin:0 auto; border-radius:8px; background-color: rgba(255, 255, 255, 1); padding:4px;"/>
+    <img src='./Sum.png' style="display:block;  width:80px; margin:0 auto; border-radius:8px; background-color: rgba(255, 255, 255, 1); padding:4px;"/>
     <img src='./Cout.png' style="display:block; width:80px; margin:0 auto; border-radius:8px; background-color: rgba(255, 255, 255, 1); padding:4px;"/>
 </div>
+
+Les entrades **A** i **B** són les variables que es sumen i **Cin** és el bit de carry d'entrada. Les sortides són **Sum** amb el resultat i **Cout** amb el **carry** de sortida. Si passem el ratolí per les entrades i sortides de l'objecte podem veure el seu nom:
 
 
 El circuit que efectua la suma concatena 3 sumadors complets i un semisumador:
@@ -33,23 +33,28 @@ El circuit que efectua la suma concatena 3 sumadors complets i un semisumador:
 <img src='./blocsumador4bits.png' alt="Sumador de 4 bits" style="display:block; width:600px; margin:0 auto; border-radius:8px; background-color: rgba(255, 255, 255, 1); padding:4px;"/>
 <center><i>Sumador de 4 bits</i></center>
 
-Si convé, podem implementar el mateix circuit amb 4 sumadors complets. La funció del semisumador la pot fer un sumador complet si hi introduim una constant '0' a la seva entrada $C_{in}$.
+Si convé, podem implementar el mateix circuit amb 4 sumadors complets. La funció del semisumador la pot fer un sumador complet si hi introduim una constant $0$ a la seva entrada $C_{entrada}$.
 
 
 <img src='./blocsumador4bits_alt.png' alt="Sumador de 4 bits" style="display:block; width:600px; margin:0 auto; border-radius:8px; background-color: rgba(255, 255, 255, 1); padding:4px;"/>
 <center><i>Sumador de 4 bits</i></center>
 
-Implementem-ho doncs a CircuitVerse amb els següents valors d'exemple:
-
-* Entrada $A = 0010$
-* Entrada $B = 0001$
-* Sortida $S = A+B$
-* Sortida $C_{out}=$ Carry de sortida
+Implementem-ho doncs a CircuitVerse:
 
 <img src='./4fulladdersconcatenats.png' style="display:block; height:400px; margin:0 auto; border-radius:8px; background-color: rgba(255, 255, 255, 1); padding:4px;"/>
-<center><i>Sumador de 4 bits</i></center>
+<center><i>Sumador de 4 bits a CircuitVerse</i></center>
 
-A Jutge.org els exercicis d'àlgebra de 4 bits i àlgebra de n bits utilitzen una nomenclatura de busos $A [3:0]$ (que ja varem definir a [Busos](../CircCombin/busos#exemple-disseny-d-un-circuit-desplacador-de-bus-a-l-esquerra-n-bits)) i unes entrades i sortides de 4 o $n$ bits. Per tal que Jutge pugui validar correctament el circuit que hem dissenyat, haurem de fer ús de la proprietat *BitWidth* de les entrades, sortides i *adders*. Aquest paràmetre es pot veure al menú *properties*:
+En aquest exemple els valors d'entrada són:
+
+* Entrada **A** = 0010
+* Entrada **B** = 0001
+
+I les sortides:
+
+* Sortida **S = A+B**
+* Sortida **Cout** = Carry de sortida
+
+A Jutge.org els exercicis d'àlgebra de 4 bits i àlgebra de n bits utilitzen una nomenclatura de busos $A [3:0]$ (que ja varem definir a [Busos](../CircCombin/busos#notacio)) i unes entrades i sortides de 4 o $n$ bits. Per tal que Jutge pugui validar correctament el circuit que hem dissenyat, haurem de fer ús de la proprietat *BitWidth* de les entrades, sortides i *adders*. Aquest paràmetre es pot veure al menú *properties*:
 
 <div style="display: flex; justify-content: center; align-items:center; gap: 16px;">
     <img src='./A4bit.png' style="display:block; width:200px; margin:0 auto; border-radius:8px; background-color: rgba(255, 255, 255, 1); padding:4px;"/>
@@ -65,18 +70,19 @@ Fixa’t que a CircuitVerse les entrades i sortides, al ser de 4 bits, tenen un 
 
 ## EXEMPLE: Resta de nombres de 4 bits
 
-En aquest exemple veurem com es realitza una resta de 4 bits. Considerem les següents variables:
-
-* Entrada $A=1100$ (o 12​ en decimal)
-* Entrada $B=0101$​ (o 5 en decimal​)
-* Sortida $S=A-B$ (de 4 bits)
-* Sortida $C_{out}=$ Carry de sortida
-
 Per tal de restar 2 nombres binaris hem d’utilitzar la següent fórmula:
 
 $S= A-B = A+(\bar{B}+1)$
 
-Primer cal negar $B$:
+En aquest exemple veurem com es realitza una resta de 4 bits. Considerem les següents variables amb valors exempls:
+
+* Entrada **A**=1100 (o 12​ en decimal)
+* Entrada **B**=0101​ (o 5 en decimal​)
+* Sortida **S=A-B** (de 4 bits)
+* Sortida **Cout** = Carry de sortida
+
+
+Per fer la resta primer cal negar $B$:
 
 $B= 0101   \rightarrow   \bar{B}=1010$
 
@@ -84,16 +90,16 @@ Després podem realitzar la suma:
 
 $S= A+ \bar{B} +1 = 1100+ 1010+1= 1100 + 1011= 0111$ (7 en decimal)
 
-La taula següent especifica aquesta operació bit a bit.
+La taula següent especifica aquesta operació bit a bit (aquesta no és una taula de veritat).
 
-| bit | $A_i$ | $\bar{B_i}$ | $C_i$ | $S_i$ | $C_{out}$ |
+| bit | $A_i$ | $\bar{B_i}$ | $C_i$ | $S_i$ | $C_{sortida}$ |
 |:---:|:---:|:---:|:---:|:---:|:---:|
 | 0 (LSB)| 0 | 0 | 1 | 1 | 0 |
 | 1 | 0 | 1 | 0 | 1 | 0 |
 | 2 | 1 | 0 | 0 | 1 | 0 |
 | 3 (MSB) | 1 | 1 | 0 | 0 | 1 |
 
-El circuit que efectua la resta també concatena 4 sumadors:
+El circuit que efectua la resta també concatena 4 sumadors, però amb la $B$ negada i $C_{entrada}=1$ :
 <img src='./blocrestador4bits.png' alt="Restador de 4 bits" style="display:block; width:600px; margin:0 auto; border-radius:8px; background-color: rgba(255, 255, 255, 1); padding:4px;"/>
 <center><i>Restador de 4 bits</i></center>
 
@@ -109,9 +115,11 @@ Utilitzant un *BitWidth* de 4 simplifiquem el circuit:
 
 ## EXEMPLE: Triar operacions
 
-A més d'efectuar operacions aritmètiques, els circuits aritmètics també poden implementar un circuit que  tria una operació en particular. Les UAL (**ALU**) són circuits que permeten triar entre diferents operacions en funció d'una variable. Aquest exemple explora aquesta funció.
+A més d'efectuar operacions aritmètiques, els circuits aritmètics també poden implementar un circuit que  tria una operació en particular. Les UAL (ALU) són circuits que permeten triar entre diferents operacions en funció d'una variable. Aquest exemple explora aquesta funció.
 
-Volem implementar un circuit que triï entre una suma i una resta en funció d’una variable $op$. Si $op=0$ es farà una suma i si $op=1$ una resta.
+Volem implementar un circuit que triï entre una suma i una resta en funció d’una variable d'entrada $op$.
+
+Si $op=0$ es farà una suma i si $op=1$ es farà una resta.
 
 Per realitzar la suma de 4 bits de  $A+B$ farem servir un *Adder* amb un *BitWidth* 4. 
 El *carry* d'entrada $Cin$ de l’*adder* a de ser 0, per tant hi connectarem un terra o *ground*.
@@ -132,7 +140,7 @@ Tant *Power* com *Ground* es poden localitzar al menú d’inputs de CircuitVers
 
 
 
-Ara cal afegir la part del circuit capaç de triar entre una operació o l’altre a partir de la variable $op$. Utilitzarem un multiplexor, com el que vàrem veure a l’apartat [Multiplexors](../CircCombin/multiplexors.md) dels circuits combinacionals. Els multiplexors deixen passar un senyal o un altre en funció d'una variable selectora i és això el que ens cal en aquest cas.
+Ara cal afegir la part del circuit capaç de triar entre una operació o l’altre a partir de la variable d'entrada $op$. Utilitzarem un multiplexor, com el que vàrem veure a l’apartat [Multiplexors](../CircCombin/multiplexors.md) dels circuits combinacionals. Els multiplexors deixen passar un senyal o un altre en funció d'una variable selectora i és això el que ens cal en aquest cas.
 
 El circuit complet, afegint aquest darrer element, és el següent:
 <img src='./triarsumasuma.png' style="display:block; height:200px; margin:0 auto; border-radius:8px; background-color: rgba(255, 255, 255, 1); padding:4px;"/>

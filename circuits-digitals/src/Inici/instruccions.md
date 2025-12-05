@@ -8,10 +8,10 @@
 # Instruccions
 
 ## **Com seguir les lliçons**
-Al menú lateral d'aqui a l'esquerra trobaràs totes les lliçons que conformen aquest recurs educatiu.
-Ja pots començar per la la primera lliçó, l'introducció als circuits digitals, a l'àlgebra de Boole i als mapes de Karnaugh.
+Al menú lateral d'aqui a l'esquerra trobaràs les lliçons que conformen aquest recurs educatiu.
+Ja pots començar per la primera lliçó, l'introducció als circuits digitals, a l'àlgebra de Boole i als mapes de Karnaugh.
 
-La resta de lliçons estan dedicades als diferents tipus de circuits digitals, contenen la teoria i un o dos exemples. A més, al final de cada lliçó et proposem fer alguns exercicis del curs [Introduction to Digital Circuit Design](https://jutge.org/courses/JordiCortadella:IntroCircuits), dins de [jutge.org](https://jutge.org).
+La resta de lliçons estan dedicades als diferents tipus de circuits digitals, contenen la teoria i un o dos exemples. A més, al final de cada lliçó et proposem fer alguns exercicis del curs [*Introduction to Digital Circuit Design*](https://jutge.org/courses/JordiCortadella:IntroCircuits), dins de [jutge.org](https://jutge.org).
 
 Troba tot seguit les instruccions per solucionar els problemes i sotmetre'ls al veredicte del nostre Jutge. Revisa-les quan les necessitis.
 
@@ -32,7 +32,7 @@ Un cop tinguis accés als recursos de jutge.org, et pots incriure al curs [Intro
 
 <img src='./enroll.png' alt="enroll" style="display:block; width:450px; margin:0 auto; border-radius:8px; background-color: rgba(255, 255, 255, 1); padding:4px; border:5px solid #999;" />
 
-Dins d'aquest curs trobaràs els enunciats dels exercicis. També podràs enviar les teves solucions al **Jutge**, que valorarà la seva validesa i emetrà un veredicte.
+Dins d'aquest curs trobaràs els enunciats dels exercicis. També podràs enviar les teves solucions al Jutge, que valorarà la seva validesa i emetrà un veredicte.
 
 ## Com presentar la teva solució a un exercici
 
@@ -48,11 +48,11 @@ Els exercicis estan ordenats per temes i cadascun té un codi identificatiu úni
 
 <img src='./codi.png' alt="codi" style="display:block; width:450px; margin:0 auto; border-radius:8px; background-color: rgba(255, 255, 255, 1); padding:4px; border:5px solid #999;" />
 
-També pots accedir als exercicis directament des de les lliçons a partir dels enllaços que hi trobaràs. Aquesta és una alternativa més ràpida, però recorda que primer has d'haver obert la sessió a **jutge.org**.
+També pots accedir als exercicis directament des de les lliçons a partir dels enllaços que hi trobaràs. Aquesta és una alternativa més ràpida, però recorda que **primer has d'haver obert la sessió a jutge.org.**
 
 <img src='./enllaç.png' alt="enllaç" style="display:block; width:450px; margin:0 auto; border-radius:8px; background-color: rgba(255, 255, 255, 1); padding:4px; border:5px solid #999;" />
 
-La  pàgina de l'exercici és com la següent:
+La pàgina de l'exercici és com aquesta:
 
 <img src='./exercici.png' alt="enllaç" style="display:block; width:600px; margin:0 auto; border-radius:8px; background-color: rgba(255, 255, 255, 1); padding:4px; border:5px solid #999;" />
 
@@ -74,7 +74,7 @@ A CircuitVerse pots arrossegar portes lògiques al teu circuit, connectar-les i 
 
 <img src='./exportverilog.png' alt="enllaç" style="display:block; width:450px; margin:0 auto; border-radius:8px; background-color: rgba(255, 255, 255, 1); padding:4px; border:5px solid #999;" />
 
-*Verilog* és un llenguatge de descripció de hardware (*HDL - Hardware Description Language*, per les sigles en anglès) que s'utilitza per descriure circuits electrònics digitals com microprocessadors o components lògics.
+*Verilog* és un llenguatge de descripció de hardware (*HDL - Hardware Description Language*, per les sigles en anglès) que es pot utilitzar per descriure circuits electrònics digitals com microprocessadors o components lògics.
 
 **Presenta el teu exercici al Jutge**. Puja el fitxer que acabes de generar dins l'àrea ***New submission*** de l'exercici.
 

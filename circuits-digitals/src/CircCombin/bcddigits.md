@@ -6,7 +6,7 @@
 
 # BCD digits
 
-En circuits digitals, els dígits BCD (Binary Coded Decimal), o Decimal Codificat a Binari, són una forma de representar nombres decimals utilitzant un codi binari. La idea és codificar cada dígit decimal individualment amb un nombre binari, generalment de 4 bits.
+En circuits digitals un nombre Decimal Codificat a Binari (en anglès *Binary Coded Decimal* o *BCD*) és una forma de representar nombres decimals utilitzant un codi binari. La idea és codificar cada dígit decimal individualment amb un nombre binari, generalment de 4 bits.
 
 
 |**Dígit decimal**|**BCD**
@@ -45,21 +45,21 @@ La figura següent representa la disposició estàndard dels 7 segments, que far
 <img src='./segments.png' alt="Disposició dels 7 segments" style="display:block; height:350px; margin:0 auto; border-radius:8px; background-color: rgba(255, 255, 255, 1); padding:4px;"/>
 <center><i>Disposició dels 7 segments</i></center>
 
-La taula de veritat següent determina quins dels segments $a$, $b$, $c$, $d$, $e$, $f$ i $g$ han d'estar encesos ('1') i quins apagats ('0') per a cadascun dels valors d'entrada de $D[3:0]$.
+La taula de veritat següent determina quins dels segments $a$, $b$, $c$, $d$, $e$, $f$ i $g$ han d'estar encesos ($1$)' i quins apagats ($0$) per a cadascun dels valors d'entrada de $D[3:0]$.
 
 
-| digit <br> decimal | BCD <br> $D_3 D_2 D_1 D_0$ | $a$ | $b$ | $c$ | $d$ | $e$ | $f$ | $g$ | aspecte
+| digit <br> decimal | BCD <br> $D_3 D_2 D_1 D_0$ | $a$ | $b$ | $c$ | $d$ | $e$ | $f$ | $g$ | display
 |:---:|:---:|---|---|---|---|---|---|---|---
-| 0 | 0000 | 1| 1| 1| 1| 1| 1| 0|<img src='./7-segment_abcdef.svg' style="display:block; height:50px; margin:0 auto;"/>
-| 1 | 0001 | 0| 1| 1| 0| 0| 0| 0|<img src='./7-segment_bc.svg'     style="display:block; height:50px; margin:0 auto;"/>
-| 2 | 0010 | 1| 1| 0| 1| 1| 0| 1|<img src='./7-segment_abdeg.svg'  style="display:block; height:50px; margin:0 auto;"/>
-| 3 | 0011 | 1| 1| 1| 1| 0| 0| 1|<img src='./7-segment_abcdg.svg' style="display:block; height:50px; margin:0 auto;"/>
-| 4 | 0100 | 0| 1| 1| 0| 0| 1| 1|<img src='./7-segment_bcfg.svg' style="display:block; height:50px; margin:0 auto;"/>
-| 5 | 0101 | 1| 0| 1| 1| 0| 1| 1|<img src='./7-segment_acdfg.svg' style="display:block; height:50px; margin:0 auto;"/>
-| 6 | 0110 | 1| 0| 1| 1| 1| 1| 1|<img src='./7-segment_acdefg.svg' style="display:block; height:50px; margin:0 auto;"/>
-| 7 | 0111 | 1| 1| 1| 0| 0| 0| 0|<img src='./7-segment_abc.svg' style="display:block; height:50px; margin:0 auto;"/>
+| 0 | 0000 | 1| 1| 1| 1| 1| 1| 0|<img src='./7-segment_abcdef.svg'  style="display:block; height:50px; margin:0 auto;"/>
+| 1 | 0001 | 0| 1| 1| 0| 0| 0| 0|<img src='./7-segment_bc.svg'      style="display:block; height:50px; margin:0 auto;"/>
+| 2 | 0010 | 1| 1| 0| 1| 1| 0| 1|<img src='./7-segment_abdeg.svg'   style="display:block; height:50px; margin:0 auto;"/>
+| 3 | 0011 | 1| 1| 1| 1| 0| 0| 1|<img src='./7-segment_abcdg.svg'   style="display:block; height:50px; margin:0 auto;"/>
+| 4 | 0100 | 0| 1| 1| 0| 0| 1| 1|<img src='./7-segment_bcfg.svg'    style="display:block; height:50px; margin:0 auto;"/>
+| 5 | 0101 | 1| 0| 1| 1| 0| 1| 1|<img src='./7-segment_acdfg.svg'   style="display:block; height:50px; margin:0 auto;"/>
+| 6 | 0110 | 1| 0| 1| 1| 1| 1| 1|<img src='./7-segment_acdefg.svg'  style="display:block; height:50px; margin:0 auto;"/>
+| 7 | 0111 | 1| 1| 1| 0| 0| 0| 0|<img src='./7-segment_abc.svg'     style="display:block; height:50px; margin:0 auto;"/>
 | 8 | 1000 | 1| 1| 1| 1| 1| 1| 1|<img src='./7-segment_abcdefg.svg' style="display:block; height:50px; margin:0 auto;"/>
-| 9 | 1001 | 1| 1| 1| 1| 0| 1| 1|<img src='./7-segment_abcdfg.svg' style="display:block; height:50px; margin:0 auto;"/>
+| 9 | 1001 | 1| 1| 1| 1| 0| 1| 1|<img src='./7-segment_abcdfg.svg'  style="display:block; height:50px; margin:0 auto;"/>
 |10 <br> don't care| 1010| x| x| x| x| x| x| x
 |11 <br> don't care| 1011| x| x| x| x| x| x| x
 |12 <br> don't care| 1100| x| x| x| x| x| x| x
@@ -68,10 +68,11 @@ La taula de veritat següent determina quins dels segments $a$, $b$, $c$, $d$, $
 |15 <br> don't care| 1111| x| x| x| x| x| x| x
 
 
-Els 4 bits d’entrada permeten codificar fins al nombre 15. Els valors del 10 al 15 també apareixen a la taula de veritat, però no ens importa quina sortida generin, ja que no els farem servir. Aquests casos s’anomenen típicament **condicions indiferents** (*don’t care cases*) i es representen amb una x.
-A l’hora de buscar agrupacions al mapa de Karnaugh, els podem assignar els valors que més ens convinguin per obtenir expressions més simples.
+Els 4 bits d’entrada permeten codificar fins al nombre 15. Els valors del 10 al 15 també apareixen a la taula de veritat, però no ens importa quina sortida generin, ja que no els farem servir. Aquests casos s’anomenen típicament **condicions indiferents** (*don’t care cases*) i es representen amb una 'x'.
+A l’hora de buscar agrupacions al mapa de Karnaugh, els podem assignar els valors que més ens convinguin per tal obtenir expressions més simples.
 
-Cal fer un mapa de Karnaughh per a cadascuna de les sortides del circuit per tal d'obtenir l'expressió booleana a partir del digit d'entrada $D[3:0]=[D_3 \; D_2 \; D_1 \; D_0]$. El valor de $x=1$ dona com a resultat equacions més simples.
+Cal fer un mapa de Karnaugh per a cadascuna de les sortides del circuit per tal d'obtenir l'expressió booleana a partir del digit d'entrada $D[3:0]=[D_3 \; D_2 \; D_1 \; D_0]$.
+Pel que fa a les condicions indiferents, el valor de $x=1$ dona com a resultat equacions més simples.
 
 El procés complet i detallat es pot trobar a diverses fonts:
 [enllaç 1](https://informatika.stei.itb.ac.id/~rinaldi.munir/Matdis/2019-2020/Makalah2019/13518127.pdf), 
@@ -97,9 +98,9 @@ Les expressions resultants són les següents:
 
 
 
-Amb aquestes funcions booleanes ja simplificades podem implementar el circuit utilitzant portes lògiques (AND, OR, NOT). Les entrades seran els 4 bits corresponents als dígits $D_3$ $D_2$ $D_1$ $D_0$ i les 7 sortides $a$, $b$, $c$, $d$, $e$, $f$, $g$ dels segments.
+Amb aquestes funcions booleanes ja simplificades podem implementar el circuit utilitzant portes lògiques (AND, OR, NOT). Les entrades seran els 4 bits corresponents als dígits $D_3$ $D_2$ $D_1$ $D_0$ i les 7 sortides corresponents als segments $a$, $b$, $c$, $d$, $e$, $f$ o $g$.
 
-**Vejem alguns exemples per comprovar que les equacions donen els resultats que ens esperem.**
+Vejem alguns exemples per comprovar que les equacions donen els resultats que ens esperem.
 
 ### Digit 2, D=[0010]
 

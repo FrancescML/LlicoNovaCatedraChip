@@ -11,7 +11,7 @@ L’aritmètica de n bits fa referència a circuits digitals que operen amb un n
 
 Es poden implementar, com hem vist, sumadors, restadors, comparadors, incrementadors, etc.
 Aquí veurem dos exemples, un sumador i un incrementador.
-Els exercicis del curs prenen tots $n=16$.
+Els exercicis que el curs proposa prenen tots $n=16$.
 
 ## EXEMPLE: Sumador de $n=16$ bits
 Per fer un sumador de $n$ bits, cal concatenar $n-1$ sumadors complets (full adders) i un semisumador (half adder).
@@ -38,7 +38,7 @@ El circuit final tindrà la mateixa forma que els exemples que ja hem vist, per�
 En aquest exemple dissenyarem un incrementador on $n=5$. Aquest circuit incrementarà el valor d’una entrada $A$ de 5 bits en una unitat.
 
 
-Utilitzarem una constant de valor 00001 en lloc d’una variable. La diferència és subtil dins de CircuitVerse.
+Utilitzarem una constant de valor 00001 en lloc d’una variable. La diferència és subtil dins de [CircuitVerse](https://circuitverse.org/simulator).
 
 CircuitVerse té un element d’entrada (input) anomenat *constant value*. Aquest bloc simula una constant de valor fix. 
 
@@ -60,7 +60,7 @@ Prenem per exemple A=01000 en aquesta figura.
 
 <!-- Obtindríem el mateix resultat a la variable de sortida si empréssim una altra variable com a entrada. La diferència, però és que -->
 
-CircuitVerse no considera un valor constant com a una variable d’entrada en format Verilog. Això vol dir que aquest valor $const_0$ forma, de fet, part del circuit incrementador.
+CircuitVerse no considera un valor constant com a una variable d’entrada en format Verilog. Això vol dir que aquest valor **const_0** forma, de fet, part del circuit incrementador.
 
 <img src='./verilogaritm.png' style="display:block; height:200px; margin:0 auto; border-radius:8px; background-color: rgba(255, 255, 255, 1); padding:4px;"/>
 

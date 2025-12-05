@@ -8,7 +8,7 @@
 
 # Introducció a l'àlgebra de Boole
 
-L'àlgebra de Boole, també anomenada àlgebra booleana, és una estructura algebraica que utilitza variables i operacions lògiques.
+L'àlgebra de Boole, també anomenada àlgebra booleana, és una estructura algebràica que utilitza variables i operacions lògiques.
 Les seves variables només poden adoptar dos valors, tradicionalment denominats, cert i fals, representats com a 1 i 0 respectivament. 
 
 L'àlgebra va ser creada per George Boole al s. XIX, però els enginyers van veure que era perfecte per a l'electrònica, on la seva funció és descriure i simplificar els circuits.
@@ -44,7 +44,7 @@ La negació inverteix el valor de l'entrada. La taula de veritat es correspòn a
 | 0 | 1  |
 | 1 | 0  |
 
-### **AND**
+### **AND**:
 L'operador AND també s'anomena multiplicació o conjunció lògica. 
 
 Per exemple, per a les variables booleanes $A$ i $B$ s'expressa amb el símbol \"$·$\" o la simple juxtaposició.
@@ -59,7 +59,7 @@ o bé
  
 $A∧B$
 
-La taula de veritat es correspon amb la porta lògica AND. La sortida és '$1$' només si totes les entrades són '$1$'.
+La taula de veritat es correspon amb la porta lògica AND. La sortida és $1$ només si totes les entrades són $1$.
 
 |$A$|$B$| $AB$ |
 |---|---|:-----:|
@@ -68,7 +68,7 @@ La taula de veritat es correspon amb la porta lògica AND. La sortida és '$1$' 
 | 1 | 0 | 0     |
 | 1 | 1 | 1     |
 
-### OR
+### OR:
 L'operador OR també es pot referir com a suma o disjunció lògica.
 
 Per exemple, per a les variables booleanes $A$ i $B$ s'expressa amb el símbol "$+$". 
@@ -79,7 +79,7 @@ o també
 
 $A∨B$
 
-La taula de veritat es correspon amb la porta lògica OR. La sortida és '$1$' si almenys una de les entrades és '$1$'.
+La taula de veritat es correspon amb la porta lògica OR. La sortida és $1$ si almenys una de les entrades és $1$.
 
 |$A$|$B$| $A+B$ |
 |---|---|:-----:|
@@ -120,7 +120,7 @@ $\bar{1} = 0$
 
 $\overline{\overline{A}} = A$
 
-**Propietat Commutativa** de la multiplicació i de la suma lògica: L'ordre de les operacions no altera el resultat.
+**Propietat Commutativa de la multiplicació i de la suma lògica**: L'ordre de les operacions no altera el resultat.
 
 $A + B = B + A$
 
@@ -136,11 +136,11 @@ $(A · B) · C = A · (B · C)$
 
 $A · (B + C) = (A · B) + (A · C)$
 
-Atenció! a diferència de l'àlgebra tradicional, la suma lògica es distribueix sobre la multiplicació lògica.
+**Atenció!** a diferència de l'àlgebra tradicional, la suma lògica es distribueix sobre la multiplicació lògica.
 
 $A + (B · C) = (A + B) · (A + C)$
 
-**Lleis d'Absorció:**
+**Lleis d'Absorció**
 
 $A + (A · B) = A$
 
@@ -152,7 +152,7 @@ $\overline{A + B} = \bar{A} · \bar{B}$
 
 $\overline{A · B} = \bar{A} + \bar{B}$
 
-**Algunes propietats derivades:**
+**Algunes propietats derivades**
 
 $A + \bar{A}·B=A+B$
 
@@ -162,7 +162,7 @@ $A(\bar{A}+B) = A·B$
 ## Funcions booleanes
 Una funció booleana és una aplicació que assigna a unes variables booleanes d'entrada un resultat en forma de variable booleana.
 
-Aquesta funció es pot representar de diferents maneres: amb una expressió booleana, una taula de veritat, un mapa de Karnaugh o bé amb un circuit digital combinacional.
+Aquesta funció es pot representar de diferents maneres; amb una expressió booleana, una taula de veritat, un mapa de Karnaugh o bé amb un circuit digital combinacional.
 
 Amb aquesta base podràs simplificar expressions, dissenyar funcions lògiques i sistemes digitals cada cop més complexos.
 

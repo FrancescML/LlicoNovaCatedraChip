@@ -7,12 +7,12 @@
 
 # Circuits Bàsics
 
-Comencem pels circuits digitals aritmètics més bàsics, com els Half adder, els Full adder, i els comparadors de bits.
+Comencem pels circuits digitals aritmètics més bàsics, com els semisumadors, els sumadors complets i els comparadors de bits.
 
 ## EXEMPLE: Semisumador (*Half Adder*)
-El semisumador (*half adder* en anglès) és la base dels sumadors complets (full adders) i de les sumes de n bits.
+El semisumador (*half adder* en anglès) és la base dels sumadors complets (*full adders* en anglès) i de les sumes de n bits.
 
-El semisumador pren dos bits, $A$ i $B$, i en fa la suma. La sortida és un bit amb el resultat de la suma més un bit de ròssec.
+El semisumador pren dos bits, $A$ i $B$, i en fa la suma. La sortida és un bit amb el resultat de la suma i un bit de ròssec.
 
 La taula de veritat de la funció que volem implementar és la següent:
 
@@ -24,7 +24,7 @@ La taula de veritat de la funció que volem implementar és la següent:
 | 1 | 1 | 0 | 1 |
 
 
-Quan A i B són 1, la suma es desborda, no es pot representar amb un sol bit de sortida. El resultat d’aquest desbordament és el bit de ròssec (*carry*) que representa un dígit d'ordre superior.
+Quan $A=1$ i $B=1$ són 1, la suma es desborda, és a dir, no es pot representar amb un sol bit de sortida. El resultat d’aquest desbordament és el bit de ròssec (*carry* en anglès) que és un dígit d'ordre superior.
 
 
 Podem utilitzar Mapes de Karnaugh o les regles de l'Àlgebra de Boole per deduir les dues expressions booleanes simplificades que descriuen la lògica del circuit:
@@ -38,12 +38,12 @@ Així doncs, el circuit que implementa aquest Semisumador (*Half Adder*) el seg�
 <img src='./halfadder.png' alt="Circuit semisumador" style="display:block; width:250px; margin:0 auto; border-radius:8px; background-color: rgba(255, 255, 255, 1); padding:4px;"/>
 <center><i>Circuit semisumador</i></center>
 
-Aquest circuit és l'element fonamental per a la construcció de sumadors complets i sumadors de n bits.
+Aquest circuit és un dels elements que construeixen els sumadors complets i sumadors de n bits.
 
 ## EXEMPLE: Sumador complet (*full adder*)
 
-El sumador complet (*Full adder*) suma 3 bits d'entrada. Els bits $A$ i $B$ més un bit de ròssec d'entrada $C_{in}$. Representa una suma de dos bits que té en compte un possible bit de ròssec provinent d'una suma anterior dins una cadena de sumes.
-La seva sortida és un bit, resultat de la suma, i un bit de ròssec de sortida $C_{out}$.
+El sumador complet (*Full adder* en anglès) suma 3 bits d'entrada. Els bits $A$ i $B$ més un bit de ròssec d'entrada $C_{entrada}$. Representa una suma de dos bits que té en compte un possible bit de ròssec provinent d'una suma anterior dins d'una cadena de sumes.
+La seva sortida és un bit, resultat de la suma, i un bit de ròssec de sortida $C_{sortida}$.
 
 La taula de veritat del circuit és:
 
@@ -61,12 +61,12 @@ La taula de veritat del circuit és:
 
 Podem utilitzar Mapes de Karnaugh o les regles de l'Àlgebra de Boole per deduir les dues expressions booleanes simplificades que descriuen la lògica del circuit:
 
-$Suma= A \: XOR \: B \: XOR \: C_{in}$
+$Suma= A \: XOR \: B \: XOR \: C_{entrada}$
 
-$Cout= A·B + B·C_{in} + A·C_{in} = A·B + C_{in} · (A \: XOR \: B)$
+$C_{sortida}= A·B + B·C_{entrada} + A·C_{entrada} = A·B + C_{entrada} · (A \: XOR \: B)$
 
 
-Així doncs, el circuit que implementa un sumador complet (*Full Adder*) aquesta funció és el següent:
+Així doncs, el circuit que implementa un sumador complet (*Full Adder*) és el següent:
 
 
 <img src='./fulladder.png' alt="Sumador complet" style="display:block; width:600px; margin:0 auto; border-radius:8px; background-color: rgba(255, 255, 255, 1); padding:4px;"/>
@@ -79,12 +79,12 @@ Aquest circuit es pot interpretar com a dos semisumadors amb una porta OR per al
 <center><i>Sumador complet</i></center>
 
 ## EXEMPLE: Comparador
-En aquest exemple veurem un circuit comparador que pren bits, $A$ i $B$ i els compara. 
+En aquest exemple veurem un circuit comparador que pren dos bits, $A$ i $B$ i els compara. 
 
 Els circuits comparadors tenen 3 sortides: La primera indica si $A$ és més gran que $B$, la segona segona s'activa si $A$ és igual a $B$ i la tercera indica si $A$ és més petita que $B$.
 La taula de veritat, amb aquestes entrades i sortides, és la següent:
 
-| $A$ | $B$ | $A<B$ | $A=B$ | $A>B$ |
+| $A$ | $B$ | $Sortida_{A<B}$ | $Sortida_{A=B}$ | $Sortida_{A>B}$ |
 |:---:|:---:|:---:|:---:|:---:|
 | 0 | 0 | 0 | 1 | 0 |
 | 0 | 1 | 1 | 0 | 0 |
@@ -93,11 +93,11 @@ La taula de veritat, amb aquestes entrades i sortides, és la següent:
 
 Les expressions booleanes simplificades que descriuen la lògica del circuit són:
 
-$A<B =\bar{A}B$
+$Sortida_{A<B} =\bar{A}B$
 
-$A=B = \bar{A}\bar{B} + A B = A \; XNOR \; B$
+$Sortida_{A=B} = \bar{A}\bar{B} + A B = A \; XNOR \; B$
 
-$A>B =A \bar{B}$
+$Sortida_{A>B} = A \bar{B}$
 
 Així, el circuit comparador és el següent:
 

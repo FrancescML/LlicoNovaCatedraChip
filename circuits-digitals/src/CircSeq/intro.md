@@ -13,7 +13,7 @@ A diferència dels circuits combinacionals, que només calculen resultats instan
 Els circuits seqüencials són fonamentals en la construcció de memòries, comptadors, registres, unitats de control i processadors. 
 
 ## Sincronització i rellotge
-Molts circuits seqüencials funcionen sincronitzats amb un senyal de rellotge (clock) que marca el ritme amb què es produeixen els canvis d’estat.
+Molts circuits seqüencials funcionen sincronitzats amb un senyal de rellotge (*clock*) que marca el ritme amb què es produeixen els canvis d’estat.
 Els circuits seqüencials es poden classificar segons com gestionen el temps.
 
 **Sistemes Seqüencials Síncrons**: Els canvis en l'estat (i les sortides) només es produeixen en instants de temps ben definits, marcats per un senyal de control periòdic anomenat rellotge (*clock*). El rellotge sincronitza el funcionament, fent que les variables internes canviïn només amb un pols o un flanc (ascendent o descendent) del senyal de rellotge. Són els més comuns i fàcils de dissenyar.
@@ -29,7 +29,7 @@ Segons la seva funció, els circuits seqüencials es poden classificar en:
 
 **Registres**: Circuits que emmagatzemen i desplacen dades binàries. Serveixen per guardar valors temporals o transmetre informació entre diferents parts d’un sistema.
 
-**Màquines d’estats**: Models que descriuen el comportament seqüencial d’un sistema, definint les transicions entre estats en funció de les entrades i el rellotge.
+**Màquines d’estat**: Models que descriuen el comportament seqüencial d’un sistema, definint les transicions entre estats en funció de les entrades i el rellotge.
 
 **Memòries**: Dispositius seqüencials dissenyats per emmagatzemar grans quantitats de dades binàries, essencials en ordinadors i sistemes digitals complexos.
 
@@ -43,14 +43,14 @@ La capacitat de retenir un valor anterior s'aconsegueix mitjançant un element d
 ## El Biestable (*Flip-Flop*)
 
 El component fonamental per construir la memòria en els circuits seqüencials és el biestable (o *flip-flop* en anglès).
-La seva funció principal és emmagatzemar un bit d’informació: pot estar en un dels dos estats estables possibles, 0 o 1, d’aquí el nom biestable.
+La seva funció principal és emmagatzemar un bit d’informació. Pot estar en un dels dos estats estables possibles, 0 o 1, d’aquí el nom biestable.
 
 A diferència d’una porta lògica, la sortida d’un biestable no depèn només de les entrades actuals, sinó també de l’estat anterior. Aquesta capacitat de recordar és la base de tots els dispositius de memòria i control dels sistemes digitals.
 
-Hi ha diversos tipus de biestables, revisem els més importants.
+Hi ha diversos tipus de biestables.
 
 ### El biestable RS (*Reset-Set*) :
-El biestable (*flip-flop*) RS (*Reset-Set*) o també anomenat SR (*Set-Reset*) és el tipus més senzill de biestable. Les dues entrades són $S$ (*Set*), que assigna un 1 a la sortida, i $R$ (*Reset*), que reincialitza la sortida a 0. Té, a més, una entrada de rellotge, que és habitual en els biestables.
+El biestable (*flip-flop*) RS (*Reset-Set*) o també anomenat SR (*Set-Reset*) és el tipus més senzill de biestable. Les dues entrades són $S$ (*Set*), que assigna un $1$ a la sortida, i $R$ (*Reset*), que reincialitza la sortida a $0$. Té, a més, una entrada de rellotge, que és habitual en els biestables.
 La sortida principal és $Q$ (l'estat actual) i també proporciona el valor complementari $\bar{Q}$.
 
 No s’ha d’activar $S$ i $R$ alhora (és una condició prohibida).
@@ -61,13 +61,13 @@ No s’ha d’activar $S$ i $R$ alhora (és una condició prohibida).
 Aquest biestable és l’element bàsic de memòries, comptadors, registres i màquines d’estat i s’utilitza com a bloc fonamental per construir altres biestables més complexos (JK, D, T...).
 
 ### El biestable D (*Data*):
-El biestable (*flip-flop*) D  té una única entrada $D$ (*Data*) i una entrada de rellotge (*Clock*). A cada pols del rellotge, el valor de $D$ es copia a la sortida. Les seves sortides són també la l'estat actual $Q$ i la seva complementària $\bar{Q}$. És el més utilitzat per crear registres i memòries síncrones.
+El biestable (*flip-flop*) D  té una única entrada $D$ (*Data*) i una entrada de rellotge (*Clock*). A cada pols del rellotge, el valor de $D$ es copia a la sortida. Les seves sortides són també l'estat actual $Q$ i el seu complementari $\bar{Q}$. És el més utilitzat per crear registres i memòries síncrones.
 
 <img src='./flipflopD.png' alt="El biestable D" style="display:block; width:250px; margin:0 auto; border-radius:8px; background-color: rgba(255, 255, 255, 1); padding:4px;"/>
 <center><i>Esquema funcional del biestable D</i></center>
 
 ### El biestable T (*Toggle*):
-El biestable (*flip-flop*) T canvia d'estat, commuta la seva sortida entre 0 i 1, cada cop que rep un pols de rellotge i la seva entrada $T$ està activada.
+El biestable (*flip-flop*) T ($toggle$) canvia d'estat, commuta la seva sortida entre 0 i 1, cada cop que rep un pols de rellotge i la seva entrada $T$ està activada.
 
 <img src='./flipflopT.png' alt="El biestable T" style="display:block; width:250px; margin:0 auto; border-radius:8px; background-color: rgba(255, 255, 255, 1); padding:4px;"/>
 <center><i>Esquema funcional del biestable T</i></center>
@@ -75,9 +75,9 @@ El biestable (*flip-flop*) T canvia d'estat, commuta la seva sortida entre 0 i 1
 ### El biestable JK:
 El biestable (*flip-flop*) JK es considera una versió millorada del biestable SR, que resol el problema de l’estat prohibit i pot funcionar en diversos modes segons el valor de les seves entrades. Per tant, és molt versàtil.
 
-Té dues entrades de control ($J$ i $K$) i un senyal de rellotge ($Clk$). També té dues sortides complementàries $Q$ i $\bar{Q}$.
+Té dues entrades de control ($J$ i $K$) i un senyal de rellotge ($CLK$). També té dues sortides complementàries $Q$ i $\bar{Q}$.
 
-Quan el rellotge ($Clk$) activa el biestable:
+Quan el rellotge ($CLK$) activa el biestable:
 + Si $J=1$ i $K=0$, a la sortida $Q$ se li assigna 1.
 + Si $J=0$ i $K=1$, $Q$ es reinicialitza a 0.
 + Si $J=K=0$, no canvia, manté l’estat anterior.

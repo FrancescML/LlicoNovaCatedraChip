@@ -139,7 +139,7 @@ Les màquines d'estats són fonamentals per dissenyar components lògics que nec
 
 
 
-## Exemple: retardador (*delay line*) de 2 cicles.
+## EXEMPLE: retardador (*delay line*) de 2 cicles.
 
 En aquest exemple veurem un circuit capaç de llegir una seqüència binària concreta i replicar-la amb un retard de dos cicles (dos senyals de rellotge). A l’inici de la seqüència, durant els dos cicles d’espera inicials, la sortida serà 0.
 
@@ -215,7 +215,7 @@ El diagrama d’estats queda així definit.
 
 Veient que la sortida $S_{out}$ depèn únicament de l’estat on ens trobem, podem afirmar que aquest circuit serà una **màquina de Moore**.
 
-Una vegada fet el diagrama d’estats, passem a muntar el circuit a CircuitVerse. Muntem els dos biestables D en sèrie compartint el mateix senyal de rellotge i el mateix senyal de reinici (rst).
+Una vegada fet el diagrama d’estats, passem a muntar el circuit a [CircuitVerse](https://circuitverse.org/simulator). Muntem els dos biestables D en sèrie compartint el mateix senyal de rellotge i el mateix senyal de reinici (rst).
 
 <img src='./exemple_0biestables.png' alt="Circuit exemple" style="display:block; width:550px; margin:0 auto; border-radius:8px; background-color: rgba(255, 255, 255, 1); padding:4px;"/>
 

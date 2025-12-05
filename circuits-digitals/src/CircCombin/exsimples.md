@@ -24,7 +24,7 @@ Les regles per concedir l'accés són les següents:
 
 * **$R_3$** - O bé, l'autorització de seguretat NO està activa i la targeta és vàlida.
 
-Ens cal dissenyar un circuit amb tres entrades ($T$, $H$, $S$) i una sortida ($A$). La sortida $A$ determinarà si es concedeix l'accés, prenent el valor '$1$' per a accés concedit i '$0$' per a accés denegat.
+Ens cal dissenyar un circuit amb tres entrades ($T$, $H$, $S$) i una sortida ($A$). La sortida $A$ determinarà si es concedeix l'accés, prenent el valor $1$ per a accés concedit i $0$ per a accés denegat.
 
 En primer lloc muntem la taula de veritat d'aquesta aplicació:
 

@@ -5,7 +5,7 @@
 <br>
 
 # Sistemes de votació
-En el context dels circuits digitals, els sistemes de votació fan referència a implementacions electròniques o lògiques dissenyades per processar múltiples entrades (vots) i determinar un resultat, és a dir, una única sortida, basat en una regla de majoria o una lògica predefinida.
+En el context dels circuits digitals, els sistemes de votació fan referència a implementacions electròniques o lògiques dissenyades per processar múltiples entrades i determinar un resultat. És a dir, generen una sortida, basada en una regla de majoria de vots o una lògica predefinida.
 
 
 ## EXEMPLE: Sistema de votació per a comitès
@@ -41,11 +41,11 @@ Necessitem identificar totes les combinacions on la suma de P, S, T, V és 3 o 4
 
 La proposta s'aprovarà si es compleix qualsevol d'aquests supòsits (operació OR o suma lògica). La condició 1 s'expressa de la següent manera en l'àlgebra de Boole:
 
-$C1 = \bar{P}STV + PST\bar{V} + PS\bar{T}V + P\bar{S}TV + PSTV$
+$C_1 = \bar{P}STV + PST\bar{V} + PS\bar{T}V + P\bar{S}TV + PSTV$
 
 **Condició d'aprovació 2:** empat resolt favorablement pel president.
 
-Ens cal identificar totes les combinacions de dos vots a favor i dos en contra, i d'aquestes, ens interessen on $P=1$.
+Ens cal identificar totes les combinacions de dos vots a favor i dos en contra. I d'aquestes, ens interessen on $P=1$.
 * Aprovat
     * $P=1$, $S=1$, $T=0$ i $V=0$ --> ($PS\bar{T}\bar{V}$)
     * $P=1$, $S=0$, $T=1$ i $V=0$ --> ($P\bar{S}T\bar{V}$)
@@ -57,11 +57,11 @@ Ens cal identificar totes les combinacions de dos vots a favor i dos en contra, 
 
 La proposta s'aprovarà si es compleix algun d'aquests suposits. La condició 2 s'expressa com:
 
-$C2 = PS\bar{T}\bar{V} + P\bar{S}T\bar{V} + P\bar{S}\bar{T}V$
+$C_2 = PS\bar{T}\bar{V} + P\bar{S}T\bar{V} + P\bar{S}\bar{T}V$
 
-La sortida $A$ serà $1$ si es compleix la condició C1 o bé la condició C2. La funció booleana és una suma lògica (OR) d'aquestes dues condicions:
+La sortida $A$ serà $1$ si es compleix la condició $C_1$ o bé la condició $C_2$. La funció booleana és una suma lògica (OR) d'aquestes dues condicions:
 
-$A=C1+C2$
+$A=C_1+C_2$
 
 I per tant l'expressió de $A$, en funció de $P$, $S$, $T$ i $V$ és:
 
@@ -69,7 +69,7 @@ $A= \bar{P}STV + PST\bar{V} + PS\bar{T}V + P\bar{S}TV + + PSTV + PS\bar{T}\bar{V
 
 Muntem la taula de veritat amb tots els casos possibles:
 
-| $P$ | $S$ | $T$ | $V$ | vots favorables | $C1$ | $C2$ | $A$ |
+| $P$ | $S$ | $T$ | $V$ | vots favorables | $C_1$ | $C_2$ | $A$ |
 | --- | --- | --- | --- | :---: | --- | --- | --- |
 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | 0 | 0 | 0 | 1 | 1 | 0 | 0 | 0 |
@@ -88,7 +88,7 @@ Muntem la taula de veritat amb tots els casos possibles:
 | 1 | 1 | 1 | 0 | 3 | 1 | 0 | 1 |
 | 1 | 1 | 1 | 1 | 4 | 1 | 0 | 1 |
 
-L'expressió per a $A$ en funció de $P$, $S$, $T$ i $V$ és molt llarga. Fer-ne una simplificació lògica mitjançant algebra booleana seria complex. Alternativament podem utilitzar un [mapa de Karnaugh](../Intro/karnaugh.md) per a la funció de sortida A, amb les entrades P,S,T i V agrupades.
+L'expressió per a $A$ en funció de $P$, $S$, $T$ i $V$ és molt llarga. Fer-ne una simplificació lògica mitjançant algebra booleana seria complex. Alternativament podem utilitzar un [mapa de Karnaugh](../Intro/karnaugh.md) per a la funció de sortida $A$, amb les entrades $P$,$S$,$T$ i $V$ agrupades.
 
 <!-- 
 | PS\TV | 00 | 01 | 11 | 10 |
@@ -195,7 +195,7 @@ El següent pas és agrupar els ‘1’ en 4 grups, que marcarem amb diferents c
 
 Les variables constants dins del grup blau són $P=1$ i $T=1$, això es tradueix en el terme $PT$ a la solució.
 
-$A=PT$
+$A=PT+···$
 
 <table style="border-collapse: collapse; text-align: center;">
   <thead>
@@ -245,7 +245,7 @@ $A=PT$
 
 Les variables constants en el grup groc són $P=1$ i $V=1$, afegim el terme $PV$ a la solució.
 
-$A=PT + PV$
+$A=PT + PV + ···$
 
 
 <table style="border-collapse: collapse; text-align: center;">
@@ -296,7 +296,7 @@ $A=PT + PV$
 
 L’agrupació de color verd té en comú $P=1$ i $S=1$, afegim el terme $PS$ a la solució
 
-$A=PT + PV + PS$
+$A=PT + PV + PS + ···$
 
 
 <table style="border-collapse: collapse; text-align: center;">

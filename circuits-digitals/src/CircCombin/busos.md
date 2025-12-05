@@ -6,15 +6,24 @@
 
 # Busos
 
-En circuits digitals, un bus de bits (o simplement bus) és un conjunt de línies de comunicació o pistes que transporten bits de dades de manera paral·lela. Serveixen per interconnectar diferents components d’un sistema transferint senyals digitals.
+En circuits digitals, un **bus de bits** (o simplement bus) és un conjunt de línies de comunicació o pistes que transporten bits de dades de manera paral·lela. Serveixen per interconnectar diferents components d’un sistema transferint senyals digitals.
 
-El desplaçament de bits és una operació que mou tots els bits d’un registre (o paraula binària) cap a l’esquerra o cap a la dreta. Aquesta és una operació molt important a l’hora de processar les dades transmeses per un bus.
+El **desplaçament de bits** és una operació que mou tots els bits d’un registre (o paraula binària) cap a l’esquerra o cap a la dreta. Aquesta és una operació molt important a l’hora de processar les dades transmeses per un bus.
+
+## Notació
+
+En aquest apartat treballarem amb variables que representen nombres binaris de N bits. Per referir-nos a una variable, farem servir una notació com $A[3:0]$, que descriu un conjunt de 4 bits anomenat $A$.
+
+El rang $[3:0]$ especifica que els bits estan indexats des del 3 fins al 0. Aquesta variable es pot descompondre en els seus bits individuals com:
+
+$A=A[3:0]=[A_3​ A_2​ A_1​ A_0​]$
+ 
+On $A_3$ és el bit de més pes (*Most Significant Bit o **MSB***) i $A_0$ és el bit de menys pes (*Less Significant Bit o **LSB***). Aquesta notació ens permet referir-nos tant al conjunt complet de bits ($A$) com a cadascun dels seus bits individuals ($A_i$).
 
 ## EXEMPLE: Disseny d'un circuit desplaçador de bus a l'esquerra (N-bits)
 
 Imagina que treballes amb dades binàries i necessites moure tots els bits d'una seqüència una posició cap a l'esquerra. Això equival a multiplicar el seu valor numèric per dos. Per exemple, 1010 binari és 10 en decimal; si el desplacem una posició cap a l'esquerra n'obtenim 10100, que és 20 en decimal.
 
-En aquest apartat treballarem amb variables que representen nombres binaris de N bits. Per referir-nos a una variable, farem servir una notació com $A[3:0]$, que descriu un conjunt de 4 bits anomenat $A$. El rang $[3:0]$ especifica que els bits estan indexats des del 3 fins al 0. Aquesta variable es pot descompondre en els seus bits individuals com $[A_3​ A_2​ A_1​ A_0​]$, on $A_3$ és el bit de més pes (Most Significant Bit o MSB) i $A_0$ és el bit de menys pes (Less Significant Bit o LSB). Aquesta notació ens permet referir-nos tant al conjunt complet de bits ($A$) com a cadascun dels seus bits individuals ($A_i$).
 
 Una taula de veritat completa per a un nombre de bits N molt elevat pot ser inviable, aquesta ha de tenir $N^2$ files. Ens centrarem en la descripció i implementació d’un circuit desplaçador de N=4 bits, on la taula de veritat encara té només 16 files.
 
@@ -58,21 +67,21 @@ El senyal de control $Sel$ serveix per determinar si el circuit efectua el despl
 * Si $Sel=1$, els multiplexors d'activen realitzant un desplaçament a l'esquerra d'una posició.
 
 Per a cada bit de sortida de $B$, farem servir un multiplexor 2-a-1.
-* MUX per $B_3$:
+* MUX per $B_3$
     * Entrada 0: $A_3$
     * Entrada 1: $A_2$
     * Sortida: $B_3$
-* MUX per $B_2$:
+* MUX per $B_2$
     * Entrada 0: $A_2$
     * Entrada 1: $A_1$
     * Sortida: $B_2$
-* MUX per $B_1$:
+* MUX per $B_1$
     * Entrada 0: $A_1$
     * Entrada 1: $A_0$
     * Sortida: $B_1$
-* MUX per $B_0$:
+* MUX per $B_0$
     * Entrada 0: $A_0$
-    * Entrada 1: $'0'$ (bit que entra)
+    * Entrada 1: $0$ (bit que entra)
     * Sortida: $B_0$
 
 

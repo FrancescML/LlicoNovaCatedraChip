@@ -5,12 +5,12 @@
 <br>
 
 # Nombres
-En els circuits digitals i la lògica digital els nombres s’implementen en binari. Les operacions matemàtiques es realitzen amb bits, des de les més bàsiques a les més complexes. Aquestes inclouen sumes, restes, comparar nombres (parells o imparells), multiplicacions, divisions o calcular el mòdul.
+En els circuits digitals i la lògica digital els nombres s’implementen en binari. Les operacions matemàtiques es realitzen amb bits, des de les més bàsiques a les més complexes. Aquestes inclouen sumes, restes, comparacions, multiplicacions, divisions o calcular el mòdul.
 
 
-## EXEMPLE 1:  Nombre parell o imparell.
+## EXEMPLE: Nombre parell o imparell.
 
-L'objectiu és dissenyar un circuit que rebi a l'entrada un número de 4 bits i produeixi una sortida que s'activi amb un '1' quan el número d'entrada sigui parell.
+L'objectiu és dissenyar un circuit que rebi a l'entrada un número de 4 bits i produeixi una sortida que s'activi amb un $1$ quan el número d'entrada sigui parell.
 
 Un nombre parell és divisible per 2, i en notació binària es reconeix fàcilment perquè el seu bit menys significatiu (LSB) és 0.
 
@@ -20,7 +20,7 @@ $nombre[3:0]= [nombre_3 \; nombre_2 \; nombre_1 \; nombre_0]$
 
 El bit menys significatiu (**LSB**) és $nombre_0$.
 
-La **variable de sortida** del circuit la és un sol bit $Parell$.
+La **variable de sortida** del circuit la és un sol bit que anomenarem $Parell$.
 
 La taula següent recull uns quants exemples d'entrades i sortides que il·lustren el comportament desitjat del circuit. La taula de veritat completa tindria 16 files.
 
@@ -33,9 +33,9 @@ La taula següent recull uns quants exemples d'entrades i sortides que il·lustr
 |1110 | 14 | 0 | és Parell| 1 
 |1111 | 15 | 1 | és Senar | 0
 
-Construir el circuit és força directe, la sortida $Parell$ s'ha d'activar (valor '1') si i només si $nombre[0]$ té el valor '0', independentment del valor de la resta de bits de $nombre$.
+Construir el circuit és força directe, la sortida $Parell$ s'ha d'activar (valor $1$) si i només si $nombre[0]$ té el valor $0$, independentment del valor de la resta de bits de $nombre$.
 
-La sortida és doncs la negació de $nombre_0$:
+La sortida és doncs la negació de $nombre_0$.
 
 $Parell=\overline{nombre_0}$
 
@@ -45,10 +45,10 @@ El circuit s'implementa amb una sola porta lògica NOT al bit $nombre_0$.
 
 <img src='./nombres_exemple1.png' alt="Circuit desplaçador"  style="display:block; height:130px; margin:0 auto; border-radius:8px; background-color: rgba(255, 255, 255, 1); padding:4px;"/>
 <br>
-<center><i>Circuit digital que desplaça una posició cap a l'esquerra</i></center>
+<center><i>Circuit digital que determina la paritat d'un nombre</i></center>
 
 
-## EXEMPLE 2:  Mòdul 7 d’un número binari de 4 bits
+## EXEMPLE: Mòdul 7 d’un número binari de 4 bits
 
 L’objectiu d’aquest exemple és dissenyar un circuit que calculi el mòdul 7 d’un número binari $n$, de 4 bits. Calcular el mòdul 7 d’un número consisteix en trobar el residu quan aquest es divideix per 7. La notació per aquesta operació és:
 
@@ -425,15 +425,11 @@ Muntem el mapa de Karnaugh de 4 variables d'entrada per a la sortida $residu_1$ 
   </tbody>
 </table>
 
-
 L'expressió booleana simplificada per a $residu_1$ tindrà 2 termes:
 
 $residu_1= \overline{n_3} n_1 + \overline{n_2} n_1$
 
-
-
 Per a la sortida $residu_2$ identifiquem 2 grups en el seu mapa de Karnaugh.
-
 
 <!-- VERMELL -->
 <table style="border-collapse: collapse; text-align: center;">
@@ -536,7 +532,7 @@ $residu_2=  n_2 \overline{n_1} + \overline{n_3} n_2$
 
 A partir d'aquestes tres expressions podem emprar les portes lògiques per crear el circuit digital que implementarà la funció $n \mod{7}$.
 
-<img src='./nombres_exemple2.png' alt="Circuit digital" style="display:block; height:600px; margin:0 auto; border-radius:8px; background-color: rgba(255, 255, 255, 1); padding:4px;"/>
+<img src='./nombres_exemple2.png' alt="Circuit digital" style="display:block; height:500px; margin:0 auto; border-radius:8px; background-color: rgba(255, 255, 255, 1); padding:4px;"/>
 
 <center><i>Circuit digital que implementa la funció n mod 7</i></center>
 
