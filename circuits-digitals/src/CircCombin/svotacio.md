@@ -1,6 +1,6 @@
 <!-- Posar aquesta imatge al començament de cada lliçó -->
-<img src='../logos/illustracio1.png' alt="Circuits digitals" style=" float: left; border-radius:8px; height: 120px; text-align: right;"/>
-<img src='../logos/LogoCatedraCHIPBlanc.jpg' alt="Logo Càtedra Chip" style="float: right; border-radius:8px; height: 120px; text-align: right;"/>
+<img src='../logos/illustracio1.png' alt="Circuits digitals" style="float: left; border-radius: 8px; height: 120px;"/>
+<img src='../logos/LogoCatedraCHIPBlanc.jpg' alt="Logo Càtedra Chip" style="float: right; border-radius: 8px; height: 120px;"/>
 <div style="clear: both;"></div>
 <br>
 
@@ -9,7 +9,7 @@ En el context dels circuits digitals, els sistemes de votació fan referència a
 
 
 ## EXEMPLE: Sistema de votació per a comitès
-Imaginem que som els encarregats de dissenyar un sistema electrònic de votació per al Comitè Executiu d'un prestigiós equip de futbol. Aquest comitè té quatre membres: el President, el Secretari, el Tresorer i el Vocal. Cadascú pot votar "Sí" o "No".
+En aquest exemple som els encarregats de dissenyar un sistema electrònic de votació per al Comitè Executiu d'un prestigiós equip de futbol. Aquest comitè té quatre membres: el President, el Secretari, el Tresorer i el Vocal. Cadascú pot votar "Sí" o "No".
 
 L'aprovació de les propostes segueix aquestes **regles d'aprovació**:
 1.  Una proposta s’aprova quan tres o més membres voten a favor.
@@ -349,7 +349,7 @@ Finalment, en el grup vermell les variables constants són $S=1$, $T=1$ i $V=1$,
 
 $A=PT + PV + PS + STV$
 
-Aquesta és l’expressió booleana simplificada final perque tots els ‘1’ ja han estat considerats en algun grup.
+Aquesta és l’expressió booleana simplificada final, perque tots els ‘1’ ja han estat considerats en algun grup.
 
 El circuit digital derivat d’aquesta expressió és el següent:
 

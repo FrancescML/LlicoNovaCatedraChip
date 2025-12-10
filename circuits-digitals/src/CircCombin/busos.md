@@ -1,6 +1,6 @@
 <!-- Posar aquesta imatge al començament de cada lliçó -->
-<img src='../logos/illustracio1.png' alt="Circuits digitals" style=" float: left; border-radius:8px; height: 120px; text-align: right;"/>
-<img src='../logos/LogoCatedraCHIPBlanc.jpg' alt="Logo Càtedra Chip" style="float: right; border-radius:8px; height: 120px; text-align: right;"/>
+<img src='../logos/illustracio1.png' alt="Circuits digitals" style="float: left; border-radius: 8px; height: 120px;"/>
+<img src='../logos/LogoCatedraCHIPBlanc.jpg' alt="Logo Càtedra Chip" style="float: right; border-radius: 8px; height: 120px;"/>
 <div style="clear: both;"></div>
 <br>
 
@@ -8,7 +8,7 @@
 
 En circuits digitals, un **bus de bits** (o simplement bus) és un conjunt de línies de comunicació o pistes que transporten bits de dades de manera paral·lela. Serveixen per interconnectar diferents components d’un sistema transferint senyals digitals.
 
-El **desplaçament de bits** és una operació que mou tots els bits d’un registre (o paraula binària) cap a l’esquerra o cap a la dreta. Aquesta és una operació molt important a l’hora de processar les dades transmeses per un bus.
+El **desplaçament de bits** és una operació molt important a l’hora de processar les dades transmeses per un bus. És una operació que mou tots els bits d’un registre (o paraula binària) cap a l’esquerra o cap a la dreta.
 
 ## Notació
 
@@ -54,7 +54,7 @@ El nostre objectiu és dissenyar un circuit desplaçador de 4 bits. Tenim dues o
 
 * Emprar [multiplexors](./multiplexors.md), que són [circuits combinacionals](../CircCombin/intro.md): Aquesta és la forma més habitual i flexible per a desplaçaments fixos o controlats.
 
-* Usant registres de desplaçament, que són [circuits seqüencials](../CircSeq/intro.md): Aquesta implementació és per a operacions de desplaçament que ocorren en el temps, generalment sincronitzades amb un rellotge.
+* Usant registres de desplaçament, que són [circuits seqüencials](../CircSeq/intro.md), aquesta implementació és per a operacions de desplaçament que ocorren en el temps, generalment sincronitzades amb un rellotge.
 
 En aquesta secció emprarem multiplexors i el circuit serà el següent:
 

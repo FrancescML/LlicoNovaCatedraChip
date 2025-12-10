@@ -1,6 +1,6 @@
 <!-- Posar aquesta imatge al començament de cada lliçó -->
-<img src='../logos/illustracio1.png' alt="Circuits digitals" style=" float: left; border-radius:8px; height: 120px; text-align: right;"/>
-<img src='../logos/LogoCatedraCHIPBlanc.jpg' alt="Logo Càtedra Chip" style="float: right; border-radius:8px; height: 120px; text-align: right;"/>
+<img src='../logos/illustracio1.png' alt="Circuits digitals" style="float: left; border-radius: 8px; height: 120px;"/>
+<img src='../logos/LogoCatedraCHIPBlanc.jpg' alt="Logo Càtedra Chip" style="float: right; border-radius: 8px; height: 120px;"/>
 <div style="clear: both;"></div>
 <br>
 
@@ -20,9 +20,9 @@ Les regles per concedir l'accés són les següents:
 
 * **$R_1$** - La targeta és vàlida i l'empremta dactilar és reconeguda. 
 
-* **$R_2$** - O bé, l'autorització de seguretat està activa i l'empremta dactilar és reconeguda. 
+* **$R_2$** - L'autorització de seguretat està activa i l'empremta dactilar és reconeguda. 
 
-* **$R_3$** - O bé, l'autorització de seguretat NO està activa i la targeta és vàlida.
+* **$R_3$** - L'autorització de seguretat NO està activa i la targeta és vàlida.
 
 Ens cal dissenyar un circuit amb tres entrades ($T$, $H$, $S$) i una sortida ($A$). La sortida $A$ determinarà si es concedeix l'accés, prenent el valor $1$ per a accés concedit i $0$ per a accés denegat.
 

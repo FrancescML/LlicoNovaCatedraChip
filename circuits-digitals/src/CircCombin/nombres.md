@@ -1,16 +1,16 @@
 <!-- Posar aquesta imatge al començament de cada lliçó -->
-<img src='../logos/illustracio1.png' alt="Circuits digitals" style=" float: left; border-radius:8px; height: 120px; text-align: right;"/>
-<img src='../logos/LogoCatedraCHIPBlanc.jpg' alt="Logo Càtedra Chip" style="float: right; border-radius:8px; height: 120px; text-align: right;"/>
+<img src='../logos/illustracio1.png' alt="Circuits digitals" style="float: left; border-radius: 8px; height: 120px;"/>
+<img src='../logos/LogoCatedraCHIPBlanc.jpg' alt="Logo Càtedra Chip" style="float: right; border-radius: 8px; height: 120px;"/>
 <div style="clear: both;"></div>
 <br>
 
 # Nombres
-En els circuits digitals i la lògica digital els nombres s’implementen en binari. Les operacions matemàtiques es realitzen amb bits, des de les més bàsiques a les més complexes. Aquestes inclouen sumes, restes, comparacions, multiplicacions, divisions o calcular el mòdul.
+En els circuits digitals i la lògica digital els nombres s’implementen en binari. Les operacions matemàtiques es realitzen amb bits, des de les més bàsiques a les més complexes. Aquestes inclouen sumes, restes, comparacions de nombres, multiplicacions, divisions o calcular el mòdul.
 
 
 ## EXEMPLE: Nombre parell o imparell.
 
-L'objectiu és dissenyar un circuit que rebi a l'entrada un número de 4 bits i produeixi una sortida que s'activi amb un $1$ quan el número d'entrada sigui parell.
+Dissenyarem un circuit que rebi a l'entrada un número de 4 bits i produeixi una sortida que s'activi amb un $1$ quan el número d'entrada sigui parell.
 
 Un nombre parell és divisible per 2, i en notació binària es reconeix fàcilment perquè el seu bit menys significatiu (LSB) és 0.
 
@@ -20,7 +20,7 @@ $nombre[3:0]= [nombre_3 \; nombre_2 \; nombre_1 \; nombre_0]$
 
 El bit menys significatiu (**LSB**) és $nombre_0$.
 
-La **variable de sortida** del circuit la és un sol bit que anomenarem $Parell$.
+La **variable de sortida** del circuit és un sol bit que anomenarem $Parell$.
 
 La taula següent recull uns quants exemples d'entrades i sortides que il·lustren el comportament desitjat del circuit. La taula de veritat completa tindria 16 files.
 
@@ -50,7 +50,7 @@ El circuit s'implementa amb una sola porta lògica NOT al bit $nombre_0$.
 
 ## EXEMPLE: Mòdul 7 d’un número binari de 4 bits
 
-L’objectiu d’aquest exemple és dissenyar un circuit que calculi el mòdul 7 d’un número binari $n$, de 4 bits. Calcular el mòdul 7 d’un número consisteix en trobar el residu quan aquest es divideix per 7. La notació per aquesta operació és:
+Dissenyarem un circuit que calculi el mòdul 7 d’un número binari $n$, de 4 bits. Calcular el mòdul 7 d’un número consisteix en trobar el residu quan aquest es divideix per 7. La notació per aquesta operació és:
 
 $n \mod 7$
 

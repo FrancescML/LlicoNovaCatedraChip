@@ -1,6 +1,6 @@
 <!-- Posar aquesta imatge al començament de cada lliçó -->
-<img src='../logos/illustracio1.png' alt="Circuits digitals" style=" float: left; border-radius:8px; height: 120px; text-align: right;"/>
-<img src='../logos/LogoCatedraCHIPBlanc.jpg' alt="Logo Càtedra Chip" style="float: right; border-radius:8px; height: 120px; text-align: right;"/>
+<img src='../logos/illustracio1.png' alt="Circuits digitals" style="float: left; border-radius: 8px; height: 120px;"/>
+<img src='../logos/LogoCatedraCHIPBlanc.jpg' alt="Logo Càtedra Chip" style="float: right; border-radius: 8px; height: 120px;"/>
 <div style="clear: both;"></div>
 <br>
 
@@ -8,15 +8,15 @@
 
 En aquesta lliçó veuràs el funcionament dels multiplexors i com s’implementen amb portes lògiques.
 
-En electrònica, un multiplexor (o MUX) és un dispositiu que selecciona un d’entre múltiples senyals d'entrada i el reenvia a una única línia de sortida. En el context dels circuits digitals, els senyals d'entrada són digitals (bits), tot i que també existeixen multiplexors per a senyals analògics.
+En electrònica, un multiplexor (o MUX) és un dispositiu que selecciona un senyal d’entre múltiples senyals d'entrada i el reenvia a una única línia de sortida. En el context dels circuits digitals, els senyals d'entrada són digitals (bits), tot i que també existeixen multiplexors per a senyals analògics.
 Un multiplexor fa possible que diverses entrades comparteixin un dispositiu o recurs, en lloc de tenir-ne un per a cada senyal.
-Per exemple, un convertidor analògic-digital o un mitjà de transmissió de comunicacions.
+Un exemple seria, un convertidor analògic-digital o un mitjà de transmissió de comunicacions.
 
 Els multiplexors també es poden utilitzar per implementar funcions booleanes de múltiples variables.
 
 
 ## EXEMPLE: multiplexor de 2 entrades
-Imagina que tens dues fonts de dades diferents, dos sensors de temperatura, i necessites seleccionar quin s'enviarà a un processador. Emprarem un multiplexor.
+Imaginem que tenim dues fonts de dades diferents, potser dos sensors, i necessitem un circuit que seleccioni quin s'enviarà a un processador.
 
 Dissenyarem un multiplexor de 2 entrades ($in_1$, $in_2$) i 1 sortida ($out$). Una entrada especial serà el selector ($Sel$), encarregat de triar quina de les dues entrades s’enviarà a $out$. En aquest exemple volem que, al activar $Sel$ amb un $1$, la sortida $out$ sigui igual a $in_1$. Sempre que $Sel$ no estigui activada, és a dir, que sigui $0$, la sortida serà igual a $in_2$.
 

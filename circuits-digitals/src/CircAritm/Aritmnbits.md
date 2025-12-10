@@ -1,6 +1,6 @@
 <!-- Posar aquesta imatge al començament de cada lliçó -->
-<img src='../logos/illustracio1.png' alt="Circuits digitals" style=" float: left; border-radius:8px; height: 120px; text-align: right;"/>
-<img src='../logos/LogoCatedraCHIPBlanc.jpg' alt="Logo Càtedra Chip" style="float: right; border-radius:8px; height: 120px; text-align: right;"/>
+<img src='../logos/illustracio1.png' alt="Circuits digitals" style="float: left; border-radius: 8px; height: 120px;"/>
+<img src='../logos/LogoCatedraCHIPBlanc.jpg' alt="Logo Càtedra Chip" style="float: right; border-radius: 8px; height: 120px;"/>
 <div style="clear: both;"></div>
 <br>
 
@@ -11,7 +11,7 @@ L’aritmètica de n bits fa referència a circuits digitals que operen amb un n
 
 Es poden implementar, com hem vist, sumadors, restadors, comparadors, incrementadors, etc.
 Aquí veurem dos exemples, un sumador i un incrementador.
-Els exercicis que el curs proposa prenen tots $n=16$.
+Els exercicis que el curs proposa prenen tots el valor $n=16$.
 
 ## EXEMPLE: Sumador de $n=16$ bits
 Per fer un sumador de $n$ bits, cal concatenar $n-1$ sumadors complets (full adders) i un semisumador (half adder).

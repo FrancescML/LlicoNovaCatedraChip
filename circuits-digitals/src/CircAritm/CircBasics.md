@@ -1,6 +1,6 @@
 <!-- Posar aquesta imatge al començament de cada lliçó -->
-<img src='../logos/illustracio1.png' alt="Circuits digitals" style=" float: left; border-radius:8px; height: 120px; text-align: right;"/>
-<img src='../logos/LogoCatedraCHIPBlanc.jpg' alt="Logo Càtedra Chip" style="float: right; border-radius:8px; height: 120px; text-align: right;"/>
+<img src='../logos/illustracio1.png' alt="Circuits digitals" style="float: left; border-radius: 8px; height: 120px;"/>
+<img src='../logos/LogoCatedraCHIPBlanc.jpg' alt="Logo Càtedra Chip" style="float: right; border-radius: 8px; height: 120px;"/>
 <div style="clear: both;"></div>
 <br>
 
@@ -12,7 +12,7 @@ Comencem pels circuits digitals aritmètics més bàsics, com els semisumadors, 
 ## EXEMPLE: Semisumador (*Half Adder*)
 El semisumador (*half adder* en anglès) és la base dels sumadors complets (*full adders* en anglès) i de les sumes de n bits.
 
-El semisumador pren dos bits, $A$ i $B$, i en fa la suma. La sortida és un bit amb el resultat de la suma i un bit de ròssec.
+Dissenyarem un semisumador que pren dos bits, $A$ i $B$, i en fa la suma. La sortida és un bit amb el resultat de la suma i un bit de ròssec.
 
 La taula de veritat de la funció que volem implementar és la següent:
 
@@ -42,7 +42,7 @@ Aquest circuit és un dels elements que construeixen els sumadors complets i sum
 
 ## EXEMPLE: Sumador complet (*full adder*)
 
-El sumador complet (*Full adder* en anglès) suma 3 bits d'entrada. Els bits $A$ i $B$ més un bit de ròssec d'entrada $C_{entrada}$. Representa una suma de dos bits que té en compte un possible bit de ròssec provinent d'una suma anterior dins d'una cadena de sumes.
+Dissenyarem un sumador complet (*Full adder* en anglès) suma 3 bits d'entrada. Els bits $A$ i $B$ més un bit de ròssec d'entrada $C_{entrada}$. Representa una suma de dos bits que té en compte un possible bit de ròssec provinent d'una suma anterior dins d'una cadena de sumes.
 La seva sortida és un bit, resultat de la suma, i un bit de ròssec de sortida $C_{sortida}$.
 
 La taula de veritat del circuit és:
@@ -79,7 +79,7 @@ Aquest circuit es pot interpretar com a dos semisumadors amb una porta OR per al
 <center><i>Sumador complet</i></center>
 
 ## EXEMPLE: Comparador
-En aquest exemple veurem un circuit comparador que pren dos bits, $A$ i $B$ i els compara. 
+En aquest exemple dissenyarem un circuit comparador que pren dos bits, $A$ i $B$ i els compara. 
 
 Els circuits comparadors tenen 3 sortides: La primera indica si $A$ és més gran que $B$, la segona segona s'activa si $A$ és igual a $B$ i la tercera indica si $A$ és més petita que $B$.
 La taula de veritat, amb aquestes entrades i sortides, és la següent:

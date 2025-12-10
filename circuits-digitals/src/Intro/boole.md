@@ -1,63 +1,64 @@
 
 <!-- Posar aquesta imatge al començament de cada lliçó -->
-<img src='../logos/illustracio1.png' alt="Circuits digitals" style=" float: left; border-radius:8px; height: 120px; text-align: right;"/>
-<img src='../logos/LogoCatedraCHIPBlanc.jpg' alt="Logo Càtedra Chip" style="float: right; border-radius:8px; height: 120px; text-align: right;"/>
+<img src='../logos/illustracio1.png' alt="Circuits digitals" style="float: left; border-radius: 8px; height: 120px;"/>
+<img src='../logos/LogoCatedraCHIPBlanc.jpg' alt="Logo Càtedra Chip" style="float: right; border-radius: 8px; height: 120px;"/>
 <div style="clear: both;"></div>
 <br>
 
 
 # Introducció a l'àlgebra de Boole
 
-L'àlgebra de Boole, també anomenada àlgebra booleana, és una estructura algebràica que utilitza variables i operacions lògiques.
-Les seves variables només poden adoptar dos valors, tradicionalment denominats, cert i fals, representats com a 1 i 0 respectivament. 
+L'àlgebra de Boole va ser creada per George Boole al s. XIX, però els enginyers van veure que era perfecta per a l'electrònica, on la seva funció és descriure i simplificar els circuits.
 
-L'àlgebra va ser creada per George Boole al s. XIX, però els enginyers van veure que era perfecte per a l'electrònica, on la seva funció és descriure i simplificar els circuits.
+L'àlgebra de Boole, també anomenada àlgebra booleana, és una estructura algebraica que utilitza variables i operacions lògiques.
+Les seves variables només poden adoptar dos valors, tradicionalment denominats cert i fals, representats com a 1 i 0 respectivament.
 
-En electròncia digital aquests dos valors es corresponen directament als estats elèctrics dels circuits digitals: un voltatge alt (1) o baix (0). Per això, l'àlgebra de Boole es pot utilitzar per descriure les operacions lògiques dels circuits digitals.
+En electrònica digital aquests dos valors es corresponen directament als estats elèctrics dels circuits digitals: un voltatge alt (1) o baix (0). Per això, l'àlgebra de Boole es pot utilitzar per descriure les operacions lògiques dels circuits digitals.
 
-
-* **Base de la Computació**: L'àlgebra de Boole és una eina fonamental per l'anàlisi i el disseny dels circuits digitals i és la base de l'aritmètica computacional moderna.
+* **Base de la Computació**: L'àlgebra de Boole és una eina fonamental per a l'anàlisi i el disseny dels circuits digitals i és la base de l'aritmètica computacional moderna.
 
 * **Anàlisi**: Ajuda a entendre el funcionament d'un circuit existent, permetent determinar la seva sortida donades unes entrades.
 
-* **Disseny**: Proporciona un mètode sistemàtic per dissenyar circuits digitals que realitzin una funció específica (per exemple, un sumador, un comparador, un multiplexor).
+* **Disseny**: Proporciona un mètode sistemàtic per dissenyar circuits digitals que realitzin una funció específica (per exemple, un sumador, un comparador o un multiplexor).
 
-* **Optimització**: Permet simplificar expressions lògiques complexes. Això es tradueix directament en circuits digitals més senzills, que consumiran menys, seràn més ràpids i fiables.
+* **Optimització**: Permet simplificar expressions lògiques complexes. Això es tradueix directament en circuits digitals més senzills, que consumiran menys i seran més ràpids i fiables.
 
 ## Operadors booleans
 
 L'àlgebra de Boole utilitza tres operadors fonamentals. Les portes lògiques s'hi corresponen directament i prenen el mateix nom.
-Els operadors booleans es poden representar de diferents maneres segons l’àmbit d’aplicació de l’àlgebra de Boole.
+Els operadors booleans es poden representar de diferents maneres segons l’àmbit d’aplicació: matemàtiques, electrònica o programació.
 
-### NOT o Negació:
+### **NOT**:
+L'operador NOT també s'anomena negació o inversió lògica.
+Per a una variable booleana $A$, s'expressa amb el símbol "$\overline{\quad}$" sobre la variable, amb el símbol "$\neg$" o amb un apòstrof "$'$".
+$\overline{A}$ o també $\neg A$ o bé $A'$
 
-La negació d'una variable booleana $A$ es pot expressar de diferents maneres depenent de l'ambit d'aplicació de l'àlgebra de boole.
+La taula de veritat es correspon amb la porta lògica NOT. La sortida és el valor contrari a l'entrada.
 
-$\bar{A}$
+|$A$| $\overline{A}$ |
+|---|:-----:|
+| 0 | 1 |
+| 1 | 0 |
 
-(també s'utilitza $A'$ o bé $¬A$)
 
-La negació inverteix el valor de l'entrada. La taula de veritat es correspòn amb la porta lògica NOT. Si l'entrada és 0, la sortida és 1; si l'entrada és 1, la sortida és 0.
+### **OR**:
+L'operador OR també s'anomena suma o disjunció lògica.
+Per exemple, per a les variables booleanes $A$ i $B$ s'expressa amb el símbol "$+$".
+$A+B$ o també $A \lor B$
 
-| $A$ | $\bar{A}$ |
-|---|----|
-| 0 | 1  |
-| 1 | 0  |
+La taula de veritat es correspon amb la porta lògica OR. La sortida és $1$ si alguna de les entrades és $1$.
+
+|$A$|$B$| $A+B$ |
+|---|---|:-----:|
+| 0 | 0 | 0 |
+| 0 | 1 | 1 |
+| 1 | 0 | 1 |
+| 1 | 1 | 1 |
 
 ### **AND**:
-L'operador AND també s'anomena multiplicació o conjunció lògica. 
-
-Per exemple, per a les variables booleanes $A$ i $B$ s'expressa amb el símbol \"$·$\" o la simple juxtaposició.
-
-$A·B$
-
-o també
-
-$AB$
-
-o bé
- 
-$A∧B$
+L'operador AND també s'anomena multiplicació o conjunció lògica.
+Per exemple, per a les variables booleanes $A$ i $B$ s'expressa amb el símbol "$·$" o la simple juxtaposició.
+$A·B$ o també $AB$ o bé $A \land B$
 
 La taula de veritat es correspon amb la porta lògica AND. La sortida és $1$ només si totes les entrades són $1$.
 
@@ -68,25 +69,14 @@ La taula de veritat es correspon amb la porta lògica AND. La sortida és $1$ no
 | 1 | 0 | 0     |
 | 1 | 1 | 1     |
 
-### OR:
-L'operador OR també es pot referir com a suma o disjunció lògica.
+## Prioritat d'operacions
 
-Per exemple, per a les variables booleanes $A$ i $B$ s'expressa amb el símbol "$+$". 
+La prioritat de les operacions booleanes és la següent (de més prioritat a menys):
+1. Parèntesis
+2. NOT
+3. AND
+4. OR
 
-$A + B$
-
-o també
-
-$A∨B$
-
-La taula de veritat es correspon amb la porta lògica OR. La sortida és $1$ si almenys una de les entrades és $1$.
-
-|$A$|$B$| $A+B$ |
-|---|---|:-----:|
-| 0 | 0 | 0     |
-| 0 | 1 | 1     |
-| 1 | 0 | 1     |
-| 1 | 1 | 1     |
 
 
 ## Postulats Fonamentals o Axiomes de Boole
@@ -120,51 +110,40 @@ $\bar{1} = 0$
 
 $\overline{\overline{A}} = A$
 
-**Propietat Commutativa de la multiplicació i de la suma lògica**: L'ordre de les operacions no altera el resultat.
+**Propietat Commutativa:** L'ordre de les variables no altera el resultat.
+* $A + B = B + A$
+* $A · B = B · A$
 
-$A + B = B + A$
-
-$A · B = B · A$
-
-**Propietat Associativa:** Quan hi ha tres o més variables, la manera com s'agrupen les operacions no afecta el resultat.
-
-$(A + B) + C = A + (B + C)$
-
-$(A · B) · C = A · (B · C)$
+**Propietat Associativa:** En operacions amb més de dues variables, la manera com s'agrupen les operacions no afecta el resultat.
+* $(A + B) + C = A + (B + C)$
+* $(A · B) · C = A · (B · C)$
 
 **Propietat Distributiva:** La multiplicació lògica es distribueix sobre la suma lògica.
+* $A · (B + C) = (A · B) + (A · C)$
 
-$A · (B + C) = (A · B) + (A · C)$
+**Atenció!** A diferència de l'àlgebra tradicional, la suma lògica es distribueix sobre la multiplicació lògica.
+* $A + (B · C) = (A + B) · (A + C)$
 
-**Atenció!** a diferència de l'àlgebra tradicional, la suma lògica es distribueix sobre la multiplicació lògica.
-
-$A + (B · C) = (A + B) · (A + C)$
-
-**Lleis d'Absorció**
-
-$A + (A · B) = A$
-
-$A · (A + B) = A$
+**Lleis d'Absorció:**
+* $A + (A · B) = A$
+* $A · (A + B) = A$
 
 **Lleis de De Morgan:** Molt importants per a la simplificació.
+* $\overline{A + B} = \bar{A} · \bar{B}$
+* $\overline{A · B} = \bar{A} + \bar{B}$
 
-$\overline{A + B} = \bar{A} · \bar{B}$
-
-$\overline{A · B} = \bar{A} + \bar{B}$
-
-**Algunes propietats derivades**
-
-$A + \bar{A}·B=A+B$
-
-$A(\bar{A}+B) = A·B$
+**Algunes propietats derivades:**
+* $A + \bar{A}·B=A+B$
+* $A(\bar{A}+B) = A·B$
 
 
 ## Funcions booleanes
 Una funció booleana és una aplicació que assigna a unes variables booleanes d'entrada un resultat en forma de variable booleana.
 
-Aquesta funció es pot representar de diferents maneres; amb una expressió booleana, una taula de veritat, un mapa de Karnaugh o bé amb un circuit digital combinacional.
+Aquesta funció es pot representar de diferents maneres; amb una expressió booleana, una taula de veritat, un mapa de Karnaugh o bé amb un circuit digital combinacional. Amb aquesta base podràs simplificar expressions, dissenyar funcions lògiques i sistemes digitals cada cop més complexos.
 
-Amb aquesta base podràs simplificar expressions, dissenyar funcions lògiques i sistemes digitals cada cop més complexos.
+Simplificar una funció booleana significa trobar una expressió equivalent amb el menor nombre de termes i variables possible. Això permet construir el circuit amb menys portes lògiques.
+Per simplificar s'utilitzen les lleis i propietats vistes anteriorment, o bé els Mapes de Karnaugh.
 
 
 

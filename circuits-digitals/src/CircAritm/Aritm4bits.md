@@ -1,6 +1,6 @@
 <!-- Posar aquesta imatge al començament de cada lliçó -->
-<img src='../logos/illustracio1.png' alt="Circuits digitals" style=" float: left; border-radius:8px; height: 120px; text-align: right;"/>
-<img src='../logos/LogoCatedraCHIPBlanc.jpg' alt="Logo Càtedra Chip" style="float: right; border-radius:8px; height: 120px; text-align: right;"/>
+<img src='../logos/illustracio1.png' alt="Circuits digitals" style="float: left; border-radius: 8px; height: 120px;"/>
+<img src='../logos/LogoCatedraCHIPBlanc.jpg' alt="Logo Càtedra Chip" style="float: right; border-radius: 8px; height: 120px;"/>
 <div style="clear: both;"></div>
 <br>
 
@@ -115,7 +115,7 @@ Utilitzant un *BitWidth* de 4 simplifiquem el circuit:
 
 ## EXEMPLE: Triar operacions
 
-A més d'efectuar operacions aritmètiques, els circuits aritmètics també poden implementar un circuit que  tria una operació en particular. Les UAL (ALU) són circuits que permeten triar entre diferents operacions en funció d'una variable. Aquest exemple explora aquesta funció.
+Els circuits aritmètics, a més d'efectuar operacions aritmètiques,  també poden implementar un circuit que  tria una operació en particular. Les UAL (ALU) són circuits que permeten triar entre diferents operacions en funció d'una variable. Aquest exemple explora aquesta funció.
 
 Volem implementar un circuit que triï entre una suma i una resta en funció d’una variable d'entrada $op$.
 
@@ -128,7 +128,7 @@ La part del circuit que fa la suma és el següent:
 
 <img src='./triarsuma.png' style="display:block; height:150px; margin:0 auto; border-radius:8px; background-color: rgba(255, 255, 255, 1); padding:4px;"/>
 
-Per fer la resta sabem que fer l'operació $S= A-B = A+ \bar{B} +1$. 
+Per fer la resta sabem que hem de fer l'operació $S= A-B = A+ \bar{B} +1$. 
 Per negar la variable $B$ farem servir una porta NOT de 4 bits. El carry ha de ser igual a 1, $C_{in}=1$, per tant utilitzarem una font o *power*.
 
 Afegint la peça del circuit que fa la resta obtenim:

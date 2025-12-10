@@ -1,12 +1,12 @@
 <!-- Posar aquesta imatge al començament de cada lliçó -->
-<img src='../logos/illustracio1.png' alt="Circuits digitals" style=" float: left; border-radius:8px; height: 120px; text-align: right;"/>
-<img src='../logos/LogoCatedraCHIPBlanc.jpg' alt="Logo Càtedra Chip" style="float: right; border-radius:8px; height: 120px; text-align: right;"/>
+<img src='../logos/illustracio1.png' alt="Circuits digitals" style="float: left; border-radius: 8px; height: 120px;"/>
+<img src='../logos/LogoCatedraCHIPBlanc.jpg' alt="Logo Càtedra Chip" style="float: right; border-radius: 8px; height: 120px;"/>
 <div style="clear: both;"></div>
 <br>
 
 # Introducció als Circuits Combinacionals
 
-En un circuit combinacional el valor de la seva sortida depèn únicament dels valors de les seves entrades en aquell moment. La sortida canvia de manera instantània en modificar-se les entrades.
+En un circuit combinacional el valor de la sortida depèn únicament dels valors actuals de les seves entrades. La sortida canvia de manera pràcticament instantània en modificar-se les entrades.
 Els circuits combinacionals es construeixen a partir de portes lògiques bàsiques. No tenen retroalimentació interna, la sortida no s’enllaça com a entrada. Tampoc tenen memòria, a diferència dels circuits seqüencials. El seu funcionament es pot descriure completament mitjançant l’àlgebra de Boole o amb taules de veritat.
 
 
@@ -35,19 +35,18 @@ Al tema [Multiplexors](./multiplexors.md) aprendràs a crear dispositius MUX a p
 <center><i>Multiplexor</i></center>
 
 
-Al tema [Busos](./busos.md) faràs exercicis de corriment de bits (dreta i esquerra) i inversió de nombres binaris de N de bits.
+Al tema [**Busos**](./busos.md) faràs exercicis de desplaçament de bits (*shift*) i operacions amb conjunts de bits.
 
 <img src='./busos.png' alt="Busos" style="display:block; height:120px; margin:0 auto; border-radius:8px; background-color: rgba(255, 255, 255, 1); padding:4px;"/>
-<center><i>Exemple de desplaçamaent a l'esquerra (Left Shift)</i></center>
-
-Els exercicis del tema [Nombres](./nombres.md) tracten sobre els circuits digitals encarregats de fer diferents operacions amb números.
-
-Al tema [BCD](./bcddigits.md) (Binary Coded Decimal) faràs exercicis sobre els circuits encarregats codificar els dígits decimals en binari.
-
-Finalment, al tema [Miscel·lània](./miscellania.md) faràs exercicis més avançats.
+<center><i>Exemple de desplaçament a l'esquerra (Left Shift)</i></center>
 
 
-<!-- Aquesta imatge ha d'anar al final de cada lliçó, ja sigui amb aquesta línia o dins la signatura. Deixar comentat si ja està a la signatura-->
+Els exercicis del tema [**Nombres**](./nombres.md) tracten sobre els circuits digitals encarregats de fer diferents operacions aritmètiques o lògiques amb nombres binaris.
+
+Al tema [**BCD**](./bcddigits.md) (*Binary Coded Decimal*) farem una introducció a la codificació de nombres per a visualitzadors de 7 segments.
+
+Finalment, al tema [**Miscel·lània**](./miscellania.md) trobaràs un recull d'exercicis variats que combinen diferents conceptes.
+
 <br>
 <br>
 <img src='../logos/TotsLogosBlanc.png ' alt="Logos Càtedra Chip" width="100%" style="display:block; margin:0 auto; border-radius:8px;"/>
