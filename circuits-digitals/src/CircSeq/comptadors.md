@@ -25,7 +25,7 @@ S’utilitza per comptar, generar seqüències binàries periòdiques i dividir 
 El següent comptador té un sol bit, utilitza un sol biestable. És, per tant, un comptador MOD $2^1$, i pot comptar de 0 a 1.
 
 
-<img src='./comptadorMODdos1.png' alt="comptador MOD 2^1" style="display:block; height:200px; margin:0 auto; border-radius:8px; background-color: rgba(255, 255, 255, 1); padding:4px;"/>
+<img src='./comptadorMODdos1.png' alt="comptador MOD 2^1" style="display:block; height:200px; margin:0 auto; border-radius:8px; background-color:white; padding:4px;"/>
 
 Aquest es compon d’un biestable D, un sumador complet (*full adder*) connectat a la sortida del biestable i un multiplexor. El sumador sumarà un valor constant $1$ a la sortida $Q$ del biestable.  Aquest senyal amb valor $Q+1$ es connectarà a l’entrada $D$ del biestable.
 
@@ -69,7 +69,7 @@ El següent pols de rellotge actualitza còpia el valor $D=0$ a $Q$, i així hem
 Podem visualitzar el funcionament d’aquest comptador amb el cronograma següent:
 
 
-<img src='./comptadorMODdos1cronograma.png' alt="comptador MOD 2^1" style="display:block; width:500px; margin:0 auto; border-radius:8px; background-color: rgba(255, 255, 255, 1); padding:4px;"/>
+<img src='./comptadorMODdos1cronograma.png' alt="comptador MOD 2^1" style="display:block; width:500px; margin:0 auto; border-radius:8px; background-color:white; padding:4px;"/>
 
 Sigui quin sigui l’estat del comptador, en el moment que activem el senyal de reinici ($rst$), el multiplexor forçarà el comptador a retornar al seu estat inicial.
 
@@ -86,7 +86,7 @@ Aquest conjunt de 3 sumadors complets, és a dir, aquest sumador de 3 bits, afeg
 
 El senyal de reinici (*reset*, o $rst$) crearà un reinici síncron del comptador, retornant-lo a zero.
 
-<img src='./comptadorMODdos3.png' alt="comptador MOD $2^3$" style="display:block; width:700px; margin:0 auto; border-radius:8px; background-color: rgba(255, 255, 255, 1); padding:4px;"/>
+<img src='./comptadorMODdos3.png' alt="comptador MOD $2^3$" style="display:block; width:700px; margin:0 auto; border-radius:8px; background-color:white; padding:4px;"/>
 <center><i>Comptador binari MOD 2^3</i></center>
 
 Analitzem el funcionament d’aquest comptador, començant amb tots els biestables a zero. La taula, més endavant, recull el resultat d’aquesta anàlisi.
@@ -145,7 +145,7 @@ El setè pols de rellotge durà el comptador altra vegada al seu estat inicial.
 
 Podem visualitzar el funcionament d’aquest comptador amb el cronograma següent:
 
-<img src='./comptadorMODdos3cronograma.png' alt="comptador MOD $2^3$" style="display:block; width:700px; margin:0 auto; border-radius:8px; background-color: rgba(255, 255, 255, 1); padding:4px;"/>
+<img src='./comptadorMODdos3cronograma.png' alt="comptador MOD $2^3$" style="display:block; width:700px; margin:0 auto; border-radius:8px; background-color:white; padding:4px;"/>
 
 Sigui quin sigui l’estat del comptador, en el moment que activem el senyal de reinici (*rst*), el multiplexor forçarà el comptador a retornar al seu estat inicial.
 
@@ -153,14 +153,14 @@ Sigui quin sigui l’estat del comptador, en el moment que activem el senyal de 
 
 Per implementar un comptador de n bits cal encadenar n biestables, n sumadors i n multiplexors de la mateixa manera. Amb aquest comptador es pot comptar de 0 fins a $2^n$ .
 
-<img src='./comptadorMODdosn.png' alt="comptador MOD $2^n$" style="display:block; height:700px; margin:0 auto; border-radius:8px; background-color: rgba(255, 255, 255, 1); padding:4px;"/>
+<img src='./comptadorMODdosn.png' alt="comptador MOD $2^n$" style="display:block; height:700px; margin:0 auto; border-radius:8px; background-color:white; padding:4px;"/>
 <center><i>Comptador binari MOD 2^n</i></center>
 
 ## Comptador Binari Asíncron (*Asynchronous Binary Counter* o *Ripple Counter*):
 Un comptador binari asíncron (*Asynchronous Binary Counter*), o comptador en cascada (*Ripple Counter*), s’implementa amb una sèrie de biestables, normalment del tipus JK.
 El primer biestable representa el bit menys significatiu *LSB*, que és controlat pel rellotge, i cadascun dels següents pel senyal de sortida de l’anterior, de manera que aquests biestables canvien d’estat **en cascada**.
 
-<img src='./comptadorasincronn.png' alt="comptador asíncron n" style="display:block; width:700px; margin:0 auto; border-radius:8px; background-color: rgba(255, 255, 255, 1); padding:4px;"/>
+<img src='./comptadorasincronn.png' alt="comptador asíncron n" style="display:block; width:700px; margin:0 auto; border-radius:8px; background-color:white; padding:4px;"/>
 <center><i>Comptador asíncron</i></center>
 
 + Els biestables JK estan connectats de manera que $J=K=1$ i, per tant, l’estat de $Q$ es commuta entre 0 i 1 quan entra un senyal de rellotge.
@@ -211,7 +211,7 @@ Aquesta taula mostra la seqüència dels diferents bits del comptador.
 La figura següent mostra el cronograma d’aquest comptador.
 
 
-<img src='./comptadorasincronncronograma.png' alt="comptador asíncron n" style="display:block; width:500px; margin:0 auto; border-radius:8px; background-color: rgba(255, 255, 255, 1); padding:4px;"/>
+<img src='./comptadorasincronncronograma.png' alt="comptador asíncron n" style="display:block; width:500px; margin:0 auto; border-radius:8px; background-color:white; padding:4px;"/>
 
 Aquest tipus de comptadors acumulen retards de tots els biestables a l’hora de passar d’un estat al següent, per tant, no és adequat per a freqüències de rellotge altes.
 
@@ -224,7 +224,7 @@ Un comptador binari síncron és molt similar als comptadors asíncrons, però e
 
 Utilitza biestables de tipus JK i té la següent estructura:
 
-<img src='./comptadorsincron4.png' alt="comptador síncron n" style="display:block; width:700px; margin:0 auto; border-radius:8px; background-color: rgba(255, 255, 255, 1); padding:4px;"/>
+<img src='./comptadorsincron4.png' alt="comptador síncron n" style="display:block; width:700px; margin:0 auto; border-radius:8px; background-color:white; padding:4px;"/>
 <center><i>Comptador síncron</i></center>
 
 Al biestable 0 les entrades $J$ i $K$ estan connectades de manera que $J=K=1$ i, per tant, la seva sortida $Q_0$ commuta entre 0 i 1 sempre que entri un senyal de rellotge $CLK$.
@@ -286,7 +286,7 @@ Tant la taula, com el cronograma amb la seqüència del comptador són idèntiqu
 |15 |1|1|1|1|1111
 |16 |0|0|0|0|0000
 
-<img src='./comptadorasincronncronograma.png' alt="comptador síncron 4bits" style="display:block; width:500px; margin:0 auto; border-radius:8px; background-color: rgba(255, 255, 255, 1); padding:4px;"/>
+<img src='./comptadorasincronncronograma.png' alt="comptador síncron 4bits" style="display:block; width:500px; margin:0 auto; border-radius:8px; background-color:white; padding:4px;"/>
 
 
 
@@ -294,36 +294,36 @@ Tant la taula, com el cronograma amb la seqüència del comptador són idèntiqu
 En aquest exemple veurem com realitzar un comptador de 4 bits.
 
 <div style="display: flex; justify-content: center; align-items:center; gap: 16px;">
-    <img src='./sequentialelements1.png' style="display:block;    height:250px; margin:0 auto; border-radius:8px; background-color: rgba(255, 255, 255, 1); padding:4px;"/>
-    <img src='./sequentialelements2.png' style="display:block;    height:250px; margin:0 auto; border-radius:8px; background-color: rgba(255, 255, 255, 1); padding:4px;"/>
+    <img src='./sequentialelements1.png' style="display:block;    height:250px; margin:0 auto; border-radius:8px; background-color:white; padding:4px;"/>
+    <img src='./sequentialelements2.png' style="display:block;    height:250px; margin:0 auto; border-radius:8px; background-color:white; padding:4px;"/>
 </div>
 
 Les connexions del biestable que ens interessen són la **D** i **Q**, que marquen l'entrada i sortida de l'element de memòria, i també **CLK**, que és l’entrada del senyal de rellotge.
 L'entrada de rellotge representa sovint amb un triangle a l'interior de l'element. 
 
 <div style="display: flex; justify-content: center; align-items:center; gap: 16px;">
-    <img src='./D1.png' style="display:block;    width:180px; margin:0 auto; border-radius:8px; background-color: rgba(255, 255, 255, 1); padding:4px;"/>
-    <img src='./D2.png' style="display:block;    height:180px; margin:0 auto; border-radius:8px; background-color: rgba(255, 255, 255, 1); padding:4px;"/>
-    <img src='./D3.png' style="display:block;    height:180px; margin:0 auto; border-radius:8px; background-color: rgba(255, 255, 255, 1); padding:4px;"/>
+    <img src='./D1.png' style="display:block;    width:180px; margin:0 auto; border-radius:8px; background-color:white; padding:4px;"/>
+    <img src='./D2.png' style="display:block;    height:180px; margin:0 auto; border-radius:8px; background-color:white; padding:4px;"/>
+    <img src='./D3.png' style="display:block;    height:180px; margin:0 auto; border-radius:8px; background-color:white; padding:4px;"/>
 </div>
 
 El biestable D també compta amb altres entrades com *enables* i *resets* que permeten reiniciar o eliminar estats d’informació. També té una sortida negada $\bar{Q}$ per si cal operar amb valors de sortida inversos.
 
 Volem un comptador que segueixi una seqüència binària de 4 bits, de valors successius entre el 0000 i el 1111. També volem incloure un senyal de reset que retorni la sortida a 0000. Aquest comportament es pot aconseguir amb un sumador, un multiplexor i un biestable de 4 bits com a la figura.
 
-<img src='./comptador4bits1.png' alt="Seqüència comptador" style="display:block; width:550px; margin:0 auto; border-radius:8px; background-color: rgba(255, 255, 255, 1); padding:4px;"/>
+<img src='./comptador4bits1.png' alt="Seqüència comptador" style="display:block; width:550px; margin:0 auto; border-radius:8px; background-color:white; padding:4px;"/>
 
 El pols de rellotge farà que el sumador afegeixi una constant 0001 al valor de sortida del biestable. En aquest exemple passant d'un valor 0100 a 0101.
 
-<img src='./comptador4bits2.png' alt="Seqüència comptador" style="display:block; width:550px; margin:0 auto; border-radius:8px; background-color: rgba(255, 255, 255, 1); padding:4px;"/>
+<img src='./comptador4bits2.png' alt="Seqüència comptador" style="display:block; width:550px; margin:0 auto; border-radius:8px; background-color:white; padding:4px;"/>
 
 El multiplexor forçarà el reinici. Al entrar un senyal **rst** l'estat del biestable passarà a ser 0000.
 
-<img src='./comptador4bits3.png' alt="Seqüència comptador" style="display:block; width:550px; margin:0 auto; border-radius:8px; background-color: rgba(255, 255, 255, 1); padding:4px;"/>
+<img src='./comptador4bits3.png' alt="Seqüència comptador" style="display:block; width:550px; margin:0 auto; border-radius:8px; background-color:white; padding:4px;"/>
 
 [CircuitVerse](https://circuitverse.org/simulator) inclou una entrada *Asyncronous reset* als biestables. Per fer un reinici asíncron cal eliminar el multiplexor i connectar el senyal $rst$ a l'entrada *Asyncronous reset* del biestable.
 
-<img src='./asyncronousreset.png' alt="Seqüència comptador" style="display:block; height:180px; margin:0 auto; border-radius:8px; background-color: rgba(255, 255, 255, 1); padding:4px;"/>
+<img src='./asyncronousreset.png' alt="Seqüència comptador" style="display:block; height:180px; margin:0 auto; border-radius:8px; background-color:white; padding:4px;"/>
 
 
 

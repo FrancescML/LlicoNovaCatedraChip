@@ -28,7 +28,7 @@ El diagrama d’estats d'una màquina de Moore representa:
 + Les entrades del circuit s’indiquen damunt les fletxes de canvi d’estat.
 + Les sortides s’indiquen també dins el cercle sota el nom de l’estat (Estat/Sortida).
 
-<img src='./diagramaMoore.png' alt="Diagrama d'estats, model de Moore" style="display:block; height:300px; margin:0 auto; border-radius:8px; background-color: rgba(255, 255, 255, 1); padding:4px;"/>
+<img src='./diagramaMoore.png' alt="Diagrama d'estats, model de Moore" style="display:block; height:300px; margin:0 auto; border-radius:8px; background-color:white; padding:4px;"/>
 <center><i>Diagrama d'estats d'una màquina de Moore</i></center>
 
 
@@ -80,7 +80,7 @@ El diagrama d’estats d'una màquina de Mealy és com el següent:
 + Els canvis d’estat s’indiquen amb fletxes.
 + Les entrades i les sortides es representen junts al costat de les fletxes (entrada/sortida).
 
-<img src='./diagramaMealy.png' alt="Diagrama d'estats, model de Mealy" style="display:block; height:300px; margin:0 auto; border-radius:8px; background-color: rgba(255, 255, 255, 1); padding:4px;"/>
+<img src='./diagramaMealy.png' alt="Diagrama d'estats, model de Mealy" style="display:block; height:300px; margin:0 auto; border-radius:8px; background-color:white; padding:4px;"/>
 <center><i>Diagrama d'estats d'una màquina de Mealy</i></center>
 
 
@@ -154,7 +154,7 @@ $S_{sortida}: 0,0,1,1,0,0,1,1,1,1,0,0,0,1,0,1 …$
 
 Per causar un retard de dos cicles ens cal utilitzar dos biestables de tipus D connectats en sèrie com a la figura.
 
-<img src='./exemple_0circuit.png' alt="Retardador de 2 cicles" style="display:block; height:200px; margin:0 auto; border-radius:8px; background-color: rgba(255, 255, 255, 1); padding:4px;"/>
+<img src='./exemple_0circuit.png' alt="Retardador de 2 cicles" style="display:block; height:200px; margin:0 auto; border-radius:8px; background-color:white; padding:4px;"/>
 
 
 A cada pols de rellotge passarà el següent:
@@ -215,14 +215,14 @@ A aquest circuit li afegirem més endavant un senyal de reinici $rst$ (*reset*) 
 
 El diagrama d’estats queda així definit.
 
-<img src='./exemple_0diagrama.png' alt="Diagrama estats retardador de 2 cicles" style="display:block; height:400px; margin:0 auto; border-radius:8px; background-color: rgba(255, 255, 255, 1); padding:4px;"/>
+<img src='./exemple_0diagrama.png' alt="Diagrama estats retardador de 2 cicles" style="display:block; height:400px; margin:0 auto; border-radius:8px; background-color:white; padding:4px;"/>
 <center><i>Diagrama d'estats del delay line de 2 cicles, incloent un senyal de reinici rst</i></center>
 
 Veient que la sortida $S_{sortida}$ depèn únicament de l’estat on ens trobem, podem afirmar que aquest circuit **és una màquina de Moore**.
 
 Una vegada fet el diagrama d’estats, passem a muntar el circuit a [CircuitVerse](https://circuitverse.org/simulator). Muntem els dos biestables D en sèrie compartint el mateix senyal de rellotge i el mateix senyal de reinici (*rst*).
 
-<img src='./exemple_0biestables.png' alt="Circuit exemple" style="display:block; width:550px; margin:0 auto; border-radius:8px; background-color: rgba(255, 255, 255, 1); padding:4px;"/>
+<img src='./exemple_0biestables.png' alt="Circuit exemple" style="display:block; width:550px; margin:0 auto; border-radius:8px; background-color:white; padding:4px;"/>
 
 En els exercicis de Jutge els senyals de reinici són sempre síncrons, per tant, així ho farem en aquest exemple, connectant els dos biestables al mateix *reset* síncron. 
 
@@ -230,8 +230,8 @@ Cal connectar doncs el senyal *rst* a l’entrada *Preset* del biestable D i no 
 
 
 <div style="display: flex; justify-content: center; align-items:center; gap: 16px;">
-    <img src='./exemple_1elementCV1.png' style="display:block;    height:200px; margin:0 auto; border-radius:8px; background-color: rgba(255, 255, 255, 1); padding:4px;"/>
-    <img src='./exemple_1elementCV2.png' style="display:block;    height:180px; margin:0 auto; border-radius:8px; background-color: rgba(255, 255, 255, 1); padding:4px;"/>
+    <img src='./exemple_1elementCV1.png' style="display:block;    height:200px; margin:0 auto; border-radius:8px; background-color:white; padding:4px;"/>
+    <img src='./exemple_1elementCV2.png' style="display:block;    height:180px; margin:0 auto; border-radius:8px; background-color:white; padding:4px;"/>
 </div>
 
 Per tal d’inicialitzar els valors dels biestables a 0 cal afegir multiplexors on el senyal selector sigui el senyal de reinici *rst*:
@@ -240,7 +240,7 @@ El primer multiplexor tindrà com a entrades el senyal d’entrada $S_{entrada}$
 
 El segon multiplexor tindrà com a entrades la sortida $Q$ del primer biestable i la mateixa constant 0. La seva sortida estarà connectada a l’entrada $D$ del segon biestable.
 
-<img src='./exemple_2multiplexors.png' alt="Circuit exemple" style="display:block; width:450px; margin:0 auto; border-radius:8px; background-color: rgba(255, 255, 255, 1); padding:4px;"/>
+<img src='./exemple_2multiplexors.png' alt="Circuit exemple" style="display:block; width:450px; margin:0 auto; border-radius:8px; background-color:white; padding:4px;"/>
 
 Comprovarem el seu funcionament amb una seqüència inicial d'exemple:
 
@@ -248,17 +248,17 @@ $S_{entrada}$: 1, 1, 1, ···
 
 Després d'un reinici *rst=1*, tots els biestables es troben a $0$. Ens trobem doncs en l’estat inicial $E0$. El valor inicial de $S_{sortida}$ és $0$.
 
-<img src='./exemple_3estatinicial.png' alt="Circuit exemple" style="display:block; width:550px; margin:0 auto; border-radius:8px; background-color: rgba(255, 255, 255, 1); padding:4px;"/>
+<img src='./exemple_3estatinicial.png' alt="Circuit exemple" style="display:block; width:550px; margin:0 auto; border-radius:8px; background-color:white; padding:4px;"/>
 
 A partir d'ara fixem $rst=0$ per permetre al circuit evolucionar.
 
 En el **primer flanc de rellotge** el valor de $S_{entrada}=1$ es carrega al primer biestable. L’estat 0 del primer biestable passa al segon biestable i $S_{sortida}$ continua tenint un valor de 0. Hem passat doncs a l'estat $E1$.
 
-<img src='./exemple_4primerflanc.png' alt="Circuit exemple" style="display:block; width:550px; margin:0 auto; border-radius:8px; background-color: rgba(255, 255, 255, 1); padding:4px;"/>
+<img src='./exemple_4primerflanc.png' alt="Circuit exemple" style="display:block; width:550px; margin:0 auto; border-radius:8px; background-color:white; padding:4px;"/>
 
 En el **segon flanc de rellotge**, el valor de $S_{entrada}=1$ es carrega al primer biestable, el valor del primer biestable 1 es carrega al segon biestable i per tant $S_{sortida}=1$. Ens trobem a l'estat $E2$.
 
-<img src='./exemple_5segonflanc.png' alt="Circuit exemple" style="display:block; width:550px; margin:0 auto; border-radius:8px; background-color: rgba(255, 255, 255, 1); padding:4px;"/>
+<img src='./exemple_5segonflanc.png' alt="Circuit exemple" style="display:block; width:550px; margin:0 auto; border-radius:8px; background-color:white; padding:4px;"/>
 
 En aquest punt del procés, el primer valor de $S_{entrada}$ s'ha traslladat des de l'entrada fins a la sortida passant pels dos biestables. Els dos valors següents estan carregats als biestables i els senyals de rellotge successius els aniràn traslladant cap a la sortida.
 Aquest circuit implementa doncs una cua entre $S_{entrada}$ i $S_{sortida}$ que el senyal d'entrada triga dos cicles en travessar.

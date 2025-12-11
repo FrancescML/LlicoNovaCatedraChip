@@ -8,7 +8,7 @@
 
 Aquest contingut ha estat creat per [Càtedra CHIP UPC](https://catedrachip.upc.edu/ca), un projecte impulsat pel Ministeri per a la Transformació Digital i de la Funció Pública i finançat per la Unió Europea-NextGenerationEU.
 
-<img src='../logos/LogoCatedraCHIPBlanc.jpg' alt="Comparador" style="display:block; width:250px; margin:0 auto; border-radius:8px; background-color: rgba(255, 255, 255, 1); padding:4px;"/>
+<img src='../logos/LogoCatedraCHIPBlanc.jpg' alt="Comparador" style="display:block; width:250px; margin:0 auto; border-radius:8px; background-color:white; padding:4px;"/>
 
 La plataforma docent [jutge.org](https://jutge.org) ha estat desenvolupada per [l’equip](https://jutge.org/about/credits) encapçalat per **Jordi Petit**.
 

@@ -1,35 +1,39 @@
 <!-- Posar aquesta imatge al començament de cada lliçó -->
-<img src='../logos/illustracio1.png' alt="Circuits digitals" style="float: left; border-radius: 8px; height: 120px;"/>
-<img src='../logos/LogoCatedraCHIPBlanc.jpg' alt="Logo Càtedra Chip" style="float: right; border-radius: 8px; height: 120px;"/>
+
+<img src="../logos/illustracio1.png" alt="Circuits digitals" style="float: left; border-radius: 8px; height: 120px;" />
+<img src="../logos/LogoCatedraCHIPBlanc.jpg" alt="Logo Càtedra Chip" style="float: right; border-radius: 8px; height: 120px;" />
 <div style="clear: both;"></div>
 <br>
 
 # Sistemes de votació
-En el context dels circuits digitals, els sistemes de votació fan referència a implementacions electròniques o lògiques dissenyades per processar múltiples entrades i determinar un resultat. És a dir, generen una sortida, basada en una regla de majoria de vots o una lògica predefinida.
 
+En el context dels circuits digitals, els sistemes de votació fan referència a implementacions electròniques o lògiques dissenyades per processar múltiples entrades i determinar un resultat basat en una regla de majoria de vots o en una lògica predefinida.
 
-## EXEMPLE: Sistema de votació per a comitès
-En aquest exemple som els encarregats de dissenyar un sistema electrònic de votació per al Comitè Executiu d'un prestigiós equip de futbol. Aquest comitè té quatre membres: el President, el Secretari, el Tresorer i el Vocal. Cadascú pot votar "Sí" o "No".
+## Exemple: Sistema de votació per a comitès
 
-L'aprovació de les propostes segueix aquestes **regles d'aprovació**:
-1.  Una proposta s’aprova quan tres o més membres voten a favor.
-1.  En cas d'empat (dos vots a favor i dos en contra), el vot qualificat del president decideix. Si el president vota “Sí” en un empat, la proposta s'aprova; si vota "No", es rebutja.
+Dissenyarem un sistema electrònic de votació per al Comitè Executiu d'un equip de futbol. Aquest comitè té quatre membres: el President, el Secretari, el Tresorer i el Vocal. Cadascun pot votar **Sí** (1) o **No** (0).
 
-Dissenyarem un circuit lògic que rebi com a entrades els vots dels quatre membres i emeti un senyal de sortida que indiqui si la proposta ha estat aprovada.
+Les **regles d'aprovació** són:
 
-Definim les nostres **variables d'entrada** (el valor $1$ significa "Si" i $0$ significa "No"):
-* $P$ : vot del President
-* $S$ : vot del Secretari
-* $T$ : vot del Tresorer
-* $V$ : vot del Vocal
+1. Una proposta s’aprova quan **tres o més membres** voten a favor.
+2. En cas d'empat (2 a favor i 2 en contra), el **vot del president** decideix. Si el president vota "Sí", la proposta s'aprova; si vota "No", es rebutja.
 
-La **variable de sortida** és $A$ (*Approved*). El valor $1$ significa aprovada, el valor $0$ indica que ha estat rebutjada.
+Dissenyarem un circuit lògic amb quatre entrades ($P$, $S$, $T$, $V$) i una sortida ($A$) que indica si la proposta queda aprovada.
 
-A continuació analitzem en quins supòsits la proposta serà aprovada, els anomenarem condicions, que es deriven de les regles d'aprovació.
+Definim les **variables d'entrada** ($1$ significa "Sí", $0$ significa "No"):
 
-**Condició d'aprovació 1:** tres o més vots a favor.
+* $P$: vot del President
+* $S$: vot del Secretari
+* $T$: vot del Tresorer
+* $V$: vot del Vocal
 
-Necessitem identificar totes les combinacions on la suma de P, S, T, V és 3 o 4.
+La **variable de sortida** és $A$ (*Approved*). $1$ significa aprovada, $0$ significa rebutjada.
+
+Analitzem en quins supòsits la proposta serà aprovada, els anomenarem **condicions d'aprovació** i es deriven de les regles d'aprovació.
+
+**Condició 1:** Tres o més vots a favor.
+
+Identifiquem totes les combinacions on la suma de P, S, T, V és 3 o 4.
 
 * Aprovat per tres vots a favor
     * $P=0$, $S=1$, $T=1$ i $V=1$ --> ($\bar{P}STV$)
@@ -41,11 +45,14 @@ Necessitem identificar totes les combinacions on la suma de P, S, T, V és 3 o 4
 
 La proposta s'aprovarà si es compleix qualsevol d'aquests supòsits (operació OR o suma lògica). La condició 1 s'expressa de la següent manera en l'àlgebra de Boole:
 
-$C_1 = \bar{P}STV + PST\bar{V} + PS\bar{T}V + P\bar{S}TV + PSTV$
 
-**Condició d'aprovació 2:** empat resolt favorablement pel president.
+$$
+C_1 = \bar{P}STV + PST\bar{V} + PS\bar{T}V + P\bar{S}TV + PSTV
+$$
 
-Ens cal identificar totes les combinacions de dos vots a favor i dos en contra. I d'aquestes, ens interessen on $P=1$.
+**Condició 2:** Empat resolt favorablement pel president.
+
+Ens cal identificar totes les combinacions de dos vots a favor i dos en contra. I d'aquestes, ens interessen aquelles amb $P=1$.
 * Aprovat
     * $P=1$, $S=1$, $T=0$ i $V=0$ --> ($PS\bar{T}\bar{V}$)
     * $P=1$, $S=0$, $T=1$ i $V=0$ --> ($P\bar{S}T\bar{V}$)
@@ -57,36 +64,37 @@ Ens cal identificar totes les combinacions de dos vots a favor i dos en contra. 
 
 La proposta s'aprovarà si es compleix algun d'aquests suposits. La condició 2 s'expressa com:
 
-$C_2 = PS\bar{T}\bar{V} + P\bar{S}T\bar{V} + P\bar{S}\bar{T}V$
+$$C_2 = PS\bar{T}\bar{V} + P\bar{S}T\bar{V} + P\bar{S}\bar{T}V$$
 
 La sortida $A$ serà $1$ si es compleix la condició $C_1$ o bé la condició $C_2$. La funció booleana és una suma lògica (OR) d'aquestes dues condicions:
 
-$A=C_1+C_2$
+$$A=C_1+C_2$$
 
 I per tant l'expressió de $A$, en funció de $P$, $S$, $T$ i $V$ és:
 
-$A= \bar{P}STV + PST\bar{V} + PS\bar{T}V + P\bar{S}TV + + PSTV + PS\bar{T}\bar{V} + P\bar{S}T\bar{V} + P\bar{S}\bar{T}V$
+$$A = \bar{P}STV + PST\bar{V} + PS\bar{T}V + P\bar{S}TV + PSTV + PS\bar{T}\bar{V} + P\bar{S}T\bar{V} + P\bar{S}\bar{T}V$$
 
-Muntem la taula de veritat amb tots els casos possibles:
+Construïm la taula de veritat amb tots els casos possibles:
 
-| $P$ | $S$ | $T$ | $V$ | vots favorables | $C_1$ | $C_2$ | $A$ |
-| --- | --- | --- | --- | :---: | --- | --- | --- |
-| 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
-| 0 | 0 | 0 | 1 | 1 | 0 | 0 | 0 |
-| 0 | 0 | 1 | 0 | 1 | 0 | 0 | 0 |
-| 0 | 0 | 1 | 1 | 2 | 0 | 0 | 0 |
-| 0 | 1 | 0 | 0 | 1 | 0 | 0 | 0 |
-| 0 | 1 | 0 | 1 | 2 | 0 | 0 | 0 |
-| 0 | 1 | 1 | 0 | 2 | 0 | 0 | 0 |
-| 0 | 1 | 1 | 1 | 3 | 1 | 0 | 1 |
-| 1 | 0 | 0 | 0 | 1 | 0 | 0 | 0 |
-| 1 | 0 | 0 | 1 | 2 | 0 | 1 | 1 |
-| 1 | 0 | 1 | 0 | 2 | 0 | 1 | 1 |
-| 1 | 0 | 1 | 1 | 3 | 1 | 0 | 1 |
-| 1 | 1 | 0 | 0 | 2 | 0 | 1 | 1 |
-| 1 | 1 | 0 | 1 | 3 | 1 | 0 | 1 |
-| 1 | 1 | 1 | 0 | 3 | 1 | 0 | 1 |
-| 1 | 1 | 1 | 1 | 4 | 1 | 0 | 1 |
+| $P$ | $S$ | $T$ | $V$ | Vots favorables | $C_1$ | $C_2$ | $A$ |
+| --- | --- | --- | --- | :-------------: | ----- | ----- | --- |
+| 0   | 0   | 0   | 0   |        0        | 0     | 0     | 0   |
+| 0   | 0   | 0   | 1   |        1        | 0     | 0     | 0   |
+| 0   | 0   | 1   | 0   |        1        | 0     | 0     | 0   |
+| 0   | 0   | 1   | 1   |        2        | 0     | 0     | 0   |
+| 0   | 1   | 0   | 0   |        1        | 0     | 0     | 0   |
+| 0   | 1   | 0   | 1   |        2        | 0     | 0     | 0   |
+| 0   | 1   | 1   | 0   |        2        | 0     | 0     | 0   |
+| 0   | 1   | 1   | 1   |        3        | 1     | 0     | 1   |
+| 1   | 0   | 0   | 0   |        1        | 0     | 0     | 0   |
+| 1   | 0   | 0   | 1   |        2        | 0     | 1     | 1   |
+| 1   | 0   | 1   | 0   |        2        | 0     | 1     | 1   |
+| 1   | 0   | 1   | 1   |        3        | 1     | 0     | 1   |
+| 1   | 1   | 0   | 0   |        2        | 0     | 1     | 1   |
+| 1   | 1   | 0   | 1   |        3        | 1     | 0     | 1   |
+| 1   | 1   | 1   | 0   |        3        | 1     | 0     | 1   |
+| 1   | 1   | 1   | 1   |        4        | 1     | 0     | 1   |
+
 
 L'expressió per a $A$ en funció de $P$, $S$, $T$ i $V$ és molt llarga. Fer-ne una simplificació lògica mitjançant algebra booleana seria complex. Alternativament podem utilitzar un [mapa de Karnaugh](../Intro/karnaugh.md) per a la funció de sortida $A$, amb les entrades $P$,$S$,$T$ i $V$ agrupades.
 
@@ -195,7 +203,7 @@ El següent pas és agrupar els ‘1’ en 4 grups, que marcarem amb diferents c
 
 Les variables constants dins del grup blau són $P=1$ i $T=1$, això es tradueix en el terme $PT$ a la solució.
 
-$A=PT+···$
+$$A=PT+···$$
 
 <table style="border-collapse: collapse; text-align: center;">
   <thead>
@@ -245,7 +253,7 @@ $A=PT+···$
 
 Les variables constants en el grup groc són $P=1$ i $V=1$, afegim el terme $PV$ a la solució.
 
-$A=PT + PV + ···$
+$$A=PT + PV + ···$$
 
 
 <table style="border-collapse: collapse; text-align: center;">
@@ -296,7 +304,7 @@ $A=PT + PV + ···$
 
 L’agrupació de color verd té en comú $P=1$ i $S=1$, afegim el terme $PS$ a la solució
 
-$A=PT + PV + PS + ···$
+$$A=PT + PV + PS + ···$$
 
 
 <table style="border-collapse: collapse; text-align: center;">
@@ -347,33 +355,29 @@ $A=PT + PV + PS + ···$
 
 Finalment, en el grup vermell les variables constants són $S=1$, $T=1$ i $V=1$, afegim el terme $STV$ a la solució.
 
-$A=PT + PV + PS + STV$
+$$A = PT + PV + PS + STV$$
 
 Aquesta és l’expressió booleana simplificada final, perque tots els ‘1’ ja han estat considerats en algun grup.
 
 El circuit digital derivat d’aquesta expressió és el següent:
 
 
-<img src='./svotacio_exemple.png' alt="Circuit digital" style="display:block; height:280px; margin:0 auto; border-radius:8px; background-color: rgba(255, 255, 255, 1); padding:4px;"/>
-<center><i>Circuit digital que implementa el sistema de votació per a comitès
-</i></center>
-
+<img src='./svotacio_exemple.png' alt="Circuit digital" style="display:block; height:280px; margin:0 auto; border-radius:8px; background-color:white; padding:4px;"/>
+<center><i>Circuit digital que implementa el sistema de votació per a comitès</i></center>
 
 ## Exercicis a Jutge.org: [Introduction to Digital Circuit Design](https://jutge.org/courses/JordiCortadella:IntroCircuits)
 
-[Executive Committee](https://jutge.org/problems/X16063_en)
+- [Executive Committee](https://jutge.org/problems/X16063_en)
+- [Two or more ones](https://jutge.org/problems/X67345_en)
+- [4-input majority voter](https://jutge.org/problems/X42168_en)
+- [Majority of 5 inputs](https://jutge.org/problems/X72286_en)
 
-[Two or more ones](https://jutge.org/problems/X67345_en)
-
-[4-input majority voter](https://jutge.org/problems/X42168_en)
-
-[Majority of 5 inputs](https://jutge.org/problems/X72286_en)
-
-<small>*Recorda que per accedir als exercicis i que el **Jutge** valori les teves solucions has d'estar inscrit al [curs](https://jutge.org/courses/JordiCortadella:IntroCircuits)*. Troba totes les instruccions [aqui](../Inici/instruccions.md)</small>
+<small>*Recorda que per accedir als exercicis i perquè el **Jutge** valori les teves solucions has d'estar inscrit al [curs](https://jutge.org/courses/JordiCortadella:IntroCircuits). Trobaràs totes les instruccions [aquí](../Inici/instruccions.md).* </small>
 
 <!-- Aquesta imatge ha d'anar al final de cada lliçó, ja sigui amb aquesta línia o dins la signatura. Deixar comentat si ja està a la signatura-->
-<br>
-<br>
+
+
+<br><br>
 <img src='../logos/TotsLogosBlanc.png ' alt="Logos Càtedra Chip" width="100%" style="display:block; margin:0 auto; border-radius:8px;"/>
 
 <Autors autors="xcasas fmadrid"/>

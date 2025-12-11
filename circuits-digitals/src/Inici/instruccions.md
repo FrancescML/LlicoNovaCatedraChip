@@ -19,15 +19,15 @@ Per poder accedir als exercicis proposats t'hauràs de registrar a la plataforma
 
 Recorda que jutge.org és una plataforma docent de la UPC. El registre d'usuari serveix per fer el seguiment del teu progrés en els exercicis. La UPC no té cap interès comercial ni recopila dades personals.
 
-<img src='./signin.png' alt="enroll" style="display:block; width:450px; margin:0 auto; border-radius:8px; background-color: rgba(255, 255, 255, 1); padding:4px; border:5px solid #999;" />
+<img src='./signin.png' alt="enroll" style="display:block; width:450px; margin:0 auto; border-radius:8px; background-color:white; padding:4px; border:5px solid #999;" />
 
 Un cop tinguis accés als recursos de jutge.org, et pots inscriure al curs [Introduction to Digital Circuit Design](https://jutge.org/courses/JordiCortadella:IntroCircuits) des de la secció [Courses](https://jutge.org/courses), clicant el botó "Enroll this course".
 
-<img src='./courses.png' alt="enroll" style="display:block; width:450px; margin:0 auto; border-radius:8px; background-color: rgba(255, 255, 255, 1); padding:4px; border:5px solid #999;" />
+<img src='./courses.png' alt="enroll" style="display:block; width:450px; margin:0 auto; border-radius:8px; background-color:white; padding:4px; border:5px solid #999;" />
 
 <br>
 
-<img src='./enroll.png' alt="enroll" style="display:block; width:450px; margin:0 auto; border-radius:8px; background-color: rgba(255, 255, 255, 1); padding:4px; border:5px solid #999;" />
+<img src='./enroll.png' alt="enroll" style="display:block; width:450px; margin:0 auto; border-radius:8px; background-color:white; padding:4px; border:5px solid #999;" />
 
 Dins d'aquest curs trobaràs els enunciats dels exercicis. També podràs enviar les teves solucions al Jutge, que en valorarà la validesa i emetrà un veredicte.
 
@@ -35,23 +35,23 @@ Dins d'aquest curs trobaràs els enunciats dels exercicis. També podràs enviar
 
 Pots accedir a cadascun dels exercicis des del menú superior del portal, ja sigui directament al [curs](https://jutge.org/courses/JordiCortadella:IntroCircuits) o des de l'apartat [Problems](https://jutge.org/problems).
 
-<img src='./enrolled.png' alt="enrolled" style="display:block; width:450px; margin:0 auto; border-radius:8px; background-color: rgba(255, 255, 255, 1); padding:4px; border:5px solid #999;" />
+<img src='./enrolled.png' alt="enrolled" style="display:block; width:450px; margin:0 auto; border-radius:8px; background-color:white; padding:4px; border:5px solid #999;" />
 
 <br/>
 
-<img src='./problems.png' alt="problems" style="display:block; width:450px; margin:0 auto; border-radius:8px; background-color: rgba(255, 255, 255, 1); padding:4px; border:5px solid #999;" />
+<img src='./problems.png' alt="problems" style="display:block; width:450px; margin:0 auto; border-radius:8px; background-color:white; padding:4px; border:5px solid #999;" />
 
 Els exercicis estan ordenats per temes i cadascun té un codi identificatiu únic.
 
-<img src='./codi.png' alt="codi" style="display:block; width:450px; margin:0 auto; border-radius:8px; background-color: rgba(255, 255, 255, 1); padding:4px; border:5px solid #999;" />
+<img src='./codi.png' alt="codi" style="display:block; width:450px; margin:0 auto; border-radius:8px; background-color:white; padding:4px; border:5px solid #999;" />
 
 També pots accedir als exercicis directament des de les lliçons a partir dels enllaços que hi trobaràs. Aquesta és una alternativa més ràpida, però recorda que **primer has d'haver obert la sessió a jutge.org.**
 
-<img src='./enllaç.png' alt="enllaç" style="display:block; width:450px; margin:0 auto; border-radius:8px; background-color: rgba(255, 255, 255, 1); padding:4px; border:5px solid #999;" />
+<img src='./enllaç.png' alt="enllaç" style="display:block; width:450px; margin:0 auto; border-radius:8px; background-color:white; padding:4px; border:5px solid #999;" />
 
 La pàgina de l'exercici és com aquesta:
 
-<img src='./exercici.png' alt="enllaç" style="display:block; width:600px; margin:0 auto; border-radius:8px; background-color: rgba(255, 255, 255, 1); padding:4px; border:5px solid #999;" />
+<img src='./exercici.png' alt="enllaç" style="display:block; width:600px; margin:0 auto; border-radius:8px; background-color:white; padding:4px; border:5px solid #999;" />
 
 Hi trobaràs l'**enunciat** (*Statement*) que descriu l’exercici, el qual es pot descarregar en PDF o ZIP.
 També s'hi inclou una **especificació** (*Specification*) que descriu les entrades i sortides que ha de tenir el circuit.
@@ -64,42 +64,42 @@ Amb aquesta eina **dibuixarem el nostre circuit i l'exportarem** per presentar-l
 
 A CircuitVerse pots arrossegar portes lògiques al teu circuit, connectar-les i provar la taula de veritat.
 
-<img src='./circuitverse.png' alt="enllaç" style="display:block; width:450px; margin:0 auto; border-radius:8px; background-color: rgba(255, 255, 255, 1); padding:4px; border:5px solid #999;" />
+<img src='./circuitverse.png' alt="enllaç" style="display:block; width:450px; margin:0 auto; border-radius:8px; background-color:white; padding:4px; border:5px solid #999;" />
 
 CircuitVerse et dona l'opció de guardar i descarregar el teu circuit. Al menú *Project/Save Offline* pots guardar i descarregar el teu circuit en format "*.cv*". A l'apartat *Export as file* pots carregar un circuit prèviament guardat.
 
 Per presentar la solució a Jutge **exporta el circuit** des de CircuitVerse en format Verilog. Ves al menú d'eines i tria l'opció *Export Verilog* per descarregar un fitxer de codi Verilog "*.v*".
 
-<img src='./exportverilog.png' alt="enllaç" style="display:block; width:450px; margin:0 auto; border-radius:8px; background-color: rgba(255, 255, 255, 1); padding:4px; border:5px solid #999;" />
+<img src='./exportverilog.png' alt="enllaç" style="display:block; width:450px; margin:0 auto; border-radius:8px; background-color:white; padding:4px; border:5px solid #999;" />
 
 *Verilog* és un llenguatge de descripció de maquinari (*HDL - Hardware Description Language*, per les sigles en anglès) que es pot utilitzar per descriure circuits electrònics digitals com microprocessadors o components lògics.
 
 **Presenta el teu exercici al Jutge**. Puja el fitxer que acabes de generar dins l'àrea ***New submission*** de l'exercici.
 
-<img src='./newsumbission.png' alt="enllaç" style="display:block; width:450px; margin:0 auto; border-radius:8px; background-color: rgba(255, 255, 255, 1); padding:4px; border:5px solid #999;" />
+<img src='./newsumbission.png' alt="enllaç" style="display:block; width:450px; margin:0 auto; border-radius:8px; background-color:white; padding:4px; border:5px solid #999;" />
 
 Clicant el botó *Submit*, Jutge analitzarà el teu arxiu.
 
-<img src='./analysis.png' alt="enllaç" style="display:block; width:350px; margin:0 auto; border-radius:8px; background-color: rgba(255, 255, 255, 1); padding:4px; border:5px solid #999;" />
+<img src='./analysis.png' alt="enllaç" style="display:block; width:350px; margin:0 auto; border-radius:8px; background-color:white; padding:4px; border:5px solid #999;" />
 
 Acabat el procés, podràs veure el **veredicte i la correcció de Jutge**, tant si ha anat **bé** com **malament**.
 
-<img src='./veredictecorrecte.png' alt="enllaç" style="display:block; width:600px; margin:0 auto; border-radius:8px; background-color: rgba(255, 255, 255, 1); padding:4px; border:5px solid #999;" />
+<img src='./veredictecorrecte.png' alt="enllaç" style="display:block; width:600px; margin:0 auto; border-radius:8px; background-color:white; padding:4px; border:5px solid #999;" />
 
-<img src='./veredicteerror.png' alt="enllaç" style="display:block; width:600px; margin:0 auto; border-radius:8px; background-color: rgba(255, 255, 255, 1); padding:4px; border:5px solid #999;" />
+<img src='./veredicteerror.png' alt="enllaç" style="display:block; width:600px; margin:0 auto; border-radius:8px; background-color:white; padding:4px; border:5px solid #999;" />
 
 Si el veredicte és desfavorable, la secció *hint* mostra pistes del que pot haver fallat.
 
 Si el veredicte és favorable, se't mostrarà el circuit solució a la secció *Circuit modules*.
 La secció *Program* mostra el codi Verilog del circuit que has presentat.
 
-<img src='./veredictecorrectecircuitiprogram.png' alt="enllaç" style="display:block; width:600px; margin:0 auto; border-radius:8px; background-color: rgba(255, 255, 255, 1); padding:4px; border:5px solid #999;" />
+<img src='./veredictecorrectecircuitiprogram.png' alt="enllaç" style="display:block; width:600px; margin:0 auto; border-radius:8px; background-color:white; padding:4px; border:5px solid #999;" />
 
 **Pots tornar-ho a provar** tantes vegades com calgui. A la finestra de *Submission* s'anotaran el nombre total d'arxius i correccions. Podràs visualitzar-los clicant al número de *submission* (S001, S002...).
 
 Jutge té diferents veredictes en funció del circuit presentat. Els més habituals són els següents:
 
-<img src='./veredictescomuns.png' alt="enllaç" style="display:block; width:400px; margin:0 auto; border-radius:8px; background-color: rgba(255, 255, 255, 1); padding:4px; border:5px solid #999;" />
+<img src='./veredictescomuns.png' alt="enllaç" style="display:block; width:400px; margin:0 auto; border-radius:8px; background-color:white; padding:4px; border:5px solid #999;" />
 
 Pots trobar la [llista completa de veredictes](http://jutge.org/documentation/verdicts/all) amb una descripció del seu significat.
 

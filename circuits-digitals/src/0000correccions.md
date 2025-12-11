@@ -16,14 +16,14 @@ Els sumadors binaris (*ripple-carry adders*) es poden construir amb sumadors com
 
 [CircuitVerse](https://circuitverse.org/simulator) té un objecte anomenat *adder* que implementa un sumador.
 
-<img src='./circuitelements.png' style="display:block; height:200px; margin:0 auto; border-radius:8px; background-color:white; padding:4px;"/>
+<img src='./circuitelements.png' alt="Elements de circuit" style="display:block; height:200px; margin:0 auto; border-radius:8px; background-color:white; padding:4px;"/>
 
 <div style="display: flex; justify-content: center; align-items:center; gap: 16px;">
-    <img src='./A.png' style="display:block;    width:80px; margin:0 auto; border-radius:8px; background-color:white; padding:4px;"/>
-    <img src='./B.png' style="display:block;    width:80px; margin:0 auto; border-radius:8px; background-color:white; padding:4px;"/>
-    <img src='./Cin.png' style="display:block;  width:80px; margin:0 auto; border-radius:8px; background-color:white; padding:4px;"/>
-    <img src='./Sum.png' style="display:block;  width:80px; margin:0 auto; border-radius:8px; background-color:white; padding:4px;"/>
-    <img src='./Cout.png' style="display:block; width:80px; margin:0 auto; border-radius:8px; background-color:white; padding:4px;"/>
+  <img src='./A.png' alt='Entrada A' style="display:block; width:80px; margin:0 auto; border-radius:8px; background-color:white; padding:4px;"/>
+  <img src='./B.png' alt='Entrada B' style="display:block; width:80px; margin:0 auto; border-radius:8px; background-color:white; padding:4px;"/>
+  <img src='./Cin.png' alt='Entrada Cin' style="display:block; width:80px; margin:0 auto; border-radius:8px; background-color:white; padding:4px;"/>
+  <img src='./Sum.png' alt='Sortida Sum' style="display:block; width:80px; margin:0 auto; border-radius:8px; background-color:white; padding:4px;"/>
+  <img src='./Cout.png' alt='Sortida Cout' style="display:block; width:80px; margin:0 auto; border-radius:8px; background-color:white; padding:4px;"/>
 </div>
 
 Les entrades **A** i **B** són les variables que es sumen i **Cin** és el bit de *carry* d'entrada. Les sortides són **Sum** amb el resultat i **Cout** amb el **carry** de sortida. Si passem el ratolí per les entrades i sortides de l'objecte podem veure el seu nom.
@@ -67,7 +67,6 @@ Un cop canviat el *BitWidth* a 4 podem fer la suma amb un únic *adder* i simpli
 
 A CircuitVerse, les entrades i sortides de 4 bits tenen cable de color negre, mentre que **Cin** i **Cout**, de només 1 bit, són de color verd.
 
-
 ## EXEMPLE: Resta de nombres de 4 bits
 
 Per tal de restar dos nombres binaris emprarem la fórmula:
@@ -83,7 +82,7 @@ En aquest exemple realitzarem una resta de 4 bits. Considerem:
 
 Primer neguem $B$:
 
-$$B = 0101  \Rightarrow  \bar{B} = 1010$$
+$$B = 0101 ; \Rightarrow ; \bar{B} = 1010$$
 
 Després fem la suma:
 
@@ -112,7 +111,6 @@ Amb *BitWidth = 4* simplifiquem el circuit:
 
 <img src='./restadorunicadder.png' alt="Restador amb un únic adder" style="display:block; height:150px; margin:0 auto; border-radius:8px; background-color:white; padding:4px;"/>
 
-
 ## EXEMPLE: Triar operacions
 
 A més d'efectuar operacions aritmètiques, els circuits aritmètics també poden implementar la selecció d'una operació. Les UAL (ALU) permeten triar entre operacions en funció d'una variable. Aquest exemple explora aquesta funcionalitat.
@@ -126,55 +124,44 @@ Per realitzar la suma de 4 bits $A + B$ farem servir un *Adder* de *BitWidth = 4
 
 <img src='./triarsuma.png' alt="Bloc de suma" style="display:block; height:150px; margin:0 auto; border-radius:8px; background-color:white; padding:4px;"/>
 
-Per fer la resta sabem que hem de fer l'operació $S= A-B = A+ \bar{B} +1$. 
-Per negar la variable $B$ farem servir una porta NOT de 4 bits. El carry ha de ser igual a 1, $C_{in}=1$, per tant utilitzarem una font o *power*.
+Per fer la resta emprarem:
 
-Afegint la peça del circuit que fa la resta obtenim:
-<img src='./triarsumairesta.png' style="display:block; height:320px; margin:0 auto; border-radius:8px; background-color:white; padding:4px;"/>
+$$S = A - B = A + \bar{B} + 1$$
 
-Tant *Power* com *Ground* es poden localitzar al menú d’inputs de CircuitVerse. Totes dues funcionen com a una constant. *Power* sempre té el valor 1 i *Ground* sempre té valor 0.
+Per negar $B$ utilitzarem una porta NOT de 4 bits. El *carry* d'entrada (**Cin**) ha de ser 1, així que utilitzarem una font (*power*).
 
-<img src='./poweriground.png' style="display:block; height:320px; margin:0 auto; border-radius:8px; background-color:white; padding:4px;"/>
+<img src='./triarsumairesta.png' alt="Suma i resta" style="display:block; height:320px; margin:0 auto; border-radius:8px; background-color:white; padding:4px;"/>
 
+Ara cal afegir la part del circuit capaç de triar entre una operació i l’altra a partir de la variable d'entrada $op$. Utilitzarem un multiplexor, com el que es mostra a l'apartat de Multiplexors dels circuits combinacionals. Els multiplexors deixen passar un senyal o un altre en funció d'una variable selectora i això és el que ens cal en aquest cas.
 
+Les figures següents mostren la selecció de la suma o la resta (sortida mostrada amb l'operació seleccionada):
 
-Ara cal afegir la part del circuit capaç de triar entre una operació o l’altre a partir de la variable d'entrada $op$. Utilitzarem un multiplexor, com el que vàrem veure a l’apartat [Multiplexors](../CircCombin/multiplexors.md) dels circuits combinacionals. Els multiplexors deixen passar un senyal o un altre en funció d'una variable selectora i és això el que ens cal en aquest cas.
-
-El circuit complet, afegint aquest darrer element, és el següent:
-<img src='./triarsumasuma.png' style="display:block; height:200px; margin:0 auto; border-radius:8px; background-color:white; padding:4px;"/>
+<img src='./triarsumasuma.png' alt="Suma seleccionada" style="display:block; height:200px; margin:0 auto; border-radius:8px; background-color:white; padding:4px;"/>
 <center><i>Suma seleccionada</i></center>
 
-
-<img src='./triarrestaresta.png' style="display:block; height:200px; margin:0 auto; border-radius:8px; background-color:white; padding:4px;"/>
+<img src='./triarrestaresta.png' alt="Resta seleccionada" style="display:block; height:200px; margin:0 auto; border-radius:8px; background-color:white; padding:4px;"/>
 <center><i>Resta seleccionada</i></center>
 
-
-Podem emprar un multiplexor amb més de dues entrades per gestionar més de dues operacions possibles.
+Podem emprar un multiplexor amb més de dues entrades per gestionar més operacions possibles.  
 Dins del menú de propietats del multiplexor a CircuitVerse es pot modificar el nombre d’entrades amb la propietat *control signal size*.
 
 Les UALs (*ALU*) normalment trien entre 4 operacions (multiplexors de 4 entrades) amb un selector $op$ de 2 bits.
 
-<img src='./multiplexor4.png' style="display:block; height:350px; margin:0 auto; border-radius:8px; background-color:white; padding:4px;"/>
+<img src='./multiplexor4.png' alt="Multiplexor 4 entrades" style="display:block; height:350px; margin:0 auto; border-radius:8px; background-color:white; padding:4px;"/>
 
+---
 
 ## Exercicis a Jutge.org: [Introduction to Digital Circuit Design](https://jutge.org/courses/JordiCortadella:IntroCircuits)
 
-[4-bit adder](https://jutge.org/problems/X64833_en)
+- [4-bit adder](https://jutge.org/problems/X64833_en)  
+- [4-bit incrementer](https://jutge.org/problems/X58456_en)  
+- [4-bit adder/subtractor](https://jutge.org/problems/X42916_en)  
+- [4-bit comparator](https://jutge.org/problems/X61860_en)  
+- [4-bit ALU](https://jutge.org/problems/X35448_en)
 
-[4-bit incrementer](https://jutge.org/problems/X58456_en)
+<small>*Recorda que per accedir als exercicis i que el **Jutge** valori les teves solucions has d'estar inscrit al [curs](https://jutge.org/courses/JordiCortadella:IntroCircuits). Trobaràs totes les instruccions [aquí](../Inici/instruccions.md).* </small>
 
-[4-bit adder/subtractor](https://jutge.org/problems/X42916_en)
-
-[4-bit comparator](https://jutge.org/problems/X61860_en)
-
-[4-bit ALU](https://jutge.org/problems/X35448_en)
-
-
-<small>*Recorda que per accedir als exercicis i que el **Jutge** valori les teves solucions has d'estar inscrit al [curs](https://jutge.org/courses/JordiCortadella:IntroCircuits)*. Troba totes les instruccions [aqui](../Inici/instruccions.md)</small>
-
-<!-- Aquesta imatge ha d'anar al final de cada lliçó, ja sigui amb aquesta línia o dins la signatura. Deixar comentat si ja està a la signatura-->
-<br>
-<br>
+<br><br>
 <img src='../logos/TotsLogosBlanc.png ' alt="Logos Càtedra Chip" width="100%" style="display:block; margin:0 auto; border-radius:8px;"/>
 
 <Autors autors="xcasas fmadrid"/>
