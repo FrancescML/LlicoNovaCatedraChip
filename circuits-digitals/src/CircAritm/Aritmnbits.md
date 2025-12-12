@@ -7,72 +7,68 @@
 
 # Aritmètica de n bits
 
-L’aritmètica de n bits fa referència a circuits digitals que operen amb un nombre de bits que pot ser molt elevat. La variable $n$ representa doncs un nombre arbitrari de bits.
+L’aritmètica de $n$ bits fa referència a circuits digitals que operen amb un nombre arbitrari de bits. La variable $n$ pot ser un valor elevat, com $n=16$ als exercicis del curs.
+Es poden implementar sumadors, restadors, comparadors, incrementadors, etc.
+Aquí veurem dos exemples: un **sumador** i un **incrementador**.
 
-Es poden implementar, com hem vist, sumadors, restadors, comparadors, incrementadors, etc.
-Aquí veurem dos exemples, un sumador i un incrementador.
-Els exercicis que el curs proposa prenen tots el valor $n=16$.
+---
 
-## EXEMPLE: Sumador de $n=16$ bits
-Per fer un sumador de $n$ bits, cal concatenar $n-1$ sumadors complets (full adders) i un semisumador (half adder).
+## EXEMPLE: Sumador de $n = 16$ bits
 
-Si volem implementar un sumador de dos nombres binaris $A$ i $B$ de 16 bits, haurem de concatenar 15 sumadors complets i un semisumador com a la figura:
+Per fer un sumador de $n$ bits, cal concatenar **$n-1$ sumadors complets** (*full adders*) i **un semisumador** (*half adder*).
+Així, per sumar dos nombres binaris $A$ i $B$ de 16 bits, concatenarem 15 sumadors complets i un semisumador:
 
 <img src='./blocsumadornbits.png' alt="Sumador de n bits" style="display:block; width:600px; margin:0 auto; border-radius:8px; background-color:white; padding:4px;"/>
 <center><i>Sumador de 16 bits</i></center>
 
-Les entrades seran les variables $A$ i $B$ i les sortides seran la variable suma $S$, més un bit de ròssec (carry) de sortida $C_{out}=0$.
+Les entrades són $A$ i $B$. Les sortides són:
 
-Per tal de simplificar el circuit podriem utilitzar un sumador complet amb una entrada $C_{in}=0$, en lloc d'un semisumador, tal i com hem fet en abans a l’exemple de 4 bits. Per tant podriem implementar un sumador de $n$ bits concatenant $n$ sumadors complets.
+* la variable **suma** $S$ (16 bits), i
+* el bit de ròssec (**carry**) de sortida $C_{out}$.
 
-En el nostre exemple implementem aquest sumador de 16 bits amb 16 sumadors complets.
+Per simplificar el circuit podem utilitzar sumadors complets a totes les etapes, amb $C_{in} = 0$ al primer sumador. Igual que passava amb els sumadors de 4 bits, un sumador complet pot fer la funció d’un semisumador si $C_{in} = 0$.
 
-<img src='./blocsumadornbits_alt.png' alt="Sumador de n bits només amb sumadors complets " style="display:block; width:600px; margin:0 auto; border-radius:8px; background-color:white; padding:4px;"/>
-<center><i>Sumador de 16 bits</i></center>
+<img src='./blocsumadornbits_alt.png' alt="Sumador de n bits només amb sumadors complets" style="display:block; width:600px; margin:0 auto; border-radius:8px; background-color:white; padding:4px;"/>
+<center><i>Sumador de 16 bits implementat amb sumadors complets</i></center>
 
-El circuit final tindrà la mateixa forma que els exemples que ja hem vist, però en lloc de 4 sumadors concatenats, en tindrà 16. 
+El circuit final tindrà la mateixa estructura que els sumadors de 4 bits, però amb 16 blocs concatenats en lloc de 4.
 
+## EXEMPLE: Incrementador de $n$ bits
 
-## EXEMPLE: Incrementador de n bits
+Dissenyarem un incrementador de **$n = 5$ bits**. Aquest circuit incrementa el valor d’una entrada binària $A$ en una unitat.
 
-En aquest exemple dissenyarem un incrementador on $n=5$. Aquest circuit incrementarà el valor d’una entrada $A$ de 5 bits en una unitat.
+Per fer-ho, sumarem a $A$ el valor binari:
 
+$$00001$$
 
-Utilitzarem una constant de valor 00001 en lloc d’una variable. La diferència és subtil dins de [CircuitVerse](https://circuitverse.org/simulator).
+En aquest cas, en lloc d’una variable utilitzem una **constant**. A [CircuitVerse](https://circuitverse.org/simulator) hi ha un bloc d’entrada anomenat *constant value*, que permet definir un valor fix.
 
-CircuitVerse té un element d’entrada (input) anomenat *constant value*. Aquest bloc simula una constant de valor fix. 
+<img src='./constantvalue.png' alt="Bloc de constant" style="display:block; height:320px; margin:0 auto; border-radius:8px; background-color:white; padding:4px;"/>
 
-<img src='./constantvalue.png' style="display:block; height:320px; margin:0 auto; border-radius:8px; background-color:white; padding:4px;"/>
-
-Al clicar dues vegades al bloc de la constant podem modificar el valor, per exemple el  valor constant $11$ en aquesta figura:
-
+En fer doble clic sobre el bloc, podem especificar el valor de la constant, com en aquests exemples:
 
 <div style="display: flex; justify-content: center; align-items:center; gap: 16px;">
     <img src='./constantvalue2.png' style="display:block; width:300px; margin:0 auto; border-radius:8px; background-color:white; padding:4px;"/>
     <img src='./constantvalue3.png' style="display:block; width:150px; margin:0 auto; border-radius:8px; background-color:white; padding:4px;"/>
 </div>
 
-Per implementar el circuit incrementador sumi el valor 00001 a una variable $A$, utilitzarem simplement un sumador de 5 bits que sumi aquest bloc de constant a la variable A. 
+Per implementar l’incrementador, simplement sumarem la constant 00001 a la variable $A$ amb un sumador de 5 bits.
+Per exemple, si $A = 01000$:
 
-Prenem per exemple A=01000 en aquesta figura.
+<img src='./incrementador5bits.png' alt="Incrementador de 5 bits" style="display:block; height:150px; margin:0 auto; border-radius:8px; background-color:white; padding:4px;"/>
 
-<img src='./incrementador5bits.png' style="display:block; height:150px; margin:0 auto; border-radius:8px; background-color:white; padding:4px;"/>
+CircuitVerse no considera el valor constant com una variable d’entrada en format Verilog.
+Això significa que el bloc **const_0** forma part del circuit incrementador, i no una entrada externa:
 
-<!-- Obtindríem el mateix resultat a la variable de sortida si empréssim una altra variable com a entrada. La diferència, però és que -->
+<img src='./verilogaritm.png' alt="Codi Verilog" style="display:block; height:200px; margin:0 auto; border-radius:8px; background-color:white; padding:4px;"/>
 
-CircuitVerse no considera un valor constant com a una variable d’entrada en format Verilog. Això vol dir que aquest valor **const_0** forma, de fet, part del circuit incrementador.
-
-<img src='./verilogaritm.png' style="display:block; height:200px; margin:0 auto; border-radius:8px; background-color:white; padding:4px;"/>
 
 ## Exercicis a Jutge.org: [Introduction to Digital Circuit Design](https://jutge.org/courses/JordiCortadella:IntroCircuits)
 
-[n-bit adder](https://jutge.org/problems/X84292_en)
-
-[n-bit incrementer](https://jutge.org/problems/X41839_en)
-
-[n-bit adder/subtractor](https://jutge.org/problems/X89356_en)
-
-[n-bit comparator](https://jutge.org/problems/X37457_en)
+* [n-bit adder](https://jutge.org/problems/X84292_en)
+* [n-bit incrementer](https://jutge.org/problems/X41839_en)
+* [n-bit adder/subtractor](https://jutge.org/problems/X89356_en)
+* [n-bit comparator](https://jutge.org/problems/X37457_en)
 
 <small>*Recorda que per accedir als exercicis i que el **Jutge** valori les teves solucions has d'estar inscrit al [curs](https://jutge.org/courses/JordiCortadella:IntroCircuits)*. Troba totes les instruccions [aqui](../Inici/instruccions.md)</small>
 

@@ -10,11 +10,9 @@ La secció [Miscellaneous](https://jutge.org/courses/JordiCortadella:IntroCircui
 
 ## Exercicis a Jutge.org: [Introduction to Digital Circuit Design](https://jutge.org/courses/JordiCortadella:IntroCircuits)
 
-[Fibonacci](https://jutge.org/problems/X95484_en)
-
-[Greatest Common Divisor](https://jutge.org/problems/X64579_en)
-
-[FIFO](https://jutge.org/problems/X67970_en)
+* [Fibonacci](https://jutge.org/problems/X95484_en)
+* [Greatest Common Divisor](https://jutge.org/problems/X64579_en)
+* [FIFO](https://jutge.org/problems/X67970_en)
 
 <small>*Recorda que per accedir als exercicis i que el **Jutge** valori les teves solucions has d'estar inscrit al [curs](https://jutge.org/courses/JordiCortadella:IntroCircuits)*. Troba totes les instruccions [aqui](../Inici/instruccions.md)</small>
 

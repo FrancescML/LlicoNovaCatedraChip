@@ -265,33 +265,22 @@ Aquest circuit implementa doncs una cua entre $S_{entrada}$ i $S_{sortida}$ que 
 
 En aquests dos primers senyals de rellotge, les seqüències d'entrada i de sortida han implementat efectivament un retard de dos cicles:
 
-$S_{entrada}$: 1, 1, 1, ··· 
+$S_{entrada}$ : 1, 1, 1, …
 
-$S_{sortida}$: 0, 0, 1, ··· 
+$S_{sortida}$ : 0, 0, 1, …
 
 
 ## Exercicis a Jutge.org: [Introduction to Digital Circuit Design](https://jutge.org/courses/JordiCortadella:IntroCircuits)
-
-
-[Last two equal](https://jutge.org/problems/X71700_en)
-
-[Delayed sequence](https://jutge.org/problems/X32741_en)
-
-[Even number of 0's and 1's](https://jutge.org/problems/X02999_en)
-
-[Circuit from state diagram](https://jutge.org/problems/X76378_en)
-
-[Sequence 110](https://jutge.org/problems/X02122_en)
-
-[Recognizing sequences](https://jutge.org/problems/X49909_en)
-
-[Is it divisible by 3?](https://jutge.org/problems/X80381_en)
-
-[Simple state machine](https://jutge.org/problems/X78930_en)
-
-[Traffic-light controller](https://jutge.org/problems/X88681_en)
-
-[Vending machine](https://jutge.org/problems/X77254_en)
+* [Last two equal](https://jutge.org/problems/X71700_en)
+* [Delayed sequence](https://jutge.org/problems/X32741_en)
+* [Even number of 0's and 1's](https://jutge.org/problems/X02999_en)
+* [Circuit from state diagram](https://jutge.org/problems/X76378_en)
+* [Sequence 110](https://jutge.org/problems/X02122_en)
+* [Recognizing sequences](https://jutge.org/problems/X49909_en)
+* [Is it divisible by 3?](https://jutge.org/problems/X80381_en)
+* [Simple state machine](https://jutge.org/problems/X78930_en)
+* [Traffic-light controller](https://jutge.org/problems/X88681_en)
+* [Vending machine](https://jutge.org/problems/X77254_en)
 
 <small>*Recorda que per accedir als exercicis i que el **Jutge** valori les teves solucions has d'estar inscrit al [curs](https://jutge.org/courses/JordiCortadella:IntroCircuits)*. Troba totes les instruccions [aqui](../Inici/instruccions.md)</small>
 
