@@ -1,23 +1,24 @@
-
 <!-- Posar aquesta imatge al començament de cada lliçó -->
-<img src='../logos/illustracio1.png' alt="Circuits digitals" style=" float: left; border-radius:8px; height: 120px; text-align: right;"/>
-<img src='../logos/LogoCatedraCHIPBlanc.jpg' alt="Logo Càtedra Chip" style="float: right; border-radius:8px; height: 120px; text-align: right;"/>
+<img src="../logos/illustracio1.png" alt="Circuits digitals" style="float: left; border-radius: 8px; height: 120px;"/>
+<img src="../logos/LogoCatedraCHIPBlanc.jpg" alt="Logo Càtedra Chip" style="float: right; border-radius: 8px; height: 120px;"/>
 <div style="clear: both;"></div>
 <br>
 
+
+
 # Introducció als Mapes de Karnaugh
 
-Un mapa de Karnaugh (també conegut com a K-map o diagrama de Veitch) és una eina gràfica utilitzada en electrònica digital per simplificar funcions lògiques booleanes de manera visual i sistemàtica. 
+Un mapa de Karnaugh (també conegut com a *K-map* o diagrama de Veitch) és una eina gràfica utilitzada en electrònica digital per simplificar funcions lògiques booleanes de manera visual i sistemàtica.
 
-L'objectiu principal és trobar l'expressió booleana més simple possible per a una funció lògica determinada. Una funció lògica més simple es tradueix directament en un circuit digital més senzill.
+L’objectiu principal és trobar l’expressió booleana més simple possible per a una funció lògica determinada. Una funció lògica més simple es tradueix directament en un circuit digital més senzill.
 
-Es tracta d’un mètode alternatiu a la simplificació amb les lleis de l'àlgebra de Boole, és vàlid per a qualsevol nombre de variables. Resulta més pràctic i intuitiu per a poques variables, típicament de 2 a 4. Pot resultar pràctic per a funcions de fins a 6 variables, més enllà d'aquest nombre ja deixa de ser pràctic. 
+Es tracta d’un mètode alternatiu a la simplificació amb les lleis de l’àlgebra de Boole i és vàlid per a qualsevol nombre de variables. Resulta, però, més pràctic i intuïtiu per a poques variables, típicament de 2 a 4. Més enllà de 6 variables, els mapes de Karnaugh deixen de ser pràctics.
 
-Un mapa de Karnaugh és una graella que organitza totes les possibles combinacions de les variables d’entrada d’una funció booleana. Cada cel·la representa una combinació de les variables d'entrada de la funció, és a dir, una fila de la taula de la veritat.
+Un mapa de Karnaugh és una graella que organitza totes les combinacions possibles de les variables d’entrada d’una funció booleana. Cada cel·la representa una combinació de les variables d’entrada de la funció, és a dir, una fila de la taula de la veritat.
 
-Aquest mapa s’ha d’ordenar de manera que entre dues cel·les adjacents verticalment o horitzontalment, canviï el valor d'una única variable. Això facilita identificar patrons i fer agrupacions per reduïr l’expressió lògica.
+Aquest mapa s’ha d’ordenar de manera que entre dues cel·les adjacents verticalment o horitzontalment només canviï el valor d’una única variable. Això facilita la identificació de patrons i l’agrupació per reduir l’expressió lògica.
 
-## Exemple
+## Exemple:
 
 Vegem la següent taula de veritat d'un circuit digital hipotètic. Aquesta representa les variables d’entrada $A$, $B$ i $C$ i la sortida $S$.
 
@@ -138,34 +139,34 @@ El mapa de Karnaugh resultant, agrupant les variables B i C, és el següent:
   </tbody>
 </table>
 
-Els valors de cada cel·la són els valors que pren la sortida $S$ en funció de $A$, $B$ i $C$.
+Els valors de cada cel·la són els valors que pren la sortida $S$ en funció de $A$, $B$ i $C$ en una fila de la taula.
 
 
 
 ## Regles per al Mapa de Karnaugh
 
 ### **Codi Gray:**
-Les files i columnes del mapa no s'ordenen de manera convencional (00, 01, 10, 11), sinó que segueixen el codi Gray (00, 01, 11, 10). 
+Les files i columnes del mapa no s'ordenen de manera convencional (00, 01, 10, 11), sinó que segueixen el codi Gray (00, 01, 11, 10).
 És a dir, entre dues cel·les adjacents (verticalment o horitzontalment) només canvia el valor d'una única variable.
 
 ### **Omplir la taula:**
-Cal omplir la taula amb els resultats de la variable de sortida corresponents a la combinació de valors d'entrada de cada cel.la.
+Cal omplir la taula amb els resultats de la variable de sortida corresponents a la combinació de valors d'entrada de cada cel·la.
 
-### **Agrupar els '1' ajacents:**
-L'objectiu és fer els grups tan extensos com sigui possible.
-* S'agrupen els '1' adjacents en forma de fila, quadrat o rectangle.
-* La mida dels grups ha de ser una potència de dos. És a dir 1, 2, 4, 8, etc...
-* S'han d'anar fent grups fins que tots els '1' de la taula formin part d'almenys un d'ells.
-* Les vores del mapa es consideren adjacents amb la vora oposada, com si el mapa s'extengués repetint-se més enllà de les vores.
+### **Agrupar els $1$ adjacents:**
+L'objectiu és fer grups tan extensos com sigui possible.
+* S'agrupen els $1$ adjacents en forma de fila, quadrat o rectangle.
+* La mida dels grups ha de ser una potència de dos. És a dir 1, 2, 4, 8, etc.
+* S'han d'anar fent grups fins que tots els $1$ de la taula formin part d'almenys un d'ells.
+* Les vores del mapa es consideren adjacents amb la vora oposada, com si el mapa s'estengués repetint-se més enllà de les vores.
 
 ### **Obtenció de l'expressió lògica simplificada:**
-Cada grup de '1's es tradueix en un terme de la funció booleana simplificada. Per fer-ho, s'observen quines variables no canvien de valor dins del grup, aquestes formaràn part del terme de l'expressió. Les variables que canvien de valor dins del grup no apareixeran a l'expressió.
+Cada grup de $1$ es tradueix en un terme de la funció booleana simplificada. Per fer-ho, s'observen quines variables no canvien de valor dins del grup; aquestes formaran part del terme de l'expressió. Les variables que canvien de valor dins del grup no apareixeran a l'expressió.
 
 
 
 ## Estructures per a mapes de Karnaugh de 2 a 5 variables
 
-A continuació es mostren les estructures dels mapes de Karnaugh per diferents nombres de variables d'entrada. Les taules més comuns solen ser les de 2 a 4 variables d'entrada, però es poden utilitzar per a funcions de fins a 5 o 6 variables.
+A continuació es mostren les estructures dels mapes de Karnaugh per a diferents nombres de variables d'entrada. Les taules més comunes solen ser les de 2 a 4 variables d'entrada, però es poden utilitzar per a funcions de fins a 5 o 6 variables.
 
 
 ### Mapa de Karnaugh de 2 variables d'entrada
@@ -287,9 +288,10 @@ El mapa de valors és invariable, l'agrupament de les variables $A$, $B$, $C$ i 
   </tbody>
 </table>
 
+
 ### Mapa de Karnaugh de 5 variables d'entrada
 
-Fent servir el codi Gray (És a dir, entre dues cel·les adjacents (verticalment o horitzontalment) només canvia el valor d'una única variable), el mapa de Karnaugh de 5 variables s'estructura de la manera següent:
+Fent servir el codi Gray el mapa de Karnaugh de 5 variables s'estructura de la manera següent:
 
 <!-- Taula de 5 variables -->
 <table style="border-collapse: collapse; text-align: center;">
@@ -304,7 +306,7 @@ Fent servir el codi Gray (És a dir, entre dues cel·les adjacents (verticalment
       <th style="border: 1px solid #ccc; padding: 5px 10px;">001</th>
       <th style="border: 1px solid #ccc; padding: 5px 10px;">011</th>
       <th style="border: 1px solid #ccc; padding: 5px 10px;">010</th>
-      <th style="border: 1px solid #ccc; padding: 5px 10px; border-left: 4px double  #444;">110</th>
+      <th style="border: 1px solid #ccc; padding: 5px 10px; border-left: 4px double #444;">110</th>
       <th style="border: 1px solid #ccc; padding: 5px 10px;">111</th>
       <th style="border: 1px solid #ccc; padding: 5px 10px;">101</th>
       <th style="border: 1px solid #ccc; padding: 5px 10px;">100</th>
@@ -317,7 +319,7 @@ Fent servir el codi Gray (És a dir, entre dues cel·les adjacents (verticalment
       <td style="border: 1px solid #ccc; padding: 5px 10px;"> </td>
       <td style="border: 1px solid #ccc; padding: 5px 10px;"> </td>
       <td style="border: 1px solid #ccc; padding: 5px 10px;"> </td>
-      <td style="border: 1px solid #ccc; padding: 5px 10px; border-left: 4px double  #444;"> </td>
+      <td style="border: 1px solid #ccc; padding: 5px 10px; border-left: 4px double #444;"> </td>
       <td style="border: 1px solid #ccc; padding: 5px 10px;"> </td>
       <td style="border: 1px solid #ccc; padding: 5px 10px;"> </td>
       <td style="border: 1px solid #ccc; padding: 5px 10px;"> </td>
@@ -328,7 +330,7 @@ Fent servir el codi Gray (És a dir, entre dues cel·les adjacents (verticalment
       <td style="border: 1px solid #ccc; padding: 5px 10px;"> </td>
       <td style="border: 1px solid #ccc; padding: 5px 10px;"> </td>
       <td style="border: 1px solid #ccc; padding: 5px 10px;"> </td>
-      <td style="border: 1px solid #ccc; padding: 5px 10px; border-left: 4px double  #444;"> </td>
+      <td style="border: 1px solid #ccc; padding: 5px 10px; border-left: 4px double #444;"> </td>
       <td style="border: 1px solid #ccc; padding: 5px 10px;"> </td>
       <td style="border: 1px solid #ccc; padding: 5px 10px;"> </td>
       <td style="border: 1px solid #ccc; padding: 5px 10px;"> </td>
@@ -339,7 +341,7 @@ Fent servir el codi Gray (És a dir, entre dues cel·les adjacents (verticalment
       <td style="border: 1px solid #ccc; padding: 5px 10px;"> </td>
       <td style="border: 1px solid #ccc; padding: 5px 10px;"> </td>
       <td style="border: 1px solid #ccc; padding: 5px 10px;"> </td>
-      <td style="border: 1px solid #ccc; padding: 5px 10px; border-left: 4px double  #444;"> </td>
+      <td style="border: 1px solid #ccc; padding: 5px 10px; border-left: 4px double #444;"> </td>
       <td style="border: 1px solid #ccc; padding: 5px 10px;"> </td>
       <td style="border: 1px solid #ccc; padding: 5px 10px;"> </td>
       <td style="border: 1px solid #ccc; padding: 5px 10px;"> </td>
@@ -350,7 +352,7 @@ Fent servir el codi Gray (És a dir, entre dues cel·les adjacents (verticalment
       <td style="border: 1px solid #ccc; padding: 5px 10px;"> </td>
       <td style="border: 1px solid #ccc; padding: 5px 10px;"> </td>
       <td style="border: 1px solid #ccc; padding: 5px 10px;"> </td>
-      <td style="border: 1px solid #ccc; padding: 5px 10px; border-left: 4px double  #444;"> </td>
+      <td style="border: 1px solid #ccc; padding: 5px 10px; border-left: 4px double #444;"> </td>
       <td style="border: 1px solid #ccc; padding: 5px 10px;"> </td>
       <td style="border: 1px solid #ccc; padding: 5px 10px;"> </td>
       <td style="border: 1px solid #ccc; padding: 5px 10px;"> </td>
@@ -475,131 +477,14 @@ Una altra manera molt efectiva d'estructurar un mapa de Karnaugh de 5 variables 
   </tbody>
 </table>
 
-I visualitzar-los de la manera següent. 
+I visualitzar-los de la manera següent.
 
-<img src='./kmap5var.png' alt="Karnaugh 5 variables" style="display:block; width:400px; margin:0 auto; border-radius:8px; background-color: rgba(255, 255, 255, 1); padding:4px;"/>
+<img src='./kmap5var.png' alt="Karnaugh 5 variables" style="display:block; width:400px; margin:0 auto; border-radius:8px; background-color:white; padding:4px;"/>
 <center><i>Mapa de Karnaugh 5 variables</i></center>
 
 
-
-
-
-<!--
-### Mapa de Karnaugh de 6 variables d'entrada
-Mapa de valors per a 6 variables.
-<table style="border-collapse: collapse; text-align: center;">
-  <thead>
-    <tr>
-      <th style="border: 1px solid #ccc; position: relative; width: 60px; height: 60px;">
-        <div style="position: absolute; top: 5px; right: 5px;">   ABC </div>
-        <div style="position: absolute; bottom: 5px; left: 5px;"> DEF </div>
-        <div style="position: absolute; bottom: 0; left: 0; width: 100%; height: 1px; background: #ccc; transform-origin: top right; transform: rotate(+45deg);"></div>
-      </th>
-      <th style="border: 1px solid #ccc; padding: 5px 10px;">000</th>
-      <th style="border: 1px solid #ccc; padding: 5px 10px;">001</th>
-      <th style="border: 1px solid #ccc; padding: 5px 10px;">011</th>
-      <th style="border: 1px solid #ccc; padding: 5px 10px;">010</th>
-      <th style="border: 1px solid #ccc; padding: 5px 10px;">110</th>
-      <th style="border: 1px solid #ccc; padding: 5px 10px;">111</th>
-      <th style="border: 1px solid #ccc; padding: 5px 10px;">101</th>
-      <th style="border: 1px solid #ccc; padding: 5px 10px;">100</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th style="border: 1px solid #ccc; padding: 5px 10px;">000</th>
-      <td style="border: 1px solid #ccc; padding: 5px 10px;"> </td>
-      <td style="border: 1px solid #ccc; padding: 5px 10px;"> </td>
-      <td style="border: 1px solid #ccc; padding: 5px 10px;"> </td>
-      <td style="border: 1px solid #ccc; padding: 5px 10px;"> </td>
-      <td style="border: 1px solid #ccc; padding: 5px 10px;"> </td>
-      <td style="border: 1px solid #ccc; padding: 5px 10px;"> </td>
-      <td style="border: 1px solid #ccc; padding: 5px 10px;"> </td>
-      <td style="border: 1px solid #ccc; padding: 5px 10px;"> </td>
-    </tr>
-    <tr>
-      <th style="border: 1px solid #ccc; padding: 5px 10px;">001</th>
-      <td style="border: 1px solid #ccc; padding: 5px 10px;"> </td>
-      <td style="border: 1px solid #ccc; padding: 5px 10px;"> </td>
-      <td style="border: 1px solid #ccc; padding: 5px 10px;"> </td>
-      <td style="border: 1px solid #ccc; padding: 5px 10px;"> </td>
-      <td style="border: 1px solid #ccc; padding: 5px 10px;"> </td>
-      <td style="border: 1px solid #ccc; padding: 5px 10px;"> </td>
-      <td style="border: 1px solid #ccc; padding: 5px 10px;"> </td>
-      <td style="border: 1px solid #ccc; padding: 5px 10px;"> </td>
-    </tr>
-    <tr>
-      <th style="border: 1px solid #ccc; padding: 5px 10px;">011</th>
-      <td style="border: 1px solid #ccc; padding: 5px 10px;"> </td>
-      <td style="border: 1px solid #ccc; padding: 5px 10px;"> </td>
-      <td style="border: 1px solid #ccc; padding: 5px 10px;"> </td>
-      <td style="border: 1px solid #ccc; padding: 5px 10px;"> </td>
-      <td style="border: 1px solid #ccc; padding: 5px 10px;"> </td>
-      <td style="border: 1px solid #ccc; padding: 5px 10px;"> </td>
-      <td style="border: 1px solid #ccc; padding: 5px 10px;"> </td>
-      <td style="border: 1px solid #ccc; padding: 5px 10px;"> </td>
-    </tr>
-    <tr>
-      <th style="border: 1px solid #ccc; padding: 5px 10px;">010</th>
-      <td style="border: 1px solid #ccc; padding: 5px 10px;"> </td>
-      <td style="border: 1px solid #ccc; padding: 5px 10px;"> </td>
-      <td style="border: 1px solid #ccc; padding: 5px 10px;"> </td>
-      <td style="border: 1px solid #ccc; padding: 5px 10px;"> </td>
-      <td style="border: 1px solid #ccc; padding: 5px 10px;"> </td>
-      <td style="border: 1px solid #ccc; padding: 5px 10px;"> </td>
-      <td style="border: 1px solid #ccc; padding: 5px 10px;"> </td>
-      <td style="border: 1px solid #ccc; padding: 5px 10px;"> </td>
-    </tr>    <tr>
-      <th style="border: 1px solid #ccc; padding: 5px 10px;">110</th>
-      <td style="border: 1px solid #ccc; padding: 5px 10px;"> </td>
-      <td style="border: 1px solid #ccc; padding: 5px 10px;"> </td>
-      <td style="border: 1px solid #ccc; padding: 5px 10px;"> </td>
-      <td style="border: 1px solid #ccc; padding: 5px 10px;"> </td>
-      <td style="border: 1px solid #ccc; padding: 5px 10px;"> </td>
-      <td style="border: 1px solid #ccc; padding: 5px 10px;"> </td>
-      <td style="border: 1px solid #ccc; padding: 5px 10px;"> </td>
-      <td style="border: 1px solid #ccc; padding: 5px 10px;"> </td>
-    </tr>
-    <tr>
-      <th style="border: 1px solid #ccc; padding: 5px 10px;">111</th>
-      <td style="border: 1px solid #ccc; padding: 5px 10px;"> </td>
-      <td style="border: 1px solid #ccc; padding: 5px 10px;"> </td>
-      <td style="border: 1px solid #ccc; padding: 5px 10px;"> </td>
-      <td style="border: 1px solid #ccc; padding: 5px 10px;"> </td>
-      <td style="border: 1px solid #ccc; padding: 5px 10px;"> </td>
-      <td style="border: 1px solid #ccc; padding: 5px 10px;"> </td>
-      <td style="border: 1px solid #ccc; padding: 5px 10px;"> </td>
-      <td style="border: 1px solid #ccc; padding: 5px 10px;"> </td>
-    </tr>
-    <tr>
-      <th style="border: 1px solid #ccc; padding: 5px 10px;">101</th>
-      <td style="border: 1px solid #ccc; padding: 5px 10px;"> </td>
-      <td style="border: 1px solid #ccc; padding: 5px 10px;"> </td>
-      <td style="border: 1px solid #ccc; padding: 5px 10px;"> </td>
-      <td style="border: 1px solid #ccc; padding: 5px 10px;"> </td>
-      <td style="border: 1px solid #ccc; padding: 5px 10px;"> </td>
-      <td style="border: 1px solid #ccc; padding: 5px 10px;"> </td>
-      <td style="border: 1px solid #ccc; padding: 5px 10px;"> </td>
-      <td style="border: 1px solid #ccc; padding: 5px 10px;"> </td>
-    </tr>
-    <tr>
-      <th style="border: 1px solid #ccc; padding: 5px 10px;">100</th>
-      <td style="border: 1px solid #ccc; padding: 5px 10px;"> </td>
-      <td style="border: 1px solid #ccc; padding: 5px 10px;"> </td>
-      <td style="border: 1px solid #ccc; padding: 5px 10px;"> </td>
-      <td style="border: 1px solid #ccc; padding: 5px 10px;"> </td>
-      <td style="border: 1px solid #ccc; padding: 5px 10px;"> </td>
-      <td style="border: 1px solid #ccc; padding: 5px 10px;"> </td>
-      <td style="border: 1px solid #ccc; padding: 5px 10px;"> </td>
-      <td style="border: 1px solid #ccc; padding: 5px 10px;"> </td>
-    </tr>
-  </tbody>
-</table>
--->
-
-
-## Exemple
-Busquem en el nostre exemple les agrupacions més extenses possibles de '1'. Hem de continuar amb el procés fins que tots els '1' hagin estat considerats.
+## Exemple: 
+Busquem en el nostre exemple les agrupacions més extenses possibles de $1$. Hem de continuar amb el procés fins que tots els $1$ hagin estat considerats.
 
 
 <table style="border-collapse: collapse; text-align: center;">
@@ -634,7 +519,7 @@ Busquem en el nostre exemple les agrupacions més extenses possibles de '1'. Hem
   </tbody>
 </table>
 
-En blau tenim quatre '1' adjacents en forma de fila. La variable en comú en tots ells és $A=1$, les variables $B$ i $C$ canvien de valor. Així doncs, el primer terme de l'expressió de $S$ serà $A$.
+En blau tenim quatre $1$ adjacents en forma de fila. La variable en comú en tots ells és $A=1$, les variables $B$ i $C$ canvien de valor. Així doncs, el primer terme de l'expressió de $S$ serà $A$.
 
 $S=A+···$
 
@@ -672,7 +557,7 @@ $S=A+···$
 </table>
 
 
-En groc tenim un grup de quatre '1' adjacents en forma de quadrat. La variable en comú és $B=1$. Per tant el segon terme de l'expressió de $S$ és $B$.
+En groc tenim un grup de quatre $1$ adjacents en forma de quadrat. La variable en comú és $B=1$. Per tant el segon terme de l'expressió de $S$ és $B$.
 
 $S=A+B+···$
 
@@ -708,21 +593,21 @@ $S=A+B+···$
   </tbody>
 </table>
 
-Encara ens queden '1's per agrupar, així que en vermell tenim un altre grup de quatre '1' adjacents en forma de quadrat. Aquest agrupament s'extén a través d'una vora de la taula. La variable que manté el seu valor és $C=0$, de manera que cal afegir el terme $C$ negat, $\bar{C}$
+Encara ens queden $1$ per agrupar, així que en vermell tenim un altre grup de quatre $1$ adjacents en forma de quadrat. Aquest agrupament s'extén a través d'una vora de la taula. La variable que manté el seu valor és $C=0$, de manera que cal afegir el terme $C$ negat, $\bar{C}$.
 
 $S=A+B+\bar{C}$
 
 Aquesta és doncs l'expressió booleana simplificada que engendra la taula de veritat exemple.
 A partir d'aquesta es dedueix el circuit digital, tres entrades a una porta **OR**, una d'elles negada.
 
-<img src='./karnaugh.png' alt="Agrupacions exemple" style="display:block; height:150px; margin:0 auto; border-radius:8px; background-color: rgba(255, 255, 255, 1); padding:4px;"/>
+<img src='./karnaugh.png' alt="Agrupacions exemple" style="display:block; height:100px; margin:0 auto; border-radius:8px; background-color:white; padding:4px;"/>
 <center><i>Circuit resultat de l'exemple</i></center>
 
 
 ## Altres exemples
 Els següents exemples ens ajudaràn a entendre totes les regles.
 
-### Exemple
+## Exemple: 
 
 <!-- Taula de 3 variables -->
 <table style="border-collapse: collapse; text-align: center;">
@@ -759,7 +644,9 @@ Els següents exemples ens ajudaràn a entendre totes les regles.
 
 
 
-El grup vermell engendra el terme $\bar{A}\bar{C}$ perque les variables constants són $A=0$ i $C=0$. Tant $A$ com $C$ han d'aparèixer negades perque tenen el valor $0$. En el grup blau $A=1$ i $C=1$, per tant el seu terme a l'expressió booleana és $AC$.
+El grup vermell engendra el terme $\bar{A}\bar{C}$ perque les variables constants són $A=0$ i $C=0$. Tant $A$ com $C$ han d'aparèixer negades perque tenen el valor $0$.
+
+En el grup blau $A=1$ i $C=1$, per tant el seu terme a l'expressió booleana és $AC$.
 
 L'expressió simplificada final és el següent.
 
@@ -767,7 +654,7 @@ $S=\bar{A}\bar{C} + AC$
 
 El fet que no hi aparegui la variable $B$ significa que aquesta no té cap efecte en el resultat $S$.
 
-### Exemple
+## Exemple: 
 
 <!-- Taula de 3 variables -->
 <table style="border-collapse: collapse; text-align: center;">
@@ -806,7 +693,7 @@ Amb un sol grup en tenim prou en aquest exemple. Les variables constants són $B
 
 $S=\bar{B}\bar{C}$
 
-### Exemple
+## Exemple: 
 
 <!-- Taula de 3 variables -->
 <table style="border-collapse: collapse; text-align: center;">
@@ -845,7 +732,7 @@ Altre cop, amb un sol grup en tenim prou. L'única variable que no canvia és $C
 
 $S=C$
 
-### Exemple
+## Exemple: 
 
 <!-- Taula de 4 variables -->
 <table style="border-collapse: collapse; text-align: center;">
@@ -898,7 +785,7 @@ En aquest exemple, el grup vermell agrupa $B=0$ i $D=0$, el grup blau agrupa $B=
 
 $S=\bar{B}\bar{D}+BD$
 
-### Exemple
+## Exemple: 
 
 <!-- Taula de 3 variables -->
 <table style="border-collapse: collapse; text-align: center;">
@@ -939,8 +826,5 @@ $S=A+B\bar{C}+\bar{B}C$
 
 
 <!-- Aquesta imatge ha d'anar al final de cada lliçó, ja sigui amb aquesta línia o dins la signatura. Deixar comentat si ja està a la signatura-->
-<br>
-<br>
-<img src='../logos/TotsLogosBlanc.png ' alt="Logos Càtedra Chip" width="100%" style="display:block; margin:0 auto; border-radius:8px;"/>
-
+<br><br><img src="../logos/TotsLogosBlanc.png" alt="Logos Càtedra Chip" width="100%" style="display:block; margin:0 auto; border-radius:8px;"/>
 <Autors autors="xcasas fmadrid"/>

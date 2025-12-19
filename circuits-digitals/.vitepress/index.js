@@ -111,7 +111,7 @@ export const index = [
                 link: '/CircSeq/comptadors',
             },
             {
-                text: 'Màquines d\'estat',
+                text: 'Màquines d\'estats',
                 link: '/CircSeq/maquinesdestat',
             },
             {
