@@ -4,6 +4,8 @@
 <div style="clear: both;"></div>
 <br>
 
+
+
 # Dígits BCD
 
 En circuits digitals, un nombre **Decimal Codificat en Binari** (*Binary Coded Decimal*, **BCD**) és una manera de representar dígits decimals fent servir **4 bits**. Cada dígit del 0 al 9 es converteix en una combinació binària fixa.
@@ -177,10 +179,8 @@ Resultats esperats: segments **a, b, c, d, f, g** encès.
 - [Is it a BCD digit?](https://jutge.org/problems/X31983_en)
 - [Square of a BCD digit](https://jutge.org/problems/X77297_en)
 
-<small>*Recorda que per accedir als exercicis i que el **Jutge** valori les teves solucions has d'estar inscrit al [curs](https://jutge.org/courses/JordiCortadella:IntroCircuits)*. Troba totes les instruccions [aqui](../Inici/instruccions.md)</small>
+<small>*Recorda que per accedir als exercicis i perquè el **Jutge** valori les teves solucions has d'estar inscrit al [curs](https://jutge.org/courses/JordiCortadella:IntroCircuits). Trobaràs totes les instruccions [aquí](../Inici/instruccions.md).* </small>
 
 <!-- Aquesta imatge ha d'anar al final de cada lliçó, ja sigui amb aquesta línia o dins la signatura. Deixar comentat si ja està a la signatura-->
-<br><br>
-<img src="../logos/TotsLogosBlanc.png" alt="Logos Càtedra Chip" width="100%" style="display:block; margin:0 auto; border-radius:8px;"/>
-
+<br><br><img src="../logos/TotsLogosBlanc.png" alt="Logos Càtedra Chip" width="100%" style="display:block; margin:0 auto; border-radius:8px;"/>
 <Autors autors="xcasas fmadrid"/>

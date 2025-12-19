@@ -1,9 +1,10 @@
 <!-- Posar aquesta imatge al començament de cada lliçó -->
-
-<img src='../logos/illustracio1.png' alt="Circuits digitals" style="float: left; border-radius: 8px; height: 120px;"/>
-<img src='../logos/LogoCatedraCHIPBlanc.jpg' alt="Logo Càtedra Chip" style="float: right; border-radius: 8px; height: 120px;"/>
+<img src="../logos/illustracio1.png" alt="Circuits digitals" style="float: left; border-radius: 8px; height: 120px;"/>
+<img src="../logos/LogoCatedraCHIPBlanc.jpg" alt="Logo Càtedra Chip" style="float: right; border-radius: 8px; height: 120px;"/>
 <div style="clear: both;"></div>
 <br>
+
+
 
 # Circuits bàsics
 
@@ -41,7 +42,7 @@ Així doncs, el circuit que implementa aquest Semisumador (*Half Adder*) el seg�
 
 Aquest circuit és un dels elements que construeixen els sumadors complets i sumadors de $n$ bits.
 
-## EXEMPLE: Sumador complet (*Full Adder*)
+## Exemple: Sumador complet (*Full Adder*)
 
 Dissenyarem un sumador complet (*full adder* en anglès) que suma 3 bits d'entrada: els bits $A$ i $B$ més un bit de ròssec d'entrada $C_{entrada}$. Representa una suma de dos bits que té en compte un possible bit de ròssec provinent d'una suma anterior dins d'una cadena de sumes.
 
@@ -76,7 +77,7 @@ Aquest circuit es pot interpretar com **dos semisumadors** amb una porta OR per 
 <img src='./fulladder_2.png' alt="Sumador complet" style="display:block; width:600px; margin:0 auto; border-radius:8px; background-color:white; padding:4px;"/>
 <center><i>Sumador complet</i></center>
 
-## EXEMPLE: Comparador
+## Exemple: Comparador
 
 Dissenyarem un circuit comparador que pren dos bits, $A$ i $B$, i els compara.
 
@@ -102,7 +103,7 @@ Així, el circuit comparador és el següent:
 <img src='./comparador.png' alt="Circuit comparador" style="display:block; width:400px; margin:0 auto; border-radius:8px; background-color:white; padding:4px;"/>
 <center><i>Circuit comparador</i></center>
 
-## EXEMPLE: Sumador de diversos bits
+## Exemple: Sumador de diversos bits
 
 Amb el sumador complet (*full adder*) i el semisumador (*half adder*) es poden construir circuits més grans, com els sumadors de propagació de càrrega (*ripple-carry adders*), que permeten sumar números binaris de diversos bits.
 
@@ -113,17 +114,12 @@ Per exemple, el següent sumador de quatre bits:
 
 ## Exercicis a Jutge.org: [Introduction to Digital Circuit Design](https://jutge.org/courses/JordiCortadella:IntroCircuits)
 
-* [Half adder](https://jutge.org/problems/X27385_en)
-* [Full adder](https://jutge.org/problems/X12983_en)
-* [1-bit comparator](https://jutge.org/problems/X60848_en)
+- [Half adder](https://jutge.org/problems/X27385_en)
+- [Full adder](https://jutge.org/problems/X12983_en)
+- [1-bit comparator](https://jutge.org/problems/X60848_en)
 
-<small>*Recorda que per accedir als exercicis i que el **Jutge** valori les teves solucions has d'estar inscrit al [curs](https://jutge.org/courses/JordiCortadella:IntroCircuits)*. Troba totes les instruccions [aqui](../Inici/instruccions.md)</small>
+<small>*Recorda que per accedir als exercicis i perquè el **Jutge** valori les teves solucions has d'estar inscrit al [curs](https://jutge.org/courses/JordiCortadella:IntroCircuits). Trobaràs totes les instruccions [aquí](../Inici/instruccions.md).* </small>
 
 <!-- Aquesta imatge ha d'anar al final de cada lliçó, ja sigui amb aquesta línia o dins la signatura. Deixar comentat si ja està a la signatura-->
-<br>
-<br>
-<img src='../logos/TotsLogosBlanc.png ' alt="Logos Càtedra Chip" width="100%" style="display:block; margin:0 auto; border-radius:8px;"/>
-
-
-
+<br><br><img src="../logos/TotsLogosBlanc.png" alt="Logos Càtedra Chip" width="100%" style="display:block; margin:0 auto; border-radius:8px;"/>
 <Autors autors="xcasas fmadrid"/>

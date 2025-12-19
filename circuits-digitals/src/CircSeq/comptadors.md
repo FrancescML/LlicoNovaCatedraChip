@@ -1,8 +1,10 @@
 <!-- Posar aquesta imatge al començament de cada lliçó -->
-<img src='../logos/illustracio1.png' alt="Circuits digitals" style="float: left; border-radius: 8px; height: 120px;"/>
-<img src='../logos/LogoCatedraCHIPBlanc.jpg' alt="Logo Càtedra Chip" style="float: right; border-radius: 8px; height: 120px;"/>
+<img src="../logos/illustracio1.png" alt="Circuits digitals" style="float: left; border-radius: 8px; height: 120px;"/>
+<img src="../logos/LogoCatedraCHIPBlanc.jpg" alt="Logo Càtedra Chip" style="float: right; border-radius: 8px; height: 120px;"/>
 <div style="clear: both;"></div>
 <br>
+
+
 
 # Comptadors
 
@@ -294,7 +296,7 @@ Tant la taula, com el cronograma amb la seqüència del comptador són idèntiqu
 
 
 
-## EXEMPLE: Comptador de 4 bits
+## Exemple: Comptador de 4 bits
 En aquest exemple veurem com realitzar un comptador de 4 bits.
 
 <div style="display: flex; justify-content: center; align-items:center; gap: 16px;">
@@ -333,22 +335,18 @@ El multiplexor forçarà el reinici. Al entrar un senyal **rst** l'estat del bie
 
 ## Exercicis a Jutge.org: [Introduction to Digital Circuit Design](https://jutge.org/courses/JordiCortadella:IntroCircuits)
 
-* [Toggle](https://jutge.org/problems/X15508_en)
-* [2-bit counter](https://jutge.org/problems/X81362_en)
-* [Mod-3 counter](https://jutge.org/problems/X05944_en)
-* [4-bit counter](https://jutge.org/problems/X35277_en)
-* [Unconventional cyclic counter](https://jutge.org/problems/X97508_en)
-* [Up-down counter](https://jutge.org/problems/X53256_en)
-* [Mod-7 up-down counter](https://jutge.org/problems/X47159_en)
+- [Toggle](https://jutge.org/problems/X15508_en)
+- [2-bit counter](https://jutge.org/problems/X81362_en)
+- [Mod-3 counter](https://jutge.org/problems/X05944_en)
+- [4-bit counter](https://jutge.org/problems/X35277_en)
+- [Unconventional cyclic counter](https://jutge.org/problems/X97508_en)
+- [Up-down counter](https://jutge.org/problems/X53256_en)
+- [Mod-7 up-down counter](https://jutge.org/problems/X47159_en)
 
-<small>*Recorda que per accedir als exercicis i que el **Jutge** valori les teves solucions has d'estar inscrit al [curs](https://jutge.org/courses/JordiCortadella:IntroCircuits)*. Troba totes les instruccions [aqui](../Inici/instruccions.md)</small>
+<small>*Recorda que per accedir als exercicis i perquè el **Jutge** valori les teves solucions has d'estar inscrit al [curs](https://jutge.org/courses/JordiCortadella:IntroCircuits). Trobaràs totes les instruccions [aquí](../Inici/instruccions.md).* </small>
 
 
 
 <!-- Aquesta imatge ha d'anar al final de cada lliçó, ja sigui amb aquesta línia o dins la signatura. Deixar comentat si ja està a la signatura-->
-<br>
-<br>
-<img src='../logos/TotsLogosBlanc.png ' alt="Logos Càtedra Chip" width="100%" style="display:block; margin:0 auto; border-radius:8px;"/>
-
-
+<br><br><img src="../logos/TotsLogosBlanc.png" alt="Logos Càtedra Chip" width="100%" style="display:block; margin:0 auto; border-radius:8px;"/>
 <Autors autors="xcasas fmadrid"/>

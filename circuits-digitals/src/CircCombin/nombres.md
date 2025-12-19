@@ -4,6 +4,8 @@
 <div style="clear: both;"></div>
 <br>
 
+
+
 # Nombres
 
 En els circuits digitals, els nombres s’implementen en **notació binària** i totes les operacions matemàtiques -suma, resta, comparació, multiplicació, divisió o mòdul- es realitzen manipulant bits.
@@ -451,13 +453,8 @@ A partir d'aquestes tres expressions podem emprar les portes lògiques per crear
 - [Max of two numbers](https://jutge.org/problems/X37473_en)
 - [Residue mod 7](https://jutge.org/problems/X91814_en)
 
-<small>*Recorda que per accedir als exercicis i perquè el **Jutge** valori les teves solucions has d’estar inscrit al [curs](https://jutge.org/courses/JordiCortadella:IntroCircuits). Trobaràs totes les instruccions [aquí](../Inici/instruccions.md).* </small>
+<small>*Recorda que per accedir als exercicis i perquè el **Jutge** valori les teves solucions has d'estar inscrit al [curs](https://jutge.org/courses/JordiCortadella:IntroCircuits). Trobaràs totes les instruccions [aquí](../Inici/instruccions.md).* </small>
 
 <!-- Aquesta imatge ha d'anar al final de cada lliçó, ja sigui amb aquesta línia o dins la signatura. Deixar comentat si ja està a la signatura-->
-<br>
-<br>
-<img src='../logos/TotsLogosBlanc.png ' alt="Logos Càtedra Chip" width="100%" style="display:block; margin:0 auto; border-radius:8px;"/>
-
-
-
+<br><br><img src="../logos/TotsLogosBlanc.png" alt="Logos Càtedra Chip" width="100%" style="display:block; margin:0 auto; border-radius:8px;"/>
 <Autors autors="xcasas fmadrid"/>

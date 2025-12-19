@@ -1,15 +1,16 @@
 <!-- Posar aquesta imatge al començament de cada lliçó -->
-
-<img src='../logos/illustracio1.png' alt="Circuits digitals" style="float: left; border-radius: 8px; height: 120px;"/>
-<img src='../logos/LogoCatedraCHIPBlanc.jpg' alt="Logo Càtedra Chip" style="float: right; border-radius: 8px; height: 120px;"/>
+<img src="../logos/illustracio1.png" alt="Circuits digitals" style="float: left; border-radius: 8px; height: 120px;"/>
+<img src="../logos/LogoCatedraCHIPBlanc.jpg" alt="Logo Càtedra Chip" style="float: right; border-radius: 8px; height: 120px;"/>
 <div style="clear: both;"></div>
 <br>
+
+
 
 # Aritmètica de 4 bits
 
 A continuació tractarem alguns circuits aritmètics que efectuen operacions amb 4 bits. Veurem exemples de sumadors i restadors de 4 bits i una UAL (ALU) molt simple.
 
-## EXEMPLE: Suma de nombres de 4 bits
+## Exemple: Suma de nombres de 4 bits
 
 En aquest exemple veurem com podem sumar dos nombres binaris de 4 bits.
 Els sumadors binaris (*ripple-carry adders*) es poden construir amb sumadors complets (*full adders*) i un semisumador (*half adder*). En tractar-se d’una suma de 4 bits, haurem d'encadenar 3 sumadors complets i un semisumador, o bé 4 sumadors complets si configurem el primer sumador complet com a semisumador.
@@ -69,7 +70,7 @@ Un cop canviat el *BitWidth* a 4 podem fer la suma amb un únic *adder* i simpli
 
 A CircuitVerse, les entrades i sortides de 4 bits tenen cable de color negre, mentre que **Cin** i **Cout**, de només 1 bit, són de color verd.
 
-## EXEMPLE: Resta de nombres de 4 bits
+## Exemple: Resta de nombres de 4 bits
 
 Per tal de restar dos nombres binaris emprarem la fórmula:
 
@@ -114,7 +115,7 @@ Amb *BitWidth = 4* simplifiquem el circuit:
 <img src='./restadorunicadder.png' alt="Restador amb un únic adder" style="display:block; height:150px; margin:0 auto; border-radius:8px; background-color:white; padding:4px;"/>
 
 
-## EXEMPLE: Triar operacions
+## Exemple: Triar operacions
 
 A més d'efectuar operacions aritmètiques, els circuits aritmètics també poden implementar la selecció d'una operació. Les UAL (ALU) permeten triar entre operacions en funció d'una variable. Aquest exemple explora aquesta funcionalitat.
 
@@ -169,11 +170,8 @@ Les UALs (*ALU*) normalment trien entre 4 operacions (multiplexors de 4 entrades
 - [4-bit comparator](https://jutge.org/problems/X61860_en)  
 - [4-bit ALU](https://jutge.org/problems/X35448_en)
 
-<small>*Recorda que per accedir als exercicis i que el **Jutge** valori les teves solucions has d'estar inscrit al [curs](https://jutge.org/courses/JordiCortadella:IntroCircuits)*. Troba totes les instruccions [aqui](../Inici/instruccions.md)</small>
+<small>*Recorda que per accedir als exercicis i perquè el **Jutge** valori les teves solucions has d'estar inscrit al [curs](https://jutge.org/courses/JordiCortadella:IntroCircuits). Trobaràs totes les instruccions [aquí](../Inici/instruccions.md).* </small>
 
 <!-- Aquesta imatge ha d'anar al final de cada lliçó, ja sigui amb aquesta línia o dins la signatura. Deixar comentat si ja està a la signatura-->
-<br>
-<br>
-<img src='../logos/TotsLogosBlanc.png ' alt="Logos Càtedra Chip" width="100%" style="display:block; margin:0 auto; border-radius:8px;"/>
-
+<br><br><img src="../logos/TotsLogosBlanc.png" alt="Logos Càtedra Chip" width="100%" style="display:block; margin:0 auto; border-radius:8px;"/>
 <Autors autors="xcasas fmadrid"/>

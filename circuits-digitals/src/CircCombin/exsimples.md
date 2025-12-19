@@ -5,6 +5,8 @@
 <br>
 
 
+
+
 # Exercicis simples
 En aquest tema veuràs com es relacionen l’àlgebra de Boole, les taules de veritat i les portes lògiques en una sèrie d'exercicis simples.
 
@@ -74,10 +76,5 @@ A continuació dibuixem el circuit digital:
 
 
 <!-- Aquesta imatge ha d'anar al final de cada lliçó, ja sigui amb aquesta línia o dins la signatura. Deixar comentat si ja està a la signatura-->
-<br>
-<br>
-
-<img src="../logos/TotsLogosBlanc.png" alt="Logos Càtedra Chip" width="100%" style="display:block; margin:0 auto; border-radius:8px;"/>
-
-
+<br><br><img src="../logos/TotsLogosBlanc.png" alt="Logos Càtedra Chip" width="100%" style="display:block; margin:0 auto; border-radius:8px;"/>
 <Autors autors="xcasas fmadrid"/>

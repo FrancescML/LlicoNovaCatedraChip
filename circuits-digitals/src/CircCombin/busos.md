@@ -4,6 +4,8 @@
 <div style="clear: both;"></div>
 <br>
 
+
+
 # Busos
 
 En circuits digitals, un **bus de bits** (o simplement *bus*) és un conjunt de línies de comunicació que transporten bits de dades de manera paral·lela. Serveix per interconnectar diferents components d’un sistema transferint senyals digitals.
@@ -96,16 +98,13 @@ Per a cada bit de sortida $B_i$, utilitzarem un multiplexor 2-a-1:
 
 ## Exercicis a Jutge.org: [Introduction to Digital Circuit Design](https://jutge.org/courses/JordiCortadella:IntroCircuits)
 
-
 - [Bus invert](https://jutge.org/problems/X29475_en)
 - [Bus transfer or invert](https://jutge.org/problems/X00341_en)
 - [Shift left](https://jutge.org/problems/X26035_en)
 - [Shift left or right](https://jutge.org/problems/X25794_en)
 
-<small>*Recorda que per accedir als exercicis i perquè el **Jutge** valori les teves solucions has d’estar inscrit al [curs](https://jutge.org/courses/JordiCortadella:IntroCircuits). Trobaràs totes les instruccions [aquí](../Inici/instruccions.md).* </small>
+<small>*Recorda que per accedir als exercicis i perquè el **Jutge** valori les teves solucions has d'estar inscrit al [curs](https://jutge.org/courses/JordiCortadella:IntroCircuits). Trobaràs totes les instruccions [aquí](../Inici/instruccions.md).* </small>
 
 <!-- Aquesta imatge ha d'anar al final de cada lliçó, ja sigui amb aquesta línia o dins la signatura. Deixar comentat si ja està a la signatura-->
-<br><br>
-<img src='../logos/TotsLogosBlanc.png' alt='Logos Càtedra Chip' width='100%' style='display:block; margin:0 auto; border-radius:8px;'/>
-
+<br><br><img src="../logos/TotsLogosBlanc.png" alt="Logos Càtedra Chip" width="100%" style="display:block; margin:0 auto; border-radius:8px;"/>
 <Autors autors="xcasas fmadrid"/>

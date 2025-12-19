@@ -1,9 +1,10 @@
 <!-- Posar aquesta imatge al començament de cada lliçó -->
-
-<img src="../logos/illustracio1.png" alt="Circuits digitals" style="float: left; border-radius: 8px; height: 120px;" />
-<img src="../logos/LogoCatedraCHIPBlanc.jpg" alt="Logo Càtedra Chip" style="float: right; border-radius: 8px; height: 120px;" />
+<img src="../logos/illustracio1.png" alt="Circuits digitals" style="float: left; border-radius: 8px; height: 120px;"/>
+<img src="../logos/LogoCatedraCHIPBlanc.jpg" alt="Logo Càtedra Chip" style="float: right; border-radius: 8px; height: 120px;"/>
 <div style="clear: both;"></div>
 <br>
+
+
 
 # Multiplexors
 
@@ -53,19 +54,15 @@ A continuació dibuixem el circuit lògic associat:
 <center><i>Circuit multiplexor</i></center>
 
 ## Exercicis a Jutge.org: [Introduction to Digital Circuit Design](https://jutge.org/courses/JordiCortadella:IntroCircuits)
+
 - [2-input multiplexer](https://jutge.org/problems/X12031_en)
 - [Shuffle](https://jutge.org/problems/X07222_en)
 - [2-input multiplexer (4-bit wide)](https://jutge.org/problems/X82780_en)
 - [4-input multiplexer](https://jutge.org/problems/X45339_en)
 
-<small>
-*Recorda que per accedir als exercicis i perquè el **Jutge** valori les teves solucions has d'estar inscrit al [curs](https://jutge.org/courses/JordiCortadella:IntroCircuits).  
-Trobaràs totes les instruccions [aquí](../Inici/instruccions.md).*
-</small>
+<small>*Recorda que per accedir als exercicis i perquè el **Jutge** valori les teves solucions has d'estar inscrit al [curs](https://jutge.org/courses/JordiCortadella:IntroCircuits). Trobaràs totes les instruccions [aquí](../Inici/instruccions.md).* </small>
+
 
 <!-- Aquesta imatge ha d'anar al final de cada lliçó, ja sigui amb aquesta línia o dins la signatura. Deixar comentat si ja està a la signatura-->
-
-<br><br>
-<img src="../logos/TotsLogosBlanc.png" alt="Logos Càtedra Chip" width="100%" style="display:block; margin:0 auto; border-radius:8px;" />
-
-<Autors autors="xcasas fmadrid" />
+<br><br><img src="../logos/TotsLogosBlanc.png" alt="Logos Càtedra Chip" width="100%" style="display:block; margin:0 auto; border-radius:8px;"/>
+<Autors autors="xcasas fmadrid"/>

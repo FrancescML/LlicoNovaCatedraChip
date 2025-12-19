@@ -1,23 +1,24 @@
-
 <!-- Posar aquesta imatge al començament de cada lliçó -->
-<img src='../logos/illustracio1.png' alt="Circuits digitals" style="float: left; border-radius: 8px; height: 120px;"/>
-<img src='../logos/LogoCatedraCHIPBlanc.jpg' alt="Logo Càtedra Chip" style="float: right; border-radius: 8px; height: 120px;"/>
+<img src="../logos/illustracio1.png" alt="Circuits digitals" style="float: left; border-radius: 8px; height: 120px;"/>
+<img src="../logos/LogoCatedraCHIPBlanc.jpg" alt="Logo Càtedra Chip" style="float: right; border-radius: 8px; height: 120px;"/>
 <div style="clear: both;"></div>
 <br>
 
+
+
 # Introducció als Mapes de Karnaugh
 
-Un mapa de Karnaugh (també conegut com a K-map o diagrama de Veitch) és una eina gràfica utilitzada en electrònica digital per simplificar funcions lògiques booleanes de manera visual i sistemàtica.
+Un mapa de Karnaugh (també conegut com a *K-map* o diagrama de Veitch) és una eina gràfica utilitzada en electrònica digital per simplificar funcions lògiques booleanes de manera visual i sistemàtica.
 
-L'objectiu principal és trobar l'expressió booleana més simple possible per a una funció lògica determinada. Una funció lògica més simple es tradueix directament en un circuit digital més senzill.
+L’objectiu principal és trobar l’expressió booleana més simple possible per a una funció lògica determinada. Una funció lògica més simple es tradueix directament en un circuit digital més senzill.
 
-Es tracta d’un mètode alternatiu a la simplificació amb les lleis de l'àlgebra de Boole i és vàlid per a qualsevol nombre de variables. Resulta, però, més pràctic i intuïtiu per a poques variables, típicament de 2 a 4. Més enllà de 6 variables, els mapes de Karnaugh ja deixen de ser pràctics.
+Es tracta d’un mètode alternatiu a la simplificació amb les lleis de l’àlgebra de Boole i és vàlid per a qualsevol nombre de variables. Resulta, però, més pràctic i intuïtiu per a poques variables, típicament de 2 a 4. Més enllà de 6 variables, els mapes de Karnaugh deixen de ser pràctics.
 
-Un mapa de Karnaugh és una graella que organitza totes les possibles combinacions de les variables d’entrada d’una funció booleana. Cada cel·la representa una combinació de les variables d'entrada de la funció, és a dir, una fila de la taula de la veritat.
+Un mapa de Karnaugh és una graella que organitza totes les combinacions possibles de les variables d’entrada d’una funció booleana. Cada cel·la representa una combinació de les variables d’entrada de la funció, és a dir, una fila de la taula de la veritat.
 
-Aquest mapa s’ha d’ordenar de manera que entre dues cel·les adjacents verticalment o horitzontalment, només canviï el valor d'una única variable. Això facilita identificar patrons i fer agrupacions per reduir l’expressió lògica.
+Aquest mapa s’ha d’ordenar de manera que entre dues cel·les adjacents verticalment o horitzontalment només canviï el valor d’una única variable. Això facilita la identificació de patrons i l’agrupació per reduir l’expressió lògica.
 
-## EXEMPLE:
+## Exemple:
 
 Vegem la següent taula de veritat d'un circuit digital hipotètic. Aquesta representa les variables d’entrada $A$, $B$ i $C$ i la sortida $S$.
 
@@ -482,7 +483,7 @@ I visualitzar-los de la manera següent.
 <center><i>Mapa de Karnaugh 5 variables</i></center>
 
 
-## EXEMPLE: 
+## Exemple: 
 Busquem en el nostre exemple les agrupacions més extenses possibles de $1$. Hem de continuar amb el procés fins que tots els $1$ hagin estat considerats.
 
 
@@ -606,7 +607,7 @@ A partir d'aquesta es dedueix el circuit digital, tres entrades a una porta **OR
 ## Altres exemples
 Els següents exemples ens ajudaràn a entendre totes les regles.
 
-## EXEMPLE: 
+## Exemple: 
 
 <!-- Taula de 3 variables -->
 <table style="border-collapse: collapse; text-align: center;">
@@ -653,7 +654,7 @@ $S=\bar{A}\bar{C} + AC$
 
 El fet que no hi aparegui la variable $B$ significa que aquesta no té cap efecte en el resultat $S$.
 
-## EXEMPLE: 
+## Exemple: 
 
 <!-- Taula de 3 variables -->
 <table style="border-collapse: collapse; text-align: center;">
@@ -692,7 +693,7 @@ Amb un sol grup en tenim prou en aquest exemple. Les variables constants són $B
 
 $S=\bar{B}\bar{C}$
 
-## EXEMPLE: 
+## Exemple: 
 
 <!-- Taula de 3 variables -->
 <table style="border-collapse: collapse; text-align: center;">
@@ -731,7 +732,7 @@ Altre cop, amb un sol grup en tenim prou. L'única variable que no canvia és $C
 
 $S=C$
 
-## EXEMPLE: 
+## Exemple: 
 
 <!-- Taula de 4 variables -->
 <table style="border-collapse: collapse; text-align: center;">
@@ -784,7 +785,7 @@ En aquest exemple, el grup vermell agrupa $B=0$ i $D=0$, el grup blau agrupa $B=
 
 $S=\bar{B}\bar{D}+BD$
 
-## EXEMPLE: 
+## Exemple: 
 
 <!-- Taula de 3 variables -->
 <table style="border-collapse: collapse; text-align: center;">
@@ -825,8 +826,5 @@ $S=A+B\bar{C}+\bar{B}C$
 
 
 <!-- Aquesta imatge ha d'anar al final de cada lliçó, ja sigui amb aquesta línia o dins la signatura. Deixar comentat si ja està a la signatura-->
-<br>
-<br>
-<img src='../logos/TotsLogosBlanc.png ' alt="Logos Càtedra Chip" width="100%" style="display:block; margin:0 auto; border-radius:8px;"/>
-
+<br><br><img src="../logos/TotsLogosBlanc.png" alt="Logos Càtedra Chip" width="100%" style="display:block; margin:0 auto; border-radius:8px;"/>
 <Autors autors="xcasas fmadrid"/>
