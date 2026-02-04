@@ -26,10 +26,6 @@ export const index = [
                 text: 'Àlgebra de Boole',
                 link: '/Intro/boole',
             },
-            {
-                text: 'Mapes de Karnaugh',
-                link: '/Intro/karnaugh',
-            },
 
         ],
     },
@@ -122,12 +118,16 @@ export const index = [
         ],
     },
     {
-        text: 'TinyMicro',
+        text: 'Annexos',
         collapsed: true,
         items: [
             {
+                text: 'Mapes de Karnaugh',
+                link: '/Annexos/karnaugh',
+            },
+            {
                 text: 'TinyMicro',
-                link: '/TinyMicro/intro',
+                link: '/Annexos/TinyMicro',
             },
         ],
     },

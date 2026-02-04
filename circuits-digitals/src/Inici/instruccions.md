@@ -10,10 +10,17 @@
 
 ## Com seguir les lliçons
 Al menú lateral d'aquí a l'esquerra trobaràs les lliçons que conformen aquest recurs educatiu.
-Ja pots començar per la primera lliçó: la introducció als circuits digitals, a l'àlgebra de Boole i als mapes de Karnaugh.
+**Ja pots començar per la primera lliçó**: la introducció als circuits digitals, a l'àlgebra de Boole i als mapes de Karnaugh.
 
 La resta de lliçons estan dedicades als diferents tipus de circuits digitals i contenen la teoria i un o dos exemples. A més, al final de cada lliçó et proposem fer alguns exercicis del curs [*Introduction to Digital Circuit Design*](https://jutge.org/courses/JordiCortadella:IntroCircuits), dins de [jutge.org](https://jutge.org).
 En aquest apartat pots trobar les instruccions per solucionar els problemes i sotmetre'ls al veredicte del nostre Jutge. Revisa-les quan les necessitis.
+
+<div style="text-align: center;">
+<video controls style="width: 90%; display: block; margin: 0 auto;">
+  <source src="../Inici/vid_tuto.mp4" type="video/mp4">
+</video></div>
+
+
 
 ## Inscripció a Jutge.org i al curs
 

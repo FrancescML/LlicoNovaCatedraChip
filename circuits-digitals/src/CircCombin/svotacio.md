@@ -97,7 +97,7 @@ Construïm la taula de veritat amb tots els casos possibles:
 | 1   | 1   | 1   | 1   |        4        | 1     | 0     | 1   |
 
 
-L'expressió per a $A$ en funció de $P$, $S$, $T$ i $V$ és molt llarga. Fer-ne una simplificació lògica mitjançant algebra booleana seria complex. Alternativament podem utilitzar un [mapa de Karnaugh](../Intro/karnaugh.md) per a la funció de sortida $A$, amb les entrades $P$,$S$,$T$ i $V$ agrupades.
+L'expressió per a $A$ en funció de $P$, $S$, $T$ i $V$ és molt llarga. Fer-ne una simplificació lògica mitjançant algebra booleana seria complex. Alternativament podem utilitzar un [mapa de Karnaugh](../Annexos/karnaugh.md) per a la funció de sortida $A$, amb les entrades $P$,$S$,$T$ i $V$ agrupades.
 
 <!-- 
 | PS\TV | 00 | 01 | 11 | 10 |

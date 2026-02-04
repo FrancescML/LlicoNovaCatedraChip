@@ -17,6 +17,11 @@ L’accés a les lliçons és lliure, però per fer els exercicis t’hauràs de
 
 [jutge.org](https://jutge.org) ofereix altres [lliçons](https://lliçons.jutge.org/) que introdueixen coneixements bàsics de programació en diversos llenguatges, a més d'**aquest** curs sobre circuits digitals.
 
+<div style="text-align: center;">
+<video controls style="width: 90%; display: block; margin: 0 auto;">
+  <source src="../Inici/vid_present.mp4 " type="video/mp4">
+</video></div>
+
 
 <!-- Aquesta imatge ha d'anar al final de cada lliçó, ja sigui amb aquesta línia o dins la signatura. Deixar comentat si ja està a la signatura-->
 <br><br><img src="../logos/TotsLogosBlanc.png" alt="Logos Càtedra Chip" width="100%" style="display:block; margin:0 auto; border-radius:8px;"/>
