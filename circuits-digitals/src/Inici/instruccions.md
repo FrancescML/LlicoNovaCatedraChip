@@ -16,7 +16,8 @@ La resta de lliçons estan dedicades als diferents tipus de circuits digitals i 
 En aquest apartat pots trobar les instruccions per solucionar els problemes i sotmetre'ls al veredicte del nostre Jutge. Revisa-les quan les necessitis.
 
 <div style="text-align: center;">
-<video controls style="width: 90%; display: block; margin: 0 auto;">
+<video controls controlsList="nodownload noplaybackrate"   disablepictureinpicture
+style="width: 90%; display: block; margin: 0 auto;">
   <source src="../Inici/vid_tuto.mp4" type="video/mp4">
 </video></div>
 
