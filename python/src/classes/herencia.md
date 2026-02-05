@@ -2,7 +2,7 @@
 
 <img src='./classes.png' style='height: 8em; float: right; margin: 0 0 1em 2em;'/>
 
-Aquesta lliçó...
+Aquesta lliçó introdueix el concepte d'**herència** en la programació orientada a objectes, que permet crear noves classes basades en classes ja existents. També es presenta el concepte de **polimorfisme**, que permet que les funcions i mètodes treballin amb objectes de diferents tipus de manera coherent.
 
 ## Concepte d'herència
 
@@ -133,6 +133,39 @@ gat.filar()            # ron-ron
 gos.filar()            # ❌ AttributeError: 'Gos' object has no attribute 'filar'
 ```
 
+Igualment, si ara afegim un atribut `perillos` a la classe `Gos` per indicar si un gos és un gos potencialment perillós o no:
+
+```python
+class Gos(Animal):
+
+    perillos: bool
+    ...
+```
+
+podrem accedir en aquesta propietat pels gossos, però els gats no la tindran:
+
+```python
+gos = Gos('Blaqui', 4)
+gat = Gat('Mixet', 3)
+print(gos.perillos)        # escriu True o False
+print(gat.perillos)        # ❌ AttributeError: 'Gat' object has no attribute 'perillos'
+```
+
+Sovint, el constructor de la classe pare es vol reutilitzar en el constructor de la classe filla. Això es pot fer invocant explícitament el constructor de la classe pare des del constructor de la classe filla a través de `super()`. Per exemple, en la classe `Gos`, podem invocar el constructor d'`Animal` per inicialitzar els atributs `nom` i `edat`:
+
+```python
+class Gos(Animal):
+
+    perillos: bool
+
+    def __init__(self, nom: str, edat: int, perillos: bool):
+        super().__init__(nom, edat) # invoca el constructor d'Animal
+        self.perillos = perillos
+
+    def fer_un_soroll(self):
+        print('bub')
+```
+
 L'herència permet doncs que noves classes (s'anomenen classes **filles** o **derivades**) heretin els atributs i mètodes de les classes existents (anomenades classes **pare**, **mare** o **base**). Això implica que les classes filles poden reutilitzar i estendre el comportament de les classes pare, evitant la duplicació de codi. A més a més, l'herència facilita l'organització jeràrquica del codi, ja que les classes poden ser agrupades en categories més generals (classes pare) i categories més específiques (classes filles). Aquesta estructura jeràrquica millora la comprensibilitat del codi i permet fer canvis en les classes pare que afectaran automàticament totes les classes filles, afavorint la coherència i mantenibilitat del sistema.
 
 ## Herència i polimorfisme
@@ -228,6 +261,82 @@ Això es sol representar d'aquesta forma:
 Quan usem llibreries, és molt habitual trobar-se amb jeraquies de classes molt complexes, com per exemple aquesta per als elements gràfics d'un app:
 
 <img src='./widgets.png' style='height: 8em; margin: 0 0 0 0'/>
+
+## Aplicació: Figures geomètriques
+
+```python
+from dataclasses import dataclass
+import math
+
+
+@dataclass
+class Point:
+    """A point in a 2D space."""
+
+    x: float
+    y: float
+
+
+class Shape:
+    """A base class for geometric shapes."""
+
+    _name: str = "shape"  # Class attribute for the name of the shape
+    _center: Point  # Center of the shape
+
+    def __init__(self, center: Point):
+        self._center = center
+
+    def center(self) -> Point:
+        return self._center
+
+    def area(self) -> float:
+        return 0.0
+
+    def __str__(self) -> str:
+        return f"{self._name} with center ({self._center.x}, {self._center.y})"
+
+
+class Circle(Shape):
+    """A class representing a circle shape."""
+
+    _name: str = "circle"
+    _radius: float
+
+    def __init__(self, center: Point, radius: float):
+        super().__init__(center)
+        self._radius = radius
+
+    def area(self) -> float:
+        return math.pi * (self._radius**2)
+
+    def perimeter(self) -> float:
+        return 2 * math.pi * self._radius
+
+
+class Rectangle(Shape):
+    _name: str = "rectangle"
+    _width: float
+    _height: float
+
+    def __init__(self, center: Point, width: float, height: float):
+        super().__init__(center)
+        self._width = width
+        self._height = height
+
+    def area(self) -> float:
+        return self._width * self._height
+
+    def perimeter(self) -> float:
+        return 2 * (self._width + self._height)
+
+if __name__ == "__main__":
+    s = Shape(Point(0, 0))
+    c = Circle(Point(1, 1), 5)
+    r = Rectangle(Point(-1, -1), 4, 6)
+    print(f"{s} and area {s.area()}")
+    print(f"{c}, area {c.area()} and perimeter {c.perimeter()}")
+    print(f"{r}, area {r.area()} and perimeter {r.perimeter()}")
+```
 
 ## Herència múltiple
 
