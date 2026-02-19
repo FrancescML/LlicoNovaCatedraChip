@@ -5,7 +5,7 @@
             <ul>
                 <div v-for="subitem of item.items">
                     <li>
-                        <a :href="subitem.link">
+                        <a :href="'/ai-python' + subitem.link">
                             <div v-html="subitem.text"></div>
                         </a>
                     </li>
