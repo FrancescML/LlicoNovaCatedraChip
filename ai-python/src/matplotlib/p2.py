@@ -1,0 +1,11 @@
+import matplotlib.pyplot as plt
+import numpy as np
+
+x = np.linspace(0, 10, 100)
+y = np.sin(x)
+
+plt.plot(x, y, label="sin(x)")
+plt.plot(x, np.cos(x), label="cos(x)")
+plt.legend()
+plt.grid()
+plt.savefig("p2.svg", bbox_inches="tight")

@@ -43,6 +43,10 @@ export default defineConfig({
                         text: 'Lliçons Terminal',
                         link: '/',
                     },
+                    {
+                        text: 'Python for AI',
+                        link: 'https://lliçons.jutge.org/ai-python',
+                    },
                 ],
             },
         ],
