@@ -7,6 +7,8 @@ import { tabsMarkdownPlugin } from 'vitepress-plugin-tabs'
 const year = new Date().getFullYear()
 
 export default defineConfig({
+    base: '/ai-python/',
+
     srcDir: 'src',
 
     title: 'Python for AI',
@@ -19,7 +21,6 @@ export default defineConfig({
         // https://vitepress.dev/reference/default-theme-config
 
         logo: '/logos/lliçons.png',
-
 
         nav: [
             {
