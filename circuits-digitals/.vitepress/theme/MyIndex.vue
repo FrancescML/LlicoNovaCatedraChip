@@ -1,23 +1,32 @@
 <template>
     <div>
-        <div v-for="item of index">
+        <div v-for="item in data" :key="item.text">
             <h3>{{ item.text }}</h3>
+
             <ul>
-                <div v-for="subitem of item.items">
-                    <li>
-                        <a :href="'/circuits-digitals' + subitem.link">
-                            <div v-html="subitem.text"></div>
-                        </a>
-                    </li>
-                </div>
+                <li v-for="subitem in item.items" :key="subitem.link">
+                    <a :href="site.base + subitem.link">
+                        <div v-html="subitem.text"></div>
+                    </a>
+                </li>
             </ul>
+
         </div>
     </div>
 </template>
 
-<script lang="ts" setup>
+<script setup lang="ts">
+import { computed } from 'vue'
+import { useData } from 'vitepress'
+
 import { index } from '../index'
-import { ref, onMounted } from 'vue'
+import { indexEn } from '../index'
+
+const { localeIndex, site } = useData()
+
+const data = computed(() => {
+    return localeIndex.value === 'en' ? indexEn : index
+})
 </script>
 
 <style scoped>

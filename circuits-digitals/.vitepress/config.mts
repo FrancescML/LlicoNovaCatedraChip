@@ -1,5 +1,7 @@
 import { defineConfig } from 'vitepress'
 import { index } from './index'
+import { indexEn } from './index'
+
 import { tabsMarkdownPlugin } from 'vitepress-plugin-tabs'
 
 // https://vitepress.dev/reference/site-config
@@ -10,6 +12,27 @@ export default defineConfig({
     base: '/circuits-digitals/',
 
     srcDir: 'src',
+
+    locales: {
+        root: {
+            label: 'Català',
+            lang: 'ca-ES',
+            title: 'Lliçons circuits digitals',
+            link: '/'
+        },
+
+        en: {
+            label: 'English',
+            lang: 'en-US',
+            title: 'Digital Circuits Lessons',
+            link: '/en/'
+        }
+    },
+
+
+
+
+
 
     title: 'Lliçons circuits digitals',
 
@@ -62,7 +85,9 @@ export default defineConfig({
 
         sidebar: {
             '/': index,
+            '/en/': indexEn,
         },
+
 
         socialLinks: [
             {
