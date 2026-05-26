@@ -1,68 +1,66 @@
 <!-- Posar aquesta imatge al començament de cada lliçó -->
-<img src="../logos/illustracio1.png" alt="Circuits digitals" style="float: left; border-radius: 8px; height: 120px;"/>
-<img src="../logos/LogoCatedraCHIPBlanc.jpg" alt="Logo Càtedra Chip" style="float: right; border-radius: 8px; height: 120px;"/>
+<img src="../../logos/illustracio1.png" alt="Digital circuits" style="float: left; border-radius: 8px; height: 120px;"/>
+<img src="../../logos/LogoCatedraCHIPBlanc.jpg" alt="CHIP Chair Logo" style="float: right; border-radius: 8px; height: 120px;"/>
 <div style="clear: both;"></div>
 <br>
 
 
+# Numbers
 
-# Nombres
+In digital circuits, numbers are implemented in **binary notation** and all mathematical operations - addition, subtraction, comparison, multiplication, division or modulo - are performed by manipulating bits.
 
-En els circuits digitals, els nombres s’implementen en **notació binària** i totes les operacions matemàtiques -suma, resta, comparació, multiplicació, divisió o mòdul- es realitzen manipulant bits.
+## Example: Even or Odd Number
 
-## Exemple: Nombre parell o senar
+We will design a circuit that receives a 4-bit input number and activates the output ($Parell=1$) when the input number is **even**.
 
-Dissenyarem un circuit que rebi a l’entrada un nombre de 4 bits i activi la sortida ($Parell=1$) quan el nombre d’entrada sigui **parell**.
+A binary number is even if its **least significant bit (LSB)** has the value 0.
 
-Un nombre binari és parell si el seu **bit menys significatiu (LSB)** val $0$.
-
-Definim la variable d’entrada:
+We define the input variable:
 
 $$nombre[3:0] = [nombre_3\ nombre_2\ nombre_1\ nombre_0]$$
 
-El bit menys significatiu és $nombre_0$.
+The least significant bit is $nombre_0$.
 
-La sortida és un sol bit:
-- $Parell = 1$ si el nombre és parell.
-- $Parell = 0$ si el nombre és senar.
+The output is a single bit:
+- $Parell = 1$ if the number is even.
+- $Parell = 0$ if the number is odd.
 
-Taula parcial d’exemples (la completa tindria 16 files):
+Partial example table (the complete one would have 16 rows):
 
-|**$nombre$**|**Nombre en decimal**|$nombre_0$ (LSB)|Paritat| $Parell$|
+|**$nombre$**|**Number in decimal**|$nombre_0$ (LSB)|Parity| $Parell$|
 |:---:|:---:|:---:|:---|:---:|
-| 0000 | 0  | 0 | Parell | 1 |
-| 0001 | 1  | 1 | Senar  | 0 |
-| 0010 | 2  | 0 | Parell | 1 |
-| 0011 | 3  | 1 | Senar  | 0 |
-| 1110 | 14 | 0 | Parell | 1 |
-| 1111 | 15 | 1 | Senar  | 0 |
+| 0000 | 0  | 0 | Even | 1 |
+| 0001 | 1  | 1 | Odd  | 0 |
+| 0010 | 2  | 0 | Even | 1 |
+| 0011 | 3  | 1 | Odd  | 0 |
+| 1110 | 14 | 0 | Even | 1 |
+| 1111 | 15 | 1 | Odd  | 0 |
 
 
-Construir el circuit és força directe, la sortida $Parell$ s'ha d'activar (valor $1$) si i només si $nombre[0]$ té el valor $0$, independentment del valor de la resta de bits de $nombre$.
+Building the circuit is fairly straightforward; the output Parell must be activated (value 1) if and only if nombre[0] has the value 0, regardless of the value of the remaining bits of nombre.
 
-La sortida és doncs la negació de $nombre_0$.
+Therefore, the output is the negation of $nombre_0$.
 
 $$Parell = \overline{nombre_0}$$
 
-Per tant, només cal una porta NOT.
+Thus, only a single NOT gate is required.
 
-<img src="./nombres_exemple1.png" alt="Circuit paritat" style="display:block; height:130px; margin:0 auto; border-radius:8px; background-color:white; padding:4px;"/>
-<center><i>Circuit que determina la paritat d’un nombre</i></center>
+<img src="../../CircCombin/nombres_exemple1.png" alt="Parity circuit" style="display:block; height:130px; margin:0 auto; border-radius:8px; background-color:white; padding:4px;"/>
+<center><i>Circuit that determines the parity of a number</i></center>
 
+## Example: Modulo 7 of a 4-bit number
 
-## Exemple: Mòdul 7 d’un nombre de 4 bits
-
-Dissenyarem un circuit que calculi el mòdul 7 d’un número binari $n$, de 4 bits. Calcular el mòdul 7 d’un número consisteix en trobar el residu quan aquest es divideix per 7. La notació per aquesta operació és:
+We will design a circuit that computes the modulo 7 of a binary number $n$, of 4 bits. Computing modulo 7 of a number consists of finding the remainder when it is divided by 7. The notation for this operation is:
 
 $$residu = n \bmod 7$$
 
-Un número de 4 bits $n[3:0]=[n_3 \; n_2 \; n_1 \; n_0]$ pot prendre 16 valors diferents des de 0000 a 1111 (de 0 a 15 en decimal).
+A 4-bit number $n[3:0]=[n_3 \; n_2 \; n_1 \; n_0]$ can take 16 different values from 0000 to 1111 (0 to 15 in decimal).
 
-Els residus després de dividir un nombre per 7  poden prendre valors de 0 a 6. Per tal de representar el resultat de l'operació, n’hi haurà prou amb un nombre de 3 bits, que pot prendre valors del 000 al 111 (del 0 al 7 en decimal).
+The remainders after dividing a number by 7 can take values from 0 to 6. To represent the result of the operation, a 3-bit number will suffice, which can take values from 000 to 111 (0 to 7 in decimal).
 
-$$residu[2:0] = [residu_2\ residu_1\ residu_0]$$
+$$residu[2:0] = [residu_2 \ residu_1\ residu_0]$$
 
-El primer pas per dissenyar aquest circuit és crear la **taula de veritat completa** que relaciona cada entrada n de 4 bits $n[3:0]$ amb el seu residu corresponent de 3 bits $residu[2:0]$.
+The first step in designing this circuit is to create the **complete truth table** that relates each 4-bit input $n[3:0]$ to its corresponding 3-bit remainder $residu[2:0]$.
 
 $residu[2:0] = n[3:0] \mod 7$
 
@@ -86,12 +84,12 @@ $residu[2:0] = n[3:0] \mod 7$
 | 15 | 1111 | 1 | 001 |
 
 
-Per a cada sortida ($residu_0$, $residu_1$, $residu_2$) es construeix un mapa de Karnaugh de 4 variables per obtenir la seva expressió booleana simplificada .
+For each output ($residu_0$, $residu_1$, $residu_2$) a Karnaugh map with 4 variables is built to obtain its simplified Boolean expression.
 
-### Sortida $residu_0$
-Muntem el mapa de Karnaugh de 4 variables d'entrada per a la sortida $residu_0$ i n'identifiquem 3 grups.
+### Output $residu_0$
+We construct the Karnaugh map for the 4 input variables for the output residue_0 and identify 3 groups.
 
-<!-- VERD -->
+<!-- GREEN -->
 <table style="border-collapse: collapse; text-align: center;">
   <thead>
     <tr>
@@ -138,7 +136,7 @@ Muntem el mapa de Karnaugh de 4 variables d'entrada per a la sortida $residu_0$ 
   </tbody>
 </table>
 
-<!-- VERMELL -->
+<!-- RED -->
 <table style="border-collapse: collapse; text-align: center;">
   <thead>
     <tr>
@@ -178,69 +176,21 @@ Muntem el mapa de Karnaugh de 4 variables d'entrada per a la sortida $residu_0$ 
     <tr>
       <th style="border: 1px solid #ccc; padding: 5px 10px;">10</th>
       <td style="border: 1px solid #ccc; padding: 5px 10px;">0 </td>
-      <td style="border: 1px solid #ccc; padding: 5px 10px;">1 </td>
-      <td style="border: 1px solid #ccc; padding: 5px 10px;">1 </td>
+      <td style="border: 1px solid #ccc; padding: 5px 10px;background-color: red;">1 </td>
+      <td style="border: 1px solid #ccc; padding: 5px 10px;background-color: red;">1 </td>
       <td style="border: 1px solid #ccc; padding: 5px 10px;">0 </td>
     </tr>
   </tbody>
 </table>
 
-<!-- BLAU -->
-<table style="border-collapse: collapse; text-align: center;">
-  <thead>
-    <tr>
-      <th style="border: 1px solid #ccc; position: relative; width: 60px; height: 60px;">
-        <div style="position: absolute; top: 5px; right: 5px;">   n1 n0 </div>
-        <div style="position: absolute; bottom: 5px; left: 5px;"> n3 n2 </div>
-        <div style="position: absolute; bottom: 0; left: 0; width: 100%; height: 1px; background: #ccc; transform-origin: top right; transform: rotate(+45deg);"></div>
-      </th>
-      <th style="border: 1px solid #ccc; padding: 5px 10px;">00</th>
-      <th style="border: 1px solid #ccc; padding: 5px 10px;">01</th>
-      <th style="border: 1px solid #ccc; padding: 5px 10px;">11</th>
-      <th style="border: 1px solid #ccc; padding: 5px 10px;">10</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th style="border: 1px solid #ccc; padding: 5px 10px;">00</th>
-      <td style="border: 1px solid #ccc; padding: 5px 10px;">0 </td>
-      <td style="border: 1px solid #ccc; padding: 5px 10px;background-color: lightblue;">1 </td>
-      <td style="border: 1px solid #ccc; padding: 5px 10px;background-color: lightblue;">1 </td>
-      <td style="border: 1px solid #ccc; padding: 5px 10px;">0 </td>
-    </tr>
-    <tr>
-      <th style="border: 1px solid #ccc; padding: 5px 10px;">01</th>
-      <td style="border: 1px solid #ccc; padding: 5px 10px;">0 </td>
-      <td style="border: 1px solid #ccc; padding: 5px 10px;">1 </td>
-      <td style="border: 1px solid #ccc; padding: 5px 10px;">1 </td>
-      <td style="border: 1px solid #ccc; padding: 5px 10px;">0 </td>
-    </tr>
-    <tr>
-      <th style="border: 1px solid #ccc; padding: 5px 10px;">11</th>
-      <td style="border: 1px solid #ccc; padding: 5px 10px;">0 </td>
-      <td style="border: 1px solid #ccc; padding: 5px 10px;">1 </td>
-      <td style="border: 1px solid #ccc; padding: 5px 10px;">0 </td>
-      <td style="border: 1px solid #ccc; padding: 5px 10px;">0 </td>
-    </tr>
-    <tr>
-      <th style="border: 1px solid #ccc; padding: 5px 10px;">10</th>
-      <td style="border: 1px solid #ccc; padding: 5px 10px;">0 </td>
-      <td style="border: 1px solid #ccc; padding: 5px 10px;background-color: lightblue;">1 </td>
-      <td style="border: 1px solid #ccc; padding: 5px 10px;background-color: lightblue;">1 </td>
-      <td style="border: 1px solid #ccc; padding: 5px 10px;">0 </td>
-    </tr>
-  </tbody>
-</table>
-
-
-L'expressió booleana simplificada per a $residu_0$ tindrà 3 termes:
+The simplified Boolean expression for residue_0 will have 3 terms:
 
 $$residu_0 = \overline{n_1}n_0 + \overline{n_3}n_0 + \overline{n_2}n_0$$
 
-### Sortida $residu_1$
-Muntem el mapa de Karnaugh de 4 variables d'entrada per a la sortida $residu_1$ i n'identifiquem 2 grups.
+### Output $residu_1$
+We build the Karnaugh map for the 4 input variables for the output residue_1 and identify 2 groups.
 
-<!-- VERMELL -->
+<!-- RED -->
 <table style="border-collapse: collapse; text-align: center;">
   <thead>
     <tr>
@@ -287,7 +237,7 @@ Muntem el mapa de Karnaugh de 4 variables d'entrada per a la sortida $residu_1$ 
   </tbody>
 </table>
 
-<!-- BLAU -->
+<!-- BLUE -->
 <table style="border-collapse: collapse; text-align: center;">
   <thead>
     <tr>
@@ -327,21 +277,21 @@ Muntem el mapa de Karnaugh de 4 variables d'entrada per a la sortida $residu_1$ 
     <tr>
       <th style="border: 1px solid #ccc; padding: 5px 10px;">10</th>
       <td style="border: 1px solid #ccc; padding: 5px 10px;">0 </td>
+      <td style="border: 1px solid #ccc; padding: 5px 10px;background-color: lightblue;">1 </td>
+      <td style="border: 1px solid #ccc; padding: 5px 10px;background-color: lightblue;">1 </td>
       <td style="border: 1px solid #ccc; padding: 5px 10px;">0 </td>
-      <td style="border: 1px solid #ccc; padding: 5px 10px;background-color: lightblue;">1 </td>
-      <td style="border: 1px solid #ccc; padding: 5px 10px;background-color: lightblue;">1 </td>
     </tr>
   </tbody>
 </table>
 
-L'expressió booleana simplificada per a $residu_1$ tindrà 2 termes:
+Aquesta expressió booleana simplified for residue_1 tindrà 2 termes:
 
 $$residu_1 = \overline{n_3}n_1 + \overline{n_2}n_1$$
 
-### Sortida $residu_2$
-Per a la sortida $residu_2$ identifiquem 2 grups en el seu mapa de Karnaugh.
+### Output $residu_2$
+For the output residue_2, identify 2 groups on its Karnaugh map.
 
-<!-- VERMELL -->
+<!-- RED -->
 <table style="border-collapse: collapse; text-align: center;">
   <thead>
     <tr>
@@ -389,7 +339,7 @@ Per a la sortida $residu_2$ identifiquem 2 grups en el seu mapa de Karnaugh.
 </table>
 
 
-<!-- BLAU -->
+<!-- BLUE -->
 <table style="border-collapse: collapse; text-align: center;">
   <thead>
     <tr>
@@ -409,8 +359,8 @@ Per a la sortida $residu_2$ identifiquem 2 grups en el seu mapa de Karnaugh.
       <th style="border: 1px solid #ccc; padding: 5px 10px;">00</th>
       <td style="border: 1px solid #ccc; padding: 5px 10px;">0 </td>
       <td style="border: 1px solid #ccc; padding: 5px 10px;">0 </td>
-      <td style="border: 1px solid #ccc; padding: 5px 10px;">0 </td>
-      <td style="border: 1px solid #ccc; padding: 5px 10px;">0 </td>
+      <td style="border: 1px solid #ccc; padding: 5px 10px;background-color: lightblue;">0 </td>
+      <td style="border: 1px solid #ccc; padding: 5px 10px;background-color: lightblue;">0 </td>
     </tr>
     <tr>
       <th style="border: 1px solid #ccc; padding: 5px 10px;">01</th>
@@ -430,32 +380,34 @@ Per a la sortida $residu_2$ identifiquem 2 grups en el seu mapa de Karnaugh.
       <th style="border: 1px solid #ccc; padding: 5px 10px;">10</th>
       <td style="border: 1px solid #ccc; padding: 5px 10px;">0 </td>
       <td style="border: 1px solid #ccc; padding: 5px 10px;">0 </td>
-      <td style="border: 1px solid #ccc; padding: 5px 10px;">0 </td>
-      <td style="border: 1px solid #ccc; padding: 5px 10px;">0 </td>
+      <td style="border: 1px solid #ccc; padding: 5px 10px;background-color: lightblue;">1 </td>
+      <td style="border: 1px solid #ccc; padding: 5px 10px;background-color: lightblue;">1 </td>
     </tr>
-  </tbody>
+  </tbody>en | 1 |
+| 1111 | 15 | 1 | Odd  | 0 |
+
+
 </table>
 
-Així doncs, l'expressió booleana simplificada per a $residu_2$ tindrà 2 termes:
-
+Thus, the simplified Boolean expression for residue_2 will have 2 terms:
 
 $$residu_2 = n_2\overline{n_1} + \overline{n_3}n_2$$
 
 
-A partir d'aquestes tres expressions podem emprar les portes lògiques per crear el circuit digital que implementarà la funció $n \mod{7}$.
+From these three expressions we can use logic gates to create the digital circuit that will implement the function $n \bmod{7}$.
 
-<img src="./nombres_exemple2.png" alt="Circuit mod 7" style="display:block; height:500px; margin:0 auto; border-radius:8px; background-color:white; padding:4px;"/>
-<center><i>Circuit digital que implementa la funció $n \bmod 7$</i></center>
+<img src="../../CircCombin/nombres_exemple2.png" alt="Circuit modulo 7" style="display:block; height:500px; margin:0 auto; border-radius:8px; background-color:white; padding:4px;"/>
+<center><i>Digital circuit that implements the function $n \bmod 7$</i></center>
 
-## Exercicis a Jutge.org: [Introduction to Digital Circuit Design](https://jutge.org/courses/JordiCortadella:IntroCircuits)
+## Exercises on Jutge.org: [Introduction to Digital Circuit Design]
 
 - [Even number](https://jutge.org/problems/X36253_en)
 - [Prime number](https://jutge.org/problems/X07160_en)
-- [Max of two numbers](https://jutge.org/problems/X37473_en)
-- [Residue mod 7](https://jutge.org/problems/X91814_en)
+- [Maximum of two numbers](https://jutge.org/problems/X37473_en)
+- [Remainder modulo 7](https://jutge.org/problems/X91814_en)
 
-<small>*Recorda que per accedir als exercicis i perquè el **Jutge** valori les teves solucions has d'estar inscrit al [curs](https://jutge.org/courses/JordiCortadella:IntroCircuits). Trobaràs totes les instruccions [aquí](../Inici/instruccions.md).* </small>
+<small>*Remember that to access the exercises and for the Jutge judge to evaluate your solutions you must be enrolled in the [course](https://jutge.org/courses/JordiCortadella:IntroCircuits). You will find all the instructions [here](../Inici/instruccions.md).*</small>
 
-<!-- Aquesta imatge ha d'anar al final de cada lliçó, ja sigui amb aquesta línia o dins la signatura. Deixar comentat si ja està a la signatura-->
-<br><br><img src="../logos/TotsLogosBlanc.png" alt="Logos Càtedra Chip" width="100%" style="display:block; margin:0 auto; border-radius:8px;"/>
+<!-- This image should go at the end of each lesson, either with this line or within the signature. Leave commented if it is already in the signature-->
+<br><br><img src="../../logos/TotsLogosBlanc.png" alt="CHIP Chair Logos" width="100%" style="display:block; margin:0 auto; border-radius:8px;"/>
 <Autors autors="xcasas fmadrid"/>
