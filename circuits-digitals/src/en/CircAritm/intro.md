@@ -53,6 +53,7 @@ More complex circuits that are implemented using algorithms based on repeated ad
 Arithmetic circuits form the core of the **Arithmetic-Logic Units (ALU)**, the heart of any microprocessor.
 The ALU is responsible for executing both the arithmetic operations and the logical operations required for program execution.
 
+
 The Arithmetic Logic Unit (**ALU**) is known in English as the ALU.
 
 <img src="../../CircAritm/ALU.png" alt="ALU" style="display:block; width:400px; margin:0 auto; border-radius:8px; background-color:white; padding:4px;" />
