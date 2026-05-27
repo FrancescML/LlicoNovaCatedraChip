@@ -42,6 +42,10 @@ export default defineConfig({
                         text: 'Terminal',
                         link: 'https://lliçons.jutge.org/terminal',
                     },
+                    {
+                        text: 'Python for AI',
+                        link: 'https://lliçons.jutge.org/ai-python',
+                    },
                 ],
             },
         ],

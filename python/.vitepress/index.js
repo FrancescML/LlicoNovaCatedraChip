@@ -448,6 +448,16 @@ export const index = [
         ],
     },
     {
+        text: 'Proves unitàries',
+        collapsed: true,
+        items: [
+            {
+                text: 'Proves unitàries',
+                link: '/proves-unitaries/index.html',
+            },
+        ],
+    },
+    {
         text: 'Classes i objectes',
         collapsed: true,
         items: [

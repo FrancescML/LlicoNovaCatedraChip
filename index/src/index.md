@@ -19,6 +19,9 @@ hero:
         - theme: brand
           text: Circuits
           link: https://lliçons.jutge.org/circuits-digitals
+        - theme: brand
+          text: Python for AI
+          link: https://lliçons.jutge.org/ai-python
 ---
 
 <img src='./logos/lliçons.png' style='max-width: 12em; margin-bottom: 2em;'/>

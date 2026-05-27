@@ -69,6 +69,10 @@ export default defineConfig({
                         text: 'Circuits Digitals',
                         link: 'https://lliçons.jutge.org/circuits-digitals',
                     },
+                    {
+                        text: 'Python for AI',
+                        link: 'https://lliçons.jutge.org/ai-python',
+                    },
                 ],
             },
         ],
