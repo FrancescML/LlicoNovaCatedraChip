@@ -293,9 +293,7 @@ Both the table and the timeline of the counter sequence are identical to the pre
 |15 |1|1|1|1|1111
 |16 |0|0|0|0|0000
 
-<img src='../../CircSeq/comptadoresincronncronograma.png' alt="synchronous 4-bit counter timeline" style="display:block; width:500px; margin:0 auto; border-radius:8px; background-color:white; padding:4px;"/>
-
-
+<img src='../../CircSeq/comptadorasincronncronograma.png' alt="synchronous 4-bit counter timeline" style="display:block; width:500px; margin:0 auto; border-radius:8px; background-color:white; padding:4px;"/>
 
 ## Example: 4-bit Counter
 In this example we will see how to build a 4-bit counter.
