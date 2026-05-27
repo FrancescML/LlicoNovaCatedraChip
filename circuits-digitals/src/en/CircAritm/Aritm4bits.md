@@ -146,7 +146,7 @@ Now we need to add the part of the circuit capable of choosing between one opera
 
 The complete circuit, after adding this final element, is the following:
 
-<img src='../CircAritm/triarsumasuma.png' alt="Selected sum" style="display:block; height:200px; margin:0 auto; border-radius:8px; background-color:white; padding:4px;"/>
+<img src='../../CircAritm/triarsumasuma.png' alt="Selected sum" style="display:block; height:200px; margin:0 auto; border-radius:8px; background-color:white; padding:4px;"/>
 <center><i>Selected sum</i></center>
 
 <img src='../../CircAritm/triarrestaresta.png' alt="Selected subtraction" style="display:block; height:200px; margin:0 auto; border-radius:8px; background-color:white; padding:4px;"/>
