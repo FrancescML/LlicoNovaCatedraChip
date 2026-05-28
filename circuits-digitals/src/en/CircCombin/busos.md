@@ -5,7 +5,7 @@
 <br>
 
 
-## Buses
+# Buses
 
 In digital circuits, a **bit bus** (or simply *bus*) is a set of communication lines that carry data bits in parallel. It is used to interconnect different components of a system by transferring digital signals.
 

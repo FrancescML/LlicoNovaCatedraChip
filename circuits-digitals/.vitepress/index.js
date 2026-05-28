@@ -174,7 +174,7 @@ export const indexEn = [
                 link: 'en/Intro/circuitsdigitals',
             },
             {
-                text: 'Introduction to Boolean Algebra',
+                text: 'Boolean Algebra',
                 link: 'en/Intro/boole',
             },
 
@@ -273,7 +273,7 @@ export const indexEn = [
         collapsed: true,
         items: [
             {
-                text: 'Mapes de Karnaugh',
+                text: 'Karnaugh maps',
                 link: 'en/Annexos/karnaugh',
             },
             {
