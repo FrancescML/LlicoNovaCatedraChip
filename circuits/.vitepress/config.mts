@@ -9,7 +9,7 @@ import { tabsMarkdownPlugin } from 'vitepress-plugin-tabs'
 const year = new Date().getFullYear()
 
 export default defineConfig({
-    base: '/circuits-digitals/',
+    base: '/circuits/',
 
     srcDir: 'src',
 
@@ -67,7 +67,7 @@ export default defineConfig({
                     },
                     {
                         text: 'Circuits Digitals',
-                        link: 'https://lliçons.jutge.org/circuits-digitals',
+                        link: 'https://lliçons.jutge.org/circuits',
                     },
                     {
                         text: 'Python for AI',

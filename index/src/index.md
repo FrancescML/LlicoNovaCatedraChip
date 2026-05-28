@@ -18,7 +18,7 @@ hero:
           link: https://lliçons.jutge.org/terminal
         - theme: brand
           text: Circuits
-          link: https://lliçons.jutge.org/circuits-digitals
+          link: https://lliçons.jutge.org/circuits
         - theme: brand
           text: Python for AI
           link: https://lliçons.jutge.org/ai-python
@@ -98,6 +98,16 @@ const members = [
     {
         avatar: '/autors/marc.png',
         name: "Marc Gállego",
+        title: 'Autor',
+    },
+    {
+        avatar: '/autors/xcasas.png',
+        name: "Xavier Casas",
+        title: 'Autor',
+    },
+    {
+        avatar: '/autors/fmadrid.png',
+        name: "Francesc Madrid",
         title: 'Autor',
     },
 ]

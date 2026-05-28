@@ -1,4 +1,4 @@
-build: build-index build-python build-cpp build-terminal build-circuits-digitals build-ai-python
+build: build-index build-python build-cpp build-terminal build-circuits build-ai-python
 
 build-index:
 	(cd index ; bun run build)
@@ -12,8 +12,8 @@ build-cpp:
 build-terminal:
 	(cd terminal ; bun run build)
 
-build-circuits-digitals:
-	(cd circuits-digitals ; bun run build)
+build-circuits:
+	(cd circuits ; bun run build)
 
 build-ai-python:
 	(cd ai-python ; bun run build)
@@ -26,7 +26,7 @@ publish:
 	cp -r python/.vitepress/dist dist/python
 	cp -r cpp/.vitepress/dist dist/cpp
 	cp -r terminal/.vitepress/dist dist/terminal
-	cp -r circuits-digitals/.vitepress/dist dist/circuits-digitals
+	cp -r circuits/.vitepress/dist dist/circuits
 	cp -r ai-python/.vitepress/dist dist/ai-python
 	tar czf dist.tar.gz dist
 	scp dist.tar.gz llicons@llicons.jutge.org:
@@ -42,7 +42,7 @@ publish-potipoti:
 	scp -r python/.vitepress/dist jpetit@cs:www/llicons/python
 	scp -r cpp/.vitepress/dist jpetit@cs:www/llicons/cpp
 	scp -r terminal/.vitepress/dist jpetit@cs:www/llicons/terminal
-	scp -r circuits-digitals/.vitepress/dist jpetit@cs:www/llicons/circuits-digitals
+	scp -r circuits/.vitepress/dist jpetit@cs:www/llicons/circuits
 	scp -r ai-python/.vitepress/dist jpetit@cs:www/llicons/ai-python
 	ssh jpetit@cs "chmod -R a+rX www/llicons"
 
@@ -51,5 +51,5 @@ install:
 	(cd python ; bun install)
 	(cd cpp ; bun install)
 	(cd terminal ; bun install)
-	(cd circuits-digitals ; bun install)
+	(cd circuits ; bun install)
 	(cd ai-python ; bun install)
