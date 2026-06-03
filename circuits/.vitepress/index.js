@@ -145,10 +145,6 @@ export const index = [
     },
 ]
 
-
-
-
-
 export const indexEn = [
     {
         text: 'Home',
@@ -295,3 +291,152 @@ export const indexEn = [
         ],
     },
 ]
+
+export const indexEs = [
+    {
+        text: 'Inicio',
+        collapsed: true,
+        items: [
+            {
+                text: 'Introducción',
+                link: 'es/Inici/presentacio',
+            },
+            {
+                text: 'Instrucciones',
+                link: 'es/Inici/instruccions',
+            },
+
+        ],
+    },
+    {
+        text: 'Introducción a los circuitos digitales',
+        collapsed: true,
+        items: [
+            {
+                text: 'Circuitos digitales',
+                link: 'es/Intro/circuitsdigitals',
+            },
+            {
+                text: 'Introducción al álgebra de Boole',
+                link: 'es/Intro/boole',
+            },
+
+        ],
+    },
+    {
+        text: 'Circuitos combinacionales',
+        collapsed: true,
+        items: [
+            {
+                text: 'Introducción a los circuitos combinacionales',
+                link: 'es/CircCombin/intro',
+            },
+            {
+                text: 'Ejercicios simples',
+                link: 'es/CircCombin/exsimples',
+            },
+            {
+                text: 'Multiplexores',
+                link: 'es/CircCombin/multiplexors',
+            },
+            {
+                text: 'Sistemas de votación',
+                link: 'es/CircCombin/svotacio',
+            },
+            {
+                text: 'Buses',
+                link: 'es/CircCombin/busos',
+            },
+            {
+                text: 'Números',
+                link: 'es/CircCombin/nombres',
+            },
+            {
+                text: 'Dígitos BCD',
+                link: 'es/CircCombin/bcddigits',
+            },
+            {
+                text: 'Miscelánea',
+                link: 'es/CircCombin/miscellania',
+            },
+        ],
+    },
+    {
+        text: 'Circuitos aritméticos',
+        collapsed: true,
+        items: [
+
+            {
+                text: 'Introducción a los circuitos aritméticos',
+                link: 'es/CircAritm/intro',
+            },
+            {
+                text: 'Circuitos básicos',
+                link: 'es/CircAritm/CircBasics',
+            },
+            {
+                text: 'Aritmética de 4 bits',
+                link: 'es/CircAritm/Aritm4bits',
+            },
+            {
+                text: 'Aritmética de n bits',
+                link: 'es/CircAritm/Aritmnbits',
+            },
+            {
+                text: 'Miscelánea',
+                link: 'es/CircAritm/miscellania',
+            },
+        ],
+    },
+    {
+        text: 'Circuitos secuenciales',
+        collapsed: true,
+        items: [
+            {
+                text: 'Introducción a los circuitos secuenciales',
+                link: 'es/CircSeq/intro',
+            },
+            {
+                text: 'Contadores',
+                link: 'es/CircSeq/comptadors',
+            },
+            {
+                text: 'Máquinas de estados',
+                link: 'es/CircSeq/maquinesdestat',
+            },
+            {
+                text: 'Miscelánea',
+                link: 'es/CircSeq/miscellania',
+            },
+
+        ],
+    },
+    {
+        text: 'Apéndices',
+        collapsed: true,
+        items: [
+            {
+                text: 'Mapas de Karnaugh',
+                link: 'es/Annexos/karnaugh',
+            },
+            {
+                text: 'TinyMicro',
+                link: 'es/Annexos/TinyMicro',
+            },
+        ],
+    },
+
+    {
+        text: 'Cierre',
+        collapsed: true,
+        items: [
+            {
+                text: 'Agradecimientos',
+                link: 'es/Tancament/agraiments',
+            },
+
+        ],
+    },
+]
+
+

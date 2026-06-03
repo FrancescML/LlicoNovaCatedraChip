@@ -1,87 +1,82 @@
-<!-- Posar aquesta imatge al començament de cada lliçó -->
+<!-- Colocar esta imagen al inicio de cada lección -->
 <img src="../../logos/illustracio1.png" alt="Digital circuits" style="float: left; border-radius: 8px; height: 120px;"/>
 <img src="../../logos/LogoCatedraCHIPBlanc.jpg" alt="CHIP Chair Logo" style="float: right; border-radius: 8px; height: 120px;"/>
 <div style="clear: both;"></div>
 <br>
 
 
-# Voting systems
 
-In the context of digital circuits, voting systems refer to electronic or logical implementations designed to process multiple inputs and determine a result based on a majority rule or predefined logic.
+# Sistemas de votación
 
-## Example: Committee voting system
+En el contexto de los circuitos digitales, los sistemas de votación hacen referencia a implementaciones electrónicas o lógicas diseñadas para procesar múltiples entradas y determinar un resultado basado en una regla de mayoría de votos o en una lógica predefinida.
 
-We will design an electronic voting system for the Executive Committee of a football team. This committee has four members: the President, the Secretary, the Treasurer, and the Vocal. Each may vote **Yes** (1) or **No** (0).
+## Ejemplo: Sistema de votación para un comité
 
-The **approval rules** are:
+Diseñaremos un sistema electrónico de votación para el Comité Ejecutivo de un equipo de fútbol. Este comité tiene cuatro miembros: el Presidente, el Secretario, el Tesorero y el Vocal. Cada uno puede votar Sí (1) o No (0).
 
-1. A proposal is approved when **three or more members** vote in favour.
-2. In case of a tie (2 in favour and 2 against), the **President's** vote decides. If the President votes "Yes", the proposal is approved; if he votes "No", it is rejected.
+Las reglas de aprobación son:
 
-We will design a logic circuit with four inputs ($P$, $S$, $T$, $V$) and one output ($A$) that indicates whether the proposal is approved.
+1. Una propuesta se aprueba cuando tres o más miembros votan a favor.
+2. En caso de empate (2 a favor y 2 en contra), el voto del presidente decide. Si el presidente vota "Sí", la propuesta se aprueba; si vota "No", se rechaza.
 
-Define the **input variables** ($1$ means "Yes", $0$ means "No"):
+Diseñaremos un circuito lógico con cuatro entradas ($P$, $S$, $T$, $V$) y una salida ($A$) que indica si la propuesta queda aprobada.
 
-* $P$: vote of the President
-* $S$: vote of the Secretary
-* $T$: vote of the Treasurer
-* $V$: vote of the Vocal
+Definimos las variables de entrada (1 significa "Sí", 0 significa "No"):
 
-The **output variable** is $A$ (*Approved*). $1$ means approved, $0$ means rejected.
+* $P$: voto del Presidente
+* $S$: voto del Secretario
+* $T$: voto del Tesorero
+* $V$: voto del Vocal
 
-We will analyse under which assumptions the proposal will be approved; we will call these the **approval conditions** and they are derived from the approval rules.
+La variable de salida es $A$ (Approved). 1 significa aprobada, 0 significa rechazada.
 
-**Condition 1:** Three or more votes in favour.
+Analizaremos en qué supuestos la propuesta será aprobada; los llamaremos condiciones de aprobación y se derivan de las reglas de aprobación.
 
-We identify all combinations where the sum of P, S, T, V is 3 or 4.
+Condición 1: Tres o más votos a favor.
 
-* Approved by three votes in favour
-    * $P=0$, $S=1$, $T=1$ and $V=1$ --> ($\bar{P}STV$)
-    * $P=1$, $S=1$, $T=1$ and $V=0$ --> ($PST\bar{V}$)
-    * $P=1$, $S=1$, $T=0$ and $V=1$ --> ($PS\bar{T}V$)
-    * $P=1$, $S=0$, $T=1$ and $V=1$ --> ($P\bar{S}TV$)
-* Approved by four votes in favour
-    * $P=1$, $S=1$, $T=1$ and $V=1$ --> ($PSTV$)
+Identificamos todas las combinaciones en las que la suma de P, S, T y V es 3 o 4.
 
-The proposal will be approved if any of these circumstances is met (logical OR). Condition 1 is expressed in Boolean algebra as:
+- Aprobado por tres votos a favor
+    - $P=0$, $S=1$, $T=1$ y $V=1$ --> ($\bar{P}STV$)
+    - $P=1$, $S=1$, $T=1$ y $V=0$ --> ($PST\bar{V}$)
+    - $P=1$, $S=1$, $T=0$ y $V=1$ --> ($PS\bar{T}V$)
+    - $P=1$, $S=0$, $T=1$ y $V=1$ --> ($P\bar{S}TV$)
+- Aprobado por cuatro votos a favor
+    - $P=1$, $S=1$, $T=1$ y $V=1$ --> ($PSTV$)
+
+La propuesta se aprobará si se cumple cualquiera de estos supuestos (operación OR o suma lógica). La condición 1 se expresa de la siguiente manera en el álgebra de Boole:
 
 $$
 C_1 = \bar{P}STV + PST\bar{V} + PS\bar{T}V + P\bar{S}TV + PSTV
 $$
 
-**Condition 2:** Tie resolved in favour of the President.
+Condición 2: Empate resuelto favorablemente por el presidente.
 
-We must identify all combinations with two votes for and two against. Of these, those with $P=1$ are of interest.
-* Approved
-    * $P=1$, $S=1$, $T=0$ and $V=0$ --> ($PS\bar{T}\bar{V}$)
-    * $P=1$, $S=0$, $T=1$ and $V=0$ --> ($P\bar{S}T\bar{V}$)
-    * $P=1$, $S=0$, $T=0$ and $V=1$ --> ($P\bar{S}\bar{T}V$)
-* Not approved
-    * $P=0$, $S=1$, $T=1$ and $V=0$
-    * $P=0$, $T=0$, $S=1$ and $V=1$
-    * $P=0$, $S=0$, $T=1$ and $V=1$
+Es necesario identificar todas las combinaciones de dos votos a favor y dos en contra. Y de ellas, nos interesan aquellas con $P=1$.
+- Aprobado
+    - $P=1$, $S=1$, $T=0$ y $V=0$ --> ($PS\bar{T}\bar{V}$)
+    - $P=1$, $S=0$, $T=1$ y $V=0$ --> ($P\bar{S}T\bar{V}$)
+    - $P=1$, $S=0$, $T=0$ y $V=1$ --> ($P\bar{S}\bar{T}V$)
+- No aprobado
+    - $P=0$ , $S=1$, $T=1$ y $V=0$
+    - $P=0$ , $T=0$, $S=1$ y $V=1$
+    - $P=0$ , $S=0$, $T=1$ y $V=1$
 
-The proposal will be approved if any of these assumptions hold. Condition 2 is expressed as:
+La propuesta se aprobará si se cumple alguno de estos supuestos. La condición 2 se expresa como:
 
-$$
-C_2 = PS\bar{T}\bar{V} + P\bar{S}T\bar{V} + P\bar{S}\bar{T}V
-$$
+$$C_2 = PS\bar{T}\bar{V} + P\bar{S}T\bar{V} + P\bar{S}\bar{T}V$$
 
-The output $A$ will be $1$ if condition $C_1$ or condition $C_2$ is satisfied. The Boolean function is a logical OR of these two conditions:
+La salida $A$ será 1 si se cumple la condición $C_1$ o bien la condición $C_2$. La función booleana es una suma lógica (OR) de estas dos condiciones:
 
-$$
-A=C_1+C_2
-$$
+$$A=C_1+C_2$$
 
-And therefore the expression for $A$, as a function of $P$, $S$, $T$ and $V$, is:
+Y por tanto la expresión de $A$, en función de $P$, $S$, $T$ y $V$ es:
 
-$$
-A = \bar{P}STV + PST\bar{V} + PS\bar{T}V + P\bar{S}TV + PSTV + PS\bar{T}\bar{V} + P\bar{S}T\bar{V} + P\bar{S}\bar{T}V
-$$
+$$A = \bar{P}STV + PST\bar{V} + PS\bar{T}V + P\bar{S}TV + PSTV + PS\bar{T}\bar{V} + P\bar{S}T\bar{V} + P\bar{S}\bar{T}V$$
 
-We build the truth table with all possible cases:
+Construimos la tabla de verdad con todos los casos posibles:
 
-| $P$ | $S$ | $T$ | $V$ | Votes in favour | $C_1$ | $C_2$ | $A$ |
+| $P$ | $S$ | $T$ | $V$ | Votos favorables | $C_1$ | $C_2$ | $A$ |
 | --- | --- | --- | --- | :-------------: | ----- | ----- | --- |
 | 0   | 0   | 0   | 0   |        0        | 0     | 0     | 0   |
 | 0   | 0   | 0   | 1   |        1        | 0     | 0     | 0   |
@@ -100,7 +95,7 @@ We build the truth table with all possible cases:
 | 1   | 1   | 1   | 0   |        3        | 1     | 0     | 1   |
 | 1   | 1   | 1   | 1   |        4        | 1     | 0     | 1   |
 
-The expression for $A$ as a function of $P$, $S$, $T$ and $V$ is quite long. A logical simplification with Boolean algebra would be complex. Alternatively we can use a Karnaugh map for the output function $A$, with inputs $P$, $S$, $T$ and $V$ grouped.
+La expresión para $A$ en función de $P$, $S$, $T$ y $V$ es muy larga. Hacer una simplificación lógica mediante álgebra booleana sería compleja. Alternativamente, podemos usar un [mapa de Karnaugh](../Annexos/karnaugh.md) para la función de salida $A$, con las entradas $P$, $S$, $T$ y $V$ agrupadas.
 
 <!-- 
 | PS\TV | 00 | 01 | 11 | 10 |
@@ -144,68 +139,20 @@ The expression for $A$ as a function of $P$, $S$, $T$ and $V$ is quite long. A l
       <th style="border: 1px solid #ccc; padding: 5px 10px;">11</th>
       <td style="border: 1px solid #ccc; padding: 5px 10px;">1</td>
       <td style="border: 1px solid #ccc; padding: 5px 10px;">1</td>
-      <td style="border: 1px solid #ccc; padding: 5px 10px;">1</td>
-      <td style="border: 1px solid #ccc; padding: 5px 10px;">1</td>
+      <td style="border: 1px solid #ccc; padding: 5px 10px; background-color: lightblue;">1</td>
+      <td style="border: 1px solid #ccc; padding: 5px 10px; background-color: lightblue;">1</td>
     </tr>
     <tr>
       <th style="border: 1px solid #ccc; padding: 5px 10px;">10</th>
       <td style="border: 1px solid #ccc; padding: 5px 10px;">0</td>
       <td style="border: 1px solid #ccc; padding: 5px 10px;">1</td>
-      <td style="border: 1px solid #ccc; padding: 5px 10px;">1</td>
-      <td style="border: 1px solid #ccc; padding: 5px 10px;">1</td>
+      <td style="border: 1px solid #ccc; padding: 5px 10px; background-color: lightblue;">1</td>
+      <td style="border: 1px solid #ccc; padding: 5px 10px; background-color: lightblue;">1</td>
     </tr>
   </tbody>
 </table>
 
-The next step is to group the '1's into four groups, which we mark with different colours.
-
-<table style="border-collapse: collapse; text-align: center;">
-  <thead>
-    <tr>
-      <th style="border: 1px solid #ccc; position: relative; width: 60px; height: 60px;">
-        <div style="position: absolute; top: 5px; right: 5px;">TV</div>
-        <div style="position: absolute; bottom: 5px; left: 5px;">PS</div>
-        <div style="position: absolute; bottom: 0; left: 0; width: 100%; height: 1px; background: #ccc; transform-origin: top right; transform: rotate(+45deg);"></div>
-      </th>
-      <th style="border: 1px solid #ccc; padding: 5px 10px;">00</th>
-      <th style="border: 1px solid #ccc; padding: 5px 10px;">01</th>
-      <th style="border: 1px solid #ccc; padding: 5px 10px;">11</th>
-      <th style="border: 1px solid #ccc; padding: 5px 10px;">10</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th style="border: 1px solid #ccc; padding: 5px 10px;">00</th>
-      <td style="border: 1px solid #ccc; padding: 5px 10px;">0</td>
-      <td style="border: 1px solid #ccc; padding: 5px 10px;">0</td>
-      <td style="border: 1px solid #ccc; padding: 5px 10px;">0</td>
-      <td style="border: 1px solid #ccc; padding: 5px 10px;">0</td>
-    </tr>
-    <tr>
-      <th style="border: 1px solid #ccc; padding: 5px 10px;">01</th>
-      <td style="border: 1px solid #ccc; padding: 5px 10px;">0</td>
-      <td style="border: 1px solid #ccc; padding: 5px 10px;">0</td>
-      <td style="border: 1px solid #ccc; padding: 5px 10px;">1</td>
-      <td style="border: 1px solid #ccc; padding: 5px 10px;">0</td>
-    </tr>
-    <tr>
-      <th style="border: 1px solid #ccc; padding: 5px 10px;">11</th>
-      <td style="border: 1px solid #ccc; padding: 5px 10px;">1</td>
-      <td style="border: 1px solid #ccc; padding: 5px 10px;">1</td>
-      <td style="border: 1px solid #ccc; padding: 5px 10px;background-color: lightblue;">1</td>
-      <td style="border: 1px solid #ccc; padding: 5px 10px;background-color: lightblue;">1</td>
-    </tr>
-    <tr>
-      <th style="border: 1px solid #ccc; padding: 5px 10px;">10</th>
-      <td style="border: 1px solid #ccc; padding: 5px 10px;">0</td>
-      <td style="border: 1px solid #ccc; padding: 5px 10px;">1</td>
-      <td style="border: 1px solid #ccc; padding: 5px 10px;background-color: lightblue;">1</td>
-      <td style="border: 1px solid #ccc; padding: 5px 10px;background-color: lightblue;">1</td>
-    </tr>
-  </tbody>
-</table>
-
-The fixed variables in the blue group are $P=1$ and $T=1$, which translates to the term $PT$ in the solution.
+Las variables constantes en el grupo azul son $P=1$ y $T=1$, esto se traduce en el término $PT$ en la solución.
 
 $$A=PT+···$$
 
@@ -255,7 +202,7 @@ $$A=PT+···$$
   </tbody>
 </table>
 
-The fixed variables in the yellow group are $P=1$ and $V=1$, add the term $PV$ to the solution.
+Las variables constantes en el grupo amarillo son $P=1$ y $V=1$, añadimos el término $PV$ a la solución.
 
 $$A=PT + PV + ···$$
 
@@ -286,15 +233,15 @@ $$A=PT + PV + ···$$
       <th style="border: 1px solid #ccc; padding: 5px 10px;">01</th>
       <td style="border: 1px solid #ccc; padding: 5px 10px;">0</td>
       <td style="border: 1px solid #ccc; padding: 5px 10px;">0</td>
-      <td style="border: 1px solid #ccc; padding: 5px 10px;background-color: red;">1</td>
+      <td style="border: 1px solid #ccc; padding: 5px 10px;">1</td>
       <td style="border: 1px solid #ccc; padding: 5px 10px;">0</td>
     </tr>
     <tr>
       <th style="border: 1px solid #ccc; padding: 5px 10px;">11</th>
-      <td style="border: 1px solid #ccc; padding: 5px 10px;">1</td>
-      <td style="border: 1px solid #ccc; padding: 5px 10px;">1</td>
-      <td style="border: 1px solid #ccc; padding: 5px 10px;background-color: red;">1</td>
-      <td style="border: 1px solid #ccc; padding: 5px 10px;">1</td>
+      <td style="border: 1px solid #ccc; padding: 5px 10px;background-color: lightgreen;">1</td>
+      <td style="border: 1px solid #ccc; padding: 5px 10px;background-color: lightgreen;">1</td>
+      <td style="border: 1px solid #ccc; padding: 5px 10px;background-color: lightgreen;">1</td>
+      <td style="border: 1px solid #ccc; padding: 5px 10px;background-color: lightgreen;">1</td>
     </tr>
     <tr>
       <th style="border: 1px solid #ccc; padding: 5px 10px;">10</th>
@@ -306,7 +253,7 @@ $$A=PT + PV + ···$$
   </tbody>
 </table>
 
-The green colour grouping has in common $P=1$ and $S=1$, add the term $PS$ to the solution
+Las variables constantes en el grupo verde tienen en común $P=1$ y $S=1$, añadimos el término $PS$ a la solución
 
 $$A=PT + PV + PS + ···$$
 
@@ -357,7 +304,7 @@ $$A=PT + PV + PS + ···$$
   </tbody>
 </table>
 
-The fixed variables in the green group have in common $P=1$ and $S=1$, so we add the term PS to the solution
+El agrupamiento de color verde tiene en común $P=1$ y $S=1$, añadimos el término $PS$ a la solución
 
 $$A=PT + PV + PS + ···$$
 
@@ -365,7 +312,7 @@ $$A=PT + PV + PS + ···$$
 <table style="border-collapse: collapse; text-align: center;">
   <thead>
     <tr>
-      <th style="border: 1px sveredictos olid #ccc; position: relative; width: 60px; height: 60px;">
+      <th style="border: 1px solid #ccc; position: relative; width: 60px; height: 60px;">
         <div style="position: absolute; top: 5px; right: 5px;">TV</div>
         <div style="position: absolute; bottom: 5px; left: 5px;">PS</div>
         <div style="position: absolute; bottom: 0; left: 0; width: 100%; height: 1px; background: #ccc; transform-origin: top right; transform: rotate(+45deg);"></div>
@@ -388,14 +335,14 @@ $$A=PT + PV + PS + ···$$
       <th style="border: 1px solid #ccc; padding: 5px 10px;">01</th>
       <td style="border: 1px solid #ccc; padding: 5px 10px;">0</td>
       <td style="border: 1px solid #ccc; padding: 5px 10px;">0</td>
-      <td style="border: 1px solid #ccc; padding: 5px 10px;background-color: yellow;">1</td>
+      <td style="border: 1px solid #ccc; padding: 5px 10px;background-color: red;">1</td>
       <td style="border: 1px solid #ccc; padding: 5px 10px;">0</td>
     </tr>
     <tr>
       <th style="border: 1px solid #ccc; padding: 5px 10px;">11</th>
       <td style="border: 1px solid #ccc; padding: 5px 10px;">1</td>
       <td style="border: 1px solid #ccc; padding: 5px 10px;">1</td>
-      <td style="border: 1px solid #ccc; padding: 5px 10px;background-color: yellow;">1</td>
+      <td style="border: 1px solid #ccc; padding: 5px 10px;background-color: red;">1</td>
       <td style="border: 1px solid #ccc; padding: 5px 10px;">1</td>
     </tr>
     <tr>
@@ -408,27 +355,27 @@ $$A=PT + PV + PS + ···$$
   </tbody>
 </table>
 
-Finally, in the red group the fixed variables are $S=1$, $T=1$ and $V=1$, add the term $STV$ to the solution.
+Finalment, en el grupo rojo las variables constantes son $S=1$, $T=1$ y $V=1$, añadimos el término $STV$ a la solución.
 
 $$A = PT + PV + PS + STV$$
 
-This is the final simplified Boolean expression, because all the '1's have already been accounted for in some group.
+Esta es la expresión booleana simplificada final, porque todos los '1' ya han sido considerados en algún grupo.
 
-The digital circuit derived from this expression is the following:
+El circuito digital derivado de esta expresión es el siguiente:
 
 
-<img src='../../CircCombin/svotacio_exemple.png' alt="Digital circuit" style="display:block; height:280px; margin:0 auto; border-radius:8px; background-color:white; padding:4px;"/>
-<center><i>Digital circuit implementing the voting system for a committee</i></center>
+<img src='../../CircCombin/svotacio_exemple.png' alt="Circuito digital" style="display:block; height:280px; margin:0 auto; border-radius:8px; background-color:white; padding:4px;"/>
+<center><i>Circuito digital que implementa el sistema de votación para comité Ejecutivo</i></center>
 
-## Exercises on Jutge.org: [Introduction to Digital Circuit Design](https://jutge.org/courses/JordiCortadella:IntroCircuits)
+## Ejercicios en Jutge.org:[Introduction to Digital Circuit Design](https://jutge.org/courses/JordiCortadella:IntroCircuits)
 
 - [Executive Committee](https://jutge.org/problems/X16063_en)
 - [Two or more ones](https://jutge.org/problems/X67345_en)
 - [4-input majority voter](https://jutge.org/problems/X42168_en)
 - [Majority of 5 inputs](https://jutge.org/problems/X72286_en)
 
-<small>*Remember that to access the exercises and for the Judge to evaluate your solutions you must be enrolled in the [course](https://jutge.org/courses/JordiCortadella:IntroCircuits). You will find all instructions [here](../Inici/instruccions.md).*</small>
+<small>*Recuerda que para acceder a los ejercicios y para que el Jutge valore tus soluciones debes estar inscrito en el curso. Encontrarás todas las instrucciones aquí (../Inici/instruccions.md).* </small>
 
-<!-- This image should go at the end of each lesson, either with this line or within the signature. Leave commented if it is already in the signature-->
+<!-- Esta imagen debe ir al final de cada lección, ya sea con esta línea o dentro de la firma. Dejar comentado si ya está a la firma-->
 <br><br><img src="../../logos/TotsLogosBlanc.png" alt="CHIP Chair Logos" width="100%" style="display:block; margin:0 auto; border-radius:8px;"/>
 <Autors autors="xcasas fmadrid"/>

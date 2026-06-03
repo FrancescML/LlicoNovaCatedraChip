@@ -60,7 +60,7 @@ This means that the block **const_0** is part of the incrementer circuit, and no
 <img src='../../CircAritm/verilogaritm.png' alt="Verilog code" style="display:block; height:200px; margin:0 auto; border-radius:8px; background-color:white; padding:4px;"/>
 
 
-## Exercises on Jutge.org: Introduction to Digital Circuit Design
+## Exercises on Jutge.org: [Introduction to Digital Circuit Design](https://jutge.org/courses/JordiCortadella:IntroCircuits)
 
 - [n-bit adder](https://jutge.org/problems/X84292_en)
 - [n-bit incrementer](https://jutge.org/problems/X41839_en)

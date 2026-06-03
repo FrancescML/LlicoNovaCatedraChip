@@ -160,7 +160,7 @@ ALUs (*ALU*) typically select between 4 operations (4-input multiplexers) with a
 <img src='../../CircAritm/multiplexor4.png' alt="4-input multiplexer" style="display:block; height:350px; margin:0 auto; border-radius:8px; background-color:white; padding:4px;"/>
 
 
-## Exercises on Jutge.org: Introduction to Digital Circuit Design
+## Exercises on Jutge.org: [Introduction to Digital Circuit Design](https://jutge.org/courses/JordiCortadella:IntroCircuits)
 
 - [4-bit adder](https://jutge.org/problems/X64833_en)  
 - [4-bit incrementer](https://jutge.org/problems/X58456_en)  

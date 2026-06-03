@@ -171,7 +171,7 @@ Expected results: segments **a, b, c, d, f, g** ON.
 * $segment \; g = 1 + \bar{0} \cdot 0 + 0 \cdot \bar{0} + 0 \cdot \bar{1}=1$
 
 
-## Exercises at Jutge.org: Introduction to Digital Circuit Design
+## Exercises on Jutge.org: [Introduction to Digital Circuit Design](https://jutge.org/courses/JordiCortadella:IntroCircuits)
 
 - [7-segment digit](https://jutge.org/problems/X37276_en)
 - [Is it a BCD digit?](https://jutge.org/problems/X31983_en)

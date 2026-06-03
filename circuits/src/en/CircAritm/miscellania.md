@@ -10,7 +10,7 @@
 
 The [Miscellaneous](https://jutge.org/courses/JordiCortadella:IntroCircuits/lists/JordiCortadella:Arithmetic) section of the course [Introduction to Digital Circuit Design](https://jutge.org/courses/JordiCortadella:IntroCircuits/lists/JordiCortadella:Arithmetic) includes various exercises related to the topics covered so far. They may be more challenging than those we've seen so far. Are you up for it?.
 
-## Exercises on Jutge.org: [Introduction to Digital Circuit Design]
+## Exercises on Jutge.org: [Introduction to Digital Circuit Design](https://jutge.org/courses/JordiCortadella:IntroCircuits)
 
 - [Add 7 bits](https://jutge.org/problems/X31534_en)
 - [Hamming distance](https://jutge.org/problems/X51732_en)

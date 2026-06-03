@@ -2,16 +2,16 @@
 layout: home
 
 hero:
-    name: 'Lliçons circuits digitals'
-    tagline: 'Xavier Casas i Francesc Madrid'
+    name: 'Lecciones de circuitos digitales'
+    tagline: 'Xavier Casas y Francesc Madrid'
     no-text: lliçons.jutge.org/circuits
 
     actions:
-        - theme: brand
+        - theme: alt
           text: Català
           link: /
 
-        - theme: alt
+        - theme: brand
           text: Castellano
           link: /es
 
@@ -20,6 +20,6 @@ hero:
           link: /en
 ---
 
-<h1 class="tagline">Taula de continguts</h1>
+<h1 class="tagline">Tabla de contenidos</h1>
 
 <MyIndex/>

@@ -1,6 +1,8 @@
 import { defineConfig } from 'vitepress'
-import { index } from './index'
+import { index }   from './index'
 import { indexEn } from './index'
+import { indexEs } from './index'
+
 
 import { tabsMarkdownPlugin } from 'vitepress-plugin-tabs'
 
@@ -21,12 +23,20 @@ export default defineConfig({
             link: '/'
         },
 
+        es: {
+            label: 'Castellano',
+            lang: 'es-ES',
+            title: 'Lecciones de circuitos digitales',
+            link: '/es/'
+        },
+
         en: {
             label: 'English',
             lang: 'en-US',
             title: 'Digital Circuits Lessons',
             link: '/en/'
-        }
+        },
+
     },
 
 
@@ -90,6 +100,8 @@ export default defineConfig({
         sidebar: {
             '/': index,
             '/en/': indexEn,
+            '/es/': indexEs,
+
         },
 
 

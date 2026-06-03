@@ -1,70 +1,71 @@
-<!-- Posar aquesta imatge al començament de cada lliçó -->
+<!-- Colocar esta imagen al inicio de cada lección -->
 <img src="../../logos/illustracio1.png" alt="Digital circuits" style="float: left; border-radius: 8px; height: 120px;"/>
 <img src="../../logos/LogoCatedraCHIPBlanc.jpg" alt="CHIP Chair Logo" style="float: right; border-radius: 8px; height: 120px;"/>
 <div style="clear: both;"></div>
 <br>
 
 
-# Numbers
 
-In digital circuits, numbers are implemented in **binary notation** and all mathematical operations - addition, subtraction, comparison, multiplication, division or modulo - are performed by manipulating bits.
+# Números
 
-## Example: Even or Odd Number
+En los circuitos digitales, los números se implementan en notación binaria y todas las operaciones matemáticas (suma, resta, comparación, multiplicación, división o módulo) se realizan manipulando bits.
 
-We will design a circuit that receives a 4-bit input number and activates the output ($Parell=1$) when the input number is **even**.
+## Ejemplo: Número par o impar
 
-A binary number is even if its **least significant bit (LSB)** has the value 0.
+Diseñaremos un circuito que reciba a la entrada un número de 4 bits y active la salida (Par=1) cuando el número de entrada sea par.
 
-We define the input variable:
+Un número binario es par si su bit menos significativo (LSB) vale 0.
 
-$$nombre[3:0] = [nombre_3\ nombre_2\ nombre_1\ nombre_0]$$
+Definimos la variable de entrada:
 
-The least significant bit is $nombre_0$.
+$$numero[3:0] = [numero_3\ numero_2\ numero_1\ numero_0]$$
 
-The output is a single bit:
-- $Parell = 1$ if the number is even.
-- $Parell = 0$ if the number is odd.
+El bit menos significativo es $numero_0$.
 
-Partial example table (the complete one would have 16 rows):
+La salida es un solo bit:
+- $Par = 1$ si el número es par.
+- $Par = 0$ si el número es impar.
 
-|**$nombre$**|**Number in decimal**|$nombre_0$ (LSB)|Parity| $Parell$|
+Tabla parcial de ejemplos (la completa tendría 16 filas):
+
+|**número**|**Número en decimal**|$numero_0$ (LSB)|Paridad| $Par$|
 |:---:|:---:|:---:|:---|:---:|
-| 0000 | 0  | 0 | Even | 1 |
-| 0001 | 1  | 1 | Odd  | 0 |
-| 0010 | 2  | 0 | Even | 1 |
-| 0011 | 3  | 1 | Odd  | 0 |
-| 1110 | 14 | 0 | Even | 1 |
-| 1111 | 15 | 1 | Odd  | 0 |
+| 0000 | 0  | 0 | Par | 1 |
+| 0001 | 1  | 1 | Impar  | 0 |
+| 0010 | 2  | 0 | Par | 1 |
+| 0011 | 3  | 1 | Impar  | 0 |
+| 1110 | 14 | 0 | Par | 1 |
+| 1111 | 15 | 1 | Impar  | 0 |
 
 
-Building the circuit is fairly straightforward; the output Parell must be activated (value 1) if and only if nombre[0] has the value 0, regardless of the value of the remaining bits of nombre.
+Construir el circuito es bastante directo; la salida $Par$ debe activarse (valor $1$) si y solo si $numero_0$ tiene el valor $0$, independientemente del valor del resto de bits del número.
 
-Therefore, the output is the negation of $nombre_0$.
+La salida es por tanto la negación de $numero_0$.
 
-$$Parell = \overline{nombre_0}$$
+$$Par = \overline{numero_0}$$
 
-Thus, only a single NOT gate is required.
+Por tanto, solo hace falta una puerta NOT.
 
-<img src="../../CircCombin/nombres_exemple1.png" alt="Parity circuit" style="display:block; height:130px; margin:0 auto; border-radius:8px; background-color:white; padding:4px;"/>
-<center><i>Circuit that determines the parity of a number</i></center>
+<img src="../../CircCombin/nombres_exemple1.png" alt="Circuito de paridad" style="display:block; height:130px; margin:0 auto; border-radius:8px; background-color:white; padding:4px;"/>
+<center><i>Circuito que determina la paridad de un número</i></center>
 
-## Example: Modulo 7 of a 4-bit number
+## Ejemplo: Módulo 7 de un número de 4 bits
 
-We will design a circuit that computes the modulo 7 of a binary number $n$, of 4 bits. Computing modulo 7 of a number consists of finding the remainder when it is divided by 7. The notation for this operation is:
+Diseñaremos un circuito que calcule el módulo 7 de un número binario $n$, de 4 bits. Calcular el módulo 7 de un número consiste en hallar el residuo cuando este se divide por 7. La notación para esta operación es:
 
-$$residu = n \bmod 7$$
+$$residuo = n \bmod 7$$
 
-A 4-bit number $n[3:0]=[n_3 \; n_2 \; n_1 \; n_0]$ can take 16 different values from 0000 to 1111 (0 to 15 in decimal).
+Un número de 4 bits $n[3:0]=[n_3 \; n_2 \; n_1 \; n_0]$ puede tomar 16 valores diferentes desde 0000 a 1111 (de 0 a 15 en decimal).
 
-The remainders after dividing a number by 7 can take values from 0 to 6. To represent the result of the operation, a 3-bit number will suffice, which can take values from 000 to 111 (0 to 7 in decimal).
+Los residuos tras dividir un número por 7 pueden tomar valores de 0 a 6. Para representar el resultado de la operación, bastará con un número de 3 bits, que puede tomar valores del 000 al 111 (del 0 al 7 en decimal).
 
-$$residu[2:0] = [residu_2 \ residu_1\ residu_0]$$
+$$residuo[2:0] = [residuo_2\ residuo_1\ residuo_0]$$
 
-The first step in designing this circuit is to create the **complete truth table** that relates each 4-bit input $n[3:0]$ to its corresponding 3-bit remainder $residu[2:0]$.
+El primer paso para diseñar este circuito es crear la tabla de verdad completa que relacione cada entrada $n$ de 4 bits $n[3:0]$ con su residuo correspondiente de 3 bits $residuo[2:0]$.
 
-$residu[2:0] = n[3:0] \mod 7$
+$residuo[2:0] = n[3:0] \bmod 7$
 
-| $n$ (decimal) | $n_3 \; n_2 \; n_1 \; n_0$ | $residu$ (decimal) | $residu_2 \; residu_1 \; residu_0$ |
+| $n$ (decimal) | $n_3 \; n_2 \; n_1 \; n_0$ | $residuo$ (decimal) | $residuo_2 \; residuo_1 \; residuo_0$ |
 |---|---|---|---|
 | 0  | 0000 | 0 | 000 |
 | 1  | 0001 | 1 | 001 |
@@ -84,12 +85,12 @@ $residu[2:0] = n[3:0] \mod 7$
 | 15 | 1111 | 1 | 001 |
 
 
-For each output ($residu_0$, $residu_1$, $residu_2$) a Karnaugh map with 4 variables is built to obtain its simplified Boolean expression.
+Para cada salida ($residuo_0$, $residuo_1$, $residuo_2$) se construye un mapa de Karnaugh de 4 variables para obtener su expresión booleana simplificada.
 
-### Output $residu_0$
-We construct the Karnaugh map for the 4 input variables for the output residue_0 and identify 3 groups.
+### Salida residuo_0
+Armamos el mapa de Karnaugh de 4 variables de entrada para la salida residuo_0 e identificamos 3 grupos.
 
-<!-- GREEN -->
+<!-- VERDE -->
 <table style="border-collapse: collapse; text-align: center;">
   <thead>
     <tr>
@@ -136,7 +137,7 @@ We construct the Karnaugh map for the 4 input variables for the output residue_0
   </tbody>
 </table>
 
-<!-- RED -->
+<!-- ROJO -->
 <table style="border-collapse: collapse; text-align: center;">
   <thead>
     <tr>
@@ -155,21 +156,21 @@ We construct the Karnaugh map for the 4 input variables for the output residue_0
     <tr>
       <th style="border: 1px solid #ccc; padding: 5px 10px;">00</th>
       <td style="border: 1px solid #ccc; padding: 5px 10px;">0 </td>
-      <td style="border: 1px solid #ccc; padding: 5px 10px;background-color: red;">1 </td>
-      <td style="border: 1px solid #ccc; padding: 5px 10px;background-color: red;">1 </td>
       <td style="border: 1px solid #ccc; padding: 5px 10px;">0 </td>
+      <td style="border: 1px solid #ccc; padding: 5px 10px;background-color: red;">1 </td>
+      <td style="border: 1px solid #ccc; padding: 5px 10px;background-color: red;">1 </td>
     </tr>
     <tr>
       <th style="border: 1px solid #ccc; padding: 5px 10px;">01</th>
       <td style="border: 1px solid #ccc; padding: 5px 10px;">0 </td>
-      <td style="border: 1px solid #ccc; padding: 5px 10px;background-color: red;">1 </td>
-      <td style="border: 1px solid #ccc; padding: 5px 10px;background-color: red;">1 </td>
       <td style="border: 1px solid #ccc; padding: 5px 10px;">0 </td>
+      <td style="border: 1px solid #ccc; padding: 5px 10px;background-color: red;">1 </td>
+      <td style="border: 1px solid #ccc; padding: 5px 10px;background-color: red;">1 </td>
     </tr>
     <tr>
       <th style="border: 1px solid #ccc; padding: 5px 10px;">11</th>
       <td style="border: 1px solid #ccc; padding: 5px 10px;">0 </td>
-      <td style="border: 1px solid #ccc; padding: 5px 10px;">1 </td>
+      <td style="border: 1px solid #ccc; padding: 5px 10px;">0 </td>
       <td style="border: 1px solid #ccc; padding: 5px 10px;">0 </td>
       <td style="border: 1px solid #ccc; padding: 5px 10px;">0 </td>
     </tr>
@@ -183,14 +184,16 @@ We construct the Karnaugh map for the 4 input variables for the output residue_0
   </tbody>
 </table>
 
-The simplified Boolean expression for residue_0 will have 3 terms:
+<!-- VERDE -->
+<h4>Sortida residuo_0</h4>
+La expresión booleana simplificada para residuo_0 tendrá 3 términos:
 
-$$residu_0 = \overline{n_1}n_0 + \overline{n_3}n_0 + \overline{n_2}n_0$$
+$$residuo_0 = \overline{n_1}n_0 + \overline{n_3}n_0 + \overline{n_2}n_0$$
 
-### Output $residu_1$
-We build the Karnaugh map for the 4 input variables for the output residue_1 and identify 2 groups.
+### Salida residuo_1
+Armamos el mapa de Karnaugh de 4 variables de entrada para la salida residuo_1 e identificamos 2 grupos.
 
-<!-- RED -->
+<!-- ROJO -->
 <table style="border-collapse: collapse; text-align: center;">
   <thead>
     <tr>
@@ -237,7 +240,110 @@ We build the Karnaugh map for the 4 input variables for the output residue_1 and
   </tbody>
 </table>
 
-<!-- BLUE -->
+<!-- AZUL -->
+<table style="border-collapse: collapse; text-align: center;">
+  <thead>
+    <tr>
+      <th style="border: 1px solid #ccc; position: relative; width: 60px; height: 60px;">
+        <div style="position: absolute; top: 5px; right: 5px;">   n1 n0 </div>
+        <div style="position: absolute; bottom: 5px; left: 5px;"> n3 n2 </div>
+        <div style="position: absolute; bottom: 0; left: 0; width: 100%; height: 1px; background: #ccc; transform-origin: top right; transform: rotate(+45deg);"></div>
+      </th>
+      <th style="border: 1px solid #ccc; padding: 5px 10px;">00</th>
+      <th style="border: 1px solid #ccc; padding: 5px 10px;">01</th>
+      <th style="border: 1px solid #ccc; padding: 5px 10px;">11</th>
+      <th style="border: 1px solid #ccc; padding: 5px 10px;">10</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th style="border: 1px solid #ccc; padding: 5px 10px;">00</th>
+      <td style="border: 1px solid #ccc; padding: 5px 10px;">0 </td>
+      <td style="border: 1px solid #ccc; padding: 5px 10px;background-color: lightblue;">1 </td>
+      <td style="border: 1px solid #ccc; padding: 5px 10px;background-color: lightblue;">1 </td>
+      <td style="border: 1px solid #ccc; padding: 5px 10px;">0 </td>
+    </tr>
+    <tr>
+      <th style="border: 1px solid #ccc; padding: 5px 10px;">01</th>
+      <td style="border: 1px solid #ccc; padding: 5px 10px;">0 </td>
+      <td style="border: 1px solid #ccc; padding: 5px 10px;">1 </td>
+      <td style="border: 1px solid #ccc; padding: 5px 10px;">1 </td>
+      <td style="border: 1px solid #ccc; padding: 5px 10px;">0 </td>
+    </tr>
+    <tr>
+      <th style="border: 1px solid #ccc; padding: 5px 10px;">11</th>
+      <td style="border: 1px solid #ccc; padding: 5px 10px;">0 </td>
+      <td style="border: 1px solid #ccc; padding: 5px 10px;">1 </td>
+      <td style="border: 1px solid #ccc; padding: 5px 10px;">0 </td>
+      <td style="border: 1px solid #ccc; padding: 5px 10px;">0 </td>
+    </tr>
+    <tr>
+      <th style="border: 1px solid #ccc; padding: 5px 10px;">10</th>
+      <td style="border: 1px solid #ccc; padding: 5px 10px;">0 </td>
+      <td style="border: 1px solid #ccc; padding: 5px 10px;background-color: lightblue;">1 </td>
+      <td style="border: 1px solid #ccc; padding: 5px 10px;background-color: lightblue;">1 </td>
+      <td style="border: 1px solid #ccc; padding: 5px 10px;">0 </td>
+    </tr>
+  </tbody>
+</table>
+
+
+Així doncs, l'expressió booleana simplificada per a residuo_0 tindrà 3 termes:
+
+
+$$residuo_0 = \overline{n_1}n_0 + \overline{n_3}n_0 + \overline{n_2}n_0$$
+
+### Salida residuo_1
+Armamos el mapa de Karnaugh de 4 variables de entrada para la salida residuo_1 e identificamos 2 grupos.
+
+<!-- ROJO -->
+<table style="border-collapse: collapse; text-align: center;">
+  <thead>
+    <tr>
+      <th style="border: 1px solid #ccc; position: relative; width: 60px; height: 60px;">
+        <div style="position: absolute; top: 5px; right: 5px;">   n1 n0 </div>
+        <div style="position: absolute; bottom: 5px; left: 5px;"> n3 n2 </div>
+        <div style="position: absolute; bottom: 0; left: 0; width: 100%; height: 1px; background: #ccc; transform-origin: top right; transform: rotate(+45deg);"></div>
+      </th>
+      <th style="border: 1px solid #ccc; padding: 5px 10px;">00</th>
+      <th style="border: 1px solid #ccc; padding: 5px 10px;">01</th>
+      <th style="border: 1px solid #ccc; padding: 5px 10px;">11</th>
+      <th style="border: 1px solid #ccc; padding: 5px 10px;">10</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th style="border: 1px solid #ccc; padding: 5px 10px;">00</th>
+      <td style="border: 1px solid #ccc; padding: 5px 10px;">0 </td>
+      <td style="border: 1px solid #ccc; padding: 5px 10px;">0 </td>
+      <td style="border: 1px solid #ccc; padding: 5px 10px;background-color: red;">1 </td>
+      <td style="border: 1px solid #ccc; padding: 5px 10px;background-color: red;">1 </td>
+    </tr>
+    <tr>
+      <th style="border: 1px solid #ccc; padding: 5px 10px;">01</th>
+      <td style="border: 1px solid #ccc; padding: 5px 10px;">0 </td>
+      <td style="border: 1px solid #ccc; padding: 5px 10px;">0 </td>
+      <td style="border: 1px solid #ccc; padding: 5px 10px;background-color: red;">1 </td>
+      <td style="border: 1px solid #ccc; padding: 5px 10px;background-color: red;">1 </td>
+    </tr>
+    <tr>
+      <th style="border: 1px solid #ccc; padding: 5px 10px;">11</th>
+      <td style="border: 1px solid #ccc; padding: 5px 10px;">0 </td>
+      <td style="border: 1px solid #ccc; padding: 5px 10px;">0 </td>
+      <td style="border: 1px solid #ccc; padding: 5px 10px;">0 </td>
+      <td style="border: 1px solid #ccc; padding: 5px 10px;">0 </td>
+    </tr>
+    <tr>
+      <th style="border: 1px solid #ccc; padding: 5px 10px;">10</th>
+      <td style="border: 1px solid #ccc; padding: 5px 10px;">0 </td>
+      <td style="border: 1px solid #ccc; padding: 5px 10px;">0 </td>
+      <td style="border: 1px solid #ccc; padding: 5px 10px;">1 </td>
+      <td style="border: 1px solid #ccc; padding: 5px 10px;">1 </td>
+    </tr>
+  </tbody>
+</table>
+
+<!-- AZUL -->
 <table style="border-collapse: collapse; text-align: center;">
   <thead>
     <tr>
@@ -284,130 +390,20 @@ We build the Karnaugh map for the 4 input variables for the output residue_1 and
   </tbody>
 </table>
 
-Aquesta expressió booleana simplified for residue_1 tindrà 2 termes:
+A partir de estas tres expresiones podemos usar las puertas lógicas para crear el circuito digital que implementará la función $n \bmod 7$.
 
-$$residu_1 = \overline{n_3}n_1 + \overline{n_2}n_1$$
+<img src="../../CircCombin/nombres_exemple2.png" alt="Circuito módulo 7" style="display:block; height:500px; margin:0 auto; border-radius:8px; background-color:white; padding:4px;"/>
+<center><i>Circuito digital que implementa la función $n \bmod 7$</i></center>
 
-### Output $residu_2$
-For the output residue_2, identify 2 groups on its Karnaugh map.
+## Ejercicios en Jutge.org:[Introduction to Digital Circuit Design](https://jutge.org/courses/JordiCortadella:IntroCircuits)
 
-<!-- RED -->
-<table style="border-collapse: collapse; text-align: center;">
-  <thead>
-    <tr>
-      <th style="border: 1px solid #ccc; position: relative; width: 60px; height: 60px;">
-        <div style="position: absolute; top: 5px; right: 5px;">   n1 n0 </div>
-        <div style="position: absolute; bottom: 5px; left: 5px;"> n3 n2 </div>
-        <div style="position: absolute; bottom: 0; left: 0; width: 100%; height: 1px; background: #ccc; transform-origin: top right; transform: rotate(+45deg);"></div>
-      </th>
-      <th style="border: 1px solid #ccc; padding: 5px 10px;">00</th>
-      <th style="border: 1px solid #ccc; padding: 5px 10px;">01</th>
-      <th style="border: 1px solid #ccc; padding: 5px 10px;">11</th>
-      <th style="border: 1px solid #ccc; padding: 5px 10px;">10</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th style="border: 1px solid #ccc; padding: 5px 10px;">00</th>
-      <td style="border: 1px solid #ccc; padding: 5px 10px;">0 </td>
-      <td style="border: 1px solid #ccc; padding: 5px 10px;">0 </td>
-      <td style="border: 1px solid #ccc; padding: 5px 10px;">0 </td>
-      <td style="border: 1px solid #ccc; padding: 5px 10px;">0 </td>
-    </tr>
-    <tr>
-      <th style="border: 1px solid #ccc; padding: 5px 10px;">01</th>
-      <td style="border: 1px solid #ccc; padding: 5px 10px;background-color: red;">1 </td>
-      <td style="border: 1px solid #ccc; padding: 5px 10px;background-color: red;">1 </td>
-      <td style="border: 1px solid #ccc; padding: 5px 10px;">1 </td>
-      <td style="border: 1px solid #ccc; padding: 5px 10px;">1 </td>
-    </tr>
-    <tr>
-      <th style="border: 1px solid #ccc; padding: 5px 10px;">11</th>
-      <td style="border: 1px solid #ccc; padding: 5px 10px;background-color: red;">1 </td>
-      <td style="border: 1px solid #ccc; padding: 5px 10px;background-color: red;">1 </td>
-      <td style="border: 1px solid #ccc; padding: 5px 10px;">0 </td>
-      <td style="border: 1px solid #ccc; padding: 5px 10px;">0 </td>
-    </tr>
-    <tr>
-      <th style="border: 1px solid #ccc; padding: 5px 10px;">10</th>
-      <td style="border: 1px solid #ccc; padding: 5px 10px;">0 </td>
-      <td style="border: 1px solid #ccc; padding: 5px 10px;">0 </td>
-      <td style="border: 1px solid #ccc; padding: 5px 10px;">0 </td>
-      <td style="border: 1px solid #ccc; padding: 5px 10px;">0 </td>
-    </tr>
-  </tbody>
-</table>
+- [Número par](https://jutge.org/problems/X36253_en)
+- [Número primo](https://jutge.org/problems/X07160_en)
+- [Máximo de dos números](https://jutge.org/problems/X37473_en)
+- [Residuo módulo 7](https://jutge.org/problems/X91814_en)
 
+<small>*Recuerda que para acceder a los ejercicios y para que el Jutge valore tus soluciones debes estar inscrito en el [curso](https://jutge.org/courses/JordiCortadella:IntroCircuits). Encontrarás todas las instrucciones [aquí](../Inici/instruccions.md).*</small>
 
-<!-- BLUE -->
-<table style="border-collapse: collapse; text-align: center;">
-  <thead>
-    <tr>
-      <th style="border: 1px solid #ccc; position: relative; width: 60px; height: 60px;">
-        <div style="position: absolute; top: 5px; right: 5px;">   n1 n0 </div>
-        <div style="position: absolute; bottom: 5px; left: 5px;"> n3 n2 </div>
-        <div style="position: absolute; bottom: 0; left: 0; width: 100%; height: 1px; background: #ccc; transform-origin: top right; transform: rotate(+45deg);"></div>
-      </th>
-      <th style="border: 1px solid #ccc; padding: 5px 10px;">00</th>
-      <th style="border: 1px solid #ccc; padding: 5px 10px;">01</th>
-      <th style="border: 1px solid #ccc; padding: 5px 10px;">11</th>
-      <th style="border: 1px solid #ccc; padding: 5px 10px;">10</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th style="border: 1px solid #ccc; padding: 5px 10px;">00</th>
-      <td style="border: 1px solid #ccc; padding: 5px 10px;">0 </td>
-      <td style="border: 1px solid #ccc; padding: 5px 10px;">0 </td>
-      <td style="border: 1px solid #ccc; padding: 5px 10px;background-color: lightblue;">0 </td>
-      <td style="border: 1px solid #ccc; padding: 5px 10px;background-color: lightblue;">0 </td>
-    </tr>
-    <tr>
-      <th style="border: 1px solid #ccc; padding: 5px 10px;">01</th>
-      <td style="border: 1px solid #ccc; padding: 5px 10px;background-color: lightblue;">1 </td>
-      <td style="border: 1px solid #ccc; padding: 5px 10px;background-color: lightblue;">1 </td>
-      <td style="border: 1px solid #ccc; padding: 5px 10px;background-color: lightblue;">1 </td>
-      <td style="border: 1px solid #ccc; padding: 5px 10px;background-color: lightblue;">1 </td>
-    </tr>
-    <tr>
-      <th style="border: 1px solid #ccc; padding: 5px 10px;">11</th>
-      <td style="border: 1px solid #ccc; padding: 5px 10px;">1 </td>
-      <td style="border: 1px solid #ccc; padding: 5px 10px;">1 </td>
-      <td style="border: 1px solid #ccc; padding: 5px 10px;">0 </td>
-      <td style="border: 1px solid #ccc; padding: 5px 10px;">0 </td>
-    </tr>
-    <tr>
-      <th style="border: 1px solid #ccc; padding: 5px 10px;">10</th>
-      <td style="border: 1px solid #ccc; padding: 5px 10px;">0 </td>
-      <td style="border: 1px solid #ccc; padding: 5px 10px;">0 </td>
-      <td style="border: 1px solid #ccc; padding: 5px 10px;background-color: lightblue;">1 </td>
-      <td style="border: 1px solid #ccc; padding: 5px 10px;background-color: lightblue;">1 </td>
-    </tr>
-  </tbody>en | 1 |
-| 1111 | 15 | 1 | Odd  | 0 |
-
-
-</table>
-
-Thus, the simplified Boolean expression for residue_2 will have 2 terms:
-
-$$residu_2 = n_2\overline{n_1} + \overline{n_3}n_2$$
-
-
-From these three expressions we can use logic gates to create the digital circuit that will implement the function $n \bmod{7}$.
-
-<img src="../../CircCombin/nombres_exemple2.png" alt="Circuit modulo 7" style="display:block; height:500px; margin:0 auto; border-radius:8px; background-color:white; padding:4px;"/>
-<center><i>Digital circuit that implements the function $n \bmod 7$</i></center>
-
-## Exercises on Jutge.org: [Introduction to Digital Circuit Design](https://jutge.org/courses/JordiCortadella:IntroCircuits)
-
-- [Even number](https://jutge.org/problems/X36253_en)
-- [Prime number](https://jutge.org/problems/X07160_en)
-- [Maximum of two numbers](https://jutge.org/problems/X37473_en)
-- [Remainder modulo 7](https://jutge.org/problems/X91814_en)
-
-<small>*Remember that to access the exercises and for the Jutge judge to evaluate your solutions you must be enrolled in the [course](https://jutge.org/courses/JordiCortadella:IntroCircuits). You will find all the instructions [here](../Inici/instruccions.md).*</small>
-
-<!-- This image should go at the end of each lesson, either with this line or within the signature. Leave commented if it is already in the signature-->
+<!-- Esta imagen debe ir al final de cada lección, ya sea con esta línea o dentro de la firma. Dejar comentado si ya está a la firma-->
 <br><br><img src="../../logos/TotsLogosBlanc.png" alt="CHIP Chair Logos" width="100%" style="display:block; margin:0 auto; border-radius:8px;"/>
 <Autors autors="xcasas fmadrid"/>

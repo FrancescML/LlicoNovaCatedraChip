@@ -9,7 +9,7 @@
 
 The Miscellaneous section of the course Introduction to Digital Circuit Design includes various exercises related to the topics covered so far. They may be more challenging than those we have seen so far. Fancy giving it a go?
 
-## Exercises on Jutge.org: [Introduction to Digital Circuit Design]
+## Exercises on Jutge.org: [Introduction to Digital Circuit Design](https://jutge.org/courses/JordiCortadella:IntroCircuits)
 
 - [Fibonacci](https://jutge.org/problems/X95484_en)
 - [Greatest Common Divisor](https://jutge.org/problems/X64579_en)
