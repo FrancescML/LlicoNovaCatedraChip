@@ -7,13 +7,17 @@ hero:
     no-text: lliçons.jutge.org/circuits
 
     actions:
-        - theme: brand
-          text: Home
-          link: /en/Inici/presentacio
-          
         - theme: alt
-          text: Catalan version
+          text: Català
           link: /
+
+        - theme: alt
+          text: Castellano
+          link: /es
+
+        - theme: brand
+          text: English
+          link: /en
 ---
 
 <h1 class="tagline">Table of Contents</h1>

@@ -24,3 +24,5 @@ The section [Tiny Micro](https://jutge.org/courses/JordiCortadella:IntroCircuits
 <!-- This image should go at the end of each lesson, either with this line or within the signature. Leave commented if it is already in the signature-->
 <br><br><img src="../../logos/TotsLogosBlanc.png" alt="CHIP Chair Logos" width="100%" style="display:block; margin:0 auto; border-radius:8px;"/>
 <Autors autors="xcasas fmadrid"/>
+
+

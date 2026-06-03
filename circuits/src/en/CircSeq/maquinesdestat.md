@@ -274,7 +274,7 @@ $S_{entrada}$ : 1, 1, 1, …
 $S_{sortida}$ : 0, 0, 1, …
 
 
-## Exercises on Jutge.org: Introduction to Digital Circuit Design
+## Exercises on Jutge.org: [Introduction to Digital Circuit Design](https://jutge.org/courses/JordiCortadella:IntroCircuits)
 
 - [Last two equal](https://jutge.org/problems/X71700_en)
 - [Delayed sequence](https://jutge.org/problems/X32741_en)

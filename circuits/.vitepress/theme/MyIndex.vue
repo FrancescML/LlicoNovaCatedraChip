@@ -21,12 +21,16 @@ import { useData } from 'vitepress'
 
 import { index } from '../index'
 import { indexEn } from '../index'
+import { indexEs } from '../index'
+
 
 const { localeIndex, site } = useData()
 
-const data = computed(() => {
-    return localeIndex.value === 'en' ? indexEn : index
-})
+const data = computed(() => ({
+    en: indexEn,
+    es: indexEs
+}[localeIndex.value] || index))
+
 </script>
 
 <style scoped>

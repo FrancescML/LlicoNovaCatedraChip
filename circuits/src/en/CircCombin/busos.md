@@ -94,7 +94,7 @@ For each output bit $B_i$, we will use a 2-to-1 multiplexer:
 
 
 
-## Exercises at Jutge.org: Introduction to Digital Circuit Design
+## Exercises on Jutge.org: [Introduction to Digital Circuit Design](https://jutge.org/courses/JordiCortadella:IntroCircuits)
 
 - [Bus invert](https://jutge.org/problems/X29475_en)
 - [Bus transfer or invert](https://jutge.org/problems/X00341_en)

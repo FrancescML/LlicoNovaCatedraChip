@@ -42,7 +42,7 @@ Once you have access to Jutge.org resources, you can enrol in the course [Introd
 
 Within this course you will find the exercise statements. You will also be able to submit your solutions to Jutge, which will evaluate their validity and issue a verdict.
 
-## Exercises menu and how to submit your solution to an exercise
+## Exercises on Jutge.org: [Introduction to Digital Circuit Design](https://jutge.org/courses/JordiCortadella:IntroCircuits)
 
 You can access each exercise from the portal’s top menu, either directly from the course or from the [Problems](https://jutge.org/problems) section.
 
